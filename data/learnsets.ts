@@ -24886,7 +24886,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			aerialace: ["7M", "6M", "5M", "4M", "3M"],
 			agility: ["7L33", "7V", "6L36", "5L36", "4L36", "3L51"],
 			aircutter: ["4T"],
-			airslash: ["7L42"],
+			airslash: ["7L42", "4L42"],
 			attract: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			batonpass: ["7L29", "7V", "6L24", "5L24", "4L24", "3L33"],
 			brickbreak: ["7M", "6M", "5M", "4M", "3M"],
@@ -24958,7 +24958,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			mudshot: ["4L22"],
 			fissure: ["4L30"],
 			spiderweb: ["4L40"],
-			airslash: ["4L42"],
 		},
 		encounters: [
 			{generation: 2, level: 7},
