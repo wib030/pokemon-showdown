@@ -7549,4 +7549,11 @@ export const MovesText: {[k: string]: MoveText} = {
 			shortDesc: "Nearly always goes first. Always crits.",
 		},
 	},
+	
+	//new Moves
+	peatslide: {
+		name: "Peat Slide",
+		desc: "Has a 10% chance to confuse the target.",
+		shortDesc: "10% chance to confuse the target.",
+	},
 };

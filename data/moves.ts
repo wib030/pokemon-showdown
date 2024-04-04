@@ -22025,4 +22025,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Electric",
 		contestType: "Cool",
 	},
+	
+	//new Moves
+	peatslide: {
+		num: 90,
+		accuracy: 100,
+		basePower: 75,
+		category: "Special",
+		name: "Peat Slide",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, nonsky: 1, metronome: 1},
+		secondary: {
+			chance: 10,
+			volatileStatus: 'confusion',
+		},
+		target: "normal",
+		type: "Ground",
+		contestType: "Beautiful",
+	},
 };
