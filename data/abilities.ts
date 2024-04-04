@@ -502,8 +502,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	chlorophyll: {
 		onModifySpe(spe, pokemon) {
-			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
-				return this.chainModify(2);
+			if (['sunnyday'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(1.5);
 			}
 		},
 		flags: {},
@@ -4700,8 +4700,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	swiftswim: {
 		onModifySpe(spe, pokemon) {
-			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
-				return this.chainModify(2);
+			if (['raindance'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(1.5);
 			}
 		},
 		flags: {},
