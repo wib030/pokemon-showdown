@@ -22028,7 +22028,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	
 	//new Moves
 	peatslide: {
-		num: 90,
+		num: -1,
 		accuracy: 100,
 		basePower: 75,
 		category: "Special",
