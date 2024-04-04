@@ -174,10 +174,6 @@ export const MovesText: {[k: string]: MoveText} = {
 	aquatail: {
 		name: "Aqua Tail",
 		shortDesc: "No additional effect.",
-		gen4: {
-			desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
-			shortDesc: "Has 33% recoil.",
-		},
 	},
 	armorcannon: {
 		name: "Armor Cannon",
@@ -1354,11 +1350,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	dig: {
 		name: "Dig",
-		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
-		shortDesc: "100% chance lower adjacent Pkmn Speed by 1.",
-		gen4: {
-			desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
-		},
+		desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Earthquake and Magnitude, which have doubled power when used against it, and is also unaffected by weather.",
+		shortDesc: "Digs underground turn 1, strikes turn 2.",
 		gen3: {
 			desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Earthquake and Magnitude, which have doubled power when used against it, and is also unaffected by weather.",
 		},
@@ -3102,10 +3095,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Horn Drill",
 		desc: "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. This attack's accuracy is equal to (user's level - target's level + 30)%, and fails if the target is at a higher level. Pokemon with the Sturdy Ability are immune.",
 		shortDesc: "OHKOs the target. Fails if user is a lower level.",
-		gen4: {
-			desc: "Has a higher chance for a critical hit.",
-			shortDesc: "High critical hit ratio.",
-		},
 		gen2: {
 			desc: "Deals 65535 damage to the target. This attack's accuracy out of 256 is equal to the lesser of (2 * (user's level - target's level) + 76) and 255, before applying accuracy and evasiveness modifiers. Fails if the target is at a higher level.",
 		},
@@ -3209,10 +3198,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Ice Ball",
 		desc: "If this move is successful, the user is locked into this move and cannot make another move until it misses, 5 turns have passed, or the attack cannot be used. Power doubles with each successful hit of this move and doubles again if Defense Curl was used previously by the user. If this move is called by Sleep Talk, the move is used for one turn.",
 		shortDesc: "Power doubles with each hit. Repeats for 5 turns.",
-		gen4: {
-			desc: "Has a 30% chance to make the target flinch.",
-			shortDesc: "30% chance to make the target flinch.",
-		},
 		gen7: {
 			desc: "If this move is successful, the user is locked into this move and cannot make another move until it misses, 5 turns have passed, or the attack cannot be used. Power doubles with each successful hit of this move and doubles again if Defense Curl was used previously by the user. If this move is called by Sleep Talk, the move is used for one turn. If this move hits an active Disguise during the effect, the power multiplier is paused but the turn counter is not, potentially allowing the multiplier to be used on the user's next move after this effect ends.",
 		},
@@ -3802,10 +3787,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Magnitude",
 		desc: "The power of this move varies; 5% chances for 10 and 150 power, 10% chances for 30 and 110 power, 20% chances for 50 and 90 power, and 30% chance for 70 power. Damage doubles if the target is using Dig.",
 		shortDesc: "Hits adjacent Pokemon. Power varies; 2x on Dig.",
-		gen4: {
-			desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
-			shortDesc: "100% chance lower adjacent Pkmn Speed by 1.",
-		},
 
 		activate: "  Magnitude [NUMBER]!",
 	},
@@ -5139,10 +5120,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Razor Wind",
 		desc: "This attack charges on the first turn and executes on the second.",
 		shortDesc: "Charges, then hits foe(s) turn 2.",
-		gen4: {
-			desc: "Has a 30% chance to confuse the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 70%.",
-			shortDesc: "30% chance to confuse target. Can't miss in rain.",
-		},
 		gen3: {
 			desc: "This attack charges on the first turn and executes on the second.",
 			shortDesc: "Charges, then hits foe(s) turn 2.",
@@ -5888,10 +5865,6 @@ export const MovesText: {[k: string]: MoveText} = {
 	slam: {
 		name: "Slam",
 		shortDesc: "No additional effect.",
-		gen4: {
-			desc: "Has a 100% chance to raise the user's Defense by 1 stage.",
-			shortDesc: "100% chance to raise the user's Defense by 1.",
-		},
 	},
 	slash: {
 		name: "Slash",
@@ -7450,10 +7423,6 @@ export const MovesText: {[k: string]: MoveText} = {
 	wingattack: {
 		name: "Wing Attack",
 		shortDesc: "No additional effect.",
-		gen4: {
-			desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit.",
-			shortDesc: "Hits 2 times in one turn.",
-		},
 	},
 	wish: {
 		name: "Wish",
@@ -7560,10 +7529,6 @@ export const MovesText: {[k: string]: MoveText} = {
 	zapcannon: {
 		name: "Zap Cannon",
 		shortDesc: "100% chance to paralyze.",
-		gen4: {
-			desc: "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.",
-			shortDesc: "User switches out after damaging the target.",
-		},
 	},
 	zenheadbutt: {
 		name: "Zen Headbutt",
