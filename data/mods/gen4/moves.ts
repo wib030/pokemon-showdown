@@ -2412,4 +2412,18 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		target: "normal",
 		type: "Psychic",
 	},
+	flipturn: {
+		num: 812,
+		accuracy: 100,
+		basePower: 60,
+		category: "Physical",
+		name: "Flip Turn",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		selfSwitch: true,
+		secondary: null,
+		target: "normal",
+		type: "Water",
+	},
 };

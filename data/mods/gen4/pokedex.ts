@@ -74,7 +74,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	flareon: {
 		inherit: true,
 		baseStats: {hp: 65, atk: 130, def: 60, spa: 95, spd: 110, spe: 85},
-		abilities: {0: "Rock Head"},
+		abilities: {0: "Fluffy Head"},
 	},
 	floatzel: {
 		inherit: true,

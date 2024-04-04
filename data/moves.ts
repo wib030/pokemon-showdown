@@ -22115,7 +22115,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Magic Eye",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1, metronome: 1},
+		flags: {protect: 1, mirror: 1, metronome: 1},
 		volatileStatus: 'disable',
 		//onTryHit(target) {
 			//if (!target.lastMove || target.lastMove.isZ || target.lastMove.isMax || target.lastMove.id === 'struggle') {
