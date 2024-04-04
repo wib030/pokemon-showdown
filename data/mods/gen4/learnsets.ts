@@ -23982,6 +23982,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			toxic: ["4M", "3M"],
 			trickroom: ["4M"],
 			zenheadbutt: ["4T"],
+			magiceye: ["4M"],
 		},
 	},
 	solrock: {

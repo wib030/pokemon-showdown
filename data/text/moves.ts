@@ -3917,10 +3917,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Mean Look",
 		desc: "Prevents the target from switching out. The target can still switch out if it uses Baton Pass. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field, unless it uses Baton Pass, in which case the target will remain trapped.",
 		shortDesc: "Prevents the target from switching out.",
-		gen4: {
-			desc: "Power doubles if the target is asleep. If the user has not fainted, the target wakes up.",
-			shortDesc: "Power doubles if target is asleep, and wakes it.",
-		},
 		gen7: {
 			desc: "Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
 		},
@@ -4117,10 +4113,6 @@ export const MovesText: {[k: string]: MoveText} = {
 	mindreader: {
 		name: "Mind Reader",
 		shortDesc: "The next move will not miss the target.",
-		gen4: {
-			desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
-			shortDesc: "100% chance to lower the foe(s) Speed by 1.",
-		},
 		gen2: {
 			desc: "The next accuracy check against the target succeeds. The target will still avoid Earthquake, Fissure, and Magnitude if it is using Fly. If the target leaves the field using Baton Pass, the replacement remains under this effect. This effect ends when the target leaves the field or an accuracy check is done against it.",
 			shortDesc: "The next move will not miss the target.",
@@ -5668,10 +5660,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Sheer Cold",
 		desc: "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. This attack's accuracy is equal to (user's level - target's level + 30)%, and fails if the target is at a higher level. Pokemon with the Sturdy Ability are immune.",
 		shortDesc: "OHKOs the target. Fails if user is a lower level.",
-		gen4: {
-			desc: "Has a 10% chance to freeze the target. If the weather is Hail, this move does not check accuracy.",
-			shortDesc: "10% chance to freeze foe(s). Can't miss in Hail.",
-		},
 	},
 	shellsidearm: {
 		name: "Shell Side Arm",
@@ -7551,5 +7539,25 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Peat Slide",
 		desc: "Has a 10% chance to confuse the target.",
 		shortDesc: "10% chance to confuse the target.",
+	},
+	psychicscream: {
+		name: "Psychic Scream",
+		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "100% chance to lower the foe(s) Speed by 1.",
+	},
+	peekaboo: {
+		name: "Peek-A-Boo",
+		desc: "Power doubles if the target is asleep. If the user has not fainted, the target wakes up.",
+		shortDesc: "Power doubles if target is asleep, and wakes it.",
+	},
+	hailcannon: {
+		name: "Hail Cannon",
+		desc: "Has a 10% chance to freeze the target. If the weather is Hail, this move does not check accuracy.",
+		shortDesc: "10% chance to freeze foe(s). Can't miss in Hail.",
+	},
+	magiceye: {
+		name: "Magic Eye",
+		desc: "For 4 turns, the target's last move used becomes disabled. Fails if one of the target's moves is already disabled, if the target has not made a move, if the target no longer knows the move, or if the move was a Max or G-Max Move.",
+		shortDesc: "For 4 turns, disables the target's last move used.",
 	},
 };

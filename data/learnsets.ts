@@ -41958,6 +41958,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			trickroom: ["8M", "7M", "6M", "5M", "4M"],
 			weatherball: ["8M"],
 			zenheadbutt: ["8M", "7T", "6T", "5T", "4T"],
+			magiceye: ["4M"],
 		},
 		eventData: [
 			{generation: 3, level: 10, moves: ["tackle", "harden", "confusion"], pokeball: "pokeball"},

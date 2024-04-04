@@ -1967,25 +1967,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		basePower: 60,
 	},
-	mindreader: {
-		num: 170,
-		accuracy: 100,
-		basePower: 60,
-		category: "Special",
-		name: "Mind Reader",
-		pp: 10,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
-		secondary: {
-			chance: 100,
-			boosts: {
-				spe: -1,
-			},
-		},
-		target: "allAdjacentFoes",
-		type: "Psychic",
-		contestType: "Clever",
-	},
 	aeroblast: {
 		num: 177,
 		accuracy: 100,
@@ -2000,27 +1981,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		target: "any",
 		type: "Flying",
 		contestType: "Cool",
-	},
-	meanlook: {
-		num: 212,
-		accuracy: 100,
-		basePower: 70,
-		basePowerCallback(pokemon, target, move) {
-			if (target.status === 'slp' || target.hasAbility('comatose')) {
-				this.debug('BP doubled on sleeping target');
-				return move.basePower * 2;
-			}
-			return move.basePower;
-		},
-		category: "Special",
-		name: "Mean Look",
-		pp: 10,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
-		secondary: null,
-		target: "normal",
-		type: "Ghost",
-		contestType: "Beautiful",
 	},
 	spiderweb: {
 		num: 169,
@@ -2060,101 +2020,12 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		accuracy: 80,
 	},
-	sheercold: {
-		num: 329,
-		accuracy: 70,
-		basePower: 110,
-		category: "Physical",
-		name: "Sheer Cold",
-		pp: 5,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
-		onModifyMove(move) {
-			if (this.field.isWeather(['hail', 'snow'])) move.accuracy = true;
-		},
-		secondary: {
-			chance: 10,
-			status: 'frz',
-		},
-		target: "normal",
-		type: "Ice",
-		contestType: "Beautiful",
-	},
 	poisonfang: {
 		inherit: true,
 		secondary: {
 			chance: 50,
 			status: 'tox',
 		},
-	},
-	miracleeye: {
-		num: 357,
-		accuracy: 100,
-		basePower: 70,
-		category: "Special",
-		name: "Miracle Eye",
-		pp: 10,
-		priority: 0,
-		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1, metronome: 1},
-		volatileStatus: 'disable',
-		onTryHit(target) {
-			if (!target.lastMove || target.lastMove.isZ || target.lastMove.isMax || target.lastMove.id === 'struggle') {
-				return false;
-			}
-		},
-		condition: {
-			duration: 5,
-			noCopy: true, // doesn't get copied by Baton Pass
-			onStart(pokemon, source, effect) {
-				// The target hasn't taken its turn, or Cursed Body activated and the move was not used through Dancer or Instruct
-				if (
-					this.queue.willMove(pokemon) ||
-					(pokemon === this.activePokemon && this.activeMove && !this.activeMove.isExternal)
-				) {
-					this.effectState.duration--;
-				}
-				if (!pokemon.lastMove) {
-					this.debug(`Pokemon hasn't moved yet`);
-					return false;
-				}
-				for (const moveSlot of pokemon.moveSlots) {
-					if (moveSlot.id === pokemon.lastMove.id) {
-						if (!moveSlot.pp) {
-							this.debug('Move out of PP');
-							return false;
-						}
-					}
-				}
-				if (effect.effectType === 'Ability') {
-					this.add('-start', pokemon, 'Disable', pokemon.lastMove.name, '[from] ability: Cursed Body', '[of] ' + source);
-				} else {
-					this.add('-start', pokemon, 'Disable', pokemon.lastMove.name);
-				}
-				this.effectState.move = pokemon.lastMove.id;
-			},
-			onResidualOrder: 17,
-			onEnd(pokemon) {
-				this.add('-end', pokemon, 'Disable');
-			},
-			onBeforeMovePriority: 7,
-			onBeforeMove(attacker, defender, move) {
-				if (!move.isZ && move.id === this.effectState.move) {
-					this.add('cant', attacker, 'Disable', move);
-					return false;
-				}
-			},
-			onDisableMove(pokemon) {
-				for (const moveSlot of pokemon.moveSlots) {
-					if (moveSlot.id === this.effectState.move) {
-						pokemon.disableMove(moveSlot.id);
-					}
-				}
-			},
-		},
-		secondary: null,
-		target: "normal",
-		type: "Psychic",
-		contestType: "Clever",
 	},
 	blizzard: {
 		inherit: true,
