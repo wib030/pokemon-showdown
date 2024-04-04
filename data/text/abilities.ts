@@ -210,6 +210,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		gen7: {
 			desc: "If Sunny Day is active, this Pokemon's Speed is doubled.",
 		},
+		gen4: {
+			desc: "If Sunny Day is active, this Pokemon's Speed is boosted by 1.5x. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+			shortDesc: "If Sunny Day is active, this Pokemon's Speed is boosted by 1.5x.",
+		},
 	},
 	clearbody: {
 		name: "Clear Body",
@@ -226,7 +230,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
 		shortDesc: "This Pokemon's type changes to the type of a move it's hit by, unless it has the type.",
 		gen4: {
-			desc: "This Pokemon's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies after each hit from a multi-hit move. This effect does not happen if this Pokemon did not lose HP from the attack.",
+			desc: "This Pokemon's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies before hit. This effect does not happen if this Pokemon did not lose HP from the attack.",
+			shortDesc: "This Pokemon's type changes to the type of a move it's hit by, unless it has the type.",
 		},
 	},
 	comatose: {
@@ -1888,6 +1893,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		shortDesc: "If Rain Dance is active, this Pokemon's Speed is doubled.",
 		gen7: {
 			desc: "If Rain Dance is active, this Pokemon's Speed is doubled.",
+		},
+		gen4: {
+			desc: "If Rain Dance is active, this Pokemon's Speed boosted by 1.5x. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+			shortDesc: "If Rain Dance is active, this Pokemon's Speed is boosted by 1.5x.",
 		},
 	},
 	swordofruin: {
