@@ -13011,7 +13011,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			toxic: ["4M", "3M"],
 			uproar: ["4T"],
 			uturn: ["4M"],
-			//peatslide: ["4M"],
+			peatslide: ["4M"],
 		},
 	},
 	spinarak: {
