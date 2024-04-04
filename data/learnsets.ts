@@ -24955,6 +24955,10 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			toxic: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			uproar: ["7T", "6T", "5T", "4T"],
 			uturn: ["7M", "6M", "5M", "4M"],
+			mudshot: ["4L22"],
+			fissure: ["4L30"],
+			spiderweb: ["4L40"],
+			airslash: ["4L42"],
 		},
 		encounters: [
 			{generation: 2, level: 7},
