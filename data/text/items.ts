@@ -2425,4 +2425,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Vile Vial",
 		desc: "If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.",
 	},
+	
+	//new items
+	gravityball: {
+		name: "Gravity Ball",
+		desc: "Holder's use of Gravity lasts 8 turns instead of 5.",
+	}
 };

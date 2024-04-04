@@ -5649,7 +5649,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	orbit: {
 		onStart(target) {
-			this.actions.useMove('gravity', target);
+			if (this.field.getPseudoWeather('gravity')) {
+				//do nothing
+			}
+			else {
+				this.actions.useMove('gravity', target);
+			}
 		},
 		flags: {},
 		name: "Orbit",
@@ -5658,7 +5663,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	magical: {
 		onStart(target) {
-			this.actions.useMove('magicroom', target);
+			if (this.field.getPseudoWeather('magicroom')) {
+				//do nothing
+			}
+			else {
+				this.actions.useMove('magicroom', target);
+			}
 		},
 		flags: {},
 		name: "Magical",
