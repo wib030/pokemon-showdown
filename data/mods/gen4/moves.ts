@@ -2413,7 +2413,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Psychic",
 	},
 	flipturn: {
-		num: 812,
+		num: 419,
 		accuracy: 100,
 		basePower: 60,
 		category: "Physical",
