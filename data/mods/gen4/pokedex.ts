@@ -1265,7 +1265,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		baseStats: {hp: 40, atk: 70, def: 40, spa: 75, spd: 40, spe: 60},
 	},
-	magmortar: {
+	magmar: {
 		inherit: true,
 		baseStats: {hp: 75, atk: 95, def: 87, spa: 125, spd: 105, spe: 83},
 	},
