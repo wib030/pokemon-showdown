@@ -6979,7 +6979,9 @@ const Learnsets = {
       toxic: ["4M", "3M"],
       visegrip: ["4L5", "3L12"],
       waterpulse: ["4M", "3M"],
-      xscissor: ["4M"]
+      xscissor: ["4M"],
+      watergun: ["4L1"],
+      aquajet: ["4L32"]
     }
   },
   kingler: {
@@ -7046,7 +7048,11 @@ const Learnsets = {
       toxic: ["4M", "3M"],
       visegrip: ["4L1", "3L1"],
       waterpulse: ["4M", "3M"],
-      xscissor: ["4M"]
+      xscissor: ["4M"],
+      watergun: ["4L1"],
+      hammerarm: ["4L1"],
+      aquajet: ["4L36"],
+      hailcannon: ["4L52"]
     }
   },
   voltorb: {
@@ -13095,7 +13101,11 @@ const Learnsets = {
       toxic: ["4M", "3M"],
       uproar: ["4T"],
       uturn: ["4M"],
-      peatslide: ["4M"]
+      peatslide: ["4L30"],
+      toxicspikes: ["4L18"],
+      mudshot: ["4L22"],
+      spiderweb: ["4L40"],
+      airslash: ["4L42"]
     }
   },
   spinarak: {
@@ -19040,7 +19050,9 @@ const Learnsets = {
       tickle: ["4E", "3E"],
       toxic: ["4M", "3M"],
       trick: ["4T", "4E", "3E"],
-      waterpulse: ["4M", "3M"]
+      waterpulse: ["4M", "3M"],
+      takedown: ["4L24"],
+      knockoff: ["4L27"]
     }
   },
   linoone: {
@@ -19112,7 +19124,16 @@ const Learnsets = {
       thunderwave: ["4M", "3T"],
       toxic: ["4M", "3M"],
       trick: ["4T"],
-      waterpulse: ["4M", "3M"]
+      waterpulse: ["4M", "3M"],
+      firepunch: ["4L1"],
+      icepunch: ["4L1"],
+      thunderpunch: ["4L1"],
+      pinmissile: ["4L1"],
+      sharpen: ["4L15"],
+      takedown: ["4L28"],
+      knockoff: ["4L33"],
+      flail: ["4L38"],
+      hailcannon: ["4L54"]
     }
   },
   wurmple: {
@@ -25062,7 +25083,10 @@ const Learnsets = {
       trick: ["4T", "4E", "3E"],
       trickroom: ["4M"],
       waterpulse: ["4M", "3M"],
-      uturn: ["4M"]
+      uturn: ["4M"],
+      detect: ["4L30"],
+      toxicspikes: ["4L46"],
+      psychicscream: ["4L48"]
     }
   },
   shuppet: {
@@ -26374,7 +26398,10 @@ const Learnsets = {
       waterfall: ["4M", "3M"],
       watergun: ["4L7", "3L12"],
       waterpulse: ["4M", "4L31", "3M"],
-      watersport: ["4E", "3E"]
+      watersport: ["4E", "3E"],
+      wish: ["4L13"],
+      hydropump: ["4L46"],
+      waterspout: ["4L48"]
     }
   },
   bagon: {
@@ -28525,7 +28552,10 @@ const Learnsets = {
       thunderbolt: ["4M"],
       thunderfang: ["4L29", "4E"],
       thunderwave: ["4M"],
-      toxic: ["4M"]
+      toxic: ["4M"],
+      thundershock: ["4L4"],
+      voltswitch: ["4L24"],
+      volttackle: ["4L48"]
     }
   },
   luxio: {
@@ -28573,7 +28603,10 @@ const Learnsets = {
       thunderbolt: ["4M"],
       thunderfang: ["4L33"],
       thunderwave: ["4M"],
-      toxic: ["4M"]
+      toxic: ["4M"],
+      thundershock: ["4L1"],
+      voltswitch: ["4L31"],
+      volttackle: ["4L68"]
     }
   },
   luxray: {
@@ -28624,7 +28657,10 @@ const Learnsets = {
       thunderbolt: ["4M"],
       thunderfang: ["4L35"],
       thunderwave: ["4M"],
-      toxic: ["4M"]
+      toxic: ["4M"],
+      thundershock: ["4L1"],
+      voltswitch: ["4L33"],
+      volttackle: ["4L52"]
     }
   },
   cranidos: {
@@ -29797,7 +29833,11 @@ const Learnsets = {
       thunderwave: ["4M"],
       toxic: ["4M"],
       uproar: ["4T"],
-      waterpulse: ["4M"]
+      waterpulse: ["4M"],
+      doublekick: ["4L20"],
+      headbutt: ["4L32"],
+      uturn: ["4L40"],
+      flatter: ["4L44"]
     }
   },
   lopunny: {
@@ -29867,7 +29907,15 @@ const Learnsets = {
       thunderwave: ["4M"],
       toxic: ["4M"],
       uproar: ["4T"],
-      waterpulse: ["4M"]
+      waterpulse: ["4M"],
+      mefirst: ["4L12"],
+      doublekick: ["4L20"],
+      fakeout: ["4L26"],
+      headbutt: ["4L32"],
+      uturn: ["4L40"],
+      flatter: ["4L44"],
+      highjumpkick: ["4L46"],
+      closecombat: ["4L54"]
     }
   },
   glameow: {
@@ -31214,7 +31262,9 @@ const Learnsets = {
       waterfall: ["4M"],
       watergun: ["4L6"],
       waterpulse: ["4M", "4L22"],
-      whirlpool: ["4L38"]
+      whirlpool: ["4L38"],
+      rapidspin: ["4L35"],
+      tailwind: ["4L49"]
     }
   },
   lumineon: {
@@ -31266,7 +31316,9 @@ const Learnsets = {
       waterfall: ["4M"],
       watergun: ["4L1"],
       waterpulse: ["4M", "4L22"],
-      whirlpool: ["4L42"]
+      whirlpool: ["4L42"],
+      rapidspin: ["4L38"],
+      tailwind: ["4L59"]
     }
   },
   snover: {

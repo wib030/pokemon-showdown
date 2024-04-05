@@ -2399,7 +2399,7 @@ const Moves = {
     contestType: "Clever"
   },
   voltswitch: {
-    num: 521,
+    num: 419,
     accuracy: 100,
     basePower: 70,
     category: "Special",
@@ -2414,7 +2414,7 @@ const Moves = {
     contestType: "Cool"
   },
   hurricane: {
-    num: 542,
+    num: 419,
     accuracy: 70,
     basePower: 110,
     category: "Special",
@@ -2443,7 +2443,7 @@ const Moves = {
     contestType: "Tough"
   },
   bulldoze: {
-    num: 523,
+    num: 419,
     accuracy: 100,
     basePower: 60,
     category: "Physical",
@@ -2462,7 +2462,7 @@ const Moves = {
     contestType: "Tough"
   },
   drillrun: {
-    num: 529,
+    num: 419,
     accuracy: 95,
     basePower: 80,
     category: "Physical",
@@ -2477,7 +2477,7 @@ const Moves = {
     contestType: "Tough"
   },
   iciclecrash: {
-    num: 556,
+    num: 419,
     accuracy: 90,
     basePower: 85,
     category: "Physical",
@@ -2494,7 +2494,7 @@ const Moves = {
     contestType: "Beautiful"
   },
   wavecrash: {
-    num: 834,
+    num: 419,
     accuracy: 100,
     basePower: 120,
     category: "Physical",
@@ -2508,7 +2508,7 @@ const Moves = {
     type: "Water"
   },
   dualwingbeat: {
-    num: 814,
+    num: 419,
     accuracy: 90,
     basePower: 40,
     category: "Physical",
@@ -2523,7 +2523,7 @@ const Moves = {
     maxMove: { basePower: 130 }
   },
   psyshieldbash: {
-    num: 828,
+    num: 419,
     accuracy: 90,
     basePower: 70,
     category: "Physical",

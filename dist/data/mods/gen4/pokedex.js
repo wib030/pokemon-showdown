@@ -745,6 +745,7 @@ const Pokedex = {
   togetic: {
     inherit: true,
     types: ["Normal", "Flying"],
+    baseStats: { hp: 65, atk: 70, def: 105, spa: 80, spd: 115, spe: 40 },
     abilities: { 0: "Super Luck", 1: "Serene Grace" }
   },
   togepi: {
@@ -1265,6 +1266,34 @@ const Pokedex = {
   drifblim: {
     inherit: true,
     baseStats: { hp: 150, atk: 80, def: 64, spa: 90, spd: 74, spe: 80 }
+  },
+  shelgon: {
+    inherit: true,
+    baseStats: { hp: 65, atk: 95, def: 130, spa: 60, spd: 100, spe: 50 }
+  },
+  vibrava: {
+    inherit: true,
+    baseStats: { hp: 50, atk: 100, def: 50, spa: 80, spd: 50, spe: 80 }
+  },
+  wartortle: {
+    inherit: true,
+    baseStats: { hp: 59, atk: 63, def: 100, spa: 65, spd: 100, spe: 58 }
+  },
+  pupitar: {
+    inherit: true,
+    baseStats: { hp: 70, atk: 84, def: 110, spa: 65, spd: 90, spe: 51 }
+  },
+  riolu: {
+    inherit: true,
+    baseStats: { hp: 40, atk: 70, def: 40, spa: 75, spd: 40, spe: 60 }
+  },
+  magmar: {
+    inherit: true,
+    baseStats: { hp: 75, atk: 95, def: 87, spa: 125, spd: 105, spe: 83 }
+  },
+  unown: {
+    inherit: true,
+    baseStats: { hp: 48, atk: 72, def: 48, spa: 72, spd: 48, spe: 72 }
   }
 };
 //# sourceMappingURL=pokedex.js.map

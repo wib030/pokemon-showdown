@@ -1220,12 +1220,7 @@ const Learnsets = {
       thief: ["4M", "3M"],
       toxic: ["4M", "3M"],
       twister: ["4T"],
-      uturn: ["4M"],
-      taunt: ["4M"],
-      torment: ["4M"],
-      snatch: ["4M"],
-      payback: ["4M"],
-      darkpulse: ["4M"]
+      uturn: ["4M"]
     }
   },
   ekans: {
@@ -7020,50 +7015,47 @@ const Learnsets = {
     inherit: true,
     learnset: {
       charge: ["4L1", "3L1"],
-      chargebeam: ["4M", "4L16"],
+      chargebeam: ["4M", "4L26"],
       doubleteam: ["4M", "3M"],
       endure: ["4M", "3T"],
-      explosion: ["4M", "4L41", "3T", "3L46"],
+      explosion: ["4M", "4L43", "3T", "3L46"],
       facade: ["4M", "3M"],
       flash: ["4M", "3M"],
       frustration: ["4M", "3M"],
-      gyroball: ["4M", "4L46"],
+      gyroball: ["4M", "4L40"],
       hiddenpower: ["4M", "3M"],
-      lightscreen: ["4M", "4L29", "3M", "3L37"],
-      magnetrise: ["4T", "4L32"],
+      lightscreen: ["4M", "4L22", "3M", "3L37"],
+      magnetrise: ["4T", "4L36"],
       mimic: ["3T"],
-      mirrorcoat: ["4L50", "3L49", "3S0"],
+      mirrorcoat: ["4L47", "3L49", "3S0"],
       naturalgift: ["4M"],
       protect: ["4M", "3M"],
       raindance: ["4M", "3M"],
       refresh: ["3S0"],
       rest: ["4M", "3M"],
       return: ["4M", "3M"],
-      rollout: ["4T", "4L11", "3T", "3L32"],
-      screech: ["4L13", "3L8"],
+      rollout: ["4T", "4L15", "3T", "3L32"],
+      screech: ["4L19", "3L8"],
       secretpower: ["4M", "3M"],
-      selfdestruct: ["4L26", "3T", "3L27"],
-      shockwave: ["4M", "4L22", "3M"],
+      selfdestruct: ["4L29", "3T", "3L27"],
+      shockwave: ["4M", "3M"],
       signalbeam: ["4T"],
       sleeptalk: ["4M", "3T"],
       snore: ["4T", "3T"],
       sonicboom: ["4L8", "3L15"],
-      spark: ["4L9", "3L21", "3S0"],
+      spark: ["4L12", "3L21", "3S0"],
       substitute: ["4M", "3T"],
       suckerpunch: ["4T"],
       swagger: ["4M", "3T"],
-      swift: ["4T", "4L20", "3T", "3L42", "3S0"],
-      tackle: ["4L1", "3L1"],
+      swift: ["4T", "4L33", "3T", "3L42", "3S0"],
+      tackle: ["4L5", "3L1"],
       taunt: ["4M", "3M"],
       thief: ["4M", "3M"],
       thunder: ["4M", "3M"],
-      thundershock: ["4L4"],
       thunderbolt: ["4M", "3M"],
       thunderwave: ["4M", "3T"],
       torment: ["4M", "3M"],
-      toxic: ["4M", "3M"],
-      voltswitch: ["4L35"],
-      discharge: ["4L37"]
+      toxic: ["4M", "3M"]
     }
   },
   electrode: {
@@ -7111,9 +7103,7 @@ const Learnsets = {
       thunderbolt: ["4M", "3M"],
       thunderwave: ["4M", "3T"],
       torment: ["4M", "3M"],
-      toxic: ["4M", "3M"],
-      uturn: ["4M"],
-      surf: ["4M"]
+      toxic: ["4M", "3M"]
     }
   },
   exeggcute: {
@@ -10489,9 +10479,7 @@ const Learnsets = {
       toxic: ["4M", "3M"],
       trick: ["4T"],
       trickroom: ["4M"],
-      zenheadbutt: ["4T"],
-      flamethrower: ["4M"],
-      fireblast: ["4M"]
+      zenheadbutt: ["4T"]
     }
   },
   umbreon: {
@@ -16834,8 +16822,7 @@ const Learnsets = {
       swift: ["4T", "3T"],
       thief: ["4M", "3M"],
       toxic: ["4M", "3M"],
-      waterpulse: ["4M", "3M"],
-      roost: ["4M"]
+      waterpulse: ["4M", "3M"]
     }
   },
   mantyke: {
@@ -25762,9 +25749,7 @@ const Learnsets = {
       taunt: ["4M", "3M"],
       torment: ["4M", "3M"],
       toxic: ["4M", "3M"],
-      waterpulse: ["4M", "3M"],
-      uturn: ["4M"],
-      stealthrock: ["4M"]
+      waterpulse: ["4M", "3M"]
     }
   },
   froslass: {
