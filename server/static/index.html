@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <script>
 var suffix = (document.location.port != '8000' ? '-' + (document.location.port || '80') : '');
-var port = location.hostname === '74.208.90.104' ? "?port=" + document.location.port : "";
+var port = location.hostname === 'localhost' ? "?port=" + document.location.port : "";
 document.location.replace(
-	'http://' + document.location.hostname + document.location.pathname + port //suffix + '.psim.us' +
+	'http://74.208.90.104:8000' //+ document.location.hostname + suffix + '.psim.us' + document.location.pathname + port
 );
 </script>
 <p>This is a <a href="http://www.pokemonshowdown.com">Pok&eacute;mon Showdown</a> server!</p>
