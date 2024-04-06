@@ -28989,7 +28989,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			toxicspikes: ["4L20"],
 			rapidspin: ["4L29"],
 			spiderweb: ["4L32"],
-			bugbuzz: ["4L50"],
+			bugbuzz: ["4L49"],
 		},
 	},
 	wormadamsandy: {
