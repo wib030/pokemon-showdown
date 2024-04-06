@@ -22090,7 +22090,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hailcannon: {
 		num: -4,
 		accuracy: 70,
-		basePower: 110,
+		basePower: 100,
 		category: "Physical",
 		name: "Hail Cannon",
 		pp: 5,
@@ -22110,7 +22110,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	magiceye: {
 		num: -5,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 40,
 		category: "Special",
 		name: "Magic Eye",
 		pp: 10,

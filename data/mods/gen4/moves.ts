@@ -512,9 +512,13 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		condition: {
 			duration: 5,
 			durationCallback(target, source, effect) {
-				if (source?.hasItem('gravityball')) {
+				if (source?.hasItem('gravityball') && (!source?.hasAbility('orbit'))) { 
 					this.add('-message', "Gravity Ball extended Gravity to 8 turns!");
 					return 8;
+				}
+				if (source?.hasAbility('orbit')) {
+					this.add('-message', "Orbit's Gravity only lasts 4 turns.");
+					return 4;
 				}
 				return 5;
 			},

@@ -668,7 +668,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	stantler: {
 		inherit: true,
 		types: ["Normal", "Ice"],
-		baseStats: {hp: 93, atk: 105, def: 82, spa: 105, spd: 85, spe: 109},
+		baseStats: {hp: 83, atk: 105, def: 82, spa: 105, spd: 85, spe: 109},
 		abilities: {0: "Intimidate", 1: "Snow Warning"},
 	},
 	staraptor: {
@@ -864,7 +864,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	abomasnow: {
 		inherit: true,
-		baseStats: {hp: 100, atk: 102, def: 95, spa: 122, spd: 125, spe: 85},
+		baseStats: {hp: 100, atk: 97, def: 95, spa: 102, spd: 125, spe: 85},
 	},
 	volbeat: {
 		inherit: true,

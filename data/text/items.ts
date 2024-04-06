@@ -2429,6 +2429,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 	//new items
 	gravityball: {
 		name: "Gravity Ball",
-		desc: "Holder's use of Gravity lasts 8 turns instead of 5.",
+		desc: "Holder's use of Gravity lasts 8 turns instead of 5. (Excludes Orbit)",
 	}
 };
