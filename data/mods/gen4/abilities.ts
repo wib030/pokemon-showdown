@@ -55,7 +55,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	},
 	colorchange: {
 		inherit: true,
-		onTryMove(target, source, move) {
+		onTryHit(target, source, move) {
 			if (!target.hp) return;
 			const type = move.type;
 			if (
