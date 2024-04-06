@@ -1924,14 +1924,14 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	aurasphere: {
 		inherit: true,
 		basePower: 95,
-		onModifyMovePriority: -5,
-		onModifyMove(move) {
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
-				move.ignoreImmunity['Fighting'] = true;
-				move.ignoreImmunity['Normal'] = true;
-			}
-		},
+		//onModifyMovePriority: -5,
+		//onModifyMove(move) {
+		//	if (!move.ignoreImmunity) move.ignoreImmunity = {};
+		//	if (move.ignoreImmunity !== true) {
+		//		move.ignoreImmunity['Fighting'] = true;
+		//		move.ignoreImmunity['Normal'] = true;
+		//	}
+		//},
 	},
 	airslash: {
 		inherit: true,

@@ -23734,7 +23734,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			workup: ["7M"],
 			worryseed: ["7T", "6T", "5T", "4T"],
 			zenheadbutt: ["9M"],
-			spikes: ["4M"],
+			spikes: ["4L32"],
 		},
 		eventData: [
 			{generation: 6, level: 50, isHidden: true, moves: ["solarbeam", "sunnyday", "synthesis", "bodyslam"], pokeball: "pokeball"},

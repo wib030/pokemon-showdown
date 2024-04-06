@@ -266,7 +266,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	ledian: {
 		inherit: true,
 		types: ["Bug", "Ground"],
-		baseStats: {hp: 95, atk: 35, def: 70, spa: 55, spd: 150, spe: 85},
+		baseStats: {hp: 85, atk: 20, def: 55, spa: 40, spd: 120, spe: 55},
 		abilities: {0: "Early Bird"},
 	},
 	lickilicky: {

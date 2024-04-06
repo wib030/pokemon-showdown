@@ -12246,7 +12246,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			tackle: ["4L1", "3L1"],
 			toxic: ["4M", "3M"],
 			worryseed: ["4T"],
-			spikes: ["4M"],
+			spikes: ["4L32"],
 		},
 	},
 	cyndaquil: {
