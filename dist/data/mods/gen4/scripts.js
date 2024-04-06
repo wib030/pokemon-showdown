@@ -46,7 +46,6 @@ const Scripts = {
       baseDamage += 2;
       const isCrit = target.getMoveHitData(move).crit;
       if (isCrit) {
-        baseDamage = this.battle.modify(baseDamage, move.critModifier || 1.5);
       }
       baseDamage = Math.floor(this.battle.runEvent("ModifyDamagePhase2", pokemon, target, move, baseDamage));
       baseDamage = this.battle.randomizer(baseDamage);

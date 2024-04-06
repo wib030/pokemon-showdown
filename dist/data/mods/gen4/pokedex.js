@@ -289,7 +289,7 @@ const Pokedex = {
   ledian: {
     inherit: true,
     types: ["Bug", "Ground"],
-    baseStats: { hp: 95, atk: 35, def: 70, spa: 55, spd: 150, spe: 85 },
+    baseStats: { hp: 85, atk: 20, def: 55, spa: 40, spd: 120, spe: 55 },
     abilities: { 0: "Early Bird" }
   },
   lickilicky: {
@@ -502,6 +502,7 @@ const Pokedex = {
   phione: {
     inherit: true,
     baseStats: { hp: 1, atk: 80, def: 80, spa: 80, spd: 80, spe: 80 },
+    maxHP: 1,
     abilities: { 0: "Reckless" }
   },
   pidgeot: {

@@ -21082,7 +21082,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			laserfocus: ["7T"],
 			lastresort: ["9L55", "8L55", "7T", "7L41", "6T", "6L41", "5T", "5L41", "4T", "4L50"],
 			mirrorcoat: ["9L45", "8L45", "7L33", "6L33", "5L33", "4L57"],
-			mudshot: ["9M"],
+			mudshot: ["9M", "4L25"],
 			mudslap: ["9M", "4T"],
 			naturalgift: ["4M"],
 			payday: ["8M"],
@@ -21119,7 +21119,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			weatherball: ["9M", "8M"],
 			workup: ["8M", "7M", "5M"],
 			aurorabeam: ["4L30"],
-			mudshot: ["4L25"],
 			wish: ["4L1"],
 		},
 		eventData: [
@@ -31610,7 +31609,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			weatherball: ["9M", "8M"],
 			roost: ["4M"],
 			peck: ["4L5"],
-			headbutt: ["4L35"],
 			psychicscream: ["4L50"],
 		},
 		eventData: [
@@ -49120,7 +49118,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			trailblaze: ["9M"],
 			wideguard: ["9L1"],
 			recover: ["4L45"],
-			metalburst: ["4L30"],
 			rockwrecker: ["4L55"],
 			psychoshift: ["4L32"],
 			psyshieldbash: ["4L38"],

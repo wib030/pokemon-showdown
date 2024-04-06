@@ -294,10 +294,10 @@ const MovesText = {
   },
   aurasphere: {
     name: "Aura Sphere",
-    shortDesc: "This move does not check accuracy.",
-    gen4: {
-      shortDesc: "Hits Ghost type, does not check accuracy."
-    }
+    shortDesc: "This move does not check accuracy."
+    //gen4: {
+    //	shortDesc: "Hits Ghost type, does not check accuracy.",
+    //},
   },
   aurawheel: {
     name: "Aura Wheel",
