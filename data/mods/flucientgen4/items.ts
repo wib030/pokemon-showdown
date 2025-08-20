@@ -129,22 +129,6 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 			}
 		},
 	},
-	assaultvest: {
-		inherit: true,
-		gen: 4,
-	},
-	weaknesspolicy: {
-		inherit: true,
-		gen: 4,
-	},
-	redcard: {
-		inherit: true,
-		gen: 4,
-	},
-	airballoon: {
-		inherit: true,
-		gen: 4,
-	},
 	liechiberry: {
 		inherit: true,
 		onEat(pokemon) {

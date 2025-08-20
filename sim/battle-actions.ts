@@ -868,6 +868,9 @@ export class BattleActions {
 					}
 				} else {
 					targetHits = this.battle.sample([2, 2, 2, 3, 3, 3, 4, 5]);
+					if (pokemon.hasItem('threefourfivedice')) {
+						targetHits = this.battle.sample([3, 4, 5]);
+					}
 				}
 			} else {
 				targetHits = this.battle.random(targetHits[0], targetHits[1] + 1);

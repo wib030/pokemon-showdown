@@ -2437,4 +2437,14 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Vile Vial",
 		shortDesc: "If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.",
 	},
+	
+	// New items
+	loadedgloves: {
+		name: "Loaded Gloves",
+		shortDesc: "Holder's punch-based attacks have 1.2x power and do not make contact.",
+	},
+	threefourfivedice: {
+		name: "Three-Four-Five Dice",
+		shortDesc: "Holder's moves that hit 2-5 times hit 3-5 times.",
+	},
 };

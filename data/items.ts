@@ -206,7 +206,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		num: 541,
-		gen: 5,
+		gen: 4,
 	},
 	alakazite: {
 		name: "Alakazite",
@@ -331,7 +331,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		num: 640,
-		gen: 6,
+		gen: 4,
 	},
 	audinite: {
 		name: "Audinite",
@@ -4793,7 +4793,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		num: 542,
-		gen: 5,
+		gen: 4,
 	},
 	redorb: {
 		name: "Red Orb",
@@ -7158,7 +7158,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			spa: 2,
 		},
 		num: 639,
-		gen: 6,
+		gen: 4,
 	},
 	wellspringmask: {
 		name: "Wellspring Mask",
@@ -7695,5 +7695,40 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -2,
 		gen: 8,
 		isNonstandard: "CAP",
+	},
+	loadedgloves: {
+		name: "Loaded Gloves",
+		spritenum: 749,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['punch']) {
+				this.debug('Punching Glove boost');
+				return this.chainModify(1.2);
+			}
+		},
+		onModifyMovePriority: 1,
+		onModifyMove(move) {
+			if (move.flags['punch']) delete move.flags['contact'];
+		},
+		num: -3,
+		gen: 4,
+	},
+	threefourfivedice: {
+		name: "Three-Four-Five Dice",
+		spritenum: 751,
+		fling: {
+			basePower: 30,
+		},
+		// partially implemented in sim/battle-actions.ts:BattleActions#hitStepMoveHitLoop
+		onModifyMove(move) {
+			if (move.multiaccuracy) {
+				delete move.multiaccuracy;
+			}
+		},
+		num: -4,
+		gen: 4,
 	},
 };
