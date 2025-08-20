@@ -1438,13 +1438,13 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		shortDesc: "A Poke Ball that provides a better catch rate at the start of a wild encounter.",
 	},
 	quickclaw: {
-		name: "Ugly Claw",
-		shortDesc: "Each turn, holder has a 10% chance to move first in its priority bracket.",
+		name: "Quick Claw",
+		shortDesc: "Each turn, holder has a 20% chance to move first in its priority bracket.",
 		gen2: {
 			shortDesc: "Each turn, holder has a ~23.4% chance to move first in its priority bracket.",
 		},
 
-		activate: "  [POKEMON] can act faster than normal, thanks to its Ugly Claw!",
+		activate: "  [POKEMON] can act faster than normal, thanks to its Quick Claw!",
 	},
 	quickpowder: {
 		name: "Quick Powder",
