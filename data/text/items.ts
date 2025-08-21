@@ -1778,7 +1778,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		shortDesc: "Raises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use.",
 		
 		gen4: {
-			shortDesc: "Raises one random stat by 2, and another random stat by 1 when at 1/4 max HP or less (not acc/eva). Single use.",
+			desc: "Raises one random stat by 2, and another random stat by 1 when at 1/4 max HP or less (not acc/eva). Single use.",
 		},
 	},
 	starsweet: {
