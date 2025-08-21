@@ -176,8 +176,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 				this.boost(boost);
 				
 				const randomStat2 = this.sample(stats);
-				boost[randomStat2] = 1;
-				this.boost(boost);
+				const boost2: SparseBoostsTable = {};
+				boost2[randomStat2] = 1;
+				this.boost(boost2);
 			}
 		},
 	},
