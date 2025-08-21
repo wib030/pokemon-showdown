@@ -25,7 +25,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Adamant Orb",
 		shortDesc: "If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.",
 		
-		flucientgen4: {
+		gen4: {
 			shortDesc: "If held by a Dialga, its Steel- and Dragon-type attacks have 1.3x power.",
 		},
 	},
@@ -78,7 +78,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Apicot Berry",
 		shortDesc: "Raises holder's Sp. Def by 1 stage when at 1/4 max HP or less. Single use.",
 		
-		flucientgen4: {
+		gen4: {
 			shortDesc: "Raises holder's Sp. Def by 2 stages when at 1/4 max HP or less. Single use.",
 		},
 	},
@@ -199,7 +199,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		gen2: {
 			shortDesc: "An attack against the holder has its accuracy out of 255 lowered by 20.",
 		},
-		flucientgen4: {
+		gen4: {
 			shortDesc: "The accuracy of attacks against the holder is 0.92x.",
 		},
 	},
@@ -676,7 +676,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Ganlon Berry",
 		shortDesc: "Raises holder's Defense by 1 stage when at 1/4 max HP or less. Single use.",
 		
-		flucientgen4: {
+		gen4: {
 			shortDesc: "Raises holder's Defense by 2 stages when at 1/4 max HP or less. Single use.",
 		},
 	},
@@ -754,9 +754,6 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Griseous Orb",
 		shortDesc: "If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.",
 		gen4: {
-			shortDesc: "Can only be held by Giratina. Its Ghost- & Dragon-type attacks have 1.2x power.",
-		},
-		flucientgen4: {
 			shortDesc: "Can only be held by Giratina. Its Ghost- & Dragon-type attacks have 1.3x power.",
 		},
 	},
@@ -893,7 +890,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Jaboca Berry",
 		shortDesc: "If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.",
 		
-		flucientgen4: {
+		gen4: {
 			shortDesc: "If holder is hit by a physical move, attacker loses 1/3 of its max HP. Single use.",
 		},
 	},
@@ -985,7 +982,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Liechi Berry",
 		shortDesc: "Raises holder's Attack by 1 stage when at 1/4 max HP or less. Single use.",
 		
-		flucientgen4: {
+		gen4: {
 			shortDesc: "Raises holder's Attack by 2 stages when at 1/4 max HP or less. Single use.",
 		},
 	},
@@ -1064,7 +1061,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Lustrous Orb",
 		shortDesc: "If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.",
 		
-		flucientgen4: {
+		gen4: {
 			shortDesc: "If held by a Palkia, its Water- and Dragon-type attacks have 1.3x power.",
 		},
 	},
@@ -1326,7 +1323,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Petaya Berry",
 		shortDesc: "Raises holder's Sp. Atk by 1 stage when at 1/4 max HP or less. Single use.",
 		
-		flucientgen4: {
+		gen4: {
 			shortDesc: "Raises holder's Sp. Atk by 2 stages when at 1/4 max HP or less. Single use.",
 		},
 	},
@@ -1477,7 +1474,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		gen2: {
 			shortDesc: "Each turn, holder has a ~23.4% chance to move first in its priority bracket.",
 		},
-		flucientgen4: {
+		gen4: {
 			shortDesc: "Each turn, holder has a 10% chance to move first in its priority bracket.",
 		},
 
@@ -1588,7 +1585,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Rowap Berry",
 		shortDesc: "If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.",
 		
-		flucientgen4: {
+		gen4: {
 			shortDesc: "If holder is hit by a special move, attacker loses 1/3 of its max HP. Single use.",
 		},
 	},
@@ -1626,7 +1623,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Salac Berry",
 		shortDesc: "Raises holder's Speed by 1 stage when at 1/4 max HP or less. Single use.",
 		
-		flucientgen4: {
+		gen4: {
 			shortDesc: "Raises holder's Speed by 2 stages when at 1/4 max HP or less. Single use.",
 		},
 	},
@@ -1693,7 +1690,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		gen3: {
 			shortDesc: "Holder's Normal-type attacks have 1.1x power.",
 		},
-		flucientgen4: {
+		gen4: {
 			shortDesc: "Holder's Normal-type attacks have 1.3x power.",
 		},
 	},
@@ -1780,7 +1777,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Starf Berry",
 		shortDesc: "Raises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use.",
 		
-		flucientgen4: {
+		gen4: {
 			shortDesc: "Raises one random stat by 2, and another random stat by 1 when at 1/4 max HP or less (not acc/eva). Single use.",
 		},
 	},
@@ -2421,7 +2418,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Zoom Lens",
 		shortDesc: "The accuracy of attacks by the holder is 1.2x if it moves after its target.",
 		
-		flucientgen4: {
+		gen4: {
 			shortDesc: "The accuracy of attacks by the holder is 1.3x if it moves after its target.",
 		},
 	},
