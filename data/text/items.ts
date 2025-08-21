@@ -1478,7 +1478,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 			shortDesc: "Each turn, holder has a ~23.4% chance to move first in its priority bracket.",
 		},
 		flucientgen4: {
-			"Each turn, holder has a 10% chance to move first in its priority bracket.",
+			shortDesc: "Each turn, holder has a 10% chance to move first in its priority bracket.",
 		},
 
 		activate: "  [POKEMON] can act faster than normal, thanks to its Quick Claw!",
