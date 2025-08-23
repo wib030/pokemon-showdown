@@ -6,6 +6,14 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 				return this.chainModify(1.3);
 			}
 		},
+		fling: {
+			effect: function() {
+				this.field.addPseudoWeather('trickroom');
+				onModifyPriority(priority, pokemon, target, move) {
+					return -7;
+				},
+			},
+		},
 	},
 	bigroot: {
 		inherit: true,
@@ -280,6 +288,11 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 			if (move && user.species.name === 'Palkia' && (move.type === 'Water' || move.type === 'Dragon')) {
 				return this.chainModify(1.3);
 			}
+		},
+		fling: {
+			effect: function() {
+				this.field.addPseudoWeather('gravity');
+			},
 		},
 	},
 	meadowplate: {
