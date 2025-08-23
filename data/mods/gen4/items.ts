@@ -565,7 +565,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		fling: {
 			basePower: 60,
-			effect = function() {
+			effect: function() {
 				this.field.setWeather('raindance');
 			},
 		},
@@ -574,7 +574,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		fling: {
 			basePower: 60,
-			effect = function() {
+			effect: function() {
 				this.field.setWeather('sunnyday');
 			},
 		},
@@ -583,7 +583,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		fling: {
 			basePower: 60,
-			effect = function() {
+			effect: function() {
 				this.field.setWeather('sandstorm');
 			},
 		},
@@ -592,7 +592,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		fling: {
 			basePower: 60,
-			effect = function() {
+			effect: function() {
 				this.field.setWeather('hail');
 			},
 		},
