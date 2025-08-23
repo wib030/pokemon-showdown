@@ -5956,7 +5956,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (!item.fling) return false;
 			move.basePower = item.fling.basePower;
 			this.debug(`BP: ${move.basePower}`);
-			if (item === 'adamantorb') {
+			if (item.id === 'adamantorb') {
 				move.priority = -7;
 			};
 			if (item.isBerry) {
