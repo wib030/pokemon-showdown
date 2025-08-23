@@ -137,22 +137,6 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		inherit: true,
 		counterMax: 8,
 	},
-	raindance: {
-		inherit: true,
-		onFieldResidualOrder: 8,
-	},
-	sunnyday: {
-		inherit: true,
-		onFieldResidualOrder: 8,
-	},
-	sandstorm: {
-		inherit: true,
-		onFieldResidualOrder: 8,
-	},
-	hail: {
-		inherit: true,
-		onFieldResidualOrder: 8,
-	},
 	// Arceus's true typing for all its formes is Normal, and it's only Multitype
 	// that changes its type, but its formes are specified to be their corresponding
 	// type in the Pokedex, so that needs to be overridden. Without Multitype it
