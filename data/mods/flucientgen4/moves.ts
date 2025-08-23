@@ -878,14 +878,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		},
 	},
 	knockoff: {
-		num: 282,
-		accuracy: 100,
+		inherit: true,
 		basePower: 65,
-		category: "Physical",
-		name: "Knock Off",
-		pp: 20,
-		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		onBasePower(basePower, source, target, move) {
 			const item = target.getItem();
 			if (!target.item || target.itemState.knockedOff) return;
@@ -909,10 +903,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.hint("In Gens 3-4, Knock Off only makes the target's item unusable; it cannot obtain a new item.", true);
 			}
 		},
-		secondary: null,
-		target: "normal",
-		type: "Dark",
-		contestType: "Clever",
 	},
 	lastresort: {
 		inherit: true,
