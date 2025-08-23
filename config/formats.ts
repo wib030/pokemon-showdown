@@ -28,40 +28,40 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	},
 	{
 		name: "[Gen 4] Random Battle",
-		mod: 'flucientgen4',
+		mod: 'gen4',
 		team: 'random',
 		bestOfDefault: true,
 		ruleset: ['Obtainable', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod'],
 	},
 	{
 		name: "[Gen 4] Ubers",
-		mod: 'flucientgen4',
+		mod: 'gen4',
 		ruleset: ['Standard'],
 		banlist: ['AG'],
 	},
 	{
 		name: "[Gen 4] OU",
-		mod: 'flucientgen4',
+		mod: 'gen4',
 		ruleset: ['Standard', 'Evasion Abilities Clause', 'Baton Pass Stat Trap Clause', 'Freeze Clause Mod'],
 		banlist: ['AG', 'Uber', 'Arena Trap', 'Quick Claw', 'Soul Dew', 'Swagger'],
 	},
 	{
 		name: "[Gen 4] UU",
-		mod: 'flucientgen4',
+		mod: 'gen4',
 		ruleset: ['[Gen 4] OU', '!Baton Pass Stat Trap Clause', '!Freeze Clause Mod'],
 		banlist: ['OU', 'UUBL', 'Baton Pass'],
 		unbanlist: ['Arena Trap', 'Snow Cloak', 'Quick Claw', 'Swagger'],
 	},
 	{
 		name: "[Gen 4] NU",
-		mod: 'flucientgen4',
+		mod: 'gen4',
 		ruleset: ['[Gen 4] UU', 'Baton Pass Clause'],
 		banlist: ['UU', 'NUBL'],
 		unbanlist: ['Sand Veil', 'Baton Pass'],
 	},
 	{
 		name: "[Gen 4] LC",
-		mod: 'flucientgen4',
+		mod: 'gen4',
 		ruleset: ['Standard', 'Little Cup', 'Evasion Abilities Clause', 'Sleep Moves Clause'],
 		banlist: [
 			'Meditite', 'Misdreavus', 'Murkrow', 'Scyther', 'Sneasel', 'Tangela', 'Yanma',
@@ -70,12 +70,12 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	},
 	{
 		name: "[Gen 4] Anything Goes",
-		mod: 'flucientgen4',
+		mod: 'gen4',
 		ruleset: ['Obtainable', 'Arceus EV Limit', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod'],
 	},
 	{
 		name: "[Gen 4] Draft",
-		mod: 'flucientgen4',
+		mod: 'gen4',
 		searchShow: false,
 		ruleset: ['Standard Draft', 'Swagger Clause', 'DryPass Clause', 'Sleep Moves Clause', '!Team Preview', '!Evasion Abilities Clause'],
 		banlist: ['King\'s Rock', 'Quick Claw', 'Assist', 'Sand Stream ++ Sand Veil', 'Snow Warning ++ Snow Cloak'],
@@ -89,7 +89,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	},
 	{
 		name: "[Gen 4] Doubles OU",
-		mod: 'flucientgen4',
+		mod: 'gen4',
 		gameType: 'doubles',
 		ruleset: ['Standard', 'Evasion Abilities Clause'],
 		banlist: ['AG', 'Uber', 'Soul Dew', 'Dark Void', 'Thunder Wave'],
@@ -97,7 +97,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	},
 	{
 		name: "[Gen 4] 6v6 Doubles Draft",
-		mod: 'flucientgen4',
+		mod: 'gen4',
 		gameType: 'doubles',
 		searchShow: false,
 		teraPreviewDefault: true,
@@ -105,7 +105,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	},
 	{
 		name: "[Gen 4] 4v4 Doubles Draft",
-		mod: 'flucientgen4',
+		mod: 'gen4',
 		gameType: 'doubles',
 		searchShow: false,
 		bestOfDefault: true,
