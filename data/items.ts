@@ -5103,7 +5103,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		num: 650,
-		gen: 6,
+		gen: 4,
 	},
 	sailfossil: {
 		name: "Sail Fossil",

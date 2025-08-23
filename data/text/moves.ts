@@ -3498,7 +3498,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		},
 		gen4: {
 			desc: "The target's held item is lost for the rest of the battle, unless the item is a Griseous Orb or the target has the Multitype or Sticky Hold Abilities. During the effect, the target cannot obtain a new item by any means.",
-			shortDesc: "Target's item is lost and it cannot obtain another.",
+			shortDesc: "1.5x damage if foe holds an item. Removes item.",
 		},
 		gen3: {
 			desc: "The target's held item is lost for the rest of the battle, unless it has the Sticky Hold Ability. During the effect, the target cannot gain a new item by any means.",
