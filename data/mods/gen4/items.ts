@@ -565,28 +565,36 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		fling: {
 			basePower: 60,
-			weather: 'raindance',
+			effect: {
+				this.field.setWeather('raindance');
+			},
 		},
 	},
 	heatrock: {
 		inherit: true,
 		fling: {
 			basePower: 60,
-			weather: 'sunnyday',
+			effect: {
+				this.field.setWeather('sunnyday');
+			},
 		},
 	},
 	smoothrock: {
 		inherit: true,
 		fling: {
 			basePower: 60,
-			weather: 'sandstorm',
+			effect: {
+				this.field.setWeather('sandstorm');
+			},
 		},
 	},
 	icyrock: {
 		inherit: true,
 		fling: {
 			basePower: 60,
-			weather: 'hail',
+			effect: {
+				this.field.setWeather('hail');
+			},
 		},
 	},
 };
