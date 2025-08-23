@@ -139,18 +139,64 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 	},
 	raindance: {
 		inherit: true,
+		onFieldStart(field, source, effect) {
+			if (effect?.effectType === 'Ability') {
+				this.add('-weather', 'RainDance', '[from] ability: ' + effect.name, `[of] ${source}`);
+			} else {
+				this.add('-weather', 'RainDance');
+			}
+		},
 		onFieldResidualOrder: 8,
 	},
 	sunnyday: {
 		inherit: true,
+		durationCallback(source, effect) {
+			if (source?.hasItem('heatrock')) {
+				return 10;
+			}
+			return 5;
+		},
+		onFieldStart(battle, source, effect) {
+			if (effect?.effectType === 'Ability') {
+				this.add('-weather', 'SunnyDay', '[from] ability: ' + effect.name, `[of] ${source}`);
+			} else {
+				this.add('-weather', 'SunnyDay');
+			}
+		},
 		onFieldResidualOrder: 8,
 	},
 	sandstorm: {
 		inherit: true,
+		durationCallback(source, effect) {
+			if (source?.hasItem('smoothrock')) {
+				return 10;
+			}
+			return 5;
+		},
+		onFieldStart(field, source, effect) {
+			if (effect?.effectType === 'Ability') {
+				this.add('-weather', 'Sandstorm', '[from] ability: ' + effect.name, `[of] ${source}`);
+			} else {
+				this.add('-weather', 'Sandstorm');
+			}
+		},
 		onFieldResidualOrder: 8,
 	},
 	hail: {
 		inherit: true,
+		durationCallback(source, effect) {
+			if (source?.hasItem('icyrock')) {
+				return 10;
+			}
+			return 5;
+		},
+		onFieldStart(field, source, effect) {
+			if (effect?.effectType === 'Ability') {
+				this.add('-weather', 'Hail', '[from] ability: ' + effect.name, `[of] ${source}`);
+			} else {
+				this.add('-weather', 'Hail');
+			}
+		},
 		onFieldResidualOrder: 8,
 	},
 	// Arceus's true typing for all its formes is Normal, and it's only Multitype
