@@ -7696,6 +7696,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 8,
 		isNonstandard: "CAP",
 	},
+	
+	// New items
+	
 	loadedgloves: {
 		name: "Loaded Gloves",
 		spritenum: 749,
@@ -7729,6 +7732,22 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		num: -4,
+		gen: 4,
+	},
+	cleansetag: {
+		name: "Cleanse Tag",
+		spritenum: 461,
+		fling: {
+			basePower: 30,
+		},
+		onModifyMovePriority: -5,
+		onModifyMove(move) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Normal'] = true;
+			}
+		},
+		num: -5,
 		gen: 4,
 	},
 };

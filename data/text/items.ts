@@ -2493,6 +2493,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	
 	// New items
+	
 	loadedgloves: {
 		name: "Loaded Gloves",
 		shortDesc: "Holder's punch-based attacks have 1.2x power and do not make contact.",
@@ -2500,5 +2501,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	threefourfivedice: {
 		name: "Three-Four-Five Dice",
 		shortDesc: "Holder's moves that hit 2-5 times hit 3-5 times.",
+	},
+	cleansetag: {
+		name: "Cleanse Tag",
+		shortDesc: "Holder's Normal-type attacks ignore foe's immunity.",
 	},
 };
