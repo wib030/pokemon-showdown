@@ -7,6 +7,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 			}
 		},
 		fling: {
+			basePower: 60,
 			effect: function() {
 				this.field.addPseudoWeather('trickroom');
 			},
@@ -287,6 +288,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 			}
 		},
 		fling: {
+			basePower: 60,
 			effect: function() {
 				this.field.addPseudoWeather('gravity');
 			},

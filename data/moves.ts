@@ -5949,11 +5949,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, allyanim: 1, metronome: 1, noparentalbond: 1 },
-		onModifyPriority(priority, source, target, move) {
-			if (source.getItem() === 'adamantorb') {
-				return -7;
-			}
-		},
 		onPrepareHit(target, source, move) {
 			if (source.ignoringItem(true)) return false;
 			const item = source.getItem();
@@ -5961,6 +5956,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (!item.fling) return false;
 			move.basePower = item.fling.basePower;
 			this.debug(`BP: ${move.basePower}`);
+			if (item === 'adamantorb') {
+				move.priority = -7;
+			};
 			if (item.isBerry) {
 				move.onHit = function (foe) {
 					if (this.singleEvent('Eat', item, null, foe, null, null)) {
