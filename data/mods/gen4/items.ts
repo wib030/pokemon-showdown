@@ -9,9 +9,6 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			effect: function() {
 				this.field.addPseudoWeather('trickroom');
-				onModifyPriority(priority, pokemon, target, move) {
-					return -7;
-				},
 			},
 		},
 	},
