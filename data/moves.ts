@@ -5973,6 +5973,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				} else if (item.fling.volatileStatus) {
 					move.secondaries.push({ volatileStatus: item.fling.volatileStatus });
 				}
+				
+				if (item.fling.weather)
+				{
+					this.field.setWeather(item.fling.weather);
+				}
 			}
 			source.addVolatile('fling');
 		},
