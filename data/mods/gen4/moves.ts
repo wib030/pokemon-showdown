@@ -287,10 +287,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		},
 		type: "???",
 	},
-	defog: {
-		inherit: true,
-		flags: { protect: 1, mirror: 1, bypasssub: 1, metronome: 1 },
-	},
 	detect: {
 		inherit: true,
 		priority: 3,
