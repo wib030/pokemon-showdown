@@ -3599,10 +3599,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Defog', `[of] ${source}`);
 					success = true;
 				}
-				if (target.side.removeSideCondition(sideCondition)) {
-					this.add('-sideend', target.side, this.dex.conditions.get(sideCondition).name, '[from] move: Defog', `[of] ${target}`);
-					success = true;
-				}
 			}
 			this.field.clearTerrain();
 			return success;
