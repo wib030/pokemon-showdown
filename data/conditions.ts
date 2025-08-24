@@ -495,11 +495,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 		},
 		onFieldStart(field, source, effect) {
-			if (effect?.effectType === 'Ability') {
-				this.add('-weather', 'RainDance', '[from] ability: ' + effect.name, `[of] ${source}`);
-			} else {
-				this.add('-weather', 'RainDance');
-			}
+			this.add('-weather', 'RainDance');
 		},
 		onFieldResidualOrder: 1,
 		onFieldResidual() {
@@ -638,11 +634,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 		},
 		onFieldStart(field, source, effect) {
-			if (effect?.effectType === 'Ability') {
-				this.add('-weather', 'Sandstorm', '[from] ability: ' + effect.name, `[of] ${source}`);
-			} else {
-				this.add('-weather', 'Sandstorm');
-			}
+			this.add('-weather', 'Sandstorm');
 		},
 		onFieldResidualOrder: 1,
 		onFieldResidual() {
@@ -667,11 +659,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			return 5;
 		},
 		onFieldStart(field, source, effect) {
-			if (effect?.effectType === 'Ability') {
-				this.add('-weather', 'Hail', '[from] ability: ' + effect.name, `[of] ${source}`);
-			} else {
-				this.add('-weather', 'Hail');
-			}
+			this.add('-weather', 'Hail');
 		},
 		onFieldResidualOrder: 1,
 		onFieldResidual() {
