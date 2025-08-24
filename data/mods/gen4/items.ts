@@ -576,7 +576,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	damprock: {
 		inherit: true,
 		fling: {
-			basePower: 60,
+			inherit: true,
 			effect: function() {
 				this.field.setWeather('raindance');
 			},
@@ -585,7 +585,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	heatrock: {
 		inherit: true,
 		fling: {
-			basePower: 60,
+			inherit: true,
 			effect: function() {
 				this.field.setWeather('sunnyday');
 			},
@@ -594,7 +594,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	smoothrock: {
 		inherit: true,
 		fling: {
-			basePower: 60,
+			inherit: true,
 			effect: function() {
 				this.field.setWeather('sandstorm');
 			},
@@ -603,10 +603,93 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	icyrock: {
 		inherit: true,
 		fling: {
-			basePower: 60,
+			inherit: true,
 			effect: function() {
 				this.field.setWeather('hail');
 			},
+		},
+	},
+	firestone: {
+		inherit: true,
+		fling: {
+			inherit: true,
+			status: 'brn',
+		},
+	},
+	leafstone: {
+		inherit: true,
+		fling: {
+			inherit: true,
+			effect: function() {
+				this.add('-clearallboost');
+				for (const pokemon of this.getAllActive()) {
+					pokemon.clearBoosts();
+				}
+			},
+		},
+	},
+	thunderstone: {
+		inherit: true,
+		fling: {
+			inherit: true,
+			status: 'par',
+		},
+	},
+	moonstone: {
+		inherit: true,
+		fling: {
+			inherit: true,
+			effect: function(target, source, move) {
+				if (!target.volatiles['substitute'] || move.infiltrates) {
+					this.boost({ evasion: -1 });
+					const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+					const removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', ...removeAll];
+					for (const targetCondition of removeTarget) {
+						if (target.side.removeSideCondition(targetCondition)) {
+							if (!removeAll.includes(targetCondition)) continue;
+							this.add('-sideend', target.side, this.dex.conditions.get(targetCondition).name, '[from] move: Fling', `[of] ${source}`);
+							success = true;
+						}
+					}
+					for (const sideCondition of removeAll) {
+						if (source.side.removeSideCondition(sideCondition)) {
+							this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Fling', `[of] ${source}`);
+							success = true;
+						}
+					}
+					this.field.clearTerrain();
+				}
+			},
+		},
+	},
+	dawnstone: {
+		inherit: true,
+		fling: {
+			inherit: true,
+			effect: function(target) {
+				if (target.status === 'slp') target.cureStatus();
+			},
+		},
+	},
+	duskstone: {
+		inherit: true,
+		fling: {
+			inherit: true,
+			volatileStatus: 'nightmare',
+		},
+	},
+	shinystone: {
+		inherit: true,
+		fling: {
+			inherit: true,
+			volatileStatus: 'confusion',
+		},
+	},
+	blacksludge: {
+		inherit: true,
+		fling: {
+			inherit: true,
+			status: 'psn',
 		},
 	},
 };

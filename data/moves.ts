@@ -5952,63 +5952,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
 			const item = pokemon.getItem();
-			switch (item.id) {
-			case 'dracoplate':
-				move.type = 'Dragon';
-				break;
-			case 'dreadplate':
-				move.type = 'Dark';
-				break;
-			case 'earthplate':
-				move.type = 'Ground';
-				break;
-			case 'fistplate':
-				move.type = 'Fighting';
-				break;
-			case 'flameplate':
-				move.type = 'Fire';
-				break;
-			case 'icicleplate':
-				move.type = 'Ice';
-				break;
-			case 'insectplate':
-				move.type = 'Bug';
-				break;
-			case 'ironplate':
-				move.type = 'Steel';
-				break;
-			case 'meadowplate':
-				move.type = 'Grass';
-				break;
-			case 'mindplate':
-				move.type = 'Psychic';
-				break;
-			case 'pixieplate':
-				move.type = 'Fairy';
-				break;
-			case 'skyplate':
-				move.type = 'Flying';
-				break;
-			case 'splashplate':
-				move.type = 'Water';
-				break;
-			case 'spookyplate':
-				move.type = 'Ghost';
-				break;
-			case 'stoneplate':
-				move.type = 'Rock';
-				break;
-			case 'toxicplate':
-				move.type = 'Poison';
-				break;
-			case 'zapplate':
-				move.type = 'Electric';
-				break;
-			default:
-				break;
-			}
-			
-			if (move.type !== 'Dark') {
+			if (item.id && item.onPlate) {
+				move.type = item.onPlate;
 				this.hint("Flinging a type plate changes the moves type to match the plate.", true);
 			}
 		},
@@ -6021,6 +5966,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.debug(`BP: ${move.basePower}`);
 			if (item.id === 'adamantorb') {
 				move.priority = -7;
+			}
+			if (item.id === 'dawnstone') {
+				if (target.status === 'slp' || target.hasAbility('comatose')) {
+					this.debug('BP doubled on sleeping target');
+					move.basePower *= 2;
+				}
 			}
 			if (item.isBerry) {
 				move.onHit = function (foe) {
