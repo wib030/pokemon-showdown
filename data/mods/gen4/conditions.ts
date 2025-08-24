@@ -180,6 +180,10 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		},
 		onFieldStart(field, source, effect) {
 			if (effect?.effectType === 'Ability') {
+				this.effectState.duration = 5;
+				if (source?.hasItem('damprock')) {
+					this.effectState.duration += 3;
+				}
 				this.add('-weather', 'RainDance', '[from] ability: ' + effect.name, `[of] ${source}`);
 			} else {
 				this.add('-weather', 'RainDance');
@@ -221,6 +225,10 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		},
 		onFieldStart(battle, source, effect) {
 			if (effect?.effectType === 'Ability') {
+				this.effectState.duration = 5;
+				if (source?.hasItem('heatrock')) {
+					this.effectState.duration += 5;
+				}
 				this.add('-weather', 'SunnyDay', '[from] ability: ' + effect.name, `[of] ${source}`);
 			} else {
 				this.add('-weather', 'SunnyDay');
@@ -259,6 +267,10 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		},
 		onFieldStart(field, source, effect) {
 			if (effect?.effectType === 'Ability') {
+				this.effectState.duration = 5;
+				if (source?.hasItem('smoothrock')) {
+					this.effectState.duration += 5;
+				}
 				this.add('-weather', 'Sandstorm', '[from] ability: ' + effect.name, `[of] ${source}`);
 			} else {
 				this.add('-weather', 'Sandstorm');
@@ -288,6 +300,10 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		},
 		onFieldStart(field, source, effect) {
 			if (effect?.effectType === 'Ability') {
+				this.effectState.duration = 5;
+				if (source?.hasItem('icyrock')) {
+					this.effectState.duration += 5;
+				}
 				this.add('-weather', 'Hail', '[from] ability: ' + effect.name, `[of] ${source}`);
 			} else {
 				this.add('-weather', 'Hail');

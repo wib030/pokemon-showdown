@@ -798,6 +798,10 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	heatrock: {
 		name: "Heat Rock",
 		shortDesc: "Holder's use of Sunny Day lasts 8 turns instead of 5.",
+		
+		gen4: {
+			shortDesc: "Holder's use of Sunny Day lasts 10 turns instead of 5.",
+		},
 	},
 	heavyball: {
 		name: "Heavy Ball",
@@ -863,6 +867,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	icyrock: {
 		name: "Icy Rock",
 		shortDesc: "Holder's use of Snowscape lasts 8 turns instead of 5.",
+		gen4: {
+			shortDesc: "Holder's use of Hail lasts 10 turns instead of 5.",
+		},
 		gen8: {
 			shortDesc: "Holder's use of Hail lasts 8 turns instead of 5.",
 		},
@@ -1723,6 +1730,10 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	smoothrock: {
 		name: "Smooth Rock",
 		shortDesc: "Holder's use of Sandstorm lasts 8 turns instead of 5.",
+		
+		gen4: {
+			shortDesc: "Holder's use of Sandstorm lasts 10 turns instead of 5.",
+		},
 	},
 	snorliumz: {
 		name: "Snorlium Z",
