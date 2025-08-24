@@ -892,9 +892,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			if (target.ability === 'multitype') return;
 			const item = target.getItem();
 			
-			if (item === 'toxicorb' && (target.status === 'psn' || target.status === 'tox'))
-			{
-				target.cureStatus();
+			if (item === 'toxicorb' && target.status === 'tox') {
+				this.add('-curestatus', target, 'tox', `[from] move: ${move}`);
+				target.clearStatus();
+				this.hint("In Flucient Platinum, knocking off a Toxic Orb cures the status.", true);
 			}
 			
 			if (this.runEvent('TakeItem', target, source, move, item)) {

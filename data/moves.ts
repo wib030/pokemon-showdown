@@ -5949,6 +5949,69 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, allyanim: 1, metronome: 1, noparentalbond: 1 },
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const item = pokemon.getItem();
+			switch (item.id) {
+			case 'dracoplate':
+				move.type = 'Dragon';
+				break;
+			case 'dreadplate':
+				move.type = 'Dark';
+				break;
+			case 'earthplate':
+				move.type = 'Ground';
+				break;
+			case 'fistplate':
+				move.type = 'Fighting';
+				break;
+			case 'flameplate':
+				move.type = 'Fire';
+				break;
+			case 'icicleplate':
+				move.type = 'Ice';
+				break;
+			case 'insectplate':
+				move.type = 'Bug';
+				break;
+			case 'ironplate':
+				move.type = 'Steel';
+				break;
+			case 'meadowplate':
+				move.type = 'Grass';
+				break;
+			case 'mindplate':
+				move.type = 'Psychic';
+				break;
+			case 'pixieplate':
+				move.type = 'Fairy';
+				break;
+			case 'skyplate':
+				move.type = 'Flying';
+				break;
+			case 'splashplate':
+				move.type = 'Water';
+				break;
+			case 'spookyplate':
+				move.type = 'Ghost';
+				break;
+			case 'stoneplate':
+				move.type = 'Rock';
+				break;
+			case 'toxicplate':
+				move.type = 'Poison';
+				break;
+			case 'zapplate':
+				move.type = 'Electric';
+				break;
+			default:
+				break;
+			}
+			
+			if (move.type !== 'Dark') {
+				this.hint("Flinging a type plate changes the moves type to match the plate.", true);
+			}
+		},
 		onPrepareHit(target, source, move) {
 			if (source.ignoringItem(true)) return false;
 			const item = source.getItem();
@@ -5956,82 +6019,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (!item.fling) return false;
 			move.basePower = item.fling.basePower;
 			this.debug(`BP: ${move.basePower}`);
-			switch (item.id)
-			{
-				case 'adamantorb':
-					move.priority = -7;
-					break;
-				
-				case 'dracoplate':
-					move.type = 'Dragon';
-					break;
-					
-				case 'dreadplate':
-					move.type = 'Dark';
-					break;
-					
-				case 'earthplate':
-					move.type = 'Ground';
-					break;
-					
-				case 'fistplate':
-					move.type = 'Fighting';
-					break;
-					
-				case 'flameplate':
-					move.type = 'Fire';
-					break;
-					
-				case 'icicleplate':
-					move.type = 'Ice';
-					break;
-					
-				case 'insectplate':
-					move.type = 'Bug';
-					break;
-					
-				case 'ironplate':
-					move.type = 'Steel';
-					break;
-					
-				case 'meadowplate':
-					move.type = 'Grass';
-					break;
-					
-				case 'mindplate':
-					move.type = 'Psychic';
-					break;
-					
-				case 'pixieplate':
-					move.type = 'Fairy';
-					break;
-					
-				case 'skyplate':
-					move.type = 'Flying';
-					break;
-					
-				case 'splashplate':
-					move.type = 'Water';
-					break;
-					
-				case 'spookyplate':
-					move.type = 'Ghost';
-					break;
-					
-				case 'stoneplate':
-					move.type = 'Rock';
-					break;
-					
-				case 'toxicplate':
-					move.type = 'Poison';
-					break;
-					
-				case 'zapplate':
-					move.type = 'Electric';
-					break;
-				
-				default:
-					break;
+			if (item.id === 'adamantorb') {
+				move.priority = -7;
 			}
 			if (item.isBerry) {
 				move.onHit = function (foe) {
