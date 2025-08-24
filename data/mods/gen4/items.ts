@@ -644,25 +644,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 30,
 			effect: function(target, source, move) {
-				if (!target.volatiles['substitute'] || move.infiltrates) {
-					this.boost({ evasion: -1 });
-					const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-					const removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', ...removeAll];
-					for (const targetCondition of removeTarget) {
-						if (target.side.removeSideCondition(targetCondition)) {
-							if (!removeAll.includes(targetCondition)) continue;
-							this.add('-sideend', target.side, this.dex.conditions.get(targetCondition).name, '[from] move: Defog', `[of] ${source}`);
-							success = true;
-						}
-					}
-					for (const sideCondition of removeAll) {
-						if (source.side.removeSideCondition(sideCondition)) {
-							this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Defog', `[of] ${source}`);
-							success = true;
-						}
-					}
-					this.field.clearTerrain();
-				}
+				this.actions.useMove('defog', source);
 			},
 		},
 	},
