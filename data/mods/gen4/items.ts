@@ -24,6 +24,10 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	blacksludge: {
 		inherit: true,
+		fling: {
+			inherit: true,
+			status: 'psn',
+		},
 		onResidualOrder: 10,
 		onResidualSubOrder: 4,
 	},
@@ -683,13 +687,6 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			inherit: true,
 			volatileStatus: 'confusion',
-		},
-	},
-	blacksludge: {
-		inherit: true,
-		fling: {
-			inherit: true,
-			status: 'psn',
 		},
 	},
 };
