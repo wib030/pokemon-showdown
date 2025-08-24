@@ -568,11 +568,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 		},
 		onFieldStart(battle, source, effect) {
-			if (effect?.effectType === 'Ability') {
-				this.add('-weather', 'SunnyDay', '[from] ability: ' + effect.name, `[of] ${source}`);
-			} else {
-				this.add('-weather', 'SunnyDay');
-			}
+			this.add('-weather', 'SunnyDay');
 		},
 		onImmunity(type, pokemon) {
 			if (pokemon.hasItem('utilityumbrella')) return;
