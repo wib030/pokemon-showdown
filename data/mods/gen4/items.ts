@@ -580,7 +580,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	damprock: {
 		inherit: true,
 		fling: {
-			inherit: true,
+			basePower: 40,
 			effect: function() {
 				this.field.setWeather('raindance');
 			},
@@ -589,7 +589,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	heatrock: {
 		inherit: true,
 		fling: {
-			inherit: true,
+			basePower: 40,
 			effect: function() {
 				this.field.setWeather('sunnyday');
 			},
@@ -598,7 +598,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	smoothrock: {
 		inherit: true,
 		fling: {
-			inherit: true,
+			basePower: 40,
 			effect: function() {
 				this.field.setWeather('sandstorm');
 			},
@@ -607,7 +607,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	icyrock: {
 		inherit: true,
 		fling: {
-			inherit: true,
+			basePower: 40,
 			effect: function() {
 				this.field.setWeather('hail');
 			},
@@ -616,14 +616,14 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	firestone: {
 		inherit: true,
 		fling: {
-			inherit: true,
+			basePower: 30,
 			status: 'brn',
 		},
 	},
 	leafstone: {
 		inherit: true,
 		fling: {
-			inherit: true,
+			basePower: 30,
 			effect: function() {
 				this.add('-clearallboost');
 				for (const pokemon of this.getAllActive()) {
@@ -635,14 +635,14 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	thunderstone: {
 		inherit: true,
 		fling: {
-			inherit: true,
+			basePower: 30,
 			status: 'par',
 		},
 	},
 	moonstone: {
 		inherit: true,
 		fling: {
-			inherit: true,
+			basePower: 30,
 			effect: function(target, source, move) {
 				if (!target.volatiles['substitute'] || move.infiltrates) {
 					this.boost({ evasion: -1 });
@@ -669,7 +669,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	dawnstone: {
 		inherit: true,
 		fling: {
-			inherit: true,
+			basePower: 30,
 			effect: function(target) {
 				if (target.status === 'slp') target.cureStatus();
 			},
@@ -678,14 +678,14 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	duskstone: {
 		inherit: true,
 		fling: {
-			inherit: true,
+			basePower: 30,
 			volatileStatus: 'nightmare',
 		},
 	},
 	shinystone: {
 		inherit: true,
 		fling: {
-			inherit: true,
+			basePower: 30,
 			volatileStatus: 'confusion',
 		},
 	},
