@@ -874,10 +874,10 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 	
 	// New Conditions
 	stickybarbchip: {
-		name: 'stickybarbchip',
+		name: 'Sticky Barb',
 		// this is a volatile status
 		onStart(target, source, sourceEffect) {
-			this.add('-start', target, 'stickybarbchip');
+			this.add('-start', target, 'Sticky Barb');
 		},
 		onResidualOrder: 9,
 		onResidual(pokemon) {
