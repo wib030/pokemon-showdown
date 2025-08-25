@@ -341,6 +341,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	damprock: {
 		name: "Damp Rock",
 		shortDesc: "Holder's use of Rain Dance lasts 8 turns instead of 5.",
+		gen4: {
+			desc: "Holder's use of Rain Dance lasts 8 turns instead of 5. Fling: Sets Rain for 5 turns.",
+		}
 	},
 	darkgem: {
 		name: "Dark Gem",
@@ -578,6 +581,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Fire Stone",
 		desc: "Evolves Vulpix into Ninetales, Growlithe into Arcanine, Eevee into Flareon, and Pansear into Simisear when used.",
 		shortDesc: "Evolves certain species of Pokemon when used.",
+		gen4: {
+			shortDesc: "Fling: Inflicts burn.",
+		},
 	},
 	firiumz: {
 		name: "Firium Z",
@@ -801,6 +807,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		
 		gen4: {
 			shortDesc: "Holder's use of Sunny Day lasts 10 turns instead of 5.",
+			desc: "Holder's use of Sunny Day lasts 10 turns instead of 5. Fling: Sets Sun for 5 turns.",
 		},
 	},
 	heavyball: {
@@ -869,6 +876,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		shortDesc: "Holder's use of Snowscape lasts 8 turns instead of 5.",
 		gen4: {
 			shortDesc: "Holder's use of Hail lasts 10 turns instead of 5.",
+			desc: "Holder's use of Hail lasts 10 turns instead of 5. Fling: Sets Hail for 5 turns.",
 		},
 		gen8: {
 			shortDesc: "Holder's use of Hail lasts 8 turns instead of 5.",
@@ -961,6 +969,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Leaf Stone",
 		desc: "Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Eevee into Leafeon, Nuzleaf into Shiftry, and Pansage into Simisage when used.",
 		shortDesc: "Evolves certain species of Pokemon when used.",
+		gen4: {
+			shortDesc: "Fling: Eliminates all stat changes.",
+		},
 		gen7: {
 			desc: "Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Nuzleaf into Shiftry, and Pansage into Simisage when used.",
 		},
@@ -1236,6 +1247,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Moon Stone",
 		desc: "Evolves Nidorina into Nidoqueen, Nidorino into Nidoking, Clefairy into Clefable, Jigglypuff into Wigglytuff, Skitty into Delcatty, and Munna into Musharna when used.",
 		shortDesc: "Evolves certain species of Pokemon when used.",
+		gen4: {
+			shortDesc: "Fling: -1 evasion; clears user and target side's hazards.",
+		},
 	},
 	muscleband: {
 		name: "Muscle Band",
@@ -1730,9 +1744,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	smoothrock: {
 		name: "Smooth Rock",
 		shortDesc: "Holder's use of Sandstorm lasts 8 turns instead of 5.",
-		
 		gen4: {
 			shortDesc: "Holder's use of Sandstorm lasts 10 turns instead of 5.",
+			desc: "Holder's use of Sandstorm lasts 10 turns instead of 5. Fling: Sets Sandstorm for 5 turns.",
 		},
 	},
 	snorliumz: {
@@ -1888,6 +1902,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Thunder Stone",
 		desc: "Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, Eelektrik into Eelektross, and Charjabug into Vikavolt when used.",
 		shortDesc: "Evolves certain species of Pokemon when used.",
+		gen4: {
+			shortDesc: "Fling: Inflicts paralysis.",
+		},
 		gen7: {
 			desc: "Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, and Eelektrik into Eelektross when used.",
 		},

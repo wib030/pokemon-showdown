@@ -580,7 +580,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	damprock: {
 		inherit: true,
 		fling: {
-			basePower: 40,
+			basePower: 60,
 			effect: function() {
 				this.field.setWeather('raindance');
 			},
@@ -589,7 +589,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	heatrock: {
 		inherit: true,
 		fling: {
-			basePower: 40,
+			basePower: 60,
 			effect: function() {
 				this.field.setWeather('sunnyday');
 			},
@@ -598,7 +598,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	smoothrock: {
 		inherit: true,
 		fling: {
-			basePower: 40,
+			basePower: 60,
 			effect: function() {
 				this.field.setWeather('sandstorm');
 			},
@@ -607,7 +607,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	icyrock: {
 		inherit: true,
 		fling: {
-			basePower: 40,
+			basePower: 60,
 			effect: function() {
 				this.field.setWeather('hail');
 			},
@@ -651,7 +651,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	dawnstone: {
 		inherit: true,
 		fling: {
-			basePower: 30,
+			basePower: 80,
 			effect: function(target) {
 				if (target.status === 'slp') target.cureStatus();
 			},
@@ -660,14 +660,14 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	duskstone: {
 		inherit: true,
 		fling: {
-			basePower: 30,
+			basePower: 80,
 			volatileStatus: 'nightmare',
 		},
 	},
 	shinystone: {
 		inherit: true,
 		fling: {
-			basePower: 30,
+			basePower: 80,
 			volatileStatus: 'confusion',
 		},
 	},
