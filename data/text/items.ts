@@ -364,6 +364,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Dawn Stone",
 		desc: "Evolves male Kirlia into Gallade and female Snorunt into Froslass when used.",
 		shortDesc: "Evolves certain species of Pokemon when used.",
+		gen4: {
+			shortDesc: "Fling: Power doubles if the target is asleep, then wakes up the target.",
+		},
 	},
 	decidiumz: {
 		name: "Decidium Z",
@@ -462,6 +465,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Dusk Stone",
 		desc: "Evolves Murkrow into Honchkrow, Misdreavus into Mismagius, Lampent into Chandelure, and Doublade into Aegislash when used.",
 		shortDesc: "Evolves certain species of Pokemon when used.",
+		gen4: {
+			shortDesc: "Fling: Inflicts nightmare on a sleeping target.",
+		},
 	},
 	earthplate: {
 		name: "Earth Plate",
@@ -1696,6 +1702,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Shiny Stone",
 		desc: "Evolves Togetic into Togekiss, Roselia into Roserade, Minccino into Cinccino, and Floette into Florges when used.",
 		shortDesc: "Evolves certain species of Pokemon when used.",
+		gen4: {
+			shortDesc: "Fling: Inflicts confusion.",
+		},
 	},
 	shockdrive: {
 		name: "Shock Drive",

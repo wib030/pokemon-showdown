@@ -5950,6 +5950,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (item.id === 'dawnstone') {
 				if (target.status === 'slp' || target.hasAbility('comatose')) {
 					this.debug('BP doubled on sleeping target');
+					this.hint("The base power of Fling doubled due to the effect of the Dawn Stone.", true);
 					move.basePower *= 2;
 				}
 			}
