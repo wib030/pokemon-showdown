@@ -15,6 +15,10 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	bigroot: {
 		inherit: true,
+		fling: {
+			basePower: 10,
+			volatileStatus: 'ingrain',
+		},
 		onTryHeal(damage, target, source, effect) {
 			const heals = ['drain', 'leechseed', 'ingrain', 'aquaring'];
 			if (heals.includes(effect.id)) {
@@ -176,6 +180,13 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	griseousorb: {
 		inherit: true,
+		fling: {
+			basePower: 60,
+			volatileStatus: 'curse',
+			effect: function(target, source) {
+				this.directDamage(source.maxhp / 2, source, source);
+			},
+		},
 		onBasePower(basePower, user, target, move) {
 			if (user.species.num === 487 && (move.type === 'Ghost' || move.type === 'Dragon')) {
 				return this.chainModify(1.3);
@@ -673,6 +684,58 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 80,
 			volatileStatus: 'confusion',
+		},
+	},
+	souldew: {
+		inherit: true,
+		fling: {
+			basePower: 30,
+			volatileStatus: 'attract',
+		},
+	},
+	powerbracer: {
+		inherit: true,
+		fling: {
+			basePower: 70,
+			effect: function(source) {
+				this.boost({ atk: 1 }, source, source);
+			},
+		},
+	},
+	powerbelt: {
+		inherit: true,
+		fling: {
+			basePower: 70,
+			effect: function(source) {
+				this.boost({ def: 1 }, source, source);
+			},
+		},
+	},
+	powerlens: {
+		inherit: true,
+		fling: {
+			basePower: 70,
+			effect: function(source) {
+				this.boost({ spa: 1 }, source, source);
+			},
+		},
+	},
+	powerband: {
+		inherit: true,
+		fling: {
+			basePower: 70,
+			effect: function(source) {
+				this.boost({ spd: 1 }, source, source);
+			},
+		},
+	},
+	poweranklet: {
+		inherit: true,
+		fling: {
+			basePower: 70,
+			effect: function(source) {
+				this.boost({ spe: 1 }, source, source);
+			},
 		},
 	},
 };

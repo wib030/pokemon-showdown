@@ -767,7 +767,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Griseous Orb",
 		shortDesc: "If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.",
 		gen4: {
-			shortDesc: "Can only be held by Giratina. Its Ghost- & Dragon-type attacks have 1.3x power.",
+			shortDesc: "Giratina's Ghost/Dragon attacks have 1.3x power. Fling: Inflicts curse.",
 		},
 	},
 	groundgem: {
@@ -1415,18 +1415,30 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	poweranklet: {
 		name: "Power Anklet",
 		shortDesc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+		gen4: {
+			shortDesc: "Holder's Speed is halved. Fling: Raises users Speed by 1 stage.",
+		},
 	},
 	powerband: {
 		name: "Power Band",
 		shortDesc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+		gen4: {
+			shortDesc: "Holder's Speed is halved. Fling: Raises users Sp. Def by 1 stage.",
+		},
 	},
 	powerbelt: {
 		name: "Power Belt",
 		shortDesc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+		gen4: {
+			shortDesc: "Holder's Speed is halved. Fling: Raises users Def by 1 stage.",
+		},
 	},
 	powerbracer: {
 		name: "Power Bracer",
 		shortDesc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+		gen4: {
+			shortDesc: "Holder's Speed is halved. Fling: Raises users Atk by 1 stage.",
+		},
 	},
 	powerherb: {
 		name: "Power Herb",
@@ -1437,6 +1449,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	powerlens: {
 		name: "Power Lens",
 		shortDesc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+		gen4: {
+			shortDesc: "Holder's Speed is halved. Fling: Raises users Sp. Atk by 1 stage.",
+		},
 	},
 	powerweight: {
 		name: "Power Weight",
@@ -1543,7 +1558,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	redcard: {
 		name: "Red Card",
-		shortDesc: "If holder survives a hit, attacker is forced to switch to a random ally. Single use.",
+		shortDesc: "Holder survives hit: Attacker switches to random ally. Single use. Fling: Pivots user.",
 
 		end: "  [POKEMON] held up its Red Card against [TARGET]!",
 	},
@@ -1780,6 +1795,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	souldew: {
 		name: "Soul Dew",
 		shortDesc: "If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.",
+		gen4: {
+			shortDesc: "If held by Latias or Latios, Sp. Atk and Sp. Def are 1.5x. Fling: Inflicts attract.",
+		},
 		gen6: {
 			shortDesc: "If held by a Latias or a Latios, its Sp. Atk and Sp. Def are 1.5x.",
 		},
@@ -1849,6 +1867,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	stickybarb: {
 		name: "Sticky Barb",
 		shortDesc: "Each turn, holder loses 1/8 max HP. An attacker making contact can receive it.",
+		gen4: {
+			shortDesc: "Each turn, lose 1/8 max HP. Contact transfers. Fling: Inflicts Sticky Barb.",
+		},
 	},
 	stoneplate: {
 		name: "Stone Plate",
