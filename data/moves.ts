@@ -15270,6 +15270,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
 					pokemon.removeVolatile('partiallytrapped');
 				}
+				if (pokemon.hp && pokemon.volatiles['stickybarbchip']) {
+					pokemon.removeVolatile('stickybarbchip');
+				}
 			}
 		},
 		onAfterSubDamage(damage, target, pokemon, move) {
