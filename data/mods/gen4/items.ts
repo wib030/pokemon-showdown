@@ -407,6 +407,10 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	stickybarb: {
 		inherit: true,
+		fling: {
+			basePower: 80,
+			volatileStatus: 'stickybarbchip',
+		},
 		onResidualOrder: 10,
 		onResidualSubOrder: 20,
 	},

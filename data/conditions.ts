@@ -871,4 +871,17 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			return bp;
 		},
 	},
+	
+	// New Conditions
+	stickybarbchip: {
+		name: 'stickybarbchip',
+		// this is a volatile status
+		onStart(target, source, sourceEffect) {
+			this.add('-start', target, 'stickybarbchip');
+		},
+		onResidualOrder: 9,
+		onResidual(pokemon) {
+			this.damage(pokemon.baseMaxhp / 8);
+		},
+	},
 };
