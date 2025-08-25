@@ -15270,8 +15270,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
 					pokemon.removeVolatile('partiallytrapped');
 				}
-				if (pokemon.hp && pokemon.volatiles['stickybarbchip']) {
-					pokemon.removeVolatile('stickybarbchip');
+				if (pokemon.hp && pokemon.removeVolatile('stickybarbchip')) {
+					this.add('-end', pokemon, 'Sticky Barb', '[from] move: Rapid Spin', `[of] ${pokemon}`);
 				}
 			}
 		},
