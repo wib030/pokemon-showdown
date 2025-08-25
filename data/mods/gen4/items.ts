@@ -1,16 +1,16 @@
 export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	adamantorb: {
 		inherit: true,
+		fling: {
+			basePower: 130,
+			effect: function() {
+				this.field.addPseudoWeather('trickroom');
+			},
+		},
 		onBasePower(basePower, user, target, move) {
 			if (move && user.species.name === 'Dialga' && (move.type === 'Steel' || move.type === 'Dragon')) {
 				return this.chainModify(1.3);
 			}
-		},
-		fling: {
-			basePower: 60,
-			effect: function() {
-				this.field.addPseudoWeather('trickroom');
-			},
 		},
 	},
 	bigroot: {
@@ -29,7 +29,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	blacksludge: {
 		inherit: true,
 		fling: {
-			inherit: true,
+			basePower: 60,
 			status: 'psn',
 		},
 		onResidualOrder: 10,
@@ -113,6 +113,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	deepseascale: {
 		inherit: true,
+		fling: {
+			basePower: 60,
+		},
 		onModifySpD(spd, pokemon) {
 			if (pokemon.species.name === 'Clamperl') {
 				return this.chainModify(2);
@@ -149,6 +152,10 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	flameorb: {
 		inherit: true,
+		fling: {
+			basePower: 70,
+			status: 'brn',
+		},
 		onResidualOrder: 10,
 		onResidualSubOrder: 20,
 	},
@@ -181,7 +188,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	griseousorb: {
 		inherit: true,
 		fling: {
-			basePower: 60,
+			basePower: 130,
 			volatileStatus: 'curse',
 			effect: function(target, source) {
 				this.directDamage(source.maxhp / 2, source, source);
@@ -215,6 +222,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	kingsrock: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onModifyMove(move) {
 			const affectedByKingsRock = [
 				'aerialace', 'aeroblast', 'aircutter', 'airslash', 'aquajet', 'aquatail', 'armthrust', 'assurance', 'attackorder', 'aurasphere', 'avalanche', 'barrage', 'beatup', 'bide', 'bind', 'blastburn', 'bonerush', 'bonemerang', 'bounce', 'bravebird', 'brickbreak', 'brine', 'bugbite', 'bulletpunch', 'bulletseed', 'chargebeam', 'clamp', 'closecombat', 'cometpunch', 'crabhammer', 'crosschop', 'crosspoison', 'crushgrip', 'cut', 'darkpulse', 'dig', 'discharge', 'dive', 'doublehit', 'doublekick', 'doubleslap', 'doubleedge', 'dracometeor', 'dragonbreath', 'dragonclaw', 'dragonpulse', 'dragonrage', 'dragonrush', 'drainpunch', 'drillpeck', 'earthpower', 'earthquake', 'eggbomb', 'endeavor', 'eruption', 'explosion', 'extremespeed', 'falseswipe', 'feintattack', 'firefang', 'firespin', 'flail', 'flashcannon', 'fly', 'forcepalm', 'frenzyplant', 'frustration', 'furyattack', 'furycutter', 'furyswipes', 'gigaimpact', 'grassknot', 'gunkshot', 'gust', 'gyroball', 'hammerarm', 'headsmash', 'hiddenpower', 'highjumpkick', 'hornattack', 'hydrocannon', 'hydropump', 'hyperbeam', 'iceball', 'icefang', 'iceshard', 'iciclespear', 'ironhead', 'judgment', 'jumpkick', 'karatechop', 'lastresort', 'lavaplume', 'leafblade', 'leafstorm', 'lowkick', 'machpunch', 'magicalleaf', 'magmastorm', 'magnetbomb', 'magnitude', 'megakick', 'megapunch', 'megahorn', 'meteormash', 'mirrorshot', 'mudbomb', 'mudshot', 'muddywater', 'nightshade', 'nightslash', 'ominouswind', 'outrage', 'overheat', 'payday', 'payback', 'peck', 'petaldance', 'pinmissile', 'pluck', 'poisonjab', 'poisontail', 'pound', 'powergem', 'powerwhip', 'psychoboost', 'psychocut', 'psywave', 'punishment', 'quickattack', 'rage', 'rapidspin', 'razorleaf', 'razorwind', 'return', 'revenge', 'reversal', 'roaroftime', 'rockblast', 'rockclimb', 'rockthrow', 'rockwrecker', 'rollingkick', 'rollout', 'sandtomb', 'scratch', 'seedbomb', 'seedflare', 'seismictoss', 'selfdestruct', 'shadowclaw', 'shadowforce', 'shadowpunch', 'shadowsneak', 'shockwave', 'signalbeam', 'silverwind', 'skullbash', 'skyattack', 'skyuppercut', 'slam', 'slash', 'snore', 'solarbeam', 'sonicboom', 'spacialrend', 'spikecannon', 'spitup', 'steelwing', 'stoneedge', 'strength', 'struggle', 'submission', 'suckerpunch', 'surf', 'swift', 'tackle', 'takedown', 'thrash', 'thunderfang', 'triplekick', 'trumpcard', 'twister', 'uturn', 'uproar', 'vacuumwave', 'visegrip', 'vinewhip', 'vitalthrow', 'volttackle', 'wakeupslap', 'watergun', 'waterpulse', 'waterfall', 'weatherball', 'whirlpool', 'wingattack', 'woodhammer', 'wrap', 'wringout', 'xscissor', 'zenheadbutt',
@@ -248,6 +258,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	lifeorb: {
 		inherit: true,
+		fling: {
+			basePower: 70,
+		},
 		onModifyDamage() {},
 		onAfterMoveSecondarySelf() {},
 		onBasePower(basePower, user, target) {
@@ -271,6 +284,10 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	lightball: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+			status: 'par',
+		},
 		onModifyAtk() {},
 		onModifySpA() {},
 		onBasePower(basePower, pokemon) {
@@ -285,6 +302,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	luckypunch: {
 		inherit: true,
+		fling: {
+			basePower: 70,
+		},
 		onModifyCritRatio(critRatio, user) {
 			if (user.species.name === 'Chansey') {
 				return critRatio + 2;
@@ -297,16 +317,16 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	lustrousorb: {
 		inherit: true,
+		fling: {
+			basePower: 130,
+			effect: function() {
+				this.field.addPseudoWeather('gravity');
+			},
+		},
 		onBasePower(basePower, user, target, move) {
 			if (move && user.species.name === 'Palkia' && (move.type === 'Water' || move.type === 'Dragon')) {
 				return this.chainModify(1.3);
 			}
-		},
-		fling: {
-			basePower: 60,
-			effect: function() {
-				this.field.addPseudoWeather('gravity');
-			},
 		},
 	},
 	meadowplate: {
@@ -332,6 +352,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	metronome: {
 		inherit: true,
+		fling: {
+			basePower: 70,
+		},
 		condition: {
 			onStart(pokemon) {
 				this.effectState.numConsecutive = 0;
@@ -379,6 +402,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	razorfang: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onModifyMove(move) {
 			const affectedByRazorFang = [
 				'aerialace', 'aeroblast', 'aircutter', 'airslash', 'aquajet', 'aquatail', 'armthrust', 'assurance', 'attackorder', 'aurasphere', 'avalanche', 'barrage', 'beatup', 'bide', 'bind', 'blastburn', 'bonerush', 'bonemerang', 'bounce', 'bravebird', 'brickbreak', 'brine', 'bugbite', 'bulletpunch', 'bulletseed', 'chargebeam', 'clamp', 'closecombat', 'cometpunch', 'crabhammer', 'crosschop', 'crosspoison', 'crushgrip', 'cut', 'darkpulse', 'dig', 'discharge', 'dive', 'doublehit', 'doublekick', 'doubleslap', 'doubleedge', 'dracometeor', 'dragonbreath', 'dragonclaw', 'dragonpulse', 'dragonrage', 'dragonrush', 'drainpunch', 'drillpeck', 'earthpower', 'earthquake', 'eggbomb', 'endeavor', 'eruption', 'explosion', 'extremespeed', 'falseswipe', 'feintattack', 'firefang', 'firespin', 'flail', 'flashcannon', 'fly', 'forcepalm', 'frenzyplant', 'frustration', 'furyattack', 'furycutter', 'furyswipes', 'gigaimpact', 'grassknot', 'gunkshot', 'gust', 'gyroball', 'hammerarm', 'headsmash', 'hiddenpower', 'highjumpkick', 'hornattack', 'hydrocannon', 'hydropump', 'hyperbeam', 'iceball', 'icefang', 'iceshard', 'iciclespear', 'ironhead', 'judgment', 'jumpkick', 'karatechop', 'lastresort', 'lavaplume', 'leafblade', 'leafstorm', 'lowkick', 'machpunch', 'magicalleaf', 'magmastorm', 'magnetbomb', 'magnitude', 'megakick', 'megapunch', 'megahorn', 'meteormash', 'mirrorshot', 'mudbomb', 'mudshot', 'muddywater', 'nightshade', 'nightslash', 'ominouswind', 'outrage', 'overheat', 'payday', 'payback', 'peck', 'petaldance', 'pinmissile', 'pluck', 'poisonjab', 'poisontail', 'pound', 'powergem', 'powerwhip', 'psychoboost', 'psychocut', 'psywave', 'punishment', 'quickattack', 'rage', 'rapidspin', 'razorleaf', 'razorwind', 'return', 'revenge', 'reversal', 'roaroftime', 'rockblast', 'rockclimb', 'rockthrow', 'rockwrecker', 'rollingkick', 'rollout', 'sandtomb', 'scratch', 'seedbomb', 'seedflare', 'seismictoss', 'selfdestruct', 'shadowclaw', 'shadowforce', 'shadowpunch', 'shadowsneak', 'shockwave', 'signalbeam', 'silverwind', 'skullbash', 'skyattack', 'skyuppercut', 'slam', 'slash', 'snore', 'solarbeam', 'sonicboom', 'spacialrend', 'spikecannon', 'spitup', 'steelwing', 'stoneedge', 'strength', 'struggle', 'submission', 'suckerpunch', 'surf', 'swift', 'tackle', 'takedown', 'thrash', 'thunderfang', 'triplekick', 'trumpcard', 'twister', 'uturn', 'uproar', 'vacuumwave', 'visegrip', 'vinewhip', 'vitalthrow', 'volttackle', 'wakeupslap', 'watergun', 'waterpulse', 'waterfall', 'weatherball', 'whirlpool', 'wingattack', 'woodhammer', 'wrap', 'wringout', 'xscissor', 'zenheadbutt',
@@ -410,6 +436,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	stick: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onModifyCritRatio(critRatio, user) {
 			if (user.species.id === 'farfetchd') {
 				return critRatio + 2;
@@ -419,7 +448,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	stickybarb: {
 		inherit: true,
 		fling: {
-			basePower: 80,
+			basePower: 100,
 			volatileStatus: 'stickybarbchip',
 		},
 		onResidualOrder: 10,
@@ -439,6 +468,10 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	toxicorb: {
 		inherit: true,
+		fling: {
+			basePower: 70,
+			status: 'tox',
+		},
 		onResidualOrder: 10,
 		onResidualSubOrder: 20,
 	},
@@ -448,6 +481,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	widelens: {
 		inherit: true,
+		fling: {
+			basePower: 60,
+		},
 		onSourceModifyAccuracyPriority: 4,
 		onSourceModifyAccuracy(accuracy) {
 			if (typeof accuracy === 'number') {
@@ -461,6 +497,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	zoomlens: {
 		inherit: true,
+		fling: {
+			basePower: 60,
+		},
 		onSourceModifyAccuracyPriority: 4,
 		onSourceModifyAccuracy(accuracy, target) {
 			if (typeof accuracy === 'number' && !this.queue.willMove(target)) {
@@ -481,7 +520,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		name: "Quick Claw",
 		spritenum: 373,
 		fling: {
-			basePower: 80,
+			basePower: 60,
 		},
 		num: 217,
 		gen: 2,
@@ -595,7 +634,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	damprock: {
 		inherit: true,
 		fling: {
-			basePower: 60,
+			basePower: 80,
 			effect: function() {
 				this.field.setWeather('raindance');
 			},
@@ -604,7 +643,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	heatrock: {
 		inherit: true,
 		fling: {
-			basePower: 60,
+			basePower: 80,
 			effect: function() {
 				this.field.setWeather('sunnyday');
 			},
@@ -613,7 +652,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	smoothrock: {
 		inherit: true,
 		fling: {
-			basePower: 60,
+			basePower: 80,
 			effect: function() {
 				this.field.setWeather('sandstorm');
 			},
@@ -622,7 +661,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	icyrock: {
 		inherit: true,
 		fling: {
-			basePower: 60,
+			basePower: 80,
 			effect: function() {
 				this.field.setWeather('hail');
 			},
@@ -631,14 +670,14 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	firestone: {
 		inherit: true,
 		fling: {
-			basePower: 30,
+			basePower: 80,
 			status: 'brn',
 		},
 	},
 	leafstone: {
 		inherit: true,
 		fling: {
-			basePower: 30,
+			basePower: 80,
 			effect: function() {
 				this.add('-clearallboost');
 				for (const pokemon of this.getAllActive()) {
@@ -650,14 +689,14 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	thunderstone: {
 		inherit: true,
 		fling: {
-			basePower: 30,
+			basePower: 80,
 			status: 'par',
 		},
 	},
 	moonstone: {
 		inherit: true,
 		fling: {
-			basePower: 30,
+			basePower: 80,
 			effect: function(target, source, move) {
 				this.actions.useMove('defog', source);
 			},
@@ -689,14 +728,14 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	souldew: {
 		inherit: true,
 		fling: {
-			basePower: 30,
+			basePower: 100,
 			volatileStatus: 'attract',
 		},
 	},
 	powerbracer: {
 		inherit: true,
 		fling: {
-			basePower: 70,
+			basePower: 90,
 			effect: function(source) {
 				this.boost({ atk: 1 }, source, source);
 			},
@@ -705,7 +744,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	powerbelt: {
 		inherit: true,
 		fling: {
-			basePower: 70,
+			basePower: 90,
 			effect: function(source) {
 				this.boost({ def: 1 }, source, source);
 			},
@@ -714,7 +753,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	powerlens: {
 		inherit: true,
 		fling: {
-			basePower: 70,
+			basePower: 90,
 			effect: function(source) {
 				this.boost({ spa: 1 }, source, source);
 			},
@@ -723,7 +762,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	powerband: {
 		inherit: true,
 		fling: {
-			basePower: 70,
+			basePower: 90,
 			effect: function(source) {
 				this.boost({ spd: 1 }, source, source);
 			},
@@ -732,10 +771,130 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	poweranklet: {
 		inherit: true,
 		fling: {
-			basePower: 70,
+			basePower: 90,
 			effect: function(source) {
 				this.boost({ spe: 1 }, source, source);
 			},
+		},
+	},
+	shellbell: {
+		inherit: true,
+		fling: {
+			basePower: 40,
+		},
+	},
+	twistedspoon: {
+		inherit: true,
+		fling: {
+			basePower: 50,
+		},
+	},
+	scopelens: {
+		inherit: true,
+		fling: {
+			basePower: 60,
+		},
+	},
+	dragonscale: {
+		inherit: true,
+		fling: {
+			basePower: 60,
+		},
+	},
+	sharpbeak: {
+		inherit: true,
+		fling: {
+			basePower: 60,
+		},
+	},
+	lightclay: {
+		inherit: true,
+		fling: {
+			basePower: 60,
+		},
+	},
+	upgrade: {
+		inherit: true,
+		fling: {
+			basePower: 70,
+		},
+	},
+	dubiousdisc: {
+		inherit: true,
+		fling: {
+			basePower: 70,
+		},
+	},
+	sunstone: {
+		inherit: true,
+		fling: {
+			basePower: 80,
+		},
+	},
+	waterstone: {
+		inherit: true,
+		fling: {
+			basePower: 80,
+		},
+	},
+	magnet: {
+		inherit: true,
+		fling: {
+			basePower: 80,
+		},
+	},
+	machobrace: {
+		inherit: true,
+		fling: {
+			basePower: 90,
+		},
+	},
+	protector: {
+		inherit: true,
+		fling: {
+			basePower: 90,
+		},
+	},
+	magmarizer: {
+		inherit: true,
+		fling: {
+			basePower: 90,
+		},
+	},
+	electirizer: {
+		inherit: true,
+		fling: {
+			basePower: 90,
+		},
+	},
+	razorclaw: {
+		inherit: true,
+		fling: {
+			basePower: 90,
+		},
+	},
+	metalcoat: {
+		inherit: true,
+		fling: {
+			basePower: 100,
+		},
+	},
+	laggingtail: {
+		inherit: true,
+		fling: {
+			basePower: 130,
+		},
+	},
+	masterball: {
+		inherit: true,
+		fling: {
+			basePower: 130,
+		},
+	},
+	redcard: {
+		inherit: true,
+		fling: {
+			basePower: 60,
 		},
 	},
 };
