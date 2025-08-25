@@ -7750,4 +7750,14 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -5,
 		gen: 4,
 	},
+	repel: {
+		name: "Repel",
+		spritenum: 713,
+		fling: {
+			basePower: 60,
+			volatileStatus: 'flinch',
+		},
+		num: -6,
+		gen: 4,
+	},
 };

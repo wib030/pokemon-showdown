@@ -24,9 +24,8 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	adamantorb: {
 		name: "Adamant Orb",
 		shortDesc: "If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.",
-		
 		gen4: {
-			shortDesc: "If held by a Dialga, its Steel- and Dragon-type attacks have 1.3x power.",
+			shortDesc: "Dialga's Steel/Dragon attacks have 1.3x power. Fling: -7 priority, sets Trick Room.",
 		},
 	},
 	adrenalineorb: {
@@ -155,7 +154,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	blacksludge: {
 		name: "Black Sludge",
 		shortDesc: "Each turn, if holder is a Poison type, restores 1/16 max HP; loses 1/8 if not.",
-
+		gen4: {
+			shortDesc: "Holder is Poison-type: heals 1/16 max HP; else: loses 1/8. Fling: Inflicts poison.",
+		},
 		heal: "  [POKEMON] restored a little HP using its Black Sludge!",
 	},
 	blackglasses: {
@@ -1084,9 +1085,8 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	lustrousorb: {
 		name: "Lustrous Orb",
 		shortDesc: "If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.",
-		
 		gen4: {
-			shortDesc: "If held by a Palkia, its Water- and Dragon-type attacks have 1.3x power.",
+			shortDesc: "Palkia's Water/Dragon attacks have 1.3x power. Fling: Sets Gravity.",
 		},
 	},
 	luxuryball: {
@@ -2542,5 +2542,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	cleansetag: {
 		name: "Cleanse Tag",
 		shortDesc: "Holder's Normal-type attacks ignore foe's immunity.",
+	},
+	repel: {
+		name: "Repel",
+		shortDesc: "Fling: Inflicts flinch.",
 	},
 };
