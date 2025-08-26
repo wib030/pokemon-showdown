@@ -1558,7 +1558,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	redcard: {
 		name: "Red Card",
-		shortDesc: "Holder survives hit: Attacker switches to random ally. Single use.",
+		shortDesc: "Holder survives hit: Attacker switches to random ally. Single use. Fling: Pivots user.",
 
 		end: "  [POKEMON] held up its Red Card against [TARGET]!",
 	},
