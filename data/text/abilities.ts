@@ -1409,7 +1409,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "If this Pokemon has a non-volatile status condition, its Speed is multiplied by 1.5. This Pokemon ignores the paralysis effect of halving Speed.",
 		shortDesc: "If this Pokemon is statused, its Speed is 1.5x; ignores Speed drop from paralysis.",
 		gen4: {
-			shortDesc: "If paralyzed: Speed is 2x; other status: 1.5x; no Speed drop from para and can't be fully paralyzed.",
+			shortDesc: "If paralyzed: Speed is 2x; other status: 1.5x; can't be fully paralyzed.",
 		},
 		gen6: {
 			desc: "If this Pokemon has a non-volatile status condition, its Speed is multiplied by 1.5. This Pokemon ignores the paralysis effect of quartering Speed.",

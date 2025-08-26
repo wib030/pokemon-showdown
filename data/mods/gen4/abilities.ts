@@ -12,7 +12,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if (!target.hp) return;
 			if (move && move.effectType === 'Move' && target.getMoveHitData(move).crit) {
 				target.setBoost({ atk: 3 });
-				this.add('-setboost', target, 'atk', 9, '[from] ability: Anger Point');
+				this.add('-setboost', target, 'atk', 3, '[from] ability: Anger Point');
 			}
 		},
 		rating: 1.5,
