@@ -601,10 +601,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if ((target.gender === 'M' && source.gender === 'F') && (target.gender === 'F' && source.gender === 'M')) {
-				if (this.randomChance(3, 10)) {
-					source.addVolatile('attract', this.effectState.target);
-				}
+			if (this.randomChance(3, 10)) {
+				source.addVolatile('attract', target);
 			}
 		},
 		flags: {},
