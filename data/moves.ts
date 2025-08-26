@@ -5978,8 +5978,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (item.id === 'adamantorb') {
 				move.priority = -7;
 			}
-			if (item.id !== 'redcard') {
-				delete move.selfSwitch;
+			if (item.id === 'redcard') {
+				move.selfSwitch = true;
 			}
 			if (item.isBerry) {
 				move.onHit = function (foe) {
@@ -6012,7 +6012,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				pokemon.removeVolatile('fling');
 			},
 		},
-		selfSwitch: true,
+		selfSwitch: false,
 		secondary: null,
 		target: "normal",
 		type: "Dark",
