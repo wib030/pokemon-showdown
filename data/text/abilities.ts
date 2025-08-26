@@ -44,7 +44,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 			shortDesc: "If this Pokemon or its substitute takes a critical hit, its Attack is set to +3.",
 		},
 
-		boost: "  [POKEMON] maxed its Attack!",
+		boost: "  [POKEMON] drastically raised its Attack!",
 	},
 	angershell: {
 		name: "Anger Shell",
