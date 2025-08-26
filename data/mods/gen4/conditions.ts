@@ -8,12 +8,12 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		inherit: true,
 		onModifySpe(spe, pokemon) {
 			if (!pokemon.hasAbility('quickfeet')) {
-				return this.chainModify(0.25);
+				return this.chainModify(0.5);
 			}
 			return spe;
 		},
 		onBeforeMove(pokemon) {
-			if (!pokemon.hasAbility('magicguard') && this.randomChance(1, 4)) {
+			if (!pokemon.hasAbility('quickfeet') && this.randomChance(1, 5)) {
 				this.add('cant', pokemon, 'par');
 				return false;
 			}

@@ -163,28 +163,6 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		onTakeItem: true,
 	},
-	focussash: {
-		inherit: true,
-		onDamage() { },
-		onTryHit(target, source, move) {
-			if (target !== source && target.hp === target.maxhp) {
-				target.addVolatile('focussash');
-			}
-		},
-		condition: {
-			duration: 1,
-			onDamage(damage, target, source, effect) {
-				if (effect && effect.effectType === 'Move' && damage >= target.hp) {
-					this.effectState.activated = true;
-					return target.hp - 1;
-				}
-			},
-			onAfterMoveSecondary(target) {
-				if (this.effectState.activated) target.useItem();
-				target.removeVolatile('focussash');
-			},
-		},
-	},
 	griseousorb: {
 		inherit: true,
 		fling: {
@@ -738,7 +716,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 			basePower: 90,
 			effect: function(target, source, move) {
 				source.setBoost({ atk: 1 });
-				this.add('-setboost', source, 'atk', 1, '[silent]');
+				this.add('-setboost', source, 'atk', '[silent]');
 			},
 		},
 	},
@@ -748,7 +726,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 			basePower: 90,
 			effect: function(target, source, move) {
 				source.setBoost({ def: 1 });
-				this.add('-setboost', source, 'def', 1, '[silent]');
+				this.add('-setboost', source, 'def', '[silent]');
 			},
 		},
 	},
@@ -758,7 +736,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 			basePower: 90,
 			effect: function(target, source, move) {
 				source.setBoost({ spa: 1 });
-				this.add('-setboost', source, 'spa', 1, '[silent]');
+				this.add('-setboost', source, 'spa', '[silent]');
 			},
 		},
 	},
@@ -768,7 +746,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 			basePower: 90,
 			effect: function(target, source, move) {
 				source.setBoost({ spd: 1 });
-				this.add('-setboost', source, 'spd', 1, '[silent]');
+				this.add('-setboost', source, 'spd', '[silent]');
 			},
 		},
 	},
@@ -778,7 +756,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 			basePower: 90,
 			effect: function(target, source, move) {
 				source.setBoost({ spe: 1 });
-				this.add('-setboost', source, 'spe', 1, '[silent]');
+				this.add('-setboost', source, 'spe', '[silent]');
 			},
 		},
 	},

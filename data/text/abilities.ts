@@ -40,8 +40,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "If this Pokemon, but not its substitute, is struck by a critical hit, its Attack is raised by 12 stages.",
 		shortDesc: "If this Pokemon (not its substitute) takes a critical hit, its Attack is raised 12 stages.",
 		gen4: {
-			desc: "If this Pokemon, or its substitute, is struck by a critical hit, its Attack is raised by 12 stages.",
-			shortDesc: "If this Pokemon or its substitute takes a critical hit, its Attack is raised 12 stages.",
+			desc: "If this Pokemon, or its substitute, is struck by a critical hit, its Attack is set to +3.",
+			shortDesc: "If this Pokemon or its substitute takes a critical hit, its Attack is set to +3.",
 		},
 
 		boost: "  [POKEMON] maxed its Attack!",
@@ -505,12 +505,12 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Flower Gift",
 		desc: "If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
 		shortDesc: "If user is Cherrim and Sunny Day is active, it and allies' Attack and Sp. Def are 1.5x.",
+		gen4: {
+			desc: "If Sunny Day is active, allies with the ability Flower Gift get 1.5x Def and Sp. Def, and other allies get 1.5x Atk and Sp. Atk.",
+			shortDesc: "In sun: Allies with Flower Gift get 1.5x Def/SpD; other allies get 1.5x Atk/SpA.",
+		},
 		gen7: {
 			desc: "If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5.",
-		},
-		gen4: {
-			desc: "If Sunny Day is active, the Attack and Special Defense of this Pokemon and its allies are multiplied by 1.5.",
-			shortDesc: "If Sunny Day is active, Attack and Sp. Def of this Pokemon and its allies are 1.5x.",
 		},
 	},
 	flowerveil: {
@@ -814,6 +814,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Iron Fist",
 		desc: "This Pokemon's punch-based attacks have their power multiplied by 1.2.",
 		shortDesc: "This Pokemon's punch-based attacks have 1.2x power. Sucker Punch is not boosted.",
+		gen4: {
+			shortDesc: "This Pokemon's punch-based attacks have 1.3x power. Sucker Punch is not boosted.",
+		},
 	},
 	justified: {
 		name: "Justified",
@@ -879,10 +882,6 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Lightning Rod",
 		desc: "This Pokemon is immune to Electric-type moves and raises its Special Attack by 1 stage when hit by an Electric-type move. If this Pokemon is not the target of a single-target Electric-type move used by another Pokemon, this Pokemon redirects that move to itself if it is within the range of that move. If multiple Pokemon could redirect with this Ability, it goes to the one with the highest Speed, or in the case of a tie to the one that has had this Ability active longer.",
 		shortDesc: "This Pokemon draws Electric moves to itself to raise Sp. Atk by 1; Electric immunity.",
-		gen4: {
-			desc: "If this Pokemon is not the target of a single-target Electric-type move used by another Pokemon, this Pokemon redirects that move to itself.",
-			shortDesc: "This Pokemon draws single-target Electric moves to itself.",
-		},
 		gen3: {
 			desc: "If this Pokemon is not the target of a single-target Electric-type move used by an opposing Pokemon, this Pokemon redirects that move to itself. This effect considers Hidden Power a Normal-type move.",
 			shortDesc: "This Pokemon draws single-target Electric moves used by opponents to itself.",
@@ -936,10 +935,6 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Magic Guard",
 		desc: "This Pokemon can only be damaged by direct attacks. Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage are considered direct damage.",
 		shortDesc: "This Pokemon can only be damaged by direct attacks.",
-		gen4: {
-			desc: "This Pokemon can only be damaged by direct attacks. Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage are considered direct damage. This Pokemon cannot be prevented from moving because of paralysis, and is unaffected by Toxic Spikes on switch-in.",
-			shortDesc: "This Pokemon can only be damaged by direct attacks, and can't be fully paralyzed.",
-		},
 	},
 	magician: {
 		name: "Magician",
@@ -1133,9 +1128,6 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		gen6: {
 			desc: "This Pokemon's moves are changed to be Normal type. This effect comes before other effects that change a move's type.",
 			shortDesc: "This Pokemon's moves are changed to be Normal type.",
-		},
-		gen4: {
-			desc: "This Pokemon's moves are changed to be Normal type. This effect comes after other effects that change a move's type, except Struggle.",
 		},
 	},
 	oblivious: {
@@ -1416,6 +1408,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Quick Feet",
 		desc: "If this Pokemon has a non-volatile status condition, its Speed is multiplied by 1.5. This Pokemon ignores the paralysis effect of halving Speed.",
 		shortDesc: "If this Pokemon is statused, its Speed is 1.5x; ignores Speed drop from paralysis.",
+		gen4: {
+			shortDesc: "If paralyzed: Speed is 2x; other status: 1.5x; no Speed drop from para and can't be fully paralyzed.",
+		},
 		gen6: {
 			desc: "If this Pokemon has a non-volatile status condition, its Speed is multiplied by 1.5. This Pokemon ignores the paralysis effect of quartering Speed.",
 		},
@@ -1533,6 +1528,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	sandstream: {
 		name: "Sand Stream",
 		shortDesc: "On switch-in, this Pokemon summons Sandstorm.",
+		gen4: {
+			shortDesc: "On switch-in, this Pokemon summons Sandstorm; immunity to it.",
+		},
 	},
 	sandveil: {
 		name: "Sand Veil",
@@ -1717,6 +1715,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	snowwarning: {
 		name: "Snow Warning",
 		shortDesc: "On switch-in, this Pokemon summons Snow.",
+		gen4: {
+			shortDesc: "On switch-in, this Pokemon summons Hail; immunity to it.",
+		},
 		gen8: {
 			shortDesc: "On switch-in, this Pokemon summons Hail.",
 		},
@@ -1815,10 +1816,6 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Stench",
 		desc: "This Pokemon's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch.",
 		shortDesc: "This Pokemon's attacks without a chance to flinch gain a 10% chance to flinch.",
-		gen4: {
-			desc: "No competitive use.",
-			shortDesc: "No competitive use.",
-		},
 	},
 	stickyhold: {
 		name: "Sticky Hold",
@@ -1834,10 +1831,6 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Storm Drain",
 		desc: "This Pokemon is immune to Water-type moves and raises its Special Attack by 1 stage when hit by a Water-type move. If this Pokemon is not the target of a single-target Water-type move used by another Pokemon, this Pokemon redirects that move to itself if it is within the range of that move. If multiple Pokemon could redirect with this Ability, it goes to the one with the highest Speed, or in the case of a tie to the one that has had this Ability active longer.",
 		shortDesc: "This Pokemon draws Water moves to itself to raise Sp. Atk by 1; Water immunity.",
-		gen4: {
-			desc: "If this Pokemon is not the target of a single-target Water-type move used by another Pokemon, this Pokemon redirects that move to itself.",
-			shortDesc: "This Pokemon draws single-target Water moves to itself.",
-		},
 
 		activate: "#lightningrod",
 	},
@@ -1850,10 +1843,6 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Sturdy",
 		desc: "If this Pokemon is at full HP, it survives one hit with at least 1 HP. OHKO moves fail when used against this Pokemon.",
 		shortDesc: "If this Pokemon is at full HP, it survives one hit with at least 1 HP. Immune to OHKO.",
-		gen4: {
-			desc: "OHKO moves fail when used against this Pokemon.",
-			shortDesc: "OHKO moves fail when used against this Pokemon.",
-		},
 
 		activate: "  [POKEMON] endured the hit!",
 	},
@@ -1932,7 +1921,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "If another Pokemon burns, paralyzes, poisons, or badly poisons this Pokemon, that Pokemon receives the same non-volatile status condition.",
 		shortDesc: "If another Pokemon burns/poisons/paralyzes this Pokemon, it also gets that status.",
 		gen4: {
-			desc: "If another Pokemon burns, paralyzes, or poisons this Pokemon, that Pokemon receives the same non-volatile status condition. If another Pokemon badly poisons this Pokemon, that Pokemon becomes poisoned.",
+			desc: "If another Pokemon burns/paralyzes/poisons/sleeps/freezes this Pokemon, that Pokemon receives the same non-volatile status condition.",
+			shortDesc: "If another Pokemon inflicts a non-volatile status on this Pokemon, it also gets that status.",
 		},
 	},
 	tabletsofruin: {

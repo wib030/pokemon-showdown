@@ -11,8 +11,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onAfterSubDamage(damage, target, source, move) {
 			if (!target.hp) return;
 			if (move && move.effectType === 'Move' && target.getMoveHitData(move).crit) {
-				target.setBoost({ atk: 6 });
-				this.add('-setboost', target, 'atk', 12, '[from] ability: Anger Point');
+				target.setBoost({ atk: 3 });
+				this.add('-setboost', target, 'atk', 9, '[from] ability: Anger Point');
 			}
 		},
 		rating: 1.5,
@@ -145,13 +145,23 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	flowergift: {
 		inherit: true,
-		onAllyModifyAtk(atk) {
-			if (this.field.isWeather('sunnyday')) {
+		onAllyModifyAtk(atk, pokemon) {
+			if (!pokemon.hasAbility('flowergift') && this.field.isWeather('sunnyday')) {
 				return this.chainModify(1.5);
 			}
 		},
-		onAllyModifySpD(spd) {
-			if (this.field.isWeather('sunnyday')) {
+		onAllyModifyDef(def, pokemon) {
+			if (pokemon.hasAbility('flowergift') && this.field.isWeather('sunnyday')) {
+				return this.chainModify(1.5);
+			}
+		},
+		onAllyModifySpA(spa, pokemon) {
+			if (!pokemon.hasAbility('flowergift') && this.field.isWeather('sunnyday')) {
+				return this.chainModify(1.5);
+			}
+		},
+		onAllyModifySpD(spd, pokemon) {
+			if (pokemon.hasAbility('flowergift') && this.field.isWeather('sunnyday')) {
 				return this.chainModify(1.5);
 			}
 		},
@@ -253,11 +263,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 	},
-	lightningrod: {
-		inherit: true,
-		onTryHit() {},
-		rating: 0,
-	},
 	liquidooze: {
 		inherit: true,
 		onSourceTryHeal(damage, target, source, effect) {
@@ -307,14 +312,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 
 			this.add('-curestatus', pokemon, pokemon.status, '[from] ability: Natural Cure');
 			pokemon.clearStatus();
-		},
-	},
-	normalize: {
-		inherit: true,
-		onModifyMove(move) {
-			if (move.id !== 'struggle') {
-				move.type = 'Normal';
-			}
 		},
 	},
 	overgrow: {
@@ -441,11 +438,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 	},
-	stench: {
-		name: "Stench",
-		rating: 0,
-		num: 1,
-	},
 	stickyhold: {
 		inherit: true,
 		onTakeItem(item, pokemon, source) {
@@ -454,16 +446,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return false;
 			}
 		},
-	},
-	stormdrain: {
-		inherit: true,
-		onTryHit() {},
-		rating: 0,
-	},
-	sturdy: {
-		inherit: true,
-		onDamage() {},
-		rating: 0,
 	},
 	swarm: {
 		onBasePowerPriority: 2,
@@ -483,8 +465,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if (!source || source === target) return;
 			if (effect && effect.id === 'toxicspikes') return;
 			let id: string = status.id;
-			if (id === 'slp' || id === 'frz') return;
-			if (id === 'tox') id = 'psn';
+			if (id === 'tox') id = 'tox';
 			source.trySetStatus(id, target);
 		},
 	},
@@ -570,5 +551,36 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	rebound: {
 		inherit: true,
 		onTryHitSide() {},
+	},
+	quickfeet: {
+		inherit: true,
+		onModifySpe(spe, pokemon) {
+			if (pokemon.status === 'par') {
+				return this.chainModify(2);
+			} else if (pokemon.status) {
+				return this.chainModify(1.5);
+			}
+		},
+	},
+	ironfist: {
+		inherit: true,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['punch']) {
+				this.debug('Iron Fist boost');
+				return this.chainModify(1.3);
+			}
+		},
+	},
+	sandstream: {
+		inherit: true,
+		onImmunity(type, pokemon) {
+			if (type === 'sandstorm') return false;
+		},
+	},
+	snowwarning: {
+		inherit: true,
+		onImmunity(type, pokemon) {
+			if (type === 'hail') return false;
+		},
 	},
 };
