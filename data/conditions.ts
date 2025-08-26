@@ -642,6 +642,12 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 		},
 		onFieldStart(field, source, effect) {
+			if (this.field.getWeather().id === 'sandstorm') {
+				this.hint("Weather is sandstorm.");
+			} else {
+				this.hint("Weather is not sandstorm.");
+			}
+			
 			if (effect?.effectType === 'Ability') {
 				this.add('-weather', 'Sandstorm', '[from] ability: ' + effect.name, `[of] ${source}`);
 			} else {
