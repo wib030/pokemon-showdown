@@ -2177,7 +2177,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		},
 
 		removeItem: "  [POKEMON] flung its [ITEM]!",
-		switchOut: "[POKEMON] went back to [TRAINER]!",
 	},
 	flipturn: {
 		name: "Flip Turn",
