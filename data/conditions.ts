@@ -495,7 +495,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 		},
 		onFieldStart(field, source, effect) {
-			this.add('-weather', 'RainDance');
+			if (!this.field.isWeather('raindance')) {
+				this.add('-weather', 'RainDance');
+			}
 		},
 		onFieldResidualOrder: 1,
 		onFieldResidual() {
@@ -564,7 +566,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 		},
 		onFieldStart(battle, source, effect) {
-			this.add('-weather', 'SunnyDay');
+			if (!this.field.isWeather('sunnyday')) {
+				this.add('-weather', 'SunnyDay');
+			}
 		},
 		onImmunity(type, pokemon) {
 			if (pokemon.hasItem('utilityumbrella')) return;
@@ -634,7 +638,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 		},
 		onFieldStart(field, source, effect) {
-			this.add('-weather', 'Sandstorm');
+			if (!this.field.isWeather('sandstorm')) {
+				this.add('-weather', 'Sandstorm');
+			}
 		},
 		onFieldResidualOrder: 1,
 		onFieldResidual() {
@@ -659,7 +665,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			return 5;
 		},
 		onFieldStart(field, source, effect) {
-			this.add('-weather', 'Hail');
+			if (!this.field.isWeather('hail')) {
+				this.add('-weather', 'Hail');
+			}
 		},
 		onFieldResidualOrder: 1,
 		onFieldResidual() {
