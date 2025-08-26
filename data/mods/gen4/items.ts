@@ -715,8 +715,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 90,
 			effect: function(target, source, move) {
-				source.setBoost({ atk: 1 });
-				this.add('-setboost', source, 'atk', 1, '[silent]');
+				this.boost({ atk: 1 }, source);
 			},
 		},
 	},
@@ -725,8 +724,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 90,
 			effect: function(target, source, move) {
-				source.setBoost({ def: 1 });
-				this.add('-setboost', source, 'def', 1, '[silent]');
+				this.boost({ def: 1 }, source);
 			},
 		},
 	},
@@ -735,8 +733,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 90,
 			effect: function(target, source, move) {
-				source.setBoost({ spa: 1 });
-				this.add('-setboost', source, 'spa', 1, '[silent]');
+				this.boost({ spa: 1 }, source);
 			},
 		},
 	},
@@ -745,8 +742,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 90,
 			effect: function(target, source, move) {
-				source.setBoost({ spd: 1 });
-				this.add('-setboost', source, 'spd', 1, '[silent]');
+				this.boost({ spd: 1 }, source);
 			},
 		},
 	},
@@ -755,8 +751,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 90,
 			effect: function(target, source, move) {
-				source.setBoost({ spe: 1 });
-				this.add('-setboost', source, 'spe', 1, '[silent]');
+				this.boost({ spe: 1 }, source);
 			},
 		},
 	},
