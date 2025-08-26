@@ -407,7 +407,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			if (data.source.hasAbility('infiltrator') && this.gen >= 6) {
 				data.moveData.infiltrates = true;
 			}
-			if (data.source.hasAbility('normalize') && this.gen >= 6) {
+			if (data.source.hasAbility('normalize')) {
 				data.moveData.type = 'Normal';
 			}
 			const hitMove = new this.dex.Move(data.moveData) as ActiveMove;
