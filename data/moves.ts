@@ -5976,11 +5976,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (!this.singleEvent('TakeItem', item, source.itemState, source, source, move, item)) return false;
 			if (!item.fling) return false;
 			this.debug(`BP: ${move.basePower}`);
-			if (item.id === 'adamantorb') {
+			switch (item.id) {
+			case 'adamantorb':
 				move.priority = -7;
-			}
-			if (item.id === 'redcard') {
+				break;
+				
+			case 'redcard':
 				move.selfSwitch = true;
+				break;
 			}
 			if (item.isBerry) {
 				move.onHit = function (foe) {
