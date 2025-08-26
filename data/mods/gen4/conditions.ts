@@ -157,4 +157,20 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			}
 		},
 	},
+	raindance: {
+		inherit: true,
+		onFieldResidualOrder: 8,
+	},
+	sunnyday: {
+		inherit: true,
+		onFieldResidualOrder: 8,
+	},
+	sandstorm: {
+		inherit: true,
+		onFieldResidualOrder: 8,
+	},
+	hail: {
+		inherit: true,
+		onFieldResidualOrder: 8,
+	},
 };
