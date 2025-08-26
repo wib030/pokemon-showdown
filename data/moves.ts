@@ -5961,6 +5961,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, allyanim: 1, metronome: 1, noparentalbond: 1 },
+		onModifyPriority(priority, pokemon, target, move) {
+			const item = pokemon.getItem();
+			if (item.id === 'adamantorb') {
+				return priority - 7;
+			}
+		},
 		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
 			const item = pokemon.getItem();
@@ -5976,14 +5982,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (!this.singleEvent('TakeItem', item, source.itemState, source, source, move, item)) return false;
 			if (!item.fling) return false;
 			this.debug(`BP: ${move.basePower}`);
-			switch (item.id) {
-			case 'adamantorb':
-				move.priority = -7;
-				break;
-				
-			case 'redcard':
+			if (item.id === 'redcard') {
 				move.selfSwitch = true;
-				break;
 			}
 			if (item.isBerry) {
 				move.onHit = function (foe) {
