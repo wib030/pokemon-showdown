@@ -736,8 +736,8 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		fling: {
 			basePower: 90,
-			effect: function(source) {
-				source.boost({ atk: 1 }, source, source);
+			effect: function(target, source, move) {
+				source.boosts.atk = source.boosts.atk + 1;
 			},
 		},
 	},
@@ -745,8 +745,8 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		fling: {
 			basePower: 90,
-			effect: function(source) {
-				source.boost({ def: 1 }, source, source);
+			effect: function(target, source, move) {
+				source.boosts.def = source.boosts.def + 1;
 			},
 		},
 	},
@@ -754,8 +754,8 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		fling: {
 			basePower: 90,
-			effect: function(source) {
-				source.boost({ spa: 1 }, source, source);
+			effect: function(target, source, move) {
+				source.boosts.spa = source.boosts.spa + 1;
 			},
 		},
 	},
@@ -763,8 +763,8 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		fling: {
 			basePower: 90,
-			effect: function(source) {
-				source.boost({ spd: 1 }, source, source);
+			effect: function(target, source, move) {
+				source.boosts.spd = source.boosts.spd + 1;
 			},
 		},
 	},
@@ -772,8 +772,8 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		fling: {
 			basePower: 90,
-			effect: function(source) {
-				source.boost({ spe: 1 }, source, source);
+			effect: function(target, source, move) {
+				source.boosts.spe = source.boosts.spe + 1;
 			},
 		},
 	},
