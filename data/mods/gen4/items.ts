@@ -737,7 +737,8 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 90,
 			effect: function(target, source, move) {
-				source.boosts.atk = source.boosts.atk + 1;
+				source.setBoost({ atk: 1 });
+				this.add('-setboost', source, 'atk', 1, '[from] move: Fling');
 			},
 		},
 	},
@@ -746,7 +747,8 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 90,
 			effect: function(target, source, move) {
-				source.boosts.def = source.boosts.def + 1;
+				source.setBoost({ def: 1 });
+				this.add('-setboost', source, 'def', 1, '[from] move: Fling');
 			},
 		},
 	},
@@ -755,7 +757,8 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 90,
 			effect: function(target, source, move) {
-				source.boosts.spa = source.boosts.spa + 1;
+				source.setBoost({ spa: 1 });
+				this.add('-setboost', source, 'spa', 1, '[from] move: Fling');
 			},
 		},
 	},
@@ -764,7 +767,8 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 90,
 			effect: function(target, source, move) {
-				source.boosts.spd = source.boosts.spd + 1;
+				source.setBoost({ spd: 1 });
+				this.add('-setboost', source, 'spd', 1, '[from] move: Fling');
 			},
 		},
 	},
@@ -773,7 +777,8 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 90,
 			effect: function(target, source, move) {
-				source.boosts.spe = source.boosts.spe + 1;
+				source.setBoost({ spe: 1 });
+				this.add('-setboost', source, 'spe', 1, '[from] move: Fling');
 			},
 		},
 	},
