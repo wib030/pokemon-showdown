@@ -590,4 +590,26 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if (type === 'hail') return false;
 		},
 	},
+	rivalry: {
+		onBasePowerPriority: 24,
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.gender && defender.gender) {
+				if (attacker.gender === defender.gender) {
+					this.debug('Rivalry boost');
+					return this.chainModify(1.5);
+				}
+			}
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			if ((target.gender === 'M' && source.gender === 'F') && (target.gender === 'F' && source.gender === 'M')) {
+				if (this.randomChance(3, 10)) {
+					source.addVolatile('attract', this.effectState.target);
+				}
+			}
+		},
+		flags: {},
+		name: "Rivalry",
+		rating: 0,
+		num: 79,
+	},
 };
