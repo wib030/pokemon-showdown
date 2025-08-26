@@ -8,11 +8,18 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	angerpoint: {
 		inherit: true,
+		onHit(target, source, move) {
+			if (!target.hp) return;
+			if (move && move.effectType === 'Move' && target.getMoveHitData(move).crit) {
+				target.setBoost({ atk: 3 });
+				this.add('-setboost', target, 'atk', 3, '[from] ability: Anger Point');
+			}
+		},
 		onAfterSubDamage(damage, target, source, move) {
 			if (!target.hp) return;
 			if (move && move.effectType === 'Move' && target.getMoveHitData(move).crit) {
 				target.setBoost({ atk: 3 });
-				this.add('-setboost', target, 'atk', 3, '[silent]');
+				this.add('-setboost', target, 'atk', 3, '[from] ability: Anger Point');
 			}
 		},
 		rating: 1.5,
