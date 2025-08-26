@@ -495,7 +495,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 		},
 		onFieldStart(field, source, effect) {
-			if (!this.field.isWeather('raindance')) {
+			if (effect?.effectType === 'Ability') {
+				this.add('-weather', 'RainDance', '[from] ability: ' + effect.name, '[of] ' + source);
+			} else {
 				this.add('-weather', 'RainDance');
 			}
 		},
@@ -566,7 +568,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 		},
 		onFieldStart(battle, source, effect) {
-			if (!this.field.isWeather('sunnyday')) {
+			if (effect?.effectType === 'Ability') {
+				this.add('-weather', 'SunnyDay', '[from] ability: ' + effect.name, '[of] ' + source);
+			} else {
 				this.add('-weather', 'SunnyDay');
 			}
 		},
@@ -638,7 +642,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 		},
 		onFieldStart(field, source, effect) {
-			if (!this.field.isWeather('sandstorm')) {
+			if (effect?.effectType === 'Ability') {
+				this.add('-weather', 'Sandstorm', '[from] ability: ' + effect.name, '[of] ' + source);
+			} else {
 				this.add('-weather', 'Sandstorm');
 			}
 		},
@@ -665,7 +671,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			return 5;
 		},
 		onFieldStart(field, source, effect) {
-			if (!this.field.isWeather('hail')) {
+			if (effect?.effectType === 'Ability') {
+				this.add('-weather', 'Hail', '[from] ability: ' + effect.name, '[of] ' + source);
+			} else {
 				this.add('-weather', 'Hail');
 			}
 		},
