@@ -737,7 +737,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 90,
 			effect: function(source) {
-				this.boost({ atk: 1 }, source, source);
+				source.boost({ atk: 1 }, source, source);
 			},
 		},
 	},
@@ -746,7 +746,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 90,
 			effect: function(source) {
-				this.boost({ def: 1 }, source, source);
+				source.boost({ def: 1 }, source, source);
 			},
 		},
 	},
@@ -755,7 +755,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 90,
 			effect: function(source) {
-				this.boost({ spa: 1 }, source, source);
+				source.boost({ spa: 1 }, source, source);
 			},
 		},
 	},
@@ -764,7 +764,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 90,
 			effect: function(source) {
-				this.boost({ spd: 1 }, source, source);
+				source.boost({ spd: 1 }, source, source);
 			},
 		},
 	},
@@ -773,7 +773,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		fling: {
 			basePower: 90,
 			effect: function(source) {
-				this.boost({ spe: 1 }, source, source);
+				source.boost({ spe: 1 }, source, source);
 			},
 		},
 	},
