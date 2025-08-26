@@ -63,7 +63,7 @@ export const Scripts: ModdedBattleScriptsData = {
 
 			const isCrit = target.getMoveHitData(move).crit;
 			if (isCrit) {
-				baseDamage = this.battle.modify(baseDamage, move.critModifier || 2);
+				baseDamage = this.battle.modify(baseDamage, move.critModifier || 1.33);
 			}
 
 			// Mod 2 (Damage is floored after all multipliers are in)
