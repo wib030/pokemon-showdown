@@ -5972,11 +5972,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onPrepareHit(target, source, move) {
 			if (source.ignoringItem(true)) return false;
 			const item = source.getItem();
+			if (source.hasAbility('multitype') && item.onPlate) return false;
 			if (!this.singleEvent('TakeItem', item, source.itemState, source, source, move, item)) return false;
 			if (!item.fling) return false;
 			this.debug(`BP: ${move.basePower}`);
 			if (item.id === 'adamantorb') {
 				move.priority = -7;
+			}
+			if (item.id === 'redcard') {
+				move.selfSwitch = true;
 			}
 			if (item.isBerry) {
 				move.onHit = function (foe) {
