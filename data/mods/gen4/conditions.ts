@@ -23,7 +23,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			return spe;
 		},
 		onBeforeMove(pokemon) {
-			if (!pokemon.hasAbility('quickfeet') && !pokemon.volatiles['nopar']) {
+			if (!pokemon.hasAbility('quickfeet') && this.randomChance(1, 5) && !pokemon.volatiles['nopar']) {
 				this.add('cant', pokemon, 'par');
 				pokemon.addVolatile("nopar");
 				return false;
