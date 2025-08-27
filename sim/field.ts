@@ -44,7 +44,7 @@ export class Field {
 
 		if (this.weather === status.id) {
 			if (sourceEffect && sourceEffect.effectType === 'Ability') {
-				if (this.battle.gen > 5 || this.weatherState.duration === 0) {
+				if (this.battle.gen >= 4 || this.weatherState.duration === 0) {
 					return false;
 				}
 			} else if (this.battle.gen > 2 || status.id === 'sandstorm') {
