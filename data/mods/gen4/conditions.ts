@@ -207,13 +207,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		onSourceModifyAccuracy(accuracy, target, source, move) {
 			let moveType = move.type;
 			if (move.id === 'judgment') {
-				moveType = pokemon.species.types[0];
-			}
-			if (moveType === 'Normal') {
-				if (source.hasAbility('aerilate')) moveType = 'Flying';
-				if (source.hasAbility('galvanize')) moveType = 'Electric';
-				if (source.hasAbility('pixilate')) moveType = 'Fairy';
-				if (source.hasAbility('refrigerate')) moveType = 'Ice';
+				moveType = source.species.types[0];
 			}
 			if (moveType === 'Rock') {
 				return this.chainModify(1.1);
