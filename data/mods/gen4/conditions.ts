@@ -206,7 +206,9 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		onSourceModifyAccuracyPriority: -1,
 		onSourceModifyAccuracy(accuracy, target, source, move) {
 			let moveType = move.type;
-			if (["judgment"].includes(move.id)) moveType = source.species.types[0];
+			if (move.id === 'judgment') {
+				moveType = pokemon.species.types[0];
+			}
 			if (moveType === 'Normal') {
 				if (source.hasAbility('aerilate')) moveType = 'Flying';
 				if (source.hasAbility('galvanize')) moveType = 'Electric';
