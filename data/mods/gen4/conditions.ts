@@ -100,7 +100,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 	frz: {
 		inherit: true,
 		onBeforeMove(pokemon, target, move) {
-			if (this.randomChance(1, 5)) {
+			if (this.randomChance(2, 5)) {
 				pokemon.cureStatus();
 				return;
 			}

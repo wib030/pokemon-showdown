@@ -399,6 +399,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				for (const secondary of move.secondaries) {
 					if (secondary.chance) secondary.chance *= 2;
 				}
+				if (secondary.chance > 100) {
+					secondary.chance = 100;
+				}
 			}
 		},
 	},
@@ -543,10 +546,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	wonderguard: {
 		inherit: true,
 		onTryHit(target, source, move) {
-			if (move.id === 'firefang') {
-				this.hint("In Gen 4, Fire Fang is always able to hit through Wonder Guard.", true, target.side);
-				return;
-			}
 			if (target === source || move.category === 'Status' || move.type === '???' || move.id === 'struggle') return;
 			this.debug('Wonder Guard immunity: ' + move.id);
 			if (target.runEffectiveness(move) <= 0 || !target.runImmunity(move)) {
