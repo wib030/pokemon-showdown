@@ -47,9 +47,11 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			let sleepTurns = 3;
 			const oneTurnChance = 25;
 			const twoTurnChance = 75;
-
-			for (const foeActive of pokemon.foes()) {
-				if (foeActive.ability === 'baddreams') {
+			
+			for (const poke of this.getAllActive()) {
+				if (poke === pokemon) continue;
+				if (poke.isAlly(source)) break;
+				if (poke.hasAbility('baddreams')) {
 					badDreamsActive = true;
 					break;
 				}
