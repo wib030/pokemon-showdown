@@ -902,7 +902,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 	},
 	nopar: {
 		name: 'nopar',
-		duration: 1,
+		duration: 2,
 		// this is a volatile status
 		onStart(target, source, sourceEffect) {
 			this.add('-start', target, 'nopar');
