@@ -904,4 +904,13 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		name: 'nopar',
 		duration: 2,
 	},
+	restflag: {
+		name: 'restflag',
+		onStart(target) {
+			this.add('-start', target, 'Resting');
+		},
+		onEnd(target) {
+			this.add('-end', target, 'Resting');
+		},
+	},
 };

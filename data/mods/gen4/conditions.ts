@@ -64,6 +64,9 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 				this.add('-end', target, 'Nightmare', '[silent]');
 			}
 		},
+		onEnd(pokemon) {
+			pokemon.removeVolatile("restflag");
+		},
 		onBeforeMovePriority: 10,
 		onBeforeMove(pokemon, target, move) {
 			if (pokemon.hasAbility('earlybird')) {
@@ -79,6 +82,12 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 				return;
 			}
 			return false;
+		},
+		onResidualOrder: 10,
+		onResidual(pokemon) {
+			if(!pokemon.volatiles['restflag']) {
+				this.heal(pokemon.baseMaxhp / 4);
+			}
 		},
 	},
 	psn: {
