@@ -205,7 +205,8 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		inherit: true,
 		onSourceModifyAccuracyPriority: -1,
 		onSourceModifyAccuracy(accuracy, target, source, move) {
-			if (move.type === 'Rock') {
+			const moveType = this.getMoveType(move, source.species, source.species.abilities, 'Normal');
+			if (moveType === 'Rock') {
 				return this.chainModify(1.1);
 			}
 		},

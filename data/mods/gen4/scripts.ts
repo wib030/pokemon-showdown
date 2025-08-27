@@ -131,7 +131,8 @@ export const Scripts: ModdedBattleScriptsData = {
 				this.battle.activeTarget = target;
 				// calculate true accuracy
 				let accuracy = move.accuracy;
-				if (move.forceSTAB || pokemon.hasType(move.type)) {
+				const moveType = this.getMoveType(move, pokemon.species, pokemon.species.abilities, 'Normal');
+				if (move.forceSTAB || pokemon.hasType(moveType)) {
 					accuracy = accuracy * 1.1;
 				}
 				
