@@ -1,9 +1,4 @@
 export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDataTable = {
-	brn: {
-		inherit: true,
-		onResidualOrder: 10,
-		onResidualSubOrder: 6,
-	},
 	par: {
 		inherit: true,
 		onStart(target, source, sourceEffect) {
@@ -21,7 +16,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			return spe;
 		},
 		onBeforeMove(pokemon) {
-			if (!pokemon.hasAbility('quickfeet') && this.randomChance(1, 5)) {
+			if (!pokemon.hasAbility('quickfeet') && this.randomChance(1, 5) && !pokemon.volatiles['nopar']) {
 				this.add('cant', pokemon, 'par');
 				pokemon.addVolatile("nopar");
 				return false;
