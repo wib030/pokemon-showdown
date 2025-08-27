@@ -84,7 +84,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		onResidualOrder: 10,
 		onResidual(pokemon) {
 			if(!pokemon.volatiles['restflag']) {
-				this.heal(pokemon.baseMaxhp / 4, '[silent]');
+				this.heal(pokemon.baseMaxhp / 4, pokemon, pokemon, '[silent]');
 			}
 		},
 	},
