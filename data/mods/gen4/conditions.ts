@@ -41,8 +41,30 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			} else {
 				this.add('-status', target, 'slp');
 			}
-			// 1-4 turns
-			this.effectState.time = this.random(2, 6);
+			// 1-3 turns
+			let badDreamsActive = false;
+			let sleepRoll = this.random(1, 100);
+			let sleepTurns = 3;
+			const oneTurnChance = 25;
+			const twoTurnChance = 75;
+
+			for (const mon of pokemon.foes()) {
+				if (mon.hasAbility('baddreams')) {
+					badDreamsActive = true;
+				}
+			}
+			
+			if (sleepRoll < twoTurnChance) {
+				if (sleepRoll < oneTurnChance) {
+					if (badDreamsActive === false) {
+						sleepTurns -= 2;
+					}
+				} else {
+					sleepTurns -= 1;
+				}
+			}
+			
+			this.effectState.time = sleepTurns;
 
 			if (target.removeVolatile('nightmare')) {
 				this.add('-end', target, 'Nightmare', '[silent]');
