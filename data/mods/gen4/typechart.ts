@@ -150,6 +150,7 @@ export const TypeChart: import('../sim/dex-data').TypeDataTable = {
 	},
 	fire: {
 		damageTaken: {
+			frz: 3,
 			brn: 3,
 			Bug: 2,
 			Dark: 0,
