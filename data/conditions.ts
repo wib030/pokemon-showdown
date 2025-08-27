@@ -900,4 +900,15 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			this.damage(pokemon.baseMaxhp / 8);
 		},
 	},
+	nopar: {
+		name: 'nopar',
+		duration: 1,
+		// this is a volatile status
+		onStart(target, source, sourceEffect) {
+			this.add('-start', target, 'nopar');
+		},
+		onEnd(target, source, sourceEffect) {
+			this.add('-end', target, 'nopar');
+		},
+	},
 };

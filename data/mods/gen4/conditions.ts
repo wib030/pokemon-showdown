@@ -6,6 +6,14 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 	},
 	par: {
 		inherit: true,
+		onStart(target, source, sourceEffect) {
+			if (sourceEffect && sourceEffect.effectType === 'Ability') {
+				this.add('-status', target, 'par', '[from] ability: ' + sourceEffect.name, `[of] ${source}`);
+			} else {
+				this.add('-status', target, 'par');
+			}
+			target.addVolatile("nopar");
+		},
 		onModifySpe(spe, pokemon) {
 			if (!pokemon.hasAbility('quickfeet')) {
 				return this.chainModify(0.5);
