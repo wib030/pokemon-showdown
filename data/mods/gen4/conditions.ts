@@ -205,7 +205,14 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		inherit: true,
 		onSourceModifyAccuracyPriority: -1,
 		onSourceModifyAccuracy(accuracy, target, source, move) {
-			const moveType = this.getMoveType(move, source.species, source.species.abilities, 'Normal');
+			const moveType = move.type;
+			if (["judgment"].includes(move.id)) moveType = source.species.types[0];
+			if (moveType === 'Normal') {
+				if (source.hasAbility('aerilate')) moveType = 'Flying';
+				if (source.hasAbility('galvanize')) moveType = 'Electric';
+				if (source.hasAbility('pixilate')) moveType = 'Fairy';
+				if (source.hasAbility('refrigerate')) moveType = 'Ice';
+			}
 			if (moveType === 'Rock') {
 				return this.chainModify(1.1);
 			}

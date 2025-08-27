@@ -131,7 +131,15 @@ export const Scripts: ModdedBattleScriptsData = {
 				this.battle.activeTarget = target;
 				// calculate true accuracy
 				let accuracy = move.accuracy;
-				const moveType = this.getMoveType(move, pokemon.species, pokemon.species.abilities, 'Normal');
+				const moveType = move.type;
+				if (["judgment"].includes(move.id)) moveType = pokemon.species.types[0];
+				if (moveType === 'Normal') {
+					if (pokemon.hasAbility('aerilate')) moveType = 'Flying';
+					if (pokemon.hasAbility('galvanize')) moveType = 'Electric';
+					if (pokemon.hasAbility('pixilate')) moveType = 'Fairy';
+					if (pokemon.hasAbility('refrigerate')) moveType = 'Ice';
+				}
+				
 				if (move.forceSTAB || pokemon.hasType(moveType)) {
 					accuracy = accuracy * 1.1;
 				}
