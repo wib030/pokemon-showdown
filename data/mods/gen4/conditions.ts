@@ -205,7 +205,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		inherit: true,
 		onSourceModifyAccuracyPriority: -1,
 		onSourceModifyAccuracy(accuracy, target, source, move) {
-			const moveType = move.type;
+			let moveType = move.type;
 			if (["judgment"].includes(move.id)) moveType = source.species.types[0];
 			if (moveType === 'Normal') {
 				if (source.hasAbility('aerilate')) moveType = 'Flying';

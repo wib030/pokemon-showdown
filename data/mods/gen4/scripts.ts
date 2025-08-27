@@ -131,7 +131,7 @@ export const Scripts: ModdedBattleScriptsData = {
 				this.battle.activeTarget = target;
 				// calculate true accuracy
 				let accuracy = move.accuracy;
-				const moveType = move.type;
+				let moveType = move.type;
 				if (["judgment"].includes(move.id)) moveType = pokemon.species.types[0];
 				if (moveType === 'Normal') {
 					if (pokemon.hasAbility('aerilate')) moveType = 'Flying';
