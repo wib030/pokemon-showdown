@@ -770,7 +770,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onBeforeMovePriority: 2,
 			onBeforeMove(pokemon, target, move) {
 				this.add('-activate', pokemon, 'move: Attract', '[of] ' + this.effectState.source);
-				if (this.randomChance(1, 2)) {
+				if (this.randomChance(1, 2) && move.category !== 'Status') {
 					this.add('cant', pokemon, 'Attract');
 					return false;
 				}
