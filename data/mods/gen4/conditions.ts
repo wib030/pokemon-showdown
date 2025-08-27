@@ -196,6 +196,12 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 	},
 	sandstorm: {
 		inherit: true,
+		onSourceModifyAccuracyPriority: -1,
+		onSourceModifyAccuracy(accuracy, target, source, move) {
+			if (move.type === 'Rock') {
+				return this.chainModify(1.1);
+			}
+		},
 		onFieldResidualOrder: 8,
 	},
 	hail: {

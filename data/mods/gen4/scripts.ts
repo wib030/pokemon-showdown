@@ -131,6 +131,10 @@ export const Scripts: ModdedBattleScriptsData = {
 				this.battle.activeTarget = target;
 				// calculate true accuracy
 				let accuracy = move.accuracy;
+				if (move.forceSTAB || pokemon.hasType(move.type)) {
+					accuracy = accuracy * 1.1;
+				}
+				
 				if (move.ohko) { // bypasses accuracy modifiers
 					if (!target.isSemiInvulnerable()) {
 						if (pokemon.level < target.level) {
