@@ -1,4 +1,11 @@
 export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDataTable = {
+	brn: {
+		inherit: true,
+		onResidualOrder: 10,
+		onResidual(pokemon) {
+			this.damage(pokemon.baseMaxhp / 16);
+		},
+	},
 	par: {
 		inherit: true,
 		onStart(target, source, sourceEffect) {
