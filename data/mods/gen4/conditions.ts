@@ -64,9 +64,6 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 				this.add('-end', target, 'Nightmare', '[silent]');
 			}
 		},
-		onEnd(pokemon) {
-			pokemon.removeVolatile("restflag");
-		},
 		onBeforeMovePriority: 10,
 		onBeforeMove(pokemon, target, move) {
 			if (pokemon.hasAbility('earlybird')) {
@@ -74,6 +71,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			}
 			pokemon.statusState.time--;
 			if (pokemon.statusState.time <= 0) {
+				pokemon.removeVolatile("restflag");
 				pokemon.cureStatus();
 				return;
 			}
