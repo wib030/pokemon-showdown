@@ -48,8 +48,8 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			const oneTurnChance = 25;
 			const twoTurnChance = 75;
 
-			for (const mon of pokemon.foes()) {
-				if (mon.hasAbility('baddreams')) {
+			for (const foeActive of pokemon.foes()) {
+				if (foeActive.hasAbility('baddreams')) {
 					badDreamsActive = true;
 				}
 			}
