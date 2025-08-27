@@ -624,6 +624,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				}
 				return 5;
 			},
+			onModifyWeight(weighthg) {
+				return weighthg * 2;
+			},
 			onFieldStart(target, source) {
 				if (source?.hasAbility('persistent')) {
 					this.add('-fieldstart', 'move: Gravity', '[persistent]');
