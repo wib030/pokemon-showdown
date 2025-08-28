@@ -225,25 +225,6 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			if (source.hasAbility('rockstar') && move.flags['sound']) {
 				moveType = 'Rock';
 			}
-			if (move.id === 'weatherball') {
-				switch (this.battle.weather) {
-				case 'sunnyday':
-				case 'desolateland':
-					moveType = 'Fire';
-					break;
-				case 'raindance':
-				case 'primordialsea':
-					moveType = 'Water';
-					break;
-				case 'sandstorm':
-					moveType = 'Rock';
-					break;
-				case 'hail':
-				case 'snowscape':
-					moveType = 'Ice';
-					break;
-				}
-			}
 				
 			if (moveType === 'Rock') {
 				return this.chainModify(1.1);
