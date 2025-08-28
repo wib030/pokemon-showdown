@@ -5635,4 +5635,24 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -3,
 	},
+	
+	// New abilities
+	rockstar: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			if (move.flags['sound'] && !pokemon.volatiles['dynamax']) { // hardcode
+				move.type = 'Rock';
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.flags['sound'] && !pokemon.volatiles['dynamax']) { // hardcode
+				return this.chainModify(1.5);
+			}
+		},
+		flags: {},
+		name: "Rock Star",
+		rating: 2,
+		num: -4,
+	},
 };

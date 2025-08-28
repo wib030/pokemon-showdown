@@ -2274,4 +2274,11 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
+	
+	// New abilities
+	rockstar: {
+		name: "Rock Star",
+		desc: "This Pokemon's sound-based moves become Rock-type and recieve a 1.5x boost in power. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's sound-based moves become Rock-type, and get 1.5x power.",
+	},
 };

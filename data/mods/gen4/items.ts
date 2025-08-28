@@ -132,14 +132,23 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	dracoplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	dreadplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	earthplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	fastball: {
@@ -148,6 +157,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	fistplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	flameorb: {
@@ -161,6 +173,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	flameplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	griseousorb: {
@@ -184,10 +199,16 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	icicleplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	insectplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	ironball: {
@@ -196,6 +217,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	ironplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	kingsrock: {
@@ -309,6 +333,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	meadowplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	mentalherb: {
@@ -372,6 +399,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	mindplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	moonball: {
@@ -398,14 +428,23 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	skyplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	splashplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	spookyplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	sportball: {
@@ -434,6 +473,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	stoneplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	thickclub: {
@@ -455,6 +497,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	toxicplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	widelens: {
@@ -471,6 +516,9 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	zapplate: {
 		inherit: true,
+		fling: {
+			basePower: 90,
+		},
 		onTakeItem: true,
 	},
 	zoomlens: {

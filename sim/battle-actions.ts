@@ -661,7 +661,7 @@ export class BattleActions {
 	hitStepTryImmunity(targets: Pokemon[], pokemon: Pokemon, move: ActiveMove) {
 		const hitResults = [];
 		for (const [i, target] of targets.entries()) {
-			if (this.battle.gen >= 6 && move.flags['powder'] && target !== pokemon && !this.dex.getImmunity('powder', target)) {
+			if (move.flags['powder'] && target !== pokemon && !this.dex.getImmunity('powder', target)) {
 				this.battle.debug('natural powder immunity');
 				this.battle.add('-immune', target);
 				hitResults[i] = false;

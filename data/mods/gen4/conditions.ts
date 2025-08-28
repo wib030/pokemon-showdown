@@ -71,6 +71,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			}
 			pokemon.statusState.time--;
 			if (pokemon.statusState.time <= 0) {
+				pokemon.removeVolatile("restflag");
 				pokemon.cureStatus();
 				return;
 			}
@@ -79,6 +80,12 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 				return;
 			}
 			return false;
+		},
+		onResidualOrder: 10,
+		onResidual(pokemon) {
+			if(!pokemon.volatiles['restflag']) {
+				this.heal(pokemon.baseMaxhp / 4);
+			}
 		},
 	},
 	psn: {
@@ -198,7 +205,44 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		inherit: true,
 		onSourceModifyAccuracyPriority: -1,
 		onSourceModifyAccuracy(accuracy, target, source, move) {
-			if (move.type === 'Rock') {
+			let moveType = move.type;
+			let item = source.getItem();
+			if (move.id === 'judgment') {
+				moveType = source.species.types[0];
+			}
+			if (move.id === 'fling' && item.onPlate) {
+				moveType = item.onPlate;
+			}
+			if (source.hasAbility('normalize') && move.id !== 'judgment') {
+				moveType = 'Normal';
+			}
+			if (move.id === 'hiddenpower') {
+				moveType = source.hpType || 'Dark';
+			}
+			if (source.hasAbility('rockstar') && move.flags['sound']) {
+				moveType = 'Rock';
+			}
+			if (move.id === 'weatherball') {
+				switch (this.battle.weather) {
+				case 'sunnyday':
+				case 'desolateland':
+					moveType = 'Fire';
+					break;
+				case 'raindance':
+				case 'primordialsea':
+					moveType = 'Water';
+					break;
+				case 'sandstorm':
+					moveType = 'Rock';
+					break;
+				case 'hail':
+				case 'snowscape':
+					moveType = 'Ice';
+					break;
+				}
+			}
+				
+			if (moveType === 'Rock') {
 				return this.chainModify(1.1);
 			}
 		},

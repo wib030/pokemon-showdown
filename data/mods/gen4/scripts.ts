@@ -131,7 +131,42 @@ export const Scripts: ModdedBattleScriptsData = {
 				this.battle.activeTarget = target;
 				// calculate true accuracy
 				let accuracy = move.accuracy;
-				if (move.forceSTAB || pokemon.hasType(move.type)) {
+				let moveType = move.type;
+				let item = pokemon.getItem();
+				if (move.id === 'judgment') {
+					moveType = pokemon.species.types[0];
+				} else if (move.id === 'fling' && item.onPlate) {
+					moveType = item.onPlate;
+				} else if (pokemon.hasAbility('normalize')) {
+					moveType = 'Normal';
+				}
+				if (move.id === 'hiddenpower') {
+					moveType = pokemon.hpType || 'Dark';
+				}
+				if (pokemon.hasAbility('rockstar') && move.flags['sound']) {
+					moveType = 'Rock';
+				}
+				if (move.id === 'weatherball') {
+					switch (this.battle.weather) {
+					case 'sunnyday':
+					case 'desolateland':
+						moveType = 'Fire';
+						break;
+					case 'raindance':
+					case 'primordialsea':
+						moveType = 'Water';
+						break;
+					case 'sandstorm':
+						moveType = 'Rock';
+						break;
+					case 'hail':
+					case 'snowscape':
+						moveType = 'Ice';
+						break;
+					}
+				}
+				
+				if (move.forceSTAB || pokemon.hasType(moveType)) {
 					accuracy = accuracy * 1.1;
 				}
 				
