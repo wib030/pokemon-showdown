@@ -132,24 +132,14 @@ export const Scripts: ModdedBattleScriptsData = {
 				// calculate true accuracy
 				let accuracy = move.accuracy;
 				let moveType = move.type;
-				let item = pokemon.getItem();
 				if (move.id === 'judgment') {
 					moveType = pokemon.species.types[0];
 				}
-				if (move.id === 'fling' && item.onPlate) {
-					moveType = item.onPlate;
-				}
-				if (pokemon.hasAbility('normalize') && move.id !== 'judgment') {
-					moveType = 'Normal';
-				}
-				if (move.id === 'naturalgift' && item.naturalGift) {
-					moveType = item.naturalGift.type;
-				}
-				if (move.id === 'hiddenpower') {
-					moveType = pokemon.hpType || 'Dark';
-				}
-				if (pokemon.hasAbility('rockstar') && move.flags['sound']) {
-					moveType = 'Rock';
+				if (moveType === 'Normal') {
+					if (pokemon.hasAbility('aerilate')) moveType = 'Flying';
+					if (pokemon.hasAbility('galvanize')) moveType = 'Electric';
+					if (pokemon.hasAbility('pixilate')) moveType = 'Fairy';
+					if (pokemon.hasAbility('refrigerate')) moveType = 'Ice';
 				}
 				
 				if (move.forceSTAB || pokemon.hasType(moveType)) {
