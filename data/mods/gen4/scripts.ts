@@ -135,9 +135,11 @@ export const Scripts: ModdedBattleScriptsData = {
 				let item = pokemon.getItem();
 				if (move.id === 'judgment') {
 					moveType = pokemon.species.types[0];
-				} else if (move.id === 'fling' && item.onPlate) {
+				}
+				if (move.id === 'fling' && item.onPlate) {
 					moveType = item.onPlate;
-				} else if (pokemon.hasAbility('normalize')) {
+				}
+				if (pokemon.hasAbility('normalize') && move.id !== 'judgment') {
 					moveType = 'Normal';
 				}
 				if (move.id === 'hiddenpower') {
