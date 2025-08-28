@@ -206,9 +206,26 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		onSourceModifyAccuracyPriority: -1,
 		onSourceModifyAccuracy(accuracy, target, source, move) {
 			let moveType = move.type;
+			let item = source.getItem();
 			if (move.id === 'judgment') {
 				moveType = source.species.types[0];
 			}
+			if (move.id === 'fling' && item.onPlate) {
+				moveType = item.onPlate;
+			}
+			if (source.hasAbility('normalize') && move.id !== 'judgment') {
+				moveType = 'Normal';
+			}
+			if (move.id === 'naturalgift' && item.naturalGift) {
+				moveType = item.naturalGift.type;
+			}
+			if (move.id === 'hiddenpower') {
+				moveType = source.hpType || 'Dark';
+			}
+			if (source.hasAbility('rockstar') && move.flags['sound']) {
+				moveType = 'Rock';
+			}
+				
 			if (moveType === 'Rock') {
 				return this.chainModify(1.1);
 			}
