@@ -216,9 +216,6 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			if (source.hasAbility('normalize') && move.id !== 'judgment') {
 				moveType = 'Normal';
 			}
-			if (move.id === 'naturalgift' && item.naturalGift) {
-				moveType = item.naturalGift.type;
-			}
 			if (move.id === 'hiddenpower') {
 				moveType = source.hpType || 'Dark';
 			}
