@@ -142,9 +142,6 @@ export const Scripts: ModdedBattleScriptsData = {
 				if (pokemon.hasAbility('normalize') && move.id !== 'judgment') {
 					moveType = 'Normal';
 				}
-				if (move.id === 'naturalgift' && item.naturalGift) {
-					moveType = item.naturalGift.type;
-				}
 				if (move.id === 'hiddenpower') {
 					moveType = pokemon.hpType || 'Dark';
 				}
