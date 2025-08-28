@@ -5946,6 +5946,18 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		num: 374,
 		accuracy: 100,
 		basePower: 0,
+		basePowerCallback(pokemon, target, move) {
+			const item = pokemon.getItem();
+			move.basePower = item.fling.basePower;
+			if (item.id === 'dawnstone') {
+				if (target.status === 'slp' || target.hasAbility('comatose')) {
+					this.debug('BP doubled on sleeping target');
+					this.hint("The base power of Fling doubled due to the effect of the Dawn Stone.", true);
+					move.basePower *= 2;
+				}
+			}
+			return move.basePower;
+		},
 		category: "Physical",
 		name: "Fling",
 		pp: 10,
@@ -5971,15 +5983,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (source.hasAbility('multitype') && item.onPlate) return false;
 			if (!this.singleEvent('TakeItem', item, source.itemState, source, source, move, item)) return false;
 			if (!item.fling) return false;
-			move.basePower = item.fling.basePower;
 			this.debug(`BP: ${move.basePower}`);
-			if (item.id === 'dawnstone') {
-				if (target.status === 'slp' || target.hasAbility('comatose')) {
-					this.debug('BP doubled on sleeping target');
-					this.hint("The base power of Fling doubled due to the effect of the Dawn Stone.", true);
-					move.basePower *= 2;
-				}
-			}
 			if (item.id === 'redcard') {
 				move.selfSwitch = true;
 			}

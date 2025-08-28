@@ -904,7 +904,4 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		name: 'nopar',
 		duration: 2,
 	},
-	restflag: {
-		name: 'restflag',
-	},
 };
