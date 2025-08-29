@@ -202,6 +202,12 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			const warnMove = this.sample(warnMoves);
 			this.add('-activate', pokemon, 'ability: Forewarn', warnMove);
 		},
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Forewarn', `[of] ${target}`);
+			}
+		},
 	},
 	frisk: {
 		inherit: true,
@@ -218,6 +224,12 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onSourceModifyAccuracy(accuracy, target, source, move) {
 			if (move.category === 'Physical' && typeof accuracy === 'number') {
 				return accuracy * 0.8;
+			}
+		},
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Hustle', `[of] ${target}`);
 			}
 		},
 	},
@@ -368,6 +380,12 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if (target === source) return;
 			return 1;
 		},
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Pressure', `[of] ${target}`);
+			}
+		},
 		name: "Pressure",
 		rating: 1.5,
 		num: 46,
@@ -415,6 +433,12 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			let key: BoostID;
 			for (key in boosts) {
 				boosts[key]! *= 2;
+			}
+		},
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Simple', `[of] ${target}`);
 			}
 		},
 		flags: { breakable: 1 },
@@ -541,6 +565,12 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	vitalspirit: {
 		inherit: true,
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Vital Spirit', `[of] ${target}`);
+			}
+		},
 		rating: 2.5,
 	},
 	wonderguard: {
@@ -604,9 +634,87 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				source.addVolatile('attract', target);
 			}
 		},
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Rivalry', `[of] ${target}`);
+			}
+		},
 		flags: {},
 		name: "Rivalry",
 		rating: 0,
 		num: 79,
+	},
+	guts: {
+		inherit: true,
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Guts', `[of] ${target}`);
+			}
+		},
+	},
+	unaware: {
+		inherit: true,
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Unaware', `[of] ${target}`);
+			}
+		},
+	},
+	anticipation: {
+		inherit: true,
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Anticipation', `[of] ${target}`);
+			}
+		},
+	},
+	hugepower: {
+		inherit: true,
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Huge Power', `[of] ${target}`);
+			}
+		},
+	},
+	purepower: {
+		inherit: true,
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Pure Power', `[of] ${target}`);
+			}
+		},
+	},
+	rattled: {
+		onDamagingHit(damage, target, source, move) {
+			if (['Dark', 'Bug', 'Ghost'].includes(move.type)) {
+				this.boost({ spe: 1 });
+			}
+		},
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Rattled', `[of] ${target}`);
+				this.boost({ spe: 1 });
+			}
+		},
+		flags: {},
+		name: "Rattled",
+		rating: 1,
+		num: 155,
+	},
+	truant: {
+		inherit: true,
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Truant', `[of] ${target}`);
+			}
+		},
 	},
 };
