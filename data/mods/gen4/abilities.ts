@@ -753,4 +753,13 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 	},
+	reckless: {
+		inherit: true,
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Reckless', `[of] ${target}`);
+			}
+		},
+	},
 };
