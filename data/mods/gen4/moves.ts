@@ -729,14 +729,18 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		condition: {
 			duration: 5,
 			durationCallback(target, source, effect) {
+				if (effect?.name === "Psychic Noise") {
+					return 2;
+				}
 				if (source?.hasAbility('persistent')) {
 					this.add('-activate', source, 'ability: Persistent', '[move] Heal Block');
 					return 7;
 				}
 				return 5;
 			},
-			onStart(pokemon) {
+			onStart(pokemon, source) {
 				this.add('-start', pokemon, 'move: Heal Block');
+				source.moveThisTurnResult = true;
 			},
 			onDisableMove(pokemon) {
 				for (const moveSlot of pokemon.moveSlots) {
@@ -747,15 +751,38 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 			onBeforeMovePriority: 6,
 			onBeforeMove(pokemon, target, move) {
-				if (move.flags['heal']) {
+				if (move.flags['heal'] && !move.isZ && !move.isMax) {
 					this.add('cant', pokemon, 'move: Heal Block', move);
 					return false;
 				}
 			},
-			onResidualOrder: 10,
-			onResidualSubOrder: 17,
+			onModifyMove(move, pokemon, target) {
+				if (move.flags['heal'] && !move.isZ && !move.isMax) {
+					this.add('cant', pokemon, 'move: Heal Block', move);
+					return false;
+				}
+			},
+			onResidualOrder: 20,
 			onEnd(pokemon) {
 				this.add('-end', pokemon, 'move: Heal Block');
+			},
+			onTryHeal(damage, target, source, effect) {
+				if (effect && (effect.id === 'zpower' || (effect as Move).isZ)) return damage;
+				if (source && target !== source && target.hp !== target.maxhp && effect.name === "Pollen Puff") {
+					this.attrLastMove('[still]');
+					// FIXME: Wrong error message, correct one not supported yet
+					this.add('cant', source, 'move: Heal Block', effect);
+					return null;
+				}
+				return false;
+			},
+			onRestart(target, source, effect) {
+				if (effect?.name === 'Psychic Noise') return;
+
+				this.add('-fail', target, 'move: Heal Block'); // Succeeds to supress downstream messages
+				if (!source.moveThisTurnResult) {
+					source.moveThisTurnResult = false;
+				}
 			},
 		},
 	},
