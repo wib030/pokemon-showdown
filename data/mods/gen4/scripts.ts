@@ -166,7 +166,7 @@ export const Scripts: ModdedBattleScriptsData = {
 					}
 				}
 				
-				if ((move.forceSTAB || pokemon.hasType(moveType)) && accuracy > 0) {
+				if ((move.forceSTAB || pokemon.hasType(moveType)) && accuracy != true) {
 					accuracy = accuracy * 1.1;
 				}
 				
