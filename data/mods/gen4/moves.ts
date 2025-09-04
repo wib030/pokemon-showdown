@@ -757,11 +757,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			onEnd(pokemon) {
 				this.add('-end', pokemon, 'move: Heal Block');
 			},
-			onTryHeal(damage, pokemon, source, effect) {
-				if (effect && (effect.id === 'drain' || effect.id === 'leechseed' || effect.id === 'wish')) {
-					return false;
-				}
-			},
 		},
 	},
 	healingwish: {
