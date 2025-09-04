@@ -21,6 +21,10 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Aftermath",
 		desc: "If this Pokemon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. This effect is prevented if the move's user has the Magic Guard Ability or if any active Pokemon has the Damp Ability.",
 		shortDesc: "If this Pokemon is KOed with a contact move, that move's user loses 1/4 its max HP.",
+		gen4: {
+			desc: "If this Pokemon is knocked out with a move, that move's user loses 1/4 of its maximum HP, rounded down. This effect is prevented if the move's user has the Magic Guard Ability or if any active Pokemon has the Damp Ability.",
+			shortDesc: "If this Pokemon is KOed with a move, that move's user loses 1/4 its max HP.",
+		},
 
 		damage: "  [POKEMON] was hurt!",
 	},
@@ -179,8 +183,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Fire-type attack.",
 		shortDesc: "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Fire attacks.",
 		gen4: {
-			desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its Fire-type attacks have their power multiplied by 1.5.",
-			shortDesc: "At 1/3 or less of its max HP, this Pokemon's Fire-type attacks have 1.5x power.",
+			desc: "When this Pokemon has 1/2 or less of its maximum HP, rounded down, its Fire-type attacks have their power multiplied by 1.5.",
+			shortDesc: "At 1/2 or less of its max HP, this Pokemon's Fire-type attacks have 1.5x power.",
 		},
 	},
 	bulletproof: {
@@ -223,7 +227,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "This Pokemon's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
 		shortDesc: "This Pokemon's type changes to the type of a move it's hit by, unless it has the type.",
 		gen4: {
-			desc: "This Pokemon's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies after each hit from a multi-hit move. This effect does not happen if this Pokemon did not lose HP from the attack.",
+			desc: "This Pokemon's type changes to match the type of the last move that hit it, before the move connects, unless that type is already one of its types. This effect applies before each hit from a multi-hit move.",
+			shortDesc: "Own type changes to the type of a move before its hit, unless it has the type.",
 		},
 	},
 	comatose: {
@@ -723,6 +728,10 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Illuminate",
 		desc: "Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage.",
 		shortDesc: "This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.",
+		gen4: {
+			desc: "This Pokemon and its allies' moves have their accuracy multiplied by 1.2.",
+			shortDesc: "This Pokemon and its allies' moves have their accuracy multiplied by 1.2.",
+		},
 		gen8: {
 			desc: "No competitive use.",
 			shortDesc: "No competitive use.",
@@ -996,8 +1005,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "If an active ally has this Ability or the Plus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
 		shortDesc: "If an active ally has this Ability or the Plus Ability, this Pokemon's Sp. Atk is 1.5x.",
 		gen4: {
-			desc: "If an active ally has the Plus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
-			shortDesc: "If an active ally has the Plus Ability, this Pokemon's Sp. Atk is 1.5x.",
+			desc: "If an active ally has the Plus Ability, this Pokemon's Special Defense and Defense is multiplied by 1.5.",
+			shortDesc: "Active ally has the Plus Ability: this Pokemon's Sp. Def & Def is 1.5x.",
 		},
 		gen3: {
 			desc: "If an active Pokemon has the Plus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
@@ -1172,8 +1181,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Grass-type attack.",
 		shortDesc: "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Grass attacks.",
 		gen4: {
-			desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its Grass-type attacks have their power multiplied by 1.5.",
-			shortDesc: "At 1/3 or less of its max HP, this Pokemon's Grass-type attacks have 1.5x power.",
+			desc: "When this Pokemon has 1/2 or less of its maximum HP, rounded down, its Grass-type attacks have their power multiplied by 1.5.",
+			shortDesc: "At 1/2 or less of its max HP, this Pokemon's Grass-type attacks have 1.5x power.",
 		},
 	},
 	owntempo: {
@@ -1245,8 +1254,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "If an active ally has this Ability or the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
 		shortDesc: "If an active ally has this Ability or the Minus Ability, this Pokemon's Sp. Atk is 1.5x.",
 		gen4: {
-			desc: "If an active ally has the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
-			shortDesc: "If an active ally has the Minus Ability, this Pokemon's Sp. Atk is 1.5x.",
+			desc: "If an active ally has the Minus Ability, this Pokemon's Special Attack and Attack is multiplied by 1.5.",
+			shortDesc: "Active ally has the Minus Ability: this Pokemon's Sp. Atk & Atk is 1.5x.",
 		},
 		gen3: {
 			desc: "If an active Pokemon has the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
@@ -1729,6 +1738,10 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Solar Power",
 		desc: "If Sunny Day is active, this Pokemon's Special Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
 		shortDesc: "If Sunny Day is active, this Pokemon's Sp. Atk is 1.5x; loses 1/8 max HP per turn.",
+		gen4: {
+			desc: "If Sunny Day is active, this Pokemon's Special Attack and Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
+			shortDesc: "Sunny Day is active: Pokemon's Sp. Atk & Atk is 1.5x; loses 1/8 max HP per turn.",
+		},
 		gen7: {
 			desc: "If Sunny Day is active, this Pokemon's Special Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn.",
 		},
@@ -1881,8 +1894,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Bug-type attack.",
 		shortDesc: "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Bug attacks.",
 		gen4: {
-			desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its Bug-type attacks have their power multiplied by 1.5.",
-			shortDesc: "At 1/3 or less of its max HP, this Pokemon's Bug-type attacks have 1.5x power.",
+			desc: "When this Pokemon has 1/2 or less of its maximum HP, rounded down, its Bug-type attacks have their power multiplied by 1.5.",
+			shortDesc: "At 1/2 or less of its max HP, this Pokemon's Bug-type attacks have 1.5x power.",
 		},
 	},
 	sweetveil: {
@@ -2023,8 +2036,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Water-type attack.",
 		shortDesc: "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Water attacks.",
 		gen4: {
-			desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its Water-type attacks have their power multiplied by 1.5.",
-			shortDesc: "At 1/3 or less of its max HP, this Pokemon's Water-type attacks have 1.5x power.",
+			desc: "When this Pokemon has 1/2 or less of its maximum HP, rounded down, its Water-type attacks have their power multiplied by 1.5.",
+			shortDesc: "At 1/2 or less of its max HP, this Pokemon's Water-type attacks have 1.5x power.",
 		},
 	},
 	toughclaws: {

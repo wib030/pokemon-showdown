@@ -32,7 +32,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	blaze: {
 		onBasePowerPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 3) {
+			if (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Blaze boost');
 				return this.chainModify(1.5);
 			}
@@ -50,10 +50,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	colorchange: {
 		inherit: true,
-		onDamagingHit(damage, target, source, move) {
-			if (!damage || !target.hp) return;
+		onTryHit(damage, target, source, move) {
 			const type = move.type;
-			if (target.isActive && move.category !== 'Status' && type !== '???' && !target.hasType(type)) {
+			if (target.isActive && type !== '???' && !target.hasType(type)) {
 				if (!target.setType(type)) return false;
 				this.add('-start', target, 'typechange', type, '[from] ability: Color Change');
 			}
@@ -99,7 +98,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	effectspore: {
 		inherit: true,
 		onDamagingHit(damage, target, source, move) {
-			if (damage && move.flags['contact'] && !source.status) {
+			if (damage && move.flags['contact'] && !source.status && source.runStatusImmunity('powder')) {
 				const r = this.random(100);
 				if (r < 10) {
 					source.setStatus('slp', target);
@@ -309,10 +308,19 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		num: 98,
 	},
 	minus: {
-		onModifySpA(spa, pokemon) {
-			for (const ally of pokemon.allies()) {
-				if (ally.ability === 'plus') {
-					return spa * 1.5;
+		onModifyDefPriority: 5,
+		onModifyDef(def, pokemon) {
+			for (const allyActive of pokemon.allies()) {
+				if (allyActive.hasAbility('plus')) {
+					return this.chainModify(1.5);
+				}
+			}
+		},
+		onModifySpDPriority: 5,
+		onModifySpD(spd, pokemon) {
+			for (const allyActive of pokemon.allies()) {
+				if (allyActive.hasAbility('plus')) {
+					return this.chainModify(1.5);
 				}
 			}
 		},
@@ -336,7 +344,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	overgrow: {
 		onBasePowerPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Grass' && attacker.hp <= attacker.maxhp / 3) {
+			if (move.type === 'Grass' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Overgrow boost');
 				return this.chainModify(1.5);
 			}
@@ -351,10 +359,19 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		num: 53,
 	},
 	plus: {
+		onModifySpAPriority: 5,
 		onModifySpA(spa, pokemon) {
-			for (const ally of pokemon.allies()) {
-				if (ally.ability === 'minus') {
-					return spa * 1.5;
+			for (const allyActive of pokemon.allies()) {
+				if (allyActive.hasAbility('minus')) {
+					return this.chainModify(1.5);
+				}
+			}
+		},
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, pokemon) {
+			for (const allyActive of pokemon.allies()) {
+				if (allyActive.hasAbility('minus')) {
+					return this.chainModify(1.5);
 				}
 			}
 		},
@@ -484,7 +501,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	swarm: {
 		onBasePowerPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Bug' && attacker.hp <= attacker.maxhp / 3) {
+			if (move.type === 'Bug' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Swarm boost');
 				return this.chainModify(1.5);
 			}
@@ -529,7 +546,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	torrent: {
 		onBasePowerPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Water' && attacker.hp <= attacker.maxhp / 3) {
+			if (move.type === 'Water' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Torrent boost');
 				return this.chainModify(1.5);
 			}
@@ -761,5 +778,33 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Reckless', `[of] ${target}`);
 			}
 		},
+	},
+	solarpower: {
+		inherit: true,
+		onModifyAtk(atk, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(1.5);
+			}
+		},
+	},
+	aftermath: {
+		inherit: true,
+		onDamagingHit(damage, target, source, move) {
+			if (!target.hp) {
+				this.damage(source.baseMaxhp / 4, source, target);
+			}
+		},
+	},
+	illuminate: {
+		onAnyModifyAccuracyPriority: -1,
+		onAnyModifyAccuracy(accuracy, target, source) {
+			if (source.isAlly(this.effectState.target) && typeof accuracy === 'number') {
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Illuminate",
+		rating: 0.5,
+		num: 35,
 	},
 };
