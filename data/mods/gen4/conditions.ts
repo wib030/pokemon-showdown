@@ -207,10 +207,10 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		onSourceModifyAccuracy(accuracy, target, source, move) {
 			let moveType = move.type;
 			let item = source.getItem();
-			if (move.id === 'judgment') {
+			if (move.id === 'judgment' && source.hasAbility('multitype')) {
 				moveType = source.species.types[0];
 			}
-			if (move.id === 'fling' && item.onPlate) {
+			if ((move.id === 'fling' || move.id === 'judgment') && item.onPlate) {
 				moveType = item.onPlate;
 			}
 			if (source.hasAbility('normalize') && move.id !== 'judgment') {
@@ -251,5 +251,20 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 	hail: {
 		inherit: true,
 		onFieldResidualOrder: 8,
+	},
+	mustrecharge: {
+		inherit: true,
+		onStart(pokemon) {
+			if (pokemon.hasAbility('relentless'))
+			{
+				this.damage(pokemon.baseMaxhp / 4);
+				this.hint("Relentless ignores the recharge turn, in exchange for the user recieving 1/4 Max HP damage.");
+				pokemon.removeVolatile('mustrecharge');
+			}
+			else
+			{
+				this.add('-mustrecharge', pokemon);
+			}
+		},
 	},
 };

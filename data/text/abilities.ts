@@ -270,6 +270,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	corrosion: {
 		name: "Corrosion",
 		shortDesc: "This Pokemon can poison or badly poison a Pokemon regardless of its typing.",
+		gen4: {
+			shortDesc: "This Pokemon ignores Steel-type immunities to poison/toxic, and the Poison-type.",
+		},
 	},
 	costar: {
 		name: "Costar",
@@ -1528,6 +1531,10 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Sand Force",
 		desc: "If Sandstorm is active, this Pokemon's Ground-, Rock-, and Steel-type attacks have their power multiplied by 1.3. This Pokemon takes no damage from Sandstorm.",
 		shortDesc: "This Pokemon's Ground/Rock/Steel attacks do 1.3x in Sandstorm; immunity to it.",
+		gen4: {
+			desc: "If Sandstorm is active, this Pokemon's Attack and Sp. Attack are multiplied by 1.3. This Pokemon takes no damage from Sandstorm.",
+			shortDesc: "This Pokemon's Sp. Atk & Atk is 1.3x in Sandstorm; immunity to it.",
+		},
 	},
 	sandrush: {
 		name: "Sand Rush",
@@ -1715,6 +1722,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	slushrush: {
 		name: "Slush Rush",
 		shortDesc: "If Snow is active, this Pokemon's Speed is doubled.",
+		gen4: {
+			shortDesc: "If Hail is active, this Pokemon's Speed is 1.66x.",
+		},
 		gen8: {
 			shortDesc: "If Hail is active, this Pokemon's Speed is doubled.",
 		},
@@ -2310,5 +2320,19 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Rock Star",
 		desc: "This Pokemon's sound-based moves become Rock-type and recieve a 1.5x boost in power. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 		shortDesc: "This Pokemon's sound-based moves become Rock-type, and get 1.5x power.",
+	},
+	freshmilk: {
+		name: "Fresh Milk",
+		desc: "There is a 30% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender, then lowers the Evasion of the attacker by 1 stage.",
+		shortDesc: "30% chance of infatuating opponent if they make contact, then lowers foes Evasion by 1.",
+	},
+	relentless: {
+		name: "Relentless",
+		shortDesc: "Instead of taking a recharge turn, Pokemon recieves damage equal to 1/4 of their Max HP.",
+	},
+	hotheaded: {
+		name: "Hotheaded",
+		desc: "This Pokemon does not take recoil damage, except Struggle. Does not affect Life Orb damage or crash damage.",
+		shortDesc: "This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.",
 	},
 };

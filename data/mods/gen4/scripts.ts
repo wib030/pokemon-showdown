@@ -133,9 +133,9 @@ export const Scripts: ModdedBattleScriptsData = {
 				let accuracy = move.accuracy;
 				let moveType = move.type;
 				let item = pokemon.getItem();
-				if (move.id === 'judgment') {
+				if (move.id === 'judgment' && pokemon.hasAbility('multitype')) {
 					moveType = pokemon.species.types[0];
-				} else if (move.id === 'fling' && item.onPlate) {
+				} else if ((move.id === 'judgment' || move.id === 'fling') && item.onPlate) {
 					moveType = item.onPlate;
 				} else if (pokemon.hasAbility('normalize')) {
 					moveType = 'Normal';

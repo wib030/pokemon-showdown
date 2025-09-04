@@ -5655,4 +5655,84 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: -4,
 	},
+	freshmilk: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(3, 10)) {
+					source.addVolatile('attract', this.effectState.target);
+					this.boost({ evasion: -1 }, source);
+				}
+			}
+		},
+		flags: {},
+		name: "Fresh Milk",
+		rating: 0.5,
+		num: -5,
+	},
+	headache: {
+		onBasePowerPriority: 2,
+		onBasePower(basePower, attacker, defender, move) {
+			let moveType = move.type;
+			let item = attacker.getItem();
+			if (move.id === 'judgment' && attacker.hasAbility('multitype')) {
+				moveType = attacker.species.types[0];
+			}
+			if ((move.id === 'fling' || move.id === 'judgment') && item.onPlate) {
+				moveType = item.onPlate;
+			}
+			if (attacker.hasAbility('normalize') && move.id !== 'judgment') {
+				moveType = 'Normal';
+			}
+			if (move.id === 'hiddenpower') {
+				moveType = attacker.hpType || 'Dark';
+			}
+			if (attacker.hasAbility('rockstar') && move.flags['sound']) {
+				moveType = 'Rock';
+			}
+			if (move.id === 'weatherball') {
+				switch (this.battle.weather) {
+				case 'sunnyday':
+				case 'desolateland':
+					moveType = 'Fire';
+					break;
+				case 'raindance':
+				case 'primordialsea':
+					moveType = 'Water';
+					break;
+				case 'sandstorm':
+					moveType = 'Rock';
+					break;
+				case 'hail':
+				case 'snowscape':
+					moveType = 'Ice';
+					break;
+				}
+			}
+			
+			if (moveType === 'Psychic' && attacker.hp <= attacker.maxhp / 2) {
+				this.debug('Headache boost');
+				return this.chainModify(2);
+			}
+		},
+		name: "Headache",
+		rating: 2,
+		num: -6,
+	},
+	relentless: { // Implemented in mustrecharge condition at mods/gen4/conditions.ts
+		name: "Relentless",
+		rating: 3,
+		num: -7,
+	},
+	hotheaded: {
+		onDamage(damage, target, source, effect) {
+			if (effect.id === 'recoil') {
+				if (!this.activeMove) throw new Error("Battle.activeMove is null");
+				if (this.activeMove.id !== 'struggle') return null;
+			}
+		},
+		flags: {},
+		name: "Hotheaded",
+		rating: 3,
+		num: -8,
+	},
 };

@@ -32,7 +32,44 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	blaze: {
 		onBasePowerPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 2) {
+			let moveType = move.type;
+			let item = attacker.getItem();
+			if (move.id === 'judgment' && attacker.hasAbility('multitype')) {
+				moveType = attacker.species.types[0];
+			}
+			if ((move.id === 'fling' || move.id === 'judgment') && item.onPlate) {
+				moveType = item.onPlate;
+			}
+			if (attacker.hasAbility('normalize') && move.id !== 'judgment') {
+				moveType = 'Normal';
+			}
+			if (move.id === 'hiddenpower') {
+				moveType = attacker.hpType || 'Dark';
+			}
+			if (attacker.hasAbility('rockstar') && move.flags['sound']) {
+				moveType = 'Rock';
+			}
+			if (move.id === 'weatherball') {
+				switch (this.battle.weather) {
+				case 'sunnyday':
+				case 'desolateland':
+					moveType = 'Fire';
+					break;
+				case 'raindance':
+				case 'primordialsea':
+					moveType = 'Water';
+					break;
+				case 'sandstorm':
+					moveType = 'Rock';
+					break;
+				case 'hail':
+				case 'snowscape':
+					moveType = 'Ice';
+					break;
+				}
+			}
+			
+			if (moveType === 'Fire' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Blaze boost');
 				return this.chainModify(1.5);
 			}
@@ -345,7 +382,44 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	overgrow: {
 		onBasePowerPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Grass' && attacker.hp <= attacker.maxhp / 2) {
+			let moveType = move.type;
+			let item = attacker.getItem();
+			if (move.id === 'judgment' && attacker.hasAbility('multitype')) {
+				moveType = attacker.species.types[0];
+			}
+			if ((move.id === 'fling' || move.id === 'judgment') && item.onPlate) {
+				moveType = item.onPlate;
+			}
+			if (attacker.hasAbility('normalize') && move.id !== 'judgment') {
+				moveType = 'Normal';
+			}
+			if (move.id === 'hiddenpower') {
+				moveType = attacker.hpType || 'Dark';
+			}
+			if (attacker.hasAbility('rockstar') && move.flags['sound']) {
+				moveType = 'Rock';
+			}
+			if (move.id === 'weatherball') {
+				switch (this.battle.weather) {
+				case 'sunnyday':
+				case 'desolateland':
+					moveType = 'Fire';
+					break;
+				case 'raindance':
+				case 'primordialsea':
+					moveType = 'Water';
+					break;
+				case 'sandstorm':
+					moveType = 'Rock';
+					break;
+				case 'hail':
+				case 'snowscape':
+					moveType = 'Ice';
+					break;
+				}
+			}
+			
+			if (moveType === 'Grass' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Overgrow boost');
 				return this.chainModify(1.5);
 			}
@@ -527,7 +601,44 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	swarm: {
 		onBasePowerPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Bug' && attacker.hp <= attacker.maxhp / 2) {
+			let moveType = move.type;
+			let item = attacker.getItem();
+			if (move.id === 'judgment' && attacker.hasAbility('multitype')) {
+				moveType = attacker.species.types[0];
+			}
+			if ((move.id === 'fling' || move.id === 'judgment') && item.onPlate) {
+				moveType = item.onPlate;
+			}
+			if (attacker.hasAbility('normalize') && move.id !== 'judgment') {
+				moveType = 'Normal';
+			}
+			if (move.id === 'hiddenpower') {
+				moveType = attacker.hpType || 'Dark';
+			}
+			if (attacker.hasAbility('rockstar') && move.flags['sound']) {
+				moveType = 'Rock';
+			}
+			if (move.id === 'weatherball') {
+				switch (this.battle.weather) {
+				case 'sunnyday':
+				case 'desolateland':
+					moveType = 'Fire';
+					break;
+				case 'raindance':
+				case 'primordialsea':
+					moveType = 'Water';
+					break;
+				case 'sandstorm':
+					moveType = 'Rock';
+					break;
+				case 'hail':
+				case 'snowscape':
+					moveType = 'Ice';
+					break;
+				}
+			}
+			
+			if (moveType === 'Bug' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Swarm boost');
 				return this.chainModify(1.5);
 			}
@@ -572,7 +683,44 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	torrent: {
 		onBasePowerPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Water' && attacker.hp <= attacker.maxhp / 2) {
+			let moveType = move.type;
+			let item = attacker.getItem();
+			if (move.id === 'judgment' && attacker.hasAbility('multitype')) {
+				moveType = attacker.species.types[0];
+			}
+			if ((move.id === 'fling' || move.id === 'judgment') && item.onPlate) {
+				moveType = item.onPlate;
+			}
+			if (attacker.hasAbility('normalize') && move.id !== 'judgment') {
+				moveType = 'Normal';
+			}
+			if (move.id === 'hiddenpower') {
+				moveType = attacker.hpType || 'Dark';
+			}
+			if (attacker.hasAbility('rockstar') && move.flags['sound']) {
+				moveType = 'Rock';
+			}
+			if (move.id === 'weatherball') {
+				switch (this.battle.weather) {
+				case 'sunnyday':
+				case 'desolateland':
+					moveType = 'Fire';
+					break;
+				case 'raindance':
+				case 'primordialsea':
+					moveType = 'Water';
+					break;
+				case 'sandstorm':
+					moveType = 'Rock';
+					break;
+				case 'hail':
+				case 'snowscape':
+					moveType = 'Ice';
+					break;
+				}
+			}
+			
+			if (moveType === 'Water' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Torrent boost');
 				return this.chainModify(1.5);
 			}
@@ -869,5 +1017,44 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 			return accuracy;
 		},
+	},
+	slushrush: {
+		inherit: true,
+		onModifySpe(spe, pokemon) {
+			if (this.field.isWeather(['hail', 'snowscape'])) {
+				return this.chainModify(1.66);
+			}
+		},
+	},
+	corrosion: {
+		inherit: true,
+		onModifyMovePriority: -5,
+		onModifyMove(move) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Steel'] = true;
+			}
+		},
+	},
+	sandforce: {
+		onModifySpAPriority: 5,
+		onModifySpA(spa, pokemon) {
+			if (this.field.isWeather('sandstorm')) {
+				return this.chainModify(1.3);
+			}
+		},
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, pokemon) {
+			if (this.field.isWeather('sandstorm')) {
+				return this.chainModify(1.3);
+			}
+		},
+		onImmunity(type, pokemon) {
+			if (type === 'sandstorm') return false;
+		},
+		flags: {},
+		name: "Sand Force",
+		rating: 2,
+		num: 159,
 	},
 };
