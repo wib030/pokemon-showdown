@@ -286,10 +286,10 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onSourceTryHeal(damage, target, source, effect) {
 			let multDamage = damage * 3;
 			this.debug(`Heal is occurring: ${target} <- ${source} :: ${effect.id}`);
-			const canOoze = ['drain', 'leechseed'];
+			const canOoze = ['drain', 'leechseed', 'strengthsap'];
 			if (canOoze.includes(effect.id) && this.activeMove?.id !== 'dreameater') {
-				this.damage(multDamage, null, null, null, true);
-				source.addVolatile('healblock');
+				this.damage(multDamage);
+				target.addVolatile('healblock');
 				return 0;
 			}
 		},
@@ -838,7 +838,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		onDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target, true)) {
-				this.add('-ability', target, 'Steadfast');
 				this.boost({ spe: 1 });
 			}
 		},
