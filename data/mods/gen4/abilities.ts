@@ -293,6 +293,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return 0;
 			}
 		},
+		onTryHeal(damage, target, source, effect) {
+			return true;
+		},
 	},
 	magicguard: {
 		onDamage(damage, target, source, effect) {
