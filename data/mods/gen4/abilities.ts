@@ -357,7 +357,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	pickup: {
 		onAfterMoveSecondarySelf(source, target, move) {
 			if ((!move || source.switchFlag === true || !move.hitTargets || source.item || source.volatiles['gem'] ||
-				move.id === 'fling' || move.category === 'Status') && move?.flags['contact']) return;
+				move.id === 'fling' || move.category === 'Status') && !move?.flags['contact']) return;
 			const hitTargets = move.hitTargets;
 			this.speedSort(hitTargets);
 			for (const pokemon of hitTargets) {
