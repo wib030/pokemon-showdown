@@ -5735,4 +5735,69 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -8,
 	},
+	rocheradius: {
+		onStart(source) {
+			this.field.addPseudoWeather('gravity');
+		},
+		flags: {},
+		name: "Roche Radius",
+		rating: 3,
+		num: -9,
+	},
+	tidalforce: {
+		onBasePowerPriority: 2,
+		onBasePower(basePower, attacker, defender, move) {
+			if (this.field.pseudoWeather['gravity']) {
+				return this.chainModify(1.33);
+			}
+		},
+		name: "Tidal Force",
+		rating: 1.5,
+		num: -10,
+	},
+	freesample: {
+		onHit(target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(3, 10)) {
+					const item = target.getItem();
+					if (source.hp && item.isBerry && target.takeItem(source)) {
+						this.add('-enditem', target, item.name, '[from] stealeat', '[ability] Free Sample', `[of] ${source}`);
+						if (this.singleEvent('Eat', item, null, source, null, null)) {
+							this.runEvent('EatItem', source, null, null, item);
+							if (item.id === 'leppaberry') target.staleness = 'external';
+						}
+						if (item.onEat) source.ateBerry = true;
+					}
+				}
+			}
+		},
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(3, 10)) {
+					const item = source.getItem();
+					if (target.hp && item.isBerry && source.takeItem(target) {
+						this.add('-enditem', source, item.name, '[from] stealeat', '[ability] Free Sample', `[of] ${target}`);
+						if (this.singleEvent('Eat', item, null, target, null, null)) {
+							this.runEvent('EatItem', target, null, null, item);
+							if (item.id === 'leppaberry') source.staleness = 'external';
+						}
+						if (item.onEat) target.ateBerry = true;
+					}
+				}
+			}
+		},
+		name: "Free Sample",
+		rating: 2,
+		num: -11,
+	},
+	shakedown: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				target.addVolatile('embargo');
+			}
+		},
+		name: "Shakedown",
+		rating: 3,
+		num: -12,
+	},
 };

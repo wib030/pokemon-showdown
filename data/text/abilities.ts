@@ -2335,4 +2335,20 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "This Pokemon does not take recoil damage, except Struggle. Does not affect Life Orb damage or crash damage.",
 		shortDesc: "This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.",
 	},
+	rocheradius: {
+		name: "Roche Radius",
+		shortDesc: "On switch-in, this Pokemon summons Gravity for 4 turns.",
+	},
+	tidalforce: {
+		name: "Tidal Force",
+		shortDesc: "This Pokemon's moves have their power boosted by 1.33x in Gravity.",
+	},
+	freesample: {
+		name: "Free Sample",
+		shortDesc: "When hitting with or being hit by a Contact move: 30% chance to eat foes berry.",
+	},
+	shakedown: {
+		name: "Shakedown",
+		shortDesc: "This Pokemon's contact moves inflict Embargo on hit.",
+	},
 };

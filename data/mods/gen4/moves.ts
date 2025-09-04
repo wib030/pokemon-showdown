@@ -618,18 +618,17 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		condition: {
 			duration: 5,
 			durationCallback(source, effect) {
-				if (source?.hasAbility('persistent')) {
-					this.add('-activate', source, 'ability: Persistent', '[move] Gravity');
-					return 7;
+				if (source?.hasAbility('rocheradius')) {
+					return 4;
 				}
 				return 5;
 			},
 			onModifyWeight(weighthg) {
 				return weighthg * 2;
 			},
-			onFieldStart(target, source) {
-				if (source?.hasAbility('persistent')) {
-					this.add('-fieldstart', 'move: Gravity', '[persistent]');
+			onFieldStart(target, source, effect) {
+				if (source?.hasAbility('rocheradius')) {
+					this.add('-fieldstart', 'move: Gravity', '[from] ability: ' + effect.name, `[of] ${source}`);
 				} else {
 					this.add('-fieldstart', 'move: Gravity');
 				}
