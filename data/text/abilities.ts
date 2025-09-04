@@ -498,6 +498,10 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Flare Boost",
 		desc: "While this Pokemon is burned, the power of its special attacks is multiplied by 1.5.",
 		shortDesc: "While this Pokemon is burned, its special attacks have 1.5x power.",
+		gen4: {
+			desc: "While this Pokemon is burned, its Special Attack stat is multiplied by 1.5.",
+			shortDesc: "While this Pokemon is burned, Special Attack is 1.5x.",
+		},
 	},
 	flashfire: {
 		name: "Flash Fire",
@@ -2350,5 +2354,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	shakedown: {
 		name: "Shakedown",
 		shortDesc: "This Pokemon's contact moves inflict Embargo on hit.",
+	},
+	chloroplast: {
+		name: "Chloroplast",
+		shortDesc: "Sunny Day active: Speed is 1.66x. Grass-type moves gain 1.5x power.",
 	},
 };

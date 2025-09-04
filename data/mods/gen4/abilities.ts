@@ -74,6 +74,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return this.chainModify(1.5);
 			}
 		},
+		flags: { rollable: 1 },
 		name: "Blaze",
 		rating: 2,
 		num: 66,
@@ -212,7 +213,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	forecast: {
 		inherit: true,
-		flags: { notrace: 1 },
+		flags: { notrace: 1, rollable: 1 },
 	},
 	forewarn: {
 		inherit: true,
@@ -362,6 +363,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				}
 			}
 		},
+		flags: { rollable: 1 },
 		name: "Minus",
 		rating: 0,
 		num: 58,
@@ -424,6 +426,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return this.chainModify(1.5);
 			}
 		},
+		flags: { rollable: 1 },
 		name: "Overgrow",
 		rating: 2,
 		num: 65,
@@ -447,6 +450,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				}
 			}
 		},
+		flags: { rollable: 1 },
 		name: "Pickup",
 		rating: 0,
 		num: 53,
@@ -468,6 +472,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				}
 			}
 		},
+		flags: { rollable: 1 },
 		name: "Plus",
 		rating: 0,
 		num: 57,
@@ -496,6 +501,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Pressure', `[of] ${target}`);
 			}
 		},
+		flags: { rollable: 1 },
 		name: "Pressure",
 		rating: 1.5,
 		num: 46,
@@ -643,6 +649,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return this.chainModify(1.5);
 			}
 		},
+		flags: { rollable: 1 },
 		name: "Swarm",
 		rating: 2,
 		num: 68,
@@ -675,7 +682,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return this.chainModify(0.5);
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Thick Fat",
 		rating: 3.5,
 		num: 47,
@@ -725,6 +732,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return this.chainModify(1.5);
 			}
 		},
+		flags: { rollable: 1 },
 		name: "Torrent",
 		rating: 2,
 		num: 67,
@@ -742,7 +750,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 			pokemon.setAbility(ability, target);
 		},
-		flags: { notrace: 1 },
+		flags: { notrace: 1, rollable: 1 },
 	},
 	unburden: {
 		inherit: true,
@@ -976,7 +984,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return this.chainModify(1.2);
 			}
 		},
-		flags: { },
+		flags: { rollable: 1 },
 		name: "Illuminate",
 		rating: 0.5,
 		num: 35,
@@ -1056,5 +1064,17 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		name: "Sand Force",
 		rating: 2,
 		num: 159,
+	},
+	flareboost: {
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) { 
+			if (attacker.status === 'brn') {
+				return this.chainModify(1.5);
+			}
+		},
+		flags: {},
+		name: "Flare Boost",
+		rating: 2,
+		num: 138,
 	},
 };
