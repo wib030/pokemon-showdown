@@ -208,6 +208,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Chlorophyll",
 		desc: "If Sunny Day is active, this Pokemon's Speed is doubled. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
 		shortDesc: "If Sunny Day is active, this Pokemon's Speed is doubled.",
+		gen4: {
+			desc: "If Sunny Day is active, this Pokemon's Speed is 1.66x.",
+		},
 		gen7: {
 			desc: "If Sunny Day is active, this Pokemon's Speed is doubled.",
 		},
@@ -916,7 +919,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Liquid Ooze",
 		shortDesc: "This Pokemon damages those draining HP from it for as much as they would heal.",
 		gen4: {
-			desc: "This Pokemon damages those draining HP from it for as much as they would heal. This effect does not consider Dream Eater.",
+			desc: "This Pokemon damages those draining HP from it for 3 times what they would heal. This effect does not consider Dream Eater. Then inflicts Heal Block on the attacker.",
+			shortDesc: "Damages those draining HP from it for 3x what they would heal. Inflicts Heal Block.",
 		},
 
 		damage: "  [POKEMON] sucked up the liquid ooze!",
@@ -1234,8 +1238,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 			desc: "At the end of each turn, if this Pokemon is not holding an item and at least one adjacent Pokemon used an item during this turn, one of those Pokemon is selected at random and this Pokemon obtains that Pokemon's last used item. An item is not considered the last used if it was a popped Air Balloon, if the item was picked up by another Pokemon with this Ability, or if the item was lost to Bug Bite, Covet, Incinerate, Knock Off, Pluck, or Thief. Items thrown with Fling can be picked up.",
 		},
 		gen4: {
-			desc: "No competitive use.",
-			shortDesc: "No competitive use.",
+			desc: "If this Pokemon has no item, it steals the item off a Pokemon it hits with a contact move. Does not affect Doom Desire and Future Sight. If multiple targets are hit by an attack the item is stolen from the fastest Pokemon, while considering the effect of Trick Room and prioritizing opposing Pokemon before allies.",
+			shortDesc: "If this Pokemon has no item, it steals the item off a Pokemon it hits with a contact move.",
 		},
 
 		addItem: "#recycle",
@@ -1619,6 +1623,10 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Shed Skin",
 		desc: "This Pokemon has a 33% chance to have its non-volatile status condition cured at the end of each turn.",
 		shortDesc: "This Pokemon has a 33% chance to have its status cured at the end of each turn.",
+		gen4: {
+			desc: "This Pokemon has a 40% chance to have its non-volatile status condition cured at the end of each turn.",
+			shortDesc: "This Pokemon has a 40% chance to have its status cured at the end of each turn.",
+		},
 	},
 	sheerforce: {
 		name: "Sheer Force",
@@ -1813,6 +1821,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	steadfast: {
 		name: "Steadfast",
 		shortDesc: "If this Pokemon flinches, its Speed is raised by 1 stage.",
+		gen4: {
+			shortDesc: "If this Pokemon flinches, or hit by Contact move, its Speed is raised by 1 stage.",
+		},
 	},
 	steamengine: {
 		name: "Steam Engine",
@@ -1865,6 +1876,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	suctioncups: {
 		name: "Suction Cups",
 		shortDesc: "This Pokemon cannot be forced to switch out by another Pokemon's attack or item.",
+		gen4: {
+			shortDesc: "Cannot be forced to switch out. All moves will always hit.",
+		},
 
 		block: "  [POKEMON] is anchored in place with its suction cups!",
 	},
@@ -1909,6 +1923,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Swift Swim",
 		desc: "If Rain Dance is active, this Pokemon's Speed is doubled. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
 		shortDesc: "If Rain Dance is active, this Pokemon's Speed is doubled.",
+		gen4: {
+			desc: "If Rain Dance is active, this Pokemon's Speed is 1.66x.",
+		},
 		gen7: {
 			desc: "If Rain Dance is active, this Pokemon's Speed is doubled.",
 		},

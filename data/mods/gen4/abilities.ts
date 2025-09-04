@@ -284,10 +284,12 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	liquidooze: {
 		inherit: true,
 		onSourceTryHeal(damage, target, source, effect) {
+			let multDamage = damage * 3;
 			this.debug(`Heal is occurring: ${target} <- ${source} :: ${effect.id}`);
 			const canOoze = ['drain', 'leechseed'];
 			if (canOoze.includes(effect.id) && this.activeMove?.id !== 'dreameater') {
-				this.damage(damage, null, null, null, true);
+				this.damage(multDamage, null, null, null, true);
+				source.addVolatile('healblock');
 				return 0;
 			}
 		},
@@ -354,6 +356,24 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		num: 65,
 	},
 	pickup: {
+		onAfterMoveSecondarySelf(source, target, move) {
+			if ((!move || source.switchFlag === true || !move.hitTargets || source.item || source.volatiles['gem'] ||
+				move.id === 'fling' || move.category === 'Status') && move?.flags['contact']) return;
+			const hitTargets = move.hitTargets;
+			this.speedSort(hitTargets);
+			for (const pokemon of hitTargets) {
+				if (pokemon !== source) {
+					const yourItem = pokemon.takeItem(source);
+					if (!yourItem) continue;
+					if (!source.setItem(yourItem)) {
+						pokemon.item = yourItem.id; // bypass setItem so we don't break choicelock or anything
+						continue;
+					}
+					this.add('-item', source, yourItem, '[from] ability: Pickup', `[of] ${pokemon}`);
+					return;
+				}
+			}
+		},
 		name: "Pickup",
 		rating: 0,
 		num: 53,
@@ -444,6 +464,13 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		onResidualOrder: 10,
 		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			if (pokemon.hp && pokemon.status && this.randomChance(40, 100)) {
+				this.debug('shed skin');
+				this.add('-activate', pokemon, 'ability: Shed Skin');
+				pokemon.cureStatus();
+			}
+		},
 	},
 	simple: {
 		onModifyBoost(boosts) {
@@ -806,5 +833,43 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		name: "Illuminate",
 		rating: 0.5,
 		num: 35,
+	},
+	steadfast: {
+		inherit: true,
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target, true)) {
+				this.add('-ability', target, 'Steadfast');
+				this.boost({ spe: 1 });
+			}
+		},
+	},
+	swiftswim: {
+		inherit: true,
+		onModifySpe(spe, pokemon) {
+			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(1.66);
+			}
+		},
+	},
+	chlorophyll: {
+		inherit: true,
+		onModifySpe(spe, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(1.66);
+			}
+		},
+	},
+	suctioncups: {
+		inherit: true,
+		onAnyInvulnerabilityPriority: 1,
+		onAnyInvulnerability(target, source, move) {
+			if (move && (source === this.effectState.target || target === this.effectState.target)) return 0;
+		},
+		onAnyAccuracy(accuracy, target, source, move) {
+			if (move && (source === this.effectState.target || target === this.effectState.target)) {
+				return true;
+			}
+			return accuracy;
+		},
 	},
 };
