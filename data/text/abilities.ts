@@ -2409,22 +2409,22 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	ghostly: {
 		name: "Ghostly",
-		shortDesc: "-",
+		shortDesc: "This Pokemon acquires Ghost-type when they become active.",
 	},
 	slurpup: {
 		name: "Slurp Up",
-		shortDesc: "-",
+		shortDesc: "When hit by a Contact move, there is a 30% chance the attackers item is knocked off.",
 	},
 	memory: {
 		name: "Memory",
-		shortDesc: "-",
+		shortDesc: "While active: All Pokemon on the field ignore own stat changes, excluding Speed.",
 	},
 	tossandturn: {
 		name: "Toss and Turn",
-		shortDesc: "-",
+		shortDesc: "While asleep, attacks a random opponent with a typeless 40 base power attack.",
 	},
 	webmaster: {
 		name: "Web Master",
-		shortDesc: "-",
+		shortDesc: "Immune to String Shot and Spider Web; Removes Sticky Web on switch-in.",
 	},
 };
