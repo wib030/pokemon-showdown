@@ -1795,7 +1795,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	castform: {
 		inherit: true,
-		types: ["Normal"],
+		types: ["Flying"],
 		baseStats: { hp: 90, atk: 70, def: 70, spa: 70, spd: 70, spe: 120 },
 	},
 	castformsunny: {
