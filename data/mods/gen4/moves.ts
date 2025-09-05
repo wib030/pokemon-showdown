@@ -627,11 +627,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				return weighthg * 2;
 			},
 			onFieldStart(target, source, effect) {
-				if (source?.hasAbility('rocheradius')) {
-					this.add('-fieldstart', 'move: Gravity', '[from] ability: ' + effect.name, `[of] ${source}`);
-				} else {
-					this.add('-fieldstart', 'move: Gravity');
-				}
+				this.add('-fieldstart', 'move: Gravity');
 				for (const pokemon of this.getAllActive()) {
 					let applies = false;
 					if (pokemon.removeVolatile('bounce') || pokemon.removeVolatile('fly')) {
