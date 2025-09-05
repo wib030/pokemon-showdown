@@ -3773,7 +3773,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, reflectable: 1, mirror: 1, bypasssub: 1, metronome: 1 },
 		volatileStatus: 'disable',
 		onTryHit(target) {
-			if (!target.lastMove || target.lastMove.isZ || target.lastMove.isMax || target.lastMove.id === 'struggle') {
+			if (!target.lastMove || target.lastMove.isZ || target.lastMove.isMax || target.lastMove.id === 'struggle' || target.lastMove.id === 'tossandturn') {
 				return false;
 			}
 		},
@@ -4749,7 +4749,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onModifyTypePriority: -2,
 			onModifyType(move) {
-				if (move.id !== 'struggle') {
+				if (move.id !== 'struggle' && move.id !== 'tossandturn') {
 					this.debug('Electrify making move type electric');
 					move.type = 'Electric';
 				}
@@ -9662,7 +9662,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.effectState.contactHitCount = 0;
 			},
 			onResidual(target) {
-				if (target.lastMove && target.lastMove.id === 'struggle') {
+				if (target.lastMove && target.lastMove.id === 'struggle' && target.lastMove.id === 'tossandturn') {
 					// don't lock
 					delete target.volatiles['iceball'];
 				}
@@ -9883,14 +9883,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onFoeDisableMove(pokemon) {
 				for (const moveSlot of this.effectState.source.moveSlots) {
-					if (moveSlot.id === 'struggle') continue;
+					if (moveSlot.id === 'struggle' || moveSlot.id === 'tossandturn') continue;
 					pokemon.disableMove(moveSlot.id, true);
 				}
 				pokemon.maybeDisabled = true;
 			},
 			onFoeBeforeMovePriority: 4,
 			onFoeBeforeMove(attacker, defender, move) {
-				if (move.id !== 'struggle' && this.effectState.source.hasMove(move.id) && !move.isZ && !move.isMax) {
+				if (move.id !== 'struggle' && move.id !== 'tossandturn' && this.effectState.source.hasMove(move.id) && !move.isZ && !move.isMax) {
 					this.add('cant', attacker, 'move: Imprison', move);
 					return false;
 				}
@@ -16007,7 +16007,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.effectState.contactHitCount = 0;
 			},
 			onResidual(target) {
-				if (target.lastMove && target.lastMove.id === 'struggle') {
+				if (target.lastMove && target.lastMove.id === 'struggle' && target.lastMove.id === 'tossandturn') {
 					// don't lock
 					delete target.volatiles['rollout'];
 				}
@@ -20498,7 +20498,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-end', pokemon, 'Torment');
 			},
 			onDisableMove(pokemon) {
-				if (pokemon.lastMove && pokemon.lastMove.id !== 'struggle') pokemon.disableMove(pokemon.lastMove.id);
+				if (pokemon.lastMove && pokemon.lastMove.id !== 'struggle' && pokemon.lastMove.id !== 'tossandturn') pokemon.disableMove(pokemon.lastMove.id);
 			},
 		},
 		secondary: null,
@@ -21052,7 +21052,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					target.removeVolatile('uproar');
 					return;
 				}
-				if (target.lastMove && target.lastMove.id === 'struggle') {
+				if (target.lastMove && target.lastMove.id === 'struggle' && target.lastMove.id === 'tossandturn') {
 					// don't lock
 					delete target.volatiles['uproar'];
 				}
@@ -22144,5 +22144,28 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "allAdjacentFoes",
 		type: "Fire",
 		contestType: "Beautiful",
+	},
+	
+	// New moves
+	tossandturn: {
+		num: -4,
+		accuracy: true,
+		basePower: 40,
+		category: "Physical",
+		name: "Toss and Turn",
+		pp: 1,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {
+			contact: 1, protect: 1, failencore: 1, failmefirst: 1,
+			noassist: 1, failcopycat: 1, failinstruct: 1, failmimic: 1, nosketch: 1,
+		},
+		onModifyMove(move) {
+			move.type = '???';
+		},
+		secondary: null,
+		target: "randomNormal",
+		type: "Normal",
+		contestType: "Tough",
 	},
 };

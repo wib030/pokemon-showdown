@@ -336,7 +336,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 			if (
 				!pokemon.ignoringItem() && !pokemon.volatiles['dynamax'] &&
-				move.id !== this.effectState.move && move.id !== 'struggle'
+				move.id !== this.effectState.move && move.id !== 'struggle' && move.id !== 'tossandturn'
 			) {
 				// Fails unless the Choice item is being ignored, and no PP is lost
 				this.addMove('move', pokemon, move.name);

@@ -788,7 +788,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	cursedbody: {
 		onDamagingHit(damage, target, source, move) {
 			if (source.volatiles['disable']) return;
-			if (!move.isMax && !move.flags['futuremove'] && move.id !== 'struggle') {
+			if (!move.isMax && !move.flags['futuremove'] && move.id !== 'struggle' && move.id !== 'tossandturn') {
 				if (this.randomChance(3, 10)) {
 					source.addVolatile('disable', this.effectState.target);
 				}
@@ -1603,7 +1603,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			pokemon.abilityState.choiceLock = "";
 		},
 		onBeforeMove(pokemon, target, move) {
-			if (move.isZOrMaxPowered || move.id === 'struggle') return;
+			if (move.isZOrMaxPowered || move.id === 'struggle' || move.id === 'tossandturn') return;
 			if (pokemon.abilityState.choiceLock && pokemon.abilityState.choiceLock !== move.id) {
 				// Fails unless ability is being ignored (these events will not run), no PP lost.
 				this.addMove('move', pokemon, move.name);
@@ -1614,7 +1614,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onModifyMove(move, pokemon) {
-			if (pokemon.abilityState.choiceLock || move.isZOrMaxPowered || move.id === 'struggle') return;
+			if (pokemon.abilityState.choiceLock || move.isZOrMaxPowered || move.id === 'struggle' || move.id === 'tossandturn') return;
 			pokemon.abilityState.choiceLock = move.id;
 		},
 		onModifyAtkPriority: 1,
@@ -2925,7 +2925,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyTypePriority: 1,
 		onModifyType(move, pokemon) {
 			const noModifyType = [
-				'hiddenpower', 'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball',
+				'hiddenpower', 'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball', 'tossandturn',
 			];
 			if (!(move.isZ && move.category !== 'Status') &&
 				// TODO: Figure out actual interaction
@@ -5485,7 +5485,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	wonderguard: {
 		onTryHit(target, source, move) {
-			if (target === source || move.category === 'Status' || move.type === '???' || move.id === 'struggle') return;
+			if (target === source || move.category === 'Status' || move.type === '???' || move.id === 'struggle' || move.id === 'tossandturn') return;
 			if (move.id === 'skydrop' && !source.volatiles['skydrop']) return;
 			this.debug('Wonder Guard immunity: ' + move.id);
 			if (target.runEffectiveness(move) <= 0 || !target.runImmunity(move)) {
@@ -5914,7 +5914,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		flags: { rollable: 1 },
 		name: "Photosynthesis",
-		rating: 1,
+		rating: 2,
 		num: -17,
 	},
 	strangleweed: {
@@ -5962,7 +5962,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		flags: { rollable: 1 },
 		name: "Strangle Weed",
-		rating: 1,
+		rating: 2,
 		num: -18,
 	},
 	pest: {
@@ -5975,7 +5975,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		flags: { rollable: 1 },
 		name: "Pest",
-		rating: 1,
+		rating: 2,
 		num: -19,
 	},
 	unownenergy: {
@@ -6028,7 +6028,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		flags: { rollable: 1 },
 		name: "Unown Energy",
-		rating: 1,
+		rating: 3,
 		num: -20,
 	},
 	rocksolid: {
@@ -6045,7 +6045,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		flags: { rollable: 1 },
 		name: "Rock Solid",
-		rating: 1,
+		rating: 3,
 		num: -21,
 	},
 	coward: {
@@ -6056,7 +6056,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		flags: { rollable: 1 },
 		name: "Coward",
-		rating: 1,
+		rating: 2,
 		num: -22,
 	},
 	thirsty: {
@@ -6074,7 +6074,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		flags: { rollable: 1 },
 		name: "Thirsty",
-		rating: 1,
+		rating: 3,
 		num: -23,
 	},
 	snowedin: {
@@ -6112,7 +6112,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		flags: { rollable: 1 },
 		name: "Snowed In",
-		rating: 1,
+		rating: 3,
 		num: -24,
 	},
 	ghostly: {
@@ -6122,28 +6122,79 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		flags: { rollable: 1 },
 		name: "Ghostly",
-		rating: 1,
+		rating: 2,
 		num: -25,
 	},
 	slurpup: {
+		onAfterHit(target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(3, 10)) {
+					if (!source.item || source.itemState.knockedOff) return;
+					if (source.ability === 'multitype') return;
+					const item = source.getItem();
+					
+					if (item.id === 'toxicorb' && source.status === 'tox') {
+						this.add('-curestatus', source, 'tox', `[from] move: ${move}`);
+						source.clearStatus();
+						this.hint("In Flucient Platinum, slurping up a Toxic Orb cures their status.", true);
+					}
+					
+					if (this.runEvent('TakeItem', source, target, move, item)) {
+						source.itemState.knockedOff = true;
+						this.add('-enditem', source, item.name, '[from] ability: Slurp Up', `[of] ${target}`);
+					}
+				}
+			}
+		},
 		flags: { rollable: 1 },
 		name: "Slurp Up",
-		rating: 1,
+		rating: 3,
 		num: -26,
 	},
 	memory: {
+		onStart(pokemon) {
+			this.add('-activate', pokemon, 'ability: Memory');
+		},
+		onAnyModifyBoost(boosts, pokemon) {
+			boosts['def'] = 0;
+			boosts['spd'] = 0;
+			boosts['evasion'] = 0;
+			boosts['atk'] = 0;
+			boosts['def'] = 0;
+			boosts['spa'] = 0;
+			boosts['accuracy'] = 0;
+		},
 		flags: { rollable: 1 },
 		name: "Memory",
 		rating: 1,
 		num: -27,
 	},
 	tossandturn: {
+		onResidualOrder: 11,
+		onResidual(pokemon) {
+			if (target.status === 'slp') {
+				this.actions.useMove('tossandturn', pokemon);
+			}
+		},
 		flags: { rollable: 1 },
 		name: "Toss and Turn",
 		rating: 1,
 		num: -27,
 	},
 	webmaster: {
+		onTryHit(target, source, move) {
+			if (target !== source && ['spiderweb', 'stringshot'].includes(move.id)) {
+				move.accuracy = true;
+				this.add('-immune', target, '[from] ability: Web Master');
+				return null;
+			}
+		},
+		onSwitchIn(pokemon) {
+			if (pokemon.side.getSideCondition('stickyweb')) {
+				this.add('-sideend', pokemon.side, 'move: Sticky Web', `[of] ${pokemon}`);
+				pokemon.side.removeSideCondition('stickyweb');
+			}
+		},
 		flags: { rollable: 1 },
 		name: "Web Master",
 		rating: 1,
