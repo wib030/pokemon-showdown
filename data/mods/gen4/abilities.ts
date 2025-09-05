@@ -1081,17 +1081,13 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	klutz: {
 		onStart(source) {
-			const abilities = this.dex.abilities.all().filter(ability => (
-				ability.flags['rollable']
-			));
-			let randomAbility = '';
-			if (abilities.length) {
-				abilities.sort((a, b) => a.num - b.num);
-				randomAbility = this.sample(abilities).id;
-			}
+			const abilities = this.dex.abilities.all().filter(ability => (ability.flags['rollable']));
+			randomAbility = this.sample(abilities);
 			if (!randomAbility) return false;
 			
-			const oldAbility = target.setAbility(randomAbility);
+			this.hint(`${randomAbility}`);
+			
+			const oldAbility = source.setAbility(randomAbility);
 			if (!oldAbility) return oldAbility as false | null;
 		},
 		flags: { rollable: 1 },
