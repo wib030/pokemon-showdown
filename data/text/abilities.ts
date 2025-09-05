@@ -2394,7 +2394,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	rocksolid: {
 		name: "Rock Solid",
-		shortDesc: "If this Pokemon is at full HP, it survives one hit with at least 1 HP. Immune to recoil damage.",
+		shortDesc: "If this Pokemon is at full HP, it survives one hit with at least 1 HP. Immune to recoil.",
 
 		activate: "  [POKEMON] endured the hit!",
 	},

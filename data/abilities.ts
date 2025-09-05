@@ -6129,7 +6129,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -25,
 	},
 	slurpup: {
-		onAfterHit(target, source, move) {
+		onDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target)) {
 				if (this.randomChance(3, 10)) {
 					if (!source.item || source.itemState.knockedOff) return;
