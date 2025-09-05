@@ -5798,9 +5798,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -11,
 	},
 	shakedown: {
-		onDamagingHit(damage, target, source, move) {
+		onSourceDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target)) {
-				this.add('-start', target, 'Embargo');
 				target.addVolatile('embargo');
 			}
 		},
