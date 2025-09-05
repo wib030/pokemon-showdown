@@ -49,7 +49,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return 2;
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Adaptability",
 		rating: 4,
 		num: 91,
@@ -82,7 +82,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.damage(source.baseMaxhp / 4, source, target);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Aftermath",
 		rating: 2,
 		num: 106,
@@ -102,7 +102,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			this.eachEvent('WeatherChange', this.effect);
 		},
 		suppressWeather: true,
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Air Lock",
 		rating: 1.5,
 		num: 76,
@@ -135,7 +135,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.boost({ atk: 12 }, target, target);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Anger Point",
 		rating: 1,
 		num: 83,
@@ -193,7 +193,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Anticipation",
 		rating: 0.5,
 		num: 107,
@@ -323,7 +323,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Bad Dreams",
 		rating: 1.5,
 		num: 123,
@@ -658,7 +658,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.boost({ spa: 2 }, target, target, null, false, true);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Competitive",
 		rating: 2.5,
 		num: 172,
@@ -690,7 +690,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	corrosion: {
 		// Implemented in sim/pokemon.js:Pokemon#setStatus
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Corrosion",
 		rating: 2.5,
 		num: 212,
@@ -918,7 +918,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.boost({ atk: 2 }, target, target, null, false, true);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Defiant",
 		rating: 3,
 		num: 128,
@@ -1032,7 +1032,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.boost({ atk: 1 });
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Download",
 		rating: 3.5,
 		num: 88,
@@ -1100,7 +1100,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.damage(target.baseMaxhp / 8, target, target);
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Dry Skin",
 		rating: 3,
 		num: 87,
@@ -1255,7 +1255,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(0.75);
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Filter",
 		rating: 3,
 		num: 111,
@@ -1280,7 +1280,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.5);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Flare Boost",
 		rating: 2,
 		num: 138,
@@ -1443,7 +1443,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				pokemon.formeChange(forme, this.effect, false, '0', '[msg]');
 			}
 		},
-		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, rollable: 1 },
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1 },
 		name: "Forecast",
 		rating: 2,
 		num: 59,
@@ -1472,7 +1472,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const [warnMoveName, warnTarget] = this.sample(warnMoves);
 			this.add('-activate', pokemon, 'ability: Forewarn', warnMoveName, `[of] ${warnTarget}`);
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Forewarn",
 		rating: 0.5,
 		num: 108,
@@ -1497,7 +1497,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Frisk",
 		rating: 1.5,
 		num: 119,
@@ -1569,7 +1569,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onDamage(item, pokemon) {
 			pokemon.abilityState.gluttony = true;
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Gluttony",
 		rating: 1.5,
 		num: 82,
@@ -1797,7 +1797,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return damage / 2;
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Heatproof",
 		rating: 2,
 		num: 85,
@@ -1813,7 +1813,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 134,
 	},
 	honeygather: {
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Honey Gather",
 		rating: 0,
 		num: 118,
@@ -1879,7 +1879,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				pokemon.cureStatus();
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Hydration",
 		rating: 1.5,
 		num: 93,
@@ -1908,7 +1908,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onImmunity(type, pokemon) {
 			if (type === 'hail') return false;
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Ice Body",
 		rating: 1,
 		num: 115,
@@ -2187,7 +2187,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify([4915, 4096]);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Iron Fist",
 		rating: 3,
 		num: 89,
@@ -2229,7 +2229,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(pokemon) {
 			this.singleEvent('End', pokemon.getItem(), pokemon.itemState, pokemon);
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Klutz",
 		rating: -1,
 		num: 103,
@@ -2249,7 +2249,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return null;
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Leaf Guard",
 		rating: 0.5,
 		num: 102,
@@ -2406,7 +2406,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			move.hasBounced = true; // only bounce once in free-for-all battles
 			return null;
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Magic Bounce",
 		rating: 4,
 		num: 156,
@@ -2418,7 +2418,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return false;
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Magic Guard",
 		rating: 4,
 		num: 98,
@@ -2499,7 +2499,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.5);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Mega Launcher",
 		rating: 3,
 		num: 178,
@@ -2628,7 +2628,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyMove(move) {
 			move.ignoreAbility = true;
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Mold Breaker",
 		rating: 3,
 		num: 104,
@@ -2676,7 +2676,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return null;
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Motor Drive",
 		rating: 3,
 		num: 78,
@@ -2699,7 +2699,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(0.5);
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Multiscale",
 		rating: 3.5,
 		num: 136,
@@ -2900,7 +2900,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, notransform: 1 },
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, notransform: 1, rollable: 1 },
 		name: "Neutralizing Gas",
 		rating: 3.5,
 		num: 256,
@@ -2916,7 +2916,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			return accuracy;
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "No Guard",
 		rating: 4,
 		num: 99,
@@ -2938,7 +2938,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePower(basePower, pokemon, target, move) {
 			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Normalize",
 		rating: 0,
 		num: 96,
@@ -3260,7 +3260,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return false;
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Poison Heal",
 		rating: 4,
 		num: 90,
@@ -3301,7 +3301,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Poison Touch",
 		rating: 2,
 		num: 143,
@@ -3533,7 +3533,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyAtk(atk) {
 			return this.chainModify(2);
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Pure Power",
 		rating: 5,
 		num: 74,
@@ -3674,7 +3674,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.5);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Quick Feet",
 		rating: 2.5,
 		num: 95,
@@ -3702,7 +3702,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.boost({ spe: 1 });
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Rattled",
 		rating: 1,
 		num: 155,
@@ -3727,7 +3727,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify([4915, 4096]);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Reckless",
 		rating: 3,
 		num: 120,
@@ -3814,7 +3814,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Rivalry",
 		rating: 0,
 		num: 79,
@@ -3889,7 +3889,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onImmunity(type, pokemon) {
 			if (type === 'sandstorm') return false;
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Sand Force",
 		rating: 2,
 		num: 159,
@@ -4014,7 +4014,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Scrappy', `[of] ${target}`);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Scrappy",
 		rating: 3,
 		num: 113,
@@ -4102,7 +4102,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.5);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Sharpness",
 		rating: 3.5,
 		num: 292,
@@ -4137,14 +4137,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePower(basePower, pokemon, target, move) {
 			if (move.hasSheerForce) return this.chainModify([5325, 4096]);
 		},
-		flags: {},
+		flags: {rollable: 1 },
 		name: "Sheer Force",
 		rating: 3.5,
 		num: 125,
 	},
 	shellarmor: {
 		onCriticalHit: false,
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Shell Armor",
 		rating: 1,
 		num: 75,
@@ -4212,7 +4212,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				boost[i]! *= 2;
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Simple",
 		rating: 4,
 		num: 86,
@@ -4226,7 +4226,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				delete move.multiaccuracy;
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Skill Link",
 		rating: 3,
 		num: 92,
@@ -4262,7 +4262,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.add('-end', target, 'Slow Start');
 			},
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Slow Start",
 		rating: -1,
 		num: 112,
@@ -4273,7 +4273,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(2);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Slush Rush",
 		rating: 3,
 		num: 202,
@@ -4285,7 +4285,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.5);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Sniper",
 		rating: 2,
 		num: 97,
@@ -4302,7 +4302,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify([3277, 4096]);
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Snow Cloak",
 		rating: 1.5,
 		num: 81,
@@ -4311,7 +4311,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(source) {
 			this.field.setWeather('snowscape');
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Snow Warning",
 		rating: 4,
 		num: 117,
@@ -4329,7 +4329,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.damage(target.baseMaxhp / 8, target, target);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Solar Power",
 		rating: 2,
 		num: 94,
@@ -4341,7 +4341,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(0.75);
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Solid Rock",
 		rating: 3,
 		num: 116,
@@ -4408,7 +4408,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	stall: {
 		onFractionalPriority: -0.1,
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Stall",
 		rating: -1,
 		num: 100,
@@ -4463,7 +4463,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onFlinch(pokemon) {
 			this.boost({ spe: 1 });
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Steadfast",
 		rating: 1,
 		num: 80,
@@ -4566,7 +4566,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.effectState.target;
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Storm Drain",
 		rating: 3,
 		num: 114,
@@ -4578,7 +4578,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.5);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Strong Jaw",
 		rating: 3.5,
 		num: 173,
@@ -4617,7 +4617,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyCritRatio(critRatio) {
 			return critRatio + 1;
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Super Luck",
 		rating: 1.5,
 		num: 105,
@@ -4809,7 +4809,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(0.5);
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Tangled Feet",
 		rating: 1,
 		num: 77,
@@ -4836,7 +4836,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.5);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Technician",
 		rating: 3.5,
 		num: 101,
@@ -4958,7 +4958,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(2);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Tinted Lens",
 		rating: 4,
 		num: 110,
@@ -5064,7 +5064,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const ability = target.getAbility();
 			pokemon.setAbility(ability, target);
 		},
-		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, rollable: 1 },
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1 },
 		name: "Trace",
 		rating: 2.5,
 		num: 36,
@@ -5147,7 +5147,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				boosts['accuracy'] = 0;
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Unaware",
 		rating: 4,
 		num: 109,
@@ -5170,7 +5170,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			},
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Unburden",
 		rating: 3.5,
 		num: 84,
@@ -5418,7 +5418,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.add("-fail", target, "unboost", "[from] ability: White Smoke", `[of] ${target}`);
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "White Smoke",
 		rating: 2,
 		num: 73,
@@ -5497,7 +5497,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return null;
 			}
 		},
-		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, failskillswap: 1, breakable: 1, rollable: 1 },
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, failskillswap: 1, breakable: 1 },
 		name: "Wonder Guard",
 		rating: 5,
 		num: 25,
@@ -5650,7 +5650,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.5);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Rock Star",
 		rating: 2,
 		num: -4,
@@ -5664,7 +5664,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Fresh Milk",
 		rating: 0.5,
 		num: -5,
@@ -5714,11 +5714,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(2);
 			}
 		},
+		flags: { rollable: 1 },
 		name: "Headache",
 		rating: 2,
 		num: -6,
 	},
 	relentless: { // Implemented in mustrecharge condition at mods/gen4/conditions.ts
+		flags: { rollable: 1 },
 		name: "Relentless",
 		rating: 3,
 		num: -7,
@@ -5730,7 +5732,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				if (this.activeMove.id !== 'struggle') return null;
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Hotheaded",
 		rating: 3,
 		num: -8,
@@ -5739,7 +5741,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(source) {
 			this.field.addPseudoWeather('gravity');
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Roche Radius",
 		rating: 3,
 		num: -9,
@@ -5751,6 +5753,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.33);
 			}
 		},
+		flags: { rollable: 1 },
 		name: "Tidal Force",
 		rating: 1.5,
 		num: -10,
@@ -5775,7 +5778,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (this.checkMoveMakesContact(move, source, target)) {
 				if (this.randomChance(3, 10)) {
 					const item = source.getItem();
-					if (target.hp && item.isBerry && source.takeItem(target) {
+					if (target.hp && item.isBerry && source.takeItem(target)) {
 						this.add('-enditem', source, item.name, '[from] stealeat', '[ability] Free Sample', `[of] ${target}`);
 						if (this.singleEvent('Eat', item, null, target, null, null)) {
 							this.runEvent('EatItem', target, null, null, item);
@@ -5786,6 +5789,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
+		flags: { rollable: 1 },
 		name: "Free Sample",
 		rating: 2,
 		num: -11,
@@ -5796,6 +5800,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				target.addVolatile('embargo');
 			}
 		},
+		flags: { rollable: 1 },
 		name: "Shakedown",
 		rating: 3,
 		num: -12,
@@ -5849,33 +5854,119 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.5);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Chloroplast",
 		rating: 3,
 		num: -13,
 	},
 	dabble: {
 		onStart(source) {
-			
 			const abilities = this.dex.abilities.all().filter(ability => (
-				(!move.isNonstandard || move.isNonstandard === 'Unobtainable') &&
-				move.flags['metronome']
+				ability.flags['rollable']
 			));
-			let randomMove = '';
-			if (moves.length) {
-				moves.sort((a, b) => a.num - b.num);
-				randomMove = this.sample(moves).id;
+			let randomAbility = '';
+			if (abilities.length) {
+				abilities.sort((a, b) => a.num - b.num);
+				randomAbility = this.sample(abilities).id;
 			}
-			if (!randomMove) return false;
-			this.actions.useMove(randomMove, pokemon);
+			if (!randomAbility) return false;
 			
-			
-			const oldAbility = target.setAbility('insomnia');
+			const oldAbility = target.setAbility(randomAbility);
 			if (!oldAbility) return oldAbility as false | null;
 		},
 		flags: {},
 		name: "Dabble",
 		rating: 2,
 		num: -14,
+	},
+	geneticfreak: {
+		flags: {},
+		name: "Genetic Freak",
+		rating: 1,
+		num: -15,
+	},
+	tanglingcotton: {
+		flags: { rollable: 1 },
+		name: "Tangling Cotton",
+		rating: 1,
+		num: -16,
+	},
+	photosynthesis: {
+		flags: { rollable: 1 },
+		name: "Photosynthesis",
+		rating: 1,
+		num: -17,
+	},
+	strangleweed: {
+		flags: { rollable: 1 },
+		name: "Strangle Weed",
+		rating: 1,
+		num: -18,
+	},
+	pest: {
+		flags: { rollable: 1 },
+		name: "Pest",
+		rating: 1,
+		num: -19,
+	},
+	unownenergy: {
+		flags: { rollable: 1 },
+		name: "Unown Energy",
+		rating: 1,
+		num: -20,
+	},
+	rocksolid: {
+		flags: { rollable: 1 },
+		name: "Rock Solid",
+		rating: 1,
+		num: -21,
+	},
+	coward: {
+		flags: { rollable: 1 },
+		name: "Coward",
+		rating: 1,
+		num: -22,
+	},
+	thirsty: {
+		flags: { rollable: 1 },
+		name: "Thirsty",
+		rating: 1,
+		num: -23,
+	},
+	snowedin: {
+		flags: { rollable: 1 },
+		name: "Snowed In",
+		rating: 1,
+		num: -24,
+	},
+	ghostly: {
+		flags: { rollable: 1 },
+		name: "Ghostly",
+		rating: 1,
+		num: -25,
+	},
+	slurpup: {
+		flags: { rollable: 1 },
+		name: "Slurp Up",
+		rating: 1,
+		num: -26,
+	},
+	memory: {
+		flags: { rollable: 1 },
+		name: "Memory",
+		rating: 1,
+		num: -27,
+	},
+	tossandturn: {
+		flags: { rollable: 1 },
+		name: "Toss and Turn",
+		rating: 1,
+		num: -27,
+	},
+	webmaster: {
+		flags: { rollable: 1 },
+		name: "Web Master",
+		rating: 1,
+		num: -28,
 	},
 };

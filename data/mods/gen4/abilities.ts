@@ -213,7 +213,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	forecast: {
 		inherit: true,
-		flags: { notrace: 1, rollable: 1 },
+		flags: { notrace: 1 },
 	},
 	forewarn: {
 		inherit: true,
@@ -277,6 +277,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				target.cureStatus();
 			}
 		},
+		flags: { rollable: 1 },
 		name: "Hydration",
 		rating: 1.5,
 		num: 93,
@@ -342,6 +343,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return false;
 			}
 		},
+		flags: { rollable: 1 },
 		name: "Magic Guard",
 		rating: 4.5,
 		num: 98,
@@ -564,7 +566,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Simple', `[of] ${target}`);
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { breakable: 1, rollable: 1 },
 		name: "Simple",
 		rating: 4,
 		num: 86,
@@ -750,7 +752,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 			pokemon.setAbility(ability, target);
 		},
-		flags: { notrace: 1, rollable: 1 },
+		flags: { notrace: 1 },
 	},
 	unburden: {
 		inherit: true,
@@ -839,7 +841,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Rivalry', `[of] ${target}`);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Rivalry",
 		rating: 0,
 		num: 79,
@@ -902,7 +904,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				this.boost({ spe: 1 });
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Rattled",
 		rating: 1,
 		num: 155,
@@ -1060,7 +1062,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onImmunity(type, pokemon) {
 			if (type === 'sandstorm') return false;
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Sand Force",
 		rating: 2,
 		num: 159,
@@ -1072,9 +1074,29 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return this.chainModify(1.5);
 			}
 		},
-		flags: {},
+		flags: { rollable: 1 },
 		name: "Flare Boost",
 		rating: 2,
 		num: 138,
+	},
+	klutz: {
+		onStart(source) {
+			const abilities = this.dex.abilities.all().filter(ability => (
+				ability.flags['rollable']
+			));
+			let randomAbility = '';
+			if (abilities.length) {
+				abilities.sort((a, b) => a.num - b.num);
+				randomAbility = this.sample(abilities).id;
+			}
+			if (!randomAbility) return false;
+			
+			const oldAbility = target.setAbility(randomAbility);
+			if (!oldAbility) return oldAbility as false | null;
+		},
+		flags: { rollable: 1 },
+		name: "Klutz",
+		rating: -1,
+		num: 103,
 	},
 };

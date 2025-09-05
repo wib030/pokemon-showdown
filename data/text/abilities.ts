@@ -2359,4 +2359,68 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Chloroplast",
 		shortDesc: "Sunny Day active: Speed is 1.66x. Grass-type moves gain 1.5x power.",
 	},
+	dabble: {
+		name: "Dabble",
+		shortDesc: "-",
+	},
+	geneticfreak: {
+		name: "Genetic Freak",
+		shortDesc: "-",
+	},
+	tanglingcotton: {
+		name: "Tangling Cotton",
+		shortDesc: "-",
+	},
+	photosynthesis: {
+		name: "Photosynthesis",
+		shortDesc: "-",
+	},
+	strangleweed: {
+		name: "Strangle Weed",
+		shortDesc: "-",
+	},
+	pest: {
+		name: "Pest",
+		shortDesc: "-",
+	},
+	unownenergy: {
+		name: "Unown Energy",
+		shortDesc: "-",
+	},
+	rocksolid: {
+		name: "Rock Solid",
+		shortDesc: "-",
+	},
+	coward: {
+		name: "Coward",
+		shortDesc: "-",
+	},
+	thirsty: {
+		name: "Thirsty",
+		shortDesc: "-",
+	},
+	snowedin: {
+		name: "Snowed In",
+		shortDesc: "-",
+	},
+	ghostly: {
+		name: "Ghostly",
+		shortDesc: "-",
+	},
+	slurpup: {
+		name: "Slurp Up",
+		shortDesc: "-",
+	},
+	memory: {
+		name: "Memory",
+		shortDesc: "-",
+	},
+	tossandturn: {
+		name: "Toss and Turn",
+		shortDesc: "-",
+	},
+	webmaster: {
+		name: "Web Master",
+		shortDesc: "-",
+	},
 };
