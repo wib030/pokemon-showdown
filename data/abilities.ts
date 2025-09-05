@@ -6157,6 +6157,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	memory: {
 		onStart(pokemon) {
 			this.add('-activate', pokemon, 'ability: Memory');
+			this.hint("As long as Memory stays active, all stat changes will be forgotten.");
 		},
 		onAnyModifyBoost(boosts, pokemon) {
 			boosts['def'] = 0;
@@ -6175,7 +6176,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	tossandturn: {
 		onResidualOrder: 11,
 		onResidual(pokemon) {
-			if (target.status === 'slp') {
+			if (pokemon.status === 'slp') {
 				this.actions.useMove('tossandturn', pokemon);
 			}
 		},
