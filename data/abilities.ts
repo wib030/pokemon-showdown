@@ -5901,7 +5901,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	tanglingcotton: {
 		onDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target)) {
-				this.boost({ def: 1 }, source);
+				this.boost({ def: 1 });
 			}
 		},
 		flags: { rollable: 1 },
