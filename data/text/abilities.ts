@@ -2361,47 +2361,51 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	dabble: {
 		name: "Dabble",
-		shortDesc: "-",
+		shortDesc: "When this Pokemon becomes active, it acquires a random Ability.",
 	},
 	geneticfreak: {
 		name: "Genetic Freak",
-		shortDesc: "-",
+		shortDesc: "When this Pokemon becomes active, it acquires a random Ability.",
 	},
 	tanglingcotton: {
 		name: "Tangling Cotton",
-		shortDesc: "-",
+		shortDesc: "Raises Defense by 1 stage when hit by a Contact move.",
 	},
 	photosynthesis: {
 		name: "Photosynthesis",
-		shortDesc: "-",
+		shortDesc: "If Sunny Day is active, this Pokemon heals 1/16 of its max HP each turn.",
 	},
 	strangleweed: {
 		name: "Strangle Weed",
-		shortDesc: "-",
+		shortDesc: "Inflicts the opponent with Wrap when hitting with a Grass-type Contact move.",
 	},
 	pest: {
 		name: "Pest",
-		shortDesc: "-",
+		shortDesc: "20% chance to endure a finishing attack; Mold Breaker ignores this.",
 	},
 	unownenergy: {
 		name: "Unown Energy",
-		shortDesc: "-",
+		shortDesc: "Receives 2x damage from Normal-type moves; and half from other types, excluding ??? type.",
 	},
 	rocksolid: {
 		name: "Rock Solid",
-		shortDesc: "-",
+		shortDesc: "If this Pokemon is at full HP, it survives one hit with at least 1 HP. Immune to recoil damage.",
+
+		activate: "  [POKEMON] endured the hit!",
 	},
 	coward: {
 		name: "Coward",
-		shortDesc: "-",
+		shortDesc: "This Pokemon's Speed is doubled when using a Status move.",
 	},
 	thirsty: {
 		name: "Thirsty",
-		shortDesc: "-",
+		desc: "Prevents opposing Water-type Pokemon from choosing to switch out, unless they are holding a Shed Shell, or are part Ghost-type.",
+		shortDesc: "Prevents opposing Water-type Pokemon from choosing to switch out.",
 	},
 	snowedin: {
 		name: "Snowed In",
-		shortDesc: "-",
+		desc: "Landing a damaging attack with the following moves: Avalanche, Blizzard, Powder Snow, Hail Cannon or Icy Wind inflicts the Deep Snow side condition on the defenders side. Deep Snow: Halves Speed of Pokemon, this condition is removed when Pokemon on the affected side lands a Fire-type or Physical move, or if they are hit with a Fire-type attack.",
+		shortDesc: "Certain snowy moves set the side condition Deep Snow on a damaging hit.",
 	},
 	ghostly: {
 		name: "Ghostly",

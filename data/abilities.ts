@@ -5867,12 +5867,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			let randomAbility = '';
 			if (abilities.length) {
 				abilities.sort((a, b) => a.num - b.num);
-				randomAbility = this.sample(abilities).id;
+				randomAbility = this.sample(abilities);
 			}
 			if (!randomAbility) return false;
-			
-			const oldAbility = target.setAbility(randomAbility);
-			if (!oldAbility) return oldAbility as false | null;
+			source.setAbility(randomAbility);
 		},
 		flags: {},
 		name: "Dabble",
@@ -5880,66 +5878,248 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -14,
 	},
 	geneticfreak: {
+		onStart(source) {
+			const abilities = this.dex.abilities.all().filter(ability => (
+				ability.flags['rollable']
+			));
+			let randomAbility = '';
+			if (abilities.length) {
+				abilities.sort((a, b) => a.num - b.num);
+				randomAbility = this.sample(abilities);
+			}
+			if (!randomAbility) return false;
+			source.setAbility(randomAbility);
+		},
 		flags: {},
 		name: "Genetic Freak",
-		rating: 1,
+		rating: 2,
 		num: -15,
 	},
 	tanglingcotton: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				this.boost({ def: 1 }, source);
+			}
+		},
 		flags: { rollable: 1 },
 		name: "Tangling Cotton",
-		rating: 1,
+		rating: 3,
 		num: -16,
 	},
 	photosynthesis: {
+		onWeather(target, source, effect) {
+			if (effect.id === 'sunnyday' || effect.id === 'desolateland') {
+				this.heal(target.baseMaxhp / 16);
+			}
+		},
 		flags: { rollable: 1 },
 		name: "Photosynthesis",
 		rating: 1,
 		num: -17,
 	},
 	strangleweed: {
+		onSourceDamagingHit(damage, target, source, move) {
+			let moveType = move.type;
+			let item = source.getItem();
+			if (move.id === 'judgment' && source.hasAbility('multitype')) {
+				moveType = source.species.types[0];
+			}
+			if ((move.id === 'fling' || move.id === 'judgment') && item.onPlate) {
+				moveType = item.onPlate;
+			}
+			if (source.hasAbility('normalize') && move.id !== 'judgment') {
+				moveType = 'Normal';
+			}
+			if (move.id === 'hiddenpower') {
+				moveType = source.hpType || 'Dark';
+			}
+			if (source.hasAbility('rockstar') && move.flags['sound']) {
+				moveType = 'Rock';
+			}
+			if (move.id === 'weatherball') {
+				switch (this.battle.weather) {
+				case 'sunnyday':
+				case 'desolateland':
+					moveType = 'Fire';
+					break;
+				case 'raindance':
+				case 'primordialsea':
+					moveType = 'Water';
+					break;
+				case 'sandstorm':
+					moveType = 'Rock';
+					break;
+				case 'hail':
+				case 'snowscape':
+					moveType = 'Ice';
+					break;
+				}
+			}
+			
+			if (this.checkMoveMakesContact(move, target, source) && moveType === 'Grass') {
+				target.addVolatile('partiallytrapped', source);
+			}
+		},
 		flags: { rollable: 1 },
 		name: "Strangle Weed",
 		rating: 1,
 		num: -18,
 	},
 	pest: {
+		onDamagePriority: -40,
+		onDamage(damage, target, source, effect) {
+			if (this.randomChance(2, 10) && damage >= target.hp && effect && effect.effectType === 'Move' && !source.hasAbility('moldbreaker')) {
+				this.add("-activate", target, "ability: Pest");
+				return target.hp - 1;
+			}
+		},
 		flags: { rollable: 1 },
 		name: "Pest",
 		rating: 1,
 		num: -19,
 	},
 	unownenergy: {
+		onSourceModifyDamage(damage, source, target, move) {
+			let moveType = move.type;
+			let item = source.getItem();
+			if (move.id === 'judgment' && source.hasAbility('multitype')) {
+				moveType = source.species.types[0];
+			}
+			if ((move.id === 'fling' || move.id === 'judgment') && item.onPlate) {
+				moveType = item.onPlate;
+			}
+			if (source.hasAbility('normalize') && move.id !== 'judgment') {
+				moveType = 'Normal';
+			}
+			if (move.id === 'hiddenpower') {
+				moveType = source.hpType || 'Dark';
+			}
+			if (source.hasAbility('rockstar') && move.flags['sound']) {
+				moveType = 'Rock';
+			}
+			if (move.id === 'weatherball') {
+				switch (this.battle.weather) {
+				case 'sunnyday':
+				case 'desolateland':
+					moveType = 'Fire';
+					break;
+				case 'raindance':
+				case 'primordialsea':
+					moveType = 'Water';
+					break;
+				case 'sandstorm':
+					moveType = 'Rock';
+					break;
+				case 'hail':
+				case 'snowscape':
+					moveType = 'Ice';
+					break;
+				}
+			}
+			
+			if (moveType === '???') return;
+			if (moveType === 'Normal') {
+				this.hint("Unown Energy doubled the damage of the move!");
+				return this.chainModify(2);
+			} else {
+				this.hint("Unown Energy halved the damage of the move!");
+				return this.chainModify(0.5);
+			}
+		},
 		flags: { rollable: 1 },
 		name: "Unown Energy",
 		rating: 1,
 		num: -20,
 	},
 	rocksolid: {
+		onDamagePriority: -30,
+		onDamage(damage, target, source, effect) {
+			if (target.hp === target.maxhp && damage >= target.hp && effect && effect.effectType === 'Move') {
+				this.add('-ability', target, 'Rock Solid');
+				return target.hp - 1;
+			}
+			if (effect.id === 'recoil') {
+				if (!this.activeMove) throw new Error("Battle.activeMove is null");
+				if (this.activeMove.id !== 'struggle') return null;
+			}
+		},
 		flags: { rollable: 1 },
 		name: "Rock Solid",
 		rating: 1,
 		num: -21,
 	},
 	coward: {
+		onModifySpe(spe, pokemon, move) {
+			if (move.category === 'Status') {
+				return this.chainModify(2);
+			}
+		},
 		flags: { rollable: 1 },
 		name: "Coward",
 		rating: 1,
 		num: -22,
 	},
 	thirsty: {
+		onFoeTrapPokemon(pokemon) {
+			if (pokemon.hasType('Water') && pokemon.isAdjacent(this.effectState.target)) {
+				pokemon.tryTrap(true);
+			}
+		},
+		onFoeMaybeTrapPokemon(pokemon, source) {
+			if (!source) source = this.effectState.target;
+			if (!source || !pokemon.isAdjacent(source)) return;
+			if (!pokemon.knownType || pokemon.hasType('Water')) {
+				pokemon.maybeTrapped = true;
+			}
+		},
 		flags: { rollable: 1 },
 		name: "Thirsty",
 		rating: 1,
 		num: -23,
 	},
 	snowedin: {
+		sideCondition: 'deepsnow',
+		condition: {
+			onModifySpe(spe, pokemon) {
+				if (!pokemon.hasType('Ice')) {
+					return this.chainModify(0.5);
+				}
+			},
+			onModifyMove(move, pokemon) {
+				if (move.type === 'Fire' || move.category === 'Physical') {
+					this.add('-sideend', pokemon.side, 'Deep Snow');
+					pokemon.side.removeSideCondition('deepsnow');
+				}
+			},
+			onDamagingHit(damage, target, source, move) {
+				if (move.type === 'Fire' && move.category !== 'Status') {
+					this.add('-sideend', target.side, 'Deep Snow');
+					target.side.removeSideCondition('deepsnow');
+				}
+			},
+			onSideStart(side, source) {
+				this.add('-sidestart', side, 'Deep Snow');
+			},
+			onSideResidualOrder: 4,
+			onSideEnd(side) {
+				this.add('-sideend', side, 'Deep Snow');
+			},
+		},
+		onDamagingHit(damage, target, source, move) {
+			if (['avalanche', 'blizzard', 'powdersnow', 'hailcannon', 'icywind'].includes(move.id)) {
+				target.side.addSideCondition('deepsnow');
+			}
+		},
 		flags: { rollable: 1 },
 		name: "Snowed In",
 		rating: 1,
 		num: -24,
 	},
 	ghostly: {
+		onStart(source) {
+			if (!source.setType('Ghost')) return false;
+			this.add('-start', source, 'typechange', 'Ghost', '[from] ability: Ghostly');
+		},
 		flags: { rollable: 1 },
 		name: "Ghostly",
 		rating: 1,

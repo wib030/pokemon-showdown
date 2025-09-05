@@ -1079,22 +1079,4 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 2,
 		num: 138,
 	},
-	klutz: {
-		onStart(source) {
-			const abilities = this.dex.abilities.all().filter(ability => (
-				ability.flags['rollable']
-			));
-			let randomAbility = '';
-			if (abilities.length) {
-				abilities.sort((a, b) => a.num - b.num);
-				randomAbility = this.sample(abilities);
-			}
-			if (!randomAbility) return false;
-			source.setAbility(randomAbility);
-		},
-		flags: { rollable: 1 },
-		name: "Klutz",
-		rating: -1,
-		num: 103,
-	},
 };
