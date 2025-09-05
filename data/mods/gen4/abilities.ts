@@ -1091,7 +1091,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				randomMove = this.sample(moves).id;
 			}
 			if (!randomMove) return false;
-			this.actions.useMove(randomMove, pokemon);
+			this.actions.useMove(randomMove, source);
 		},
 		flags: { rollable: 1 },
 		name: "Klutz",
