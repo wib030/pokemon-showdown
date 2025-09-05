@@ -907,7 +907,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		flags: { rollable: 1 },
 		name: "Rattled",
 		rating: 1,
-		num: 155,
+		num: -113,
 	},
 	truant: {
 		inherit: true,
@@ -1035,6 +1035,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return this.chainModify(1.66);
 			}
 		},
+		num: -100,
 	},
 	corrosion: {
 		inherit: true,
@@ -1045,6 +1046,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				move.ignoreImmunity['Steel'] = true;
 			}
 		},
+		num: -105,
 	},
 	sandforce: {
 		onModifySpAPriority: 5,
@@ -1065,7 +1067,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		flags: { rollable: 1 },
 		name: "Sand Force",
 		rating: 2,
-		num: 159,
+		num: -107,
 	},
 	flareboost: {
 		onModifySpAPriority: 5,
@@ -1077,6 +1079,50 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		flags: { rollable: 1 },
 		name: "Flare Boost",
 		rating: 2,
-		num: 138,
+		num: -111,
+	},
+	multiscale: {
+		inherit: true,
+		num: -101,
+	},
+	poisontouch: {
+		inherit: true,
+		num: -102,
+	},
+	defiant: {
+		inherit: true,
+		num: -103,
+	},
+	competitive: {
+		inherit: true,
+		num: -103,
+	},
+	sheerforce: {
+		inherit: true,
+		num: -104,
+	},
+	strongjaw: {
+		inherit: true,
+		num: -106,
+	},
+	magicbounce: {
+		inherit: true,
+		num: -108,
+	},
+	imposter: {
+		inherit: true,
+		num: -109,
+	},
+	megalauncher: {
+		inherit: true,
+		num: -110,
+	},
+	sharpness: {
+		inherit: true,
+		num: -112,
+	},
+	neutralizinggas: {
+		inherit: true,
+		num: -114,
 	},
 };
