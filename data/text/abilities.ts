@@ -2330,6 +2330,11 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "There is a 30% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender, then lowers the Evasion of the attacker by 1 stage.",
 		shortDesc: "30% chance of infatuating opponent if they make contact, then lowers foes Evasion by 1.",
 	},
+	headache: {
+		name: "Headache",
+		desc: "When this Pokemon has 1/2 or less of its maximum HP, rounded down, its Psychic-type attacks have their power multiplied by 2.",
+			shortDesc: "At 1/2 or less of its max HP, this Pokemon's Psychic-type attacks have 2x power.",
+	},
 	relentless: {
 		name: "Relentless",
 		shortDesc: "Instead of taking a recharge turn, Pokemon recieves damage equal to 1/4 of their Max HP.",
