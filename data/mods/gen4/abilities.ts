@@ -1081,17 +1081,16 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	klutz: {
 		onStart(source) {
-			const moves = this.dex.moves.all().filter(move => (
-				(!move.isNonstandard || move.isNonstandard === 'Unobtainable') &&
-				move.flags['metronome']
+			const abilities = this.dex.abilities.all().filter(ability => (
+				ability.flags['rollable']
 			));
-			let randomMove = '';
-			if (moves.length) {
-				moves.sort((a, b) => a.num - b.num);
-				randomMove = this.sample(moves).id;
+			let randomAbility = '';
+			if (abilities.length) {
+				abilities.sort((a, b) => a.num - b.num);
+				randomAbility = this.sample(abilities);
 			}
-			if (!randomMove) return false;
-			this.actions.useMove(randomMove, source);
+			if (!randomAbility) return false;
+			source.setAbility(randomAbility);
 		},
 		flags: { rollable: 1 },
 		name: "Klutz",
