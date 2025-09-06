@@ -677,14 +677,12 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const movePool: string[] = Array.from(set.movepool);
 		const preferredTypes = set.preferredTypes;
 		const preferredType = this.sampleIfArray(preferredTypes) || '';
-		const ivPool[] = set.ivs;
-		const evPool[] = set.evs;
 
 		let ability = '';
 		let item = undefined;
 
-		const evs = { hp: evPool[0], atk: evPool[1], def: evPool[2], spa: evPool[3], spd: evPool[4], spe: evPool[5] };
-		const ivs = { hp: ivPool[0], atk: ivPool[1], def: ivPool[2], spa: ivPool[3], spd: ivPool[4], spe: ivPool[5] };
+		const evs = { hp: set.evs.hp, atk: 85, def: 85, spa: 85, spd: 85, spe: 85 };
+		const ivs = { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31 };
 
 		const types = species.types;
 		const abilities = set.abilities!;
@@ -703,7 +701,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		if (item === undefined) {
 			item = this.getItem(ability, types, moves, counter, teamDetails, species, isLead, preferredType, role);
 		}
-		item = set.item;
 
 		// For Trick / Switcheroo
 		if (item === 'Leftovers' && types.includes('Poison')) {
