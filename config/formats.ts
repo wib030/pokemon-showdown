@@ -77,7 +77,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 4] Draft",
 		mod: 'gen4',
 		searchShow: false,
-		ruleset: ['Standard Draft', 'Swagger Clause', 'DryPass Clause', 'Sleep Moves Clause', 'Team Preview', '!Evasion Abilities Clause'],
+		ruleset: ['Standard Draft', 'Swagger Clause', 'DryPass Clause', 'Sleep Moves Clause', '!Evasion Abilities Clause'],
 		banlist: ['King\'s Rock', 'Quick Claw', 'Assist', 'Sand Stream ++ Sand Veil', 'Snow Warning ++ Snow Cloak'],
 	},
 	
@@ -101,7 +101,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		gameType: 'doubles',
 		searchShow: false,
 		teraPreviewDefault: true,
-		ruleset: ['Standard Draft', '!Sleep Clause Mod', '!Evasion Clause', 'Team Preview'],
+		ruleset: ['Standard Draft', '!Sleep Clause Mod', '!Evasion Clause'],
 	},
 	{
 		name: "[Gen 4] 4v4 Doubles Draft",
@@ -110,6 +110,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		searchShow: false,
 		bestOfDefault: true,
 		teraPreviewDefault: true,
-		ruleset: ['Standard Draft', 'Item Clause = 1', 'VGC Timer', '!Sleep Clause Mod', '!OHKO Clause', '!Evasion Clause', 'Adjust Level = 50', 'Picked Team Size = 4', 'Team Preview'],
+		ruleset: ['Standard Draft', 'Item Clause = 1', 'VGC Timer', '!Sleep Clause Mod', '!OHKO Clause', '!Evasion Clause', 'Adjust Level = 50', 'Picked Team Size = 4'],
 	},
 ];
