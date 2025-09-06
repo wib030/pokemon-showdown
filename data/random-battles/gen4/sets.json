@@ -18,7 +18,7 @@
 				"evspa": 0,
 				"evspd": 4,
 				"evspe": 0,
-				"item": ["Black Glasses"]
+				"item": "Black Glasses"
             },
             {
                 "role": "Bulky Attacker",
@@ -36,8 +36,8 @@
 				"evspa": 0,
 				"evspd": 4,
 				"evspe": 0,
-				"item": ["Black Glasses"]
+				"item": "Black Glasses"
             }
         ]
-    },
+    }
 }
