@@ -688,7 +688,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			evs = { hp: set.evhp, atk: set.evatk, def: set.evdef, spa: set.evspa, spd: set.evspd, spe: set.evspe };
 		}
 		
-		if (set.ivs !== null) {
+		if (set.ivhp !== null) {
 			ivs = { hp: set.ivhp, atk: set.ivatk, def: set.ivdef, spa: set.ivspa, spd: set.ivspd, spe: set.ivspe };
 		}
 
