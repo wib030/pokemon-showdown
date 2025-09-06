@@ -31,18 +31,18 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'gen4',
 		team: 'random',
 		bestOfDefault: true,
-		ruleset: ['Obtainable', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod'],
+		ruleset: ['Obtainable', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview'],
 	},
 	{
 		name: "[Gen 4] Ubers",
 		mod: 'gen4',
-		ruleset: ['Standard'],
+		ruleset: ['Standard', 'Team Preview'],
 		banlist: ['AG'],
 	},
 	{
 		name: "[Gen 4] OU",
 		mod: 'gen4',
-		ruleset: ['Standard', 'Evasion Abilities Clause', 'Baton Pass Stat Trap Clause', 'Freeze Clause Mod'],
+		ruleset: ['Standard', 'Evasion Abilities Clause', 'Baton Pass Stat Trap Clause', 'Freeze Clause Mod', 'Team Preview'],
 		banlist: ['AG', 'Uber', 'Arena Trap', 'Quick Claw', 'Soul Dew', 'Swagger'],
 	},
 	{
@@ -62,7 +62,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 4] LC",
 		mod: 'gen4',
-		ruleset: ['Standard', 'Little Cup', 'Evasion Abilities Clause', 'Sleep Moves Clause'],
+		ruleset: ['Standard', 'Little Cup', 'Evasion Abilities Clause', 'Sleep Moves Clause', 'Team Preview'],
 		banlist: [
 			'Meditite', 'Misdreavus', 'Murkrow', 'Scyther', 'Sneasel', 'Tangela', 'Yanma',
 			'Berry Juice', 'Deep Sea Tooth', 'Dragon Rage', 'Sonic Boom', 'Swagger',
@@ -71,13 +71,13 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 4] Anything Goes",
 		mod: 'gen4',
-		ruleset: ['Obtainable', 'Arceus EV Limit', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod'],
+		ruleset: ['Obtainable', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview'],
 	},
 	{
 		name: "[Gen 4] Draft",
 		mod: 'gen4',
 		searchShow: false,
-		ruleset: ['Standard Draft', 'Swagger Clause', 'DryPass Clause', 'Sleep Moves Clause', '!Team Preview', '!Evasion Abilities Clause'],
+		ruleset: ['Standard Draft', 'Swagger Clause', 'DryPass Clause', 'Sleep Moves Clause', 'Team Preview', '!Evasion Abilities Clause'],
 		banlist: ['King\'s Rock', 'Quick Claw', 'Assist', 'Sand Stream ++ Sand Veil', 'Snow Warning ++ Snow Cloak'],
 	},
 	
@@ -91,7 +91,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 4] Doubles OU",
 		mod: 'gen4',
 		gameType: 'doubles',
-		ruleset: ['Standard', 'Evasion Abilities Clause'],
+		ruleset: ['Standard', 'Evasion Abilities Clause', 'Team Preview'],
 		banlist: ['AG', 'Uber', 'Soul Dew', 'Dark Void', 'Thunder Wave'],
 		unbanlist: ['Machamp', 'Manaphy', 'Mew', 'Salamence', 'Wobbuffet', 'Wynaut'],
 	},
@@ -101,7 +101,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		gameType: 'doubles',
 		searchShow: false,
 		teraPreviewDefault: true,
-		ruleset: ['Standard Draft', '!Sleep Clause Mod', '!Evasion Clause'],
+		ruleset: ['Standard Draft', '!Sleep Clause Mod', '!Evasion Clause', 'Team Preview'],
 	},
 	{
 		name: "[Gen 4] 4v4 Doubles Draft",
@@ -110,6 +110,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		searchShow: false,
 		bestOfDefault: true,
 		teraPreviewDefault: true,
-		ruleset: ['Standard Draft', 'Item Clause = 1', 'VGC Timer', '!Sleep Clause Mod', '!OHKO Clause', '!Evasion Clause', 'Adjust Level = 50', 'Picked Team Size = 4'],
+		ruleset: ['Standard Draft', 'Item Clause = 1', 'VGC Timer', '!Sleep Clause Mod', '!OHKO Clause', '!Evasion Clause', 'Adjust Level = 50', 'Picked Team Size = 4', 'Team Preview'],
 	},
 ];
