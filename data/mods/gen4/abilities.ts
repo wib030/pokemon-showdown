@@ -90,7 +90,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		onTryHit(target, source, move) {
 			const type = move.type;
-			if (target.isActive && type !== '???' && !target.hasType(type)) {
+			if (source !== target && target.isActive && type !== '???' && !target.hasType(type)) {
 				if (!target.setType(type)) return false;
 				this.add('-start', target, 'typechange', type, '[from] ability: Color Change');
 			}
@@ -534,9 +534,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				this.debug('doubling secondary chance');
 				for (const secondary of move.secondaries) {
 					if (secondary.chance) secondary.chance *= 2;
-				}
-				if (secondary.chance > 100) {
-					secondary.chance = 100;
+					if (secondary.chance > 100) secondary.chance = 100;
 				}
 			}
 		},
