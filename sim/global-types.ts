@@ -551,6 +551,9 @@ declare namespace RandomTeamsTypes {
 		abilities?: string[];
 		teraTypes?: string[];
 		preferredTypes?: string[];
+		evs?: number[];
+		ivs?: number[];
+		item?: string;
 	}
 	export interface RandomSpeciesData {
 		level?: number;
