@@ -681,7 +681,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let ability = '';
 		let item = undefined;
 
-		const evs = { hp: set.evs.hp, atk: 85, def: 85, spa: 85, spd: 85, spe: 85 };
+		const evs = { hp: 85, atk: 85, def: 85, spa: 85, spd: 85, spe: 85 };
 		const ivs = { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31 };
 
 		const types = species.types;
