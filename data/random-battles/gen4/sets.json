@@ -19,5 +19,110 @@
 				"item": "Black Glasses"
             }
         ]
+    },
+	"charizard": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["leechseed", "powerwhip", "sleeppowder", "sludgebomb", "substitute"],
+                "abilities": ["Overgrow"],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"evs": [252, 0, 252, 4, 0, 0],
+				"item": "Black Glasses"
+            },
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["earthquake", "leafstorm", "sleeppowder", "sludgebomb", "synthesis"],
+                "abilities": ["Overgrow"],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"evs": [252, 0, 252, 4, 0, 0],
+				"item": "Black Glasses"
+            }
+        ]
+    },
+	"blastoise": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["leechseed", "powerwhip", "sleeppowder", "sludgebomb", "substitute"],
+                "abilities": ["Overgrow"],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"evs": [252, 0, 252, 4, 0, 0],
+				"item": "Black Glasses"
+            },
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["earthquake", "leafstorm", "sleeppowder", "sludgebomb", "synthesis"],
+                "abilities": ["Overgrow"],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"evs": [252, 0, 252, 4, 0, 0],
+				"item": "Black Glasses"
+            }
+        ]
+    },
+	"meowth": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["leechseed", "powerwhip", "sleeppowder", "sludgebomb", "substitute"],
+                "abilities": ["Overgrow"],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"evs": [252, 0, 252, 4, 0, 0],
+				"item": "Black Glasses"
+            },
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["earthquake", "leafstorm", "sleeppowder", "sludgebomb", "synthesis"],
+                "abilities": ["Overgrow"],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"evs": [252, 0, 252, 4, 0, 0],
+				"item": "Black Glasses"
+            }
+        ]
+    },
+	"persian": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["leechseed", "powerwhip", "sleeppowder", "sludgebomb", "substitute"],
+                "abilities": ["Overgrow"],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"evs": [252, 0, 252, 4, 0, 0],
+				"item": "Black Glasses"
+            },
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["earthquake", "leafstorm", "sleeppowder", "sludgebomb", "synthesis"],
+                "abilities": ["Overgrow"],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"evs": [252, 0, 252, 4, 0, 0],
+				"item": "Black Glasses"
+            }
+        ]
+    },
+	"gengar": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["leechseed", "powerwhip", "sleeppowder", "sludgebomb", "substitute"],
+                "abilities": ["Overgrow"],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"evs": [252, 0, 252, 4, 0, 0],
+				"item": "Black Glasses"
+            },
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["earthquake", "leafstorm", "sleeppowder", "sludgebomb", "synthesis"],
+                "abilities": ["Overgrow"],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"evs": [252, 0, 252, 4, 0, 0],
+				"item": "Black Glasses"
+            }
+        ]
     }
 }
