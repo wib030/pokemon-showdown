@@ -677,8 +677,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const movePool: string[] = Array.from(set.movepool);
 		const preferredTypes = set.preferredTypes;
 		const preferredType = this.sampleIfArray(preferredTypes) || '';
-		const evPool: number[] = Array.from(set.evs);
-		const ivPool: number[] = Array.from(set.ivs);
 
 		let ability = '';
 		let item = undefined;
