@@ -677,20 +677,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const movePool: string[] = Array.from(set.movepool);
 		const preferredTypes = set.preferredTypes;
 		const preferredType = this.sampleIfArray(preferredTypes) || '';
+		const ivPool: const[] = Array.from(set.ivs);
+		const evPool: const[] = Array.from(set.evs);
 
 		let ability = '';
 		let item = undefined;
 
-		let evs = { hp: 85, atk: 85, def: 85, spa: 85, spd: 85, spe: 85 };
-		let ivs = { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31 };
-		
-		if (set.evhp !== null) {
-			evs = { hp: set.evhp, atk: set.evatk, def: set.evdef, spa: set.evspa, spd: set.evspd, spe: set.evspe };
-		}
-		
-		if (set.ivhp !== null) {
-			ivs = { hp: set.ivhp, atk: set.ivatk, def: set.ivdef, spa: set.ivspa, spd: set.ivspd, spe: set.ivspe };
-		}
+		const evs = { hp: evPool[0], atk: evPool[1], def: evPool[2], spa: evPool[3], spd: evPool[4], spe: evPool[5] };
+		const ivs = { hp: ivPool[0], atk: ivPool[1], def: ivPool[2], spa: ivPool[3], spd: ivPool[4], spe: ivPool[5] };
 
 		const types = species.types;
 		const abilities = set.abilities!;
