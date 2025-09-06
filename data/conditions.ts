@@ -907,4 +907,27 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 	restflag: {
 		name: 'restflag',
 	},
+	deepsnow: {
+		name: 'deepsnow',
+		onModifySpe(spe, pokemon) {
+			if (!pokemon.hasType('Ice')) {
+				return this.chainModify(0.5);
+			}
+		},
+		onModifyMove(move, pokemon) {
+			if (move.type === 'Fire' || move.category === 'Physical') {
+				this.add('-sideend', pokemon.side, 'Deep Snow');
+				pokemon.side.removeSideCondition('deepsnow');
+			}
+		},
+		onDamagingHit(damage, target, source, move) {
+			if (move.type === 'Fire' && move.category !== 'Status') {
+				this.add('-sideend', target.side, 'Deep Snow');
+				target.side.removeSideCondition('deepsnow');
+			}
+		},
+		onSideStart(side, source) {
+			this.add('-sidestart', side, 'Deep Snow');
+		},
+	},
 };

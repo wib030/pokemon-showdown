@@ -6081,32 +6081,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -23,
 	},
 	snowedin: {
-		condition: {
-			onModifySpe(spe, pokemon) {
-				if (!pokemon.hasType('Ice')) {
-					return this.chainModify(0.5);
-				}
-			},
-			onModifyMove(move, pokemon) {
-				if (move.type === 'Fire' || move.category === 'Physical') {
-					this.add('-sideend', pokemon.side, 'Deep Snow');
-					pokemon.side.removeSideCondition('deepsnow');
-				}
-			},
-			onDamagingHit(damage, target, source, move) {
-				if (move.type === 'Fire' && move.category !== 'Status') {
-					this.add('-sideend', target.side, 'Deep Snow');
-					target.side.removeSideCondition('deepsnow');
-				}
-			},
-			onSideStart(side, source) {
-				this.add('-sidestart', side, 'Deep Snow');
-			},
-			onSideResidualOrder: 4,
-			onSideEnd(side) {
-				this.add('-sideend', side, 'Deep Snow');
-			},
-		},
 		onSourceDamagingHit(damage, target, source, move) {
 			if (['avalanche', 'blizzard', 'powdersnow', 'hailcannon', 'icywind'].includes(move.id)) {
 				target.side.addSideCondition('deepsnow', source);
