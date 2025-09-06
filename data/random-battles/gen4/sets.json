@@ -5,12 +5,18 @@
             {
                 "role": "Staller",
                 "movepool": ["leechseed", "powerwhip", "sleeppowder", "sludgebomb", "substitute"],
-                "abilities": ["Overgrow"]
+                "abilities": ["Overgrow"],
+				"evs": [252, 0, 252, 0, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Black Glasses"
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["earthquake", "leafstorm", "sleeppowder", "sludgebomb", "synthesis"],
-                "abilities": ["Overgrow"]
+                "abilities": ["Overgrow"],
+				"evs": [252, 0, 252, 0, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Black Glasses"
             }
         ]
     },
