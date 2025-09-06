@@ -6083,6 +6083,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	snowedin: {
 		onSourceDamagingHit(damage, target, source, move) {
 			if (['avalanche', 'blizzard', 'powdersnow', 'hailcannon', 'icywind'].includes(move.id)) {
+				this.add('-activate', source, 'ability: Snowed In');
 				target.side.addSideCondition('deepsnow', source);
 			}
 		},
