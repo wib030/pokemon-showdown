@@ -6090,27 +6090,25 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			},
 			onModifyMove(move, pokemon) {
 				if (move.type === 'Fire' || move.category === 'Physical') {
-					this.add('-sideend', pokemon.side, 'Deep Snow');
-					pokemon.side.removeSideCondition('deepsnow');
+					this.add('-sideend', pokemon.side, 'ability: Snowed In');
 				}
 			},
 			onDamagingHit(damage, target, source, move) {
 				if (move.type === 'Fire' && move.category !== 'Status') {
-					this.add('-sideend', target.side, 'Deep Snow');
-					target.side.removeSideCondition('deepsnow');
+					this.add('-sideend', target.side, 'ability: Snowed In');
 				}
 			},
 			onSideStart(side, source) {
-				this.add('-sidestart', side, 'Deep Snow');
+				this.add('-sidestart', side, 'ability: Snowed In');
 			},
 			onSideResidualOrder: 4,
 			onSideEnd(side) {
-				this.add('-sideend', side, 'Deep Snow');
+				this.add('-sideend', side, 'ability: Snowed In');
 			},
 		},
 		onDamagingHit(damage, target, source, move) {
 			if (['avalanche', 'blizzard', 'powdersnow', 'hailcannon', 'icywind'].includes(move.id)) {
-				target.side.addSideCondition('deepsnow');
+				this.add('-sidestart', target.side, 'ability: Snowed In');
 			}
 		},
 		flags: { rollable: 1 },
