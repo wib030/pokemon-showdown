@@ -679,26 +679,12 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const preferredType = this.sampleIfArray(preferredTypes) || '';
 		const ivPool: const[] = Array.from(set.ivs);
 		const evPool: const[] = Array.from(set.evs);
-		
-		const ivHp = ivPool[0];
-		const ivAtk = ivPool[1];
-		const ivDef = ivPool[2];
-		const ivSpA = ivPool[3];
-		const ivSpD = ivPool[4];
-		const ivSpe = ivPool[5];
-		
-		const evHp = evPool[0];
-		const evAtk = evPool[1];
-		const evDef = evPool[2];
-		const evSpA = evPool[3];
-		const evSpD = evPool[4];
-		const evSpe = evPool[5];
 
 		let ability = '';
 		let item = undefined;
 
-		const evs = { hp: evHp, atk: evAtk, def: evDef, spa: evSpA, spd: evSpD, spe: evSpe };
-		const ivs = { hp: ivHp, atk: ivAtk, def: ivDef, spa: ivSpA, spd: ivSpD, spe: ivSpe };
+		const evs = { hp: evPool[0], atk: evPool[1], def: evPool[2], spa: evPool[3], spd: evPool[4], spe: evPool[5] };
+		const ivs = { hp: ivPool[0], atk: ivPool[1], def: ivPool[2], spa: ivPool[3], spd: ivPool[4], spe: ivPool[5] };
 
 		const types = species.types;
 		const abilities = set.abilities!;
@@ -717,10 +703,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		if (item === undefined) {
 			item = this.getItem(ability, types, moves, counter, teamDetails, species, isLead, preferredType, role);
 		}
-		
-		if (set.item !== null) {
-			item = set.item;
-		}
+		item = set.item;
 
 		// For Trick / Switcheroo
 		if (item === 'Leftovers' && types.includes('Poison')) {
