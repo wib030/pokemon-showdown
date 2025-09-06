@@ -681,8 +681,16 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let ability = '';
 		let item = undefined;
 
-		const evs = { hp: 85, atk: 85, def: 85, spa: 85, spd: 85, spe: 85 };
-		const ivs = { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31 };
+		let evs = { hp: 85, atk: 85, def: 85, spa: 85, spd: 85, spe: 85 };
+		let ivs = { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31 };
+		
+		if (set.evhp !== null) {
+			evs = { hp: set.evhp, atk: set.evatk, def: set.evdef, spa: set.evspa, spd: set.evspd, spe: set.evspe };
+		}
+		
+		if (set.ivs !== null) {
+			ivs = { hp: set.ivhp, atk: set.ivatk, def: set.ivdef, spa: set.ivspa, spd: set.ivspd, spe: set.ivspe };
+		}
 
 		const types = species.types;
 		const abilities = set.abilities!;
@@ -700,6 +708,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		item = this.getPriorityItem(ability, types, moves, counter, teamDetails, species, isLead, preferredType, role);
 		if (item === undefined) {
 			item = this.getItem(ability, types, moves, counter, teamDetails, species, isLead, preferredType, role);
+		}
+		
+		if (set.item !== null) {
+			item = set.item;
 		}
 
 		// For Trick / Switcheroo
