@@ -133,7 +133,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	glaceon: {
 		inherit: true,
 		baseStats: { hp: 65, atk: 60, def: 120, spa: 130, spd: 95, spe: 85 },
-		abilities: { 0: "Technician", H: "Slush Rush" },
+		abilities: { 0: "Technician", 1: "Slush Rush" },
 	},
 	glalie: {
 		inherit: true,
@@ -211,7 +211,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	hitmonchan: {
 		inherit: true,
 		baseStats: { hp: 50, atk: 105, def: 79, spa: 35, spd: 110, spe: 76 },
-		abilities: { 0: "Keen Eye", 1: "Iron Fist", H: "Inner Focus" },
+		abilities: { 0: "Technician", 1: "Iron Fist" },
 	},
 	hitmonlee: {
 		inherit: true,
