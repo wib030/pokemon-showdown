@@ -215,7 +215,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		onStart(pokemon) {
 			const item = pokemon.getItem();
-			switch (item) {
+			switch (item.id) {
 			case 'damprock':
 				this.field.setWeather('raindance');
 				break;
