@@ -213,6 +213,26 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	forecast: {
 		inherit: true,
+		onStart(pokemon) {
+			const item = pokemon.getItem();
+			switch (item) {
+			case 'damprock':
+				this.field.setWeather('raindance');
+				break;
+				
+			case 'heatrock':
+				this.field.setWeather('sunnyday');
+				break;
+				
+			case 'icyrock':
+				this.field.setWeather('hail');
+				break;
+				
+			case 'smoothrock':
+				this.field.setWeather('sandstorm');
+				break;
+			}
+		},
 		flags: { notrace: 1 },
 	},
 	forewarn: {
@@ -806,18 +826,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 	},
-	sandstream: {
-		inherit: true,
-		onImmunity(type, pokemon) {
-			if (type === 'sandstorm') return false;
-		},
-	},
-	snowwarning: {
-		inherit: true,
-		onImmunity(type, pokemon) {
-			if (type === 'hail') return false;
-		},
-	},
 	rivalry: {
 		onBasePowerPriority: 24,
 		onBasePower(basePower, attacker, defender, move) {
@@ -1122,5 +1130,85 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	neutralizinggas: {
 		inherit: true,
 		num: -114,
+	},
+	drought: {
+		inherit: true,
+		onStart(source) {
+			if (source.species.id === 'groudon' && source.item === 'redorb') return;
+			let baseCastformActive = false;
+			for (const mon of this.getAllActive()) {
+				if (mon.isAlly(source)) continue;
+				if (mon.species.id === 'castform') {
+					baseCastformActive = true;
+					break;
+				}
+			}
+			if (baseCastformActive === false) {
+				this.field.setWeather('sunnyday');
+			} else {
+				this.hint("Base form Castform prevents weather abilities from activating", true);
+			}
+		},
+	},
+	drizzle: {
+		inherit: true,
+		onStart(source) {
+			if (source.species.id === 'kyogre' && source.item === 'blueorb') return;
+			let baseCastformActive = false;
+			for (const mon of this.getAllActive()) {
+				if (mon.isAlly(source)) continue;
+				if (mon.species.id === 'castform') {
+					baseCastformActive = true;
+					break;
+				}
+			}
+			if (baseCastformActive === false) {
+				this.field.setWeather('raindance');
+			} else {
+				this.hint("Base form Castform prevents weather abilities from activating", true);
+			}
+		},
+	},
+	sandstream: {
+		inherit: true,
+		onStart(source) {
+			let baseCastformActive = false;
+			for (const mon of this.getAllActive()) {
+				if (mon.isAlly(source)) continue;
+				if (mon.species.id === 'castform') {
+					baseCastformActive = true;
+					break;
+				}
+			}
+			if (baseCastformActive === false) {
+				this.field.setWeather('sandstorm');
+			} else {
+				this.hint("Base form Castform prevents weather abilities from activating", true);
+			}
+		},
+		onImmunity(type, pokemon) {
+			if (type === 'sandstorm') return false;
+		},
+	},
+	snowwarning: {
+		inherit: true,
+		onStart(source) {
+			let baseCastformActive = false;
+			for (const mon of this.getAllActive()) {
+				if (mon.isAlly(source)) continue;
+				if (mon.species.id === 'castform') {
+					baseCastformActive = true;
+					break;
+				}
+			}
+			if (baseCastformActive === false) {
+				this.field.setWeather('snowscape');
+			} else {
+				this.hint("Base form Castform prevents weather abilities from activating", true);
+			}
+		},
+		onImmunity(type, pokemon) {
+			if (type === 'hail') return false;
+		},
 	},
 };

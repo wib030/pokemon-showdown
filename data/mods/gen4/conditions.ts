@@ -48,6 +48,14 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			const oneTurnChance = 25;
 			const twoTurnChance = 75;
 			
+			for (const mon of this.getAllActive()) {
+				if (mon.isAlly(target)) continue;
+				if (mon.hasAbility('baddreams')) {
+					badDreamsActive = true;
+					break;
+				}
+			}
+			
 			if (sleepRoll < twoTurnChance) {
 				if (sleepRoll < oneTurnChance) {
 					if (badDreamsActive === false) {
@@ -84,7 +92,18 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		onResidualOrder: 10,
 		onResidual(pokemon) {
 			if(!pokemon.volatiles['restflag']) {
-				this.heal(pokemon.baseMaxhp / 4);
+				let badDreamsActive = false;
+				for (const mon of this.getAllActive()) {
+					if (mon.isAlly(pokemon)) continue;
+					if (mon.hasAbility('baddreams')) {
+						badDreamsActive = true;
+						break;
+					}
+				}
+				
+				if (badDreamsActive === false) {
+					this.heal(pokemon.baseMaxhp / 4);
+				}
 			}
 		},
 	},
