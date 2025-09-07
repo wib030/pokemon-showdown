@@ -76,6 +76,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Aeroblast",
 		desc: "Has a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio.",
+		gen4: {
+			desc: "The user recovers 1/2 the HP lost by the target, rounded down. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded down.",
+			shortDesc: "User recovers 50% of the damage dealt.",
+		},
 	},
 	afteryou: {
 		name: "After You",
@@ -885,6 +889,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Charge Beam",
 		desc: "Has a 70% chance to raise the user's Special Attack by 1 stage.",
 		shortDesc: "70% chance to raise the user's Sp. Atk by 1.",
+		gen4: {
+			desc: "Has a 100% chance to raise the user's Special Attack by 1 stage.",
+			shortDesc: "100% chance to raise the user's Sp. Atk by 1.",
+		}
 	},
 	charm: {
 		name: "Charm",
@@ -1915,6 +1923,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Facade",
 		desc: "Power doubles if the user is burned, paralyzed, or poisoned. The physical damage halving effect from the user's burn is ignored.",
 		shortDesc: "Power doubles if user is burn/poison/paralyzed.",
+		gen4: {
+			desc: "Power doubles if the user is burned, paralyzed, poisoned or asleep. The physical damage halving effect from the user's burn is ignored.",
+			shortDesc: "Power doubles if user is burn/poison/paralyzed/asleep.",
+		},
 		gen5: {
 			desc: "Power doubles if the user is burned, paralyzed, or poisoned.",
 		},
@@ -2762,10 +2774,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		gen5: {
 			desc: "Raises the user's Attack and Special Attack by 1 stage. If the weather is Sunny Day, this move raises the user's Attack and Special Attack by 2 stages.",
 		},
-		gen4: {
-			desc: "Raises the user's Special Attack by 1 stage.",
-			shortDesc: "Raises the user's Sp. Atk by 1.",
-		},
 		gen1: {
 			desc: "Raises the user's Special by 1 stage.",
 			shortDesc: "Raises the user's Special by 1.",
@@ -3081,10 +3089,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "High Jump Kick",
 		desc: "If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage.",
 		shortDesc: "User is hurt by 50% of its max HP if it misses.",
-		gen4: {
-			desc: "If this attack is not successful, the user loses HP equal to half the target's maximum HP if the target was immune, rounded down, otherwise half of the damage the target would have taken, rounded down, but no less than 1 HP and no more than half of the target's maximum HP, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage.",
-			shortDesc: "If miss, user takes 1/2 damage it would've dealt.",
-		},
 		gen3: {
 			desc: "If this attack is not successful and the target was not immune, the user loses HP equal to half of the damage the target would have taken, rounded down, but no less than 1 HP and no more than half of the target's maximum HP, as crash damage.",
 			shortDesc: "If miss, user takes 1/2 damage it would've dealt.",
@@ -3433,10 +3437,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Jump Kick",
 		desc: "If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage.",
 		shortDesc: "User is hurt by 50% of its max HP if it misses.",
-		gen4: {
-			desc: "If this attack is not successful, the user loses HP equal to half the target's maximum HP if the target was immune, rounded down, otherwise half of the damage the target would have taken, rounded down, but no less than 1 HP and no more than half of the target's maximum HP, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage.",
-			shortDesc: "If miss, user takes 1/2 damage it would've dealt.",
-		},
 		gen3: {
 			desc: "If this attack is not successful and the target was not immune, the user loses HP equal to half of the damage the target would have taken, rounded down, but no less than 1 HP and no more than half of the target's maximum HP, as crash damage.",
 			shortDesc: "If miss, user takes 1/2 damage it would've dealt.",
@@ -4180,8 +4180,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "Raises the user's evasiveness by 2 stages. Whether or not the user's evasiveness was changed, Stomp and Steamroller will have their damage doubled if used against the user while it is active.",
 		},
 		gen4: {
-			desc: "Raises the user's evasiveness by 1 stage. Whether or not the user's evasiveness was changed, Stomp will have its power doubled if used against the user while it is active.",
-			shortDesc: "Raises the user's evasiveness by 1.",
+			desc: "Raises the user's evasiveness by 2 stages. Whether or not the user's evasiveness was changed, Stomp will have its power doubled if used against the user while it is active.",
+			shortDesc: "Raises the user's evasiveness by 2.",
 		},
 		gen3: {
 			desc: "Raises the user's evasiveness by 1 stage. Whether or not the user's evasiveness was changed, Astonish, Extrasensory, Needle Arm, and Stomp will have their damage doubled if used against the user while it is active.",
@@ -4510,6 +4510,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Octazooka",
 		desc: "Has a 50% chance to lower the target's accuracy by 1 stage.",
 		shortDesc: "50% chance to lower the target's accuracy by 1.",
+		gen4: {
+			desc: "Has a higher chance for a critical hit.",
+			shortDesc: "High critical hit ratio.",
+		},
 	},
 	octolock: {
 		name: "Octolock",
@@ -4722,10 +4726,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Poison Fang",
 		desc: "Has a 50% chance to badly poison the target.",
 		shortDesc: "50% chance to badly poison the target.",
-		gen5: {
-			desc: "Has a 30% chance to badly poison the target.",
-			shortDesc: "30% chance to badly poison the target.",
-		},
 	},
 	poisongas: {
 		name: "Poison Gas",
@@ -4758,6 +4758,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Poison Tail",
 		desc: "Has a 10% chance to poison the target and a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio. 10% chance to poison.",
+		gen4: {
+			desc: "Has a 30% chance to badly poison the target.",
+			shortDesc: "30% chance to badly poison.",
+		},
 	},
 	polarflare: {
 		name: "Polar Flare",
@@ -4865,6 +4869,9 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		shortDesc: "40, 80, 120 power, or heals target 1/4 max HP.",
 		gen2: {
 			desc: "If this move is successful, it deals damage or heals the target. 102/256 chance for 40 power, 76/256 chance for 80 power, 26/256 chance for 120 power, or 52/256 chance to heal the target by 1/4 of its maximum HP, rounded down. If this move deals damage, it uses an abnormal version of the damage formula by substituting certain values. The user's Attack stat is replaced with 10 times the effectiveness of this move against the target, the target's Defense stat is replaced with the index number of the user's secondary type, and the user's level is replaced with the index number of the target's secondary type. If a Pokemon does not have a secondary type, its primary type is used. The index numbers for each type are Normal: 0, Fighting: 1, Flying: 2, Poison: 3, Ground: 4, Rock: 5, Bug: 7, Ghost: 8, Steel: 9, Fire: 20, Water: 21, Grass: 22, Electric: 23, Psychic: 24, Ice: 25, Dragon: 26, Dark: 27. If at any point a division by 0 would happen in the damage formula, it divides by 1 instead.",
+		},
+		gen4: {
+			shortDesc: "40, 80, 150 power, or heals target 1/4 max HP.",
 		},
 	},
 	prismaticlaser: {
@@ -5348,6 +5355,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Rock Climb",
 		desc: "Has a 20% chance to confuse the target.",
 		shortDesc: "20% chance to confuse the target.",
+		gen4: {
+			desc: "Has a 10% chance to flinch the target.",
+			shortDesc: "10% chance to flinch the target.",
+		},
 	},
 	rockpolish: {
 		name: "Rock Polish",
@@ -6163,7 +6174,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
 		},
 		gen4: {
-			desc: "Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass or U-turn. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field, unless it uses Baton Pass, in which case the target will remain trapped.",
+			desc: "Has a 100% chance to raise the user's Defense by 1 stage.",
+			shortDesc: "100% chance to raise the user's Defense by 1.",
 		},
 		gen3: {
 			desc: "Prevents the target from switching out. The target can still switch out if it uses Baton Pass. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field, unless it uses Baton Pass, in which case the target will remain trapped.",
@@ -6434,13 +6446,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "String Shot",
 		desc: "Lowers the target's Speed by 2 stages.",
 		shortDesc: "Lowers the foe(s) Speed by 2.",
-		gen5: {
-			desc: "Lowers the target's Speed by 1 stage.",
-			shortDesc: "Lowers the foe(s) Speed by 1.",
-		},
-		gen2: {
-			shortDesc: "Lowers the target's Speed by 1.",
-		},
 	},
 	struggle: {
 		name: "Struggle",
@@ -7607,5 +7612,56 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "Will always result in a critical hit.",
 			shortDesc: "Nearly always goes first. Always crits.",
 		},
+	},
+	// New Moves
+	tossandturn: {
+		name: "Toss and Turn",
+		shortDesc: "Deals typeless damage to a random opposing Pokemon.",
+	},
+	psychicscream: {
+		name: "Psychic Scream",
+		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "100% chance to lower the foe(s) Speed by 1.",
+	},
+	peekaboo: {
+		name: "Peek-A-Boo",
+		desc: "Power doubles if the target is asleep. If the user has not fainted, the target wakes up.",
+		shortDesc: "Power doubles if target is asleep, and wakes it.",
+	},
+	hailcannon: {
+		name: "Hail Cannon",
+		desc: "Has a 10% chance to freeze the target. If the weather is Hail, this move does not check accuracy.",
+		shortDesc: "10% chance to freeze the target. Can't miss in Hail.",
+	},
+	peatslide: {
+		name: "Peat Slide",
+		desc: "Has a 10% chance to confuse the target(s).",
+		shortDesc: "10% chance to confuse the target(s).",
+	},
+	firechase: {
+		name: "Fire Chase",
+		desc: "If an opposing Pokemon switches out this turn, this move hits that Pokemon before it leaves the field, even if it was not the original target. If the user moves after an opponent using U-turn, but not Baton Pass, it will hit that opponent before it leaves the field. Power doubles and no accuracy check is done if the user hits an opponent switching out, and the user's turn is over; if an opponent faints from this, the replacement Pokemon becomes active immediately.",
+		shortDesc: "If a foe is switching out, hits it at 2x power.",
+
+		activate: "  ([TARGET] is being withdrawn...)",
+	},
+	nibble: {
+		name: "Nibble",
+		desc: "The user recovers 1/2 the HP lost by the target, rounded down. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded down.",
+		shortDesc: "User recovers 50% of the damage dealt.",
+	},
+	goldenbinding: {
+		name: "Golden Binding",
+		desc: "For 4 to 7 turns, the target's last move used becomes disabled. Fails if one of the target's moves is already disabled, if the target has not made a move, if the target no longer knows the move, or if the move has 0 PP.",
+		shortDesc: "For 4-7 turns, disables the target's last move.",
+
+		start: "  [POKEMON]'s [MOVE] was disabled!",
+		end: "  [POKEMON]'s move is no longer disabled!",
+		cant: "[POKEMON]'s [MOVE] is disabled!",
+	},
+	lovelypunch: {
+		name: "Lovely Punch",
+		desc: "Has a 30% chance to cause a target of the opposite gender to get infatuated.",
+		shortDesc: "30% chance to cause infatuation on an opposite gender target.",
 	},
 };

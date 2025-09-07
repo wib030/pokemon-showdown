@@ -74,36 +74,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			this.actions.useMove(randomMove, target);
 		},
 	},
-	beatup: {
-		inherit: true,
-		basePower: 10,
-		basePowerCallback(pokemon, target, move) {
-			if (!move.allies?.length) return null;
-			return 10;
-		},
-		onModifyMove(move, pokemon) {
-			pokemon.addVolatile('beatup');
-			move.type = '???';
-			move.category = 'Physical';
-			move.allies = pokemon.side.pokemon.filter(ally => !ally.fainted && !ally.status);
-			move.multihit = move.allies.length;
-		},
-		condition: {
-			duration: 1,
-			onModifyAtkPriority: -101,
-			onModifyAtk(atk, pokemon, defender, move) {
-				// https://www.smogon.com/forums/posts/8992145/
-				// this.add('-activate', pokemon, 'move: Beat Up', '[of] ' + move.allies![0].name);
-				this.event.modifier = 1;
-				return this.dex.species.get(move.allies!.shift()!.set.species).baseStats.atk;
-			},
-			onFoeModifyDefPriority: -101,
-			onFoeModifyDef(def, pokemon) {
-				this.event.modifier = 1;
-				return this.dex.species.get(pokemon.set.species).baseStats.def;
-			},
-		},
-	},
 	bide: {
 		inherit: true,
 		condition: {
@@ -174,17 +144,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		accuracy: 75,
 	},
-	bonerush: {
-		inherit: true,
-		accuracy: 80,
-	},
 	bravebird: {
 		inherit: true,
 		recoil: [1, 3],
-	},
-	bulletseed: {
-		inherit: true,
-		basePower: 10,
 	},
 	camouflage: {
 		inherit: true,
@@ -192,18 +154,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			if (target.hasType('Normal') || !target.setType('Normal')) return false;
 			this.add('-start', target, 'typechange', 'Normal');
 		},
-	},
-	chatter: {
-		inherit: true,
-		secondary: {
-			chance: 31,
-			volatileStatus: 'confusion',
-		},
-	},
-	clamp: {
-		inherit: true,
-		accuracy: 75,
-		pp: 10,
 	},
 	conversion: {
 		inherit: true,
@@ -242,14 +192,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		},
 	},
 	cottonspore: {
-		inherit: true,
-		accuracy: 85,
-	},
-	covet: {
-		inherit: true,
-		basePower: 40,
-	},
-	crabhammer: {
 		inherit: true,
 		accuracy: 85,
 	},
@@ -312,7 +254,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	disable: {
 		inherit: true,
-		accuracy: 80,
+		accuracy: 100,
 		flags: { protect: 1, mirror: 1, bypasssub: 1, metronome: 1 },
 		volatileStatus: 'disable',
 		condition: {
@@ -361,49 +303,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
-	doomdesire: {
-		inherit: true,
-		accuracy: 85,
-		basePower: 120,
-		onTry(source, target) {
-			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
-			const moveData = {
-				name: "Doom Desire",
-				basePower: 120,
-				category: "Special",
-				flags: { metronome: 1, futuremove: 1 },
-				willCrit: false,
-				type: '???',
-			} as unknown as ActiveMove;
-			const damage = this.actions.getDamage(source, target, moveData, true);
-			Object.assign(target.side.slotConditions[target.position]['futuremove'], {
-				duration: 3,
-				move: 'doomdesire',
-				source,
-				moveData: {
-					id: 'doomdesire',
-					name: "Doom Desire",
-					accuracy: 85,
-					basePower: 0,
-					damage,
-					category: "Special",
-					flags: { metronome: 1, futuremove: 1 },
-					effectType: 'Move',
-					type: '???',
-				},
-			});
-			this.add('-start', source, 'Doom Desire');
-			return null;
-		},
-	},
 	doubleedge: {
 		inherit: true,
 		recoil: [1, 3],
-	},
-	drainpunch: {
-		inherit: true,
-		basePower: 60,
-		pp: 5,
 	},
 	dreameater: {
 		inherit: true,
@@ -485,10 +387,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			}
 		},
 	},
-	extremespeed: {
-		inherit: true,
-		priority: 1,
-	},
 	fakeout: {
 		inherit: true,
 		priority: 1,
@@ -502,11 +400,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				return null;
 			}
 		},
-	},
-	firespin: {
-		inherit: true,
-		accuracy: 70,
-		basePower: 15,
 	},
 	flail: {
 		inherit: true,
@@ -552,66 +445,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	foresight: {
 		inherit: true,
 		flags: { protect: 1, mirror: 1, bypasssub: 1, metronome: 1 },
-	},
-	furycutter: {
-		inherit: true,
-		basePower: 10,
-		condition: {
-			duration: 2,
-			onStart() {
-				this.effectState.multiplier = 1;
-			},
-			onRestart() {
-				if (this.effectState.multiplier < 16) {
-					this.effectState.multiplier <<= 1;
-				}
-				this.effectState.duration = 2;
-			},
-		},
-	},
-	futuresight: {
-		inherit: true,
-		accuracy: 90,
-		basePower: 80,
-		pp: 15,
-		onTry(source, target) {
-			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
-			const moveData = {
-				name: "Future Sight",
-				basePower: 80,
-				category: "Special",
-				flags: { metronome: 1, futuremove: 1 },
-				willCrit: false,
-				type: '???',
-			} as unknown as ActiveMove;
-			const damage = this.actions.getDamage(source, target, moveData, true);
-			Object.assign(target.side.slotConditions[target.position]['futuremove'], {
-				duration: 3,
-				move: 'futuresight',
-				source,
-				moveData: {
-					id: 'futuresight',
-					name: "Future Sight",
-					accuracy: 90,
-					basePower: 0,
-					damage,
-					category: "Special",
-					flags: { metronome: 1, futuremove: 1 },
-					effectType: 'Move',
-					type: '???',
-				},
-			});
-			this.add('-start', source, 'Future Sight');
-			return null;
-		},
-	},
-	gigadrain: {
-		inherit: true,
-		basePower: 60,
-	},
-	glare: {
-		inherit: true,
-		accuracy: 75,
 	},
 	gravity: {
 		inherit: true,
@@ -689,8 +522,11 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	growth: {
 		inherit: true,
-		onModifyMove() {},
+		onModifyMove(move, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) move.boosts = { atk: 2, spa: 2 };
+		},
 		boosts: {
+			atk: 1,
 			spa: 1,
 		},
 	},
@@ -803,21 +639,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
-	highjumpkick: {
-		inherit: true,
-		basePower: 100,
-		pp: 20,
-		onMoveFail(target, source, move) {
-			move.causedCrashDamage = true;
-			let damage = this.actions.getDamage(source, target, move, true);
-			if (!damage) damage = target.maxhp;
-			this.damage(this.clampIntRange(damage / 2, 1, Math.floor(target.maxhp / 2)), source, source, move);
-		},
-	},
-	iciclespear: {
-		inherit: true,
-		basePower: 10,
-	},
 	imprison: {
 		inherit: true,
 		flags: { bypasssub: 1, metronome: 1 },
@@ -853,13 +674,11 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	jumpkick: {
 		inherit: true,
-		basePower: 85,
-		pp: 25,
+		accuracy: 90,
+		basePower: 100,
+		pp: 10,
 		onMoveFail(target, source, move) {
-			move.causedCrashDamage = true;
-			let damage = this.actions.getDamage(source, target, move, true);
-			if (!damage) damage = target.maxhp;
-			this.damage(this.clampIntRange(damage / 2, 1, Math.floor(target.maxhp / 2)), source, source, move);
+			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('Jump Kick'));
 		},
 	},
 	lastresort: {
@@ -868,6 +687,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	leechseed: {
 		inherit: true,
+		accuracy: 95,
 		condition: {
 			onStart(target) {
 				this.add('-start', target, 'move: Leech Seed');
@@ -991,10 +811,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
-	magmastorm: {
-		inherit: true,
-		accuracy: 70,
-	},
 	magnetrise: {
 		inherit: true,
 		flags: { gravity: 1, metronome: 1 },
@@ -1079,7 +895,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	minimize: {
 		inherit: true,
 		boosts: {
-			evasion: 1,
+			evasion: 2,
 		},
 	},
 	miracleeye: {
@@ -1202,7 +1018,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	outrage: {
 		inherit: true,
-		pp: 15,
+		pp: 10,
 	},
 	payback: {
 		inherit: true,
@@ -1234,16 +1050,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.add('-start', pokemon, `perish${duration}`);
 			},
 		},
-	},
-	petaldance: {
-		inherit: true,
-		basePower: 90,
-		pp: 20,
-	},
-	poisongas: {
-		inherit: true,
-		accuracy: 55,
-		target: "normal",
 	},
 	powertrick: {
 		inherit: true,
@@ -1307,6 +1113,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	rapidspin: {
 		inherit: true,
+		basePower: 50,
 		self: {
 			onHit(pokemon) {
 				if (pokemon.removeVolatile('leechseed')) {
@@ -1321,6 +1128,14 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				if (pokemon.volatiles['partiallytrapped']) {
 					pokemon.removeVolatile('partiallytrapped');
 				}
+			},
+		},
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spe: 1,
+				},
 			},
 		},
 	},
@@ -1439,11 +1254,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
-	sandtomb: {
-		inherit: true,
-		accuracy: 70,
-		basePower: 15,
-	},
 	scaryface: {
 		inherit: true,
 		accuracy: 90,
@@ -1526,10 +1336,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				return null;
 			},
 		},
-	},
-	snore: {
-		inherit: true,
-		flags: { protect: 1, mirror: 1, sound: 1, metronome: 1 },
 	},
 	spikes: {
 		inherit: true,
@@ -1663,11 +1469,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			}
 		},
 	},
-	tackle: {
-		inherit: true,
-		accuracy: 95,
-		basePower: 35,
-	},
 	tailglow: {
 		inherit: true,
 		boosts: {
@@ -1732,18 +1533,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
-	thrash: {
-		inherit: true,
-		basePower: 90,
-		pp: 20,
-	},
 	torment: {
 		inherit: true,
 		flags: { protect: 1, mirror: 1, bypasssub: 1, metronome: 1 },
-	},
-	toxic: {
-		inherit: true,
-		accuracy: 85,
 	},
 	toxicspikes: {
 		inherit: true,
@@ -1812,44 +1604,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
-	uproar: {
-		inherit: true,
-		basePower: 50,
-		condition: {
-			onStart(target) {
-				this.add('-start', target, 'Uproar');
-				// 3-6 turns
-				this.effectState.duration = this.random(3, 7);
-			},
-			onResidual(target) {
-				if (target.volatiles['throatchop']) {
-					target.removeVolatile('uproar');
-					return;
-				}
-				if (target.lastMove && target.lastMove.id === 'struggle' && target.lastMove.id === 'tossandturn') {
-					// don't lock
-					delete target.volatiles['uproar'];
-				}
-				this.add('-start', target, 'Uproar', '[upkeep]');
-			},
-			onResidualOrder: 10,
-			onResidualSubOrder: 11,
-			onEnd(target) {
-				this.add('-end', target, 'Uproar');
-			},
-			onLockMove: 'uproar',
-			onAnySetStatus(status, pokemon) {
-				if (status.id === 'slp') {
-					if (pokemon === this.effectState.target) {
-						this.add('-fail', pokemon, 'slp', '[from] Uproar', '[msg]');
-					} else {
-						this.add('-fail', pokemon, 'slp', '[from] Uproar');
-					}
-					return null;
-				}
-			},
-		},
-	},
 	volttackle: {
 		inherit: true,
 		recoil: [1, 3],
@@ -1868,11 +1622,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				}
 			},
 		},
-	},
-	whirlpool: {
-		inherit: true,
-		accuracy: 70,
-		basePower: 15,
 	},
 	whirlwind: {
 		inherit: true,
@@ -1906,10 +1655,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				return false;
 			}
 		},
-	},
-	wrap: {
-		inherit: true,
-		accuracy: 85,
 	},
 	wringout: {
 		inherit: true,
@@ -2019,5 +1764,610 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			this.heal(target.maxhp); // Aesthetic only as the healing happens after you fall asleep in-game
 			target.addVolatile("restflag");
 		},
+	},
+	doubleslap: {
+		inherit: true,
+		accuracy: 90,
+		basePower: 20,
+	},
+	hurricane: {
+		inherit: true,
+		num: -100,
+	},
+	poisonsting: {
+		inherit: true,
+		basePower: 35,
+		pp: 20,
+	},
+	pinmissile: {
+		inherit: true,
+		accuracy: 90,
+		basePower: 25,
+	},
+	flamethrower: {
+		inherit: true,
+		basePower: 90,
+	},
+	vinewhip: {
+		inherit: true,
+		basePower: 45,
+		pp: 25,
+	},
+	tackle: {
+		inherit: true,
+		accuracy: 100,
+		basePower: 40,
+	},
+	wrap: {
+		inherit: true,
+		accuracy: 90,
+		basePower: 35,
+	},
+	thrash: {
+		inherit: true,
+		basePower: 120,
+		pp: 10,
+	},
+	hydropump: {
+		inherit: true,
+		basePower: 110,
+	},
+	surf: {
+		inherit: true,
+		basePower: 90,
+	},
+	icebeam: {
+		inherit: true,
+		basePower: 90,
+	},
+	submission: {
+		inherit: true,
+		pp: 20,
+	},
+	absorb: {
+		inherit: true,
+		basePower: 30,
+	},
+	megadrain: {
+		inherit: true,
+		basePower: 60,
+		pp: 10,
+	},
+	petaldance: {
+		inherit: true,
+		basePower: 120,
+		pp: 10,
+	},
+	firespin: {
+		inherit: true,
+		accuracy: 85,
+		basePower: 35,
+	},
+	thunderbolt: {
+		inherit: true,
+		basePower: 90,
+	},
+	toxic: {
+		inherit: true,
+		accuracy: 90,
+	},
+	fireblast: {
+		inherit: true,
+		basePower: 110,
+	},
+	clamp: {
+		inherit: true,
+		accuracy: 85,
+		pp: 15,
+	},
+	skullbash: {
+		inherit: true,
+		basePower: 130,
+		pp: 10,
+	},
+	highjumpkick: {
+		inherit: true,
+		accuracy: 85,
+		basePower: 130,
+		pp: 10,
+		onMoveFail(target, source, move) {
+			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('High Jump Kick'));
+		},
+	},
+	glare: {
+		inherit: true,
+		accuracy: 100,
+	},
+	poisongas: {
+		inherit: true,
+		accuracy: 90,
+		target: "allAdjacentFoes",
+	},
+	leechlife: {
+		inherit: true,
+		basePower: 80,
+		pp: 10,
+	},
+	crabhammer: {
+		inherit: true,
+		accuracy: 90,
+		basePower: 100,
+	},
+	snore: {
+		inherit: true,
+		basePower: 60,
+		flags: { protect: 1, mirror: 1, sound: 1, metronome: 1 },
+	},
+	octazooka: {
+		inherit: true,
+		accuracy: 90,
+		basePower: 100,
+		critRatio: 2,
+		secondary: {},
+	},
+	bonerush: {
+		inherit: true,
+		accuracy: 90,
+	},
+	gigadrain: {
+		inherit: true,
+		basePower: 80,
+	},
+	endure: {
+		inherit: true,
+		priority: 4,
+	},
+	falseswipe: {
+		inherit: true,
+		basePower: 60,
+	},
+	furycutter: {
+		inherit: true,
+		accuracy: 90,
+		basePower: 30,
+		condition: {
+			duration: 2,
+			onStart() {
+				this.effectState.multiplier = 1;
+			},
+			onRestart() {
+				if (this.effectState.multiplier < 16) {
+					this.effectState.multiplier <<= 1;
+				}
+				this.effectState.duration = 2;
+			},
+		},
+	},
+	present: {
+		inherit: true,
+		accuracy: 100,
+		onModifyMove(move, pokemon, target) {
+			const rand = this.random(10);
+			if (rand < 2) {
+				move.heal = [1, 4];
+				move.infiltrates = true;
+			} else if (rand < 6) {
+				move.basePower = 40;
+			} else if (rand < 9) {
+				move.basePower = 80;
+			} else {
+				move.basePower = 150;
+			}
+		},
+		type: "Ice",
+	},
+	bulldoze: {
+		inherit: true,
+		num: -101,
+	},
+	extremespeed: {
+		inherit: true,
+		priority: 2,
+	},
+	futuresight: {
+		inherit: true,
+		accuracy: 100,
+		basePower: 120,
+		pp: 10,
+		onTry(source, target) {
+			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
+			Object.assign(target.side.slotConditions[target.position]['futuremove'], {
+				move: 'futuresight',
+				source,
+				moveData: {
+					id: 'futuresight',
+					name: "Future Sight",
+					accuracy: 100,
+					basePower: 120,
+					category: "Special",
+					priority: 0,
+					flags: { allyanim: 1, metronome: 1, futuremove: 1 },
+					ignoreImmunity: false,
+					effectType: 'Move',
+					type: 'Psychic',
+				},
+			});
+			this.add('-start', source, 'move: Future Sight');
+			return this.NOT_FAIL;
+		},
+	},
+	beatup: {
+		inherit: true,
+		basePower: 15,
+		pp: 5,
+		basePowerCallback(pokemon, target, move) {
+			if (!move.allies?.length) return null;
+			return 15;
+		},
+		onModifyMove(move, pokemon) {
+			pokemon.addVolatile('beatup');
+			move.type = 'Dark';
+			move.category = 'Physical';
+			move.allies = pokemon.side.pokemon.filter(ally => !ally.fainted && !ally.status);
+			move.multihit = move.allies.length;
+		},
+		condition: {
+			duration: 1,
+			onModifyAtkPriority: -101,
+			onModifyAtk(atk, pokemon, defender, move) {
+				// https://www.smogon.com/forums/posts/8992145/
+				// this.add('-activate', pokemon, 'move: Beat Up', '[of] ' + move.allies![0].name);
+				this.event.modifier = 1;
+				return this.dex.species.get(move.allies!.shift()!.set.species).baseStats.atk;
+			},
+			onFoeModifyDefPriority: -101,
+			onFoeModifyDef(def, pokemon) {
+				this.event.modifier = 1;
+				return this.dex.species.get(pokemon.set.species).baseStats.def;
+			},
+		},
+	},
+	uproar: {
+		inherit: true,
+		basePower: 60,
+		condition: {
+			onStart(target) {
+				this.add('-start', target, 'Uproar');
+				// 3-6 turns
+				this.effectState.duration = this.random(3, 7);
+			},
+			onResidual(target) {
+				if (target.volatiles['throatchop']) {
+					target.removeVolatile('uproar');
+					return;
+				}
+				if (target.lastMove && target.lastMove.id === 'struggle' && target.lastMove.id === 'tossandturn') {
+					// don't lock
+					delete target.volatiles['uproar'];
+				}
+				this.add('-start', target, 'Uproar', '[upkeep]');
+			},
+			onResidualOrder: 10,
+			onResidualSubOrder: 11,
+			onEnd(target) {
+				this.add('-end', target, 'Uproar');
+			},
+			onLockMove: 'uproar',
+			onAnySetStatus(status, pokemon) {
+				if (status.id === 'slp') {
+					if (pokemon === this.effectState.target) {
+						this.add('-fail', pokemon, 'slp', '[from] Uproar', '[msg]');
+					} else {
+						this.add('-fail', pokemon, 'slp', '[from] Uproar');
+					}
+					return null;
+				}
+			},
+		},
+	},
+	heatwave: {
+		inherit: true,
+		basePower: 95,
+	},
+	willowisp: {
+		inherit: true,
+		accuracy: 85,
+	},
+	drillrun: {
+		inherit: true,
+		num: -102,
+	},
+	whirlpool: {
+		inherit: true,
+		accuracy: 85,
+		basePower: 35,
+	},
+	followme: {
+		inherit: true,
+		priority: 2,
+	},
+	armthrust: {
+		inherit: true,
+		basePower: 25,
+	},
+	lusterpurge: {
+		inherit: true,
+		basePower: 95,
+	},
+	mistball: {
+		inherit: true,
+		basePower: 95,
+	},
+	iciclecrash: {
+		inherit: true,
+		num: -103,
+	},
+	meteormash: {
+		inherit: true,
+		accuracy: 90,
+		basePower: 90,
+	},
+	astonish: {
+		inherit: true,
+		basePower: 40,
+	},
+	aircutter: {
+		inherit: true,
+		basePower: 60,
+	},
+	overheat: {
+		inherit: true,
+		basePower: 130,
+	},
+	rocktomb: {
+		inherit: true,
+		accuracy: 95,
+		basePower: 60,
+		pp: 15,
+	},
+	sandtomb: {
+		inherit: true,
+		accuracy: 85,
+		basePower: 35,
+	},
+	muddywater: {
+		inherit: true,
+		basePower: 90,
+	},
+	bulletseed: {
+		inherit: true,
+		basePower: 25,
+	},
+	iciclespear: {
+		inherit: true,
+		basePower: 25,
+	},
+	bounce: {
+		inherit: true,
+		accuracy: 90,
+		basePower: 95,
+	},
+	poisontail: {
+		num: 342,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Poison Tail",
+		pp: 25,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		secondary: {
+			chance: 30,
+			status: 'tox',
+		},
+		target: "normal",
+		type: "Poison",
+		contestType: "Clever",
+	},
+	covet: {
+		inherit: true,
+		basePower: 60,
+		pp: 25,
+	},
+	doomdesire: {
+		inherit: true,
+		accuracy: 100,
+		basePower: 160,
+		onTry(source, target) {
+			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
+			Object.assign(target.side.slotConditions[target.position]['futuremove'], {
+				move: 'doomdesire',
+				source,
+				moveData: {
+					id: 'doomdesire',
+					name: "Doom Desire",
+					accuracy: 100,
+					basePower: 140,
+					category: "Special",
+					priority: 0,
+					flags: { metronome: 1, futuremove: 1 },
+					effectType: 'Move',
+					type: 'Steel',
+				},
+			});
+			this.add('-start', source, 'Doom Desire');
+			return this.NOT_FAIL;
+		},
+	},
+	wakeupslap: {
+		inherit: true,
+		basePower: 70,
+	},
+	aurasphere: {
+		inherit: true,
+		basePower: 95,
+		pp: 10,
+	},
+	wavecrash: {
+		inherit: true,
+		basePower: 110,
+		num: -104,
+	},
+	airslash: {
+		inherit: true,
+		accuracy: 100,
+		pp: 15,
+	},
+	powergem: {
+		inherit: true,
+		basePower: 80,
+	},
+	drainpunch: {
+		inherit: true,
+		basePower: 75,
+		pp: 10,
+	},
+	energyball: {
+		inherit: true,
+		basePower: 90,
+	},
+	rockclimb: {
+		inherit: true,
+		basePower: 70,
+		secondary: {
+			chance: 10,
+			volatileStatus: 'flinch',
+		},
+		type: "Rock",
+	},
+	dracometeor: {
+		inherit: true,
+		basePower: 130,
+	},
+	leafstorm: {
+		inherit: true,
+		basePower: 130,
+	},
+	chatter: {
+		inherit: true,
+		basePower: 70,
+		secondary: {
+			chance: 31,
+			volatileStatus: 'confusion',
+		},
+	},
+	darkvoid: {
+		inherit: true,
+		accuracy: 50,
+	},
+	rocksmash: {
+		inherit: true,
+		basePower: 60,
+	},
+	voltswitch: {
+		inherit: true,
+		num: -105,
+	},
+	aeroblast: {
+		num: 177,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Aeroblast",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, distance: 1, metronome: 1, wind: 1 },
+		drain: [1, 2],
+		secondary: null,
+		target: "any",
+		type: "Flying",
+		contestType: "Cool",
+	},
+	spiderweb: {
+		num: 169,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Spider Web",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					def: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Bug",
+		contestType: "Clever",
+	},
+	chargebeam: {
+		inherit: true,
+		accuracy: 85,
+		basePower: 60,
+		pp: 15,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spa: 1,
+				},
+			},
+		},
+	},
+	dualwingbeat: {
+		inherit: true,
+		num: -106,
+	},
+	psyshieldbash: {
+		inherit: true,
+		num: -107,
+	},
+	gunkshot: {
+		inherit: true,
+		accuracy: 80,
+	},
+	poisonfang: {
+		inherit: true,
+		basePower: 60,
+		secondary: {
+			chance: 50,
+			status: 'tox',
+		},
+	},
+	magmastorm: {
+		inherit: true,
+		accuracy: 75,
+		basePower: 100,
+	},
+	facade: {
+		inherit: true,
+		onBasePower(basePower, pokemon) {
+			if (pokemon.status) {
+				return this.chainModify(2);
+			}
+		},
+	},
+	stringshot: {
+		inherit: true,
+		boosts: {
+			spe: -2,
+		},
+	},
+	teleport: {
+		num: 100,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Teleport",
+		pp: 20,
+		priority: 0,
+		flags: { metronome: 1 },
+		onTry(source) {
+			return !!this.canSwitch(source.side);
+		},
+		selfSwitch: true,
+		secondary: null,
+		target: "self",
+		type: "Psychic",
+		zMove: { effect: 'heal' },
+		contestType: "Cool",
+	},
+	roaroftime: {
+		inherit: true,
+		basePower: 200,
 	},
 };
