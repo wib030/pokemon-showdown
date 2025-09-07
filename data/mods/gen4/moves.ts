@@ -46,6 +46,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.heal(pokemon.baseMaxhp / 16);
 			},
 		},
+		target: "adjacentAllyOrSelf",
 	},
 	assist: {
 		inherit: true,
@@ -427,21 +428,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		recoil: [1, 3],
 	},
-	focuspunch: {
-		inherit: true,
-		priorityChargeCallback() {},
-		beforeTurnCallback(pokemon) {
-			pokemon.addVolatile('focuspunch');
-		},
-		beforeMoveCallback() {},
-		onTry(pokemon) {
-			if (pokemon.volatiles['focuspunch']?.lostFocus) {
-				this.attrLastMove('[still]');
-				this.add('cant', pokemon, 'Focus Punch', 'Focus Punch');
-				return null;
-			}
-		},
-	},
 	foresight: {
 		inherit: true,
 		flags: { protect: 1, mirror: 1, bypasssub: 1, metronome: 1 },
@@ -811,26 +797,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
-	magnetrise: {
-		inherit: true,
-		flags: { gravity: 1, metronome: 1 },
-		volatileStatus: 'magnetrise',
-		condition: {
-			duration: 5,
-			onStart(target) {
-				if (target.volatiles['ingrain'] || target.ability === 'levitate') return false;
-				this.add('-start', target, 'Magnet Rise');
-			},
-			onImmunity(type) {
-				if (type === 'Ground') return false;
-			},
-			onResidualOrder: 10,
-			onResidualSubOrder: 16,
-			onEnd(target) {
-				this.add('-end', target, 'Magnet Rise');
-			},
-		},
-	},
 	mefirst: {
 		inherit: true,
 		condition: {
@@ -1050,6 +1016,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.add('-start', pokemon, `perish${duration}`);
 			},
 		},
+		flags: { sound: 1, distance: 1, bypasssub: 1, metronome: 1 },
 	},
 	powertrick: {
 		inherit: true,
@@ -1155,7 +1122,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 			onAnyModifyDamagePhase1(damage, source, target, move) {
 				if (target !== source && this.effectState.target.hasAlly(target) && this.getCategory(move) === 'Physical') {
-					if (!target.getMoveHitData(move).crit && !move.infiltrates) {
+					if (!target.getMoveHitData(move).crit && !move.infiltrates && move.id !== 'focuspunch') {
 						this.debug('Reflect weaken');
 						if (target.alliesAndSelf().length > 1) return this.chainModify(2, 3);
 						return this.chainModify(0.5);
@@ -1655,6 +1622,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				return false;
 			}
 		},
+		target: "allAdjacent",
 	},
 	wringout: {
 		inherit: true,
@@ -2369,5 +2337,132 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	roaroftime: {
 		inherit: true,
 		basePower: 200,
+	},
+	focuspunch: {
+		inherit: true,
+		accuracy: true,
+		basePower: 160,
+		priorityChargeCallback() {},
+		beforeTurnCallback(pokemon) {
+			pokemon.addVolatile('focuspunch');
+		},
+		beforeMoveCallback() {},
+		onTry(pokemon) {
+			if (pokemon.volatiles['focuspunch']?.lostFocus) {
+				this.attrLastMove('[still]');
+				this.add('cant', pokemon, 'Focus Punch', 'Focus Punch');
+				return null;
+			}
+		},
+		onAnyModifyBoost(boosts, pokemon) {
+			const focusPunchUser = this.effectState.source;
+			if (focusPunchUser === pokemon) return;
+			if (focusPunchUser === this.activePokemon && pokemon === this.activeTarget) {
+				boosts['def'] = 0;
+				boosts['spd'] = 0;
+			}
+		},
+	},
+	spore: {
+		inherit: true,
+		accuracy: 90,
+	},
+	hiddenpower: {
+		num: 237,
+		accuracy: 100,
+		basePower: 60,
+		category: "Special",
+		isNonstandard: "Past",
+		name: "Hidden Power",
+		pp: 15,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		onModifyType(move, pokemon) {
+			move.type = pokemon.hpType || 'Dark';
+		},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		contestType: "Clever",
+	},
+	selfdestruct: {
+		num: 120,
+		accuracy: 100,
+		basePower: 200,
+		category: "Physical",
+		name: "Self-Destruct",
+		pp: 5,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1, noparentalbond: 1 },
+		selfdestruct: "always",
+		secondary: null,
+		target: "allAdjacent",
+		type: "Normal",
+		contestType: "Beautiful",
+	},
+	explosion: {
+		num: 153,
+		accuracy: 100,
+		basePower: 250,
+		category: "Physical",
+		name: "Explosion",
+		pp: 5,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1, noparentalbond: 1 },
+		selfdestruct: "always",
+		secondary: null,
+		target: "allAdjacent",
+		type: "Normal",
+		contestType: "Beautiful",
+	},
+	psystrike: {
+		inherit: true,
+		num: -108,
+	},
+	psyshock: {
+		inherit: true,
+		num: -109,
+	},
+	roost: {
+		inherit: true,
+		pp: 5,
+	},
+	slackoff: {
+		inherit: true,
+		pp: 5,
+	},
+	weatherball: {
+		inherit: true,
+		basePower: 60,
+		type: "Flying",
+	},
+	magnetrise: {
+		inherit: true,
+		flags: { gravity: 1, metronome: 1 },
+		volatileStatus: 'magnetrise',
+		onModifyPriority(priority, pokemon, target, move) {
+			if (pokemon.hasAbility('magnetpull')) {
+				this.add('-activate', pokemon, 'ability: Magnet Pull');
+				return priority + 1;
+			}
+		},
+		condition: {
+			duration: 5,
+			onStart(target) {
+				const source = this.effectState.source;
+				if (source !== target && !(target.hasType('Rock') || target.hasType('Electric') || target.hasType('Steel'))) return false;
+				if (target.volatiles['ingrain'] || target.ability === 'levitate') return false;
+				this.add('-start', target, 'Magnet Rise');
+			},
+			onImmunity(type) {
+				if (type === 'Ground') return false;
+			},
+			onResidualOrder: 10,
+			onResidualSubOrder: 16,
+			onEnd(target) {
+				this.add('-end', target, 'Magnet Rise');
+			},
+		},
+		target: "allies",
 	},
 };

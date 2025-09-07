@@ -619,7 +619,9 @@ export class BattleActions {
 		for (const [i, target] of targets.entries()) {
 			if (target.volatiles['commanding']) {
 				hitResults[i] = false;
-			} else if (this.battle.gen >= 8 && move.id === 'toxic' && pokemon.hasType('Poison')) {
+			} else if (move.id === 'toxic' && pokemon.hasType('Poison')) {
+				hitResults[i] = true;
+			} else if (move.id === 'thunderwave' && pokemon.hasType('Electric')) {
 				hitResults[i] = true;
 			} else {
 				hitResults[i] = this.battle.runEvent('Invulnerability', target, pokemon, move);
@@ -723,7 +725,7 @@ export class BattleActions {
 				}
 			}
 			if (
-				move.alwaysHit || (move.id === 'toxic' && this.battle.gen >= 8 && pokemon.hasType('Poison')) ||
+				move.alwaysHit || (move.id === 'toxic' && pokemon.hasType('Poison')) || (move.id === 'thunderwave' && pokemon.hasType('Electric')) ||
 				(move.target === 'self' && move.category === 'Status' && !target.isSemiInvulnerable())
 			) {
 				accuracy = true; // bypasses ohko accuracy modifiers

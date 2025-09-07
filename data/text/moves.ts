@@ -166,6 +166,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Aqua Ring",
 		desc: "The user has 1/16 of its maximum HP, rounded down, restored at the end of each turn while it remains active. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. If the user uses Baton Pass, the replacement will receive the healing effect.",
 		shortDesc: "User recovers 1/16 max HP per turn.",
+		gen4: {
+			desc: "The user or an ally has 1/16 of its maximum HP, rounded down, restored at the end of each turn while it remains active. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. If the user uses Baton Pass, the replacement will receive the healing effect.",
+			shortDesc: "User or an ally recovers 1/16 max HP per turn.",
+		},
 
 		start: "  [POKEMON] surrounded itself with a veil of water!",
 		heal: "  A veil of water restored [POKEMON]'s HP!",
@@ -1885,8 +1889,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
 		shortDesc: "Hits adjacent Pokemon. The user faints.",
 		gen4: {
-			desc: "The user faints after using this move, unless this move has no target. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
-			shortDesc: "Target's Def halved during damage. User faints.",
+			desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+			shortDesc: "Hits adjacent Pokemon. The user faints.",
 		},
 		gen3: {
 			desc: "The user faints after using this move. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
@@ -2271,7 +2275,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "The user loses its focus and does nothing if it is hit by a damaging attack this turn before it can execute the move.",
 		shortDesc: "Fails if the user takes damage before it hits.",
 		gen4: {
-			desc: "The user loses its focus and does nothing if it is hit by a damaging attack this turn before it can execute the move, but it still loses PP.",
+			desc: "The user ignores the defensive stat changes of the target, as well as Reflect when dealing damage. The user loses its focus and does nothing if it is hit by a damaging attack this turn before it can execute the move, but it still loses PP.",
+			shortDesc: "Ignores foes stat changes/Reflect. Fails if user takes damage before it hits.",
 		},
 
 		start: "  [POKEMON] is tightening its focus!",
@@ -3028,10 +3033,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Hidden Power",
 		desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
 		shortDesc: "Varies in type based on the user's IVs.",
-		gen5: {
-			desc: "This move's type and power depend on the user's individual values (IVs). Power varies between 30 and 70, and type can be any but Normal.",
-			shortDesc: "Varies in power and type based on the user's IVs.",
-		},
 	},
 	hiddenpowerbug: {
 		name: "Hidden Power Bug",
@@ -3809,7 +3810,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "For 5 turns, the user is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, and the Arena Trap Ability as long as it remains active. If the user uses Baton Pass, the replacement will gain the effect. Ingrain, Smack Down, and Iron Ball override this move if the user is under any of their effects. Fails if the user is already under this effect or the effects of Ingrain or Smack Down.",
 		},
 		gen4: {
-			desc: "For 5 turns, the user is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, and the Arena Trap Ability as long as it remains active. If the user uses Baton Pass, the replacement will gain the effect. Ingrain and Iron Ball override this move if the user is under any of their effects. Fails if the user is already under this effect or the effect of Ingrain.",
+			desc: "If the user has Magnet Pull, this move gains +1 priority. For 5 turns, the user and any allies on the field that have the Rock, Steel or Electric type is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, and the Arena Trap Ability as long as it remains active. If the user uses Baton Pass, the replacement will gain the effect. Ingrain and Iron Ball override this move if the user is under any of their effects. Fails if the user is already under this effect or the effect of Ingrain.",
+			shortDesc: "For 5 turns, the user and Rock/Steel/Electric allies have immunity to Ground.",
 		},
 
 		start: "  [POKEMON] levitated with electromagnetism!",
@@ -5642,8 +5644,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
 		shortDesc: "Hits adjacent Pokemon. The user faints.",
 		gen4: {
-			desc: "The user faints after using this move, unless this move has no target. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
-			shortDesc: "Target's Def halved during damage. User faints.",
+			desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+			shortDesc: "Hits adjacent Pokemon. The user faints.",
 		},
 		gen3: {
 			desc: "The user faints after using this move. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
@@ -7000,6 +7002,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Thunder Wave",
 		desc: "Paralyzes the target. This move does not ignore type immunity.",
 		shortDesc: "Paralyzes the target.",
+		gen4: {
+			desc: "Paralyzes the target. This move does not ignore type immunity. Electric types can't miss.",
+			shortDesc: "Paralyzes the target. Electric types can't miss.",
+		},
 	},
 	tickle: {
 		name: "Tickle",
@@ -7539,7 +7545,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "Causes the target's Ability to become Insomnia. Fails if the target's Ability is Insomnia, Multitype, or Truant.",
 		},
 		gen4: {
-			desc: "Causes the target's Ability to become Insomnia. Fails if the target's Ability is Multitype or Truant, or if the target is holding a Griseous Orb.",
+			desc: "Hits adjacent Pokemon. Causes the target(s) Ability to become Insomnia. Fails if the target's Ability is Multitype or Truant, or if the target is holding a Griseous Orb.",
+			shortDesc: "Hits adjacent Pokemon. The target(s) Ability becomes Insomnia.",
 		},
 	},
 	wrap: {
