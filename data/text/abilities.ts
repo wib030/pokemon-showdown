@@ -544,6 +544,10 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Forecast",
 		desc: "If this Pokemon is a Castform, its type changes to the current weather condition's type, except Sandstorm. This effect is prevented if this Pokemon is holding a Utility Umbrella and the weather is Rain Dance or Sunny Day.",
 		shortDesc: "Castform's type changes to the current weather condition's type, except Sandstorm.",
+		gen4: {
+			desc: "If this Pokemon is a Castform, its type changes to the current weather condition's type, its base stats also change. This effect is prevented if this Pokemon is holding a Utility Umbrella and the weather is Rain Dance or Sunny Day. Before transforming, when ability becomes active: If this Pokemon is holding a weather-duration boosting item, that specific weather is set. The abilities Drought, Drizzle, Sand Stream and Snow Warning do not activate if an untransformed Castform with Forecast is on the opposing side of the field.",
+			shortDesc: "Transforms Castform based on weather. Holding weather items: Sets the respective weather.",
+		},
 		gen7: {
 			desc: "If this Pokemon is a Castform, its type changes to the current weather condition's type, except Sandstorm.",
 		},
