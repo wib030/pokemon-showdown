@@ -232,6 +232,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				this.field.setWeather('sandstorm');
 				break;
 			}
+			this.singleEvent('WeatherChange', this.effect, this.effectState, pokemon);
 		},
 		flags: { notrace: 1 },
 	},
