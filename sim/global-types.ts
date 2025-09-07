@@ -554,6 +554,7 @@ declare namespace RandomTeamsTypes {
 		evs?: number[];
 		ivs?: number[];
 		item?: string;
+		nature?: string;
 	}
 	export interface RandomSpeciesData {
 		level?: number;
