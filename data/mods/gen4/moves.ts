@@ -1599,7 +1599,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	hurricane: {
 		inherit: true,
-		num: -100,
+		num: 419,
 	},
 	poisonsting: {
 		inherit: true,
@@ -1785,7 +1785,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	bulldoze: {
 		inherit: true,
-		num: -101,
+		num: 419,
 	},
 	extremespeed: {
 		inherit: true,
@@ -1891,19 +1891,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		accuracy: 85,
 	},
 	drillrun: {
-		num: -102,
-		accuracy: 95,
-		basePower: 80,
-		category: "Physical",
-		name: "Drill Run",
-		pp: 10,
-		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		critRatio: 2,
-		secondary: null,
-		target: "normal",
-		type: "Ground",
-		contestType: "Tough",
+		inherit: true,
+		num: 419,
 	},
 	whirlpool: {
 		inherit: true,
@@ -1928,7 +1917,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	iciclecrash: {
 		inherit: true,
-		num: -103,
+		num: 419,
 	},
 	meteormash: {
 		inherit: true,
@@ -2034,7 +2023,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	wavecrash: {
 		inherit: true,
 		basePower: 110,
-		num: -104,
+		num: 419,
 	},
 	airslash: {
 		inherit: true,
@@ -2089,7 +2078,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	voltswitch: {
 		inherit: true,
-		num: -105,
+		num: 419,
 	},
 	aeroblast: {
 		num: 177,
@@ -2143,11 +2132,11 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	dualwingbeat: {
 		inherit: true,
-		num: -106,
+		num: 419,
 	},
 	psyshieldbash: {
 		inherit: true,
-		num: -107,
+		num: 419,
 	},
 	gunkshot: {
 		inherit: true,
@@ -2282,11 +2271,11 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	psystrike: {
 		inherit: true,
-		num: -108,
+		num: 419,
 	},
 	psyshock: {
 		inherit: true,
-		num: -109,
+		num: 419,
 	},
 	roost: {
 		inherit: true,
@@ -2417,11 +2406,11 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	lowsweep: {
 		inherit: true,
-		num: -110,
+		num: 419,
 	},
 	stickyweb: {
 		inherit: true,
-		num: -111,
+		num: 419,
 	},
 	tailwind: {
 		inherit: true,
@@ -2602,7 +2591,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	freezedry: {
 		inherit: true,
-		num: -112,
+		num: 419,
 	},
 	lowkick: {
 		inherit: true,
@@ -2662,11 +2651,11 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	dragontail: {
 		inherit: true,
-		num: -113,
+		num: 419,
 	},
 	wildcharge: {
 		inherit: true,
-		num: -114,
+		num: 419,
 	},
 	spitup: {
 		inherit: true,
@@ -2726,7 +2715,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	hex: {
 		inherit: true,
-		num: -115,
+		num: 419,
 	},
 	brickbreak: {
 		inherit: true,
