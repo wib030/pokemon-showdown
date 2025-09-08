@@ -873,9 +873,17 @@ export class BattleActions {
 					if (pokemon.hasItem('threefourfivedice')) {
 						targetHits = this.battle.sample([3, 4, 5]);
 					}
+					if (pokemon.side.getSideCondition('luckychant') && targetHits < 3) {
+						targetHits = 3;
+					}
 				}
 			} else {
 				targetHits = this.battle.random(targetHits[0], targetHits[1] + 1);
+				if (targetHits[1] === 10) {
+					if (pokemon.hasItem('threefourfivedice')) {
+						targetHits = this.battle.sample([3, 4, 5]) + this.battle.sample([3, 4, 5]);
+					}
+				}
 			}
 		}
 		if (targetHits === 10 && pokemon.hasItem('loadeddice')) targetHits -= this.battle.random(7);

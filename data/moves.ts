@@ -14584,7 +14584,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				source.boosts[i] = target.boosts[i];
 			}
 
-			const volatilesToCopy = ['dragoncheer', 'focusenergy', 'gmaxchistrike', 'laserfocus'];
+			const volatilesToCopy = ['dragoncheer', 'focusenergy', 'gmaxchistrike', 'laserfocus', 'meditate'];
 			// we need to remove all crit stage volatiles first; otherwise copying e.g. dragoncheer onto a mon with focusenergy
 			// will crash the server (since addVolatile fails due to overlap, leaving the source mon with no hasDragonType to set)
 			for (const volatile of volatilesToCopy) source.removeVolatile(volatile);
@@ -22409,5 +22409,140 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Normal",
 		contestType: "Cute",
+	},
+	mindvirus: {
+		num: -13,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Mind Virus",
+		pp: 15,
+		priority: 0,
+		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
+		volatileStatus: 'mindvirus',
+		condition: {
+			duration: 5,
+			onStart(pokemon, source) {
+				this.add('-start', pokemon, 'move: Mind Virus');
+			},
+			onResidualOrder: 20,
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'move: Mind Virus');
+			},
+			onTryHeal(damage, target, source, effect) {
+				if (effect.name === "Pain Split") return damage;
+				damage *= -1;
+				this.add('-activate', source, 'move: Mind Virus');
+				return damage;
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+		contestType: "Clever",
+	},
+	tantrum: {
+		num: -13,
+		accuracy: 100,
+		basePower: 45,
+		category: "Physical",
+		name: "Tantrum",
+		pp: 15,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, failinstruct: 1 },
+		self: {
+			volatileStatus: 'lockedmove',
+		},
+		secondary: null,
+		target: "randomNormal",
+		type: "Dark",
+		contestType: "Cute",
+	},
+	plow: {
+		num: -14,
+		accuracy: 100,
+		basePower: 45,
+		category: "Physical",
+		name: "Pound",
+		pp: 35,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		secondary: null,
+		target: "normal",
+		type: "Ground",
+		contestType: "Tough",
+	},
+	snap: {
+		num: -15,
+		accuracy: 95,
+		basePower: 50,
+		category: "Physical",
+		name: "Snap",
+		pp: 25,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bite: 1 },
+		secondary: null,
+		target: "normal",
+		type: "Water",
+		contestType: "Tough",
+	},
+	chumrush: {
+		num: -16,
+		accuracy: 85,
+		basePower: 10,
+		category: "Physical",
+		name: "Chum Rush",
+		pp: 15,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1 },
+		basePowerCallback(pokemon, target) {
+			let bp = Math.floor((10 * 2 / 3) * (target.hp / target.maxhp));
+			if (bp > 80) bp = 80;
+			this.hint(`BP: ${bp}`);
+			return bp;
+		},
+		multihit: 10,
+		secondary: null,
+		target: "normal",
+		type: "Water",
+	},
+	chillingspell: {
+		num: -17,
+		accuracy: 100,
+		basePower: 65,
+		basePowerCallback(pokemon, target, move) {
+			if (target.status || target.hasAbility('comatose')) {
+				this.debug('BP doubled from status condition');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		category: "Special",
+		name: "Chilling Spell",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		secondary: null,
+		target: "normal",
+		type: "Ice",
+		zMove: { basePower: 160 },
+		contestType: "Clever",
+	},
+	psyscreen: {
+		num: -18,
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		name: "Psyscreen",
+		pp: 5,
+		priority: 0,
+		flags: { protect: 1, mirror: 1 },
+		self: {
+			sideCondition: 'lightscreen',
+		},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+		contestType: "Clever",
 	},
 };
