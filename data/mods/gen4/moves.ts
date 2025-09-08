@@ -351,16 +351,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			}
 		},
 	},
-	feint: {
-		inherit: true,
-		basePower: 50,
-		onTry(source, target) {
-			if (!target.volatiles['protect']) {
-				this.add('-fail', source);
-				return null;
-			}
-		},
-	},
 	flail: {
 		inherit: true,
 		basePowerCallback(pokemon) {
