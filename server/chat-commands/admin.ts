@@ -68,7 +68,7 @@ async function updateserver(context: Chat.CommandContext, codePath: string) {
 
 	context.sendReply(`Fetching newest version of code in the repository ${codePath}...`);
 
-	let [code, stdout, stderr] = await exec(`git fetch`);
+	let [code, stdout, stderr] = await exec(`sudo git fetch`);
 	if (code) throw new Error(`updateserver: Crash while fetching - make sure this is a Git repository`);
 	if (!stdout && !stderr) {
 		context.sendReply(`There were no updates.`);
@@ -76,11 +76,11 @@ async function updateserver(context: Chat.CommandContext, codePath: string) {
 		return true;
 	}
 
-	[code, stdout, stderr] = await exec(`git rev-parse HEAD`);
+	[code, stdout, stderr] = await exec(`sudo git rev-parse HEAD`);
 	if (code || stderr) throw new Error(`updateserver: Crash while grabbing hash`);
 	const oldHash = String(stdout).trim();
 
-	[code, stdout, stderr] = await exec(`git stash save "PS /updateserver autostash"`);
+	[code, stdout, stderr] = await exec(`sudo git stash save "PS /updateserver autostash"`);
 	let stashedChanges = true;
 	if (code) throw new Error(`updateserver: Crash while stashing`);
 	if ((stdout + stderr).includes("No local changes")) {
@@ -94,20 +94,20 @@ async function updateserver(context: Chat.CommandContext, codePath: string) {
 	// errors can occur while rebasing or popping the stash; make sure to recover
 	try {
 		context.sendReply(`Rebasing...`);
-		[code] = await exec(`git rebase --no-autostash FETCH_HEAD`);
+		[code] = await exec(`sudo git rebase --no-autostash FETCH_HEAD`);
 		if (code) {
 			// conflict while rebasing
-			await exec(`git rebase --abort`);
+			await exec(`sudo git rebase --abort`);
 			throw new Error(`restore`);
 		}
 
 		if (stashedChanges) {
 			context.sendReply(`Restoring saved changes...`);
-			[code] = await exec(`git stash pop`);
+			[code] = await exec(`sudo git stash pop`);
 			if (code) {
 				// conflict while popping stash
-				await exec(`git reset HEAD .`);
-				await exec(`git checkout .`);
+				await exec(`sudo git reset HEAD .`);
+				await exec(`sudo git checkout .`);
 				throw new Error(`restore`);
 			}
 		}
@@ -115,8 +115,8 @@ async function updateserver(context: Chat.CommandContext, codePath: string) {
 		return true;
 	} catch {
 		// failed while rebasing or popping the stash
-		await exec(`git reset --hard ${oldHash}`);
-		if (stashedChanges) await exec(`git stash pop`);
+		await exec(`sudo git reset --hard ${oldHash}`);
+		if (stashedChanges) await exec(`sudo git stash pop`);
 		return false;
 	}
 }
