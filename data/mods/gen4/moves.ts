@@ -2658,9 +2658,12 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		onAfterMove(pokemon) {
 			this.boost({ def: -1, spd: -1 }, pokemon, pokemon);
 			pokemon.volatiles['stockpile'].layers -= 2;
-			if (pokemon.volatiles['stockpile']?.layers <= 0) pokemon.removeVolatile('stockpile');
-			this.add('-end', target, 'Stockpile');
-			this.add('-start', pokemon, 'stockpile' + pokemon.volatiles['stockpile'].layers);
+			if (pokemon.volatiles['stockpile']?.layers <= 0) {
+				pokemon.removeVolatile('stockpile');
+			} else {
+				this.add('-end', target, 'Stockpile');
+				this.add('-start', pokemon, 'stockpile' + pokemon.volatiles['stockpile'].layers);
+			}
 		},
 	},
 	swallow: {
@@ -2674,9 +2677,12 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			const success = !!this.heal(this.modify(pokemon.maxhp, healAmount[layers - 1]));
 			if (!success) this.add('-fail', pokemon, 'heal');
 			pokemon.volatiles['stockpile'].layers -= 2;
-			if (pokemon.volatiles['stockpile']?.layers <= 0) pokemon.removeVolatile('stockpile');
-			this.add('-end', target, 'Stockpile');
-			this.add('-start', pokemon, 'stockpile' + pokemon.volatiles['stockpile'].layers);
+			if (pokemon.volatiles['stockpile']?.layers <= 0) {
+				pokemon.removeVolatile('stockpile');
+			} else {
+				this.add('-end', target, 'Stockpile');
+				this.add('-start', pokemon, 'stockpile' + pokemon.volatiles['stockpile'].layers);
+			}
 			return success || this.NOT_FAIL;
 		},
 	},
