@@ -1597,10 +1597,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		accuracy: 90,
 		basePower: 20,
 	},
-	hurricane: {
-		inherit: true,
-		num: 419,
-	},
 	poisonsting: {
 		inherit: true,
 		basePower: 35,
@@ -1783,10 +1779,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		},
 		type: "Ice",
 	},
-	bulldoze: {
-		inherit: true,
-		num: 419,
-	},
 	extremespeed: {
 		inherit: true,
 		priority: 2,
@@ -1911,10 +1903,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		basePower: 95,
 	},
-	iciclecrash: {
-		inherit: true,
-		num: 419,
-	},
 	meteormash: {
 		inherit: true,
 		accuracy: 90,
@@ -2019,7 +2007,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	wavecrash: {
 		inherit: true,
 		basePower: 110,
-		num: 419,
 	},
 	airslash: {
 		inherit: true,
@@ -2072,10 +2059,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		basePower: 60,
 	},
-	voltswitch: {
-		inherit: true,
-		num: 419,
-	},
 	aeroblast: {
 		num: 177,
 		accuracy: 100,
@@ -2125,14 +2108,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				},
 			},
 		},
-	},
-	dualwingbeat: {
-		inherit: true,
-		num: 419,
-	},
-	psyshieldbash: {
-		inherit: true,
-		num: 419,
 	},
 	gunkshot: {
 		inherit: true,
@@ -2265,14 +2240,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		type: "Normal",
 		contestType: "Beautiful",
 	},
-	psystrike: {
-		inherit: true,
-		num: 419,
-	},
-	psyshock: {
-		inherit: true,
-		num: 419,
-	},
 	roost: {
 		inherit: true,
 		pp: 5,
@@ -2400,13 +2367,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			return null;
 		},
 	},
-	lowsweep: {
-		inherit: true,
-		num: 419,
-	},
 	stickyweb: {
 		inherit: true,
-		num: 419,
 		condition: {
 			onSideStart(side) {
 				this.add('-sidestart', side, 'move: Sticky Web');
@@ -2595,10 +2557,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		accuracy: 100,
 	},
-	freezedry: {
-		inherit: true,
-		num: 419,
-	},
 	lowkick: {
 		inherit: true,
 		basePowerCallback(pokemon, target) {
@@ -2655,14 +2613,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
-	dragontail: {
-		inherit: true,
-		num: 419,
-	},
-	wildcharge: {
-		inherit: true,
-		num: 419,
-	},
 	spitup: {
 		inherit: true,
 		basePowerCallback(pokemon) {
@@ -2718,10 +2668,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.add('-end', target, 'Stockpile');
 			},
 		},
-	},
-	hex: {
-		inherit: true,
-		num: 419,
 	},
 	brickbreak: {
 		inherit: true,

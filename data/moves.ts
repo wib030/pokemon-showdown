@@ -2039,7 +2039,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	bulldoze: {
-		num: 523,
+		num: 419,
 		accuracy: 100,
 		basePower: 60,
 		category: "Physical",
@@ -4368,7 +4368,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 	},
 	dragontail: {
-		num: 525,
+		num: 419,
 		accuracy: 90,
 		basePower: 60,
 		category: "Physical",
@@ -4494,7 +4494,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 	},
 	dualwingbeat: {
-		num: 814,
+		num: 419,
 		accuracy: 90,
 		basePower: 40,
 		category: "Physical",
@@ -6404,7 +6404,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Clever",
 	},
 	freezedry: {
-		num: 573,
+		num: 419,
 		accuracy: 100,
 		basePower: 70,
 		category: "Special",
@@ -8941,7 +8941,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Clever",
 	},
 	hex: {
-		num: 506,
+		num: 419,
 		accuracy: 100,
 		basePower: 65,
 		basePowerCallback(pokemon, target, move) {
@@ -9387,7 +9387,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	hurricane: {
-		num: 542,
+		num: 419,
 		accuracy: 70,
 		basePower: 110,
 		category: "Special",
@@ -9814,7 +9814,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ice",
 	},
 	iciclecrash: {
-		num: 556,
+		num: 419,
 		accuracy: 90,
 		basePower: 85,
 		category: "Physical",
@@ -10903,7 +10903,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 	},
 	lowsweep: {
-		num: 490,
+		num: 419,
 		accuracy: 100,
 		basePower: 65,
 		category: "Physical",
@@ -14779,7 +14779,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Clever",
 	},
 	psyshieldbash: {
-		num: 828,
+		num: 419,
 		accuracy: 90,
 		basePower: 70,
 		category: "Physical",
@@ -14799,7 +14799,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Psychic",
 	},
 	psyshock: {
-		num: 473,
+		num: 419,
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
@@ -14814,7 +14814,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	psystrike: {
-		num: 540,
+		num: 419,
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
@@ -18644,7 +18644,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	stickyweb: {
-		num: 564,
+		num: 419,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -21240,7 +21240,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	voltswitch: {
-		num: 521,
+		num: 419,
 		accuracy: 100,
 		basePower: 70,
 		category: "Special",
@@ -21494,7 +21494,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	wavecrash: {
-		num: 834,
+		num: 419,
 		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
@@ -21698,7 +21698,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Electric",
 	},
 	wildcharge: {
-		num: 528,
+		num: 419,
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
