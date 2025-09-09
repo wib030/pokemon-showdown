@@ -1814,6 +1814,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		basePower: 15,
 		pp: 5,
+		flags: { protect: 1, mirror: 1, allyanim: 1, metronome: 1, punch: 1 },
 		basePowerCallback(pokemon, target, move) {
 			if (!move.allies?.length) return null;
 			return 15;
@@ -1832,7 +1833,50 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				// https://www.smogon.com/forums/posts/8992145/
 				// this.add('-activate', pokemon, 'move: Beat Up', '[of] ' + move.allies![0].name);
 				this.event.modifier = 1;
-				return move.allies!.shift()!.getStat('atk', false, true);
+				const attacker = move.allies!.shift()!;
+				let attackStat = attacker.getStat('atk', false, true);
+				switch (attacker.ability) {
+				case 'hugepower':
+				case 'purepower':
+					attackStat *= 2;
+					break;
+				case 'hustle':
+				case 'technician':
+					attackStat = attackStat * 3 / 2;
+					break;
+				case 'guts':
+					if (ally.status === 'brn') {
+						attackStat = attackStat * 3 / 2;
+					}
+					break;
+				case 'rivalry':
+					if (attacker.gender && defender.gender) {
+						if (attacker.gender === defender.gender) {
+							attackStat = attackStat * 3 / 2;
+						}
+					}
+					break;
+				case 'ironfist':
+					attackStat = attackStat * 13 / 10;
+					break;
+				}
+				
+				switch (attacker.item.id) {
+				case 'loadedgloves':
+					attackStat = attackStat * 6 / 5;
+					break;
+				case 'choiceband':
+					attackStat = attackStat * 3 / 2;
+					break;
+				case 'blackglasses':
+				case 'dreadplate':
+					attackStat = attackStat * 12 / 10;
+					break;
+				case 'muscleband':
+					attackStat = attackStat * 11 / 10;
+					break;
+				}
+				return attackStat;
 			},
 		},
 	},

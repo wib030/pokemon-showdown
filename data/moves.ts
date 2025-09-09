@@ -10641,6 +10641,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 		},
 		onTryImmunity(target) {
+			if (target.hasAbility('colorchange')) return false;
 			return !target.hasType('Grass');
 		},
 		secondary: null,
