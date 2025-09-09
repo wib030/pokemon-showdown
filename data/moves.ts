@@ -22264,7 +22264,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Fire Chase",
 		pp: 20,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1 },
 		beforeTurnCallback(pokemon) {
 			for (const side of this.sides) {
 				if (side.hasAlly(pokemon)) continue;
@@ -22339,54 +22339,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, mirror: 1, bypasssub: 1, metronome: 1 },
 		volatileStatus: 'disable',
 		onTryHit(target) {
-			if (!target.lastMove || target.lastMove.isZ || target.lastMove.isMax || target.lastMove.id === 'struggle' || target.lastMove.id === 'tossandturn') {
+			if (!target.lastMove || target.lastMove.isZ || target.lastMove.isMax || target.lastMove.id === 'struggle' || target.lastMove.id === 'tossandturn' || target.volatiles['disable']) {
 				return false;
 			}
-		},
-		condition: {
-			durationCallback() {
-				return this.random(4, 8);
-			},
-			noCopy: true,
-			onStart(pokemon) {
-				if (!this.queue.willMove(pokemon)) {
-					this.effectState.duration!++;
-				}
-				if (!pokemon.lastMove) {
-					return false;
-				}
-				for (const moveSlot of pokemon.moveSlots) {
-					if (moveSlot.id === pokemon.lastMove.id) {
-						if (!moveSlot.pp) {
-							return false;
-						} else {
-							this.add('-start', pokemon, 'Disable', moveSlot.move);
-							this.effectState.move = pokemon.lastMove.id;
-							return;
-						}
-					}
-				}
-				return false;
-			},
-			onResidualOrder: 10,
-			onResidualSubOrder: 13,
-			onEnd(pokemon) {
-				this.add('-end', pokemon, 'move: Disable');
-			},
-			onBeforeMovePriority: 7,
-			onBeforeMove(attacker, defender, move) {
-				if (move.id === this.effectState.move) {
-					this.add('cant', attacker, 'Disable', move);
-					return false;
-				}
-			},
-			onDisableMove(pokemon) {
-				for (const moveSlot of pokemon.moveSlots) {
-					if (moveSlot.id === this.effectState.move) {
-						pokemon.disableMove(moveSlot.id);
-					}
-				}
-			},
 		},
 		secondary: null,
 		target: "normal",
