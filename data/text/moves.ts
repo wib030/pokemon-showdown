@@ -3446,7 +3446,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		shortDesc: "Type varies based on the held Plate.",
 		gen4: {
 			desc: "This move's type depends on the user's held Plate. This moves category changes to Physical if its modified Attack stat is higher than its modified Special Attack stat.",
-			shortDesc: "Type varies based on the held Plate. Phys. if Atk > SpA",
+			shortDesc: "Type varies on held Plate. Phys. if Atk > SpA",
 		},
 	},
 	jumpkick: {
