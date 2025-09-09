@@ -2661,7 +2661,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			if (pokemon.volatiles['stockpile']?.layers <= 0) {
 				pokemon.removeVolatile('stockpile');
 			} else {
-				this.add('-end', target, 'Stockpile');
+				this.add('-end', pokemon, 'Stockpile');
 				this.add('-start', pokemon, 'stockpile' + pokemon.volatiles['stockpile'].layers);
 			}
 		},
@@ -2680,7 +2680,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			if (pokemon.volatiles['stockpile']?.layers <= 0) {
 				pokemon.removeVolatile('stockpile');
 			} else {
-				this.add('-end', target, 'Stockpile');
+				this.add('-end', pokemon, 'Stockpile');
 				this.add('-start', pokemon, 'stockpile' + pokemon.volatiles['stockpile'].layers);
 			}
 			return success || this.NOT_FAIL;
