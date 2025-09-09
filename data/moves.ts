@@ -4444,7 +4444,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	drillrun: {
-		num: 529,
+		num: 419,
 		accuracy: 95,
 		basePower: 80,
 		category: "Physical",

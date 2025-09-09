@@ -1198,7 +1198,6 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			toxic: ["4M", "3M"],
 			twister: ["4T"],
 			uturn: ["4M"],
-			drillrun: ["4L1"],
 		},
 	},
 	ekans: {
@@ -17361,7 +17360,6 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			chumrush: ["4M"],
 			chillingspell: ["4M"],
 			psyscreen: ["4M"],
-			drillrun: ["4M"],
 		},
 	},
 	miltank: {
