@@ -2233,11 +2233,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				return null;
 			}
 		},
-		onAnyModifyBoost(boosts, pokemon) {
-			if (this.activeMove === 'focuspunch' && pokemon === this.activeTarget) {
-				if (boosts['def'] > 0) {
-					boosts['def'] = 0;
-				}
+		onFoeModifyBoost(boosts, pokemon) {
+			if (boosts['def'] > 0) {
+				boosts['def'] = 0;
 			}
 		},
 	},
