@@ -3833,7 +3833,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		},
 		gen4: {
 			desc: "If the user has Magnet Pull, this move gains +1 priority. For 5 turns, the user and any allies on the field that have the Rock, Steel or Electric type is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, and the Arena Trap Ability as long as it remains active. If the user uses Baton Pass, the replacement will gain the effect. Ingrain and Iron Ball override this move if the user is under any of their effects. Fails if the user is already under this effect or the effect of Ingrain.",
-			shortDesc: "For 5 turns, the user and Rock/Steel/Electric allies have immunity to Ground.",
+			shortDesc: "For 5 turns, the user and some allies have immunity to Ground.",
 		},
 
 		start: "  [POKEMON] levitated with electromagnetism!",
@@ -6215,7 +6215,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		shortDesc: "Hits 2-5 times in one turn.",
 		gen4: {
 			desc: "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. Sets Spikes on all opposing sides after hitting, if the move hits 5 times, sets an additional layer of spikes.",
-			shortDesc: "Hits 2-5 times. Sets Spikes on hit; 5 hits: Sets another layer.",
+			shortDesc: "Hits 2-5 times. Sets Spikes on hit.",
 		},
 		gen3: {
 			desc: "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
