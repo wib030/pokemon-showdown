@@ -17361,6 +17361,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			chumrush: ["4M"],
 			chillingspell: ["4M"],
 			psyscreen: ["4M"],
+			drillrun: ["4M"],
 		},
 	},
 	miltank: {
