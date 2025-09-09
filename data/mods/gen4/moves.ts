@@ -1840,9 +1840,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				if (boost > 6) boost = 6;
 				if (boost < -6) boost = -6;
 				if (boost >= 0) {
-					attackStat = Math.floor(stat * boostTable[boost]);
+					attackStat = Math.floor(attackStat * boostTable[boost]);
 				} else {
-					attackStat = Math.floor(stat / boostTable[-boost]);
+					attackStat = Math.floor(attackStat / boostTable[-boost]);
 				}
 				
 				switch (attacker.ability) {
