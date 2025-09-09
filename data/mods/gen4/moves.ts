@@ -2234,10 +2234,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			}
 		},
 		onAnyModifyBoost(boosts, pokemon) {
-			const focusPunchUser = this.effectState.source;
-			if (focusPunchUser === pokemon) return;
-			if (focusPunchUser === this.activePokemon && pokemon === this.activeTarget) {
-				this.activeTarget.boosts['def'] = 0;
+			const unawareUser = this.effectState.target;
+			if (unawareUser === pokemon) return;
+			if (unawareUser === this.activePokemon && pokemon === this.activeTarget) {
+				boosts['def'] = 0;
 			}
 		},
 	},
