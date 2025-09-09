@@ -6169,7 +6169,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return null;
 			}
 		},
-		onSwitchInPriority: -10,
 		onSwitchIn(pokemon) {
 			if (pokemon.side.getSideCondition('stickyweb')) {
 				this.add('-sideend', pokemon.side, 'move: Sticky Web', `[of] ${pokemon}`);
