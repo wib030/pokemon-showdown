@@ -6779,8 +6779,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "For 4 turns, the user and its party members have their Speed doubled. Fails if this move is already in effect for the user's side.",
 		shortDesc: "For 4 turns, allies' Speed is doubled.",
 		gen4: {
-			desc: "For 3 turns, the user and its party members have their Speed doubled. Fails if this move is already in effect for the user's side.",
-			shortDesc: "For 3 turns, allies' Speed is doubled.",
+			desc: "For 4 turns, the user and its party members have their Speed doubled. Fails if this move is already in effect for the user's side.",
+			shortDesc: "For 4 turns, allies' Speed is doubled.",
 		},
 
 		start: "  The Tailwind blew from behind [TEAM]!",

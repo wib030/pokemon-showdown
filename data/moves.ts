@@ -22268,8 +22268,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		beforeTurnCallback(pokemon) {
 			for (const side of this.sides) {
 				if (side.hasAlly(pokemon)) continue;
-				side.addSideCondition('pursuit', pokemon);
-				const data = side.getSideConditionData('pursuit');
+				side.addSideCondition('firechase', pokemon);
+				const data = side.getSideConditionData('firechase');
 				if (!data.sources) {
 					data.sources = [];
 				}
@@ -22280,12 +22280,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (target?.beingCalledBack || target?.switchFlag) move.accuracy = true;
 		},
 		onTryHit(target, pokemon) {
-			target.side.removeSideCondition('pursuit');
+			target.side.removeSideCondition('firechase');
 		},
 		condition: {
 			duration: 1,
 			onBeforeSwitchOut(pokemon) {
-				this.debug('Pursuit start');
+				this.debug('firechase start');
 				let alreadyAdded = false;
 				for (const source of this.effectState.sources) {
 					if (!this.queue.cancelMove(source) || !source.hp) continue;
@@ -22304,7 +22304,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 							}
 						}
 					}
-					this.actions.runMove('pursuit', source, source.getLocOf(pokemon));
+					this.actions.runMove('firechase', source, source.getLocOf(pokemon));
 				}
 			},
 		},
