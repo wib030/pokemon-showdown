@@ -126,7 +126,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 				return;
 			}
 			this.add('-activate', pokemon, 'confusion');
-			if (this.randomChance(1, 2)) {
+			if (this.randomChance(1, 3)) {
 				return;
 			}
 			const damage = this.actions.getDamage(pokemon, pokemon, 40);
