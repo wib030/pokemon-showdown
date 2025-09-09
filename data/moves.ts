@@ -18658,9 +18658,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-sidestart', side, 'move: Sticky Web');
 			},
 			onSwitchIn(pokemon) {
-				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('webmaster')) return;
-				this.add('-activate', pokemon, 'move: Sticky Web');
-				this.boost({ spe: -1 }, pokemon, pokemon.side.foe.active[0], this.dex.getActiveMove('stickyweb'));
+				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots')) return;
+				if (!pokemon.hasAbility('webmaster')) {
+					this.add('-activate', pokemon, 'move: Sticky Web');
+					this.boost({ spe: -1 }, pokemon, pokemon.side.foe.active[0], this.dex.getActiveMove('stickyweb'));
+				}
 			},
 		},
 		secondary: null,
