@@ -5873,7 +5873,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				randomAbility = this.sample(abilities);
 			}
 			if (!randomAbility) return false;
-			source.setAbility(randomAbility);
+			const oldAbility = source.setAbility(randomAbility);
+			if (!oldAbility) return oldAbility as false | null;
 		},
 		flags: {},
 		name: "Dabble",
@@ -5891,7 +5892,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				randomAbility = this.sample(abilities);
 			}
 			if (!randomAbility) return false;
-			source.setAbility(randomAbility);
+			const oldAbility = source.setAbility(randomAbility);
+			if (!oldAbility) return oldAbility as false | null;
 		},
 		flags: {},
 		name: "Genetic Freak",
@@ -6167,6 +6169,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return null;
 			}
 		},
+		onSwitchInPriority: -1,
 		onSwitchIn(pokemon) {
 			if (pokemon.side.getSideCondition('stickyweb')) {
 				this.add('-sideend', pokemon.side, 'move: Sticky Web', `[of] ${pokemon}`);
