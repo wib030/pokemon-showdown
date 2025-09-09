@@ -7704,12 +7704,12 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	lovelypunch: {
 		name: "Lovely Punch",
 		desc: "Has a 30% chance to cause a target of the opposite gender to get infatuated.",
-		shortDesc: "30% chance to cause infatuation on an opposite gender target.",
+		shortDesc: "30% chance to cause infatuation on hit.",
 	},
 	mindvirus: {
 		name: "Mind Virus",
 		desc: "For 5 turns, the target recieves damage whenever it would restore HP, doesn't affect Pain Split healing.",
-		shortDesc: "For 5 turns, the foe(s) healing is inverted. Doesn't affect Pain Split.",
+		shortDesc: "For 5 turns, the foes healing is inverted.",
 
 		start: "  [POKEMON]'s mind was infected!",
 		end: "  [POKEMON]'s mind returned to normal.",
