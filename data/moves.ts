@@ -22386,8 +22386,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onTryHeal(damage, target, source, effect) {
 				if (effect.name === "Pain Split") return damage;
+				if (effect.name === "Rest") damage = source.maxhp - source.hp;
 				this.damage(damage);
-				this.add('-activate', source, 'move: Mind Virus');
 				return null;
 			},
 		},

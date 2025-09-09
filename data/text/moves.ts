@@ -7713,7 +7713,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 
 		start: "  [POKEMON]'s mind was infected!",
 		end: "  [POKEMON]'s mind returned to normal.",
-		activate: "  [POKEMON] was hurt due to the mind virus!",
 	},
 	tantrum: {
 		name: "Tantrum",
