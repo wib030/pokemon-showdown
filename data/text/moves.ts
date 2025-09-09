@@ -3711,7 +3711,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		shortDesc: "For 5 turns, shields user's party from critical hits.",
 		gen4: {
 			desc: "For 5 turns, the user and its party members cannot be struck by a critical hit, grants an additional 10% chance to secondary move effects (Applies after Serene Grace), multi-hit moves will always hit a minimum of 3 times. Fails if the effect is already active on the user's side.",
-			shortDesc: "Protects party from crits. +10% to secondary chance. Multi-hit min 3 hits.",
+			shortDesc: "Protects party from crits.",
 		},
 
 		start: "  Lucky Chant shielded [TEAM] from critical hits!",
