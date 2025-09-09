@@ -2233,11 +2233,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				return null;
 			}
 		},
-		onFoeModifyBoost(boosts, pokemon) {
-			if (boosts['def'] > 0) {
-				boosts['def'] = 0;
-			}
-		},
 	},
 	spore: {
 		inherit: true,

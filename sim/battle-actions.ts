@@ -1700,6 +1700,9 @@ export class BattleActions {
 			ignoreNegativeOffensive = true;
 			ignorePositiveDefensive = true;
 		}
+		if (move.id === 'focuspunch') {
+			ignorePositiveDefensive = true;
+		}
 		const ignoreOffensive = !!(move.ignoreOffensive || (ignoreNegativeOffensive && atkBoosts < 0));
 		const ignoreDefensive = !!(move.ignoreDefensive || (ignorePositiveDefensive && defBoosts > 0));
 
