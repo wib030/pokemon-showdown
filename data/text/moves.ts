@@ -2280,7 +2280,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		shortDesc: "Fails if the user takes damage before it hits.",
 		gen4: {
 			desc: "The user ignores the defensive stat changes of the target, as well as Reflect when dealing damage. The user loses its focus and does nothing if it is hit by a damaging attack this turn before it can execute the move, but it still loses PP.",
-			shortDesc: "Ignores foes stat changes/Reflect. Fails if user takes damage before it hits.",
+			shortDesc: "Fails if user takes damage before it hits.",
 		},
 
 		start: "  [POKEMON] is tightening its focus!",
@@ -3996,7 +3996,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	meditate: {
 		name: "Meditate",
 		desc: "Raises the user's Attack by 1 stage. Gives the user Meditate condition, which raises Crit-rate by 1 stage.",
-		shortDesc: "Raises the user's Attack by 1. Raises Crit-rate by 1 (Doesn't stack).",
+		shortDesc: "Raises the user's Attack by 1. Raises Crit-rate by 1.",
 	},
 	mefirst: {
 		name: "Me First",
