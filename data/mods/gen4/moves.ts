@@ -2746,7 +2746,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	shadowforce: {
 		inherit: true,
 		accuracy: 95,
-		basePower: 150,
+		basePower: 130,
 	},
 	dreameater: {
 		inherit: true,
