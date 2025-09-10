@@ -50,7 +50,6 @@ tmp/**/*
 .installed.cfg
 
 downloads
-dist
 
 # egg related
 develop-eggs
