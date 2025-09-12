@@ -5708,6 +5708,9 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		gen5: {
 			desc: "If this move is successful, it breaks through the target's Detect or Protect for this turn, allowing other Pokemon to attack the target normally. If the target is an opponent and its side is protected by Quick Guard or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the opponent's side normally. This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks. If the user is holding a Power Herb, the move completes in one turn.",
 		},
+		gen4: {
+			desc: "If this move's charge turn is not skipped, the user heals for 25% of their Max HP when charging. If this move is successful, it breaks through the target's Detect or Protect for this turn, allowing other Pokemon to attack the target normally. If the target is an opponent and its side is protected by Quick Guard or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the opponent's side normally. This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks. If the user is holding a Power Herb, the move completes in one turn.",
+		},
 
 		activate: "  It broke through [TARGET]'s protection!",
 		prepare: "[POKEMON] vanished instantly!",
