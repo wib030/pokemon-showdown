@@ -22149,7 +22149,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	
 	// New moves
 	tossandturn: {
-		num: 419,
+		num: -4,
 		accuracy: true,
 		basePower: 40,
 		category: "Physical",
@@ -22170,7 +22170,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 	},
 	psychicscream: {
-		num: 419,
+		num: -5,
 		accuracy: 95,
 		basePower: 60,
 		category: "Special",
@@ -22189,7 +22189,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	peekaboo: {
-		num: 419,
+		num: -6,
 		accuracy: 100,
 		basePower: 70,
 		basePowerCallback(pokemon, target, move) {
@@ -22213,7 +22213,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cute",
 	},
 	hailcannon: {
-		num: 419,
+		num: -7,
 		accuracy: 70,
 		basePower: 110,
 		category: "Physical",
@@ -22233,7 +22233,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 	},
 	peatslide: {
-		num: 419,
+		num: -8,
 		accuracy: 100,
 		basePower: 75,
 		category: "Special",
@@ -22250,7 +22250,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Smart",
 	},
 	firechase: {
-		num: 419,
+		num: -9,
 		accuracy: 100,
 		basePower: 40,
 		basePowerCallback(pokemon, target, move) {
@@ -22315,7 +22315,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Clever",
 	},
 	nibble: {
-		num: 419,
+		num: -10,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
@@ -22330,7 +22330,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Clever",
 	},
 	goldenbinding: {
-		num: 419,
+		num: -11,
 		accuracy: 90,
 		basePower: 40,
 		category: "Special",
@@ -22350,7 +22350,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Clever",
 	},
 	lovelypunch: {
-		num: 419,
+		num: -12,
 		accuracy: 95,
 		basePower: 60,
 		category: "Physical",
@@ -22367,7 +22367,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cute",
 	},
 	mindvirus: {
-		num: 419,
+		num: -13,
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
@@ -22398,7 +22398,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Clever",
 	},
 	tantrum: {
-		num: 419,
+		num: -13,
 		accuracy: 100,
 		basePower: 45,
 		category: "Physical",
@@ -22415,7 +22415,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cute",
 	},
 	plow: {
-		num: 419,
+		num: -14,
 		accuracy: 100,
 		basePower: 45,
 		category: "Physical",
@@ -22429,7 +22429,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 	},
 	snap: {
-		num: 419,
+		num: -15,
 		accuracy: 95,
 		basePower: 50,
 		category: "Physical",
@@ -22443,7 +22443,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 	},
 	chumrush: {
-		num: 419,
+		num: -16,
 		accuracy: 85,
 		basePower: 10,
 		category: "Physical",
@@ -22463,7 +22463,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Water",
 	},
 	chillingspell: {
-		num: 419,
+		num: -17,
 		accuracy: 100,
 		basePower: 65,
 		basePowerCallback(pokemon, target, move) {
@@ -22485,7 +22485,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Clever",
 	},
 	psyscreen: {
-		num: 419,
+		num: -18,
 		accuracy: 100,
 		basePower: 40,
 		category: "Special",
