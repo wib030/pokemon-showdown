@@ -102,7 +102,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 				}
 				
 				if (badDreamsActive === false) {
-					this.heal(pokemon.baseMaxhp / 4);
+					this.heal(pokemon.baseMaxhp / 4, pokemon);
 				}
 			}
 		},
