@@ -1469,6 +1469,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	chatot: {
 		inherit: true,
 		baseStats: {hp: 76, atk: 65, def: 45, spa: 112, spd: 42, spe: 111},
+		abilities: {0: "Quick Feet"},
 	},
 	chimecho: {
 		inherit: true,
