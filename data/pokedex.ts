@@ -19859,4 +19859,16 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 		gen: 5,
 	},
+	wibblypuff: {
+		num: -79,
+		name: "Wibblypuff",
+		types: ["Normal"],
+		genderRatio: { M: 0.25, F: 0.75 },
+		baseStats: { hp: 100, atk: 24, def: 100, spa: 24, spd: 100, spe: 90 },
+		abilities: { 0: "Coward", 1: "Pest" },
+		heightm: 0.5,
+		weightkg: 5.5,
+		color: "Pink",
+		eggGroups: ["Fairy"],
+	},
 };

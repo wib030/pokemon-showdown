@@ -6051,4 +6051,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	wibblypuff: {
+		tier: "NFE",
+	},
 };

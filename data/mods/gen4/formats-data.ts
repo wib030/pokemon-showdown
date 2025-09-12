@@ -1521,7 +1521,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "Uber",
 	},
 	arceus: {
-		tier: "AG",
+		tier: "Uber",
 	},
 	arceusbug: {
 	},
@@ -1554,5 +1554,8 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	arceussteel: {
 	},
 	arceuswater: {
+	},
+	wibblypuff: {
+		tier: "OU",
 	},
 };
