@@ -7732,7 +7732,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	chumrush: {
 		name: "Chum Rush",
-		shortDesc: "Hits up to 10 times. Power increases as targets HP decreases.",
+		shortDesc: "Hits: 2-10. Power increases as targets HP decreases.",
 	},
 	chillingspell: {
 		name: "Chilling Spell",
