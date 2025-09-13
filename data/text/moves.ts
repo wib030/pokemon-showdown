@@ -7584,7 +7584,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		},
 		gen4: {
 			desc: "Hits adjacent Pokemon. Causes the target(s) Ability to become Insomnia. Fails if the target's Ability is Multitype or Truant, or if the target is holding a Griseous Orb.",
-			shortDesc: "Hits adjacent Pokemon. The target(s) Ability becomes Insomnia.",
+			shortDesc: "The target(s) Ability becomes Insomnia.",
 		},
 	},
 	wrap: {
