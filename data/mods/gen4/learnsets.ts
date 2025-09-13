@@ -16416,7 +16416,6 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 		},
 	},
 	weavile: {
-		inherit: true,
 		learnset: {
 			aerialace: ["4M"],
 			assurance: ["4L1"],
