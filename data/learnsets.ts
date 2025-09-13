@@ -30857,6 +30857,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["4T", "4L1", "3L1"],
 			waterpulse: ["4M", "3M"],
 			zenheadbutt: ["4T"],
+			extrasensory: ["4L33"],
 		},
 		eventData: [
 			{generation: 3, level: 100, moves: ["roar", "rest", "sleeptalk", "hypervoice"], pokeball: "pokeball"},

@@ -21963,6 +21963,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uproar: ["4T", "4L1", "3L1"],
 			waterpulse: ["4M", "3M"],
 			zenheadbutt: ["4T"],
+			extrasensory: ["4L33"],
 		},
 	},
 	makuhita: {
