@@ -1540,12 +1540,12 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	razorclaw: {
 		name: "Razor Claw",
-		desc: "Holder's critical hit ratio is raised by 1 stage. Evolves Sneasel into Weavile when held and leveled up during the night.",
+		desc: "Holder's critical hit ratio is raised by 1 stage. Evolves Sneasel into Weavile when held and leveled up during the night. Fling: Inflicts flinch.",
 		shortDesc: "Holder's critical hit ratio is raised by 1 stage.",
 	},
 	razorfang: {
 		name: "Razor Fang",
-		desc: "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Gligar into Gliscor when held and leveled up during the night.",
+		desc: "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Gligar into Gliscor when held and leveled up during the night. Fling: Inflicts flinch.",
 		shortDesc: "Holder's attacks without a chance to flinch gain a 10% chance to flinch.",
 	},
 	razzberry: {
@@ -2557,7 +2557,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		shortDesc: "Holder's punch-based attacks have 1.2x power and do not make contact.",
 	},
 	threefourfivedice: {
-		name: "Three-Four-Five Dice",
+		name: "345 Dice",
 		shortDesc: "Holder's moves that hit 2-5 times hit 3-5 times.",
 	},
 	cleansetag: {

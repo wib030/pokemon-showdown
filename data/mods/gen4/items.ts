@@ -412,6 +412,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		fling: {
 			basePower: 90,
+			volatileStatus: 'flinch',
 		},
 		onModifyMove(move) {
 			const affectedByRazorFang = [
@@ -897,6 +898,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		fling: {
 			basePower: 90,
+			volatileStatus: 'flinch',
 		},
 	},
 	metalcoat: {

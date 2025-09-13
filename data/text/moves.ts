@@ -3714,7 +3714,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			shortDesc: "Protects party from crits.",
 		},
 
-		start: "  Lucky Chant shielded [TEAM] from critical hits!",
+		start: "  Lucky Chant made [TEAM] luckier!",
 		end: "  [TEAM]'s Lucky Chant wore off!",
 	},
 	luminacrash: {

@@ -1266,6 +1266,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		types: ["Electric", "Dragon"],
 		baseStats: {hp: 100, atk: 85, def: 95, spa: 120, spd: 100, spe: 65},
+		abilities: {0: "Mold Breaker"},
 	},
 	arbok: {
 		inherit: true,
