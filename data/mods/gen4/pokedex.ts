@@ -635,6 +635,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	phione: {
 		inherit: true,
 		baseStats: {hp: 1, atk: 80, def: 80, spa: 80, spd: 80, spe: 80},
+		maxHP: 1,
 		abilities: {0: "Reckless"},
 	},
 	pidgey: {

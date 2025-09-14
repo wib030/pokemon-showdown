@@ -2513,6 +2513,11 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	waterspout: {
 		inherit: true,
 		basePower: 140,
+		basePowerCallback(pokemon, target, move) {
+			const bp = move.basePower * pokemon.hp / pokemon.maxhp;
+			this.debug(`BP: ${bp}`);
+			return bp;
+		},
 	},
 	rockblast: {
 		inherit: true,
