@@ -19871,4 +19871,18 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Pink",
 		eggGroups: ["Fairy"],
 	},
+	megamarill: {
+		num: -80,
+		name: "Megamarill",
+		types: ["Water"],
+		baseStats: { hp: 140, atk: 50, def: 95, spa: 70, spd: 65, spe: 35 },
+		abilities: { 0: "Thick Fat", 1: "Hydration" },
+		heightm: 2,
+		weightkg: 130,
+		color: "Blue",
+		prevo: "Marill",
+		evoType: "useItem",
+		evoItem: "Water Stone",
+		eggGroups: ["Water 1", "Fairy"],
+	},
 };

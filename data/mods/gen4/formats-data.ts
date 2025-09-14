@@ -1561,4 +1561,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	screamtail: {
 		tier: "OU",
 	},
+	megamarill: {
+		tier: "OU",
+	},
 };

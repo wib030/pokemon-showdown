@@ -3773,4 +3773,7 @@ export const PokedexText: { [id: IDEntry]: PokedexText } = {
 	wibblypuff: {
 		name: "Wibblypuff",
 	},
+	megamarill: {
+		name: "Megamarill",
+	},
 };
