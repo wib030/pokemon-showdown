@@ -6054,12 +6054,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -21,
 	},
 	coward: {
-		onModifySpePriority: -101,
-		onModifySpe(spe, pokemon) {
-			if (this.activePokemon === pokemon && this.activeMove?.category === 'Status') {
-				return this.chainModify(2);
-			}
-		},
+		// implemented in /sim/pokemon.ts in getActionSpeed()
 		flags: { rollable: 1 },
 		name: "Coward",
 		rating: 2,
