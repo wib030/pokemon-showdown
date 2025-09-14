@@ -1558,4 +1558,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	wibblypuff: {
 		tier: "OU",
 	},
+	screamtail: {
+		tier: "OU",
+	},
 };

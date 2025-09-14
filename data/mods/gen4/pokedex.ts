@@ -1874,4 +1874,16 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 110, atk: 90, def: 80, spa: 65, spd: 70, spe: 49 },
 		abilities: { 0: "Serene Grace", 1: "Rattled" },
 	},
+	screamtail: {
+		num: -81,
+		name: "Scream Tail",
+		types: ["Normal", "Ground"],
+		genderRatio: { M: 0.25, F: 0.75 },
+		baseStats: { hp: 115, atk: 115, def: 65, spa: 99, spd: 65, spe: 111 },
+		abilities: { 0: "Rock Star", 1: "Rivalry" },
+		heightm: 1.2,
+		weightkg: 8,
+		color: "Pink",
+		eggGroups: ["Fairy"],
+	},
 };
