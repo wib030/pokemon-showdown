@@ -3553,18 +3553,160 @@
         ]
     },
     "azelf": {
-        "level": 77,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["fireblast", "nastyplot", "psychic", "signalbeam", "thunderbolt", "trick", "uturn"],
+                "role": "Setup Sweeper",
+                "movepool": ["nastyplot", "flamethrower", "judgment", "psyshock"],
                 "abilities": ["Levitate"],
-                "preferredTypes": ["Fire"]
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Fist Plate",
+				"nature": "Timid"
             },
             {
+                "role": "Fast Attacker",
+                "movepool": ["judgment", "flamethrower", "nastyplot", "uturn"],
+                "abilities": ["Levitate"],
+                "evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Naive"
+            },
+			{
                 "role": "Fast Support",
-                "movepool": ["explosion", "fireblast", "psychic", "stealthrock", "taunt", "uturn"],
-                "abilities": ["Levitate"]
+                "movepool": ["stealthrock", "taunt", "psychicscream", "explosion"],
+                "abilities": ["Levitate"],
+                "evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Naive"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["futuresight", "flamethrower", "knockoff", "uturn"],
+                "abilities": ["Levitate"],
+                "evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Naive"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["zenheadbutt", "knockoff", "explosion", "uturn"],
+                "abilities": ["Levitate"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["psyshock", "fireblast", "hiddenpowerfighting", "nastyplot"],
+                "abilities": ["Levitate"],
+                "evs": [4, 0, 0, 252, 0, 252],
+				"ivs": [31, 3, 30, 30, 30, 30],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["judgment", "shadowball", "thunder", "nastyplot"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Modest"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["psychic", "flamethrower", "uturn", "trick"],
+                "abilities": ["Levitate"],
+                "evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Naive"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psyshock", "fireblast", "shadowball", "stealthrock"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["taunt", "stealthrock", "skillswap", "explosion"],
+                "abilities": ["Levitate"],
+                "evs": [0, 92, 164, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["reflect", "lightscreen", "taunt", "explosion"],
+                "abilities": ["Levitate"],
+                "evs": [31, 0, 252, 0, 8, 216],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["psyshock", "flamethrower", "hiddenpowerfighting", "trick"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 30, 30, 30, 30],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["psychic", "thunderbolt", "judgment", "nastyplot"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 0, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Icicle Plate",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["stealthrock", "taunt", "trickroom", "explosion"],
+                "abilities": ["Levitate"],
+                "evs": [32, 0, 252, 0, 8, 216],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["psyshock", "flamethrower", "hiddenpowerfighting", "substitute"],
+                "abilities": ["Levitate"],
+                "evs": [4, 0, 0, 252, 0, 252],
+				"ivs": [31, 3, 30, 30, 30, 30],
+				"item": "Petaya Berry",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["psychic", "judgment", "stealthrock", "imprison"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Fist Plate",
+				"nature": "Timid"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["judgment", "flamethrower", "grassknot", "nastyplot"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Timid"
             }
         ]
     },
