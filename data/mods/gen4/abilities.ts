@@ -1203,7 +1203,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				}
 			}
 			if (baseCastformActive === false) {
-				this.field.setWeather('snowscape');
+				this.field.setWeather('hail');
 			} else {
 				this.hint("Base form Castform prevents weather abilities from activating", true);
 			}
