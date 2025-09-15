@@ -81,7 +81,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NU",
 	},
 	raichu: {
-		tier: "NU",
+		tier: "OU",
 	},
 	sandshrew: {
 		tier: "LC",
@@ -492,7 +492,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "UU",
 	},
 	glaceon: {
-		tier: "NU",
+		tier: "Uber",
 	},
 	porygon: {
 		tier: "LC",
@@ -1135,20 +1135,20 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "UU",
 	},
 	castform: {
-		tier: "NU",
+		tier: "OU",
 	},
 	castformsunny: {},
 	castformrainy: {},
 	castformsnowy: {},
 	castformsandy: {},
 	kecleon: {
-		tier: "NU",
+		tier: "OU",
 	},
 	shuppet: {
 		tier: "LC",
 	},
 	banette: {
-		tier: "NU",
+		tier: "OU",
 	},
 	duskull: {
 		tier: "LC",

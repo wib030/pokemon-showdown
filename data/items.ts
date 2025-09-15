@@ -7720,7 +7720,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 4,
 	},
 	threefourfivedice: {
-		name: "345 Dice",
+		name: "Three-Four-Five Dice",
 		spritenum: 751,
 		fling: {
 			basePower: 30,

@@ -2557,7 +2557,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		shortDesc: "Holder's punch-based attacks have 1.2x power and do not make contact.",
 	},
 	threefourfivedice: {
-		name: "345 Dice",
+		name: "Three-Four-Five Dice",
 		shortDesc: "Holder's moves that hit 2-5 times hit 3-5 times.",
 	},
 	cleansetag: {
