@@ -1127,12 +1127,196 @@
         ]
     },
     "ampharos": {
-        "level": 87,
+        "level": 100,
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["discharge", "focusblast", "healbell", "hiddenpowerice", "signalbeam", "thunderbolt", "toxic"],
-                "abilities": ["Static"]
+                "movepool": ["dracometeor", "thunderwave", "voltswitch", "morningsun"],
+                "abilities": ["Mold Breaker"],
+				"evs": [248, 0, 168, 56, 36, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dracometeor", "discharge", "lightscreen", "morningsun"],
+                "abilities": ["Mold Breaker"],
+				"evs": [248, 0, 168, 56, 36, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dracometeor", "thunder", "lightscreen", "morningsun"],
+                "abilities": ["Mold Breaker"],
+				"evs": [248, 0, 168, 56, 36, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dracometeor", "thunder", "reflect", "morningsun"],
+                "abilities": ["Mold Breaker"],
+				"evs": [248, 0, 108, 56, 96, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dracometeor", "voltswitch", "reflect", "morningsun"],
+                "abilities": ["Mold Breaker"],
+				"evs": [248, 0, 168, 56, 36, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dracometeor", "voltswitch", "lightscreen", "morningsun"],
+                "abilities": ["Mold Breaker"],
+				"evs": [248, 0, 108, 56, 56, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["dracometeor", "thunder", "voltswitch", "focusblast"],
+                "abilities": ["Mold Breaker"],
+				"evs": [252, 0, 0, 252, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Modest"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["dracometeor", "thunderbolt", "voltswitch", "focusblast"],
+                "abilities": ["Mold Breaker"],
+				"evs": [252, 0, 0, 252, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Modest"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["dracometeor", "hiddenpowerice", "voltswitch", "focusblast"],
+                "abilities": ["Mold Breaker"],
+				"evs": [252, 0, 0, 252, 4, 0],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Modest"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dracometeor", "voltswitch", "healbell", "morningsun"],
+                "abilities": ["Mold Breaker"],
+				"evs": [248, 0, 168, 0, 92, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dracometeor", "voltswitch", "thunderwave", "morningsun"],
+                "abilities": ["Mold Breaker"],
+				"evs": [248, 0, 168, 0, 92, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dragonpulse", "thunder", "substitute", "morningsun"],
+                "abilities": ["Mold Breaker"],
+				"evs": [252, 0, 252, 4, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dragonpulse", "thunder", "substitute", "morningsun"],
+                "abilities": ["Mold Breaker"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["dracometeor", "voltswitch", "hiddenpowerice", "focusblast"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["dracometeor", "voltswitch", "hiddenpowergrass", "focusblast"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dracometeor", "thunder", "voltswitch", "focusblast"],
+                "abilities": ["Mold Breaker"],
+				"evs": [248, 0, 0, 128, 132, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["voltswitch", "reflect", "lightscreen", "morningsun"],
+                "abilities": ["Mold Breaker"],
+				"evs": [248, 0, 164, 0, 96, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dracometeor", "voltswitch", "focusblast", "fling"],
+                "abilities": ["Mold Breaker"],
+				"evs": [248, 0, 0, 164, 96, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Adamant Orb",
+				"nature": "Quiet"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dracometeor", "voltswitch", "thunderwave", "morningsun"],
+                "abilities": ["Mold Breaker"],
+				"evs": [248, 0, 108, 56, 96, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Haban Berry",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dracometeor", "voltswitch", "thunderwave", "morningsun"],
+                "abilities": ["Mold Breaker"],
+				"evs": [248, 0, 108, 56, 96, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Shuca Berry",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dracometeor", "voltswitch", "thunderwave", "morningsun"],
+                "abilities": ["Mold Breaker"],
+				"evs": [248, 0, 108, 56, 96, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Air Balloon",
+				"nature": "Bold"
             }
         ]
     },
@@ -1856,23 +2040,349 @@
         ]
     },
     "celebi": {
-        "level": 79,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["earthpower", "energyball", "leafstorm", "nastyplot", "psychic", "uturn"],
+                "role": "Fast Support",
+                "movepool": ["leafstorm", "thunderwave", "uturn", "recover"],
                 "abilities": ["Natural Cure"],
-                "preferredTypes": ["Psychic"]
+				"evs": [160, 0, 0, 228, 0, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Miracle Seed",
+				"nature": "Modest"
             },
-            {
-                "role": "Bulky Support",
-                "movepool": ["leafstorm", "psychic", "recover", "stealthrock", "thunderwave", "uturn"],
-                "abilities": ["Natural Cure"]
+			{
+                "role": "Fast Support",
+                "movepool": ["gigadrain", "thunderwave", "uturn", "recover"],
+                "abilities": ["Natural Cure"],
+				"evs": [240, 0, 148, 0, 0, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
             },
-            {
+			{
+                "role": "Fast Attacker",
+                "movepool": ["leafstorm", "psychic", "earthpower", "stealthrock"],
+                "abilities": ["Natural Cure"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["leafstorm", "psychic", "hiddenpowerfire", "stealthrock"],
+                "abilities": ["Natural Cure"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["grassknot", "stealthrock", "uturn", "recover"],
+                "abilities": ["Natural Cure"],
+				"evs": [240, 0, 148, 0, 0, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["leafstorm", "perishsong", "uturn", "recover"],
+                "abilities": ["Natural Cure"],
+				"evs": [160, 0, 0, 228, 0, 120],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Miracle Seed",
+				"nature": "Modest"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["gigadrain", "perishsong", "recover", "uturn"],
+                "abilities": ["Natural Cure"],
+				"evs": [240, 0, 148, 0, 0, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["psychic", "leechseed", "recover", "healbell"],
+                "abilities": ["Natural Cure"],
+				"evs": [240, 0, 148, 0, 0, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["grassknot", "thunderwave", "uturn", "recover"],
+                "abilities": ["Natural Cure"],
+				"evs": [240, 0, 148, 0, 0, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["leafstorm", "psychic", "thunderwave", "recover"],
+                "abilities": ["Natural Cure"],
+				"evs": [240, 0, 148, 0, 0, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["leafstorm", "hiddenpowerfire", "thunderwave", "recover"],
+                "abilities": ["Natural Cure"],
+				"evs": [240, 0, 148, 0, 0, 120],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
                 "role": "Setup Sweeper",
-                "movepool": ["batonpass", "energyball", "nastyplot", "psychic", "recover"],
-                "abilities": ["Natural Cure"]
+                "movepool": ["leafstorm", "earthpower", "hiddenpowerfire", "nastyplot"],
+                "abilities": ["Natural Cure"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Leftovers",
+				"nature": "Timid"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["leafstorm", "earthpower", "hiddenpowerice", "nastyplot"],
+                "abilities": ["Natural Cure"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["leafstorm", "earthpower", "recover", "nastyplot"],
+                "abilities": ["Natural Cure"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["psychic", "substitute", "recover", "batonpass"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 0, 0, 136, 120],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["gigadrain", "substitute", "recover", "batonpass"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 0, 0, 136, 120],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["gigadrain", "earthpower", "recover", "nastyplot"],
+                "abilities": ["Natural Cure"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["leafstorm", "reflect", "lightscreen", "healingwish"],
+                "abilities": ["Natural Cure"],
+				"evs": [240, 0, 148, 0, 0, 120],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Bold"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["leafstorm", "reflect", "lightscreen", "healingwish"],
+                "abilities": ["Natural Cure"],
+				"evs": [12, 0, 0, 244, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["psychic", "grassknot", "substitute", "batonpass"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 0, 4, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Starf Berry",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["leafstorm", "psychic", "earthpower", "uturn"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["leafstorm", "psychic", "hiddenpowerfire", "uturn"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 0, 0, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["gigadrain", "uturn", "recover", "healbell"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 88, 0, 48, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["gigadrain", "uturn", "recover", "stealthrock"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 88, 0, 48, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["leafstorm", "psychic", "earthpower", "trick"],
+                "abilities": ["Natural Cure"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["leafstorm", "psychic", "hiddenpowerfire", "trick"],
+                "abilities": ["Natural Cure"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["leafstorm", "psychic", "hiddenpowerice", "trick"],
+                "abilities": ["Natural Cure"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["leafstorm", "psychic", "hiddenpowerfire", "trick"],
+                "abilities": ["Natural Cure"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["leafstorm", "psychic", "hiddenpowerice", "trick"],
+                "abilities": ["Natural Cure"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["leafstorm", "psychic", "earthpower", "trick"],
+                "abilities": ["Natural Cure"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["psychic", "gigadrain", "calmmind", "batonpass"],
+                "abilities": ["Natural Cure"],
+				"evs": [240, 0, 40, 0, 108, 120],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["leafstorm", "psychic", "healingwish", "trickroom"],
+                "abilities": ["Natural Cure"],
+				"evs": [240, 0, 148, 0, 0, 120],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Red Card",
+				"nature": "Bold"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["psychic", "gigadrain", "fling", "batonpass"],
+                "abilities": ["Natural Cure"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Power Anklet",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["futuresight", "leechseed", "uturn", "recover"],
+                "abilities": ["Natural Cure"],
+				"evs": [240, 0, 40, 0, 108, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["futuresight", "thunderwave", "uturn", "recover"],
+                "abilities": ["Natural Cure"],
+				"evs": [240, 0, 40, 0, 108, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["futuresight", "stealthrock", "uturn", "recover"],
+                "abilities": ["Natural Cure"],
+				"evs": [240, 0, 40, 0, 108, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["futuresight", "perishsong", "uturn", "recover"],
+                "abilities": ["Natural Cure"],
+				"evs": [240, 0, 40, 0, 108, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["leafstorm", "substitute", "swordsdance", "batonpass"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 0, 136, 0, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Modest"
             }
         ]
     },
@@ -2062,7 +2572,7 @@
                 "abilities": ["Technician"],
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "345 Dice",
+				"item": "Three-Four-Five Dice",
 				"nature": "Jolly"
             },
 			{
@@ -3349,17 +3859,205 @@
         ]
     },
     "bronzong": {
-        "level": 79,
+        "level": 100,
         "sets": [
             {
                 "role": "Bulky Support",
-                "movepool": ["earthquake", "explosion", "ironhead", "payback", "stealthrock", "toxic"],
-                "abilities": ["Levitate"]
+                "movepool": ["stealthrock", "gyroball", "earthquake", "explosion"],
+                "abilities": ["Levitate"],
+				"evs": [252, 252, 0, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Mental Herb",
+				"nature": "Brave"
             },
-            {
-                "role": "Staller",
-                "movepool": ["earthquake", "protect", "psychic", "toxic"],
-                "abilities": ["Levitate"]
+			{
+                "role": "Bulky Support",
+                "movepool": ["stealthrock", "gyroball", "earthquake", "explosion"],
+                "abilities": ["Flash Fire"],
+				"evs": [252, 252, 0, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Mental Herb",
+				"nature": "Brave"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["trickroom", "gyroball", "earthquake", "explosion"],
+                "abilities": ["Flash Fire"],
+				"evs": [252, 252, 0, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Mental Herb",
+				"nature": "Brave"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["trickroom", "gyroball", "earthquake", "explosion"],
+                "abilities": ["Levitate"],
+				"evs": [252, 252, 0, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Mental Herb",
+				"nature": "Brave"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["gyroball", "earthquake", "toxic", "stealthrock"],
+                "abilities": ["Flash Fire"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Sassy"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["gyroball", "earthquake", "toxic", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Sassy"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["gyroball", "earthquake", "toxic", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Relaxed"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["gyroball", "earthquake", "toxic", "stealthrock"],
+                "abilities": ["Flash Fire"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Relaxed"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["gyroball", "earthquake", "toxic", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [252, 0, 128, 0, 128, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Relaxed"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["gyroball", "earthquake", "toxic", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [252, 0, 128, 0, 128, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Sassy"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["gyroball", "earthquake", "toxic", "stealthrock"],
+                "abilities": ["Flash Fire"],
+				"evs": [252, 0, 128, 0, 128, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Relaxed"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["gyroball", "earthquake", "toxic", "stealthrock"],
+                "abilities": ["Flash Fire"],
+				"evs": [252, 0, 128, 0, 128, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Sassy"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["psychic", "overheat", "toxic", "calmmind"],
+                "abilities": ["Flash Fire"],
+				"evs": [252, 0, 252, 4, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["overheat", "psychic", "calmmind", "reflect"],
+                "abilities": ["Flash Fire"],
+				"evs": [244, 0, 152, 12, 100, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["fling", "recycle", "gyroball", "earthquake"],
+                "abilities": ["Flash Fire"],
+				"evs": [252, 252, 4, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Adamant Orb",
+				"nature": "Brave"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["fling", "recycle", "gyroball", "earthquake"],
+                "abilities": ["Levitate"],
+				"evs": [252, 252, 4, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Adamant Orb",
+				"nature": "Brave"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["gyroball", "earthquake", "explosion", "trickroom"],
+                "abilities": ["Flash Fire"],
+				"evs": [244, 112, 152, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Red Card",
+				"nature": "Brave"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["gyroball", "earthquake", "explosion", "trickroom"],
+                "abilities": ["Levitate"],
+				"evs": [244, 112, 152, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Red Card",
+				"nature": "Brave"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["futuresight", "reflect", "lightscreen", "explosion"],
+                "abilities": ["Flash Fire"],
+				"evs": [244, 0, 152, 12, 100, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Sassy"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["futuresight", "reflect", "lightscreen", "explosion"],
+                "abilities": ["Levitate"],
+				"evs": [244, 0, 152, 12, 100, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Sassy"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["chargebeam", "overheat", "earthquake", "irondefense"],
+                "abilities": ["Flash Fire"],
+				"evs": [244, 12, 4, 0, 248, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Sassy"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["chargebeam", "overheat", "earthquake", "irondefense"],
+                "abilities": ["Levitate"],
+				"evs": [244, 12, 4, 0, 248, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Sassy"
             }
         ]
     },
