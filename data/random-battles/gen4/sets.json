@@ -2054,17 +2054,106 @@
         ]
     },
     "breloom": {
-        "level": 80,
+        "level": 100,
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["facade", "machpunch", "seedbomb", "spore", "stoneedge", "superpower", "swordsdance"],
-                "abilities": ["Poison Heal"]
+                "movepool": ["bulletseed", "machpunch", "rocktomb", "swordsdance"],
+                "abilities": ["Technician"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "345 Dice",
+				"nature": "Jolly"
             },
-            {
+			{
+                "role": "Fast Attacker",
+                "movepool": ["bulletseed", "forcepalm", "rocktomb", "fling"],
+                "abilities": ["Technician"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Anklet",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["bulletseed", "machpunch", "rocktomb", "fling"],
+                "abilities": ["Technician"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Bracer",
+				"nature": "Jolly"
+            },
+			{
                 "role": "Bulky Attacker",
-                "movepool": ["focuspunch", "spore", "stoneedge", "substitute"],
-                "abilities": ["Poison Heal"]
+                "movepool": ["focuspunch", "leechseed", "protect", "substitute"],
+                "abilities": ["Poison Heal"],
+				"evs": [248, 8, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["focuspunch", "fling", "leechseed", "substitute"],
+                "abilities": ["Poison Heal"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["wakeupslap", "seedbomb", "bulkup", "spore"],
+                "abilities": ["Poison Heal"],
+				"evs": [156, 252, 0, 0, 0, 100],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["focuspunch", "bulletseed", "protect", "spore"],
+                "abilities": ["Technician"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["drainpunch", "leechseed", "bulkup", "substitute"],
+                "abilities": ["Poison Heal"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Careful"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["forcepalm", "bulletseed", "rocktomb", "thunderpunch"],
+                "abilities": ["Technician"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["rocksmash", "bulletseed", "leechseed", "spore"],
+                "abilities": ["Technician"],
+				"evs": [156, 252, 0, 0, 0, 100],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["bulletseed", "machpunch", "rocktomb", "focuspunch"],
+                "abilities": ["Technician"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
             }
         ]
     },
