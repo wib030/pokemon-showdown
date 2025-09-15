@@ -546,6 +546,8 @@ export class Pokemon {
 		statName = toID(statName) as StatIDExceptHP;
 		// @ts-expect-error type checking prevents 'hp' from being passed, but we're paranoid
 		if (statName === 'hp') throw new Error("Please read `maxhp` directly");
+		
+		const move? = ActiveMove | null;
 
 		// base stat
 		let stat = this.storedStats[statName];
@@ -572,6 +574,11 @@ export class Pokemon {
 			stat = Math.floor(stat * boostTable[boost]);
 		} else {
 			stat = Math.floor(stat / boostTable[-boost]);
+		}
+		
+		// Coward speed Boost
+		if (statName === 'spe' && move?.category === 'Status' && statUser?.hasAbility('coward')) {
+			stat *= 2;
 		}
 
 		// stat modifier
