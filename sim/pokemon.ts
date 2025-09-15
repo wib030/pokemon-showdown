@@ -547,7 +547,7 @@ export class Pokemon {
 		// @ts-expect-error type checking prevents 'hp' from being passed, but we're paranoid
 		if (statName === 'hp') throw new Error("Please read `maxhp` directly");
 		
-		const move = ActiveMove | null;
+		const move = this.battle.activeMove;
 
 		// base stat
 		let stat = this.storedStats[statName];
