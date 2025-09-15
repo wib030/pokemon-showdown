@@ -5873,8 +5873,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				randomAbility = this.sample(abilities);
 			}
 			if (!randomAbility) return false;
-			const oldAbility = source.setAbility(randomAbility);
-			if (!oldAbility) return oldAbility as false | null;
+			this.add('-activate', source, 'ability: Dabble');
+			source.setAbility(randomAbility, source);
 		},
 		flags: {},
 		name: "Dabble",
@@ -5892,8 +5892,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				randomAbility = this.sample(abilities);
 			}
 			if (!randomAbility) return false;
-			const oldAbility = source.setAbility(randomAbility);
-			if (!oldAbility) return oldAbility as false | null;
+			this.add('-activate', source, 'ability: Genetic Freak');
+			source.setAbility(randomAbility, source);
 		},
 		flags: {},
 		name: "Genetic Freak",

@@ -721,8 +721,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "If this attack does not miss, the effects of Reflect and Light Screen end for the target's side of the field before damage is calculated.",
 		},
 		gen4: {
-			desc: "If this attack does not miss and whether or not the target is immune, the effects of Reflect and Light Screen end for the target's side of the field before damage is calculated.",
-			shortDesc: "Destroys screens, even if target is immune; 1.5x power when removing screens.",
+			desc: "1.5x move power when removing screens. If this attack does not miss and whether or not the target is immune, the effects of Reflect and Light Screen end for the target's side of the field before damage is calculated.",
+			shortDesc: "Destroys screens, even if target is immune.",
 		},
 		gen3: {
 			desc: "If this attack does not miss and whether or not the target is immune, the effects of Reflect and Light Screen end for the opponent's side of the field before damage is calculated.",
