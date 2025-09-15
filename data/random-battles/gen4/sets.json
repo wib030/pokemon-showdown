@@ -843,18 +843,61 @@
         ]
     },
     "aerodactyl": {
-        "level": 78,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Attacker",
-                "movepool": ["earthquake", "roost", "stealthrock", "stoneedge", "taunt", "toxic"],
-                "abilities": ["Pressure"]
-            },
-            {
                 "role": "Fast Support",
-                "movepool": ["aerialace", "aquatail", "earthquake", "roost", "stealthrock", "stoneedge"],
+                "movepool": ["taunt", "stealthrock", "stoneedge", "earthquake"],
                 "abilities": ["Pressure"],
-                "preferredTypes": ["Ground"]
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["taunt", "stealthrock", "stoneedge", "dualwingbeat"],
+                "abilities": ["Pressure"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["defog", "stealthrock", "stoneedge", "earthquake"],
+                "abilities": ["Pressure"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["defog", "stealthrock", "dualwingbeat", "crunch"],
+                "abilities": ["Pressure"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["stoneedge", "earthquake", "dualwingbeat", "substitute"],
+                "abilities": ["Pressure"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["dualwingbeat", "stoneedge", "crunch", "earthquake"],
+                "abilities": ["Pressure"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
             }
         ]
     },
@@ -1542,17 +1585,187 @@
         ]
     },
     "blissey": {
-        "level": 81,
+        "level": 100,
         "sets": [
             {
-                "role": "Staller",
-                "movepool": ["aromatherapy", "seismictoss", "softboiled", "stealthrock", "thunderwave", "toxic"],
-                "abilities": ["Natural Cure"]
-            },
-            {
                 "role": "Bulky Support",
-                "movepool": ["protect", "seismictoss", "toxic", "wish"],
-                "abilities": ["Natural Cure"]
+                "movepool": ["seismictoss", "thunderwave", "stealthrock", "softboiled"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "healbell", "protect", "wish"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "toxic", "stealthrock", "softboiled"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "thunderwave", "aromatherapy", "softboiled"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "toxic", "aromatherapy", "softboiled"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "stealthrock", "thunderwave", "healingwish"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "toxic", "protect", "wish"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "wish", "protect", "snatch"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "toxic", "snatch", "softboiled"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "flamethrower", "stealthrock", "softboiled"],
+                "abilities": ["Serene Grace"],
+				"evs": [168, 0, 252, 88, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "softboiled", "lightscreen", "teleport"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "defensecurl", "sleeptalk", "rest"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["thunder", "icebeam", "calmmind", "softboiled"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "wish", "teleport", "protect"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "counter", "toxic", "softboiled"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "softboiled", "stealthrock", "teleport"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icywind", "protect", "wish", "teleport"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "counter", "thunderwave", "softboiled"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Chople Berry",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["lovelypunch", "toxic", "block", "softboiled"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "charm", "thunderwave", "softboiled"],
+                "abilities": ["Natural Cure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
             }
         ]
     },
