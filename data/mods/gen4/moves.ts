@@ -1823,7 +1823,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			pokemon.addVolatile('beatup');
 			move.type = 'Dark';
 			move.category = 'Physical';
-			move.allies = pokemon.side.pokemon.filter(ally => !ally.fainted && !ally.status);
+			move.allies = pokemon.side.pokemon.filter(ally => !ally.fainted);
 			move.multihit = move.allies.length;
 		},
 		condition: {
