@@ -88,7 +88,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	colorchange: {
 		inherit: true,
-		onFoeTryMove(target, source, move) {
+		onBeforeMove(pokemon, target, move) {
 			const type = move.type;
 			if (source !== target && target.isActive && type !== '???' && !target.hasType(type)) {
 				if (!target.setType(type)) return false;
