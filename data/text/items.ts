@@ -1169,9 +1169,6 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	mentalherb: {
 		name: "Mental Herb",
 		shortDesc: "Cures holder of Attract, Disable, Encore, Heal Block, Taunt, Torment. Single use.",
-		gen4: {
-			shortDesc: "Holder is cured if it is infatuated. Single use.",
-		},
 	},
 	metagrossite: {
 		name: "Metagrossite",
