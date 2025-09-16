@@ -90,7 +90,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		onBeforeMove(pokemon, target, move) {
 			const type = move.type;
-			if (source !== target && target.isActive && type !== '???' && !target.hasType(type)) {
+			if (pokemon !== target && target.isActive && type !== '???' && !target.hasType(type)) {
 				if (!target.setType(type)) return false;
 				this.add('-start', target, 'typechange', type, '[from] ability: Color Change');
 			}
