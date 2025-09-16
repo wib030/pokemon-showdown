@@ -88,6 +88,13 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	colorchange: {
 		inherit: true,
+		onTryHit(target, source, move) {
+			const type = move.type;
+			if (source !== target && target.isActive && type !== '???' && !target.hasType(type)) {
+				if (!target.setType(type)) return false;
+				this.add('-start', target, 'typechange', type, '[from] ability: Color Change');
+			}
+		},
 		onFoeBeforeMove(attacker, defender, move) {
 			const type = move.type;
 			if (attacker !== defender && defender.isActive && type !== '???' && !defender.hasType(type)) {
