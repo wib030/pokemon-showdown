@@ -702,9 +702,6 @@ export class TeamValidator {
 		problem = this.checkItem(set, item, setHas);
 		if (problem) problems.push(problem);
 		if (ruleTable.has('obtainablemisc')) {
-			if (dex.gen === 4 && item.id === 'griseousorb' && species.num !== 487) {
-				problems.push(`${set.name} cannot hold the Griseous Orb.`, `(In Gen 4, only Giratina could hold the Griseous Orb).`);
-			}
 			if (dex.gen <= 1 || dex.currentMod === 'gen7letsgo') {
 				if (item.id) {
 					// no items allowed
