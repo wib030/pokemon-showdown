@@ -953,7 +953,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	sunflora: {
 		inherit: true,
-		baseStats: {hp: 85, atk: 75, def: 55, spa: 165, spd: 85, spe: 35},
+		baseStats: {hp: 85, atk: 75, def: 55, spa: 145, spd: 85, spe: 35},
 		abilities: {0: "Thirsty", 1: "Solar Power"},
 	},
 	gulpin: {
