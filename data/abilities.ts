@@ -5960,7 +5960,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			
 			if (this.checkMoveMakesContact(move, target, source) && moveType === 'Grass') {
-				target.addVolatile('partiallytrapped', source);
+				target.addVolatile('strangleweed', source);
 			}
 		},
 		flags: { rollable: 1 },
