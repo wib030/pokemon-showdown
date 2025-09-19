@@ -874,7 +874,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NFE",
 	},
 	beautifly: {
-		tier: "OU",
+		tier: "UU",
 	},
 	cascoon: {
 		tier: "NFE",
