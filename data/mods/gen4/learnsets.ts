@@ -6787,6 +6787,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			rockblast: ["4L37"],
 			iciclecrash: ["4L49"],
 			hailcannon: ["4L53"],
+			waterfall: ["4M"],
 		},
 	},
 	gastly: {

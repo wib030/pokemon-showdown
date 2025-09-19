@@ -10658,6 +10658,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			rockblast: ["4L37"],
 			iciclecrash: ["4L49"],
 			hailcannon: ["4L53"],
+			waterfall: ["4M"],
 		},
 		eventData: [
 			{generation: 5, level: 30, gender: "M", nature: "Naughty", abilities: ["skilllink"], moves: ["iciclespear", "rockblast", "hiddenpower", "razorshell"], pokeball: "pokeball"},
