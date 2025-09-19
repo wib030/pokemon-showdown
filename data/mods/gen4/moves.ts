@@ -1197,8 +1197,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				return false;
 			}
 			this.add('-activate', source, 'move: Skill Swap');
-			source.setAbility(targetAbility);
-			target.setAbility(sourceAbility);
+			source.setAbility(targetAbility, source);
+			target.setAbility(sourceAbility, source);
 		},
 	},
 	sleeptalk: {
