@@ -902,10 +902,12 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 	},
 	nopar: {
 		name: 'nopar',
+		noCopy: true,
 		duration: 2,
 	},
 	restflag: {
 		name: 'restflag',
+		noCopy: true,
 	},
 	deepsnow: {
 		name: 'deepsnow',
