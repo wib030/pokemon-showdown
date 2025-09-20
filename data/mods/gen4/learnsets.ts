@@ -25138,6 +25138,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			twister: ["4T"],
 			uproar: ["4L11", "4T"],
 			powerswap: ["4E"],
+			defog: ["4M"],
 		},
 	},
 	altaria: {
@@ -25213,6 +25214,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			bulldoze: ["4L17"],
 			willowisp: ["4L48"],
 			dragontail: ["4M"],
+			defog: ["4M"],
 		},
 	},
 	zangoose: {
