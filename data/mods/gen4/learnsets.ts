@@ -1402,6 +1402,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hypnosis: ["4L24"],
 			toxicspikes: ["4L36"],
 			psychicscream: ["4L50"],
+			poisonfang: ["4L32"],
 		},
 	},
 	pichu: {

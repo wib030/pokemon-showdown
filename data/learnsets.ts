@@ -1771,6 +1771,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			hypnosis: ["4L24"],
 			toxicspikes: ["4L36"],
 			psychicscream: ["4L50"],
+			poisonfang: ["4L32"],
 		},
 		eventData: [
 			{generation: 3, level: 33, moves: ["refresh", "sludgebomb", "glare", "bite"]},
