@@ -1453,12 +1453,12 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	numel: {
 		inherit: true,
-		abilities: {0: "Flash Fire", 1: "Simple"},
+		abilities: {0: "Simple", 1: "Flash Fire"},
 	},
 	camerupt: {
 		inherit: true,
 		baseStats: {hp: 80, atk: 110, def: 70, spa: 145, spd: 75, spe: 30},
-		abilities: {0: "Sheer Force"},
+		abilities: {0: "Sheer Force", 1: "Flash Fire"},
 	},
 	carnivine: {
 		inherit: true,
