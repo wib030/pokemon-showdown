@@ -16,7 +16,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	bigroot: {
 		inherit: true,
 		fling: {
-			basePower: 10,
+			basePower: 30,
 			volatileStatus: 'ingrain',
 		},
 		onTryHeal(damage, target, source, effect) {
