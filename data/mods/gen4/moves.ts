@@ -1833,7 +1833,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				// https://www.smogon.com/forums/posts/8992145/
 				// this.add('-activate', pokemon, 'move: Beat Up', '[of] ' + move.allies![0].name);
 				this.event.modifier = 1;
-				let attackStat = move.allies!.shift()!.getStat('atk', false, true);
+				const attacker = move.allies!.shift()!;
+				let attackStat = attacker.getStat('atk', false, true);
 				const boostTable = [1, 1.5, 2, 2.5, 3, 3.5, 4];
 				let boost = pokemon.boosts['atk'];
 				if (boost > 6) boost = 6;
@@ -1844,8 +1845,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 					attackStat = Math.floor(attackStat / boostTable[-boost]);
 				}
 				
-				const isSTAB = move.allies!.shift()!.hasType('Dark');
-				if (isSTAB && move.allies!.shift()!.ability === 'adaptability') {
+				const isSTAB = move.forceSTAB || attacker.hasType(move.type) || attacker.getTypes(false, true).includes(move.type);
+				if (isSTAB && attacker.ability === 'adaptability') {
 					attackStat *= 2;
 					this.hint("Has STAB + Adaptability");
 				} else if (isSTAB) {
@@ -1853,7 +1854,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 					this.hint("Has STAB");
 				}
 				
-				switch (move.allies!.shift()!.ability) {
+				switch (attacker.ability) {
 				case 'hugepower':
 				case 'purepower':
 					attackStat *= 2;
@@ -1868,8 +1869,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 					}
 					break;
 				case 'rivalry':
-					if (move.allies!.shift()!.gender && defender.gender) {
-						if (move.allies!.shift()!.gender === defender.gender) {
+					if (attacker.gender && defender.gender) {
+						if (attacker.gender === defender.gender) {
 							attackStat = attackStat * 3 / 2;
 						}
 					}
@@ -1879,7 +1880,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 					break;
 				}
 				
-				switch (move.allies!.shift()!.item.id) {
+				switch (attacker.item.id) {
 				case 'loadedgloves':
 					attackStat = attackStat * 6 / 5;
 					break;
