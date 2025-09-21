@@ -303,9 +303,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		flags: { protect: 1, mirror: 1, bypasssub: 1, metronome: 1, failencore: 1, reflectable: 1 },
 		volatileStatus: 'encore',
 		condition: {
-			durationCallback() {
-				return this.random(4, 9);
-			},
+			duration: 3,
 			onStart(target, source) {
 				const moveSlot = target.lastMove ? target.getMoveData(target.lastMove.id) : null;
 				if (!target.lastMove || target.lastMove.flags['failencore'] || !moveSlot || moveSlot.pp <= 0) {
@@ -1848,15 +1846,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				
 				if (attacker.hasType(move.type) && attacker.ability === 'adaptability') {
 					attackStat *= 2;
-					this.hint("Has STAB + Adaptability");
 				} else if (attacker.hasType(move.type)) {
 					attackStat = attackStat * 3 / 2;
-					this.hint("Has STAB");
-				} else {
-					this.hint("No STAB");
 				}
-				
-				this.hint(`${types[0]} & ${types[1]}`);
 				
 				switch (attacker.ability) {
 				case 'hugepower':
