@@ -1817,7 +1817,18 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		flags: { protect: 1, mirror: 1, allyanim: 1, metronome: 1, punch: 1 },
 		basePowerCallback(pokemon, target, move) {
 			if (!move.allies?.length) return null;
-			return 15;
+			const attacker = move.allies!.shift()!;
+			const type = move.type;
+			let power = 15;
+			const isSTAB = move.forceSTAB || attacker.hasType(type) || attacker.getTypes(false, true).includes(type);
+			if (isSTAB && attacker.hasAbility('adaptability')) {
+				power *= 2;
+				this.hint("Has STAB + Adaptability");
+			} else if (isSTAB) {
+				power = power * 3 / 2;
+				this.hint("Has STAB");
+			}
+			return power;
 		},
 		onModifyMove(move, pokemon) {
 			pokemon.addVolatile('beatup');

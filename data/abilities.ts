@@ -42,7 +42,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	adaptability: {
 		onModifySTAB(stab, source, target, move) {
-			if (move.forceSTAB || source.hasType(move.type)) {
+			if ((move.forceSTAB || source.hasType(move.type)) && move.id !== 'beatup') {
 				if (stab === 2) {
 					return 2.25;
 				}

@@ -77,7 +77,7 @@ export const Scripts: ModdedBattleScriptsData = {
 			// Not even if you Roost in Gen 4 and somehow manage to use
 			// Struggle in the same turn.
 			// (On second thought, it might be easier to get a MissingNo.)
-			if (type !== '???') {
+			if (type !== '???' && move.id !== 'beatup') {
 				let stab: number | [number, number] = 1;
 				if (move.forceSTAB || pokemon.hasType(type)) {
 					stab = 1.5;
