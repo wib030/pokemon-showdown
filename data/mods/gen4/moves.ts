@@ -1845,7 +1845,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 					attackStat = Math.floor(attackStat / boostTable[-boost]);
 				}
 				
-				const isSTAB = move.forceSTAB || attacker.hasType(move.type) || attacker.getTypes(false, true).includes(move.type);
+				const isSTAB = move.forceSTAB || attacker.hasType('Dark') || attacker.getTypes(false, true).includes(move.type);
 				if (isSTAB && attacker.ability === 'adaptability') {
 					attackStat *= 2;
 					this.hint("Has STAB + Adaptability");
