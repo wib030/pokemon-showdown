@@ -1435,7 +1435,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	bronzong: {
 		inherit: true,
-		baseStats: {hp: 87, atk: 89, def: 116, spa: 74, spd: 116, spe: 33},
+		baseStats: {hp: 77, atk: 89, def: 116, spa: 74, spd: 116, spe: 33},
 		abilities: {0: "Flash Fire", 1: "Levitate"},
 	},
 	butterfree: {
