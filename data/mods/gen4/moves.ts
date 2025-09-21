@@ -1833,8 +1833,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				// https://www.smogon.com/forums/posts/8992145/
 				// this.add('-activate', pokemon, 'move: Beat Up', '[of] ' + move.allies![0].name);
 				this.event.modifier = 1;
-				const attacker = move.allies!.shift()!;
+				let attacker = move.allies!.shift()!;
 				let attackStat = attacker.getStat('atk', false, true);
+				const types = attacker.getTypes();
 				const boostTable = [1, 1.5, 2, 2.5, 3, 3.5, 4];
 				let boost = pokemon.boosts['atk'];
 				if (boost > 6) boost = 6;
@@ -1854,6 +1855,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				} else {
 					this.hint("No STAB");
 				}
+				
+				this.hint(`${types[0]} & ${types[1]}`);
 				
 				switch (attacker.ability) {
 				case 'hugepower':
