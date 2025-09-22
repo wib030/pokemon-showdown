@@ -2904,13 +2904,15 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			return pokemon.volatiles['stockpile'].layers * 120;
 		},
 		onAfterMove(pokemon) {
-			this.boost({ def: -1, spd: -1 }, pokemon, pokemon);
-			pokemon.volatiles['stockpile'].layers -= 2;
-			if (pokemon.volatiles['stockpile']?.layers <= 0) {
-				pokemon.removeVolatile('stockpile');
-			} else {
-				this.add('-end', pokemon, 'Stockpile');
-				this.add('-start', pokemon, 'stockpile' + pokemon.volatiles['stockpile'].layers);
+			if (pokemon.volatiles['stockpile']) {
+				this.boost({ def: -1, spd: -1 }, pokemon, pokemon);
+				pokemon.volatiles['stockpile'].layers -= 2;
+				if (pokemon.volatiles['stockpile']?.layers <= 0) {
+					pokemon.removeVolatile('stockpile');
+				} else {
+					this.add('-end', pokemon, 'Stockpile');
+					this.add('-start', pokemon, 'stockpile' + pokemon.volatiles['stockpile'].layers);
+				}
 			}
 		},
 	},
@@ -2924,13 +2926,16 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			const healAmount = [0.25, 0.5, 1];
 			const success = !!this.heal(this.modify(pokemon.maxhp, healAmount[layers - 1]));
 			if (!success) this.add('-fail', pokemon, 'heal');
-			pokemon.volatiles['stockpile'].layers -= 2;
-			if (pokemon.volatiles['stockpile']?.layers <= 0) {
-				pokemon.removeVolatile('stockpile');
-			} else {
-				this.add('-end', pokemon, 'Stockpile');
-				this.add('-start', pokemon, 'stockpile' + pokemon.volatiles['stockpile'].layers);
+			if (pokemon.volatiles['stockpile']) {
+				pokemon.volatiles['stockpile'].layers -= 2;
+				if (pokemon.volatiles['stockpile']?.layers <= 0) {
+					pokemon.removeVolatile('stockpile');
+				} else {
+					this.add('-end', pokemon, 'Stockpile');
+					this.add('-start', pokemon, 'stockpile' + pokemon.volatiles['stockpile'].layers);
+				}
 			}
+			
 			return success || this.NOT_FAIL;
 		},
 	},
