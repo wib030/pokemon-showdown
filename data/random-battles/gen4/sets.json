@@ -489,12 +489,124 @@
         ]
     },
     "cloyster": {
-        "level": 88,
+        "level": 100,
         "sets": [
             {
+                "role": "Fast Support",
+                "movepool": ["iciclespear", "rockblast", "rapidspin", "toxicspikes"],
+                "abilities": ["Skill Link"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["iciclespear", "rockblast", "spikecannon", "rapidspin"],
+                "abilities": ["Skill Link"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["iciclespear", "rockblast", "spikecannon", "rapidspin"],
+                "abilities": ["Skill Link"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Cleanse Tag",
+				"nature": "Adamant"
+            },
+			{
                 "role": "Bulky Support",
-                "movepool": ["explosion", "iceshard", "rapidspin", "rockblast", "spikes", "surf", "toxicspikes"],
-                "abilities": ["Shell Armor", "Skill Link"]
+                "movepool": ["iciclespear", "waterfall", "spikecannon", "explosion"],
+                "abilities": ["Skill Link"],
+				"evs": [252, 0, 0, 0, 252, 4],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["iciclespear", "waterfall", "spikecannon", "rapidspin"],
+                "abilities": ["Skill Link"],
+				"evs": [252, 28, 0, 0, 188, 40],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["iciclespear", "clamp", "screech", "rapidspin"],
+                "abilities": ["Skill Link"],
+				"evs": [252, 168, 0, 0, 48, 40],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Never-Melt Ice",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["hailcannon", "waterfall", "rapidspin", "hail"],
+                "abilities": ["Slush Rush"],
+				"evs": [80, 252, 0, 0, 0, 176],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Icy Rock",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["hailcannon", "waterfall", "explosion", "hail"],
+                "abilities": ["Slush Rush"],
+				"evs": [148, 252, 0, 0, 0, 108],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Icy Rock",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["iciclespear", "spikecannon", "rapidspin", "toxicspikes"],
+                "abilities": ["Skill Link"],
+				"evs": [252, 16, 0, 0, 152, 88],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Never-Melt Ice",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["iciclespear", "waterfall", "iceshard", "explosion"],
+                "abilities": ["Skill Link"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["iciclespear", "waterfall", "rockblast", "explosion"],
+                "abilities": ["Skill Link"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["iciclespear", "waterfall", "explosion", "agility"],
+                "abilities": ["Skill Link"],
+				"evs": [168, 252, 0, 0, 0, 88],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["iciclespear", "waterfall", "agility", "endure"],
+                "abilities": ["Skill Link"],
+				"evs": [252, 16, 0, 0, 152, 88],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Adamant"
             }
         ]
     },
