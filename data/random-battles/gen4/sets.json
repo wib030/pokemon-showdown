@@ -1070,18 +1070,106 @@
         ]
     },
     "dragonite": {
-        "level": 75,
+        "level": 100,
         "sets": [
             {
-                "role": "Wallbreaker",
-                "movepool": ["earthquake", "extremespeed", "outrage", "superpower"],
-                "abilities": ["Inner Focus"]
-            },
-            {
                 "role": "Setup Sweeper",
-                "movepool": ["dragondance", "earthquake", "firepunch", "outrage", "roost"],
-                "abilities": ["Inner Focus"],
-                "preferredTypes": ["Ground"]
+                "movepool": ["dragonclaw", "earthquake", "dragondance", "roost"],
+                "abilities": ["Multiscale"],
+                "evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["dragonclaw", "earthquake", "dualwingbeat", "dragondance"],
+                "abilities": ["Multiscale"],
+                "evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["dragontail", "stealthrock", "toxic", "roost"],
+                "abilities": ["Multiscale"],
+                "evs": [252, 236, 20, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["dragonclaw", "dragondance", "healbell", "roost"],
+                "abilities": ["Multiscale"],
+                "evs": [252, 236, 20, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["dragonclaw", "earthquake", "fireblast", "dragondance"],
+                "abilities": ["Multiscale"],
+                "evs": [36, 252, 0, 8, 0, 212],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Naughty"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["outrage", "earthquake", "fireblast", "dragondance"],
+                "abilities": ["Multiscale"],
+                "evs": [36, 252, 0, 8, 0, 212],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Naughty"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["dragonclaw", "earthquake", "hailcannon", "dragondance"],
+                "abilities": ["Multiscale"],
+                "evs": [44, 252, 20, 0, 0, 212],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["outrage", "earthquake", "firepunch", "extremespeed"],
+                "abilities": ["Multiscale"],
+                "evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["dragonclaw", "dragondance", "substitute", "roost"],
+                "abilities": ["Multiscale"],
+                "evs": [244, 0, 148, 0, 0, 116],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["dragonclaw", "earthquake", "dragondance", "roost"],
+                "abilities": ["Multiscale"],
+                "evs": [252, 64, 68, 0, 8, 116],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["dragonclaw", "firepunch", "dragondance", "roost"],
+                "abilities": ["Multiscale"],
+                "evs": [252, 64, 68, 0, 8, 116],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
             }
         ]
     },
