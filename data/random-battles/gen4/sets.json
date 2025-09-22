@@ -5493,23 +5493,106 @@
         ]
     },
     "dusknoir": {
-        "level": 85,
+        "level": 100,
         "sets": [
             {
                 "role": "Bulky Support",
-                "movepool": ["earthquake", "icepunch", "painsplit", "shadowsneak", "toxic", "trick", "willowisp"],
-                "abilities": ["Pressure"],
-                "preferredTypes": ["Ground"]
+                "movepool": ["drainpunch", "shadowpunch", "taunt", "willowisp"],
+                "abilities": ["Iron Fist"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful"
             },
-            {
-                "role": "Staller",
-                "movepool": ["earthquake", "protect", "shadowsneak", "toxic"],
-                "abilities": ["Pressure"]
-            },
-            {
+			{
                 "role": "Bulky Attacker",
-                "movepool": ["focuspunch", "painsplit", "shadowsneak", "substitute"],
-                "abilities": ["Pressure"]
+                "movepool": ["drainpunch", "shadowpunch", "firepunch", "earthquake"],
+                "abilities": ["Iron Fist"],
+				"evs": [252, 4, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["drainpunch", "shadowpunch", "toxicspikes", "curse"],
+                "abilities": ["Iron Fist"],
+				"evs": [252, 252, 4, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["drainpunch", "shadowpunch", "toxicspikes", "memento"],
+                "abilities": ["Iron Fist"],
+				"evs": [252, 252, 4, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["drainpunch", "shadowpunch", "focuspunch", "substitute"],
+                "abilities": ["Iron Fist"],
+				"evs": [244, 252, 0, 0, 12, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["drainpunch", "shadowpunch", "firepunch", "trickroom"],
+                "abilities": ["Iron Fist"],
+				"evs": [252, 72, 120, 0, 64, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Loaded Gloves",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["drainpunch", "shadowpunch", "icepunch", "thunderpunch"],
+                "abilities": ["Iron Fist"],
+				"evs": [252, 252, 4, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["drainpunch", "shadowpunch", "icepunch", "thunderpunch"],
+                "abilities": ["Iron Fist"],
+				"evs": [252, 252, 0, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["drainpunch", "shadowpunch", "taunt", "substitute"],
+                "abilities": ["Iron Fist"],
+				"evs": [244, 12, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["drainpunch", "shadowpunch", "sleeptalk", "rest"],
+                "abilities": ["Iron Fist"],
+				"evs": [252, 72, 120, 0, 64, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["drainpunch", "shadowpunch", "bind", "spite"],
+                "abilities": ["Iron Fist"],
+				"evs": [252, 72, 120, 0, 64, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Zoom Lens",
+				"nature": "Impish"
             }
         ]
     },
