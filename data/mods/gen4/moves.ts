@@ -2927,6 +2927,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			const success = !!this.heal(this.modify(pokemon.maxhp, healAmount[layers - 1]));
 			if (!success) this.add('-fail', pokemon, 'heal');
 			if (pokemon.volatiles['stockpile']) {
+				this.boost({ def: -1, spd: -1 }, pokemon, pokemon);
 				pokemon.volatiles['stockpile'].layers -= 2;
 				if (pokemon.volatiles['stockpile']?.layers <= 0) {
 					pokemon.removeVolatile('stockpile');
@@ -2935,7 +2936,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 					this.add('-start', pokemon, 'stockpile' + pokemon.volatiles['stockpile'].layers);
 				}
 			}
-			
 			return success || this.NOT_FAIL;
 		},
 	},
