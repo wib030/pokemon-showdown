@@ -3521,12 +3521,70 @@
         ]
     },
     "crawdaunt": {
-        "level": 88,
+        "level": 100,
         "sets": [
             {
+                "role": "Setup Sweeper",
+                "movepool": ["aquajet", "crabhammer", "knockoff", "swordsdance"],
+                "abilities": ["Adaptability"],
+				"evs": [252, 252, 0, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["aquajet", "crabhammer", "knockoff", "dragondance"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["aquajet", "crabhammer", "knockoff", "superpower"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["chumrush", "aquajet", "knockoff", "dragondance"],
+                "abilities": ["Adaptability"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["chumrush", "aquajet", "knockoff", "swordsdance"],
+                "abilities": ["Adaptability"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["aquajet", "chumrush", "knockoff", "superpower"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant"
+            },
+			{
                 "role": "Fast Attacker",
-                "movepool": ["crunch", "dragondance", "superpower", "waterfall", "xscissor"],
-                "abilities": ["Hyper Cutter"]
+                "movepool": ["aquajet", "chumrush", "knockoff", "fling"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Damp Rock",
+				"nature": "Jolly"
             }
         ]
     },
@@ -3581,12 +3639,97 @@
         ]
     },
     "castform": {
-        "level": 96,
+        "level": 100,
         "sets": [
             {
+                "role": "Fast Attacker",
+                "movepool": ["hurricane", "lavaplume", "haze", "morningsun"],
+                "abilities": ["Forecast"],
+				"evs": [156, 0, 12, 180, 0, 160],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Item user",
+                "movepool": ["hurricane", "flamethrower", "thunderbolt", "icebeam"],
+                "abilities": ["Forecast"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["weatherball", "freezedry", "thunderbolt", "earthquake"],
+                "abilities": ["Forecast"],
+				"evs": [0, 36, 0, 220, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["flareblitz", "earthquake", "stoneedge", "explosion"],
+                "abilities": ["Forecast"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["blizzard", "discharge", "lavaplume", "freezedry"],
+                "abilities": ["Forecast"],
+				"evs": [4, 0, 0, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Icy Rock",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["hailcannon", "earthquake", "stoneedge", "thunderwave"],
+                "abilities": ["Forecast"],
+				"evs": [44, 212, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Icy Rock",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["earthquake", "stoneedge", "toxic", "morningsun"],
+                "abilities": ["Forecast"],
+				"evs": [252, 0, 168, 0, 88, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Smooth Rock",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["earthquake", "stoneedge", "sleeptalk", "rest"],
+                "abilities": ["Forecast"],
+				"evs": [252, 48, 168, 0, 40, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Smooth Rock",
+				"nature": "Impish"
+            },
+			{
                 "role": "Bulky Attacker",
-                "movepool": ["fireblast", "icebeam", "return", "thunderbolt", "thunderwave"],
-                "abilities": ["Forecast"]
+                "movepool": ["thunder", "hurricane", "weatherball", "thunderwave"],
+                "abilities": ["Forecast"],
+				"evs": [252, 0, 96, 160, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Damp Rock",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["thunder", "weatherball", "haze", "thunderwave"],
+                "abilities": ["Forecast"],
+				"evs": [252, 0, 96, 0, 160, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Damp Rock",
+				"nature": "Bold"
             }
         ]
     },
