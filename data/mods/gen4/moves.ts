@@ -3037,4 +3037,13 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		basePower: 160,
 	},
+	eruption: {
+		inherit: true,
+		basePower: 140,
+		basePowerCallback(pokemon, target, move) {
+			const bp = move.basePower * pokemon.hp / pokemon.maxhp;
+			this.debug(`BP: ${bp}`);
+			return bp;
+		},
+	},
 };

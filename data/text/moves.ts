@@ -1872,6 +1872,9 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Eruption",
 		desc: "Power is equal to (user's current HP * 150 / user's maximum HP), rounded down, but not less than 1.",
 		shortDesc: "Less power as user's HP decreases. Hits foe(s).",
+		gen4: {
+			desc: "Power is equal to (user's current HP * 140 / user's maximum HP), rounded down, but not less than 1.",
+		},
 	},
 	esperwing: {
 		name: "Esper Wing",
@@ -7420,6 +7423,9 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Water Spout",
 		desc: "Power is equal to (user's current HP * 150 / user's maximum HP), rounded down, but not less than 1.",
 		shortDesc: "Less power as user's HP decreases. Hits foe(s).",
+		gen4: {
+			desc: "Power is equal to (user's current HP * 140 / user's maximum HP), rounded down, but not less than 1.",
+		},
 	},
 	wavecrash: {
 		name: "Wave Crash",
