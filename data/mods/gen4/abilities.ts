@@ -96,7 +96,43 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		onFoeBeforeMove(attacker, defender, move) {
-			const type = move.type;
+			let type = move.type;
+			let item = attacker.getItem();
+			if (move.id === 'judgment' && attacker.hasAbility('multitype')) {
+				type = attacker.species.types[0];
+			}
+			if ((move.id === 'fling' || move.id === 'judgment') && item.onPlate) {
+				type = item.onPlate;
+			}
+			if (attacker.hasAbility('normalize') && move.id !== 'judgment') {
+				type = 'Normal';
+			}
+			if (move.id === 'hiddenpower') {
+				type = attacker.hpType || 'Dark';
+			}
+			if (attacker.hasAbility('rockstar') && move.flags['sound']) {
+				type = 'Rock';
+			}
+			if (move.id === 'weatherball') {
+				switch (this.battle.weather) {
+				case 'sunnyday':
+				case 'desolateland':
+					type = 'Fire';
+					break;
+				case 'raindance':
+				case 'primordialsea':
+					type = 'Water';
+					break;
+				case 'sandstorm':
+					type = 'Rock';
+					break;
+				case 'hail':
+				case 'snowscape':
+					type = 'Ice';
+					break;
+				}
+			}
+			
 			if (attacker !== defender && defender.isActive && type !== '???' && !defender.hasType(type)) {
 				if (!defender.setType(type)) return false;
 				this.add('-start', defender, 'typechange', type, '[from] ability: Color Change');
