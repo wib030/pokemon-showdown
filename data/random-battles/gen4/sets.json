@@ -2864,19 +2864,76 @@
         "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
-                "movepool": ["doubleedge", "protect", "thunderwave", "toxic", "wish"],
-                "abilities": ["Cute Charm"]
-            },
-            {
                 "role": "Fast Support",
-                "movepool": ["doubleedge", "fakeout", "healbell", "suckerpunch", "thunderwave", "toxic"],
-                "abilities": ["Cute Charm"]
+                "movepool": ["lovelypunch", "batonpass", "cosmicpower", "skillswap"],
+                "abilities": ["Normalize"],
+				"evs": [252, 4, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
             },
-            {
-                "role": "Bulky Setup",
-                "movepool": ["batonpass", "calmmind", "icebeam", "thunderbolt"],
-                "abilities": ["Cute Charm"]
+			{
+                "role": "Bulky Support",
+                "movepool": ["nightshade", "cosmicpower", "rest", "skillswap"],
+                "abilities": ["Normalize"],
+				"evs": [252, 0, 204, 0, 52, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["nightshade", "toxic", "protect", "wish"],
+                "abilities": ["Normalize"],
+				"evs": [252, 0, 204, 0, 52, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Cleanse Tag",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["nightshade", "assist", "sleeptalk", "rest"],
+                "abilities": ["Normalize"],
+				"evs": [252, 0, 204, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Cleanse Tag",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["nightshade", "cosmicpower", "protect", "wish"],
+                "abilities": ["Normalize"],
+				"evs": [252, 0, 204, 0, 52, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Cleanse Tag",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["nightshade", "wish", "protect", "batonpass"],
+                "abilities": ["Aftermath"],
+				"evs": [252, 0, 204, 0, 52, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["nightshade", "substitute", "protect", "batonpass"],
+                "abilities": ["Aftermath"],
+				"evs": [252, 0, 204, 0, 52, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["chargebeam", "wish", "protect", "batonpass"],
+                "abilities": ["Normalize"],
+				"evs": [252, 0, 204, 0, 52, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish"
             }
         ]
     },
