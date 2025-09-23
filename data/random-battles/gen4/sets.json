@@ -2923,12 +2923,106 @@
         ]
     },
     "exploud": {
-        "level": 91,
+        "level": 100,
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["crunch", "earthquake", "fireblast", "icebeam", "return", "surf"],
-                "abilities": ["Soundproof"]
+                "movepool": ["hyperbeam", "icebeam", "hiddenpowerelectric", "fireblast"],
+                "abilities": ["Relentless"],
+				"evs": [0, 0, 32, 252, 0, 224],
+				"ivs": [31, 3, 31, 30, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["hyperbeam", "icebeam", "shadowball", "focusblast"],
+                "abilities": ["Relentless"],
+				"evs": [0, 0, 32, 252, 0, 224],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["hyperbeam", "focusblast", "extrasensory", "taunt"],
+                "abilities": ["Relentless"],
+				"evs": [0, 0, 20, 252, 0, 236],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Cleanse Tag",
+				"nature": "Timid"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["hyperbeam", "fireblast", "focusblast", "taunt"],
+                "abilities": ["Relentless"],
+				"evs": [0, 0, 20, 252, 0, 236],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Cleanse Tag",
+				"nature": "Timid"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["hyperbeam", "shadowball", "extrasensory", "fireblast"],
+                "abilities": ["Relentless"],
+				"evs": [0, 0, 24, 252, 0, 232],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Modest"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["hyperbeam", "shadowball", "extrasensory", "focusblast"],
+                "abilities": ["Relentless"],
+				"evs": [0, 0, 24, 252, 0, 232],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Modest"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["hyperbeam", "shadowball", "extrasensory", "overheat"],
+                "abilities": ["Relentless"],
+				"evs": [0, 0, 72, 252, 0, 184],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["hyperbeam", "shadowball", "extrasensory", "focusblast"],
+                "abilities": ["Relentless"],
+				"evs": [0, 0, 72, 252, 0, 184],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["hyperbeam", "shadowball", "fireblast", "focusblast"],
+                "abilities": ["Relentless"],
+				"evs": [0, 0, 32, 252, 0, 224],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Wide Lens",
+				"nature": "Timid"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["hyperbeam", "shadowball", "overheat", "focusblast"],
+                "abilities": ["Relentless"],
+				"evs": [0, 0, 32, 252, 0, 224],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "White Herb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["hyperbeam", "fireblast", "rest", "sleeptalk"],
+                "abilities": ["Relentless"],
+				"evs": [0, 0, 24, 252, 0, 232],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Cleanse Tag",
+				"nature": "Modest"
             }
         ]
     },
@@ -4600,13 +4694,97 @@
         ]
     },
     "mothim": {
-        "level": 97,
+        "level": 100,
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["airslash", "bugbuzz", "hiddenpowerfighting", "hiddenpowerground", "shadowball", "uturn"],
-                "abilities": ["Swarm"],
-                "preferredTypes": ["Bug"]
+                "movepool": ["hurricane", "bugbuzz", "uturn", "toxicspikes"],
+                "abilities": ["Tinted Lens"],
+                "evs": [0, 8, 0, 252, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["hurricane", "bugbuzz", "uturn", "peatslide"],
+                "abilities": ["Tinted Lens"],
+                "evs": [0, 8, 0, 252, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["hurricane", "bugbuzz", "peatslide", "agility"],
+                "abilities": ["Tinted Lens"],
+                "evs": [0, 0, 24, 252, 0, 232],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Modest"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["hurricane", "bugbuzz", "peatslide", "agility"],
+                "abilities": ["Tinted Lens"],
+                "evs": [0, 0, 8, 252, 0, 248],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["hurricane", "bugbuzz", "uturn", "defog"],
+                "abilities": ["Tinted Lens"],
+                "evs": [0, 8, 0, 252, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Wide Lens",
+				"nature": "Naive"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["hurricane", "bugbuzz", "agility", "substitute"],
+                "abilities": ["Tinted Lens"],
+                "evs": [0, 0, 8, 252, 0, 248],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Timid"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["hurricane", "bugbuzz", "peatslide", "uturn"],
+                "abilities": ["Tinted Lens"],
+                "evs": [0, 8, 0, 252, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Naive"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["dualwingbeat", "xscissor", "zenheadbutt", "uturn"],
+                "abilities": ["Tinted Lens"],
+                "evs": [0, 252, 8, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["dualwingbeat", "xscissor", "zenheadbutt", "agility"],
+                "abilities": ["Tinted Lens"],
+                "evs": [0, 252, 24, 0, 0, 232],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["dualwingbeat", "xscissor", "zenheadbutt", "agility"],
+                "abilities": ["Tinted Lens"],
+                "evs": [0, 252, 8, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Jolly"
             }
         ]
     },
