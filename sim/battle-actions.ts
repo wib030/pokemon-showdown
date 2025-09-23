@@ -890,6 +890,7 @@ export class BattleActions {
 		}
 		if (targetHits === 10 && pokemon.hasItem('loadeddice')) targetHits -= this.battle.random(7);
 		targetHits = Math.floor(targetHits);
+		pokemon.moveHits = targetHits;
 		let nullDamage = true;
 		let moveDamage: (number | boolean | undefined)[] = [];
 		// There is no need to recursively check the ´sleepUsable´ flag as Sleep Talk can only be used while asleep.

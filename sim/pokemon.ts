@@ -234,6 +234,7 @@ export class Pokemon {
 	lastDamage: number;
 	attackedBy: Attacker[];
 	timesAttacked: number;
+	moveHits: number;
 
 	isActive: boolean;
 	activeTurns: number;
@@ -460,6 +461,7 @@ export class Pokemon {
 		this.lastDamage = 0;
 		this.attackedBy = [];
 		this.timesAttacked = 0;
+		this.moveHits = 0;
 
 		this.isActive = false;
 		this.activeTurns = 0;
@@ -1270,6 +1272,7 @@ export class Pokemon {
 		this.hpType = (this.battle.gen >= 5 ? this.hpType : pokemon.hpType);
 		this.hpPower = (this.battle.gen >= 5 ? this.hpPower : pokemon.hpPower);
 		this.timesAttacked = pokemon.timesAttacked;
+		this.moveHits = pokemon.moveHits;
 		for (const moveSlot of pokemon.moveSlots) {
 			let moveName = moveSlot.move;
 			if (moveSlot.id === 'hiddenpower') {
