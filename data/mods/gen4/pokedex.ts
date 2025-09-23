@@ -568,6 +568,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	nidoking: {
 		inherit: true,
 		baseStats: {hp: 81, atk: 122, def: 77, spa: 115, spd: 75, spe: 105},
+		abilities: { 0: "Sheer Force", 1: "Rivalry" },
 	},
 	nidoranf: {
 		inherit: true,
