@@ -2599,13 +2599,11 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		basePower: 15,
 		pp: 10,
 		onAfterMove(pokemon, target, move) {
-			if (pokemon.hp) {
+			if (pokemon.hp && !target.runImmunity(move)) {
 				for (const side of pokemon.side.foeSidesWithConditions()) {
-					if (!target.runImmunity('Normal')) {
+					side.addSideCondition('spikes');
+					if (move.multihit === 5) {
 						side.addSideCondition('spikes');
-						if (move.multihit === 5) {
-							side.addSideCondition('spikes');
-						}
 					}
 				}
 			}
