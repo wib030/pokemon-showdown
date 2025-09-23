@@ -2598,9 +2598,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		basePower: 15,
 		pp: 10,
-		onAfterMove(pokemon, target, move) {
-			if (!move.hasSheerForce && pokemon.hp) {
-				for (const side of pokemon.side.foeSidesWithConditions()) {
+		onSourceDamagingHit(damage, target, source, move) {
+			if (source.hp) {
+				for (const side of source.side.foeSidesWithConditions()) {
 					side.addSideCondition('spikes');
 					if (move.multihit === 5) {
 						side.addSideCondition('spikes');
