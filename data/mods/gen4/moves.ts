@@ -2600,11 +2600,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 10,
 		onSourceDamagingHit(damage, target, source, move) {
 			if (source.hp) {
-				for (const side of source.side.foeSidesWithConditions()) {
-					side.addSideCondition('spikes');
-					if (move.multihit === 5) {
-						side.addSideCondition('spikes');
-					}
+				target.side.addSideCondition('spikes');
+				if (move.multihit === 5) {
+					target.side.addSideCondition('spikes');
 				}
 			}
 		},
