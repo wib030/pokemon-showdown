@@ -2598,11 +2598,15 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		basePower: 15,
 		pp: 10,
-		onSourceDamagingHit(damage, target, source, move) {
-			if (source.hp) {
-				target.side.addSideCondition('spikes');
-				if (move.multihit === 5) {
-					target.side.addSideCondition('spikes');
+		onAfterMove(pokemon, target, move) {
+			if (pokemon.hp) {
+				for (const side of pokemon.side.foeSidesWithConditions()) {
+					if (!target.runImmunity('Normal')) {
+						side.addSideCondition('spikes');
+						if (move.multihit === 5) {
+							side.addSideCondition('spikes');
+						}
+					}
 				}
 			}
 		},
