@@ -1016,12 +1016,69 @@ export default class TeamGenerator {
 			return species.types.includes('Poison') ? moves.some(m => m.stallingMove) ? 20 : 10 : 0;
 
 		// berries
-		case 'sitrusberry': case 'magoberry':
+		case 'sitrusberry': case 'magoberry': case 'figyberry': case 'wikiberry': case 'aguavberry': case 'iapapaberry':
 			return 20;
 
 		case 'throatspray':
 			if (moves.some(m => m.flags.sound) && moves.some(m => m.category === 'Special')) return 30;
 			return 0;
+			
+		case 'loadedgloves':
+			if (moves.some(m => m.flags.punch)) return 30;
+			return 0;
+			
+		case 'icyrock':
+			if (ability === 'Snow Warning') return 30;
+			return 0;
+			
+		case 'smoothrock':
+			if (ability === 'Sand Stream') return 30;
+			return 0;
+			
+		case 'damprock':
+			if (ability === 'Drizzle') return 30;
+			return 0;
+			
+		case 'heatrock':
+			if (ability === 'Drought') return 30;
+			return 0;
+			
+		case 'powerbracer':
+			if (moves.some(m => m.id === 'fling') && adjustedStats.atk > adjustedStats.spa) return 50;
+			return 0;
+			
+		case 'powerlens':
+			if (moves.some(m => m.id === 'fling') && adjustedStats.spa > adjustedStats.atk) return 50;
+			return 0;
+			
+		case 'powerbelt':
+			if (moves.some(m => m.id === 'fling')) return 30;
+			return 0;
+			
+		case 'powerband':
+			if (moves.some(m => m.id === 'fling')) return 30;
+			return 0;
+			
+		case 'poweranklet':
+			if (moves.some(m => m.id === 'fling') && species.baseStats.spe >= 60) return 50;
+			return 0;
+			
+		case 'adamantorb':
+			if (moves.some(m => m.id === 'fling') && species.baseStats.spe <= 50) return 50;
+			if (species.id === 'dialga') return 50;
+			if (moves.some(m => m.id === 'fling')) return 30;
+			return 0;
+			
+		case 'lustrousorb':
+			if (species.id === 'palkia') return 50;
+			if (moves.some(m => m.id === 'fling')) return 30;
+			return 0;
+			
+		case 'cleansetag': case 'weaknesspolicy': case 'threefourfivedice': case 'mentalherb':
+			return 30;
+			
+		case 'starfberry': case 'liechiberry': case 'ganlonberry': case 'petayaberry': case 'apicotberry': case 'salacberry':
+			return 30;
 
 		default:
 			// probably not a very good item
