@@ -37132,6 +37132,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			mirrorshot: ["4L20"],
 			snap: ["4L21"],
 			hailcannon: ["4L48"],
+			uturn: ["4M"],
 		},
 		eventData: [
 			{generation: 5, level: 100, gender: "M", moves: ["hydropump", "icebeam", "aquajet", "grassknot"], pokeball: "cherishball"},

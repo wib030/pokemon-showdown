@@ -29748,6 +29748,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			mirrorshot: ["4L20"],
 			snap: ["4L21"],
 			hailcannon: ["4L48"],
+			uturn: ["4M"],
 		},
 	},
 	starly: {
