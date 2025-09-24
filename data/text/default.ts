@@ -213,6 +213,7 @@ export const DefaultText: { [id: IDEntry]: DefaultText } = {
 		end: "  [POKEMON] woke up!",
 		endFromItem: "  [POKEMON]'s [ITEM] woke it up!",
 		cant: "[POKEMON] is fast asleep.",
+		heal: "  [POKEMON] slept and restored a little HP!",
 	},
 
 	// misc effects

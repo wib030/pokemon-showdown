@@ -905,10 +905,6 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		noCopy: true,
 		duration: 2,
 	},
-	restflag: {
-		name: 'restflag',
-		noCopy: true,
-	},
 	deepsnow: {
 		name: 'deepsnow',
 		onModifySpe(spe, pokemon) {

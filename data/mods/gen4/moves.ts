@@ -1587,7 +1587,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			target.statusState.time = 3;
 			target.statusState.startTime = 3;
 			this.heal(target.maxhp); // Aesthetic only as the healing happens after you fall asleep in-game
-			target.addVolatile("restflag");
+			target.sleepHealFlag = false;
 		},
 	},
 	doubleslap: {

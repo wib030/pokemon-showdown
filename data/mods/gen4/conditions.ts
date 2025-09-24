@@ -67,6 +67,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			}
 			
 			this.effectState.time = sleepTurns;
+			target.sleepHealFlag = true;
 
 			if (target.removeVolatile('nightmare')) {
 				this.add('-end', target, 'Nightmare', '[silent]');
@@ -79,7 +80,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			}
 			pokemon.statusState.time--;
 			if (pokemon.statusState.time <= 0) {
-				pokemon.removeVolatile("restflag");
+				pokemon.sleepHealFlag = false;
 				pokemon.cureStatus();
 				return;
 			}
@@ -91,7 +92,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		},
 		onResidualOrder: 10,
 		onResidual(pokemon) {
-			if(!pokemon.volatiles['restflag']) {
+			if (pokemon.sleepHealFlag === true) {
 				let badDreamsActive = false;
 				for (const mon of this.getAllActive()) {
 					if (mon.isAlly(pokemon)) continue;

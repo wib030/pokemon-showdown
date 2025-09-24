@@ -235,6 +235,7 @@ export class Pokemon {
 	attackedBy: Attacker[];
 	timesAttacked: number;
 	moveHits: number;
+	sleepHealFlag: boolean;
 
 	isActive: boolean;
 	activeTurns: number;
@@ -462,6 +463,7 @@ export class Pokemon {
 		this.attackedBy = [];
 		this.timesAttacked = 0;
 		this.moveHits = 0;
+		this.sleepHealFlag = false;
 
 		this.isActive = false;
 		this.activeTurns = 0;
@@ -1273,6 +1275,7 @@ export class Pokemon {
 		this.hpPower = (this.battle.gen >= 5 ? this.hpPower : pokemon.hpPower);
 		this.timesAttacked = pokemon.timesAttacked;
 		this.moveHits = pokemon.moveHits;
+		this.sleepHealFlag = pokemon.sleepHealFlag;
 		for (const moveSlot of pokemon.moveSlots) {
 			let moveName = moveSlot.move;
 			if (moveSlot.id === 'hiddenpower') {
@@ -1648,6 +1651,9 @@ export class Pokemon {
 		this.battle.add('-curestatus', this, this.status, silent ? '[silent]' : '[msg]');
 		if (this.status === 'slp' && this.removeVolatile('nightmare')) {
 			this.battle.add('-end', this, 'Nightmare', '[silent]');
+		}
+		if (this.status === 'slp') {
+			this.sleepHealFlag = false;
 		}
 		this.setStatus('');
 		return true;
