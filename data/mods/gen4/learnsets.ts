@@ -5804,6 +5804,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			zenheadbutt: ["4T", "4L32", "4E"],
 			teleport: ["4L10"],
 			psychicscream: ["4L36"],
+			whirlpool: ["4L1"],
 		},
 	},
 	slowbro: {
@@ -5895,6 +5896,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			zenheadbutt: ["4T", "4L32"],
 			teleport: ["4L10"],
 			psychicscream: ["4L44"],
+			whirlpool: ["4L1"],
 		},
 	},
 	slowking: {
@@ -5988,6 +5990,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			teleport: ["4L10"],
 			slackoff: ["4L39"],
 			psychicscream: ["4L44"],
+			whirlpool: ["4L1"],
 		},
 	},
 	magnemite: {

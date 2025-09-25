@@ -8981,6 +8981,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zenheadbutt: ["4T", "4L32", "4E"],
 			teleport: ["4L10"],
 			psychicscream: ["4L36"],
+			whirlpool: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 31, gender: "F", nature: "Naive", ivs: {hp: 17, atk: 11, def: 19, spa: 20, spd: 5, spe: 10}, abilities: ["oblivious"], moves: ["watergun", "confusion", "disable", "headbutt"], pokeball: "pokeball"},
@@ -9161,6 +9162,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zenheadbutt: ["4T", "4L32"],
 			teleport: ["4L10"],
 			psychicscream: ["4L44"],
+			whirlpool: ["4L1"],
 		},
 		eventData: [
 			{generation: 6, level: 100, nature: "Quiet", abilities: ["oblivious"], moves: ["scald", "trickroom", "slackoff", "irontail"], pokeball: "cherishball"},
@@ -9377,6 +9379,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			teleport: ["4L10"],
 			slackoff: ["4L39"],
 			psychicscream: ["4L44"],
+			whirlpool: ["4L1"],
 		},
 	},
 	slowkinggalar: {
