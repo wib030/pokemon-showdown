@@ -313,7 +313,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		}
 
 		// Enforce hazard removal on Bulky Support and Hazard Removal if the team doesn't already have it
-		if (['Bulky Support', 'Hazard Removal'].includes(role) && !teamDetails.rapidSpin) {
+		if (['Bulky Support', 'Hazard Removal'].includes(role) && NUMBER_OF_HAZARD_REMOVERS < 1) {
 			if (movePool.includes('rapidspin')) {
 				counter = this.addMove('rapidspin', moves, types, abilities, teamDetails, species, isLead,
 					movePool, preferredType, role);
@@ -397,7 +397,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		}
 
 		// Enforce recovery
-		if (['Bulky Support', 'Bulky Attacker', 'Bulky Setup', 'Hazard Removal', 'Staller'].includes(role)) {
+		if (['Bulky Support', 'Bulky Attacker', 'Bulky Setup', 'Staller'].includes(role)) {
 			const recoveryMoves = movePool.filter(moveid => RECOVERY_MOVES.includes(moveid));
 			if (recoveryMoves.length) {
 				const moveid = this.sample(recoveryMoves);
