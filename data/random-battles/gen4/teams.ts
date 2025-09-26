@@ -674,8 +674,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				checkSets = this.randomSets[checkSpecies.id]["sets"];
 				
 				for (const checkSet of checkSets) {
-					if (['Fast Lead', 'Bulky Lead'].includes(checkSet.role)) ensureLead = true;
+					if (['Fast Lead', 'Bulky Lead'].includes(checkSet.role)) {
+						ensureLead = true;
+						break;
+					}
 				}
+				
+				if (ensureLead) break;
 			}
 		}
 		
