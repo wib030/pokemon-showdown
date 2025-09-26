@@ -2387,7 +2387,7 @@
 				"nature": "Bold"
             },
 			{
-                "role": "Fast Lead",
+                "role": "Fast Support",
                 "movepool": ["leafstorm", "perishsong", "uturn", "recover"],
                 "abilities": ["Natural Cure"],
 				"evs": [160, 0, 0, 228, 0, 120],
