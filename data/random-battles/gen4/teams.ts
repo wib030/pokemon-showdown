@@ -54,7 +54,7 @@ const TEAM_TYPES = [
 let TEAM_TYPE = "Balanced";
 let NUMBER_OF_MONS = 0;
 let NUMBER_OF_LEADS = 0;
-let NUMBER_OF_SPINNERS = 0;
+let NUMBER_OF_HAZARD_REMOVERS = 0;
 
 export class RandomGen4Teams extends RandomGen5Teams {
 	override randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = require('./sets.json');
@@ -312,8 +312,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			}
 		}
 
-		// Enforce hazard removal on Bulky Support and Spinner if the team doesn't already have it
-		if (['Bulky Support', 'Spinner'].includes(role) && !teamDetails.rapidSpin) {
+		// Enforce hazard removal on Bulky Support and Hazard Removal if the team doesn't already have it
+		if (['Bulky Support', 'Hazard Removal'].includes(role) && !teamDetails.rapidSpin) {
 			if (movePool.includes('rapidspin')) {
 				counter = this.addMove('rapidspin', moves, types, abilities, teamDetails, species, isLead,
 					movePool, preferredType, role);
@@ -397,7 +397,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		}
 
 		// Enforce recovery
-		if (['Bulky Support', 'Bulky Attacker', 'Bulky Setup', 'Spinner', 'Staller'].includes(role)) {
+		if (['Bulky Support', 'Bulky Attacker', 'Bulky Setup', 'Hazard Removal', 'Staller'].includes(role)) {
 			const recoveryMoves = movePool.filter(moveid => RECOVERY_MOVES.includes(moveid));
 			if (recoveryMoves.length) {
 				const moveid = this.sample(recoveryMoves);
@@ -675,7 +675,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			TEAM_TYPE = this.sampleIfArray(TEAM_TYPES);
 			NUMBER_OF_MONS = 0;
 			NUMBER_OF_LEADS = 0;
-			NUMBER_OF_SPINNERS = 0;
+			NUMBER_OF_HAZARD_REMOVERS = 0;
 		}
 		let ensureMon = false;
 		let checkSpecies = species;
@@ -695,13 +695,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 					}
 				} while (!ensureMon)
-			} else if (NUMBER_OF_SPINNERS < 1 && (NUMBER_OF_MONS > 3 || this.randomChance(1, 3))) {
+			} else if (NUMBER_OF_HAZARD_REMOVERS < 1 && (NUMBER_OF_MONS > 3 || this.randomChance(1, 3))) {
 				do {
 					checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
 					checkSpecies = this.dex.species.get(checkSpecies);
 					checkSets = this.randomSets[checkSpecies.id]["sets"];
 					for (const checkSet of checkSets) {
-						if (['Spinner'].includes(checkSet.role)) {
+						if (['Hazard Removal'].includes(checkSet.role)) {
 							ensureMon = true;
 						}
 					}
@@ -724,12 +724,12 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		// 'Sun Setter' | 'Rain Setter' | 'Hail Setter' | 'Sand Setter' | 'Sun Attacker' | 'Rain Attacker' |
 		// 'Hail Attacker' | 'Sand Attacker' | 'Fast Lead' | 'Bulky Lead' | 'Trick Scarf' | 'Fast Screens Setter' |
 		// 'Slow Screens Setter' | 'Glass Cannon' | 'Fling Setup' | 'TR Setter' | 'TR Attacker' | 'Baton Passer' |
-		// 'Fast Pivot' | 'Bulky Pivot';
+		// 'Fast Pivot' | 'Bulky Pivot' | 'Hazard Removal';
 		
-		// Check if the Pokemon has a Spinner set
-		let canSpinner = false;
+		// Check if the Pokemon has a Hazard Removal set
+		let canHazardRemover = false;
 		for (const set of sets) {
-			if (NUMBER_OF_SPINNERS < 1 && set.role === 'Spinner') canSpinner = true;
+			if (NUMBER_OF_HAZARD_REMOVERS < 1 && set.role === 'Hazard Removal') canHazardRemover = true;
 		}
 		
 		// Check if the Pokemon has a Lead set
@@ -739,11 +739,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		}
 		
 		for (const set of sets) {
-			// Prevent Spinner if the team already has removal
-			if (NUMBER_OF_SPINNERS > 0 && set.role === 'Spinner') continue;
+			// Prevent Hazard Removal if the team already has removal
+			if (NUMBER_OF_HAZARD_REMOVERS > 0 && set.role === 'Hazard Removal') continue;
 			
-			// Enforce Spinner if the team does not have removal
-			if (canSpinner && set.role !== 'Spinner') continue;
+			// Enforce Hazard Removal if the team does not have removal
+			if (canHazardRemover && set.role !== 'Hazard Removal') continue;
 			
 			// Prevent Lead if the team already has a lead
 			if (NUMBER_OF_LEADS > 0 && ['Fast Lead', 'Bulky Lead'].includes(set.role)) continue;
@@ -758,8 +758,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		if (['Fast Lead', 'Bulky Lead'].includes(role)) {
 			NUMBER_OF_LEADS++;
-		} else if (['Spinner'].includes(role)) {
-			NUMBER_OF_SPINNERS++;
+		} else if (['Hazard Removal'].includes(role)) {
+			NUMBER_OF_HAZARD_REMOVERS++;
 		}
 		
 		NUMBER_OF_MONS++;

@@ -135,7 +135,7 @@
         "level": 85,
         "sets": [
             {
-                "role": "Spinner",
+                "role": "Hazard Removal",
                 "movepool": ["icebeam", "rapidspin", "rest", "roar", "surf", "toxic"],
                 "abilities": ["Torrent"]
             },
@@ -247,7 +247,7 @@
         "level": 89,
         "sets": [
             {
-                "role": "Spinner",
+                "role": "Hazard Removal",
                 "movepool": ["earthquake", "nightslash", "rapidspin", "stealthrock", "stoneedge", "toxic"],
                 "abilities": ["Sand Veil"]
             },
@@ -636,7 +636,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Spinner",
+                "role": "Hazard Removal",
                 "movepool": ["iciclespear", "clamp", "screech", "rapidspin"],
                 "abilities": ["Skill Link"],
 				"evs": [252, 168, 0, 0, 48, 40],
@@ -809,7 +809,7 @@
         "level": 86,
         "sets": [
             {
-                "role": "Spinner",
+                "role": "Hazard Removal",
                 "movepool": ["closecombat", "drainpunch", "icepunch", "machpunch", "rapidspin", "stoneedge"],
                 "abilities": ["Iron Fist"]
             },
@@ -1042,7 +1042,7 @@
         "level": 83,
         "sets": [
             {
-                "role": "Spinner",
+                "role": "Hazard Removal",
                 "movepool": ["aquajet", "rapidspin", "stealthrock", "stoneedge", "superpower", "waterfall"],
                 "abilities": ["Battle Armor", "Swift Swim"]
             },
@@ -2003,7 +2003,7 @@
         "level": 84,
         "sets": [
             {
-                "role": "Spinner",
+                "role": "Hazard Removal",
                 "movepool": ["earthquake", "iceshard", "rapidspin", "stealthrock", "stoneedge", "toxic"],
                 "abilities": ["Sturdy"],
                 "preferredTypes": ["Rock"]
@@ -3673,7 +3673,7 @@
 				"nature": "Careful"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Hazard Removal",
                 "movepool": ["dragontail", "defog", "willowisp", "roost"],
                 "abilities": ["Tangling Cotton"],
 				"evs": [252, 0, 0, 0, 192, 64],
@@ -3691,7 +3691,7 @@
 				"nature": "Careful"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Hazard Removal",
                 "movepool": ["hurricane", "defog", "willowisp", "roost"],
                 "abilities": ["Tangling Cotton"],
 				"evs": [252, 0, 0, 0, 192, 64],
@@ -3718,7 +3718,7 @@
 				"nature": "Calm"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "Hazard Removal",
                 "movepool": ["dracometeor", "hurricane", "defog", "roost"],
                 "abilities": ["Tangling Cotton"],
 				"evs": [252, 0, 0, 100, 92, 64],
@@ -3950,7 +3950,7 @@
         "level": 85,
         "sets": [
             {
-                "role": "Spinner",
+                "role": "Hazard Removal",
                 "movepool": ["earthquake", "rapidspin", "stealthrock", "stoneedge", "toxic", "xscissor"],
                 "abilities": ["Battle Armor"]
             },
@@ -4832,7 +4832,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Hazard Removal",
                 "movepool": ["hurricane", "bugbuzz", "uturn", "defog"],
                 "abilities": ["Tinted Lens"],
                 "evs": [0, 8, 0, 252, 0, 248],
