@@ -725,10 +725,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const set = this.sampleIfArray(possibleSets);
 		const role = set.role;
 		
-		if (['Fast Lead', 'Bulky Lead'].includes(role)) {
-			teamDetails.lead++;
-		}
-		
 		const movePool: string[] = Array.from(set.movepool);
 		const preferredTypes = set.preferredTypes;
 		const preferredType = this.sampleIfArray(preferredTypes) || '';
