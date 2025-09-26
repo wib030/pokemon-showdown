@@ -660,20 +660,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const forme = this.getForme(species);
 		const sets = this.randomSets[species.id]["sets"];
 		const possibleSets = [];
-		// Check if the Pokemon has a Spinner set
-		let canSpinner = false;
-		for (const set of sets) {
-			if (!teamDetails.rapidSpin && set.role === 'Spinner') canSpinner = true;
-		}
-		for (const set of sets) {
-			// Prevent Spinner if the team already has removal
-			if (teamDetails.rapidSpin && set.role === 'Spinner') continue;
-			// Enforce Spinner if the team does not have removal
-			if (canSpinner && set.role !== 'Spinner') continue;
-			possibleSets.push(set);
-		}
-		const set = this.sampleIfArray(possibleSets);
-		const role = set.role;
 		
 		// List of roles (found in pokemon-showdown\sim\global-types.ts)
 		// '' | 'Fast Attacker' | 'Setup Sweeper' | 'Wallbreaker' | 'Tera Blast user' |
@@ -685,6 +671,40 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		// 'Hail Attacker' | 'Sand Attacker' | 'Fast Lead' | 'Bulky Lead' | 'Trick Scarf' | 'Fast Screens Setter' |
 		// 'Slow Screens Setter' | 'Glass Cannon' | 'Fling Setup' | 'TR Setter' | 'TR Attacker' | 'Baton Passer' |
 		// 'Fast Pivot' | 'Bulky Pivot';
+		
+		// Check if the Pokemon has a Spinner set
+		let canSpinner = false;
+		for (const set of sets) {
+			if (!teamDetails.rapidSpin && set.role === 'Spinner') canSpinner = true;
+		}
+		
+		// Check if the Pokemon has a Lead set
+		let canLead = false;
+		for (const set of sets) {
+			if (!teamDetails.lead && ['Fast Lead', 'Bulky Lead'].includes(set.role)) canLead = true;
+		}
+		
+		for (const set of sets) {
+			// Prevent Spinner if the team already has removal
+			if (teamDetails.rapidSpin && set.role === 'Spinner') continue;
+			
+			// Enforce Spinner if the team does not have removal
+			if (canSpinner && set.role !== 'Spinner') continue;
+			
+			// Prevent Lead if the team already has more than 1 lead
+			if (teamDetails.lead > 1 && ['Fast Lead', 'Bulky Lead'].includes(set.role)) continue;
+			
+			// Enforce Lead if the team does not have one
+			if (canLead && !['Fast Lead', 'Bulky Lead'].includes(set.role)) continue;
+			
+			possibleSets.push(set);
+		}
+		const set = this.sampleIfArray(possibleSets);
+		const role = set.role;
+		
+		if (['Fast Lead', 'Bulky Lead'].includes(role)) {
+			teamDetails.lead++;
+		}
 		
 		const movePool: string[] = Array.from(set.movepool);
 		const preferredTypes = set.preferredTypes;
