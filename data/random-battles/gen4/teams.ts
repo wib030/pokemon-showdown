@@ -668,7 +668,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		if (!teamDetails.lead) {
 			while (ensureLead === false) {
-				checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
+				checkSpecies = this.sampleIfArray(["gyarados", "azelf",]);
 				checkSpecies = this.dex.species.get(checkSpecies);
 				
 				checkSets = this.randomSets[checkSpecies.id]["sets"];
