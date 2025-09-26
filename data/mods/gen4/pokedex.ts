@@ -1085,16 +1085,16 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	bulbasaur: {
 		inherit: true,
-		abilities: {0: "Water Absorb"},
+		abilities: {0: "Water Absorb", 1: "Overgrow"},
 	},
 	ivysaur: {
 		inherit: true,
-		abilities: {0: "Water Absorb"},
+		abilities: {0: "Water Absorb", 1: "Overgrow"},
 	},
 	venusaur: {
 		inherit: true,
 		baseStats: {hp: 100, atk: 92, def: 83, spa: 100, spd: 100, spe: 90},
-		abilities: {0: "Water Absorb"},
+		abilities: {0: "Water Absorb", 1: "Chlorophyll"},
 	},
 	vespiquen: {
 		inherit: true,
