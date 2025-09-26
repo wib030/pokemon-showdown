@@ -26,6 +26,11 @@ const HAZARDS = [
 	'spikes', 'stealthrock', 'toxicspikes',
 ];
 
+// List of species we can pull from because theres no way to easily check it!!!
+const SPECIES_WITH_SETS = [
+	"venusaur", "charizard", "blastoise", "butterfree", "beedrill", "pidgeot", "raticate", "fearow", "arbok", "pikachu", "raichu", "sandslash", "nidoqueen", "nidoking", "clefable", "ninetales", "wigglytuff", "vileplume", "parasect", "venomoth", "dugtrio", "persian", "golduck", "primeape", "arcanine", "poliwrath", "alakazam", "machamp", "victreebel", "tentacruel", "golem", "rapidash", "slowbro", "farfetchd", "dodrio", "dewgong", "muk", "cloyster", "gengar", "hypno", "kingler", "electrode", "exeggutor", "marowak", "hitmonlee", "hitmonchan", "weezing", "kangaskhan", "seaking", "starmie", "mrmime", "scyther", "jynx", "pinsir", "tauros", "gyarados", "lapras", "ditto", "vaporeon", "jolteon", "flareon", "omastar", "kabutops", "aerodactyl", "snorlax", "articuno", "zapdos", "moltres", "dragonite", "mewtwo", "mew", "meganium", "typhlosion", "feraligatr", "furret", "noctowl", "ledian", "ariados", "crobat", "lanturn", "xatu", "ampharos", "bellossom", "azumarill", "sudowoodo", "politoed", "jumpluff", "sunflora", "quagsire", "espeon", "umbreon", "slowking", "unown", "wobbuffet", "girafarig", "forretress", "dunsparce", "steelix", "granbull", "qwilfish", "scizor", "shuckle", "heracross", "ursaring", "magcargo", "corsola", "octillery", "delibird", "mantine", "skarmory", "houndoom", "kingdra", "donphan", "porygon2", "stantler", "smeargle", "hitmontop", "miltank", "blissey", "raikou", "entei", "suicune", "tyranitar", "lugia", "hooh", "celebi", "sceptile", "blaziken", "swampert", "mightyena", "linoone", "beautifly", "dustox", "ludicolo", "shiftry", "swellow", "pelipper", "gardevoir", "masquerain", "breloom", "vigoroth", "slaking", "ninjask", "shedinja", "exploud", "hariyama", "delcatty", "sableye", "mawile", "aggron", "medicham", "manectric", "plusle", "minun", "volbeat", "illumise", "swalot", "sharpedo", "wailord", "camerupt", "torkoal", "grumpig", "spinda", "flygon", "cacturne", "altaria", "zangoose", "seviper", "lunatone", "solrock", "whiscash", "crawdaunt", "claydol", "cradily", "armaldo", "milotic", "castform", "kecleon", "banette", "tropius", "chimecho", "absol", "glalie", "walrein", "huntail", "gorebyss", "relicanth", "luvdisc", "salamence", "metagross", "regirock", "regice", "registeel", "latias", "latios", "kyogre", "groudon", "rayquaza", "jirachi", "deoxys", "deoxysattack", "deoxysdefense", "deoxysspeed", "torterra", "infernape", "empoleon", "staraptor", "bibarel", "kricketune", "luxray", "roserade", "rampardos", "bastiodon", "wormadam", "wormadamsandy", "wormadamtrash", "mothim", "vespiquen", "pachirisu", "floatzel", "cherrim", "gastrodon", "ambipom", "drifblim", "lopunny", "mismagius", "honchkrow", "purugly", "skuntank", "bronzong", "chatot", "spiritomb", "garchomp", "lucario", "hippowdon", "drapion", "toxicroak", "carnivine", "lumineon", "abomasnow", "weavile", "magnezone", "lickilicky", "rhyperior", "tangrowth", "electivire", "magmortar", "togekiss", "yanmega", "leafeon", "glaceon", "gliscor", "mamoswine", "porygonz", "gallade", "probopass", "dusknoir", "froslass", "rotom", "rotomheat", "rotomwash", "rotomfrost", "rotomfan", "rotommow", "uxie", "mesprit", "azelf", "dialga", "palkia", "heatran", "regigigas", "giratinaorigin", "giratina", "cresselia", "phione", "manaphy", "darkrai", "shaymin", "shayminsky", "arceus", "arceusbug", "arceusdark", "arceusdragon", "arceuselectric", "arceusfighting", "arceusfire", "arceusflying", "arceusghost", "arceusgrass", "arceusground", "arceusice", "arceuspoison", "arceuspsychic", "arceusrock", "arceussteel", "arceuswater",
+];
+
 // Moves that should be paired together when possible
 const MOVE_PAIRS = [
 	['lightscreen', 'reflect'],
@@ -656,8 +661,25 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		teamDetails: RandomTeamsTypes.TeamDetails = {},
 		isLead = false
 	): RandomTeamsTypes.RandomSet {
-		species = 'Venusaur';
-		species = this.dex.species.get(species);
+		let ensureLead = false;
+		let checkSpecies = species;
+		let checkSets;
+		checkSpecies = this.dex.species.get(checkSpecies);
+		
+		if (!teamDetails.lead) {
+			while (ensureLead === false) {
+				checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
+				checkSpecies = this.dex.species.get(checkSpecies);
+				
+				checkSets = this.randomSets[checkSpecies.id]["sets"];
+				
+				for (const checkSet of checkSets) {
+					if (['Fast Lead', 'Bulky Lead'].includes(checkSet.role)) ensureLead = true;
+				}
+			}
+		}
+		
+		species = checkSpecies;
 		const forme = this.getForme(species);
 		const sets = this.randomSets[species.id]["sets"];
 		const possibleSets = [];
