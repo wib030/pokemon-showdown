@@ -715,10 +715,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (canSpinner && set.role !== 'Spinner') continue;
 			
 			// Prevent Lead if the team already has more than 1 lead
-			if (teamDetails.lead > 1 && ['Fast Lead', 'Bulky Lead'].includes(set.role)) continue;
+			//if (teamDetails.lead > 1 && ['Fast Lead', 'Bulky Lead'].includes(set.role)) continue;
 			
 			// Enforce Lead if the team does not have one
-			if (canLead && !['Fast Lead', 'Bulky Lead'].includes(set.role)) continue;
+			//if (canLead && !['Fast Lead', 'Bulky Lead'].includes(set.role)) continue;
 			
 			possibleSets.push(set);
 		}
