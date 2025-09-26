@@ -1,24 +1,123 @@
 {
     "venusaur": {
-        "level": 83,
+        "level": 100,
         "sets": [
             {
                 "role": "Staller",
-                "movepool": ["leechseed", "powerwhip", "sleeppowder", "sludgebomb", "substitute"],
-                "abilities": ["Overgrow"],
-				"evs": [252, 0, 252, 0, 0, 0],
-				"ivs": [31, 0, 31, 31, 31, 31],
-				"item": "Black Glasses",
-				"nature": "Bold"
+                "movepool": ["gigadrain", "earthquake", "leechseed", "protect"],
+                "abilities": ["Water Absorb"],
+				"evs": [252, 4, 148, 0, 4, 100],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Naughty"
             },
-            {
+			{
+                "role": "Staller",
+                "movepool": ["gigadrain", "earthquake", "leechseed", "protect"],
+                "abilities": ["Water Absorb"],
+				"evs": [252, 4, 148, 0, 4, 100],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Big Root",
+				"nature": "Naughty"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["gigadrain", "earthquake", "leechseed", "substitute"],
+                "abilities": ["Water Absorb"],
+				"evs": [252, 4, 148, 0, 4, 100],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Naughty"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["gigadrain", "earthquake", "toxic", "protect"],
+                "abilities": ["Water Absorb"],
+				"evs": [252, 4, 148, 0, 4, 100],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Naughty"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["gigadrain", "earthquake", "toxic", "synthesis"],
+                "abilities": ["Water Absorb"],
+				"evs": [252, 4, 148, 0, 4, 100],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Naughty"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["gigadrain", "earthquake", "toxic", "leechseed"],
+                "abilities": ["Water Absorb"],
+				"evs": [252, 4, 148, 0, 4, 100],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Naughty"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["powerwhip", "earthquake", "knockoff", "swordsdance"],
+                "abilities": ["Water Absorb"],
+				"evs": [40, 252, 0, 0, 0, 216],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["leafstorm", "sludgebomb", "earthquake", "leechseed"],
+                "abilities": ["Water Absorb"],
+				"evs": [0, 92, 0, 200, 0, 216],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Naive"
+            },
+			{
                 "role": "Bulky Attacker",
-                "movepool": ["earthquake", "leafstorm", "sleeppowder", "sludgebomb", "synthesis"],
-                "abilities": ["Overgrow"],
-				"evs": [252, 0, 252, 0, 0, 0],
-				"ivs": [31, 0, 31, 31, 31, 31],
-				"item": "Black Glasses",
-				"nature": "Bold"
+                "movepool": ["gigadrain", "sludgebomb", "earthquake", "knockoff"],
+                "abilities": ["Water Absorb"],
+				"evs": [252, 4, 148, 0, 4, 100],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Naughty"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["solarbeam", "earthquake", "growth", "sunnyday"],
+                "abilities": ["Chlorophyll"],
+				"evs": [0, 92, 0, 200, 0, 216],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Naive"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["solarbeam", "sludgebomb", "earthquake", "growth"],
+                "abilities": ["Chlorophyll"],
+				"evs": [0, 92, 0, 200, 0, 216],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Naive"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["leafstorm", "sludgebomb", "earthquake", "growth"],
+                "abilities": ["Chlorophyll"],
+				"evs": [0, 92, 0, 200, 0, 216],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Naive"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["solarbeam", "earthquake", "growth", "synthesis"],
+                "abilities": ["Chlorophyll"],
+				"evs": [0, 92, 0, 200, 0, 216],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Naive"
             }
         ]
     },
@@ -492,7 +591,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Fast Support",
+                "role": "Fast Lead",
                 "movepool": ["iciclespear", "rockblast", "rapidspin", "toxicspikes"],
                 "abilities": ["Skill Link"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -501,7 +600,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Lead",
                 "movepool": ["iciclespear", "rockblast", "spikecannon", "rapidspin"],
                 "abilities": ["Skill Link"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -510,7 +609,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Lead",
                 "movepool": ["iciclespear", "rockblast", "spikecannon", "rapidspin"],
                 "abilities": ["Skill Link"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -519,7 +618,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Lead",
                 "movepool": ["iciclespear", "waterfall", "spikecannon", "explosion"],
                 "abilities": ["Skill Link"],
 				"evs": [252, 0, 0, 0, 252, 4],
@@ -528,7 +627,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Lead",
                 "movepool": ["iciclespear", "waterfall", "spikecannon", "rapidspin"],
                 "abilities": ["Skill Link"],
 				"evs": [252, 28, 0, 0, 188, 40],
@@ -537,7 +636,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Spinner",
                 "movepool": ["iciclespear", "clamp", "screech", "rapidspin"],
                 "abilities": ["Skill Link"],
 				"evs": [252, 168, 0, 0, 48, 40],
@@ -546,7 +645,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Hail Attacker",
                 "movepool": ["hailcannon", "waterfall", "rapidspin", "hail"],
                 "abilities": ["Slush Rush"],
 				"evs": [80, 252, 0, 0, 0, 176],
@@ -555,7 +654,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "Hail Attacker",
                 "movepool": ["hailcannon", "waterfall", "explosion", "hail"],
                 "abilities": ["Slush Rush"],
 				"evs": [148, 252, 0, 0, 0, 108],
@@ -564,7 +663,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Lead",
                 "movepool": ["iciclespear", "spikecannon", "rapidspin", "toxicspikes"],
                 "abilities": ["Skill Link"],
 				"evs": [252, 16, 0, 0, 152, 88],
@@ -573,7 +672,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["iciclespear", "waterfall", "iceshard", "explosion"],
                 "abilities": ["Skill Link"],
 				"evs": [4, 252, 0, 0, 0, 252],
@@ -582,7 +681,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["iciclespear", "waterfall", "rockblast", "explosion"],
                 "abilities": ["Skill Link"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -958,7 +1057,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Fast Support",
+                "role": "Fast Lead",
                 "movepool": ["taunt", "stealthrock", "stoneedge", "earthquake"],
                 "abilities": ["Pressure"],
 				"evs": [0, 252, 4, 0, 0, 252],
@@ -967,7 +1066,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Lead",
                 "movepool": ["taunt", "stealthrock", "stoneedge", "dualwingbeat"],
                 "abilities": ["Pressure"],
 				"evs": [0, 252, 4, 0, 0, 252],
@@ -976,7 +1075,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Lead",
                 "movepool": ["defog", "stealthrock", "stoneedge", "earthquake"],
                 "abilities": ["Pressure"],
 				"evs": [0, 252, 4, 0, 0, 252],
@@ -985,7 +1084,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Lead",
                 "movepool": ["defog", "stealthrock", "dualwingbeat", "crunch"],
                 "abilities": ["Pressure"],
 				"evs": [0, 252, 4, 0, 0, 252],
@@ -1003,7 +1102,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["dualwingbeat", "stoneedge", "crunch", "earthquake"],
                 "abilities": ["Pressure"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -1091,7 +1190,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Lead",
                 "movepool": ["dragontail", "stealthrock", "toxic", "roost"],
                 "abilities": ["Multiscale"],
                 "evs": [252, 236, 20, 0, 0, 0],
@@ -1136,7 +1235,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["outrage", "earthquake", "firepunch", "extremespeed"],
                 "abilities": ["Multiscale"],
                 "evs": [4, 252, 0, 0, 0, 252],
@@ -1330,7 +1429,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Bulky Attacker",
+                "role": "Bulky Pivot",
                 "movepool": ["dracometeor", "thunderwave", "voltswitch", "morningsun"],
                 "abilities": ["Mold Breaker"],
 				"evs": [248, 0, 168, 56, 36, 0],
@@ -1366,7 +1465,7 @@
 				"nature": "Bold"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "Bulky Pivot",
                 "movepool": ["dracometeor", "voltswitch", "reflect", "morningsun"],
                 "abilities": ["Mold Breaker"],
 				"evs": [248, 0, 168, 56, 36, 0],
@@ -1375,7 +1474,7 @@
 				"nature": "Bold"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "Bulky Pivot",
                 "movepool": ["dracometeor", "voltswitch", "lightscreen", "morningsun"],
                 "abilities": ["Mold Breaker"],
 				"evs": [248, 0, 108, 56, 56, 0],
@@ -1384,7 +1483,7 @@
 				"nature": "Bold"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Bulky Attacker",
                 "movepool": ["dracometeor", "thunder", "voltswitch", "focusblast"],
                 "abilities": ["Mold Breaker"],
 				"evs": [252, 0, 0, 252, 4, 0],
@@ -1393,7 +1492,7 @@
 				"nature": "Modest"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Bulky Attacker",
                 "movepool": ["dracometeor", "thunderbolt", "voltswitch", "focusblast"],
                 "abilities": ["Mold Breaker"],
 				"evs": [252, 0, 0, 252, 4, 0],
@@ -1402,7 +1501,7 @@
 				"nature": "Modest"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Bulky Attacker",
                 "movepool": ["dracometeor", "hiddenpowerice", "voltswitch", "focusblast"],
                 "abilities": ["Mold Breaker"],
 				"evs": [252, 0, 0, 252, 4, 0],
@@ -1447,7 +1546,7 @@
 				"nature": "Calm"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Pivot",
                 "movepool": ["dracometeor", "voltswitch", "hiddenpowerice", "focusblast"],
                 "abilities": ["Mold Breaker"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -1456,7 +1555,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Pivot",
                 "movepool": ["dracometeor", "voltswitch", "hiddenpowergrass", "focusblast"],
                 "abilities": ["Mold Breaker"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -1465,7 +1564,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "Bulky Pivot",
                 "movepool": ["dracometeor", "thunder", "voltswitch", "focusblast"],
                 "abilities": ["Mold Breaker"],
 				"evs": [248, 0, 0, 128, 132, 0],
@@ -1474,7 +1573,7 @@
 				"nature": "Calm"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "Bulky Screens Setter",
                 "movepool": ["voltswitch", "reflect", "lightscreen", "morningsun"],
                 "abilities": ["Mold Breaker"],
 				"evs": [248, 0, 164, 0, 96, 0],
@@ -1483,7 +1582,7 @@
 				"nature": "Bold"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "TR Attacker",
                 "movepool": ["dracometeor", "voltswitch", "focusblast", "fling"],
                 "abilities": ["Mold Breaker"],
 				"evs": [248, 0, 0, 164, 96, 0],
@@ -2279,7 +2378,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Lead",
                 "movepool": ["grassknot", "stealthrock", "uturn", "recover"],
                 "abilities": ["Natural Cure"],
 				"evs": [240, 0, 148, 0, 0, 120],
@@ -2288,7 +2387,7 @@
 				"nature": "Bold"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Lead",
                 "movepool": ["leafstorm", "perishsong", "uturn", "recover"],
                 "abilities": ["Natural Cure"],
 				"evs": [160, 0, 0, 228, 0, 120],
@@ -2369,7 +2468,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Fast Support",
+                "role": "Baton Passer",
                 "movepool": ["psychic", "substitute", "recover", "batonpass"],
                 "abilities": ["Natural Cure"],
 				"evs": [252, 0, 0, 0, 136, 120],
@@ -2378,7 +2477,7 @@
 				"nature": "Calm"
             },
 			{
-                "role": "Fast Support",
+                "role": "Baton Passer",
                 "movepool": ["gigadrain", "substitute", "recover", "batonpass"],
                 "abilities": ["Natural Cure"],
 				"evs": [252, 0, 0, 0, 136, 120],
@@ -2396,7 +2495,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Screens Setter",
                 "movepool": ["leafstorm", "reflect", "lightscreen", "healingwish"],
                 "abilities": ["Natural Cure"],
 				"evs": [240, 0, 148, 0, 0, 120],
@@ -2405,7 +2504,7 @@
 				"nature": "Bold"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Screens Setter",
                 "movepool": ["leafstorm", "reflect", "lightscreen", "healingwish"],
                 "abilities": ["Natural Cure"],
 				"evs": [12, 0, 0, 244, 0, 252],
@@ -2414,7 +2513,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Fast Support",
+                "role": "Baton Passer",
                 "movepool": ["psychic", "grassknot", "substitute", "batonpass"],
                 "abilities": ["Natural Cure"],
 				"evs": [252, 0, 0, 4, 0, 252],
@@ -2423,7 +2522,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["leafstorm", "psychic", "earthpower", "uturn"],
                 "abilities": ["Natural Cure"],
 				"evs": [252, 0, 0, 0, 4, 252],
@@ -2432,7 +2531,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["leafstorm", "psychic", "hiddenpowerfire", "uturn"],
                 "abilities": ["Natural Cure"],
 				"evs": [252, 0, 0, 0, 4, 252],
@@ -2450,7 +2549,7 @@
 				"nature": "Calm"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Lead",
                 "movepool": ["gigadrain", "uturn", "recover", "stealthrock"],
                 "abilities": ["Natural Cure"],
 				"evs": [252, 0, 88, 0, 48, 120],
@@ -2459,7 +2558,7 @@
 				"nature": "Calm"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Choice Trick",
                 "movepool": ["leafstorm", "psychic", "earthpower", "trick"],
                 "abilities": ["Natural Cure"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -2468,7 +2567,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Choice Trick",
                 "movepool": ["leafstorm", "psychic", "hiddenpowerfire", "trick"],
                 "abilities": ["Natural Cure"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -2477,7 +2576,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Choice Trick",
                 "movepool": ["leafstorm", "psychic", "hiddenpowerice", "trick"],
                 "abilities": ["Natural Cure"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -2486,7 +2585,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Choice Trick",
                 "movepool": ["leafstorm", "psychic", "hiddenpowerfire", "trick"],
                 "abilities": ["Natural Cure"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -2495,7 +2594,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Choice Trick",
                 "movepool": ["leafstorm", "psychic", "hiddenpowerice", "trick"],
                 "abilities": ["Natural Cure"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -2504,7 +2603,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Choice Trick",
                 "movepool": ["leafstorm", "psychic", "earthpower", "trick"],
                 "abilities": ["Natural Cure"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -2513,7 +2612,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Fast Support",
+                "role": "Baton Passer",
                 "movepool": ["psychic", "gigadrain", "calmmind", "batonpass"],
                 "abilities": ["Natural Cure"],
 				"evs": [240, 0, 40, 0, 108, 120],
@@ -2522,7 +2621,7 @@
 				"nature": "Calm"
             },
 			{
-                "role": "Fast Support",
+                "role": "TR Setter",
                 "movepool": ["leafstorm", "psychic", "healingwish", "trickroom"],
                 "abilities": ["Natural Cure"],
 				"evs": [240, 0, 148, 0, 0, 120],
@@ -2531,7 +2630,7 @@
 				"nature": "Bold"
             },
 			{
-                "role": "Fast Support",
+                "role": "Baton Passer",
                 "movepool": ["psychic", "gigadrain", "fling", "batonpass"],
                 "abilities": ["Natural Cure"],
 				"evs": [0, 4, 0, 252, 0, 252],
@@ -2558,7 +2657,7 @@
 				"nature": "Calm"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Lead",
                 "movepool": ["futuresight", "stealthrock", "uturn", "recover"],
                 "abilities": ["Natural Cure"],
 				"evs": [240, 0, 40, 0, 108, 120],
@@ -2576,7 +2675,7 @@
 				"nature": "Calm"
             },
 			{
-                "role": "Fast Support",
+                "role": "Baton Passer",
                 "movepool": ["leafstorm", "substitute", "swordsdance", "batonpass"],
                 "abilities": ["Natural Cure"],
 				"evs": [252, 0, 0, 136, 0, 120],
@@ -2767,7 +2866,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
+                "role": "Setup Sweeper",
                 "movepool": ["bulletseed", "machpunch", "rocktomb", "swordsdance"],
                 "abilities": ["Technician"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -2776,7 +2875,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Fling Setup",
                 "movepool": ["bulletseed", "forcepalm", "rocktomb", "fling"],
                 "abilities": ["Technician"],
 				"evs": [0, 252, 4, 0, 0, 252],
@@ -2785,7 +2884,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Fling Setup",
                 "movepool": ["bulletseed", "machpunch", "rocktomb", "fling"],
                 "abilities": ["Technician"],
 				"evs": [0, 252, 4, 0, 0, 252],
@@ -2839,7 +2938,7 @@
 				"nature": "Careful"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["forcepalm", "bulletseed", "rocktomb", "thunderpunch"],
                 "abilities": ["Technician"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -2857,7 +2956,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["bulletseed", "machpunch", "rocktomb", "focuspunch"],
                 "abilities": ["Technician"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -2926,7 +3025,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["hyperbeam", "icebeam", "hiddenpowerelectric", "fireblast"],
                 "abilities": ["Relentless"],
 				"evs": [0, 0, 32, 252, 0, 224],
@@ -2935,7 +3034,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["hyperbeam", "icebeam", "shadowball", "focusblast"],
                 "abilities": ["Relentless"],
 				"evs": [0, 0, 32, 252, 0, 224],
@@ -2944,7 +3043,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["hyperbeam", "focusblast", "extrasensory", "taunt"],
                 "abilities": ["Relentless"],
 				"evs": [0, 0, 20, 252, 0, 236],
@@ -2953,7 +3052,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["hyperbeam", "fireblast", "focusblast", "taunt"],
                 "abilities": ["Relentless"],
 				"evs": [0, 0, 20, 252, 0, 236],
@@ -2962,7 +3061,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["hyperbeam", "shadowball", "extrasensory", "fireblast"],
                 "abilities": ["Relentless"],
 				"evs": [0, 0, 24, 252, 0, 232],
@@ -2971,7 +3070,7 @@
 				"nature": "Modest"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["hyperbeam", "shadowball", "extrasensory", "focusblast"],
                 "abilities": ["Relentless"],
 				"evs": [0, 0, 24, 252, 0, 232],
@@ -2980,7 +3079,7 @@
 				"nature": "Modest"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Glass Cannon",
                 "movepool": ["hyperbeam", "shadowball", "extrasensory", "overheat"],
                 "abilities": ["Relentless"],
 				"evs": [0, 0, 72, 252, 0, 184],
@@ -2989,7 +3088,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Glass Cannon",
                 "movepool": ["hyperbeam", "shadowball", "extrasensory", "focusblast"],
                 "abilities": ["Relentless"],
 				"evs": [0, 0, 72, 252, 0, 184],
@@ -2998,7 +3097,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["hyperbeam", "shadowball", "fireblast", "focusblast"],
                 "abilities": ["Relentless"],
 				"evs": [0, 0, 32, 252, 0, 224],
@@ -3007,7 +3106,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["hyperbeam", "shadowball", "overheat", "focusblast"],
                 "abilities": ["Relentless"],
 				"evs": [0, 0, 32, 252, 0, 224],
@@ -3016,7 +3115,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["hyperbeam", "fireblast", "rest", "sleeptalk"],
                 "abilities": ["Relentless"],
 				"evs": [0, 0, 24, 252, 0, 232],
@@ -3091,7 +3190,7 @@
 				"nature": "Impish"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Baton Passer",
                 "movepool": ["nightshade", "wish", "protect", "batonpass"],
                 "abilities": ["Aftermath"],
 				"evs": [252, 0, 204, 0, 52, 0],
@@ -3100,7 +3199,7 @@
 				"nature": "Impish"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Baton Passer",
                 "movepool": ["nightshade", "substitute", "protect", "batonpass"],
                 "abilities": ["Aftermath"],
 				"evs": [252, 0, 204, 0, 52, 0],
@@ -3109,7 +3208,7 @@
 				"nature": "Impish"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Baton Passer",
                 "movepool": ["chargebeam", "wish", "protect", "batonpass"],
                 "abilities": ["Normalize"],
 				"evs": [252, 0, 204, 0, 52, 0],
@@ -3148,7 +3247,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
+                "role": "Staller",
                 "movepool": ["irontail", "spite", "block", "rest"],
                 "abilities": ["Filter"],
                 "evs": [252, 0, 4, 0, 252, 0],
@@ -3157,7 +3256,7 @@
 				"nature": "Careful"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Setup",
                 "movepool": ["irontail", "earthquake", "spite", "curse"],
                 "abilities": ["Filter"],
                 "evs": [252, 4, 0, 0, 252, 0],
@@ -3166,7 +3265,7 @@
 				"nature": "Careful"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Lead",
                 "movepool": ["dragontail", "taunt", "metalburst", "stealthrock"],
                 "abilities": ["Filter"],
                 "evs": [252, 4, 0, 0, 252, 0],
@@ -3220,7 +3319,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Lead",
                 "movepool": ["dragontail", "toxic", "substitute", "stealthrock"],
                 "abilities": ["Filter"],
                 "evs": [252, 0, 4, 0, 252, 0],
@@ -3247,7 +3346,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Bulky Attacker",
                 "movepool": ["ironhead", "earthquake", "stoneedge", "hailcannon"],
                 "abilities": ["Filter"],
                 "evs": [252, 252, 0, 0, 4, 0],
@@ -3256,7 +3355,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Lead",
                 "movepool": ["dragontail", "toxic", "metalburst", "stealthrock"],
                 "abilities": ["Filter"],
                 "evs": [252, 4, 0, 0, 252, 0],
@@ -3394,7 +3493,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["earthpower", "fireblast", "firechase", "ancientpower"],
                 "abilities": ["Sheer Force"],
 				"evs": [252, 0, 0, 252, 4, 0],
@@ -3403,7 +3502,7 @@
 				"nature": "Modest"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["earthpower", "fireblast", "firechase", "hiddenpowerelectric"],
                 "abilities": ["Sheer Force"],
 				"evs": [252, 0, 0, 252, 4, 0],
@@ -3412,7 +3511,7 @@
 				"nature": "Modest"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["earthpower", "fireblast", "firechase", "hiddenpowerice"],
                 "abilities": ["Sheer Force"],
 				"evs": [252, 0, 0, 252, 4, 0],
@@ -3421,7 +3520,7 @@
 				"nature": "Modest"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["overheat", "earthpower", "stealthrock", "explosion"],
                 "abilities": ["Sheer Force"],
 				"evs": [252, 4, 0, 252, 0, 0],
@@ -3430,7 +3529,7 @@
 				"nature": "Quiet"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["overheat", "earthpower", "stealthrock", "firechase"],
                 "abilities": ["Sheer Force"],
 				"evs": [252, 0, 4, 252, 0, 0],
@@ -3439,7 +3538,7 @@
 				"nature": "Quiet"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["fireblast", "earthpower", "stealthrock", "firechase"],
                 "abilities": ["Sheer Force"],
 				"evs": [252, 0, 4, 252, 0, 0],
@@ -3448,7 +3547,7 @@
 				"nature": "Quiet"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["fireblast", "earthpower", "solarbeam", "substitute"],
                 "abilities": ["Sheer Force"],
 				"evs": [248, 0, 0, 252, 8, 0],
@@ -3457,7 +3556,7 @@
 				"nature": "Modest"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["fireblast", "earthpower", "solarbeam", "yawn"],
                 "abilities": ["Sheer Force"],
 				"evs": [248, 0, 0, 252, 8, 0],
@@ -3466,7 +3565,7 @@
 				"nature": "Modest"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["earthpower", "heatwave", "rockslide", "firechase"],
                 "abilities": ["Sheer Force"],
 				"evs": [252, 4, 0, 252, 0, 0],
@@ -3763,7 +3862,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Setup Sweeper",
+                "role": "Bulky Setup",
                 "movepool": ["aquajet", "crabhammer", "knockoff", "swordsdance"],
                 "abilities": ["Adaptability"],
 				"evs": [252, 252, 0, 0, 4, 0],
@@ -3781,7 +3880,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["aquajet", "crabhammer", "knockoff", "superpower"],
                 "abilities": ["Adaptability"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -3808,7 +3907,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["aquajet", "chumrush", "knockoff", "superpower"],
                 "abilities": ["Adaptability"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -3817,7 +3916,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Rain Attacker",
                 "movepool": ["aquajet", "chumrush", "knockoff", "fling"],
                 "abilities": ["Adaptability"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -3890,7 +3989,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["hurricane", "flamethrower", "thunderbolt", "icebeam"],
                 "abilities": ["Forecast"],
 				"evs": [0, 0, 4, 252, 0, 252],
@@ -3899,7 +3998,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Sun Setter",
                 "movepool": ["weatherball", "freezedry", "thunderbolt", "earthquake"],
                 "abilities": ["Forecast"],
 				"evs": [0, 36, 0, 220, 0, 252],
@@ -3908,7 +4007,7 @@
 				"nature": "Hasty"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Sun Setter",
                 "movepool": ["flareblitz", "earthquake", "stoneedge", "explosion"],
                 "abilities": ["Forecast"],
 				"evs": [4, 252, 0, 0, 0, 252],
@@ -3917,7 +4016,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Hail Setter",
                 "movepool": ["blizzard", "discharge", "lavaplume", "freezedry"],
                 "abilities": ["Forecast"],
 				"evs": [4, 0, 0, 252, 0, 252],
@@ -3926,7 +4025,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Hail Setter",
                 "movepool": ["hailcannon", "earthquake", "stoneedge", "thunderwave"],
                 "abilities": ["Forecast"],
 				"evs": [44, 212, 0, 0, 0, 252],
@@ -3935,7 +4034,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Sand Setter",
                 "movepool": ["earthquake", "stoneedge", "toxic", "morningsun"],
                 "abilities": ["Forecast"],
 				"evs": [252, 0, 168, 0, 88, 0],
@@ -3944,7 +4043,7 @@
 				"nature": "Impish"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Sand Setter",
                 "movepool": ["earthquake", "stoneedge", "sleeptalk", "rest"],
                 "abilities": ["Forecast"],
 				"evs": [252, 48, 168, 0, 40, 0],
@@ -3953,7 +4052,7 @@
 				"nature": "Impish"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "Rain Setter",
                 "movepool": ["thunder", "hurricane", "weatherball", "thunderwave"],
                 "abilities": ["Forecast"],
 				"evs": [252, 0, 96, 160, 0, 0],
@@ -3962,7 +4061,7 @@
 				"nature": "Bold"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Rain Setter",
                 "movepool": ["thunder", "weatherball", "haze", "thunderwave"],
                 "abilities": ["Forecast"],
 				"evs": [252, 0, 96, 0, 160, 0],
@@ -3986,7 +4085,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["shadowclaw", "knockoff", "shadowsneak", "trick"],
                 "abilities": ["Hustle"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -3995,7 +4094,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["shadowclaw", "knockoff", "shadowsneak", "trick"],
                 "abilities": ["Hustle"],
 				"evs": [252, 252, 0, 0, 0, 4],
@@ -4004,7 +4103,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Fling Setup",
                 "movepool": ["shadowclaw", "gunkshot", "willowisp", "fling"],
                 "abilities": ["Hustle"],
 				"evs": [4, 252, 0, 0, 0, 252],
@@ -4013,7 +4112,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "TR Attacker",
                 "movepool": ["shadowclaw", "shadowsneak", "knockoff", "fling"],
                 "abilities": ["Hustle"],
 				"evs": [252, 252, 4, 0, 0, 0],
@@ -4022,7 +4121,7 @@
 				"nature": "Brave"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Choice Trick",
                 "movepool": ["shadowclaw", "knockoff", "destinybond", "trick"],
                 "abilities": ["Hustle"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -4066,7 +4165,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["knockoff", "superpower", "hailcannon", "suckerpunch"],
                 "abilities": ["Magic Bounce"],
                 "evs": [0, 252, 0, 0, 4, 252],
@@ -4075,7 +4174,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Glass Cannon",
                 "movepool": ["knockoff", "superpower", "futuresight", "willowisp"],
                 "abilities": ["Magic Bounce"],
                 "evs": [0, 252, 0, 4, 0, 252],
@@ -4084,7 +4183,7 @@
 				"nature": "Hasty"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["darkpulse", "icebeam", "thunderbolt", "suckerpunch"],
                 "abilities": ["Magic Bounce"],
                 "evs": [0, 4, 0, 252, 0, 252],
@@ -4093,7 +4192,7 @@
 				"nature": "Hasty"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["darkpulse", "icebeam", "thunderbolt", "pursuit"],
                 "abilities": ["Magic Bounce"],
                 "evs": [0, 4, 0, 252, 0, 252],
@@ -4102,7 +4201,7 @@
 				"nature": "Hasty"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["knockoff", "superpower", "hailcannon", "pursuit"],
                 "abilities": ["Magic Bounce"],
                 "evs": [0, 252, 0, 0, 4, 252],
@@ -4111,7 +4210,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["suckerpunch", "superpower", "hailcannon", "pursuit"],
                 "abilities": ["Magic Bounce"],
                 "evs": [0, 252, 0, 0, 4, 252],
@@ -4120,7 +4219,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["knockoff", "superpower", "hailcannon", "thunder"],
                 "abilities": ["Magic Bounce"],
                 "evs": [0, 252, 0, 4, 0, 252],
@@ -4129,7 +4228,7 @@
 				"nature": "Hasty"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["knockoff", "superpower", "pursuit", "thunder"],
                 "abilities": ["Magic Bounce"],
                 "evs": [0, 252, 0, 4, 0, 252],
@@ -4138,7 +4237,7 @@
 				"nature": "Hasty"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["knockoff", "superpower", "hailcannon", "pursuit"],
                 "abilities": ["Magic Bounce"],
                 "evs": [4, 252, 0, 0, 0, 252],
@@ -4147,7 +4246,7 @@
 				"nature": "Hasty"
             },
 			{
-                "role": "Fast Support",
+                "role": "Baton Passer",
                 "movepool": ["knockoff", "substitute", "wish", "batonpass"],
                 "abilities": ["Magic Bounce"],
                 "evs": [244, 12, 0, 0, 0, 252],
@@ -4156,7 +4255,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Glass Cannon",
                 "movepool": ["darkpulse", "flamethrower", "thunderbolt", "suckerpunch"],
                 "abilities": ["Magic Bounce"],
                 "evs": [0, 4, 0, 252, 0, 252],
@@ -4174,7 +4273,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Fast Support",
+                "role": "Baton Passer",
                 "movepool": ["knockoff", "hailcannon", "substitute", "batonpass"],
                 "abilities": ["Magic Bounce"],
                 "evs": [244, 12, 0, 0, 0, 252],
@@ -4697,7 +4796,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
+                "role": "Fast Lead",
                 "movepool": ["hurricane", "bugbuzz", "uturn", "toxicspikes"],
                 "abilities": ["Tinted Lens"],
                 "evs": [0, 8, 0, 252, 0, 248],
@@ -4751,7 +4850,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Glass Cannon",
                 "movepool": ["hurricane", "bugbuzz", "peatslide", "uturn"],
                 "abilities": ["Tinted Lens"],
                 "evs": [0, 8, 0, 252, 0, 248],
@@ -4760,7 +4859,7 @@
 				"nature": "Naive"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Fast Pivot",
                 "movepool": ["dualwingbeat", "xscissor", "zenheadbutt", "uturn"],
                 "abilities": ["Tinted Lens"],
                 "evs": [0, 252, 8, 0, 0, 248],
@@ -4938,7 +5037,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
+                "role": "Bulky Lead",
                 "movepool": ["stealthrock", "gyroball", "earthquake", "explosion"],
                 "abilities": ["Levitate"],
 				"evs": [252, 252, 0, 0, 4, 0],
@@ -4947,7 +5046,7 @@
 				"nature": "Brave"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Lead",
                 "movepool": ["stealthrock", "gyroball", "earthquake", "explosion"],
                 "abilities": ["Flash Fire"],
 				"evs": [252, 252, 0, 0, 4, 0],
@@ -4956,7 +5055,7 @@
 				"nature": "Brave"
             },
 			{
-                "role": "Bulky Support",
+                "role": "TR Setter",
                 "movepool": ["trickroom", "gyroball", "earthquake", "explosion"],
                 "abilities": ["Flash Fire"],
 				"evs": [252, 252, 0, 0, 4, 0],
@@ -4965,7 +5064,7 @@
 				"nature": "Brave"
             },
 			{
-                "role": "Bulky Support",
+                "role": "TR Setter",
                 "movepool": ["trickroom", "gyroball", "earthquake", "explosion"],
                 "abilities": ["Levitate"],
 				"evs": [252, 252, 0, 0, 4, 0],
@@ -5046,7 +5145,7 @@
 				"nature": "Sassy"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Attacker",
                 "movepool": ["psychic", "overheat", "toxic", "calmmind"],
                 "abilities": ["Flash Fire"],
 				"evs": [252, 0, 252, 4, 0, 0],
@@ -5055,7 +5154,7 @@
 				"nature": "Bold"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Attacker",
                 "movepool": ["overheat", "psychic", "calmmind", "reflect"],
                 "abilities": ["Flash Fire"],
 				"evs": [244, 0, 152, 12, 100, 0],
@@ -5064,7 +5163,7 @@
 				"nature": "Calm"
             },
 			{
-                "role": "Bulky Support",
+                "role": "TR Setter",
                 "movepool": ["fling", "recycle", "gyroball", "earthquake"],
                 "abilities": ["Flash Fire"],
 				"evs": [252, 252, 4, 0, 0, 0],
@@ -5073,7 +5172,7 @@
 				"nature": "Brave"
             },
 			{
-                "role": "Bulky Support",
+                "role": "TR Setter",
                 "movepool": ["fling", "recycle", "gyroball", "earthquake"],
                 "abilities": ["Levitate"],
 				"evs": [252, 252, 4, 0, 0, 0],
@@ -5082,7 +5181,7 @@
 				"nature": "Brave"
             },
 			{
-                "role": "Bulky Support",
+                "role": "TR Setter",
                 "movepool": ["gyroball", "earthquake", "explosion", "trickroom"],
                 "abilities": ["Flash Fire"],
 				"evs": [244, 112, 152, 0, 0, 0],
@@ -5091,7 +5190,7 @@
 				"nature": "Brave"
             },
 			{
-                "role": "Bulky Support",
+                "role": "TR Setter",
                 "movepool": ["gyroball", "earthquake", "explosion", "trickroom"],
                 "abilities": ["Levitate"],
 				"evs": [244, 112, 152, 0, 0, 0],
@@ -5100,7 +5199,7 @@
 				"nature": "Brave"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Screens Setter",
                 "movepool": ["futuresight", "reflect", "lightscreen", "explosion"],
                 "abilities": ["Flash Fire"],
 				"evs": [244, 0, 152, 12, 100, 0],
@@ -5109,7 +5208,7 @@
 				"nature": "Sassy"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Screens Setter",
                 "movepool": ["futuresight", "reflect", "lightscreen", "explosion"],
                 "abilities": ["Levitate"],
 				"evs": [244, 0, 152, 12, 100, 0],
@@ -5118,7 +5217,7 @@
 				"nature": "Sassy"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Setup",
                 "movepool": ["chargebeam", "overheat", "earthquake", "irondefense"],
                 "abilities": ["Flash Fire"],
 				"evs": [244, 12, 4, 0, 248, 0],
@@ -5127,7 +5226,7 @@
 				"nature": "Sassy"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Setup",
                 "movepool": ["chargebeam", "overheat", "earthquake", "irondefense"],
                 "abilities": ["Levitate"],
 				"evs": [244, 12, 4, 0, 248, 0],
@@ -5272,7 +5371,7 @@
 				"nature": "Mild"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "Hail Setter",
                 "movepool": ["icywind", "gigadrain", "leechseed", "lightscreen"],
                 "abilities": ["Snow Warning"],
 				"evs": [252, 0, 0, 0, 96, 160],
@@ -5290,7 +5389,7 @@
 				"nature": "Calm"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "Bulky Support",
                 "movepool": ["icywind", "leechseed", "substitute", "protect"],
                 "abilities": ["Snowed In"],
 				"evs": [252, 0, 0, 0, 96, 160],
@@ -5308,7 +5407,7 @@
 				"nature": "Calm"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Setup Sweeper",
                 "movepool": ["hailcannon", "woodhammer", "earthquake", "swordsdance"],
                 "abilities": ["Snowed In"],
 				"evs": [32, 252, 0, 0, 0, 224],
@@ -5317,7 +5416,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Hail Attacker",
                 "movepool": ["hailcannon", "woodhammer", "earthquake", "iceshard"],
                 "abilities": ["Snow Warning"],
 				"evs": [16, 252, 0, 0, 0, 240],
@@ -5326,7 +5425,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Hail Attacker",
                 "movepool": ["blizzard", "gigadrain", "focusblast", "freezedry"],
                 "abilities": ["Snow Warning"],
 				"evs": [32, 252, 0, 0, 0, 224],
@@ -5335,7 +5434,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Hail Attacker",
                 "movepool": ["blizzard", "gigadrain", "focusblast", "hiddenpowerfire"],
                 "abilities": ["Snow Warning"],
 				"evs": [32, 252, 0, 0, 0, 224],
@@ -5344,7 +5443,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["gigadrain", "blizzard", "earthquake", "focusblast"],
                 "abilities": ["Snow Warning"],
 				"evs": [0, 26, 0, 248, 0, 224],
@@ -5353,7 +5452,7 @@
 				"nature": "Hasty"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "Bulky Support",
                 "movepool": ["icywind", "gigadrain", "leechseed", "protect"],
                 "abilities": ["Snow Warning"],
 				"evs": [252, 0, 0, 0, 96, 160],
@@ -5362,7 +5461,7 @@
 				"nature": "Calm"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Fast Support",
                 "movepool": ["blizzard", "gigadrain", "leechseed", "fling"],
                 "abilities": ["Snow Warning"],
 				"evs": [236, 0, 0, 48, 0, 224],
@@ -5371,7 +5470,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Hail Setter",
                 "movepool": ["blizzard", "gigadrain", "earthquake", "growth"],
                 "abilities": ["Snow Warning"],
 				"evs": [32, 0, 0, 252, 0, 224],
@@ -5533,7 +5632,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["icywind", "mudshot", "waterpulse", "freezedry"],
                 "abilities": ["Technician"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -5542,7 +5641,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["icywind", "mudshot", "waterpulse", "freezedry"],
                 "abilities": ["Technician"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -5551,7 +5650,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["icywind", "mudshot", "hiddenpowerfire", "freezedry"],
                 "abilities": ["Technician"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -5560,7 +5659,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["icywind", "mudshot", "hiddenpowerrock", "freezedry"],
                 "abilities": ["Technician"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -5587,7 +5686,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["icywind", "mudshot", "hiddenpowerfire", "freezedry"],
                 "abilities": ["Technician"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -5596,7 +5695,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Fast Attacker",
                 "movepool": ["icywind", "mudshot", "hiddenpowerrock", "freezedry"],
                 "abilities": ["Technician"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -5605,7 +5704,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Fast Support",
+                "role": "Baton Passer",
                 "movepool": ["icywind", "mudshot", "batonpass", "substitute"],
                 "abilities": ["Technician"],
 				"evs": [4, 0, 0, 252, 0, 252],
@@ -5692,7 +5791,7 @@
 				"nature": "Impish"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Lead",
                 "movepool": ["drainpunch", "shadowpunch", "toxicspikes", "curse"],
                 "abilities": ["Iron Fist"],
 				"evs": [252, 252, 4, 0, 0, 0],
@@ -5701,7 +5800,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Bulky Support",
+                "role": "Bulky Lead",
                 "movepool": ["drainpunch", "shadowpunch", "toxicspikes", "memento"],
                 "abilities": ["Iron Fist"],
 				"evs": [252, 252, 4, 0, 0, 0],
@@ -5719,7 +5818,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "TR Attacker",
                 "movepool": ["drainpunch", "shadowpunch", "firepunch", "trickroom"],
                 "abilities": ["Iron Fist"],
 				"evs": [252, 72, 120, 0, 64, 0],
@@ -5737,7 +5836,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Bulky Attacker",
                 "movepool": ["drainpunch", "shadowpunch", "icepunch", "thunderpunch"],
                 "abilities": ["Iron Fist"],
 				"evs": [252, 252, 0, 0, 4, 0],
@@ -5925,7 +6024,7 @@
 				"nature": "Naive"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Lead",
                 "movepool": ["stealthrock", "taunt", "psychicscream", "explosion"],
                 "abilities": ["Levitate"],
                 "evs": [0, 252, 0, 4, 0, 252],
@@ -5970,7 +6069,7 @@
 				"nature": "Modest"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Choice Trick",
                 "movepool": ["psychic", "flamethrower", "uturn", "trick"],
                 "abilities": ["Levitate"],
                 "evs": [0, 4, 0, 252, 0, 252],
@@ -5979,7 +6078,7 @@
 				"nature": "Naive"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Fast Lead",
                 "movepool": ["psyshock", "fireblast", "shadowball", "stealthrock"],
                 "abilities": ["Levitate"],
                 "evs": [0, 0, 4, 252, 0, 252],
@@ -5988,7 +6087,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Lead",
                 "movepool": ["taunt", "stealthrock", "skillswap", "explosion"],
                 "abilities": ["Levitate"],
                 "evs": [0, 92, 164, 0, 0, 252],
@@ -5997,7 +6096,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Screens Setter",
                 "movepool": ["reflect", "lightscreen", "taunt", "explosion"],
                 "abilities": ["Levitate"],
                 "evs": [31, 0, 252, 0, 8, 216],
@@ -6006,7 +6105,7 @@
 				"nature": "Jolly"
             },
 			{
-                "role": "Choice Item user",
+                "role": "Choice Trick",
                 "movepool": ["psyshock", "flamethrower", "hiddenpowerfighting", "trick"],
                 "abilities": ["Levitate"],
                 "evs": [0, 0, 0, 252, 4, 252],
@@ -6024,7 +6123,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Lead",
                 "movepool": ["stealthrock", "taunt", "trickroom", "explosion"],
                 "abilities": ["Levitate"],
                 "evs": [32, 0, 252, 0, 8, 216],
@@ -6042,7 +6141,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "Fast Support",
+                "role": "Fast Lead",
                 "movepool": ["psychic", "judgment", "stealthrock", "imprison"],
                 "abilities": ["Levitate"],
                 "evs": [0, 0, 4, 252, 0, 252],

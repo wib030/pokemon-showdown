@@ -680,7 +680,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		// 'Bulky Attacker' | 'Bulky Setup' | 'Fast Bulky Setup' | 'Bulky Support' | 'Fast Support' | 'AV Pivot' |
 		// 'Doubles Fast Attacker' | 'Doubles Setup Sweeper' | 'Doubles Wallbreaker' | 'Doubles Bulky Attacker' |
 		// 'Doubles Bulky Setup' | 'Offensive Protect' | 'Bulky Protect' | 'Doubles Support' | 'Choice Item user' |
-		// 'Z-Move user' | 'Staller' | 'Spinner' | 'Generalist' | 'Berry Sweeper' | 'Thief user';
+		// 'Z-Move user' | 'Staller' | 'Spinner' | 'Generalist' | 'Berry Sweeper' | 'Thief user' |
+		// 'Sun Setter' | 'Rain Setter' | 'Hail Setter' | 'Sand Setter' | 'Sun Attacker' | 'Rain Attacker' |
+		// 'Hail Attacker' | 'Sand Attacker' | 'Fast Lead' | 'Bulky Lead' | 'Trick Scarf' | 'Fast Screens Setter' |
+		// 'Slow Screens Setter' | 'Glass Cannon' | 'Fling Setup' | 'TR Setter' | 'TR Attacker' | 'Baton Passer' |
+		// 'Fast Pivot' | 'Bulky Pivot';
 		
 		const movePool: string[] = Array.from(set.movepool);
 		const preferredTypes = set.preferredTypes;

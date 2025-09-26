@@ -564,5 +564,9 @@ declare namespace RandomTeamsTypes {
 		'Bulky Attacker' | 'Bulky Setup' | 'Fast Bulky Setup' | 'Bulky Support' | 'Fast Support' | 'AV Pivot' |
 		'Doubles Fast Attacker' | 'Doubles Setup Sweeper' | 'Doubles Wallbreaker' | 'Doubles Bulky Attacker' |
 		'Doubles Bulky Setup' | 'Offensive Protect' | 'Bulky Protect' | 'Doubles Support' | 'Choice Item user' |
-		'Z-Move user' | 'Staller' | 'Spinner' | 'Generalist' | 'Berry Sweeper' | 'Thief user';
+		'Z-Move user' | 'Staller' | 'Spinner' | 'Generalist' | 'Berry Sweeper' | 'Thief user' |
+		'Sun Setter' | 'Rain Setter' | 'Hail Setter' | 'Sand Setter' | 'Sun Attacker' | 'Rain Attacker' |
+		'Hail Attacker' | 'Sand Attacker'| 'Fast Lead' | 'Bulky Lead' | 'Choice Trick' | 'Fast Screens Setter' | 
+		'Bulky Screens Setter' | 'Glass Cannon' | 'Fling Setup' | 'TR Setter' | 'TR Attacker' | 'Baton Passer' |
+		'Fast Pivot' | 'Bulky Pivot';
 }
