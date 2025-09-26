@@ -31,6 +31,8 @@ const SPECIES_WITH_SETS = [
 	"venusaur", "charizard", "blastoise", "butterfree", "beedrill", "pidgeot", "raticate", "fearow", "arbok", "pikachu", "raichu", "sandslash", "nidoqueen", "nidoking", "clefable", "ninetales", "wigglytuff", "vileplume", "parasect", "venomoth", "dugtrio", "persian", "golduck", "primeape", "arcanine", "poliwrath", "alakazam", "machamp", "victreebel", "tentacruel", "golem", "rapidash", "slowbro", "farfetchd", "dodrio", "dewgong", "muk", "cloyster", "gengar", "hypno", "kingler", "electrode", "exeggutor", "marowak", "hitmonlee", "hitmonchan", "weezing", "kangaskhan", "seaking", "starmie", "mrmime", "scyther", "jynx", "pinsir", "tauros", "gyarados", "lapras", "ditto", "vaporeon", "jolteon", "flareon", "omastar", "kabutops", "aerodactyl", "snorlax", "articuno", "zapdos", "moltres", "dragonite", "mewtwo", "mew", "meganium", "typhlosion", "feraligatr", "furret", "noctowl", "ledian", "ariados", "crobat", "lanturn", "xatu", "ampharos", "bellossom", "azumarill", "sudowoodo", "politoed", "jumpluff", "sunflora", "quagsire", "espeon", "umbreon", "slowking", "unown", "wobbuffet", "girafarig", "forretress", "dunsparce", "steelix", "granbull", "qwilfish", "scizor", "shuckle", "heracross", "ursaring", "magcargo", "corsola", "octillery", "delibird", "mantine", "skarmory", "houndoom", "kingdra", "donphan", "porygon2", "stantler", "smeargle", "hitmontop", "miltank", "blissey", "raikou", "entei", "suicune", "tyranitar", "lugia", "hooh", "celebi", "sceptile", "blaziken", "swampert", "mightyena", "linoone", "beautifly", "dustox", "ludicolo", "shiftry", "swellow", "pelipper", "gardevoir", "masquerain", "breloom", "vigoroth", "slaking", "ninjask", "shedinja", "exploud", "hariyama", "delcatty", "sableye", "mawile", "aggron", "medicham", "manectric", "plusle", "minun", "volbeat", "illumise", "swalot", "sharpedo", "wailord", "camerupt", "torkoal", "grumpig", "spinda", "flygon", "cacturne", "altaria", "zangoose", "seviper", "lunatone", "solrock", "whiscash", "crawdaunt", "claydol", "cradily", "armaldo", "milotic", "castform", "kecleon", "banette", "tropius", "chimecho", "absol", "glalie", "walrein", "huntail", "gorebyss", "relicanth", "luvdisc", "salamence", "metagross", "regirock", "regice", "registeel", "latias", "latios", "kyogre", "groudon", "rayquaza", "jirachi", "deoxys", "deoxysattack", "deoxysdefense", "deoxysspeed", "torterra", "infernape", "empoleon", "staraptor", "bibarel", "kricketune", "luxray", "roserade", "rampardos", "bastiodon", "wormadam", "wormadamsandy", "wormadamtrash", "mothim", "vespiquen", "pachirisu", "floatzel", "cherrim", "gastrodon", "ambipom", "drifblim", "lopunny", "mismagius", "honchkrow", "purugly", "skuntank", "bronzong", "chatot", "spiritomb", "garchomp", "lucario", "hippowdon", "drapion", "toxicroak", "carnivine", "lumineon", "abomasnow", "weavile", "magnezone", "lickilicky", "rhyperior", "tangrowth", "electivire", "magmortar", "togekiss", "yanmega", "leafeon", "glaceon", "gliscor", "mamoswine", "porygonz", "gallade", "probopass", "dusknoir", "froslass", "rotom", "rotomheat", "rotomwash", "rotomfrost", "rotomfan", "rotommow", "uxie", "mesprit", "azelf", "dialga", "palkia", "heatran", "regigigas", "giratinaorigin", "giratina", "cresselia", "phione", "manaphy", "darkrai", "shaymin", "shayminsky", "arceus", "arceusbug", "arceusdark", "arceusdragon", "arceuselectric", "arceusfighting", "arceusfire", "arceusflying", "arceusghost", "arceusgrass", "arceusground", "arceusice", "arceuspoison", "arceuspsychic", "arceusrock", "arceussteel", "arceuswater",
 ];
 
+let NUMBER_OF_LEADS = 0;
+
 // Moves that should be paired together when possible
 const MOVE_PAIRS = [
 	['lightscreen', 'reflect'],
@@ -666,7 +668,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		checkSpecies = this.dex.species.get(checkSpecies);
 		let checkSets = this.randomSets[checkSpecies.id]["sets"];
 		
-		if (!teamDetails.lead) {
+		if (NUMBER_OF_LEADS < 1) {
 			do {
 				checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
 				checkSpecies = this.dex.species.get(checkSpecies);
@@ -704,7 +706,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		// Check if the Pokemon has a Lead set
 		let canLead = false;
 		for (const set of sets) {
-			if (!teamDetails.lead && ['Fast Lead', 'Bulky Lead'].includes(set.role)) canLead = true;
+			if (NUMBER_OF_LEADS < 1 && ['Fast Lead', 'Bulky Lead'].includes(set.role)) canLead = true;
 		}
 		
 		for (const set of sets) {
@@ -714,11 +716,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			// Enforce Spinner if the team does not have removal
 			if (canSpinner && set.role !== 'Spinner') continue;
 			
-			// Prevent Lead if the team already has more than 1 lead
-			//if (teamDetails.lead > 1 && ['Fast Lead', 'Bulky Lead'].includes(set.role)) continue;
+			// Prevent Lead if the team already has a lead
+			if (NUMBER_OF_LEADS > 0 && ['Fast Lead', 'Bulky Lead'].includes(set.role)) continue;
 			
 			// Enforce Lead if the team does not have one
-			//if (canLead && !['Fast Lead', 'Bulky Lead'].includes(set.role)) continue;
+			if (canLead && !['Fast Lead', 'Bulky Lead'].includes(set.role)) continue;
 			
 			possibleSets.push(set);
 		}
@@ -726,7 +728,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const role = set.role;
 		
 		if (['Fast Lead', 'Bulky Lead'].includes(role)) {
-			teamDetails.lead++;
+			NUMBER_OF_LEADS++;
 		}
 		
 		const movePool: string[] = Array.from(set.movepool);
