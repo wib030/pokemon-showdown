@@ -728,16 +728,16 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		// 'Slow Screens Setter' | 'Glass Cannon' | 'Fling Setup' | 'TR Setter' | 'TR Attacker' | 'Baton Passer' |
 		// 'Fast Pivot' | 'Bulky Pivot' | 'Hazard Removal';
 		
-		// Check if the Pokemon has a Hazard Removal set
-		let canHazardRemover = false;
-		for (const set of sets) {
-			if (NUMBER_OF_HAZARD_REMOVERS < 1 && set.role === 'Hazard Removal') canHazardRemover = true;
-		}
-		
 		// Check if the Pokemon has a Lead set
 		let canLead = false;
 		for (const set of sets) {
 			if (NUMBER_OF_LEADS < 1 && ['Fast Lead', 'Bulky Lead'].includes(set.role)) canLead = true;
+		}
+		
+		// Check if the Pokemon has a Hazard Removal set
+		let canHazardRemover = false;
+		for (const set of sets) {
+			if ((NUMBER_OF_HAZARD_REMOVERS < 1 && NUMBER_OF_LEADS > 0) && set.role === 'Hazard Removal') canHazardRemover = true;
 		}
 		
 		for (const set of sets) {
