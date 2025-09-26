@@ -675,10 +675,21 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let checkSpecies = species;
 		checkSpecies = this.dex.species.get(checkSpecies);
 		let checkSets = this.randomSets[checkSpecies.id]["sets"];
+		let genToSample = SPECIES_WITH_SETS_GEN1;
 		
 		if (!teamDetails.lead) {
 			while (ensureLead === false) {
-				checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS_GEN4);
+				if (this.randomChance(1, 4)) {
+					genToSample = SPECIES_WITH_SETS_GEN1;
+				} else if (this.randomChance(1, 4)) {
+					genToSample = SPECIES_WITH_SETS_GEN2;
+				} else if (this.randomChance(1, 4)) {
+					genToSample = SPECIES_WITH_SETS_GEN3;
+				} else {
+					genToSample = SPECIES_WITH_SETS_GEN4;
+				}
+					
+				checkSpecies = this.sampleIfArray(genToSample);
 				checkSpecies = this.dex.species.get(checkSpecies);
 				
 				checkSets = this.randomSets[checkSpecies.id]["sets"];
