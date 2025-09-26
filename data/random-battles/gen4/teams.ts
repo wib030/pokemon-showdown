@@ -663,8 +663,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 	): RandomTeamsTypes.RandomSet {
 		let ensureLead = false;
 		let checkSpecies = species;
-		let checkSets;
 		checkSpecies = this.dex.species.get(checkSpecies);
+		let checkSets = this.randomSets[checkSpecies.id]["sets"];
 		
 		if (!teamDetails.lead) {
 			while (ensureLead === false) {
@@ -724,6 +724,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		}
 		const set = this.sampleIfArray(possibleSets);
 		const role = set.role;
+		
+		if (['Fast Lead', 'Bulky Lead'].includes(role)) {
+			teamDetails.lead++;
+		}
 		
 		const movePool: string[] = Array.from(set.movepool);
 		const preferredTypes = set.preferredTypes;
