@@ -32,6 +32,7 @@ const SPECIES_WITH_SETS = [
 ];
 
 let NUMBER_OF_LEADS = 0;
+let NUMBER_OF_MONS = 0;
 
 // Moves that should be paired together when possible
 const MOVE_PAIRS = [
@@ -663,6 +664,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		teamDetails: RandomTeamsTypes.TeamDetails = {},
 		isLead = false
 	): RandomTeamsTypes.RandomSet {
+		if (NUMBER_OF_MONS >= 6) {
+			NUMBER_OF_MONS = 0;
+			NUMBER_OF_LEADS = 0;
+		}
 		let ensureLead = false;
 		let checkSpecies = species;
 		checkSpecies = this.dex.species.get(checkSpecies);
@@ -730,6 +735,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		if (['Fast Lead', 'Bulky Lead'].includes(role)) {
 			NUMBER_OF_LEADS++;
 		}
+		
+		NUMBER_OF_MONS++;
 		
 		const movePool: string[] = Array.from(set.movepool);
 		const preferredTypes = set.preferredTypes;
