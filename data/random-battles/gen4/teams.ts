@@ -692,7 +692,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					for (const checkSet of checkSets) {
 						if (['Fast Lead', 'Bulky Lead'].includes(checkSet.role)) {
 							ensureMon = true;
-							break;
 						}
 					}
 				} while (!ensureMon)
@@ -704,7 +703,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					for (const checkSet of checkSets) {
 						if (['Hazard Removal'].includes(checkSet.role)) {
 							ensureMon = true;
-							break;
 						}
 					}
 				} while (!ensureMon)
