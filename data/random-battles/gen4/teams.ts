@@ -684,7 +684,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		switch (TEAM_TYPE) {
 		case "Balanced":
-			if (NUMBER_OF_LEADS < 1 && (NUMBER_OF_MONS > 2 || this.randomChance(1, 3))) {
+			if (NUMBER_OF_LEADS < 1) {
 				do {
 					checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
 					checkSpecies = this.dex.species.get(checkSpecies);
@@ -692,10 +692,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					for (const checkSet of checkSets) {
 						if (['Fast Lead', 'Bulky Lead'].includes(checkSet.role)) {
 							ensureMon = true;
+							break;
 						}
 					}
 				} while (!ensureMon)
-			} else if (NUMBER_OF_HAZARD_REMOVERS < 1 && (NUMBER_OF_MONS > 3 || this.randomChance(1, 3))) {
+			} else if (NUMBER_OF_HAZARD_REMOVERS < 1) {
 				do {
 					checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
 					checkSpecies = this.dex.species.get(checkSpecies);
@@ -703,6 +704,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					for (const checkSet of checkSets) {
 						if (['Hazard Removal'].includes(checkSet.role)) {
 							ensureMon = true;
+							break;
 						}
 					}
 				} while (!ensureMon)
