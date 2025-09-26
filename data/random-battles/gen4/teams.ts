@@ -51,7 +51,7 @@ const TEAM_TYPES = [
 	"Balanced",
 ];
 
-let TEAM_TYPE = this.sampleIfArray(TEAM_TYPES);
+let TEAM_TYPE = "Balanced";
 let NUMBER_OF_MONS = 0;
 let NUMBER_OF_LEADS = 0;
 let NUMBER_OF_SPINNERS = 0;
