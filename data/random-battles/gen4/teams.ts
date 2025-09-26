@@ -656,6 +656,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		teamDetails: RandomTeamsTypes.TeamDetails = {},
 		isLead = false
 	): RandomTeamsTypes.RandomSet {
+		species = 'Venusaur';
 		species = this.dex.species.get(species);
 		const forme = this.getForme(species);
 		const sets = this.randomSets[species.id]["sets"];
