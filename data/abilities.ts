@@ -2232,7 +2232,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(pokemon) {
 			this.singleEvent('End', pokemon.getItem(), pokemon.itemState, pokemon);
 		},
-		flags: { rollable: 1 },
+		flags: {},
 		name: "Klutz",
 		rating: -1,
 		num: 103,
@@ -4147,7 +4147,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	shellarmor: {
 		onCriticalHit: false,
-		flags: { breakable: 1, rollable: 1 },
+		flags: { breakable: 1 },
 		name: "Shell Armor",
 		rating: 1,
 		num: 75,
@@ -4344,7 +4344,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(0.75);
 			}
 		},
-		flags: { breakable: 1, rollable: 1 },
+		flags: { breakable: 1 },
 		name: "Solid Rock",
 		rating: 3,
 		num: 116,
@@ -4411,7 +4411,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	stall: {
 		onFractionalPriority: -0.1,
-		flags: { rollable: 1 },
+		flags: {},
 		name: "Stall",
 		rating: -1,
 		num: 100,
