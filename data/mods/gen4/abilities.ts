@@ -1262,8 +1262,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			onResidualOrder: 28,
 			onResidualSubOrder: 2,
 			onStart(target) {
-				if (pokemon.activeTurns > 4) {
-					pokemon.removeVolatile('slowstart');
+				if (target.activeTurns > 4) {
+					target.removeVolatile('slowstart');
 				} else {
 					this.add('-start', target, 'ability: Slow Start');
 				}
