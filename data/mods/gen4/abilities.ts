@@ -1259,8 +1259,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		condition: {
 			duration: 0,
-			onResidualOrder: 28,
-			onResidualSubOrder: 2,
 			onStart(target) {
 				if (target.totalActiveTurns > 4) {
 					delete target.volatiles['slowstart'];
@@ -1269,6 +1267,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 					this.add('-start', target, 'ability: Slow Start');
 				}
 			},
+			onResidualOrder: 29,
 			onResidual(pokemon) {
 				if (pokemon.totalActiveTurns > 4) {
 					pokemon.removeVolatile('slowstart');
