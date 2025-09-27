@@ -1264,6 +1264,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			onStart(target) {
 				if (target.activeTurns > 4) {
 					target.removeVolatile('slowstart');
+					this.add('-end', target, 'Slow Start');
 				} else {
 					this.add('-start', target, 'ability: Slow Start');
 				}
