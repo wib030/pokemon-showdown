@@ -41370,6 +41370,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			payback: ["4L15"],
 			protect: ["4M"],
 			rest: ["4M"],
+			refresh: ["4L1"],
 		},
 		eventData: [
 			{generation: 4, level: 70, shiny: 1, moves: ["confuseray", "stomp", "superpower", "zenheadbutt"]},

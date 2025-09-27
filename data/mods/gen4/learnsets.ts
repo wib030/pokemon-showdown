@@ -33869,6 +33869,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			payback: ["4L15"],
 			protect: ["4M"],
 			rest: ["4M"],
+			refresh: ["4L1"],
 		},
 	},
 	giratina: {
