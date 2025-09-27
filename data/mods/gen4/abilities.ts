@@ -1271,6 +1271,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			onResidual(pokemon) {
 				if (pokemon.activeTurns > 4) {
 					pokemon.removeVolatile('slowstart');
+					this.add('-end', target, 'Slow Start');
 				}
 			},
 			onModifyAtkPriority: 5,
