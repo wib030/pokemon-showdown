@@ -908,7 +908,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 	deepsnow: {
 		name: 'deepsnow',
 		onModifySpe(spe, pokemon) {
-			if (!pokemon.hasType('Ice') && !pokemon.isGrounded()) {
+			if (!pokemon.hasType('Ice') && pokemon.isGrounded()) {
 				return this.chainModify(0.5);
 			}
 		},
