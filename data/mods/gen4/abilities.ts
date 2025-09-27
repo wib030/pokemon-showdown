@@ -1255,4 +1255,38 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if (type === 'hail') return false;
 		},
 	},
+	slowstart: {
+		inherit: true,
+		condition: {
+			duration: 5,
+			onResidualOrder: 28,
+			onResidualSubOrder: 2,
+			onStart(target) {
+				this.add('-start', target, 'ability: Slow Start');
+			},
+			onResidual(pokemon) {
+				if (!pokemon.activeTurns) {
+					this.effectState.duration! += 1;
+				}
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk(atk, pokemon) {
+				return this.chainModify(0.5);
+			},
+			onModifySpAPriority: 5,
+			onModifySpA(spa, pokemon) {
+				return this.chainModify(0.5);
+			},
+			onModifySpe(spe, pokemon) {
+				return this.chainModify(0.5);
+			},
+			onEnd(target) {
+				this.add('-end', target, 'Slow Start');
+			},
+		},
+		flags: { rollable: 1 },
+		name: "Slow Start",
+		rating: -1,
+		num: 112,
+	},
 };

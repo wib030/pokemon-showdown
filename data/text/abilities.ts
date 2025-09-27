@@ -1723,6 +1723,10 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		gen6: {
 			desc: "On switch-in, this Pokemon's Attack and Speed are halved for 5 turns.",
 		},
+		gen4: {
+			desc: "On switch-in, this Pokemon's Attack, Special Attack and Speed are halved for 5 turns.",
+			shortDesc: "This Pokemon's Atk, Sp. Atk and Speed are halved for 5 turns.",
+		},
 
 		start: "  [POKEMON] can't get it going!",
 		end: "  [POKEMON] finally got its act together!",

@@ -1887,4 +1887,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		color: "Pink",
 		eggGroups: ["Fairy"],
 	},
+	regigigas: {
+		inherit: true,
+		baseStats: { hp: 110, atk: 160, def: 110, spa: 160, spd: 110, spe: 100 },
+	},
 };
