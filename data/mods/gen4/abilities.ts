@@ -1262,7 +1262,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			onResidualOrder: 28,
 			onResidualSubOrder: 2,
 			onStart(target) {
-				if (target.activeTurns > 4) {
+				if (target.totalActiveTurns > 4) {
 					target.removeVolatile('slowstart');
 					this.add('-end', target, 'Slow Start');
 				} else {
@@ -1270,9 +1270,12 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				}
 			},
 			onResidual(pokemon) {
-				if (pokemon.activeTurns > 4) {
+				if (pokemon.totalActiveTurns > 4) {
 					pokemon.removeVolatile('slowstart');
-					this.add('-end', target, 'Slow Start');
+					this.add('-end', pokemon, 'Slow Start');
+				} else {
+					const turnsRemaining = 5 - pokemon.totalActiveTurns;
+					this.hint(`Slow Start turns remaining: ${turnsRemaining}`);
 				}
 			},
 			onModifyAtkPriority: 5,

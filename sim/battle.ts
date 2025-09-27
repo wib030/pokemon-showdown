@@ -1717,6 +1717,7 @@ export class Battle {
 				const staleness = pokemon.volatileStaleness || pokemon.staleness;
 				if (staleness) sideStaleness = sideStaleness === 'external' ? sideStaleness : staleness;
 				pokemon.activeTurns++;
+				pokemon.totalActiveTurns++;
 			}
 			trappedBySide.push(sideTrapped);
 			stalenessBySide.push(sideStaleness);
