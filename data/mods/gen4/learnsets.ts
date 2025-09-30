@@ -16045,6 +16045,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			cosmicpower: ["4L20"],
 			ancientpower: ["4L23"],
 			metronome: ["4L25"],
+			judgment: ["4L42"],
 		},
 	},
 	wynaut: {

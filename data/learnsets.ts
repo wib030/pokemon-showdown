@@ -21810,6 +21810,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			cosmicpower: ["4L20"],
 			ancientpower: ["4L23"],
 			metronome: ["4L25"],
+			judgment: ["4L42"],
 		},
 		encounters: [
 			{generation: 2, level: 5},
