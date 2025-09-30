@@ -1031,7 +1031,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	tropius: {
 		inherit: true,
-		baseStats: {hp: 111, atk: 78, def: 98, spa: 82, spd: 102, spe: 61},
+		baseStats: {hp: 111, atk: 78, def: 98, spa: 82, spd: 102, spe: 66},
 		abilities: {0: "Air Lock", 1: "Chlorophyll"},
 	},
 	quilava: {
