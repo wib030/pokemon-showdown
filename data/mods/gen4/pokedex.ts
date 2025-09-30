@@ -617,7 +617,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	parasect: {
 		inherit: true,
-		baseStats: {hp: 60, atk: 115, def: 80, spa: 90, spd: 80, spe: 50},
+		baseStats: {hp: 60, atk: 115, def: 80, spa: 90, spd: 80, spe: 59},
 		abilities: {0: "Chlorophyll", 1: "Dry Skin"},
 	},
 	wingull: {
@@ -1464,6 +1464,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	carnivine: {
 		inherit: true,
 		baseStats: {hp: 94, atk: 120, def: 72, spa: 110, spd: 72, spe: 46},
+		abilities: {0: "Free Sample", 1: "Strong Jaw"},
 	},
 	celebi: {
 		inherit: true,
