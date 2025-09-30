@@ -1395,7 +1395,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	banette: {
 		inherit: true,
-		baseStats: {hp: 64, atk: 165, def: 65, spa: 93, spd: 63, spe: 65},
+		baseStats: {hp: 64, atk: 165, def: 65, spa: 93, spd: 63, spe: 55},
 		abilities: {0: "Hustle"},
 	},
 	shieldon: {
