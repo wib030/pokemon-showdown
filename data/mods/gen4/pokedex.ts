@@ -712,7 +712,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	rampardos: {
 		inherit: true,
-		baseStats: {hp: 97, atk: 165, def: 60, spa: 65, spd: 65, spe: 63},
+		baseStats: {hp: 97, atk: 165, def: 60, spa: 65, spd: 65, spe: 70},
 		abilities: {0: "Chloroplast"},
 	},
 	ponyta: {
