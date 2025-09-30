@@ -210,6 +210,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		shortDesc: "If Sunny Day is active, this Pokemon's Speed is doubled.",
 		gen4: {
 			desc: "If Sunny Day is active, this Pokemon's Speed is 1.66x.",
+			shortDesc: "If Sunny Day is active, this Pokemon's Speed is 1.66x.",
 		},
 		gen7: {
 			desc: "If Sunny Day is active, this Pokemon's Speed is doubled.",
@@ -1947,6 +1948,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		shortDesc: "If Rain Dance is active, this Pokemon's Speed is doubled.",
 		gen4: {
 			desc: "If Rain Dance is active, this Pokemon's Speed is 1.66x.",
+			shortDesc: "If Rain Dance is active, this Pokemon's Speed is 1.66x.",
 		},
 		gen7: {
 			desc: "If Rain Dance is active, this Pokemon's Speed is doubled.",

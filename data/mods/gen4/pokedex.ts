@@ -164,7 +164,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	gorebyss: {
 		inherit: true,
-		baseStats: { hp: 65, atk: 84, def: 105, spa: 124, spd: 75, spe: 52 },
+		baseStats: { hp: 65, atk: 84, def: 105, spa: 124, spd: 75, spe: 72 },
 	},
 	snubbull: {
 		inherit: true,
@@ -1578,7 +1578,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	huntail: {
 		inherit: true,
-		baseStats: {hp: 65, atk: 114, def: 105, spa: 94, spd: 75, spe: 62},
+		baseStats: {hp: 65, atk: 114, def: 105, spa: 94, spd: 75, spe: 72},
 	},
 	dusknoir: {
 		inherit: true,
