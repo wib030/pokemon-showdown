@@ -25024,6 +25024,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			worryseed: ["4T"],
 			tantrum: ["4L5"],
 			nastyplot: ["4E"],
+			spikecannon: ["4L40"],
 		},
 	},
 	cacturne: {
@@ -25101,6 +25102,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			worryseed: ["4T"],
 			nastyplot: ["4L1"],
 			tantrum: ["4L5"],
+			spikecannon: ["4L40"],
 		},
 	},
 	swablu: {

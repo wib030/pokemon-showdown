@@ -32136,6 +32136,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			worryseed: ["4T"],
 			tantrum: ["4L5"],
 			nastyplot: ["4E"],
+			spikecannon: ["4L40"],
 		},
 		eventData: [
 			{generation: 3, level: 5, shiny: 1, moves: ["poisonsting", "leer", "absorb", "encore"], pokeball: "pokeball", emeraldEventEgg: true},
@@ -32215,6 +32216,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			worryseed: ["4T"],
 			nastyplot: ["4L1"],
 			tantrum: ["4L5"],
+			spikecannon: ["4L40"],
 		},
 		eventData: [
 			{generation: 3, level: 45, moves: ["ingrain", "feintattack", "spikes", "needlearm"], pokeball: "pokeball"},
