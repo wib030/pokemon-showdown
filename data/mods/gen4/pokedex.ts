@@ -1414,7 +1414,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	bellossom: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 80, def: 95, spa: 110, spd: 130, spe: 60},
+		baseStats: {hp: 75, atk: 80, def: 95, spa: 110, spd: 130, spe: 70},
 		abilities: { 0: "Chlorophyll", 1: "Photosynthesis" },
 	},
 	bibarel: {
