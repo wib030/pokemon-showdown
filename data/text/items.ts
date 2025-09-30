@@ -1513,9 +1513,6 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		gen2: {
 			shortDesc: "Each turn, holder has a ~23.4% chance to move first in its priority bracket.",
 		},
-		gen4: {
-			shortDesc: "Each turn, holder has a 10% chance to move first in its priority bracket.",
-		},
 
 		activate: "  [POKEMON] can act faster than normal, thanks to its Quick Claw!",
 	},
@@ -2564,5 +2561,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	repel: {
 		name: "Repel",
 		shortDesc: "Fling: Inflicts flinch.",
+	},
+	uglyclaw: {
+		name: "Ugly Claw",
+		shortDesc: "Each turn, holder has a 10% chance to move first in its priority bracket.",
+
+		activate: "  [POKEMON] can act faster than normal, thanks to its Ugly Claw!",
 	},
 };

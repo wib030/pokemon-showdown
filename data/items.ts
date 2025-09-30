@@ -4655,7 +4655,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		num: 217,
-		gen: 2,
+		gen: 5,
 	},
 	quickpowder: {
 		name: "Quick Powder",
@@ -7758,6 +7758,23 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			volatileStatus: 'flinch',
 		},
 		num: -6,
+		gen: 4,
+	},
+	uglyclaw: {
+		onFractionalPriorityPriority: -2,
+		onFractionalPriority(priority, pokemon, target, move) {
+			if (move.category === "Status" && pokemon.hasAbility("myceliummight")) return;
+			if (priority <= 0 && this.randomChance(1, 10)) {
+				this.add('-activate', pokemon, 'item: Ugly Claw');
+				return 0.1;
+			}
+		},
+		name: "Ugly Claw",
+		spritenum: 373,
+		fling: {
+			basePower: 60,
+		},
+		num: -7,
 		gen: 4,
 	},
 };

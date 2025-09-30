@@ -556,23 +556,6 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 			}
 		},
 	},
-	quickclaw: {
-		onFractionalPriorityPriority: -2,
-		onFractionalPriority(priority, pokemon, target, move) {
-			if (move.category === "Status" && pokemon.hasAbility("myceliummight")) return;
-			if (priority <= 0 && this.randomChance(1, 10)) {
-				this.add('-activate', pokemon, 'item: Quick Claw');
-				return 0.1;
-			}
-		},
-		name: "Quick Claw",
-		spritenum: 373,
-		fling: {
-			basePower: 60,
-		},
-		num: 217,
-		gen: 2,
-	},
 	silkscarf: {
 		name: "Silk Scarf",
 		spritenum: 444,
