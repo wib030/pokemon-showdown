@@ -32769,11 +32769,10 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			watersport: ["4L6", "3L6"],
 			whirlpool: ["4E", "3E"],
 			bulldoze: ["4L20"],
-			wavecrash: ["4L44"],
+			wavecrash: ["4L44", "4T"],
 			snap: ["4L23"],
 			muddywater: ["4L35"],
 			dragondance: ["4E"],
-			wavecrash: ["4T"],
 		},
 	},
 	whiscash: {
