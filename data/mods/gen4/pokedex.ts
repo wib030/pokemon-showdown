@@ -751,7 +751,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	relicanth: {
 		inherit: true,
-		baseStats: {hp: 100, atk: 120, def: 130, spa: 85, spd: 65, spe: 64},
+		baseStats: {hp: 100, atk: 120, def: 130, spa: 85, spd: 65, spe: 69},
 	},
 	rhyhorn: {
 		inherit: true,
