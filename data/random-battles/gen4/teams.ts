@@ -760,7 +760,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		// 'Sun Setter' | 'Rain Setter' | 'Hail Setter' | 'Sand Setter' | 'Sun Attacker' | 'Rain Attacker' |
 		// 'Hail Attacker' | 'Sand Attacker' | 'Fast Lead' | 'Bulky Lead' | 'Trick Scarf' | 'Fast Screens Setter' |
 		// 'Slow Screens Setter' | 'Glass Cannon' | 'Fling Setup' | 'TR Setter' | 'TR Attacker' | 'Baton Passer' |
-		// 'Fast Pivot' | 'Bulky Pivot' | 'Hazard Removal';
+		// 'Fast Pivot' | 'Bulky Pivot' | 'Hazard Removal' | 'TR Lead';
 		
 		// Check if the Pokemon has a Lead set
 		let canLead = false;

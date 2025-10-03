@@ -6123,7 +6123,7 @@
 				"nature": "Timid"
             },
 			{
-                "role": "TR Setter",
+                "role": "TR Lead",
                 "movepool": ["stealthrock", "taunt", "trickroom", "explosion"],
                 "abilities": ["Levitate"],
                 "evs": [32, 0, 252, 0, 8, 216],
