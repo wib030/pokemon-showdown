@@ -56,7 +56,7 @@ let NUMBER_OF_MONS = 0;
 let NUMBER_OF_LEADS = 0;
 let NUMBER_OF_HAZARD_REMOVERS = 0;
 
-let cachedTeamMembers = new Array();
+let cachedTeamMembers = [];
 
 export class RandomGen4Teams extends RandomGen5Teams {
 	override randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = require('./sets.json');
@@ -678,7 +678,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			NUMBER_OF_MONS = 0;
 			NUMBER_OF_LEADS = 0;
 			NUMBER_OF_HAZARD_REMOVERS = 0;
-			cachedTeamMembers = new Array();
+			cachedTeamMembers = [];
 		}
 		let ensureMon = false;
 		let checkSpecies = species;
@@ -697,7 +697,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					checkSets = this.randomSets[checkSpecies.id]["sets"];
 					checkName = checkSpecies.baseSpecies;
 					
-					if (cachedTeamMembers.length)
+					if (Array.isArray(cachedTeamMembers) && cachedTeamMembers.length)
 					{
 						for (i = 0; i < cachedTeamMembers.length; i++)
 						{
@@ -723,7 +723,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					checkSets = this.randomSets[checkSpecies.id]["sets"];
 					checkName = checkSpecies.baseSpecies;
 					
-					if (cachedTeamMembers.length)
+					if (Array.isArray(cachedTeamMembers) && cachedTeamMembers.length)
 					{
 						for (i = 0; i < cachedTeamMembers.length; i++)
 						{
