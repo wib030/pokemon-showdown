@@ -17739,7 +17739,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 985,
 		name: "Scream Tail",
 		types: ["Fairy", "Psychic"],
-		gender: "N",
 		baseStats: { hp: 115, atk: 65, def: 99, spa: 65, spd: 115, spe: 111 },
 		abilities: { 0: "Protosynthesis" },
 		heightm: 1.6,

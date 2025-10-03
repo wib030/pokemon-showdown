@@ -22453,7 +22453,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePowerCallback(pokemon, target) {
 			let bp = Math.floor((10 * 2 / 3) * (target.maxhp / target.hp));
 			if (bp > 80) bp = 80;
-			this.hint(`BP: ${bp}`);
+			this.hint(`Power: ${bp}`);
 			return bp;
 		},
 		multihit: 10,
