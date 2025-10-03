@@ -217,7 +217,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			onResidualOrder: 10,
 			onResidualSubOrder: 8,
 			onResidual(pokemon) {
-				this.damage(pokemon.baseMaxhp / 2);
+				this.damage(pokemon.baseMaxhp / 3);
 			},
 		},
 		type: "???",
@@ -3045,5 +3045,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			this.debug(`BP: ${bp}`);
 			return bp;
 		},
+	},
+	hurricane: {
+		inherit: true,
+		basePower: 110,
 	},
 };
