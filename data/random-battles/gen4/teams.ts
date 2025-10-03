@@ -697,9 +697,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					checkSets = this.randomSets[checkSpecies.id]["sets"];
 					checkName = checkSpecies.baseSpecies;
 					
-					if (Array.isArray(cachedTeamMembers) && cachedTeamMembers.length !== null)
+					if (Array.isArray(cachedTeamMembers) && NUMBER_OF_MONS > 0)
 					{
-						for (i = 0; i < cachedTeamMembers.length; i++)
+						for (i = 0; i < NUMBER_OF_MONS; i++)
 						{
 							if (cachedTeamMembers[i].monName == checkName)
 							{
@@ -723,9 +723,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					checkSets = this.randomSets[checkSpecies.id]["sets"];
 					checkName = checkSpecies.baseSpecies;
 					
-					if (Array.isArray(cachedTeamMembers) && cachedTeamMembers.length !== null)
+					if (Array.isArray(cachedTeamMembers) && NUMBER_OF_MONS > 0)
 					{
-						for (i = 0; i < cachedTeamMembers.length; i++)
+						for (i = 0; i < NUMBER_OF_MONS; i++)
 						{
 							if (cachedTeamMembers[i].monName == checkName)
 							{
