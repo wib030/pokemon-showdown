@@ -447,13 +447,277 @@
         ]
     },
     "alakazam": {
-        "level": 81,
+        "level": 100,
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["calmmind", "encore", "focusblast", "psychic", "shadowball", "substitute", "trick"],
-                "abilities": ["Synchronize"],
-                "preferredTypes": ["Fighting"]
+                "movepool": ["psychic", "focusblast", "shadowball", "substitute"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psyshock", "focusblast", "shadowball", "substitute"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psychic", "focusblast", "shadowball", "hiddenpowerice"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psychic", "focusblast", "hiddenpowerice", "encore"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psyshock", "focusblast", "hiddenpowerice", "encore"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psychic", "focusblast", "hiddenpowerfire", "encore"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psyshock", "focusblast", "hiddenpowerfire", "encore"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psychic", "grassknot", "hiddenpowerfire", "thunderwave"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psyshock", "grassknot", "hiddenpowerfire", "thunderwave"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psychic", "focusblast", "shadowball", "thunderwave"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psyshock", "focusblast", "shadowball", "thunderwave"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psychic", "focusblast", "shadowball", "hiddenpowerice"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psyshock", "focusblast", "shadowball", "hiddenpowerice"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psychic", "focusblast", "shadowball", "hiddenpowerfire"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psyshock", "focusblast", "shadowball", "hiddenpowerfire"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psychic", "focusblast", "shadowball", "trick"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 30],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psyshock", "focusblast", "shadowball", "trick"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 30],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psychic", "chargebeam", "hiddenpowerfire", "taunt"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Focus Sash",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psychic", "chargebeam", "focusblast", "taunt"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Timid"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["psyshock", "hiddenpowerfighting", "encore", "calmmind"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 30, 30, 30, 30],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["psychic", "hiddenpowerfighting", "shadowball", "endure"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 30, 30, 30, 30],
+				"item": "Petaya Berry",
+				"nature": "Timid"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["psyshock", "hiddenpowerfighting", "shadowball", "endure"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 30, 30, 30, 30],
+				"item": "Petaya Berry",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psychic", "focusblast", "shadowball", "counter"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psyshock", "focusblast", "shadowball", "counter"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psychic", "focusblast", "shadowball", "hiddenpowerice"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psyshock", "focusblast", "shadowball", "hiddenpowerice"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psychic", "focusblast", "shadowball", "hiddenpowerfire"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psyshock", "focusblast", "shadowball", "hiddenpowerfire"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psychic", "focusblast", "shadowball", "trick"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 30],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psyshock", "focusblast", "shadowball", "trick"],
+                "abilities": ["Magic Guard"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 30],
+				"item": "Choice Scarf",
+				"nature": "Timid"
             }
         ]
     },
@@ -1380,12 +1644,70 @@
         ]
     },
     "ariados": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
+                "role": "Bulky Lead",
+                "movepool": ["leechlife", "poisonfang", "spikes", "stickyweb"],
+                "abilities": ["Web Master"],
+				"evs": [252, 16, 4, 0, 236, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["leechlife", "poisonjab", "toxicspikes", "stickyweb"],
+                "abilities": ["Poison Point"],
+				"evs": [252, 16, 4, 0, 236, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["leechlife", "poisonfang", "spiderweb", "stickyweb"],
+                "abilities": ["Web Master"],
+				"evs": [252, 16, 236, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["leechlife", "poisonfang", "spikes", "stickyweb"],
+                "abilities": ["Web Master"],
+				"evs": [252, 16, 236, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["spiderweb", "poisonfang", "substitute", "batonpass"],
+                "abilities": ["Poison Point"],
+				"evs": [252, 16, 4, 0, 236, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful"
+            },
+			{
                 "role": "Bulky Support",
-                "movepool": ["bugbite", "poisonjab", "suckerpunch", "toxicspikes"],
-                "abilities": ["Insomnia", "Swarm"]
+                "movepool": ["poisonfang", "nightshade", "sleeptalk", "rest"],
+                "abilities": ["Web Master"],
+				"evs": [252, 16, 236, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["spiderweb", "poisonfang", "sleeptalk", "rest"],
+                "abilities": ["Web Master"],
+				"evs": [252, 16, 4, 0, 236, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful"
             }
         ]
     },
