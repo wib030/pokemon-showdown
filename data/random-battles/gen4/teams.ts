@@ -701,7 +701,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					{
 						for (i = 0; i < cachedTeamMembers.length; i++)
 						{
-							if (cachedTeamMembers[i].name == checkName)
+							if (cachedTeamMembers[i].monName == checkName)
 							{
 								teamHasSpecies = true;
 								break;
@@ -727,7 +727,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					{
 						for (i = 0; i < cachedTeamMembers.length; i++)
 						{
-							if (cachedTeamMembers[i].name == checkName)
+							if (cachedTeamMembers[i].monName == checkName)
 							{
 								teamHasSpecies = true;
 								break;
@@ -905,10 +905,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		NUMBER_OF_MONS++;
 		
-		const currentMember = {
-			name: species.baseSpecies,
-			species: forme,
-			role,
+		let currentMember = {
+			monName: species.baseSpecies,
+			monSpecies: forme,
+			monRole: role
 		};
 		
 		cachedTeamMembers.push(currentMember);
