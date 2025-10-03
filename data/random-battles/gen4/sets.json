@@ -5235,22 +5235,151 @@
         ]
     },
     "empoleon": {
-        "level": 78,
+        "level": 100,
         "sets": [
             {
-                "role": "Staller",
-                "movepool": ["icebeam", "protect", "stealthrock", "surf", "toxic"],
-                "abilities": ["Torrent"]
+                "role": "Berry Sweeper",
+                "movepool": ["hydropump", "icebeam", "agility", "substitute"],
+                "abilities": ["Torrent"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [30, 0, 31, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Modest"
             },
-            {
+			{
+                "role": "Bulky Lead",
+                "movepool": ["hydropump", "defog", "stealthrock", "roost"],
+                "abilities": ["Competitive"],
+				"evs": [252, 0, 0, 56, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["hydropump", "defog", "stealthrock", "roost"],
+                "abilities": ["Competitive"],
+				"evs": [252, 0, 144, 44, 68, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["hydropump", "icebeam", "defog", "roost"],
+                "abilities": ["Competitive"],
+				"evs": [252, 0, 144, 44, 68, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["hydropump", "icebeam", "defog", "roost"],
+                "abilities": ["Competitive"],
+				"evs": [252, 0, 0, 56, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["hydropump", "uturn", "defog", "roost"],
+                "abilities": ["Competitive"],
+				"evs": [252, 0, 0, 56, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["hydropump", "uturn", "defog", "roost"],
+                "abilities": ["Competitive"],
+				"evs": [252, 0, 144, 44, 68, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["hydropump", "stealthrock", "roar", "roost"],
+                "abilities": ["Competitive"],
+				"evs": [252, 0, 144, 44, 68, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["hydropump", "stealthrock", "roar", "roost"],
+                "abilities": ["Competitive"],
+				"evs": [252, 0, 0, 56, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
                 "role": "Bulky Support",
-                "movepool": ["icebeam", "roar", "stealthrock", "surf", "toxic"],
-                "abilities": ["Torrent"]
+                "movepool": ["hydropump", "steelwing", "toxic", "roost"],
+                "abilities": ["Competitive"],
+				"evs": [252, 0, 0, 56, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
             },
-            {
+			{
+                "role": "Wallbreaker",
+                "movepool": ["hydropump", "icebeam", "grassknot", "hiddenpowerelectric"],
+                "abilities": ["Competitive"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 31, 30, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
                 "role": "Setup Sweeper",
-                "movepool": ["agility", "grassknot", "hydropump", "icebeam"],
-                "abilities": ["Torrent"]
+                "movepool": ["surf", "icebeam", "grassknot", "agility"],
+                "abilities": ["Torrent"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Air Balloon",
+				"nature": "Modest"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["hydropump", "icywind", "uturn", "roost"],
+                "abilities": ["Competitive"],
+				"evs": [252, 0, 0, 56, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["hydropump", "icywind", "uturn", "roost"],
+                "abilities": ["Competitive"],
+				"evs": [252, 0, 144, 44, 68, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["hydropump", "knockoff", "toxic", "roost"],
+                "abilities": ["Competitive"],
+				"evs": [252, 0, 0, 56, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["hydropump", "knockoff", "toxic", "roost"],
+                "abilities": ["Competitive"],
+				"evs": [252, 0, 144, 44, 68, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
             }
         ]
     },
