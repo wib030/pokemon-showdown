@@ -1390,12 +1390,169 @@
         ]
     },
     "crobat": {
-        "level": 80,
+        "level": 100,
         "sets": [
             {
+                "role": "Fast Pivot",
+                "movepool": ["bravebird", "poisonfang", "uturn", "roost"],
+                "abilities": ["Speed Boost"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["poisonfang", "uturn", "defog", "roost"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 0, 12, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["poisonfang", "uturn", "haze", "roost"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 0, 12, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["poisonfang", "uturn", "superfang", "roost"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 0, 12, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["poisonfang", "uturn", "taunt", "roost"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 0, 12, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["poisonfang", "bravebird", "taunt", "roost"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 0, 12, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Bulky Setup",
+                "movepool": ["poisonfang", "bravebird", "curse", "roost"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 0, 12, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["bravebird", "uturn", "roost", "defog"],
+                "abilities": ["Speed Boost"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["bravebird", "poisonfang", "uturn", "defog"],
+                "abilities": ["Speed Boost"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["bravebird", "poisonfang", "bite", "uturn"],
+                "abilities": ["Speed Boost"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["dualwingbeat", "poisonfang", "bite", "endure"],
+                "abilities": ["Speed Boost"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["poisonfang", "superfang", "uturn", "roost"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 0, 12, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Jolly"
+            },
+			{
                 "role": "Bulky Support",
-                "movepool": ["bravebird", "heatwave", "roost", "superfang", "taunt", "toxic", "uturn"],
-                "abilities": ["Inner Focus"]
+                "movepool": ["poisonfang", "superfang", "roost", "substitute"],
+                "abilities": ["Speed Boost"],
+				"evs": [248, 0, 220, 0, 24, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["poisonfang", "superfang", "taunt", "roost"],
+                "abilities": ["Speed Boost"],
+				"evs": [248, 0, 220, 0, 24, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["poisonfang", "superfang", "uturn", "roost"],
+                "abilities": ["Speed Boost"],
+				"evs": [248, 0, 220, 0, 24, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["poisonfang", "uturn", "defog", "roost"],
+                "abilities": ["Speed Boost"],
+				"evs": [248, 0, 220, 0, 24, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["poisonfang", "superfang", "defog", "roost"],
+                "abilities": ["Speed Boost"],
+				"evs": [248, 0, 220, 0, 24, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["poisonfang", "superfang", "torment", "substitute"],
+                "abilities": ["Speed Boost"],
+				"evs": [248, 0, 220, 0, 24, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish"
             }
         ]
     },

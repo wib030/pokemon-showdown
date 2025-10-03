@@ -164,7 +164,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (movePool.includes('stealthrock')) this.fastPop(movePool, movePool.indexOf('stealthrock'));
 			if (moves.size + movePool.length <= this.maxMoveCount) return;
 		}
-		if (teamDetails.rapidSpin) {
+		if (teamDetails.rapidSpin && !['Hazard Removal'].includes(role)) {
 			if (movePool.includes('rapidspin')) this.fastPop(movePool, movePool.indexOf('rapidspin'));
 			if (moves.size + movePool.length <= this.maxMoveCount) return;
 		}
