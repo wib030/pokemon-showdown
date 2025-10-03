@@ -56,6 +56,8 @@ let NUMBER_OF_MONS = 0;
 let NUMBER_OF_LEADS = 0;
 let NUMBER_OF_HAZARD_REMOVERS = 0;
 
+let cachedTeamMembers = new Array();
+
 export class RandomGen4Teams extends RandomGen5Teams {
 	override randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = require('./sets.json');
 
@@ -676,11 +678,15 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			NUMBER_OF_MONS = 0;
 			NUMBER_OF_LEADS = 0;
 			NUMBER_OF_HAZARD_REMOVERS = 0;
+			cachedTeamMembers = new Array();
 		}
 		let ensureMon = false;
 		let checkSpecies = species;
 		checkSpecies = this.dex.species.get(checkSpecies);
+		let checkName = checkSpecies.baseSpecies;
 		let checkSets = this.randomSets[checkSpecies.id]["sets"];
+		let teamHasSpecies = false;
+		let i = 0;
 		
 		switch (TEAM_TYPE) {
 		case "Balanced":
@@ -689,8 +695,22 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
 					checkSpecies = this.dex.species.get(checkSpecies);
 					checkSets = this.randomSets[checkSpecies.id]["sets"];
+					checkName = checkSpecies.baseSpecies;
+					
+					if (cachedTeamMembers.length)
+					{
+						for (i = 0; i < cachedTeamMembers.length; i++)
+						{
+							if (cachedTeamMembers[i].name == checkName)
+							{
+								teamHasSpecies = true;
+								break;
+							}
+						}
+					}
+					
 					for (const checkSet of checkSets) {
-						if (['Fast Lead', 'Bulky Lead'].includes(checkSet.role)) {
+						if (['Fast Lead', 'Bulky Lead'].includes(checkSet.role) && !teamHasSpecies) {
 							ensureMon = true;
 							break;
 						}
@@ -701,8 +721,22 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
 					checkSpecies = this.dex.species.get(checkSpecies);
 					checkSets = this.randomSets[checkSpecies.id]["sets"];
+					checkName = checkSpecies.baseSpecies;
+					
+					if (cachedTeamMembers.length)
+					{
+						for (i = 0; i < cachedTeamMembers.length; i++)
+						{
+							if (cachedTeamMembers[i].name == checkName)
+							{
+								teamHasSpecies = true;
+								break;
+							}
+						}
+					}
+					
 					for (const checkSet of checkSets) {
-						if (['Hazard Removal'].includes(checkSet.role)) {
+						if (['Hazard Removal'].includes(checkSet.role) && !teamHasSpecies) {
 							ensureMon = true;
 							break;
 						}
@@ -757,14 +791,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		}
 		const set = this.sampleIfArray(possibleSets);
 		const role = set.role;
-		
-		if (['Fast Lead', 'Bulky Lead'].includes(role)) {
-			NUMBER_OF_LEADS++;
-		} else if (['Hazard Removal'].includes(role)) {
-			NUMBER_OF_HAZARD_REMOVERS++;
-		}
-		
-		NUMBER_OF_MONS++;
 		
 		const movePool: string[] = Array.from(set.movepool);
 		const preferredTypes = set.preferredTypes;
@@ -870,6 +896,22 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		// shuffle moves to add more randomness to camomons
 		const shuffledMoves = Array.from(moves);
 		this.prng.shuffle(shuffledMoves);
+		
+		if (['Fast Lead', 'Bulky Lead'].includes(role)) {
+			NUMBER_OF_LEADS++;
+		} else if (['Hazard Removal'].includes(role)) {
+			NUMBER_OF_HAZARD_REMOVERS++;
+		}
+		
+		NUMBER_OF_MONS++;
+		
+		const currentMember = {
+			name: species.baseSpecies,
+			species: forme,
+			role,
+		};
+		
+		cachedTeamMembers.push(currentMember);
 
 		return {
 			name: species.baseSpecies,
