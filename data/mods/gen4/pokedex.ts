@@ -29,7 +29,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	entei: {
 		inherit: true,
 		baseStats: { hp: 115, atk: 115, def: 105, spa: 90, spd: 95, spe: 100 },
-		abilities: { 0: "Solar Power" },
+		abilities: { 0: "Pressure", 1: "Solar Power" },
 	},
 	espeon: {
 		inherit: true,
@@ -705,6 +705,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	raikou: {
 		inherit: true,
 		baseStats: {hp: 100, atk: 95, def: 85, spa: 125, spd: 110, spe: 120},
+		abilities: { 0: "Pressure", 1: "Minus" },
 	},
 	cranidos: {
 		inherit: true,
@@ -951,6 +952,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	suicune: {
 		inherit: true,
 		baseStats: {hp: 110, atk: 75, def: 115, spa: 90, spd: 115, spe: 90},
+		abilities: { 0: "Pressure", 1: "Rain Dish" },
 	},
 	sunflora: {
 		inherit: true,
@@ -1368,7 +1370,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	articuno: {
 		inherit: true,
 		baseStats: {hp: 90, atk: 85, def: 100, spa: 125, spd: 125, spe: 90},
-		abilities: {0: "Pressure", 1: "Snow Warning"},
+		abilities: {0: "Ice Body", 1: "Snow Warning"},
 	},
 	azelf: {
 		inherit: true,
