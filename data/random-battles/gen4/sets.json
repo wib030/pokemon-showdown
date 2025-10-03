@@ -5556,13 +5556,214 @@
         ]
     },
     "electivire": {
-        "level": 82,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["crosschop", "earthquake", "flamethrower", "hiddenpowergrass", "icepunch", "thunderbolt"],
+                "role": "Bulky Setup",
+                "movepool": ["drainpunch", "wildcharge", "icepunch", "bulkup"],
                 "abilities": ["Motor Drive"],
-                "preferredTypes": ["Ice"]
+                "evs": [244, 0, 4, 0, 44, 216],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["closecombat", "wildcharge", "icepunch", "voltswitch"],
+                "abilities": ["Motor Drive"],
+                "evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Fast Bulky Setup",
+                "movepool": ["closecombat", "wildcharge", "icepunch", "bulkup"],
+                "abilities": ["Motor Drive"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Air Balloon",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["closecombat", "wildcharge", "icepunch", "machpunch"],
+                "abilities": ["Motor Drive"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["closecombat", "wildcharge", "icepunch", "machpunch"],
+                "abilities": ["Motor Drive"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["drainpunch", "wildcharge", "bulkup", "magnetrise"],
+                "abilities": ["Motor Drive"],
+                "evs": [244, 0, 4, 0, 44, 216],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["drainpunch", "wildcharge", "bulkup", "fling"],
+                "abilities": ["Motor Drive"],
+                "evs": [244, 0, 4, 0, 44, 216],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Big Root",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["closecombat", "wildcharge", "icepunch", "fling"],
+                "abilities": ["Motor Drive"],
+                "evs": [0, 252, 92, 0, 0, 164],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Anklet",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Bulky Setup",
+                "movepool": ["closecombat", "wildcharge", "icepunch", "meditate"],
+                "abilities": ["Motor Drive"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Air Balloon",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["discharge", "flamethrower", "hiddenpowergrass", "voltswitch"],
+                "abilities": ["Flare Boost"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["discharge", "flamethrower", "hiddenpowerice", "chargebeam"],
+                "abilities": ["Flare Boost"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["voltswitch", "flamethrower", "hiddenpowerice", "chargebeam"],
+                "abilities": ["Flare Boost"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["thunderbolt", "flamethrower", "hiddenpowergrass", "chargebeam"],
+                "abilities": ["Flare Boost"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["thunder", "flamethrower", "hiddenpowerice", "chargebeam"],
+                "abilities": ["Flare Boost"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["thunder", "flamethrower", "hiddenpowergrass", "chargebeam"],
+                "abilities": ["Flare Boost"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["voltswitch", "focusblast", "hiddenpowerice", "fling"],
+                "abilities": ["Flare Boost"],
+                "evs": [0, 4, 0, 252, 4, 252],
+				"ivs": [30, 31, 30, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["discharge", "focusblast", "hiddenpowerice", "chargebeam"],
+                "abilities": ["Flare Boost"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["discharge", "focusblast", "hiddenpowergrass", "chargebeam"],
+                "abilities": ["Flare Boost"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["focuspunch", "thunderpunch", "machpunch", "substitute"],
+                "abilities": ["Motor Drive"],
+                "evs": [36, 252, 0, 0, 4, 216],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["closecombat", "thunderpunch", "icepunch", "substitute"],
+                "abilities": ["Motor Drive"],
+                "evs": [36, 252, 0, 0, 4, 216],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["closecombat", "wildcharge", "icepunch", "voltswitch"],
+                "abilities": ["Motor Drive"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["drainpunch", "wildcharge", "bulkup", "taunt"],
+                "abilities": ["Motor Drive"],
+                "evs": [36, 252, 0, 0, 4, 216],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["machpunch", "thunderpunch", "icepunch", "endure"],
+                "abilities": ["Motor Drive"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly"
             }
         ]
     },
