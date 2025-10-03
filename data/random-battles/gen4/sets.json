@@ -157,17 +157,124 @@
         ]
     },
     "beedrill": {
-        "level": 97,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Support",
-                "movepool": ["brickbreak", "poisonjab", "toxicspikes", "uturn"],
-                "abilities": ["Swarm"]
+                "role": "Fast Pivot",
+                "movepool": ["uturn", "poisonjab", "knockoff", "drillrun"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
             },
-            {
-                "role": "Fast Attacker",
-                "movepool": ["brickbreak", "poisonjab", "swordsdance", "uturn", "xscissor"],
-                "abilities": ["Swarm"]
+			{
+                "role": "Fast Pivot",
+                "movepool": ["uturn", "poisonjab", "knockoff", "drillrun"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["uturn", "poisonjab", "knockoff", "brickbreak"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["uturn", "poisonjab", "knockoff", "defog"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Silver Powder",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["uturn", "poisonjab", "knockoff", "defog"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Poison Barb",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["spiderweb", "poisonjab", "knockoff", "batonpass"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["uturn", "poisonjab", "endeavor", "stickyweb"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["uturn", "poisonjab", "endeavor", "toxicspikes"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["xscissor", "poisonjab", "substitute", "swordsdance"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["xscissor", "poisonjab", "drillrun", "endure"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["uturn", "poisonjab", "knockoff", "drillrun"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["xscissor", "poisonjab", "substitute", "agility"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly"
+            },
+			{
+                "role": "AV Pivot",
+                "movepool": ["uturn", "poisonjab", "knockoff", "drillrun"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Jolly"
             }
         ]
     },
