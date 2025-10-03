@@ -692,6 +692,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		case "Balanced":
 			if (NUMBER_OF_LEADS < 1 && (NUMBER_OF_MONS > 2 || this.randomChance(1, 3))) {
 				do {
+					teamHasSpecies = false;
 					checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
 					checkSpecies = this.dex.species.get(checkSpecies);
 					checkSets = this.randomSets[checkSpecies.id]["sets"];
@@ -718,6 +719,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				} while (!ensureMon)
 			} else if ((NUMBER_OF_HAZARD_REMOVERS < 1 && NUMBER_OF_LEADS > 0) && (NUMBER_OF_MONS > 3 || this.randomChance(1, 3))) {
 				do {
+					teamHasSpecies = false;
 					checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
 					checkSpecies = this.dex.species.get(checkSpecies);
 					checkSets = this.randomSets[checkSpecies.id]["sets"];

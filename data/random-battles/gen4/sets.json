@@ -636,7 +636,7 @@
 				"nature": "Adamant"
             },
 			{
-                "role": "Hazard Removal",
+                "role": "Bulky Support",
                 "movepool": ["iciclespear", "clamp", "screech", "rapidspin"],
                 "abilities": ["Skill Link"],
 				"evs": [252, 168, 0, 0, 48, 40],
