@@ -298,6 +298,10 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		baseStats: {hp: 75, atk: 95, def: 95, spa: 95, spd: 95, spe: 90},
 	},
+	krabby: {
+		inherit: true,
+		abilities: {0: "Hyper Cutter", 1: "Battle Armor"},
+	},
 	kingler: {
 		inherit: true,
 		baseStats: {hp: 70, atk: 130, def: 115, spa: 50, spd: 50, spe: 75},
@@ -509,6 +513,10 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	mewtwo: {
 		inherit: true,
 		baseStats: {hp: 106, atk: 110, def: 90, spa: 204, spd: 90, spe: 130},
+	},
+	poochyena: {
+		inherit: true,
+		abilities: {0: "Run Away", 1: "Anticipation"},
 	},
 	mightyena: {
 		inherit: true,
@@ -1397,7 +1405,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	banette: {
 		inherit: true,
-		baseStats: {hp: 64, atk: 165, def: 65, spa: 93, spd: 63, spe: 59},
+		baseStats: {hp: 64, atk: 150, def: 65, spa: 93, spd: 63, spe: 59},
 		abilities: {0: "Hustle"},
 	},
 	shieldon: {
