@@ -1039,12 +1039,12 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	quilava: {
 		inherit: true,
 		baseStats: { hp: 58, atk: 74, def: 58, spa: 80, spd: 65, spe: 80 },
-		abilities: {0: "Mold Breaker"},
+		abilities: {0: "Mold Breaker", 1: "Blaze"},
 	},
 	typhlosion: {
 		inherit: true,
 		baseStats: {hp: 78, atk: 94, def: 78, spa: 114, spd: 85, spe: 103},
-		abilities: {0: "Mold Breaker"},
+		abilities: {0: "Mold Breaker", 1: "Blaze"},
 	},
 	larvitar: {
 		inherit: true,
@@ -1083,7 +1083,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	venomoth: {
 		inherit: true,
 		baseStats: {hp: 70, atk: 65, def: 60, spa: 130, spd: 75, spe: 100},
-		abilities: { 0: "Tinted Lens", 1: "Compound Eyes" },
+		abilities: { 0: "Tinted Lens", 1: "Shield Dust" },
 	},
 	bulbasaur: {
 		inherit: true,
@@ -1568,12 +1568,12 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	kricketot: {
 		inherit: true,
-		abilities: {0: "Soundproof"},
+		abilities: {0: "Soundproof", 1: "Swarm"},
 	},
 	kricketune: {
 		inherit: true,
 		baseStats: {hp: 77, atk: 95, def: 71, spa: 95, spd: 71, spe: 85},
-		abilities: {0: "Soundproof"},
+		abilities: {0: "Soundproof", 1: "Swarm"},
 	},
 	exeggutor: {
 		inherit: true,
@@ -1755,7 +1755,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	minun: {
 		inherit: true,
-		abilities: { 0: "Plus", 1: "Static" },
+		abilities: { 0: "Minus", 1: "Static" },
 	},
 	magikarp: {
 		inherit: true,
