@@ -416,7 +416,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Hits one time for the user and one time for each unfainted Pokemon without a non-volatile status condition in the user's party. The power of each hit is equal to 5+(X/10), where X is each participating Pokemon's base Attack; each hit is considered to come from the user.",
 		shortDesc: "All healthy allies aid in damaging the target.",
 		gen4: {
-			desc: "Deals typed Dark damage, can recieve STAB and deal super-effective/not-very-effective damage. Hits one time for the user and one time for each unfainted Pokemon in the user's party. For each hit, the damage formula uses the participating Pokemon's base Attack as the Attack stat, with the stat changes of the user. The Attack stat used in this formula can be modified by Abilities and Items belonging to the participating Pokemon, and the attack will recieve a STAB bonus depending on the participating Pokemons type. Each hit is considered to come from the user.",
+			desc: "Deals typed Dark damage, can recieve STAB and deal super-effective/not-very-effective damage. Hits one time for the user and one time for each unfainted Pokemon in the user's party. For each hit, the damage formula uses the participating Pokemon's base Attack as the Attack stat, with the stat changes of the user. The Attack stat used in this formula can be modified by Abilities and Items belonging to the participating Pokemon, and the attack will recieve a STAB bonus depending on the participating Pokemons type. Each hit is considered to come from the user. This move is considered a punching move.",
 		},
 		gen3: {
 			desc: "Deals typeless damage. Hits one time for each unfainted Pokemon without a non-volatile status condition in the user's party, or fails if no Pokemon meet the criteria. For each hit, the damage formula uses the participating Pokemon's base Attack as the Attack stat, the target's base Defense as the Defense stat, and ignores stat stages and other effects that modify Attack or Defense; each hit is considered to come from the user.",
@@ -1256,7 +1256,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "If the user is not a Ghost type, lowers the user's Speed by 1 stage and raises the user's Attack and Defense by 1 stage. If the user is a Ghost type, the user loses 1/2 of its maximum HP, rounded down and even if it would cause fainting, in exchange for the target losing 1/4 of its maximum HP, rounded down, at the end of each turn while it is active. If the target uses Baton Pass, the replacement will continue to be affected. Fails if there is no target or if the target is already affected.",
 		shortDesc: "Curses if Ghost, else -1 Spe, +1 Atk, +1 Def.",
 		gen4: {
-			desc: "If the user is not a Ghost type, lowers the user's Speed by 1 stage and raises the user's Attack and Defense by 1 stage. If the user is a Ghost type, the user loses 1/2 of its maximum HP, rounded down and even if it would cause fainting, in exchange for the target losing 1/4 of its maximum HP, rounded down, at the end of each turn while it is active. If the target uses Baton Pass, the replacement will continue to be affected. Fails if there is no target or if the target is already affected or has a substitute.",
+			desc: "If the user is not a Ghost type, lowers the user's Speed by 1 stage and raises the user's Attack and Defense by 1 stage. If the user is a Ghost type, the user loses 1/2 of its maximum HP, rounded down and even if it would cause fainting, in exchange for the target losing 1/3 of its maximum HP, rounded down, at the end of each turn while it is active. If the target uses Baton Pass, the replacement will continue to be affected. Fails if there is no target or if the target is already affected or has a substitute.",
 		},
 		gen2: {
 			desc: "If the user is not a Ghost type, lowers the user's Speed by 1 stage and raises the user's Attack and Defense by 1 stage, unless the user's Attack and Defense stats are both at stage 6. If the user is a Ghost type, the user loses 1/2 of its maximum HP, rounded down and even if it would cause fainting, in exchange for the target losing 1/4 of its maximum HP, rounded down, at the end of each turn while it is active. If the target uses Baton Pass, the replacement will continue to be affected. Fails if the target is already affected or has a substitute.",
@@ -1332,6 +1332,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "Lowers the target's evasiveness by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Safeguard, Mist, Spikes, Toxic Spikes, and Stealth Rock end for the target's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness.",
 			shortDesc: "-1 evasion; clears target side's hazards/screens.",
 		},
+		gen4: {
+			desc: "Lowers the target's evasiveness by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness.",
+			shortDesc: "-1 evasion; clears user and target side's hazards.",
+		},
 	},
 	destinybond: {
 		name: "Destiny Bond",
@@ -1339,6 +1343,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		shortDesc: "If an opponent knocks out the user, it also faints.",
 		gen6: {
 			desc: "Until the user's next turn, if an opposing Pokemon's attack knocks the user out, that Pokemon faints as well, unless the attack was Doom Desire or Future Sight.",
+		},
+		gen4: {
+			desc: "Until the user's next move, if an opposing Pokemon's attack knocks the user out, that Pokemon faints as well, unless the attack was Doom Desire or Future Sight. Fails if the user used this move successfully as its last move.",
+			shortDesc: "If an opponent knocks out the user, it also faints.",
 		},
 		gen2: {
 			desc: "Until the user's next turn, if an opposing Pokemon's attack knocks the user out, that Pokemon faints as well.",
@@ -1483,7 +1491,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Future Sight is already in effect for the target's position.",
 		shortDesc: "Hits two turns after being used.",
 		gen4: {
-			desc: "Deals typeless damage that cannot be a critical hit two turns after this move is used. Damage is calculated against the target on use, and at the end of the final turn that damage is dealt to the Pokemon at the position the original target had at the time. Fails if this move or Future Sight is already in effect for the target's position.",
+			desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Future Sight is already in effect for the target's position.",
+			shortDesc: "Hits two turns after being used.",
 		},
 
 		start: "  [POKEMON] chose Doom Desire as its destiny!",
@@ -1798,8 +1807,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "For 3 turns, the target is forced to repeat its last move used. If the affected move runs out of PP, the effect ends. Fails if the target is already under this effect, if it has not made a move, if the move has 0 PP, or if the move is Encore, Mimic, Mirror Move, Sketch, Struggle, or Transform.",
 		},
 		gen4: {
-			desc: "For 4 to 8 turns, the target is forced to repeat its last move used. If the affected move runs out of PP, the effect ends. Fails if the target is already under this effect, if it has not made a move, if the move has 0 PP, or if the move is Encore, Mimic, Mirror Move, Sketch, Struggle, or Transform.",
-			shortDesc: "The target repeats its last move for 4-8 turns.",
+			desc: "For 3 turns, the target is forced to repeat its last move used. If the affected move runs out of PP, the effect ends. Fails if the target is already under this effect, if it has not made a move, if the move has 0 PP, or if the move is Encore, Mimic, Mirror Move, Sketch, Struggle, or Transform.",
+			shortDesc: "The target repeats its last move for 3 turns.",
 		},
 		gen3: {
 			desc: "For 3 to 6 turns, the target is forced to repeat its last move used. If the affected move runs out of PP, the effect ends. Fails if the target is already under this effect, if it has not made a move, if the move has 0 PP, or if the move is Encore, Mimic, Mirror Move, Sketch, Struggle, or Transform.",
@@ -2428,7 +2437,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position.",
 		shortDesc: "Hits two turns after being used.",
 		gen4: {
-			desc: "Deals typeless damage that cannot be a critical hit two turns after this move is used. Damage is calculated against the target on use, and at the end of the final turn that damage is dealt to the Pokemon at the position the original target had at the time. Fails if this move or Doom Desire is already in effect for the target's position.",
+			desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position.",
+			shortDesc: "Hits two turns after being used.",
 		},
 		gen2: {
 			desc: "Deals typeless damage that cannot be a critical hit two turns after this move is used. Damage is calculated against the target on use, and at the end of the final turn that damage is dealt to the Pokemon at the position the original target had at the time. Fails if this move is already in effect for the target's position.",
@@ -2789,6 +2799,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		gen5: {
 			desc: "Raises the user's Attack and Special Attack by 1 stage. If the weather is Sunny Day, this move raises the user's Attack and Special Attack by 2 stages.",
 		},
+		gen4: {
+			desc: "Raises the user's Attack and Special Attack by 1 stage. If the weather is Sunny Day or Desolate Land, this move raises the user's Attack and Special Attack by 2 stages. If the user is holding Utility Umbrella, this move will only raise the user's Attack and Special Attack by 1 stage, even if the weather is Sunny Day or Desolate Land.",
+			shortDesc: "Raises user's Attack and Sp. Atk by 1; 2 in Sun.",
+		},
 		gen1: {
 			desc: "Raises the user's Special by 1 stage.",
 			shortDesc: "Raises the user's Special by 1.",
@@ -3100,6 +3114,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "High Jump Kick",
 		desc: "If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage.",
 		shortDesc: "User is hurt by 50% of its max HP if it misses.",
+		gen4: {
+			desc: "If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage.",
+			shortDesc: "User is hurt by 50% of its max HP if it misses.",
+		},
 		gen3: {
 			desc: "If this attack is not successful and the target was not immune, the user loses HP equal to half of the damage the target would have taken, rounded down, but no less than 1 HP and no more than half of the target's maximum HP, as crash damage.",
 			shortDesc: "If miss, user takes 1/2 damage it would've dealt.",
@@ -3456,6 +3474,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Jump Kick",
 		desc: "If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage.",
 		shortDesc: "User is hurt by 50% of its max HP if it misses.",
+		gen4: {
+			desc: "If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage.",
+			shortDesc: "User is hurt by 50% of its max HP if it misses.",
+		},
 		gen3: {
 			desc: "If this attack is not successful and the target was not immune, the user loses HP equal to half of the damage the target would have taken, rounded down, but no less than 1 HP and no more than half of the target's maximum HP, as crash damage.",
 			shortDesc: "If miss, user takes 1/2 damage it would've dealt.",
@@ -3516,7 +3538,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			shortDesc: "Removes the target's held item.",
 		},
 		gen4: {
-			desc: "The target's held item is lost for the rest of the battle, unless the item is a Griseous Orb or the target has the Multitype or Sticky Hold Abilities. During the effect, the target cannot obtain a new item by any means.",
+			desc: "Deals 1.5x damage if foe holds an item (Even if it isn't removed). The target's held item is lost for the rest of the battle, unless the item is a Griseous Orb or the target has the Multitype or Sticky Hold Abilities. During the effect, the target cannot obtain a new item by any means.",
 			shortDesc: "1.5x damage if foe holds an item. Removes item.",
 		},
 		gen3: {
@@ -3714,7 +3736,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		shortDesc: "For 5 turns, shields user's party from critical hits.",
 		gen4: {
 			desc: "For 5 turns, the user and its party members cannot be struck by a critical hit, grants an additional 10% chance to secondary move effects (Applies after Serene Grace), multi-hit moves will always hit a minimum of 3 times. Fails if the effect is already active on the user's side.",
-			shortDesc: "Protects party from crits.",
+			shortDesc: "Make the party luckier.",
 		},
 
 		start: "  Lucky Chant made [TEAM] luckier!",
@@ -3836,7 +3858,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		},
 		gen4: {
 			desc: "If the user has Magnet Pull, this move gains +1 priority. For 5 turns, the user and any allies on the field that have the Rock, Steel or Electric type is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, and the Arena Trap Ability as long as it remains active. If the user uses Baton Pass, the replacement will gain the effect. Ingrain and Iron Ball override this move if the user is under any of their effects. Fails if the user is already under this effect or the effect of Ingrain.",
-			shortDesc: "For 5 turns, the user and some allies have immunity to Ground.",
+			shortDesc: "For 5 turns, the user and certain allies levitate.",
 		},
 
 		start: "  [POKEMON] levitated with electromagnetism!",
@@ -4762,6 +4784,9 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Poison Gas",
 		desc: "Poisons the target.",
 		shortDesc: "Poisons the foe(s).",
+		gen4: {
+			shortDesc: "Poisons the foe(s).",
+		},
 		gen2: {
 			shortDesc: "Poisons the target.",
 		},
@@ -4902,6 +4927,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "If this move is successful, it deals damage or heals the target. 102/256 chance for 40 power, 76/256 chance for 80 power, 26/256 chance for 120 power, or 52/256 chance to heal the target by 1/4 of its maximum HP, rounded down. If this move deals damage, it uses an abnormal version of the damage formula by substituting certain values. The user's Attack stat is replaced with 10 times the effectiveness of this move against the target, the target's Defense stat is replaced with the index number of the user's secondary type, and the user's level is replaced with the index number of the target's secondary type. If a Pokemon does not have a secondary type, its primary type is used. The index numbers for each type are Normal: 0, Fighting: 1, Flying: 2, Poison: 3, Ground: 4, Rock: 5, Bug: 7, Ghost: 8, Steel: 9, Fire: 20, Water: 21, Grass: 22, Electric: 23, Psychic: 24, Ice: 25, Dragon: 26, Dark: 27. If at any point a division by 0 would happen in the damage formula, it divides by 1 instead.",
 		},
 		gen4: {
+			desc: "If this move is successful, it deals damage or heals the target. 40% chance for 40 power, 30% chance for 80 power, 10% chance for 150 power, and 20% chance to heal the target by 1/4 of its maximum HP, rounded down.",
 			shortDesc: "40, 80, 150 power, or heals target 1/4 max HP.",
 		},
 	},
@@ -5170,7 +5196,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			shortDesc: "Frees user from hazards, binding, Leech Seed.",
 		},
 		gen4: {
-			desc: "If this move is successful, the effects of Leech Seed and binding moves end against the user, and all hazards are removed from the user's side of the field.",
+			desc: "If this move is successful and the user has not fainted, the effects of Leech Seed and binding moves end for the user, and all hazards are removed from the user's side of the field. Has a 100% chance to raise the user's Speed by 1 stage.",
+			shortDesc: "Free user from hazards/bind/Leech Seed; +1 Spe.",
 		},
 		gen3: {
 			desc: "If this move is successful, the effects of Leech Seed and binding moves end for the user, and Spikes are removed from the user's side of the field.",
@@ -6118,7 +6145,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "This attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Rain Dance, or Sandstorm. If the user is holding a Power Herb or the weather is Sunny Day, the move completes in one turn.",
 		},
 		gen4: {
-			desc: "This attack charges on the first turn and executes on the second. Damage is halved if the weather is Hail, Rain Dance, or Sandstorm. If the user is holding a Power Herb or the weather is Sunny Day, the move completes in one turn.",
+			desc: "If this move's charge turn is not skipped, the user gains +1 Sp. Atk during the charge turn. This attack charges on the first turn and executes on the second. Damage is halved if the weather is Hail, Rain Dance, or Sandstorm. If the user is holding a Power Herb or the weather is Sunny Day, the move completes in one turn.",
 		},
 		gen3: {
 			desc: "This attack charges on the first turn and executes on the second. Damage is halved if the weather is Hail, Rain Dance, or Sandstorm. If the weather is Sunny Day, the move completes in one turn.",
@@ -6893,6 +6920,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "Fails when used.",
 			shortDesc: "Fails when used.",
 		},
+		gen4: {
+			desc: "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members.",
+			shortDesc: "User switches out.",
+		},
 	},
 	temperflare: {
 		name: "Temper Flare",
@@ -7082,6 +7113,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Toxic",
 		desc: "Badly poisons the target. If a Poison-type Pokemon uses this move, the target cannot avoid the attack, even if the target is in the middle of a two-turn move.",
 		shortDesc: "Badly poisons the target. Poison types can't miss.",
+		gen4: {
+			desc: "Badly poisons the target. If a Poison-type Pokemon uses this move, the target cannot avoid the attack, even if the target is in the middle of a two-turn move.",
+			shortDesc: "Badly poisons the target. Poison types can't miss.",
+		},
 		gen5: {
 			desc: "Badly poisons the target.",
 			shortDesc: "Badly poisons the target.",
@@ -7738,6 +7773,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	chumrush: {
 		name: "Chum Rush",
+		desc: "Hits 2 to 10 times. Power for each hit is equal to: 10 multiplied by 2 divided by 3, multiplied by the targets Max HP divided by the targets current HP. (Power increases as targets HP decreases)",
 		shortDesc: "Hits: 2-10. Power increases as targets HP decreases.",
 	},
 	chillingspell: {
