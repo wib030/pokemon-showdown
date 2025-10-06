@@ -690,7 +690,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		switch (TEAM_TYPE) {
 		case "Balanced":
-			if (NUMBER_OF_LEADS < 1 && (NUMBER_OF_MONS > 2 || this.randomChance(1, 3))) {
+			if (NUMBER_OF_LEADS < 1) {
 				do {
 					teamHasSpecies = false;
 					checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
@@ -717,7 +717,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 					}
 				} while (!ensureMon)
-			} else if ((NUMBER_OF_HAZARD_REMOVERS < 1 && NUMBER_OF_LEADS > 0) && (NUMBER_OF_MONS > 3 || this.randomChance(1, 3))) {
+			} else if (NUMBER_OF_HAZARD_REMOVERS < 1 && NUMBER_OF_LEADS > 0) {
 				do {
 					teamHasSpecies = false;
 					checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
@@ -762,7 +762,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		// 'Sun Setter' | 'Rain Setter' | 'Hail Setter' | 'Sand Setter' | 'Sun Attacker' | 'Rain Attacker' |
 		// 'Hail Attacker' | 'Sand Attacker' | 'Fast Lead' | 'Bulky Lead' | 'Trick Scarf' | 'Fast Screens Setter' |
 		// 'Slow Screens Setter' | 'Glass Cannon' | 'Fling Setup' | 'TR Setter' | 'TR Attacker' | 'Baton Passer' |
-		// 'Fast Pivot' | 'Bulky Pivot' | 'Hazard Removal' | 'TR Lead';
+		// 'Fast Pivot' | 'Bulky Pivot' | 'Hazard Removal' | 'TR Lead' | 'Sun Setup';
 		
 		// Check if the Pokemon has a Lead set
 		let canLead = false;

@@ -84,7 +84,7 @@
 				"nature": "Naughty"
             },
 			{
-                "role": "Sun Attacker",
+                "role": "Sun Setup",
                 "movepool": ["solarbeam", "earthquake", "growth", "sunnyday"],
                 "abilities": ["Chlorophyll"],
 				"evs": [0, 92, 0, 200, 0, 216],
@@ -93,7 +93,7 @@
 				"nature": "Naive"
             },
 			{
-                "role": "Sun Attacker",
+                "role": "Sun Setup",
                 "movepool": ["solarbeam", "sludgebomb", "earthquake", "growth"],
                 "abilities": ["Chlorophyll"],
 				"evs": [0, 92, 0, 200, 0, 216],
@@ -102,7 +102,7 @@
 				"nature": "Naive"
             },
 			{
-                "role": "Sun Attacker",
+                "role": "Sun Setup",
                 "movepool": ["leafstorm", "sludgebomb", "earthquake", "growth"],
                 "abilities": ["Chlorophyll"],
 				"evs": [0, 92, 0, 200, 0, 216],
@@ -111,7 +111,7 @@
 				"nature": "Naive"
             },
 			{
-                "role": "Sun Attacker",
+                "role": "Sun Setup",
                 "movepool": ["solarbeam", "earthquake", "growth", "synthesis"],
                 "abilities": ["Chlorophyll"],
 				"evs": [0, 92, 0, 200, 0, 216],
@@ -2855,17 +2855,97 @@
         ]
     },
     "entei": {
-        "level": 80,
+        "level": 100,
         "sets": [
             {
-                "role": "Wallbreaker",
-                "movepool": ["extremespeed", "flareblitz", "ironhead", "stoneedge"],
-                "abilities": ["Pressure"]
+                "role": "Sun Attacker",
+                "movepool": ["sacredfire", "stoneedge", "extremespeed", "flareblitz"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
             },
-            {
-                "role": "Fast Attacker",
-                "movepool": ["extremespeed", "flareblitz", "hiddenpowergrass", "stoneedge"],
-                "abilities": ["Pressure"]
+			{
+                "role": "Bulky Setup",
+                "movepool": ["lavaplume", "calmmind", "sleeptalk", "rest"],
+                "abilities": ["Pressure"],
+				"evs": [244, 0, 60, 8, 0, 196],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Sun Setter",
+                "movepool": ["heatwave", "aurasphere", "solarbeam", "sunnyday"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Timid"
+            },
+			{
+                "role": "Sun Setter",
+                "movepool": ["heatwave", "aurasphere", "shadowball", "sunnyday"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Timid"
+            },
+			{
+                "role": "Sun Setter",
+                "movepool": ["heatwave", "aurasphere", "hiddenpowerice", "sunnyday"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Timid"
+            },
+			{
+                "role": "Sun Setter",
+                "movepool": ["heatwave", "aurasphere", "hiddenpowerrock", "sunnyday"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Heat Rock",
+				"nature": "Timid"
+            },
+			{
+                "role": "Sun Setter",
+                "movepool": ["overheat", "stoneedge", "sacredfire", "sunnyday"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Charcoal",
+				"nature": "Naive"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["fireblast", "firechase", "aurasphere", "shadowball"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["eruption", "aurasphere", "shadowball", "sacredfire"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Naive"
+            },
+			{
+                "role": "Sun Setter",
+                "movepool": ["heatwave", "aurasphere", "sunnyday", "rest"],
+                "abilities": ["Solar Power"],
+				"evs": [244, 0, 0, 12, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Chesto Berry",
+				"nature": "Timid"
             }
         ]
     },
