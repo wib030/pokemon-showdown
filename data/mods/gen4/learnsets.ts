@@ -3572,7 +3572,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			agility: ["4E"],
 			attract: ["4M", "3M"],
 			batonpass: ["4E", "3E"],
-			bugbite: ["4E"],
+			bugbite: ["4E", "4L15"],
 			captivate: ["4M"],
 			confusion: ["4L11", "3L17"],
 			disable: ["4L1", "3L1"],
@@ -3618,6 +3618,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			zenheadbutt: ["4T", "4L37"],
 			nibble: ["4L3"],
 			psychicscream: ["4L39"],
+			stringshot: ["4L1"],
 		},
 	},
 	venomoth: {
@@ -3682,6 +3683,9 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			spiderweb: ["4L35"],
 			peatslide: ["4L39"],
 			psychicscream: ["4L44"],
+			bugbite: ["4L15"],
+			stringshot: ["4L1"],
+			tailwind: ["4L1"],
 		},
 	},
 	diglett: {
@@ -3889,6 +3893,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			waterpulse: ["4M", "3M"],
 			lovelypunch: ["4L35"],
 			tailwhip: ["4E"],
+			headbutt: ["4L26"],
 		},
 	},
 	persian: {
@@ -3966,6 +3971,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uproar: ["4T"],
 			uturn: ["4M"],
 			waterpulse: ["4M", "3M"],
+			headbutt: ["4L26"],
 		},
 	},
 	psyduck: {
@@ -4053,6 +4059,9 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			psychicscream: ["4L42"],
 			encore: ["4E"],
 			wavecrash: ["4T"],
+			roleplay: ["4L1"],
+			whirlpool: ["4L24"],
+			headbutt: ["4L26"],
 		},
 	},
 	golduck: {
@@ -4141,6 +4150,10 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			psyshock: ["4L41"],
 			psychicscream: ["4L48"],
 			wavecrash: ["4T"],
+			roleplay: ["4L1"],
+			whirlpool: ["4L24"],
+			headbutt: ["4L26"],
+			lowkick: ["4L1"],
 		},
 	},
 	mankey: {
@@ -4232,6 +4245,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			vacuumwave: ["4T"],
 			pursuit: ["4L12"],
 			encore: ["4E"],
+			roleplay: ["4L1"],
+			headbutt: ["4L23"],
 		},
 	},
 	primeape: {
@@ -4320,6 +4335,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uturn: ["4M"],
 			vacuumwave: ["4T"],
 			pursuit: ["4L12"],
+			roleplay: ["4L1"],
+			headbutt: ["4L23"],
 		},
 	},
 	growlithe: {
@@ -4379,6 +4396,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			willowisp: ["4M"],
 			outrage: ["4L43"],
 			morningsun: ["4E"],
+			headbutt: ["4L25"],
 		},
 	},
 	arcanine: {
@@ -4444,6 +4462,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			tailwind: ["4L44"],
 			wildcharge: ["4L50"],
 			closecombat: ["4L52"],
+			headbutt: ["4L25"],
 		},
 	},
 	poliwag: {

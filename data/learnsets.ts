@@ -5485,7 +5485,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			agility: ["4E"],
 			attract: ["4M", "3M"],
 			batonpass: ["4E", "3E"],
-			bugbite: ["4E"],
+			bugbite: ["4E", "4L15"],
 			captivate: ["4M"],
 			confusion: ["4L11", "3L17"],
 			disable: ["4L1", "3L1"],
@@ -5531,6 +5531,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zenheadbutt: ["4T", "4L37"],
 			nibble: ["4L3"],
 			psychicscream: ["4L39"],
+			stringshot: ["4L1"],
 		},
 		encounters: [
 			{generation: 1, level: 13},
@@ -5597,6 +5598,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			spiderweb: ["4L35"],
 			peatslide: ["4L39"],
 			psychicscream: ["4L44"],
+			bugbite: ["4L15"],
+			stringshot: ["4L1"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 32, abilities: ["shielddust"], moves: ["refresh", "silverwind", "substitute", "psychic"]},
@@ -5993,6 +5997,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			waterpulse: ["4M", "3M"],
 			lovelypunch: ["4L35"],
 			tailwhip: ["4E"],
+			headbutt: ["4L26"],
 		},
 		eventData: [
 			{generation: 3, level: 5, shiny: 1, moves: ["scratch", "growl", "petaldance"], pokeball: "pokeball"},
@@ -6264,6 +6269,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["4T"],
 			uturn: ["4M"],
 			waterpulse: ["4M", "3M"],
+			headbutt: ["4L26"],
 		},
 		encounters: [
 			{generation: 2, level: 18},
@@ -6539,6 +6545,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			psychicscream: ["4L42"],
 			encore: ["4E"],
 			wavecrash: ["4T"],
+			roleplay: ["4L1"],
+			whirlpool: ["4L24"],
+			headbutt: ["4L26"],
 		},
 		eventData: [
 			{generation: 3, level: 27, gender: "M", nature: "Lax", ivs: {hp: 31, atk: 16, def: 12, spa: 29, spd: 31, spe: 14}, abilities: ["damp"], moves: ["tailwhip", "confusion", "disable", "screech"], pokeball: "pokeball"},
@@ -6633,6 +6642,10 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			psyshock: ["4L41"],
 			psychicscream: ["4L48"],
 			wavecrash: ["4T"],
+			roleplay: ["4L1"],
+			whirlpool: ["4L24"],
+			headbutt: ["4L26"],
+			lowkick: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 33, moves: ["charm", "waterfall", "psychup", "brickbreak"]},
@@ -6733,6 +6746,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			vacuumwave: ["4T"],
 			pursuit: ["4L12"],
 			encore: ["4E"],
+			roleplay: ["4L1"],
+			headbutt: ["4L23"],
 		},
 		encounters: [
 			{generation: 1, level: 3},
@@ -6824,6 +6839,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uturn: ["4M"],
 			vacuumwave: ["4T"],
 			pursuit: ["4L12"],
+			roleplay: ["4L1"],
+			headbutt: ["4L23"],
 		},
 		eventData: [
 			{generation: 3, level: 34, abilities: ["vitalspirit"], moves: ["helpinghand", "crosschop", "focusenergy", "reversal"]},
@@ -6971,6 +6988,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			willowisp: ["4M"],
 			outrage: ["4L43"],
 			morningsun: ["4E"],
+			headbutt: ["4L25"],
 		},
 		eventData: [
 			{generation: 3, level: 32, gender: "F", nature: "Quiet", ivs: {hp: 11, atk: 24, def: 28, spa: 1, spd: 20, spe: 2}, abilities: ["intimidate"], moves: ["leer", "odorsleuth", "takedown", "flamewheel"], pokeball: "pokeball"},
@@ -7104,6 +7122,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			tailwind: ["4L44"],
 			wildcharge: ["4L50"],
 			closecombat: ["4L52"],
+			headbutt: ["4L25"],
 		},
 		eventData: [
 			{generation: 4, level: 50, abilities: ["intimidate"], moves: ["flareblitz", "thunderfang", "crunch", "extremespeed"], pokeball: "cherishball"},
