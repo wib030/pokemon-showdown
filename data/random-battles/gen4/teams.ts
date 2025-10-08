@@ -748,7 +748,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			break;
 		}
 		
-		species = this.dex.species.get('farfetchd');
+		species = checkSpecies;
 		const forme = this.getForme(species);
 		const sets = this.randomSets[species.id]["sets"];
 		const possibleSets = [];
