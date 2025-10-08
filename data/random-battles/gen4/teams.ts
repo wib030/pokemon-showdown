@@ -801,6 +801,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const ivPool = set.ivs || '';
 		const setItem = set.item || '';
 		const nature = set.nature || 'Serious';
+		const setHappiness = set.happiness || 255;
 
 		let ability = '';
 		let item = undefined;
@@ -921,6 +922,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			gender: species.gender,
 			shiny: this.randomChance(1, 1024),
 			nature,
+			happiness: setHappiness,
 			level,
 			moves: shuffledMoves,
 			ability,

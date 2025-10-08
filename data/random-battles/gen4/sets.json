@@ -901,19 +901,149 @@
         ]
     },
     "farfetchd": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["doubleedge", "heatwave", "leafblade", "nightslash", "quickattack", "uturn"],
-                "abilities": ["Inner Focus"],
-                "preferredTypes": ["Grass"]
+                "role": "Glass Cannon",
+                "movepool": ["uturn", "bravebird", "frustration", "knockoff"],
+                "abilities": ["Huge Power"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"happiness": 0
             },
-            {
+			{
+                "role": "Glass Cannon",
+                "movepool": ["uturn", "bravebird", "return", "knockoff"],
+                "abilities": ["Huge Power"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"happiness": 255
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["uturn", "bravebird", "quickattack", "knockoff"],
+                "abilities": ["Huge Power"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["protect", "lastresort"],
+                "abilities": ["Huge Power"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Cleanse Tag",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["uturn", "bravebird", "facade", "knockoff"],
+                "abilities": ["Huge Power"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly"
+            },
+			{
                 "role": "Setup Sweeper",
-                "movepool": ["batonpass", "leafblade", "nightslash", "return", "swordsdance"],
-                "abilities": ["Inner Focus"],
-                "preferredTypes": ["Grass"]
+                "movepool": ["bravebird", "quickattack", "nightslash", "swordsdance"],
+                "abilities": ["Huge Power"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Stick",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["quickattack", "dualwingbeat", "knockoff", "swordsdance"],
+                "abilities": ["Huge Power"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["bravebird", "return", "knockoff", "quickattack"],
+                "abilities": ["Huge Power"],
+                "evs": [252, 252, 0, 0, 0, 4],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Adamant",
+				"happiness": 255
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["quickattack", "dualwingbeat", "knockoff", "swordsdance"],
+                "abilities": ["Huge Power"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["dualwingbeat", "knockoff", "frustration", "agility"],
+                "abilities": ["Huge Power"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"happiness": 0
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["bravebird", "return", "knockoff", "agility"],
+                "abilities": ["Huge Power"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Adamant",
+				"happiness": 255
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["bravebird", "return", "naturalgift", "uturn"],
+                "abilities": ["Huge Power"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [30, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Adamant",
+				"happiness": 255
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["dualwingbeat", "flail", "knockoff", "endure"],
+                "abilities": ["Huge Power"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["frustration", "knockoff", "substitute", "agility"],
+                "abilities": ["Huge Power"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [30, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Adamant",
+				"happiness": 0
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["dualwingbeat", "quickattack", "knockoff", "psychup"],
+                "abilities": ["Huge Power"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Adamant"
             }
         ]
     },
