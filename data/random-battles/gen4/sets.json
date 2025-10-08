@@ -2423,17 +2423,214 @@
         ]
     },
     "espeon": {
-        "level": 81,
+        "level": 100,
         "sets": [
-            {
-                "role": "Fast Attacker",
-                "movepool": ["calmmind", "hiddenpowerfighting", "morningsun", "psychic", "signalbeam", "trick"],
-                "abilities": ["Synchronize"]
+			{
+                "role": "Sun Attacker",
+                "movepool": ["psychic", "flamethrower", "grassknot", "trick"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["psyshock", "flamethrower", "grassknot", "trick"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["psychic", "fireblast", "grassknot", "trick"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["psyshock", "fireblast", "grassknot", "trick"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["psychic", "flamethrower", "grassknot", "trick"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["psyshock", "flamethrower", "grassknot", "trick"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["psychic", "fireblast", "grassknot", "trick"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["psyshock", "fireblast", "grassknot", "trick"],
+                "abilities": ["Solar Power"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psychic", "flamethrower", "grassknot", "trick"],
+                "abilities": ["Magic Bounce"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psyshock", "flamethrower", "grassknot", "trick"],
+                "abilities": ["Magic Bounce"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psychic", "fireblast", "grassknot", "trick"],
+                "abilities": ["Magic Bounce"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psyshock", "fireblast", "grassknot", "trick"],
+                "abilities": ["Magic Bounce"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psychic", "flamethrower", "grassknot", "trick"],
+                "abilities": ["Magic Bounce"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psyshock", "flamethrower", "grassknot", "trick"],
+                "abilities": ["Magic Bounce"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psychic", "fireblast", "grassknot", "trick"],
+                "abilities": ["Magic Bounce"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psyshock", "fireblast", "grassknot", "trick"],
+                "abilities": ["Magic Bounce"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Bulky Setup",
+                "movepool": ["psyshock", "flamethrower", "substitute", "calmmind"],
+                "abilities": ["Magic Bounce"],
+				"evs": [244, 0, 0, 12, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["psyshock", "flamethrower", "substitute", "calmmind"],
+                "abilities": ["Magic Bounce"],
+				"evs": [4, 0, 0, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Timid"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["psyshock", "flamethrower", "psychicscream", "substitute"],
+                "abilities": ["Magic Bounce"],
+				"evs": [4, 0, 0, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Timid"
             },
             {
+                "role": "Fast Screens Setter",
+                "movepool": ["psyshock", "morningsun", "lightscreen", "reflect"],
+                "abilities": ["Magic Bounce"],
+				"evs": [132, 0, 124, 0, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Timid"
+            },
+			{
                 "role": "Setup Sweeper",
-                "movepool": ["batonpass", "calmmind", "hiddenpowerfighting", "morningsun", "psychic", "substitute"],
-                "abilities": ["Synchronize"]
+                "movepool": ["psyshock", "hiddenpowerfighting", "calmmind", "morningsun"],
+                "abilities": ["Magic Bounce"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 30, 30, 30, 30],
+				"item": "Leftovers",
+				"nature": "Timid"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["psychic", "flamethrower", "substitute", "batonpass"],
+                "abilities": ["Magic Bounce"],
+				"evs": [4, 0, 0, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["psyshock", "flamethrower", "grassknot", "futuresight"],
+                "abilities": ["Magic Bounce"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid"
             }
         ]
     },

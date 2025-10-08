@@ -911,6 +911,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let currentMember = {
 			monName: species.baseSpecies,
 			monSpecies: forme,
+			monItem: item,
+			monAbility: ability,
 			monRole: role
 		};
 		
