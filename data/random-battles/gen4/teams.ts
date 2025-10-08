@@ -748,25 +748,40 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			break;
 		}
 		
-		// Loop through the team members and check if we already have a mon of this species
-		do {
-			teamHasSpecies = false;
-			checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
-			checkSpecies = this.dex.species.get(checkSpecies);
-			checkName = checkSpecies.baseSpecies;
-			
-			if (Array.isArray(cachedTeamMembers) && NUMBER_OF_MONS > 0)
+		// Loop through team members to check if we already have a Pokemon of this species
+		if (Array.isArray(cachedTeamMembers) && NUMBER_OF_MONS > 0)
+		{
+			for (i = 0; i < NUMBER_OF_MONS; i++)
 			{
-				for (i = 0; i < NUMBER_OF_MONS; i++)
+				if (cachedTeamMembers[i].monName == checkName)
 				{
-					if (cachedTeamMembers[i].monName == checkName)
-					{
-						teamHasSpecies = true;
-						break;
-					}
+					teamHasSpecies = true;
+					break;
 				}
 			}
-		} while (teamHasSpecies)
+		}
+		
+		// Reroll our set if we already have a Pokemon of this species
+		if (teamHasSpecies === true) {
+			do {
+				teamHasSpecies = false;
+				checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
+				checkSpecies = this.dex.species.get(checkSpecies);
+				checkName = checkSpecies.baseSpecies;
+				
+				if (Array.isArray(cachedTeamMembers) && NUMBER_OF_MONS > 0)
+				{
+					for (i = 0; i < NUMBER_OF_MONS; i++)
+					{
+						if (cachedTeamMembers[i].monName == checkName)
+						{
+							teamHasSpecies = true;
+							break;
+						}
+					}
+				}
+			} while (teamHasSpecies)
+		}
 		
 		species = checkSpecies;
 		const forme = this.getForme(species);
