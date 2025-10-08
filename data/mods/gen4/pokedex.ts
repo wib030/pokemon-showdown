@@ -37,7 +37,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	farfetchd: {
 		inherit: true,
-		baseStats: { hp: 52, atk: 145, def: 35, spa: 58, spd: 42, spe: 60 },
+		baseStats: { hp: 42, atk: 145, def: 35, spa: 58, spd: 42, spe: 60 },
 		abilities: { 0: "Huge Power" },
 	},
 	spearow: {

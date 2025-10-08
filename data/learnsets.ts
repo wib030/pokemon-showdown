@@ -9791,7 +9791,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			facade: ["4M", "3M"],
 			falseswipe: ["4M", "4L43", "3L46"],
 			featherdance: ["4E", "3E"],
-			feint: ["4L43"],
 			flail: ["4E", "3E"],
 			fly: ["4M", "3M"],
 			foresight: ["4E", "3E"],
