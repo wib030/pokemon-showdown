@@ -6693,6 +6693,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			knockoff: ["4L28"],
 			psychicscream: ["4L42"],
 			peekaboo: ["4E"],
+			painsplit: ["4L31"],
 		},
 	},
 	muk: {
@@ -6767,6 +6768,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			lovelypunch: ["4L30"],
 			toxicspikes: ["4L34"],
 			psychicscream: ["4L48"],
+			painsplit: ["4L31"],
 		},
 	},
 	shellder: {
@@ -6957,6 +6959,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hex: ["4L24"],
 			chillingspell: ["4L27"],
 			disable: ["4E"],
+			painsplit: ["4L1"],
 		},
 	},
 	haunter: {
@@ -7028,6 +7031,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			acid: ["4L1"],
 			hex: ["4L26"],
 			chillingspell: ["4L29"],
+			painsplit: ["4L1"],
 		},
 	},
 	gengar: {
@@ -7117,6 +7121,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hex: ["4L26"],
 			chillingspell: ["4L29"],
 			psychicscream: ["4L49"],
+			painsplit: ["4L1"],
 		},
 	},
 	onix: {
@@ -7355,6 +7360,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			goldenbinding: ["4L43"],
 			eggbomb: ["4L48"],
 			guardswap: ["4E"],
+			lowkick: ["4L1"],
 		},
 	},
 	hypno: {
@@ -7442,6 +7448,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			psyshock: ["4L42"],
 			goldenbinding: ["4L45"],
 			eggbomb: ["4L52"],
+			lowkick: ["4L1"],
 		},
 	},
 	krabby: {
@@ -7835,6 +7842,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			psybeam: ["4L29"],
 			peekaboo: ["4L40"],
 			psyshock: ["4L41"],
+			lowkick: ["4L1"],
 		},
 	},
 	cubone: {
@@ -7920,6 +7928,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			howl: ["4L9"],
 			bulldoze: ["4L15"],
 			detect: ["4E"],
+			lowkick: ["4L1"],
 		},
 	},
 	marowak: {
@@ -8006,6 +8015,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			dragontail: ["4L37"],
 			painsplit: ["4L45"],
 			headsmash: ["4L53"],
+			lowkick: ["4L1"],
 		},
 	},
 	tyrogue: {
@@ -8128,6 +8138,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			toxic: ["4M", "3M"],
 			vacuumwave: ["4T"],
 			lowsweep: ["4L1"],
+			lowkick: ["4L1"],
 		},
 	},
 	hitmonchan: {
@@ -8195,6 +8206,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			vacuumwave: ["4T", "4L26"],
 			lowsweep: ["4L1"],
 			lovelypunch: ["4L33"],
+			lowkick: ["4L1"],
 		},
 	},
 	hitmontop: {
@@ -8257,6 +8269,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			twister: ["4T"],
 			vacuumwave: ["4T"],
 			lowsweep: ["4L1"],
+			lowkick: ["4L1"],
 		},
 	},
 	lickitung: {
@@ -8491,6 +8504,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			toxic: ["4M", "3M"],
 			uproar: ["4T"],
 			willowisp: ["4M", "4E", "3E"],
+			painsplit: ["4L1"],
 		},
 	},
 	weezing: {
@@ -8549,6 +8563,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uproar: ["4T"],
 			willowisp: ["4M"],
 			toxicspikes: ["4L1"],
+			painsplit: ["4L1"],
 		},
 	},
 	rhyhorn: {
@@ -9158,6 +9173,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			worryseed: ["4T"],
 			wringout: ["4L46"],
 			wrap: ["4L1"],
+			painsplit: ["4L1"],
 		},
 	},
 	tangrowth: {
@@ -9230,6 +9246,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			worryseed: ["4T"],
 			wringout: ["4L46"],
 			wrap: ["4L1"],
+			painsplit: ["4L1"],
 		},
 	},
 	kangaskhan: {
@@ -9337,6 +9354,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			psychicscream: ["4L50"],
 			lastresort: ["4L52"],
 			hailcannon: ["4L56"],
+			lowkick: ["4L1"],
 		},
 	},
 	horsea: {
@@ -9687,6 +9705,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			confusion: ["4L13"],
 			teleport: ["4L20"],
 			confuseray: ["4L40"],
+			painsplit: ["4L33"],
 		},
 	},
 	starmie: {
@@ -9759,6 +9778,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			powergem: ["4L37"],
 			cosmicpower: ["4L49"],
 			hydropump: ["4L53"],
+			painsplit: ["4L33"],
 		},
 	},
 	mimejr: {
@@ -10568,6 +10588,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			flamewheel: ["4L25"],
 			morningsun: ["4L39"],
 			teleport: ["4L46"],
+			lowkick: ["4L1"],
 		},
 	},
 	magmortar: {
@@ -10631,6 +10652,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			flamewheel: ["4L33"],
 			morningsun: ["4L39"],
 			teleport: ["4L46"],
+			lowkick: ["4L1"],
+			lowsweep: ["4L1"],
 		},
 	},
 	pinsir: {
@@ -11522,6 +11545,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			teleport: ["4L1"],
 			spikes: ["4L1"],
 			voltswitch: ["4L32"],
+			painsplit: ["4L1"],
 		},
 	},
 	porygon2: {
@@ -11589,6 +11613,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			teleport: ["4L10"],
 			spikes: ["4L30"],
 			voltswitch: ["4L36"],
+			painsplit: ["4L1"],
 		},
 	},
 	porygonz: {
@@ -11655,6 +11680,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			zenheadbutt: ["4T"],
 			teleport: ["4L10"],
 			voltswitch: ["4L38"],
+			painsplit: ["4L1"],
 		},
 	},
 	omanyte: {
@@ -11942,6 +11968,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			leechlife: ["4L38"],
 			hailcannon: ["4L48"],
 			wavecrash: ["4T"],
+			lowkick: ["4L1"],
 		},
 	},
 	aerodactyl: {
@@ -12711,6 +12738,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			psychicscream: ["4L49"],
 			psystrike: ["4L66"],
 			dragontail: ["4T"],
+			lowkick: ["4L1"],
 		},
 	},
 	mew: {
@@ -12888,6 +12916,9 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			peekaboo: ["4L35"],
 			dragontail: ["4T"],
 			wavecrash: ["4T"],
+			lowkick: ["4L1"],
+			superfang: ["4L1"],
+			painsplit: ["4L1"],
 		},
 	},
 	chikorita: {
@@ -13250,6 +13281,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			toxic: ["4M", "3M"],
 			willowisp: ["4M"],
 			firechase: ["4L34"],
+			lowkick: ["4L1"],
 		},
 	},
 	totodile: {
@@ -13329,6 +13361,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			snap: ["4L18"],
 			aquajet: ["4E"],
 			wavecrash: ["4T"],
+			lowkick: ["4L7"],
 		},
 	},
 	croconaw: {
@@ -13405,6 +13438,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			waterpulse: ["4M", "3M"],
 			snap: ["4L18"],
 			poisonfang: ["4L32"],
+			lowkick: ["4L7"],
 		},
 	},
 	feraligatr: {
@@ -13496,6 +13530,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			chumrush: ["4L47"],
 			hailcannon: ["4L54"],
 			wavecrash: ["4T"],
+			lowkick: ["4L7"],
 		},
 	},
 	sentret: {
@@ -13576,6 +13611,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uturn: ["4M"],
 			waterpulse: ["4M", "3M"],
 			wavecrash: ["4T"],
+			superfang: ["4L33"],
 		},
 	},
 	furret: {
@@ -13656,6 +13692,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			waterpulse: ["4M", "3M"],
 			agility: ["4L1"],
 			lovelypunch: ["4L24"],
+			superfang: ["4L34"],
 		},
 	},
 	hoothoot: {
@@ -14509,6 +14546,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			confusion: ["4L1"],
 			psychicscream: ["4L35"],
 			psyshock: ["4L46"],
+			painsplit: ["4L1"],
 		},
 	},
 	xatu: {
@@ -14588,6 +14626,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			goldenbinding: ["4L25"],
 			psychicscream: ["4L40"],
 			psyshock: ["4L51"],
+			painsplit: ["4L1"],
 		},
 	},
 	mareep: {
@@ -15358,6 +15397,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uturn: ["4M"],
 			waterpulse: ["4M", "3M"],
 			forcepalm: ["4L32"],
+			lowkick: ["4L13"],
 		},
 	},
 	ambipom: {
@@ -15433,6 +15473,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uturn: ["4M"],
 			waterpulse: ["4M"],
 			forcepalm: ["4L32"],
+			lowkick: ["4L13"],
 		},
 	},
 	sunkern: {
@@ -16304,6 +16345,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			nibble: ["4L1"],
 			stickyweb: ["4L40"],
 			powertrick: ["4E"],
+			painsplit: ["4L33"],
 		},
 	},
 	forretress: {
@@ -16368,6 +16410,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			voltswitch: ["4L34"],
 			spiderweb: ["4L40"],
 			stickyweb: ["4L52"],
+			painsplit: ["4L33"],
 		},
 	},
 	dunsparce: {
@@ -16460,6 +16503,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			spitup: ["4E"],
 			swallow: ["4E"],
 			torment: ["4E"],
+			painsplit: ["4L35"],
 		},
 	},
 	gligar: {
@@ -16705,6 +16749,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			covet: ["4L13"],
 			wildcharge: ["4L50"],
 			outrage: ["4L57"],
+			lowkick: ["4L9"],
+			superfang: ["4L30"],
 		},
 	},
 	granbull: {
@@ -16795,6 +16841,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			wildcharge: ["4L50"],
 			closecombat: ["4L53"],
 			outrage: ["4L57"],
+			lowkick: ["4L9"],
+			superfang: ["4L30"],
 		},
 	},
 	qwilfish: {
@@ -16869,6 +16917,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			spikecannon: ["4L35", "4E"],
 			aquajet: ["4E"],
 			wavecrash: ["4L45", "4T"],
+			painsplit: ["4L31"],
 		},
 	},
 	shuckle: {
@@ -17003,6 +17052,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			armthrust: ["4L1"],
 			bulletseed: ["4L1"],
 			pinmissile: ["4L31"],
+			lowkick: ["4L5"],
 		},
 	},
 	sneasel: {
@@ -17098,6 +17148,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			iciclecrash: ["4L38"],
 			hailcannon: ["4L46"],
 			assist: ["4E"],
+			lowkick: ["4L1"],
 		},
 	},
 	weavile: {
@@ -17185,6 +17236,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			iciclecrash: ["4L38"],
 			punishment: ["4L44"],
 			hailcannon: ["4L46"],
+			lowkick: ["4L1"],
 		},
 	},
 	teddiursa: {
@@ -17355,6 +17407,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			yawn: ["4L38"],
 			crunch: ["4L42"],
 			closecombat: ["4L56"],
+			lowkick: ["4L1"],
 		},
 	},
 	slugma: {
@@ -17415,6 +17468,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			yawn: ["4L1", "3L1"],
 			nibble: ["4L3"],
 			firespin: ["4L15"],
+			painsplit: ["4L31"],
 		},
 	},
 	magcargo: {
@@ -17480,6 +17534,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			yawn: ["4L1", "3L1"],
 			nibble: ["4L3"],
 			firespin: ["4L15"],
+			painsplit: ["4L31"],
 		},
 	},
 	swinub: {
@@ -18260,6 +18315,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			willowisp: ["4M", "4E", "3E"],
 			tantrum: ["4L6"],
 			feint: ["4E"],
+			superfang: ["4L35"],
 		},
 	},
 	houndoom: {
@@ -18330,6 +18386,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			tantrum: ["4L6"],
 			morningsun: ["4L40"],
 			punishment: ["4L42"],
+			superfang: ["4L36"],
 		},
 	},
 	phanpy: {
@@ -19064,6 +19121,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			rockthrow: ["4L7"],
 			pursuit: ["4L35"],
 			dragondance: ["4L50"],
+			lowkick: ["4L1"],
 		},
 	},
 	lugia: {
@@ -19401,6 +19459,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			thunderpunch: ["4T", "3T"],
 			toxic: ["4M", "3M"],
 			worryseed: ["4T", "4E"],
+			lowkick: ["4L15"],
 		},
 	},
 	grovyle: {
@@ -19474,6 +19533,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			worryseed: ["4T"],
 			xscissor: ["4L43", "4M"],
 			megadrain: ["4L13"],
+			lowkick: ["4L15"],
 		},
 	},
 	sceptile: {
@@ -19562,6 +19622,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			recover: ["4L41"],
 			dracometeor: ["4L59"],
 			dragontail: ["4T"],
+			lowkick: ["4L15"],
 		},
 	},
 	torchic: {
@@ -19630,6 +19691,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			willowisp: ["4M"],
 			flamewheel: ["4L28"],
 			featherdance: ["4E"],
+			lowkick: ["4L12"],
 		},
 	},
 	combusken: {
@@ -19704,6 +19766,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			willowisp: ["4M"],
 			flamewheel: ["4L20"],
 			lowsweep: ["4L22"],
+			lowkick: ["4L12"],
 		},
 	},
 	blaziken: {
@@ -19791,6 +19854,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			roost: ["4M"],
 			lowsweep: ["4L22"],
 			highjumpkick: ["4L54"],
+			lowkick: ["4L12"],
 		},
 	},
 	mudkip: {
@@ -19861,6 +19925,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			yawn: ["4E"],
 			sludge: ["4E"],
 			wavecrash: ["4T"],
+			lowkick: ["4L15"],
 		},
 	},
 	marshtomp: {
@@ -19930,6 +19995,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			watergun: ["4L1", "3L1"],
 			waterpulse: ["4L25", "4M", "3M"],
 			wavecrash: ["4T"],
+			lowkick: ["4L15"],
 		},
 	},
 	swampert: {
@@ -20011,6 +20077,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			waterpulse: ["4L25", "4M", "3M"],
 			hailcannon: ["4L52"],
 			wavecrash: ["4T"],
+			lowkick: ["4L15"],
 		},
 	},
 	poochyena: {
@@ -20076,6 +20143,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uproar: ["4T"],
 			yawn: ["4E", "3E"],
 			tantrum: ["4L5"],
+			superfang: ["4L34"],
 		},
 	},
 	mightyena: {
@@ -20139,6 +20207,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			tantrum: ["4L5"],
 			yawn: ["4L44"],
 			wildcharge: ["4L50"],
+			superfang: ["4L34"],
 		},
 	},
 	zigzagoon: {
@@ -20211,6 +20280,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			waterpulse: ["4M", "3M"],
 			takedown: ["4L24"],
 			knockoff: ["4L27"],
+			superfang: ["4L34"],
 		},
 	},
 	linoone: {
@@ -20293,6 +20363,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			knockoff: ["4L33"],
 			flail: ["4L38"],
 			hailcannon: ["4L54"],
+			superfang: ["4L36"],
 		},
 	},
 	wurmple: {
@@ -20776,6 +20847,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			worryseed: ["4T"],
 			tantrum: ["4L5"],
 			leafblade: ["4L28"],
+			lowkick: ["4L18"],
 		},
 	},
 	shiftry: {
@@ -20865,6 +20937,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hurricane: ["4L34"],
 			extrasensory: ["4L36"],
 			tailwind: ["4L50"],
+			lowkick: ["4L18"],
 		},
 	},
 	taillow: {
@@ -21199,6 +21272,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			peekaboo: ["4L33", "4E"],
 			psyshock: ["4L38"],
 			encore: ["4E"],
+			painsplit: ["4L31"],
 		},
 	},
 	kirlia: {
@@ -21273,6 +21347,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			peekaboo: ["4L34"],
 			psyshock: ["4L35"],
 			psychicscream: ["4L36"],
+			painsplit: ["4L31"],
 		},
 	},
 	gardevoir: {
@@ -21355,6 +21430,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			peekaboo: ["4L36"],
 			psyshock: ["4L38"],
 			psychicscream: ["4L42"],
+			painsplit: ["4L33"],
 		},
 	},
 	gallade: {
@@ -21445,6 +21521,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			peekaboo: ["4L35"],
 			psychicscream: ["4L37"],
 			recover: ["4L41"],
+			lowkick: ["4L1"],
+			painsplit: ["4L33"],
 		},
 	},
 	surskit: {
@@ -21855,6 +21933,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			toxic: ["4M", "3M"],
 			uproar: ["4T", "4L1", "3L1"],
 			waterpulse: ["4M", "3M"],
+			lowkick: ["4L1"],
 		},
 	},
 	slaking: {
@@ -21934,6 +22013,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			waterpulse: ["4M", "3M"],
 			yawn: ["4L1", "3L1"],
 			hailcannon: ["4L57"],
+			lowkick: ["4L1"],
 		},
 	},
 	nincada: {
@@ -22253,6 +22333,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uproar: ["4T", "4L1", "3L1"],
 			waterpulse: ["4M", "3M"],
 			zenheadbutt: ["4T"],
+			lowkick: ["4L1"],
 		},
 	},
 	exploud: {
@@ -22334,6 +22415,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			waterpulse: ["4M", "3M"],
 			zenheadbutt: ["4T"],
 			extrasensory: ["4L33"],
+			lowkick: ["4L1"],
 		},
 	},
 	makuhita: {
@@ -22878,6 +22960,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			imprison: ["4L1"],
 			tantrum: ["4L1"],
 			feint: ["4E"],
+			lowkick: ["4L1"],
+			painsplit: ["4L1"],
 		},
 	},
 	mawile: {
@@ -22974,6 +23058,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			outrage: ["4L56"],
 			dracometeor: ["4T"],
 			snap: ["4E"],
+			superfang: ["4L35"],
+			painsplit: ["4L1"],
 		},
 	},
 	aron: {
@@ -23211,6 +23297,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			dragontail: ["4L1"],
 			hailcannon: ["4L52"],
 			rockwrecker: ["4L55"],
+			lowkick: ["4L1"],
 		},
 	},
 	meditite: {
@@ -23296,6 +23383,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			jumpkick: ["4L29"],
 			lovelypunch: ["4L27"],
 			acupressure: ["4L33"],
+			lowkick: ["4L1"],
+			painsplit: ["4L34"],
 		},
 	},
 	medicham: {
@@ -23378,6 +23467,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			foresight: ["4L25"],
 			acupressure: ["4L33"],
 			fakeout: ["4L56"],
+			lowkick: ["4L1"],
+			painsplit: ["4L34"],
 		},
 	},
 	electrike: {
@@ -24187,6 +24278,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			snap: ["4L20"],
 			poisonfang: ["4L34"],
 			chumrush: ["4L35"],
+			superfang: ["4L33"],
 		},
 	},
 	sharpedo: {
@@ -24267,6 +24359,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			recover: ["4L42"],
 			chumrush: ["4L45"],
 			hailcannon: ["4L52"],
+			superfang: ["4L33"],
 		},
 	},
 	wailmer: {
@@ -24834,6 +24927,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			zenheadbutt: ["4T"],
 			lovelypunch: ["4L25"],
 			peekaboo: ["4L34"],
+			lowkick: ["4L21"],
 		},
 	},
 	trapinch: {
@@ -25075,7 +25169,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			ingrain: ["4L22", "3L25"],
 			leechseed: ["4L10", "3L13"],
 			leer: ["4L1", "3L1", "3S0"],
-			lowkick: ["4E"],
+			lowkick: ["4E", "4L21"],
 			magicalleaf: ["4E"],
 			megapunch: ["3T"],
 			mimic: ["3T"],
@@ -25191,6 +25285,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			nastyplot: ["4L1"],
 			tantrum: ["4L5"],
 			spikecannon: ["4L40"],
+			lowkick: ["4L21"],
 		},
 	},
 	swablu: {
@@ -25432,6 +25527,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			revenge: ["4L22"],
 			hailcannon: ["4L56"],
 			disable: ["4E"],
+			lowkick: ["4L15"],
 		},
 	},
 	seviper: {
@@ -25581,6 +25677,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			peekaboo: ["4L35"],
 			moonlight: ["4L39"],
 			psychicscream: ["4L41"],
+			painsplit: ["4L1"],
 		},
 	},
 	solrock: {
@@ -25661,6 +25758,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			psyshock: ["4L1"],
 			morningsun: ["4L39"],
 			psychicscream: ["4L41"],
+			painsplit: ["4L1"],
 		},
 	},
 	barboach: {
@@ -26142,6 +26240,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			megadrain: ["4L20"],
 			brine: ["4L21"],
 			curse: ["4E"],
+			painsplit: ["4L1"],
 		},
 	},
 	cradily: {
@@ -26210,6 +26309,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			brine: ["4L21"],
 			recover: ["4L42"],
 			powergem: ["4L45"],
+			painsplit: ["4L1"],
 		},
 	},
 	anorith: {
@@ -26343,6 +26443,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			brine: ["4L29"],
 			aquajet: ["4L30"],
 			wavecrash: ["4T"],
+			lowkick: ["4L1"],
 		},
 	},
 	feebas: {
@@ -26639,6 +26740,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			recover: ["4L42", "4E"],
 			psychicscream: ["4L48"],
 			dragontail: ["4T"],
+			lowkick: ["4L1"],
 		},
 	},
 	shuppet: {
@@ -26710,6 +26812,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			peekaboo: ["4L22"],
 			hex: ["4L22"],
 			chillingspell: ["4L24"],
+			painsplit: ["4L1"],
 		},
 	},
 	banette: {
@@ -26784,6 +26887,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			pursuit: ["4L32"],
 			gunkshot: ["4L54"],
 			destinybond: ["4L56"],
+			painsplit: ["4L1"],
 		},
 	},
 	duskull: {
@@ -26858,6 +26962,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hex: ["4L20"],
 			chillingspell: ["4L28"],
 			psychicscream: ["4L44"],
+			painsplit: ["4L1"],
 		},
 	},
 	dusclops: {
@@ -26948,6 +27053,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hex: ["4L20"],
 			chillingspell: ["4L28"],
 			psychicscream: ["4L47"],
+			painsplit: ["4L1"],
 		},
 	},
 	dusknoir: {
@@ -27033,6 +27139,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			chillingspell: ["4L28"],
 			painsplit: ["4L43"],
 			psychicscream: ["4L53"],
+			painsplit: ["4L1"],
 		},
 	},
 	tropius: {
@@ -27486,6 +27593,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hailcannon: ["4L51"],
 			weatherball: ["4L54"],
 			headsmash: ["4L56"],
+			superfang: ["4L34"],
 		},
 	},
 	froslass: {
@@ -27560,6 +27668,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			freezedry: ["4L35"],
 			peekaboo: ["4L37"],
 			psychicscream: ["4L41"],
+			painsplit: ["4L1"],
 		},
 	},
 	spheal: {
@@ -27627,6 +27736,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			slackoff: ["4L37"],
 			aquaring: ["4E"],
 			wavecrash: ["4T"],
+			superfang: ["4L33"],
 		},
 	},
 	sealeo: {
@@ -27686,6 +27796,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			snap: ["4L23"],
 			slackoff: ["4L40"],
 			wavecrash: ["4T"],
+			superfang: ["4L33"],
 		},
 	},
 	walrein: {
@@ -27756,6 +27867,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			superfang: ["4L42"],
 			chumrush: ["4L46"],
 			wavecrash: ["4T"],
+			superfang: ["4L33"],
 		},
 	},
 	clamperl: {
@@ -27859,6 +27971,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hailcannon: ["4L48"],
 			wavecrash: ["4L53", "4T"],
 			dragontail: ["4T"],
+			superfang: ["4L31"],
 		},
 	},
 	gorebyss: {
@@ -29511,6 +29624,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			vacuumwave: ["4T"],
 			willowisp: ["4M"],
 			assist: ["4E"],
+			lowkick: ["4L11"],
 		},
 	},
 	monferno: {
@@ -29581,6 +29695,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uturn: ["4M"],
 			vacuumwave: ["4T"],
 			willowisp: ["4M"],
+			lowkick: ["4L11"],
 		},
 	},
 	infernape: {
@@ -29662,6 +29777,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			nastyplot: ["4L1"],
 			slackoff: ["4L1"],
 			blazekick: ["4L38"],
+			lowkick: ["4L11"],
 		},
 	},
 	piplup: {
@@ -30590,6 +30706,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			worryseed: ["4L33"],
 			hailcannon: ["4L50"],
 			leafstorm: ["4L55"],
+			painsplit: ["4L1"],
 		},
 	},
 	shieldon: {
@@ -31248,6 +31365,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			wavecrash: ["4L50", "4T"],
 			snap: ["4L19"],
 			defog: ["4M"],
+			lowkick: ["4L1"],
 		},
 	},
 	cherubi: {
@@ -31403,6 +31521,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			peatslide: ["4E"],
 			trumpcard: ["4E"],
 			sludge: ["4E"],
+			painsplit: ["4L1"],
 		},
 	},
 	gastrodon: {
@@ -31457,6 +31576,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			waterfall: ["4M"],
 			waterpulse: ["4M", "4L1"],
 			stealthrock: ["4M"],
+			painsplit: ["4L1"],
 		},
 	},
 	gastrodoneast: {
@@ -31538,6 +31658,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			amnesia: ["4L30"],
 			peekaboo: ["4L32"],
 			weatherball: ["4E"],
+			painsplit: ["4L1"],
 		},
 	},
 	drifblim: {
@@ -31613,6 +31734,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			amnesia: ["4L32"],
 			peekaboo: ["4L34"],
 			moonlight: ["4L40"],
+			painsplit: ["4L1"],
 		},
 	},
 	buneary: {
@@ -31652,7 +31774,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			irontail: ["4M"],
 			jumpkick: ["4L28"],
 			lastresort: ["4T"],
-			lowkick: ["4E"],
+			lowkick: ["4E", "4L1"],
 			mudslap: ["4T"],
 			naturalgift: ["4M"],
 			pound: ["4L1"],
@@ -31768,6 +31890,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uturn: ["4L40"],
 			fakeout: ["4L44"],
 			highjumpkick: ["4L54"],
+			lowkick: ["4L1"],
 		},
 	},
 	glameow: {
@@ -31834,6 +31957,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			waterpulse: ["4M"],
 			peekaboo: ["4L34"],
 			flail: ["4E"],
+			superfang: ["4L39"],
 		},
 	},
 	purugly: {
@@ -31899,7 +32023,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			waterpulse: ["4M"],
 			quickattack: ["4L1"],
 			peekaboo: ["4L39"],
-			superfang: ["4L48"],
+			superfang: ["4L39"],
 		},
 	},
 	stunky: {
@@ -32654,6 +32778,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			copycat: ["4L21"],
 			howl: ["4L3"],
 			nastyplot: ["4L33"],
+			lowkick: ["4L1"],
 		},
 	},
 	hippopotas: {
@@ -32997,6 +33122,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			karatechop: ["4L5"],
 			lowsweep: ["4L20"],
 			counter: ["4E"],
+			lowkick: ["4L1"],
+			superfang: ["4L40"],
 		},
 	},
 	toxicroak: {
@@ -33074,6 +33201,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			lowsweep: ["4L20"],
 			bulletpunch: ["4L34"],
 			closecombat: ["4L45"],
+			lowkick: ["4L1"],
+			superfang: ["4L43"],
 		},
 	},
 	carnivine: {
@@ -33447,6 +33576,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			voltswitch: ["4L1"],
 			hex: ["4L24"],
 			chillingspell: ["4L26"],
+			painsplit: ["4L1"],
 		},
 	},
 	rotomheat: {
@@ -33553,6 +33683,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			perishsong: ["4L1"],
 			stickyweb: ["4L59"],
 			dragontail: ["4T"],
+			painsplit: ["4L1"],
 		},
 	},
 	mesprit: {
@@ -33634,6 +33765,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			aurasphere: ["4L61"],
 			outrage: ["4L66"],
 			dragontail: ["4T"],
+			painsplit: ["4L1"],
 		},
 	},
 	azelf: {
@@ -33712,6 +33844,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			mindvirus: ["4L48"],
 			judgment: ["4L57"],
 			dragontail: ["4T"],
+			painsplit: ["4L1"],
 		},
 	},
 	dialga: {
@@ -34078,6 +34211,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hex: ["4L26"],
 			chillingspell: ["4L30"],
 			dualwingbeat: ["4L35"],
+			painsplit: ["4L1"],
 		},
 	},
 	cresselia: {
