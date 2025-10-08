@@ -903,16 +903,6 @@
     "farfetchd": {
         "level": 100,
         "sets": [
-            {
-                "role": "Glass Cannon",
-                "movepool": ["uturn", "bravebird", "frustration", "knockoff"],
-                "abilities": ["Huge Power"],
-                "evs": [0, 252, 0, 0, 4, 252],
-				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Choice Scarf",
-				"nature": "Jolly",
-				"happiness": 0
-            },
 			{
                 "role": "Glass Cannon",
                 "movepool": ["uturn", "bravebird", "return", "knockoff"],
@@ -920,8 +910,7 @@
                 "evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Scarf",
-				"nature": "Jolly",
-				"happiness": 255
+				"nature": "Jolly"
             },
 			{
                 "role": "Glass Cannon",
@@ -975,8 +964,7 @@
                 "evs": [252, 252, 0, 0, 0, 4],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Assault Vest",
-				"nature": "Adamant",
-				"happiness": 255
+				"nature": "Adamant"
             },
 			{
                 "role": "Setup Sweeper",
@@ -989,13 +977,12 @@
             },
 			{
                 "role": "Setup Sweeper",
-                "movepool": ["dualwingbeat", "knockoff", "frustration", "agility"],
+                "movepool": ["dualwingbeat", "knockoff", "return", "agility"],
                 "abilities": ["Huge Power"],
                 "evs": [0, 252, 4, 0, 0, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Life Orb",
-				"nature": "Jolly",
-				"happiness": 0
+				"nature": "Jolly"
             },
 			{
                 "role": "Setup Sweeper",
@@ -1004,8 +991,7 @@
                 "evs": [0, 252, 4, 0, 0, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Lum Berry",
-				"nature": "Adamant",
-				"happiness": 255
+				"nature": "Adamant"
             },
 			{
                 "role": "Glass Cannon",
@@ -1014,8 +1000,7 @@
                 "evs": [0, 252, 4, 0, 0, 252],
 				"ivs": [30, 31, 31, 31, 31, 31],
 				"item": "Salac Berry",
-				"nature": "Adamant",
-				"happiness": 255
+				"nature": "Adamant"
             },
 			{
                 "role": "Berry Sweeper",
@@ -1028,13 +1013,12 @@
             },
 			{
                 "role": "Berry Sweeper",
-                "movepool": ["frustration", "knockoff", "substitute", "agility"],
+                "movepool": ["return", "knockoff", "substitute", "agility"],
                 "abilities": ["Huge Power"],
                 "evs": [0, 252, 4, 0, 0, 252],
 				"ivs": [30, 31, 31, 31, 31, 31],
 				"item": "Liechi Berry",
-				"nature": "Adamant",
-				"happiness": 0
+				"nature": "Adamant"
             },
 			{
                 "role": "Glass Cannon",
