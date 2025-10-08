@@ -34315,9 +34315,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			memento: ["4L1"],
 			hex: ["4L20"],
 			chillingspell: ["4L28"],
-			painsplit: ["4L43"],
-			psychicscream: ["4L53"],
 			painsplit: ["4L1"],
+			psychicscream: ["4L53"],
 		},
 	},
 	tropius: {
