@@ -832,6 +832,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			spiderweb: ["4L33"],
 			peatslide: ["4L37"],
 			hurricane: ["4L42"],
+			bugbite: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 30, moves: ["morningsun", "psychic", "sleeppowder", "aerialace"]},
@@ -935,6 +936,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			spiderweb: ["4L31"],
 			stickyweb: ["4L50"],
 			tailwind: ["4L1"],
+			bugbite: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 30, moves: ["batonpass", "sludgebomb", "twineedle", "swordsdance"]},
@@ -15535,6 +15537,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			outrage: ["4L54"],
 			stickyweb: ["4L56"],
 			tantrum: ["4E"],
+			bugbite: ["4L13"],
 		},
 		eventData: [
 			{generation: 3, level: 35, abilities: ["hypercutter"], moves: ["helpinghand", "guillotine", "falseswipe", "submission"]},
@@ -18372,6 +18375,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			lowkick: ["4L1"],
 			superfang: ["4L1"],
 			painsplit: ["4L1"],
+			bugbite: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 30, shiny: 1, moves: ["pound", "transform", "megapunch", "metronome"]},
@@ -19427,7 +19431,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			batonpass: ["4L26", "3L29"],
 			bide: ["4E", "3E"],
 			brickbreak: ["4M", "3M"],
-			bugbite: ["4E"],
+			bugbite: ["4E", "4L9"],
 			bugbuzz: ["4L33", "4E"],
 			captivate: ["4M"],
 			cometpunch: ["4L9", "3L15"],
@@ -19557,6 +19561,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			spiderweb: ["4L40"],
 			airslash: ["4L42"],
 			stickyweb: ["4L52"],
+			bugbite: ["4L9"],
+			nibble: ["4L1"],
+			gust: ["4L3"],
 		},
 		encounters: [
 			{generation: 2, level: 7},
@@ -19619,6 +19626,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			nibble: ["4L3"],
 			psychicscream: ["4L42"],
 			stickyweb: ["4L45"],
+			bugbite: ["4L13"],
 		},
 		eventData: [
 			{generation: 3, level: 14, moves: ["refresh", "dig", "signalbeam", "nightshade"]},
@@ -21285,6 +21293,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			pluck: ["4L25"],
 			peatslide: ["4L36"],
 			peekaboo: ["4L43"],
+			bugbite: ["4L13"],
 		},
 	},
 	yanmega: {
@@ -22956,7 +22965,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			attract: ["4M", "3M"],
 			bide: ["4L1", "3L28"],
 			bodyslam: ["3T"],
-			bugbite: ["4L40"],
+			bugbite: ["4L11"],
 			captivate: ["4M"],
 			constrict: ["4L1", "3L1", "3S0"],
 			defensecurl: ["3T"],
@@ -23084,6 +23093,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			bulletseed: ["4L1"],
 			pinmissile: ["4L31"],
 			lowkick: ["4L5"],
+			bugbite: ["4L13"],
 		},
 		eventData: [
 			{generation: 6, level: 50, gender: "F", nature: "Adamant", moves: ["bulletseed", "pinmissile", "closecombat", "megahorn"], pokeball: "cherishball"},
@@ -27407,6 +27417,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			spiderweb: ["4L37"],
 			peatslide: ["4L39"],
 			hurricane: ["4L44"],
+			bugbite: ["4L1"],
 		},
 	},
 	cascoon: {
@@ -27481,6 +27492,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			spiderweb: ["4L35"],
 			followme: ["4L37"],
 			peatslide: ["4L40"],
+			bugbite: ["4L1"],
 		},
 	},
 	lotad: {
@@ -28554,7 +28566,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			blizzard: ["4M", "3M"],
 			bubble: ["4L1", "3L1", "3S0", "3S1"],
 			bubblebeam: ["4L17", "3L25"],
-			bugbite: ["4E"],
+			bugbite: ["4E", "4L13"],
 			captivate: ["4M"],
 			doubleedge: ["3T"],
 			doubleteam: ["4M", "3M"],
@@ -28680,6 +28692,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			hydropump: ["4L52"],
 			stickyweb: ["4L54"],
 			hurricane: ["4L56"],
+			bugbite: ["4L13"],
+			nibble: ["4L3"],
 		},
 		encounters: [
 			{generation: 6, level: 21, maxEggMoves: 1},
@@ -29049,7 +29063,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	nincada: {
 		learnset: {
 			aerialace: ["4M", "3M"],
-			bugbite: ["4E"],
+			bugbite: ["4E", "4L11"],
 			bugbuzz: ["4E"],
 			cut: ["4M", "3M"],
 			dig: ["4M", "4L37", "3M", "3L45"],
@@ -29224,6 +29238,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			spikes: ["4L1"],
 			nibble: ["4L3"],
 			peatslide: ["4L40"],
+			bugbite: ["4L11"],
 		},
 		eventData: [
 			{generation: 3, level: 50, moves: ["spite", "confuseray", "shadowball", "grudge"], pokeball: "pokeball"},
@@ -30890,6 +30905,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			peatslide: ["4L35"],
 			spiderweb: ["4L39"],
 			stickyweb: ["4L54"],
+			bugbite: ["4L10"],
 		},
 	},
 	illumise: {
@@ -30967,6 +30983,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			spiderweb: ["4L39"],
 			trick: ["4L43"],
 			stickyweb: ["4L54"],
+			bugbite: ["4L10"],
 		},
 	},
 	budew: {
@@ -32094,6 +32111,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			snap: ["4L24"],
 			superpower: ["4L40"],
 			mudshot: ["4E"],
+			bugbite: ["4L9"],
 		},
 		eventData: [
 			{generation: 5, level: 1, shiny: true, moves: ["bite"], pokeball: "pokeball"},
@@ -32163,6 +32181,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			bulldoze: ["4L18"],
 			peatslide: ["4L24"],
 			bugbuzz: ["4L29"],
+			bugbite: ["4L9"],
 		},
 	},
 	flygon: {
@@ -32241,6 +32260,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dragontail: ["4L30"],
 			dragonrush: ["4L45"],
 			dragondance: ["4L47"],
+			bugbite: ["4L9"],
 		},
 		eventData: [
 			{generation: 3, level: 45, moves: ["sandtomb", "crunch", "dragonbreath", "screech"], pokeball: "pokeball"},
@@ -33531,7 +33551,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			xscissor: ["4M", "4L44"],
 			nibble: ["4L1"],
 			rockthrow: ["4L13"],
-			bugbite: ["4L25"],
+			bugbite: ["4L15"],
 			brine: ["4L29"],
 			curse: ["4E"],
 		},
@@ -33602,7 +33622,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			xscissor: ["4M", "4L44"],
 			rapidspin: ["4L1"],
 			rockthrow: ["4L13"],
-			bugbite: ["4L25"],
+			bugbite: ["4L15"],
 			brine: ["4L29"],
 			aquajet: ["4L30"],
 			wavecrash: ["4T"],
@@ -37749,6 +37769,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			nibble: ["4L1"],
 			spiderweb: ["4L36"],
 			stickyweb: ["4L52"],
+			bugbite: ["4L16"],
 		},
 	},
 	shinx: {
@@ -38558,6 +38579,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dualwingbeat: ["4L1"],
 			airslash: ["4L37"],
 			peatslide: ["4L41"],
+			bugbite: ["4L15"],
 		},
 	},
 	pachirisu: {
@@ -40328,7 +40350,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			attract: ["4M"],
 			bite: ["4L1"],
 			brickbreak: ["4M"],
-			bugbite: ["4L20"],
+			bugbite: ["4L11"],
 			captivate: ["4M"],
 			confuseray: ["4E"],
 			crosspoison: ["4L49"],
@@ -40397,7 +40419,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			attract: ["4M"],
 			bite: ["4L1"],
 			brickbreak: ["4M"],
-			bugbite: ["4L20"],
+			bugbite: ["4L11"],
 			captivate: ["4M"],
 			crosspoison: ["4L51"],
 			crunch: ["4L49"],
@@ -40701,6 +40723,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			firefang: ["4L1"],
 			snap: ["4L19"],
 			leafstorm: ["4L54"],
+			bugbite: ["4L1"],
 		},
 	},
 	finneon: {
@@ -41554,6 +41577,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["4T"],
 			willowisp: ["4M"],
 			firechase: ["4L35"],
+			bugbite: ["4L13"],
 		},
 		eventData: [
 			{generation: 4, level: 70, shiny: 1, moves: ["scaryface", "lavaplume", "firespin", "ironhead"]},
