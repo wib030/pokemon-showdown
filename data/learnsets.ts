@@ -30906,6 +30906,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			spiderweb: ["4L39"],
 			stickyweb: ["4L54"],
 			bugbite: ["4L10"],
+			wildcharge: ["4L47"],
 		},
 	},
 	illumise: {
