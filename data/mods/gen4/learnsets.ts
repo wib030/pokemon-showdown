@@ -4812,6 +4812,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			trickroom: ["4M"],
 			zenheadbutt: ["4T"],
 			confusion: ["4L1"],
+			gravity: ["4L15"],
 		},
 	},
 	kadabra: {
@@ -4892,6 +4893,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			goldenbinding: ["4L26"],
 			psyshock: ["4L30"],
 			psychicscream: ["4L38"],
+			gravity: ["4L20"],
 		},
 	},
 	alakazam: {
@@ -4974,6 +4976,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			goldenbinding: ["4L26"],
 			psyshock: ["4L30"],
 			psychicscream: ["4L38"],
+			gravity: ["4L20"],
 		},
 	},
 	machop: {
@@ -6145,6 +6148,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			zapcannon: ["4L54", "3L50"],
 			voltswitch: ["4L34"],
 			teleport: ["4L25"],
+			gravity: ["4L21"],
 		},
 	},
 	magneton: {
@@ -6205,6 +6209,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			zapcannon: ["4L60", "3L62"],
 			voltswitch: ["4L26"],
 			teleport: ["4L25"],
+			gravity: ["4L21"],
 		},
 	},
 	magnezone: {
@@ -6265,6 +6270,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			triattack: ["4L1"],
 			voltswitch: ["4L36"],
 			teleport: ["4L25"],
+			gravity: ["4L21"],
 		},
 	},
 	farfetchd: {
@@ -7782,6 +7788,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			psybeam: ["4L28"],
 			peekaboo: ["4L35"],
 			powerswap: ["4E"],
+			gravity: ["4L25"],
 		},
 	},
 	exeggutor: {
@@ -7852,6 +7859,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			peekaboo: ["4L40"],
 			psyshock: ["4L41"],
 			lowkick: ["4L1"],
+			gravity: ["4L25"],
 		},
 	},
 	cubone: {
@@ -8949,7 +8957,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			frustration: ["4M", "3M"],
 			gigaimpact: ["4M"],
 			grassknot: ["4M"],
-			gravity: ["4E"],
+			gravity: ["4E", "4L21"],
 			growl: ["4L1", "3L1", "3S1"],
 			hail: ["4M", "3M"],
 			healbell: ["4E", "3E"],
@@ -9116,6 +9124,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			teleport: ["4L1"],
 			lovelypunch: ["4L25"],
 			block: ["4L1"],
+			gravity: ["4L21"],
 		},
 	},
 	tangela: {
@@ -9719,6 +9728,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			teleport: ["4L20"],
 			confuseray: ["4L40"],
 			painsplit: ["4L33"],
+			gravity: ["4L26"],
 		},
 	},
 	starmie: {
@@ -9792,6 +9802,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			cosmicpower: ["4L49"],
 			hydropump: ["4L53"],
 			painsplit: ["4L33"],
+			gravity: ["4L26"],
 		},
 	},
 	mimejr: {
@@ -11561,6 +11572,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			spikes: ["4L1"],
 			voltswitch: ["4L32"],
 			painsplit: ["4L1"],
+			gravity: ["4L21"],
 		},
 	},
 	porygon2: {
@@ -11629,6 +11641,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			spikes: ["4L30"],
 			voltswitch: ["4L36"],
 			painsplit: ["4L1"],
+			gravity: ["4L21"],
 		},
 	},
 	porygonz: {
@@ -11696,6 +11709,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			teleport: ["4L10"],
 			voltswitch: ["4L38"],
 			painsplit: ["4L1"],
+			gravity: ["4L21"],
 		},
 	},
 	omanyte: {
@@ -12754,6 +12768,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			psystrike: ["4L66"],
 			dragontail: ["4T"],
 			lowkick: ["4L1"],
+			gravity: ["4L1"],
 		},
 	},
 	mew: {
@@ -12936,6 +12951,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			painsplit: ["4L1"],
 			bugbite: ["4L1"],
 			block: ["4L1"],
+			gravity: ["4L1"],
 		},
 	},
 	chikorita: {
@@ -16306,6 +16322,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			cosmicpower: ["4L32"],
 			psyshock: ["4L39"],
 			nastyplot: ["4L46"],
+			gravity: ["4L1"],
 		},
 	},
 	pineco: {
@@ -16369,6 +16386,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			stickyweb: ["4L40"],
 			powertrick: ["4E"],
 			painsplit: ["4L33"],
+			gravity: ["4L25"],
 		},
 	},
 	forretress: {
@@ -16435,6 +16453,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			stickyweb: ["4L52"],
 			painsplit: ["4L33"],
 			block: ["4L1"],
+			gravity: ["4L25"],
 		},
 	},
 	dunsparce: {
@@ -18636,6 +18655,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hailcannon: ["4L47"],
 			wildcharge: ["4L50"],
 			megahorn: ["4E"],
+			gravity: ["4L1"],
 		},
 	},
 	smeargle: {
@@ -22677,6 +22697,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			rockblast: ["4L28"],
 			voltswitch: ["4L34"],
 			headsmash: ["4E"],
+			gravity: ["4L1"],
 		},
 	},
 	probopass: {
@@ -22998,6 +23019,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			feint: ["4E"],
 			lowkick: ["4L1"],
 			painsplit: ["4L1"],
+			gravity: ["4L1"],
 		},
 	},
 	mawile: {
@@ -23422,6 +23444,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			acupressure: ["4L33"],
 			lowkick: ["4L1"],
 			painsplit: ["4L34"],
+			gravity: ["4L21"],
 		},
 	},
 	medicham: {
@@ -23506,6 +23529,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			fakeout: ["4L56"],
 			lowkick: ["4L1"],
 			painsplit: ["4L34"],
+			gravity: ["4L21"],
 		},
 	},
 	electrike: {
@@ -25722,6 +25746,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			moonlight: ["4L39"],
 			psychicscream: ["4L41"],
 			painsplit: ["4L1"],
+			gravity: ["4L1"],
 		},
 	},
 	solrock: {
@@ -25803,6 +25828,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			morningsun: ["4L39"],
 			psychicscream: ["4L41"],
 			painsplit: ["4L1"],
+			gravity: ["4L1"],
 		},
 	},
 	barboach: {
@@ -26144,6 +26170,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			peatslide: ["4L32"],
 			psyshock: ["4L33"],
 			imprison: ["4L43"],
+			gravity: ["4L20"],
 		},
 	},
 	claydol: {
@@ -26218,6 +26245,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			peatslide: ["4L33"],
 			psyshock: ["4L38"],
 			imprison: ["4L48"],
+			gravity: ["4L20"],
 		},
 	},
 	lileep: {
@@ -27008,6 +27036,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hex: ["4L20"],
 			chillingspell: ["4L28"],
 			psychicscream: ["4L44"],
+			gravity: ["4L1"],
 		},
 	},
 	dusclops: {
@@ -27330,6 +27359,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			yawn: ["4L13"],
 			tantrum: ["4L1"],
 			psychicscream: ["4L24"],
+			gravity: ["4L21"],
 		},
 	},
 	chimecho: {
@@ -27408,6 +27438,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			psyshock: ["4L38"],
 			recover: ["4L40"],
 			peekaboo: ["4L42"],
+			gravity: ["4L1"],
 		},
 	},
 	absol: {
@@ -28489,6 +28520,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			trick: ["4T"],
 			zenheadbutt: ["4T", "4L32"],
 			psyshock: ["4L47"],
+			gravity: ["4L1"],
 		},
 	},
 	metagross: {
@@ -28565,6 +28597,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			zenheadbutt: ["4T", "4L32", "4S0"],
 			psyshock: ["4L50"],
 			block: ["4L1"],
+			gravity: ["4L1"],
 		},
 	},
 	regirock: {
@@ -28640,6 +28673,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			zapcannon: ["4L65", "3L49"],
 			bulldoze: ["4L1"],
 			block: ["4L1"],
+			gravity: ["4L1"],
 		},
 	},
 	regice: {
@@ -28717,6 +28751,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hailcannon: ["4L45"],
 			freezedry: ["4L47"],
 			block: ["4L1"],
+			gravity: ["4L1"],
 		},
 	},
 	registeel: {
@@ -28793,6 +28828,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			zapcannon: ["4L65", "3L49"],
 			bulldoze: ["4L1"],
 			block: ["4L1"],
+			gravity: ["4L1"],
 		},
 	},
 	latias: {
@@ -29407,6 +29443,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			psyshock: ["4L28"],
 			psychicscream: ["4L51"],
 			futuresight: ["4L60"],
+			gravity: ["4L1"],
 		},
 	},
 	turtwig: {
@@ -32282,6 +32319,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			metalsound: ["4L33"],
 			peekaboo: ["4L35"],
 			psychicscream: ["4L39"],
+			gravity: ["4L23"],
 		},
 	},
 	bronzong: {
@@ -32355,6 +32393,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			metalsound: ["4L33"],
 			peekaboo: ["4L35"],
 			psychicscream: ["4L41"],
+			gravity: ["4L23"],
 		},
 	},
 	chatot: {
@@ -33981,6 +34020,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			dragontail: ["4L1"],
 			powergem: ["4L19"],
 			metalburst: ["4L35"],
+			gravity: ["4L1"],
 		},
 	},
 	palkia: {
@@ -34060,6 +34100,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			dualwingbeat: ["4L35"],
 			wavecrash: ["4L42", "4T"],
 			hydropump: ["4L50"],
+			gravity: ["4L1"],
 		},
 	},
 	heatran: {
@@ -34192,6 +34233,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			bodyslam: ["4L30"],
 			hammerarm: ["4L54"],
 			block: ["4L1"],
+			gravity: ["4L1"],
 		},
 	},
 	giratina: {
@@ -34274,6 +34316,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			chillingspell: ["4L30"],
 			dualwingbeat: ["4L35"],
 			painsplit: ["4L1"],
+			gravity: ["4L1"],
 		},
 	},
 	cresselia: {
@@ -34335,6 +34378,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			trick: ["4T"],
 			trickroom: ["4M"],
 			zenheadbutt: ["4T"],
+			gravity: ["4L1"],
 		},
 	},
 	phione: {
