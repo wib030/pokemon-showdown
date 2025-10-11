@@ -67,6 +67,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			powerwhip: ["4E"],
 			sludge: ["4E"],
 			headbutt: ["4L23"],
+			stringshot: ["4L17"],
 		},
 	},
 	ivysaur: {
@@ -123,6 +124,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			worryseed: ["4T", "4L36"],
 			acid: ["4L1"],
 			headbutt: ["4L25"],
+			stringshot: ["4L17"],
 		},
 	},
 	venusaur: {
@@ -188,6 +190,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			acid: ["4L3"],
 			headbutt: ["4L25"],
 			block: ["4L1"],
+			stringshot: ["4L17"],
 		},
 	},
 	charmander: {
@@ -678,6 +681,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			harden: ["4L1", "3L1"],
 			irondefense: ["4T"],
 			nibble: ["4L3"],
+			bugbite: ["4L15"],
+			stringshot: ["4L1"],
 		},
 	},
 	butterfree: {
@@ -746,6 +751,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			peatslide: ["4L37"],
 			hurricane: ["4L42"],
 			bugbite: ["4L1"],
+			stringshot: ["4L1"],
 		},
 	},
 	weedle: {
@@ -764,6 +770,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			irondefense: ["4T"],
 			nibble: ["4L3"],
 			stickyweb: ["4L35"],
+			bugbite: ["4L15"],
+			stringshot: ["4L1"],
 		},
 	},
 	beedrill: {
@@ -832,6 +840,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			stickyweb: ["4L50"],
 			tailwind: ["4L1"],
 			bugbite: ["4L1"],
+			stringshot: ["4L1"],
 		},
 	},
 	pidgey: {
@@ -10771,6 +10780,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			stickyweb: ["4L56"],
 			tantrum: ["4E"],
 			bugbite: ["4L13"],
+			stringshot: ["4L1"],
 		},
 	},
 	tauros: {
@@ -12972,6 +12982,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			block: ["4L1"],
 			gravity: ["4L1"],
 			magiccoat: ["4L1"],
+			stringshot: ["4L1"],
 		},
 	},
 	chikorita: {
@@ -13955,6 +13966,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uturn: ["4M"],
 			nibble: ["4L1"],
 			gust: ["4L3"],
+			stringshot: ["4L1"],
 		},
 	},
 	ledian: {
@@ -14028,6 +14040,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			bugbite: ["4L9"],
 			nibble: ["4L1"],
 			gust: ["4L3"],
+			stringshot: ["4L1"],
 		},
 	},
 	spinarak: {
@@ -15721,6 +15734,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			peatslide: ["4L36"],
 			peekaboo: ["4L43"],
 			bugbite: ["4L13"],
+			stringshot: ["4L1"],
 		},
 	},
 	yanmega: {
@@ -15784,6 +15798,9 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hypnosis: ["4L1"],
 			peatslide: ["4L38"],
 			peekaboo: ["4L47"],
+			gust: ["4L1"],
+			stringshot: ["4L1"],
+			nibble: ["4L1"],
 		},
 	},
 	wooper: {
@@ -16419,6 +16436,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			powertrick: ["4E"],
 			painsplit: ["4L44"],
 			gravity: ["4L35"],
+			stringshot: ["4L1"],
 		},
 	},
 	forretress: {
@@ -16486,6 +16504,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			painsplit: ["4L48"],
 			block: ["4L1"],
 			gravity: ["4L35"],
+			stringshot: ["4L1"],
 		},
 	},
 	dunsparce: {
@@ -17055,6 +17074,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			nibble: ["4L3"],
 			rockthrow: ["4L23"],
 			stickyweb: ["4L35"],
+			stringshot: ["4L1"],
 		},
 	},
 	heracross: {
@@ -17964,6 +17984,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			waterpulse: ["4M", "4L26", "3M"],
 			helpinghand: ["4L1"],
 			waterspout: ["4E"],
+			stringshot: ["4L16"],
 		},
 	},
 	octillery: {
@@ -18033,6 +18054,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			recover: ["4L38"],
 			hailcannon: ["4L52"],
 			hydropump: ["4L58"],
+			stringshot: ["4L16"],
 		},
 	},
 	delibird: {
@@ -18245,6 +18267,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			watergun: ["4L1"],
 			pluck: ["4L22"],
 			wavecrash: ["4T"],
+			stringshot: ["4L17"],
 		},
 	},
 	skarmory: {
@@ -20467,6 +20490,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			harden: ["4L1", "3L1"],
 			irondefense: ["4T"],
 			nibble: ["4L3"],
+			stringshot: ["4L1"],
+			bugbite: ["4L15"],
 		},
 	},
 	beautifly: {
@@ -20524,6 +20549,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			peatslide: ["4L39"],
 			hurricane: ["4L44"],
 			bugbite: ["4L1"],
+			stringshot: ["4L1"],
 		},
 	},
 	cascoon: {
@@ -20531,6 +20557,9 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 		learnset: {
 			harden: ["4L1", "3L1"],
 			irondefense: ["4T"],
+			nibble: ["4L3"],
+			stringshot: ["4L1"],
+			bugbite: ["4L15"],
 		},
 	},
 	dustox: {
@@ -20593,6 +20622,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			followme: ["4L37"],
 			peatslide: ["4L40"],
 			bugbite: ["4L1"],
+			stringshot: ["4L1"],
 		},
 	},
 	lotad: {
@@ -21672,6 +21702,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			nibble: ["4L3"],
 			aquajet: ["4L30"],
 			stickyweb: ["4L40"],
+			stringshot: ["4L1"],
 		},
 	},
 	masquerain: {
@@ -21746,6 +21777,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hurricane: ["4L56"],
 			bugbite: ["4L13"],
 			nibble: ["4L3"],
+			stringshot: ["4L1"],
 		},
 	},
 	shroomish: {
@@ -22161,6 +22193,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			nibble: ["4L3"],
 			bide: ["4L29"],
 			peatslide: ["4L31"],
+			stringshot: ["4L1"],
 		},
 	},
 	ninjask: {
@@ -22226,6 +22259,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			spikes: ["4L1"],
 			nibble: ["4L3"],
 			peatslide: ["4L40"],
+			stringshot: ["4L1"],
 		},
 	},
 	shedinja: {
@@ -22291,6 +22325,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			nibble: ["4L3"],
 			peatslide: ["4L40"],
 			bugbite: ["4L11"],
+			stringshot: ["4L1"],
 		},
 	},
 	whismur: {
@@ -23919,6 +23954,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			stickyweb: ["4L54"],
 			bugbite: ["4L10"],
 			wildcharge: ["4L47"],
+			stringshot: ["4L1"],
 		},
 	},
 	illumise: {
@@ -23939,10 +23975,10 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			doubleedge: ["3T"],
 			doubleteam: ["4M", "3M"],
 			dynamicpunch: ["3T"],
-			encore: ["4L26", "4E", "3L25"],
+			encore: ["4L1", "4E", "3L25"],
 			endure: ["4M", "3T"],
 			facade: ["4M", "3M"],
-			flash: ["4M", "3M"],
+			flash: ["4L1", "4M", "3M"],
 			flatter: ["4L29", "3L29"],
 			fling: ["4M"],
 			focuspunch: ["4M", "3M"],
@@ -23998,6 +24034,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			trick: ["4L43"],
 			stickyweb: ["4L54"],
 			bugbite: ["4L10"],
+			stringshot: ["4L1"],
 		},
 	},
 	budew: {
@@ -26360,6 +26397,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			brine: ["4L21"],
 			curse: ["4E"],
 			painsplit: ["4L38"],
+			stringshot: ["4L10"],
 		},
 	},
 	cradily: {
@@ -26430,6 +26468,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			powergem: ["4L45"],
 			painsplit: ["4L40"],
 			block: ["4L1"],
+			stringshot: ["4L10"],
 		},
 	},
 	anorith: {
@@ -26493,6 +26532,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			bugbite: ["4L15"],
 			brine: ["4L29"],
 			curse: ["4E"],
+			stringshot: ["4L1"],
 		},
 	},
 	armaldo: {
@@ -26565,6 +26605,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			wavecrash: ["4T"],
 			lowkick: ["4L1"],
 			block: ["4L1"],
+			stringshot: ["4L1"],
+			nibble: ["4L1"],
 		},
 	},
 	feebas: {
@@ -30449,6 +30491,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uproar: ["4T"],
 			nibble: ["4L1"],
 			stickyweb: ["4L40"],
+			stringshot: ["4L1"],
 		},
 	},
 	kricketune: {
@@ -30505,6 +30548,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			spiderweb: ["4L36"],
 			stickyweb: ["4L52"],
 			bugbite: ["4L16"],
+			stringshot: ["4L1"],
 		},
 	},
 	shinx: {
@@ -31000,6 +31044,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			snore: ["4T"],
 			tackle: ["4L10"],
 			nibble: ["4L1"],
+			stringshot: ["4L1"],
 		},
 	},
 	wormadam: {
@@ -31062,6 +31107,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			bugbuzz: ["4L50"],
 			stickyweb: ["4L52"],
 			explosion: ["4M"],
+			nibble: ["4L1"],
+			stringshot: ["4L1"],
 		},
 	},
 	wormadamsandy: {
@@ -31123,6 +31170,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			bugbuzz: ["4L50"],
 			stickyweb: ["4L52"],
 			explosion: ["4M"],
+			nibble: ["4L1"],
+			stringshot: ["4L1"],
 		},
 	},
 	wormadamtrash: {
@@ -31183,6 +31232,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			bugbuzz: ["4L50"],
 			stickyweb: ["4L52"],
 			explosion: ["4M"],
+			nibble: ["4L1"],
+			stringshot: ["4L1"],
 		},
 	},
 	mothim: {
@@ -31248,6 +31299,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			xscissor: ["4M"],
 			dualwingbeat: ["4L30"],
 			zenheadbutt: ["4L39"],
+			nibble: ["4L1"],
+			stringshot: ["4L1"],
 		},
 	},
 	combee: {
@@ -31263,6 +31316,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			sweetscent: ["4L1"],
 			swift: ["4T"],
 			nibble: ["4L1"],
+			stringshot: ["4L1"],
 		},
 	},
 	vespiquen: {
@@ -31324,6 +31378,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			airslash: ["4L37"],
 			peatslide: ["4L41"],
 			bugbite: ["4L15"],
+			nibble: ["4L1"],
+			stringshot: ["4L1"],
 		},
 	},
 	pachirisu: {
@@ -31672,6 +31728,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			trumpcard: ["4E"],
 			sludge: ["4E"],
 			painsplit: ["4L42"],
+			stringshot: ["4L18"],
 		},
 	},
 	gastrodon: {
@@ -31728,6 +31785,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			stealthrock: ["4M"],
 			painsplit: ["4L46"],
 			block: ["4L1"],
+			stringshot: ["4L18"],
 		},
 	},
 	gastrodoneast: {
