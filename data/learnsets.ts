@@ -1001,7 +1001,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			swagger: ["4M", "3T"],
 			swift: ["4T", "3T"],
 			tackle: ["4L1", "3L1"],
-			tailwind: ["4L41"],
+			tailwind: ["4L31"],
 			thief: ["4M", "3M"],
 			toxic: ["4M", "3M"],
 			twister: ["4T", "4L21"],
@@ -1060,7 +1060,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			swagger: ["4M", "3T"],
 			swift: ["4T", "3T"],
 			tackle: ["4L1", "3L1"],
-			tailwind: ["4L47"],
+			tailwind: ["4L34"],
 			thief: ["4M", "3M"],
 			toxic: ["4M", "3M"],
 			twister: ["4T", "4L22"],
@@ -1124,7 +1124,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			swagger: ["4M", "3T"],
 			swift: ["4T", "3T"],
 			tackle: ["4L1", "3L1"],
-			tailwind: ["4L50"],
+			tailwind: ["4L36"],
 			thief: ["4M", "3M"],
 			toxic: ["4M", "3M"],
 			twister: ["4T", "4L22"],
@@ -4170,6 +4170,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dualwingbeat: ["4L42"],
 			magiccoat: ["4L48"],
 			headbutt: ["4L25"],
+			healbell: ["4L34"],
 		},
 		eventData: [
 			{generation: 8, level: 50, gender: "F", shiny: true, nature: "Bold", isHidden: true, ivs: {hp: 31, atk: 0, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["followme", "icywind", "helpinghand", "protect"], pokeball: "cherishball"},
@@ -4280,6 +4281,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dualwingbeat: ["4L42"],
 			magiccoat: ["4L48"],
 			headbutt: ["4L25"],
+			healbell: ["4L34"],
 		},
 	},
 	vulpix: {
@@ -4958,7 +4960,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zenheadbutt: ["4T", "4E"],
 			nibble: ["4L1"],
 			peekaboo: ["4L35"],
-			tailwind: ["4L9"],
+			tailwind: ["4E", "4L28"],
 			superfang: ["4L37"],
 		},
 		encounters: [
@@ -13347,7 +13349,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			grassknot: ["4M"],
 			gravity: ["4E"],
 			hail: ["4M"],
-			healbell: ["4E"],
+			healbell: ["4L24", "4E"],
 			helpinghand: ["4T", "4E"],
 			hiddenpower: ["4M"],
 			icywind: ["4T"],
@@ -13424,7 +13426,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			gravity: ["4E", "4L21"],
 			growl: ["4L1", "3L1", "3S1"],
 			hail: ["4M", "3M"],
-			healbell: ["4E", "3E"],
+			healbell: ["4L36", "4E", "3E"],
 			healingwish: ["4L42"],
 			helpinghand: ["4T", "4E"],
 			hiddenpower: ["4M", "3M"],
@@ -13597,6 +13599,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			lovelypunch: ["4L25"],
 			block: ["4L1"],
 			gravity: ["4L21"],
+			healbell: ["4L36"],
 		},
 		eventData: [
 			{generation: 5, level: 10, isHidden: true, moves: ["pound", "growl", "tailwhip", "refresh"]},
@@ -15980,7 +15983,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			gigaimpact: ["4M"],
 			growl: ["4L1", "3L1"],
 			hail: ["4M", "3M"],
-			healbell: ["3S0"],
+			healbell: ["4L41", "3S0"],
 			hiddenpower: ["4M", "3M"],
 			horndrill: ["4E", "3E"],
 			hydropump: ["4L47", "3L49", "3S0"],
@@ -16106,6 +16109,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wish: ["4E", "3E"],
 			yawn: ["4E"],
 			detect: ["4E"],
+			healbell: ["4L31"],
 		},
 		eventData: [
 			{generation: 4, level: 10, gender: "F", nature: "Lonely", abilities: ["adaptability"], moves: ["covet", "bite", "helpinghand", "attract"], pokeball: "cherishball"},
@@ -16248,6 +16252,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			covet: ["4L1"],
 			copycat: ["4L1"],
 			wavecrash: ["4T"],
+			healbell: ["4L1"],
 		},
 		eventData: [
 			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["tailwhip", "tackle", "helpinghand", "sandattack"]},
@@ -16315,6 +16320,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			charm: ["4L1"],
 			covet: ["4L1"],
 			voltswitch: ["4L35"],
+			healbell: ["4L1"],
 		},
 		eventData: [
 			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["tailwhip", "tackle", "helpinghand", "sandattack"]},
@@ -16383,6 +16389,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			crunch: ["4L30"],
 			flareblitz: ["4L45"],
 			solarbeam: ["4L50"],
+			healbell: ["4L1"],
 		},
 		eventData: [
 			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["tailwhip", "tackle", "helpinghand", "sandattack"]},
@@ -16458,6 +16465,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			psychicscream: ["4L42"],
 			weatherball: ["4L50"],
 			magiccoat: ["4L32"],
+			healbell: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 70, moves: ["psybeam", "psychup", "psychic", "morningsun"], pokeball: "pokeball"},
@@ -16532,6 +16540,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			tantrum: ["4L1"],
 			knockoff: ["4L42"],
 			yawn: ["4L50"],
+			healbell: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 70, moves: ["feintattack", "meanlook", "screech", "moonlight"], pokeball: "pokeball"},
@@ -16600,6 +16609,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			charm: ["4L1"],
 			covet: ["4L1"],
 			leechseed: ["4L20"],
+			healbell: ["4L1"],
 		},
 		eventData: [
 			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["tailwhip", "tackle", "helpinghand", "sandattack"]},
@@ -16664,6 +16674,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			aurorabeam: ["4L25"],
 			chillingspell: ["4L30"],
 			freezedry: ["4L35"],
+			healbell: ["4L1"],
 		},
 		eventData: [
 			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["tailwhip", "tackle", "helpinghand", "sandattack"]},
@@ -17258,6 +17269,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wingattack: ["4L1", "3L1"],
 			dualwingbeat: ["4L1"],
 			snap: ["4L21"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 5, level: 15, gender: "M", abilities: ["pressure"], moves: ["steelwing", "icefang", "firefang", "thunderfang"], pokeball: "cherishball"},
@@ -17499,7 +17511,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			sunnyday: ["4M", "3M"],
 			swagger: ["4M", "3T"],
 			swift: ["4T", "3T"],
-			tailwind: ["4L40"],
+			tailwind: ["4L1"],
 			toxic: ["4M", "3M"],
 			twister: ["4T"],
 			uturn: ["4M"],
@@ -17658,6 +17670,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			weatherball: ["4L1"],
 			voltswitch: ["4L34"],
 			dualwingbeat: ["4L1"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 50, shiny: 1, moves: ["thunderwave", "agility", "detect", "drillpeck"]},
@@ -17803,6 +17816,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wingattack: ["4L1", "3L1"],
 			hurricane: ["4L1"],
 			weatherball: ["4L1"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 50, shiny: 1, moves: ["firespin", "agility", "endure", "flamethrower"]},
@@ -18108,6 +18122,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			nibble: ["4L3"],
 			dragontail: ["4L15"],
 			hailcannon: ["4L50"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 70, moves: ["agility", "safeguard", "wingattack", "outrage"], pokeball: "pokeball"},
@@ -18436,6 +18451,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			gravity: ["4L1"],
 			magiccoat: ["4L1"],
 			stringshot: ["4L1"],
+			healbell: ["4L1"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 30, shiny: 1, moves: ["pound", "transform", "megapunch", "metronome"]},
@@ -19408,6 +19425,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			peekaboo: ["4L30"],
 			dualwingbeat: ["4E"],
 			magiccoat: ["4L32"],
+			tailwind: ["4L34"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["tackle", "growl", "foresight"], pokeball: "pokeball"},
@@ -19480,6 +19498,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			peekaboo: ["4L35"],
 			psyshock: ["4L53"],
 			magiccoat: ["4L38"],
+			tailwind: ["4L1"],
 		},
 		encounters: [
 			{generation: 2, level: 7},
@@ -19552,6 +19571,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			nibble: ["4L1"],
 			gust: ["4L3"],
 			stringshot: ["4L1"],
+			tailwind: ["4L30"],
 		},
 		eventData: [
 			{generation: 3, level: 10, moves: ["refresh", "psybeam", "aerialace", "supersonic"]},
@@ -19631,6 +19651,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			nibble: ["4L1"],
 			gust: ["4L3"],
 			stringshot: ["4L1"],
+			tailwind: ["4L1"],
 		},
 		encounters: [
 			{generation: 2, level: 7},
@@ -19828,6 +19849,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			whirlpool: ["4E"],
 			thundershock: ["4L1"],
 			voltswitch: ["4L40"],
+			healbell: ["4L32"],
 		},
 	},
 	lanturn: {
@@ -19890,6 +19912,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			waterpulse: ["4M", "3M"],
 			voltswitch: ["4L42"],
 			wavecrash: ["4T"],
+			healbell: ["4L36"],
 		},
 		encounters: [
 			{generation: 4, level: 20},
@@ -19979,6 +20002,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			psychicscream: ["4L43"],
 			extrasensory: ["4E"],
 			magiccoat: ["4L39"],
+			healbell: ["4L35"],
 		},
 		eventData: [
 			{generation: 3, level: 20, gender: "F", abilities: ["serenegrace"], moves: ["metronome", "charm", "sweetkiss", "yawn"], pokeball: "pokeball"},
@@ -20071,6 +20095,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			lovelypunch: ["4L26"],
 			psychicscream: ["4L48"],
 			magiccoat: ["4L39"],
+			healbell: ["4L35"],
+			tailwind: ["4L1"],
 		},
 	},
 	togekiss: {
@@ -20152,6 +20178,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			doubleedge: ["4L46"],
 			psychicscream: ["4L48"],
 			magiccoat: ["4L39"],
+			healbell: ["4L35"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["extremespeed", "aurasphere", "airslash", "present"]},
@@ -20238,6 +20266,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			psyshock: ["4L46"],
 			painsplit: ["4L42"],
 			magiccoat: ["4L30"],
+			tailwind: ["4L27"],
 		},
 		eventData: [
 			{generation: 3, level: 22, moves: ["batonpass", "futuresight", "nightshade", "aerialace"]},
@@ -20347,7 +20376,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			flatter: ["4E"],
 			frustration: ["4M", "3M"],
 			growl: ["4L5", "3L1", "3S1"],
-			healbell: ["3S2"],
+			healbell: ["4L35", "3S2"],
 			hiddenpower: ["4M", "3M"],
 			irontail: ["4M", "3M"],
 			lightscreen: ["4M", "4L37", "3M", "3L30"],
@@ -20446,6 +20475,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dragonclaw: ["4M"],
 			dragonbreath: ["4L15"],
 			dragontail: ["4T"],
+			healbell: ["4L40"],
 		},
 		encounters: [
 			{generation: 7, level: 11, pokeball: "pokeball"},
@@ -20517,6 +20547,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dragonrush: ["4L48"],
 			dracometeor: ["4L52"],
 			dragontail: ["4M"],
+			healbell: ["4L40"],
 		},
 	},
 	azurill: {
@@ -20907,6 +20938,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uturn: ["4M", "4L31"],
 			worryseed: ["4T", "4L34", "4E"],
 			absorb: ["4L1"],
+			tailwind: ["4L20"],
 		},
 		encounters: [
 			{generation: 2, level: 3},
@@ -20960,6 +20992,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			toxic: ["4M", "3M"],
 			uturn: ["4M", "4L36"],
 			worryseed: ["4T", "4L40"],
+			tailwind: ["4L22"],
 		},
 		encounters: [
 			{generation: 4, level: 12},
@@ -21015,6 +21048,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			toxic: ["4M", "3M"],
 			uturn: ["4M", "4L36"],
 			worryseed: ["4T", "4L40"],
+			tailwind: ["4L22"],
 		},
 		eventData: [
 			{generation: 5, level: 27, gender: "M", isHidden: true, moves: ["falseswipe", "sleeppowder", "bulletseed", "leechseed"]},
@@ -21367,6 +21401,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			peekaboo: ["4L43"],
 			bugbite: ["4L13"],
 			stringshot: ["4L1"],
+			tailwind: ["4L31"],
 		},
 	},
 	yanmega: {
@@ -21432,6 +21467,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			gust: ["4L1"],
 			stringshot: ["4L1"],
 			nibble: ["4L1"],
+			tailwind: ["4L35"],
 		},
 	},
 	wooper: {
@@ -21786,6 +21822,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dualwingbeat: ["4L27", "4E"],
 			tantrum: ["4L5"],
 			bravebird: ["4E"],
+			tailwind: ["4L29"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", abilities: ["insomnia"], moves: ["peck", "astonish"], pokeball: "pokeball"},
@@ -21857,6 +21894,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			bravebird: ["4L53"],
 			hurricane: ["4L61"],
 			skyattack: ["4L1"],
+			tailwind: ["4L33"],
 		},
 		eventData: [
 			{generation: 7, level: 65, gender: "M", abilities: ["superluck"], moves: ["nightslash", "skyattack", "heatwave", "icywind"], pokeball: "cherishball"},
@@ -21938,6 +21976,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			chillingspell: ["4L26"],
 			nastyplot: ["4L43", "4E"],
 			magiccoat: ["4L44"],
+			healbell: ["4L45"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["growl", "psywave", "spite"], pokeball: "pokeball"},
@@ -22014,6 +22053,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			grudge: ["4L46"],
 			powergem: ["4L50"],
 			magiccoat: ["4L44"],
+			healbell: ["4L45"],
 		},
 	},
 	unown: {
@@ -22561,6 +22601,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			skyuppercut: ["4L45"],
 			dualwingbeat: ["4E"],
 			powertrick: ["4E"],
+			tailwind: ["4L33"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["poisonsting", "sandattack"], pokeball: "pokeball"},
@@ -22639,6 +22680,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			bulldoze: ["4L13"],
 			skyuppercut: ["4L45"],
 			skyattack: ["4L1"],
+			tailwind: ["4L38"],
 		},
 	},
 	snubbull: {
@@ -24698,6 +24740,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			roost: ["4M"],
 			watergun: ["4L1"],
 			pluck: ["4L22"],
+			tailwind: ["4L33"],
 		},
 	},
 	mantine: {
@@ -24774,6 +24817,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			pluck: ["4L22"],
 			wavecrash: ["4T"],
 			stringshot: ["4L17"],
+			tailwind: ["4L35"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["tackle", "bubble", "supersonic"], pokeball: "pokeball"},
@@ -24853,6 +24897,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			metalclaw: ["4L9"],
 			dualwingbeat: ["4L31"],
 			guardswap: ["4E"],
+			tailwind: ["4L1"],
 		},
 	},
 	houndour: {
@@ -25352,7 +25397,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			growl: ["4L3", "3L4"],
 			gyroball: ["4M", "4L41"],
 			hammerarm: ["4E"],
-			healbell: ["4L48", "3L53"],
+			healbell: ["4L37", "3L53"],
 			helpinghand: ["4T", "4E", "3E"],
 			hiddenpower: ["4M", "3M"],
 			hyperbeam: ["4M", "3M"],
@@ -25989,6 +26034,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			psychicscream: ["4L55"],
 			dragontail: ["4T"],
 			wavecrash: ["4T"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 70, shiny: 1, moves: ["recover", "hydropump", "raindance", "swift"]},
@@ -26088,6 +26134,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			bravebird: ["4L15"],
 			psyshock: ["4L49"],
 			psychicscream: ["4L55"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 70, shiny: 1, moves: ["recover", "fireblast", "sunnyday", "swift"]},
@@ -27516,6 +27563,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			hurricane: ["4L44"],
 			bugbite: ["4L1"],
 			stringshot: ["4L1"],
+			tailwind: ["4L1"],
 		},
 	},
 	cascoon: {
@@ -27592,6 +27640,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			peatslide: ["4L40"],
 			bugbite: ["4L1"],
 			stringshot: ["4L1"],
+			tailwind: ["4L1"],
 		},
 	},
 	lotad: {
@@ -28038,7 +28087,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			leafblade: ["4L28"],
 			hurricane: ["4L34"],
 			extrasensory: ["4L36"],
-			tailwind: ["4L50"],
+			tailwind: ["4L40"],
 			lowkick: ["4L18"],
 		},
 	},
@@ -28098,6 +28147,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			whirlwind: ["4E"],
 			wingattack: ["4L13", "3L13"],
 			reversal: ["4L45"],
+			tailwind: ["4L30"],
 		},
 		eventData: [
 			{generation: 3, level: 5, shiny: 1, moves: ["peck", "growl", "focusenergy", "featherdance"], pokeball: "pokeball", emeraldEventEgg: true},
@@ -28159,6 +28209,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dualwingbeat: ["4L31"],
 			bravebird: ["4L51"],
 			reversal: ["4L54"],
+			tailwind: ["4L35"],
 		},
 		eventData: [
 			{generation: 3, level: 43, moves: ["batonpass", "skyattack", "agility", "facade"]},
@@ -28227,6 +28278,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			snap: ["4L21"],
 			dualwingbeat: ["4L31"],
 			hurricane: ["4L43"],
+			tailwind: ["4L30"],
 		},
 		encounters: [
 			{generation: 3, level: 2},
@@ -28563,6 +28615,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			psychicscream: ["4L42"],
 			painsplit: ["4L46"],
 			magiccoat: ["4L34"],
+			healbell: ["4L35"],
 		},
 		eventData: [
 			{generation: 5, level: 50, shiny: 1, abilities: ["trace"], moves: ["hypnosis", "thunderbolt", "focusblast", "psychic"], pokeball: "cherishball"},
@@ -28799,6 +28852,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			bugbite: ["4L13"],
 			nibble: ["4L3"],
 			stringshot: ["4L1"],
+			tailwind: ["4L1"],
 		},
 		encounters: [
 			{generation: 6, level: 21, maxEggMoves: 1},
@@ -31027,6 +31081,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			bugbite: ["4L10"],
 			wildcharge: ["4L47"],
 			stringshot: ["4L1"],
+			tailwind: ["4L1"],
 		},
 	},
 	illumise: {
@@ -31106,6 +31161,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			stickyweb: ["4L54"],
 			bugbite: ["4L10"],
 			stringshot: ["4L1"],
+			tailwind: ["4L1"],
 		},
 	},
 	budew: {
@@ -31996,6 +32052,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			confusion: ["4L3"],
 			psychicscream: ["4L36"],
 			psyshock: ["4L38"],
+			healbell: ["4L35"],
 		},
 		eventData: [
 			{generation: 3, level: 5, shiny: 1, abilities: ["owntempo"], moves: ["splash", "uproar"], pokeball: "pokeball", emeraldEventEgg: true},
@@ -32081,6 +32138,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			recover: ["4L39"],
 			psyshock: ["4L38"],
 			psychicscream: ["4L42"],
+			healbell: ["4L35"],
 		},
 		encounters: [
 			{generation: 6, level: 30},
@@ -32305,6 +32363,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			peatslide: ["4L24"],
 			bugbuzz: ["4L29"],
 			bugbite: ["4L9"],
+			tailwind: ["4L1"],
 		},
 	},
 	flygon: {
@@ -32384,6 +32443,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dragonrush: ["4L45"],
 			dragondance: ["4L47"],
 			bugbite: ["4L9"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 45, moves: ["sandtomb", "crunch", "dragonbreath", "screech"], pokeball: "pokeball"},
@@ -32617,6 +32677,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["4L11", "4T"],
 			powerswap: ["4E"],
 			defog: ["4M"],
+			healbell: ["4L33"],
+			tailwind: ["4L35"],
 		},
 		eventData: [
 			{generation: 3, level: 5, shiny: 1, moves: ["peck", "growl", "falseswipe"], pokeball: "pokeball", emeraldEventEgg: true},
@@ -32650,7 +32712,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			furyattack: ["4L13", "3L18"],
 			gigaimpact: ["4M"],
 			growl: ["4L1", "3L1"],
-			healbell: ["3S1"],
+			healbell: ["4L37", "3S1"],
 			heatwave: ["4T"],
 			hiddenpower: ["4M", "3M"],
 			hyperbeam: ["4M", "3M"],
@@ -32697,6 +32759,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			willowisp: ["4L48"],
 			dragontail: ["4M"],
 			defog: ["4M"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 45, moves: ["takedown", "dragonbreath", "dragondance", "refresh"], pokeball: "pokeball"},
@@ -33963,6 +34026,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			hurricane: ["4L54"],
 			flareblitz: ["4L54"],
 			hailcannon: ["4L54"],
+			tailwind: ["4L1"],
 		},
 	},
 	kecleon: {
@@ -34561,6 +34625,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			earthpower: ["4L49"],
 			hurricane: ["4L53", "4E"],
 			dragondance: ["4E"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 4, level: 53, gender: "F", nature: "Jolly", abilities: ["chlorophyll"], moves: ["airslash", "synthesis", "sunnyday", "solarbeam"], pokeball: "cherishball"},
@@ -34631,6 +34696,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			psychicscream: ["4L24"],
 			gravity: ["4L21"],
 			magiccoat: ["4L30"],
+			healbell: ["4L20"],
 		},
 	},
 	chimecho: {
@@ -34656,7 +34722,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			futuresight: ["4E"],
 			grassknot: ["4M"],
 			growl: ["4L6", "3L6", "3S0"],
-			healbell: ["4L27", "3L38"],
+			healbell: ["4L1", "3L38"],
 			healingwish: ["4L48"],
 			helpinghand: ["4T"],
 			hiddenpower: ["4M", "3M"],
@@ -35727,6 +35793,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wish: ["4L1"],
 			thrash: ["4L1"],
 			dragontail: ["4L1"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 50, moves: ["protect", "dragonbreath", "scaryface", "fly"], pokeball: "pokeball"},
@@ -36263,6 +36330,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			aurasphere: ["4L54"],
 			dragontail: ["4T"],
 			magiccoat: ["4L30"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 40, shiny: 1, moves: ["watersport", "refresh", "mistball", "psychic"]},
@@ -36369,6 +36437,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			aurasphere: ["4L54"],
 			dragontail: ["4T"],
 			magiccoat: ["4L30"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 40, shiny: 1, moves: ["protect", "refresh", "lusterpurge", "psychic"]},
@@ -36654,6 +36723,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			whirlpool: ["4L1"],
 			airslash: ["4L30"],
 			hypervoice: ["4L55"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 3, level: 70, shiny: 1, moves: ["fly", "rest", "extremespeed", "outrage"]},
@@ -37617,6 +37687,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wingattack: ["4L9"],
 			gust: ["4L1"],
 			dualwingbeat: ["4L25"],
+			tailwind: ["4L31"],
 		},
 		eventData: [
 			{generation: 4, level: 1, gender: "M", nature: "Mild", moves: ["tackle", "growl"], pokeball: "pokeball"},
@@ -37667,6 +37738,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			whirlwind: ["4L23"],
 			wingattack: ["4L9"],
 			dualwingbeat: ["4L28"],
+			tailwind: ["4L35"],
 		},
 		encounters: [
 			{generation: 4, level: 4},
@@ -37721,6 +37793,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wingattack: ["4L1"],
 			dualwingbeat: ["4L28"],
 			skyattack: ["4L1"],
+			tailwind: ["4L37"],
 		},
 	},
 	bidoof: {
@@ -38684,6 +38757,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zenheadbutt: ["4L39"],
 			nibble: ["4L1"],
 			stringshot: ["4L1"],
+			tailwind: ["4L1"],
 		},
 	},
 	combee: {
@@ -38699,6 +38773,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			swift: ["4T"],
 			nibble: ["4L1"],
 			stringshot: ["4L1"],
+			tailwind: ["4L25"],
 		},
 	},
 	vespiquen: {
@@ -38761,6 +38836,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			bugbite: ["4L15"],
 			nibble: ["4L1"],
 			stringshot: ["4L1"],
+			tailwind: ["4L40"],
 		},
 	},
 	pachirisu: {
@@ -39263,6 +39339,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			weatherball: ["4E"],
 			painsplit: ["4L28"],
 			magiccoat: ["4L44"],
+			tailwind: ["4L33"],
 		},
 	},
 	drifblim: {
@@ -39339,6 +39416,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			moonlight: ["4L40"],
 			painsplit: ["4L28"],
 			magiccoat: ["4L46"],
+			tailwind: ["4L35"],
 		},
 		encounters: [
 			{generation: 7, level: 11, pokeball: "pokeball"},
@@ -39418,6 +39496,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			flatter: ["4L44"],
 			flail: ["4E"],
 			magiccoat: ["4L40"],
+			healbell: ["4L34"],
 		},
 	},
 	lopunny: {
@@ -39497,6 +39576,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			fakeout: ["4L44"],
 			highjumpkick: ["4L54"],
 			lowkick: ["4L1"],
+			healbell: ["4L38"],
 		},
 	},
 	glameow: {
@@ -39969,6 +40049,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uturn: ["4M"],
 			hurricane: ["4L55"],
 			skyattack: ["4L1"],
+			tailwind: ["4L35"],
 		},
 		eventData: [
 			{generation: 4, level: 25, gender: "M", nature: "Jolly", abilities: ["keeneye"], moves: ["mirrormove", "furyattack", "chatter", "taunt"]},
@@ -40952,7 +41033,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			return: ["4M"],
 			safeguard: ["4M", "4L26"],
 			secretpower: ["4M"],
-			silverwind: ["4M", "4L54"],
+			silverwind: ["4M", "4L40"],
 			sleeptalk: ["4M"],
 			snore: ["4T"],
 			splash: ["4E"],
@@ -40970,7 +41051,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			waterpulse: ["4M", "4L17"],
 			whirlpool: ["4L38"],
 			rapidspin: ["4L35"],
-			tailwind: ["4L49"],
+			tailwind: ["4L36"],
 			wavecrash: ["4T"],
 		},
 	},
@@ -41024,7 +41105,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			waterpulse: ["4M", "4L22"],
 			whirlpool: ["4L42"],
 			rapidspin: ["4L39"],
-			tailwind: ["4L59"],
+			tailwind: ["4L40"],
 			wavecrash: ["4T"],
 		},
 		encounters: [
@@ -41327,6 +41408,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dragontail: ["4T"],
 			painsplit: ["4L1"],
 			magiccoat: ["4L1"],
+			healbell: ["4L1"],
 		},
 		eventData: [
 			{generation: 4, level: 50, shiny: 1, moves: ["confusion", "yawn", "futuresight", "amnesia"]},
@@ -41948,6 +42030,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			painsplit: ["4L1"],
 			gravity: ["4L1"],
 			magiccoat: ["4L1"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 4, level: 70, shiny: 1, moves: ["shadowforce", "healblock", "earthpower", "slash"]},
@@ -42094,6 +42177,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			memento: ["4L50"],
 			healingwish: ["4L50"],
 			doubleedge: ["4L55"],
+			healbell: ["4L1"],
 		},
 		eventData: [
 			{generation: 4, level: 50, moves: ["grassknot", "raindance", "rest", "surf"], pokeball: "cherishball"},
@@ -42161,6 +42245,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			watersport: ["4L1", "4S0", "4S1", "4S3"],
 			whirlpool: ["4L35", "4S2"],
 			watergun: ["4L1"],
+			healbell: ["4L1"],
 		},
 		eventData: [
 			{generation: 4, level: 5, moves: ["tailglow", "bubble", "watersport"]},
@@ -42327,6 +42412,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			worryseed: ["4T", "4L35"],
 			zenheadbutt: ["4T"],
 			weatherball: ["4L50"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 4, level: 50, moves: ["seedflare", "aromatherapy", "substitute", "energyball"], pokeball: "cherishball"},
@@ -42462,6 +42548,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dragontail: ["4T"],
 			wavecrash: ["4T"],
 			magiccoat: ["4L1"],
+			tailwind: ["4L1"],
 		},
 		eventData: [
 			{generation: 4, level: 100, moves: ["judgment", "roaroftime", "spacialrend", "shadowforce"], pokeball: "cherishball"},
