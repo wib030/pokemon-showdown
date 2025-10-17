@@ -48,7 +48,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	fearow: {
 		inherit: true,
 		types: ["Dark", "Flying"],
-		baseStats: { hp: 95, atk: 110, def: 95, spa: 61, spd: 103, spe: 100 },
+		baseStats: { hp: 88, atk: 110, def: 95, spa: 61, spd: 103, spe: 100 },
 		abilities: { 0: "Intimidate", 1: "Technician" },
 	},
 	croconaw: {
