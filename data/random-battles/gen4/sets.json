@@ -304,17 +304,97 @@
         ]
     },
     "fearow": {
-        "level": 85,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["doubleedge", "drillpeck", "quickattack", "return", "uturn"],
-                "abilities": ["Keen Eye"]
+                "role": "Hazard Removal",
+                "movepool": ["bravebird", "uturn", "defog", "roost"],
+                "abilities": ["Intimidate"],
+				"evs": [244, 0, 24, 0, 168, 72],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful"
             },
             {
-                "role": "Wallbreaker",
-                "movepool": ["doubleedge", "drillpeck", "pursuit", "return", "uturn"],
-                "abilities": ["Keen Eye"]
+                "role": "Fast Attacker",
+                "movepool": ["dualwingbeat", "assurance", "drillrun", "uturn"],
+                "abilities": ["Technician"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["dualwingbeat", "drillrun", "pursuit", "uturn"],
+                "abilities": ["Technician"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["dualwingbeat", "rocksmash", "pursuit", "uturn"],
+                "abilities": ["Technician"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["dualwingbeat", "assurance", "rocksmash", "uturn"],
+                "abilities": ["Technician"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["dualwingbeat", "assurance", "drillrun", "uturn"],
+                "abilities": ["Technician"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["dualwingbeat", "pursuit", "rocksmash", "uturn"],
+                "abilities": ["Technician"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["dualwingbeat", "suckerpunch", "rocksmash", "uturn"],
+                "abilities": ["Technician"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["dualwingbeat", "suckerpunch", "drillrun", "uturn"],
+                "abilities": ["Technician"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["dualwingbeat", "pursuit", "drillrun", "substitute"],
+                "abilities": ["Technician"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly"
             }
         ]
     },
@@ -1619,12 +1699,97 @@
         ]
     },
     "articuno": {
-        "level": 81,
+        "level": 100,
         "sets": [
             {
-                "role": "Staller",
-                "movepool": ["healbell", "icebeam", "roost", "substitute", "toxic"],
-                "abilities": ["Pressure"]
+                "role": "Hazard Removal",
+                "movepool": ["blizzard", "uturn", "defog", "roost"],
+                "abilities": ["Snow Warning"],
+				"evs": [248, 0, 0, 0, 248, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Icy Rock",
+				"nature": "Calm"
+            },
+			{
+                "role": "Hail Setter",
+                "movepool": ["blizzard", "uturn", "haze", "roost"],
+                "abilities": ["Snow Warning"],
+				"evs": [248, 0, 0, 0, 248, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Icy Rock",
+				"nature": "Calm"
+            },
+			{
+                "role": "Hail Setter",
+                "movepool": ["blizzard", "uturn", "healbell", "roost"],
+                "abilities": ["Snow Warning"],
+				"evs": [248, 0, 0, 0, 248, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Icy Rock",
+				"nature": "Calm"
+            },
+			{
+                "role": "Hail Setter",
+                "movepool": ["blizzard", "hurricane", "hiddenpowerground", "roost"],
+                "abilities": ["Snow Warning"],
+				"evs": [56, 0, 0, 192, 8, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Icy Rock",
+				"nature": "Modest"
+            },
+			{
+                "role": "Hail Setter",
+                "movepool": ["blizzard", "uturn", "hiddenpowerground", "roost"],
+                "abilities": ["Snow Warning"],
+				"evs": [56, 0, 0, 192, 8, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Icy Rock",
+				"nature": "Modest"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["blizzard", "hurricane", "defog", "roost"],
+                "abilities": ["Snow Warning"],
+				"evs": [248, 0, 0, 0, 248, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["blizzard", "hurricane", "hail", "roost"],
+                "abilities": ["Ice Body"],
+				"evs": [248, 0, 0, 0, 248, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Icy Rock",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["chillingspell", "toxic", "hail", "roost"],
+                "abilities": ["Ice Body"],
+				"evs": [248, 0, 0, 0, 248, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Icy Rock",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icywind", "reflect", "uturn", "roost"],
+                "abilities": ["Ice Body"],
+				"evs": [248, 0, 0, 0, 248, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["freezedry", "steelwing", "substitute", "roost"],
+                "abilities": ["Ice Body"],
+				"evs": [248, 0, 0, 0, 248, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
             }
         ]
     },
