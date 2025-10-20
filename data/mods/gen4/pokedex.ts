@@ -941,7 +941,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	staraptor: {
 		inherit: true,
 		types: ["Fighting", "Flying"],
-		baseStats: {hp: 95, atk: 120, def: 80, spa: 50, spd: 60, spe: 105},
+		baseStats: {hp: 95, atk: 120, def: 80, spa: 50, spd: 50, spe: 105},
 	},
 	starmie: {
 		inherit: true,
