@@ -32,6 +32,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	blaze: {
 		onBasePowerPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
+			const noModifyType = [
+				'hiddenpower', 'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball', 'tossandturn',
+			];
 			let moveType = move.type;
 			let item = attacker.getItem();
 			if (move.id === 'judgment' && attacker.hasAbility('multitype')) {
@@ -40,7 +43,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if ((move.id === 'fling' || move.id === 'judgment') && item.onPlate) {
 				moveType = item.onPlate;
 			}
-			if (attacker.hasAbility('normalize') && move.id !== 'judgment') {
+			if (attacker.hasAbility('normalize') && !noModifyType.includes(move.id)) {
 				moveType = 'Normal';
 			}
 			if (move.id === 'hiddenpower') {
@@ -96,6 +99,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		onFoeBeforeMove(attacker, defender, move) {
+			const noModifyType = [
+				'hiddenpower', 'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball', 'tossandturn',
+			];
 			let type = move.type;
 			let item = attacker.getItem();
 			if (move.id === 'judgment' && attacker.hasAbility('multitype')) {
@@ -104,7 +110,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if ((move.id === 'fling' || move.id === 'judgment') && item.onPlate) {
 				type = item.onPlate;
 			}
-			if (attacker.hasAbility('normalize') && move.id !== 'judgment') {
+			if (attacker.hasAbility('normalize') && !noModifyType.includes(move.id)) {
 				type = 'Normal';
 			}
 			if (move.id === 'hiddenpower') {
@@ -450,6 +456,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	overgrow: {
 		onBasePowerPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
+			const noModifyType = [
+				'hiddenpower', 'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball', 'tossandturn',
+			];
 			let moveType = move.type;
 			let item = attacker.getItem();
 			if (move.id === 'judgment' && attacker.hasAbility('multitype')) {
@@ -458,7 +467,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if ((move.id === 'fling' || move.id === 'judgment') && item.onPlate) {
 				moveType = item.onPlate;
 			}
-			if (attacker.hasAbility('normalize') && move.id !== 'judgment') {
+			if (attacker.hasAbility('normalize') && !noModifyType.includes(move.id)) {
 				moveType = 'Normal';
 			}
 			if (move.id === 'hiddenpower') {
@@ -671,6 +680,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	swarm: {
 		onBasePowerPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
+			const noModifyType = [
+				'hiddenpower', 'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball', 'tossandturn',
+			];
 			let moveType = move.type;
 			let item = attacker.getItem();
 			if (move.id === 'judgment' && attacker.hasAbility('multitype')) {
@@ -679,7 +691,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if ((move.id === 'fling' || move.id === 'judgment') && item.onPlate) {
 				moveType = item.onPlate;
 			}
-			if (attacker.hasAbility('normalize') && move.id !== 'judgment') {
+			if (attacker.hasAbility('normalize') && !noModifyType.includes(move.id)) {
 				moveType = 'Normal';
 			}
 			if (move.id === 'hiddenpower') {
@@ -754,6 +766,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	torrent: {
 		onBasePowerPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
+			const noModifyType = [
+				'hiddenpower', 'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball', 'tossandturn',
+			];
 			let moveType = move.type;
 			let item = attacker.getItem();
 			if (move.id === 'judgment' && attacker.hasAbility('multitype')) {
@@ -762,7 +777,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if ((move.id === 'fling' || move.id === 'judgment') && item.onPlate) {
 				moveType = item.onPlate;
 			}
-			if (attacker.hasAbility('normalize') && move.id !== 'judgment') {
+			if (attacker.hasAbility('normalize') && !noModifyType.includes(move.id)) {
 				moveType = 'Normal';
 			}
 			if (move.id === 'hiddenpower') {
