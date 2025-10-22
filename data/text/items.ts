@@ -1917,6 +1917,10 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	thickclub: {
 		name: "Thick Club",
 		shortDesc: "If held by a Cubone or a Marowak, its Attack is doubled.",
+		gen4: {
+			desc: "If held by a Cubone or a Marowak, The power of the moves Bone Club, Bonemerang, and Bone Rush are doubled.",
+			shortDesc: "Held by Cubone or Marowak: Bone move power is doubled.",
+		},
 	},
 	throatspray: {
 		name: "Throat Spray",
