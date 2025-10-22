@@ -1573,17 +1573,97 @@
         ]
     },
     "flareon": {
-        "level": 94,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Attacker",
-                "movepool": ["fireblast", "hiddenpowergrass", "lavaplume", "protect", "superpower", "wish"],
-                "abilities": ["Flash Fire"]
+                "role": "Fast Attacker",
+                "movepool": ["flareblitz", "crunch", "superpower", "willowisp"],
+                "abilities": ["Hotheaded"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Charcoal",
+				"nature": "Jolly"
             },
-            {
-                "role": "Staller",
-                "movepool": ["fireblast", "lavaplume", "protect", "toxic", "wish"],
-                "abilities": ["Flash Fire"]
+			{
+                "role": "Fast Attacker",
+                "movepool": ["flareblitz", "crunch", "superpower", "healbell"],
+                "abilities": ["Hotheaded"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Charcoal",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["flareblitz", "crunch", "superpower", "overheat"],
+                "abilities": ["Hotheaded"],
+				"evs": [0, 128, 0, 128, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Charcoal",
+				"nature": "Lonely"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["flareblitz", "crunch", "superpower", "hiddenpowerice"],
+                "abilities": ["Hotheaded"],
+				"evs": [0, 128, 0, 128, 0, 252],
+				"ivs": [31, 30, 30, 31, 31, 31],
+				"item": "Charcoal",
+				"nature": "Lonely"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["flareblitz", "crunch", "superpower", "substitute"],
+                "abilities": ["Hotheaded"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["flareblitz", "crunch", "superpower", "hiddenpowerice"],
+                "abilities": ["Hotheaded"],
+				"evs": [0, 128, 0, 128, 0, 252],
+				"ivs": [31, 30, 30, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["flareblitz", "crunch", "superpower", "hiddenpowerice"],
+                "abilities": ["Hotheaded"],
+				"evs": [0, 128, 0, 128, 0, 252],
+				"ivs": [31, 30, 30, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["flareblitz", "superpower", "curse", "substitute"],
+                "abilities": ["Hotheaded"],
+				"evs": [244, 252, 0, 0, 12, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["flareblitz", "wish", "substitute", "batonpass"],
+                "abilities": ["Hotheaded"],
+				"evs": [20, 248, 0, 0, 0, 240],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["flareblitz", "crunch", "superpower", "substitute"],
+                "abilities": ["Hotheaded"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Adamant"
             }
         ]
     },
@@ -2846,12 +2926,142 @@
         ]
     },
     "forretress": {
-        "level": 79,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
-                "movepool": ["explosion", "payback", "rapidspin", "spikes", "stealthrock", "toxicspikes"],
-                "abilities": ["Sturdy"]
+                "role": "Bulky Lead",
+                "movepool": ["stealthrock", "stickyweb", "spikes", "explosion"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 4, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["stealthrock", "stickyweb", "toxicspikes", "explosion"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 4, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Impish"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["spikes", "gyroball", "rapidspin", "voltswitch"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Sassy"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["spikes", "counter", "rapidspin", "voltswitch"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Cleanse Tag",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["stickyweb", "spikes", "rapidspin", "voltswitch"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Cleanse Tag",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["stickyweb", "spikes", "rapidspin", "voltswitch"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["toxicspikes", "spikes", "rapidspin", "voltswitch"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["stealthrock", "spikes", "rapidspin", "voltswitch"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["stickyweb", "spikes", "lightscreen", "rapidspin"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["stickyweb", "stealthrock", "lightscreen", "rapidspin"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["spikes", "gyroball", "rapidspin", "voltswitch"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Relaxed"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["stickyweb", "spikes", "rapidspin", "voltswitch"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["stealthrock", "spikes", "rapidspin", "voltswitch"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["stealthrock", "stickyweb", "gyroball", "explosion"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 252, 4, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Custap Berry",
+				"nature": "Brave"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["spikes", "stickyweb", "gyroball", "explosion"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 252, 4, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Custap Berry",
+				"nature": "Brave"
             }
         ]
     },
@@ -4773,17 +4983,124 @@
         ]
     },
     "flygon": {
-        "level": 81,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["earthquake", "outrage", "roost", "stoneedge", "uturn"],
-                "abilities": ["Levitate"]
+                "role": "Bulky Setup",
+                "movepool": ["earthquake", "dragonclaw", "dragondance", "roost"],
+                "abilities": ["Thick Fat"],
+				"evs": [236, 4, 16, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
             },
-            {
-                "role": "Bulky Attacker",
-                "movepool": ["dracometeor", "earthquake", "fireblast", "roost", "uturn"],
-                "abilities": ["Levitate"]
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthquake", "dragonclaw", "dragondance", "substitute"],
+                "abilities": ["Thick Fat"],
+				"evs": [236, 4, 16, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["earthquake", "dragonclaw", "fireblast", "dragondance"],
+                "abilities": ["Thick Fat"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Naive"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["earthquake", "dragonclaw", "fireblast", "dragondance"],
+                "abilities": ["Thick Fat"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Naive"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["earthquake", "outrage", "fireblast", "uturn"],
+                "abilities": ["Thick Fat"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["earthquake", "outrage", "fireblast", "uturn"],
+                "abilities": ["Thick Fat"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthquake", "dragonclaw", "dragondance", "rest"],
+                "abilities": ["Thick Fat"],
+				"evs": [236, 4, 16, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Chesto Berry",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["earthquake", "outrage", "fireblast", "uturn"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["earthquake", "outrage", "fireblast", "uturn"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["earthquake", "dragonclaw", "fireblast", "dragondance"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Naive"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["earthquake", "dragonclaw", "fireblast", "dragondance"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Naive"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["earthquake", "dragonclaw", "fireblast", "dragondance"],
+                "abilities": ["Thick Fat"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Naive"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["earthquake", "dragonclaw", "fireblast", "dragondance"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Naive"
             }
         ]
     },
@@ -7222,12 +7539,106 @@
         ]
     },
     "gallade": {
-        "level": 82,
+        "level": 100,
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["closecombat", "nightslash", "shadowsneak", "swordsdance", "trick", "zenheadbutt"],
-                "abilities": ["Steadfast"]
+                "movepool": ["closecombat", "psychocut", "leafblade", "nightslash"],
+                "abilities": ["Sharpness"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["closecombat", "psychocut", "shadowsneak", "nightslash"],
+                "abilities": ["Sharpness"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["closecombat", "psychocut", "leafblade", "knockoff"],
+                "abilities": ["Sharpness"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["closecombat", "psychocut", "leafblade", "knockoff"],
+                "abilities": ["Sharpness"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["closecombat", "psychocut", "nightslash", "substitute"],
+                "abilities": ["Sharpness"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["closecombat", "psychocut", "shadowsneak", "substitute"],
+                "abilities": ["Sharpness"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["closecombat", "knockoff", "swordsdance", "encore"],
+                "abilities": ["Steadfast"],
+				"evs": [252, 4, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["closecombat", "zenheadbutt", "knockoff", "memento"],
+                "abilities": ["Steadfast"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["closecombat", "zenheadbutt", "knockoff", "destinybond"],
+                "abilities": ["Steadfast"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["closecombat", "psychocut", "nightslash", "destinybond"],
+                "abilities": ["Steadfast"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["closecombat", "psychocut", "trick", "knockoff"],
+                "abilities": ["Sharpness"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly"
             }
         ]
     },
