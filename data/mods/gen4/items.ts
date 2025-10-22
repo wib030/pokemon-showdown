@@ -502,8 +502,10 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	thickclub: {
 		inherit: true,
-		onModifyAtk(atk, pokemon) {
-			if (pokemon.species.name === 'Cubone' || pokemon.species.name === 'Marowak') {
+		onModifyAtk() {},
+		onBasePower(basePower, attacker, defender, move) {
+			if (['boneclub', 'bonemerang', 'bonerush'].includes(move.id)) {
+				this.debug('Thick Club boost');
 				return this.chainModify(2);
 			}
 		},

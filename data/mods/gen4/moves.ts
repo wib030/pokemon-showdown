@@ -1262,7 +1262,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				if (pokemon.hasItem('heavydutyboots')) return;
 				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
 				let rockDamage = pokemon.maxhp * 2 ** typeMod / 8;
-				rockDamage = rockDamage * 3 / 4;
+				rockDamage = Math.floor(rockDamage * 3 / 4);
+				if (rockDamage < 1) rockDamage = 1;
 				this.damage(rockDamage);
 			},
 		},
@@ -3049,5 +3050,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	hurricane: {
 		inherit: true,
 		basePower: 110,
+	},
+	hex: {
+		inherit: true,
+		basePower: 65,
 	},
 };
