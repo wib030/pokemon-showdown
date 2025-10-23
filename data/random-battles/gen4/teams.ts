@@ -51,6 +51,11 @@ const REMOVAL_ROLES = [
 	'Hazard Removal', 'Spinner',
 ];
 
+// Attacking Roles
+const ATTACKING_ROLES = [
+	'Fast Attacker', 'Setup Sweeper', 'Wallbreaker', 'Bulky Attacker', 'Bulky Setup', 'Fast Bulky Setup', 'AV Pivot', 'Doubles Fast Attacker', 'Doubles Setup Sweeper', 'Doubles Wallbreaker', 'Doubles Bulky Attacker', 'Doubles Bulky Setup', 'Offensive Protect', 'Berry Sweeper', 'Sun Attacker', 'Rain Attacker', 'Hail Attacker', 'Sand Attacker', 'Glass Cannon', 'Fling Setup', 'TR Attacker', 'Fast Pivot', 'Bulky Pivot', 'Sun Setup', 'Switch Trapper',
+];
+
 export class RandomGen4Teams extends RandomGen5Teams {
 	override randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = require('./sets.json');
 
@@ -846,6 +851,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		let leadNum = 0;
 		let removalNum = 0;
+		let physicalAttackers = 0;
+		let specialAttackers = 0;
 
 		const pokemonList = Object.keys(this.randomSets);
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
@@ -856,9 +863,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			// Limit to one of each species (Species Clause)
 			if (baseFormes[species.baseSpecies]) continue;
-
-			// Illusion shouldn't be in the last slot
-			if (species.name === 'Zoroark' && pokemon.length >= (this.maxTeamSize - 1)) continue;
 
 			// Prevent Shedinja from generating after Sandstorm/Hail setters
 			if (species.name === 'Shedinja' && (teamDetails.sand || teamDetails.hail)) continue;
@@ -924,6 +928,24 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 					}
 				}
+				
+				if (leadNum > 0 && removalNum > 0)
+				{
+					if (physicalAttackers < 1)
+					{
+						if (ATTACKING_ROLES.includes(set.role) && species.baseStats.atk < species.baseStats.spa)
+						{
+							skip = true;
+						}
+					}
+					else if (specialAttackers < 1)
+					{
+						if (ATTACKING_ROLES.includes(set.role) && species.baseStats.spa < species.baseStats.atk)
+						{
+							skip = true;
+						}
+					}
+				}
 				if (skip) continue;
 
 				// Count Dry Skin as a Fire weakness
@@ -970,10 +992,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (set.level === 100) numMaxLevelPokemon++;
 
 			// Team details
-			if (set.ability === 'Snow Warning' || set.moves.includes('hail')) teamDetails.hail = 1;
-			if (set.ability === 'Drizzle' || set.moves.includes('raindance')) teamDetails.rain = 1;
-			if (set.ability === 'Sand Stream') teamDetails.sand = 1;
-			if (set.ability === 'Drought' || set.moves.includes('sunnyday')) teamDetails.sun = 1;
+			if (set.ability === 'Snow Warning' || set.moves.includes('hail') || (set.ability === 'Forecast' && set.item === 'Icy Rock')) teamDetails.hail = 1;
+			if (set.ability === 'Drizzle' || set.moves.includes('raindance') || (set.ability === 'Forecast' && set.item === 'Damp Rock')) teamDetails.rain = 1;
+			if (set.ability === 'Sand Stream' || set.moves.includes('sandstorm') || (set.ability === 'Forecast' && set.item === 'Smooth Rock')) teamDetails.sand = 1;
+			if (set.ability === 'Drought' || set.moves.includes('sunnyday') || (set.ability === 'Forecast' && set.item === 'Heat Rock')) teamDetails.sun = 1;
 			if (set.moves.includes('aromatherapy') || set.moves.includes('healbell')) teamDetails.statusCure = 1;
 			if (set.moves.includes('spikes')) teamDetails.spikes = (teamDetails.spikes || 0) + 1;
 			if (set.moves.includes('stealthrock')) teamDetails.stealthRock = 1;
@@ -982,6 +1004,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (set.moves.includes('reflect') && set.moves.includes('lightscreen')) teamDetails.screens = 1;
 			if (LEAD_ROLES.includes(set.role)) leadNum++;
 			if (REMOVAL_ROLES.includes(set.role)) removalNum++;
+			if (ATTACKING_ROLES.includes(set.role) && species.baseStats.atk >= species.baseStats.spa && set.evs.atk > set.evs.spa) physicalAttackers++;
+			if (ATTACKING_ROLES.includes(set.role) && species.baseStats.spa >= species.baseStats.atk && set.evs.spa > set.evs.atk) specialAttackers++;
 		}
 		if (pokemon.length < this.maxTeamSize && pokemon.length < 12) {
 			throw new Error(`Could not build a random team for ${this.format} (seed=${seed})`);
