@@ -360,8 +360,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				const checkSets = this.randomSets[baseSpecies.id]["sets"];
 				// Check if the Pokemon has a Lead set
 				let canLead = false;
-				for (const set of sets) {
-					if (LEAD_ROLES.includes(set.role)) canLead = true;
+				for (const checkSet of checkSets) {
+					if (LEAD_ROLES.includes(checkSet.role)) canLead = true;
 				}
 				
 				if (canLead === false) {
@@ -374,8 +374,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				const checkSets = this.randomSets[baseSpecies.id]["sets"];
 				// Check if the Pokemon has a Lead set
 				let canClear = false;
-				for (const set of sets) {
-					if (["Hazard Removal"].includes(set.role)) canClear = true;
+				for (const checkSet of checkSets) {
+					if (["Hazard Removal"].includes(checkSet.role)) canClear = true;
 				}
 				
 				if (canClear === false) {
