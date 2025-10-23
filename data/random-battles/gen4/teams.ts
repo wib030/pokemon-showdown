@@ -805,6 +805,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			evs.spe = 0;
 			ivs.spe = hasHiddenPower ? (ivs.spe || 31) - 28 : 0;
 		}
+
+		// shuffle moves to add more randomness to camomons
+		const shuffledMoves = Array.from(moves);
+		this.prng.shuffle(shuffledMoves);
 		
 		if (LEAD_ROLES.includes(role)) {
 			NUMBER_OF_LEADS++;
@@ -819,7 +823,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			shiny: this.randomChance(1, 1024),
 			nature,
 			level,
-			moves,
+			moves: shuffledMoves,
 			ability,
 			evs,
 			ivs,
