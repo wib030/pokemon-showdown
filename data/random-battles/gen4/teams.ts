@@ -41,11 +41,6 @@ const PRIORITY_POKEMON = [
 	'cacturne', 'dusknoir', 'honchkrow', 'mamoswine', 'scizor', 'shedinja', 'shiftry',
 ];
 
-// List of species we can pull from because theres no way to easily check it!!!
-const SPECIES_WITH_SETS = [
-	"venusaur", "charizard", "blastoise", "butterfree", "beedrill", "pidgeot", "raticate", "fearow", "arbok", "pikachu", "raichu", "sandslash", "nidoqueen", "nidoking", "clefable", "ninetales", "wigglytuff", "vileplume", "parasect", "venomoth", "dugtrio", "persian", "golduck", "primeape", "arcanine", "poliwrath", "alakazam", "machamp", "victreebel", "tentacruel", "golem", "rapidash", "slowbro", "farfetchd", "dodrio", "dewgong", "muk", "cloyster", "gengar", "hypno", "kingler", "electrode", "exeggutor", "marowak", "hitmonlee", "hitmonchan", "weezing", "kangaskhan", "seaking", "starmie", "mrmime", "scyther", "jynx", "pinsir", "tauros", "gyarados", "lapras", "ditto", "vaporeon", "jolteon", "flareon", "omastar", "kabutops", "aerodactyl", "snorlax", "articuno", "zapdos", "moltres", "dragonite", "mewtwo", "mew", "meganium", "typhlosion", "feraligatr", "furret", "noctowl", "ledian", "ariados", "crobat", "lanturn", "xatu", "ampharos", "bellossom", "azumarill", "sudowoodo", "politoed", "jumpluff", "sunflora", "quagsire", "espeon", "umbreon", "slowking", "unown", "wobbuffet", "girafarig", "forretress", "dunsparce", "steelix", "granbull", "qwilfish", "scizor", "shuckle", "heracross", "ursaring", "magcargo", "corsola", "octillery", "delibird", "mantine", "skarmory", "houndoom", "kingdra", "donphan", "porygon2", "stantler", "smeargle", "hitmontop", "miltank", "blissey", "raikou", "entei", "suicune", "tyranitar", "lugia", "hooh", "celebi", "sceptile", "blaziken", "swampert", "mightyena", "linoone", "beautifly", "dustox", "ludicolo", "shiftry", "swellow", "pelipper", "gardevoir", "masquerain", "breloom", "vigoroth", "slaking", "ninjask", "shedinja", "exploud", "hariyama", "delcatty", "sableye", "mawile", "aggron", "medicham", "manectric", "plusle", "minun", "volbeat", "illumise", "swalot", "sharpedo", "wailord", "camerupt", "torkoal", "grumpig", "spinda", "flygon", "cacturne", "altaria", "zangoose", "seviper", "lunatone", "solrock", "whiscash", "crawdaunt", "claydol", "cradily", "armaldo", "milotic", "castform", "kecleon", "banette", "tropius", "chimecho", "absol", "glalie", "walrein", "huntail", "gorebyss", "relicanth", "luvdisc", "salamence", "metagross", "regirock", "regice", "registeel", "latias", "latios", "kyogre", "groudon", "rayquaza", "jirachi", "deoxys", "deoxysattack", "deoxysdefense", "deoxysspeed", "torterra", "infernape", "empoleon", "staraptor", "bibarel", "kricketune", "luxray", "roserade", "rampardos", "bastiodon", "wormadam", "wormadamsandy", "wormadamtrash", "mothim", "vespiquen", "pachirisu", "floatzel", "cherrim", "gastrodon", "ambipom", "drifblim", "lopunny", "mismagius", "honchkrow", "purugly", "skuntank", "bronzong", "chatot", "spiritomb", "garchomp", "lucario", "hippowdon", "drapion", "toxicroak", "carnivine", "lumineon", "abomasnow", "weavile", "magnezone", "lickilicky", "rhyperior", "tangrowth", "electivire", "magmortar", "togekiss", "yanmega", "leafeon", "glaceon", "gliscor", "mamoswine", "porygonz", "gallade", "probopass", "dusknoir", "froslass", "rotom", "rotomheat", "rotomwash", "rotomfrost", "rotomfan", "rotommow", "uxie", "mesprit", "azelf", "dialga", "palkia", "heatran", "regigigas", "giratinaorigin", "giratina", "cresselia", "phione", "manaphy", "darkrai", "shaymin", "shayminsky", "arceus", "arceusbug", "arceusdark", "arceusdragon", "arceuselectric", "arceusfighting", "arceusfire", "arceusflying", "arceusghost", "arceusgrass", "arceusground", "arceusice", "arceuspoison", "arceuspsychic", "arceusrock", "arceussteel", "arceuswater",
-];
-
 // Team types
 const TEAM_TYPES = [
 	"Balanced",
@@ -57,11 +52,8 @@ const LEAD_ROLES = [
 ];
 
 let TEAM_TYPE = "Balanced";
-let NUMBER_OF_MONS = 0;
 let NUMBER_OF_LEADS = 0;
 let NUMBER_OF_HAZARD_REMOVERS = 0;
-
-let cachedTeamMembers = [];
 
 export class RandomGen4Teams extends RandomGen5Teams {
 	override randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = require('./sets.json');
@@ -319,12 +311,12 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 				if (skip) continue;
 
-				// Limit three weak to any type, and one double weak to any type
+				// Limit two weak to any type, and one double weak to any type
 				for (const typeName of this.dex.types.names()) {
 					// it's weak to the type
 					if (this.dex.getEffectiveness(typeName, species) > 0) {
 						if (!typeWeaknesses[typeName]) typeWeaknesses[typeName] = 0;
-						if (typeWeaknesses[typeName] >= 3 * limitFactor) {
+						if (typeWeaknesses[typeName] >= 2 * limitFactor) {
 							skip = true;
 							break;
 						}
@@ -353,11 +345,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					if (!typeWeaknesses['Freeze-Dry']) typeWeaknesses['Freeze-Dry'] = 0;
 					if (typeWeaknesses['Freeze-Dry'] >= 4 * limitFactor) continue;
 				}
-
-				// Limit one level 100 Pokemon
-				if (!this.adjustLevel && (this.getLevel(species, isDoubles) === 100) && numMaxLevelPokemon >= limitFactor) {
-					continue;
-				}
 			}
 
 			// Limit three of any type combination in Monotype
@@ -367,20 +354,39 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (potd?.exists && (pokemon.length === 1 || this.maxTeamSize === 1)) species = potd;
 
 			let set: RandomTeamsTypes.RandomSet;
+			
+			if (NUMBER_OF_LEADS < 1)
+			{
+				const checkSets = this.randomSets[baseSpecies.id]["sets"];
+				// Check if the Pokemon has a Lead set
+				let canLead = false;
+				for (const set of sets) {
+					if (LEAD_ROLES.includes(set.role)) canLead = true;
+				}
+				
+				if (canLead === false) {
+					continue;
+				}
+			}
+			
+			if (NUMBER_OF_HAZARD_REMOVERS < 1 && NUMBER_OF_LEADS > 0)
+			{
+				const checkSets = this.randomSets[baseSpecies.id]["sets"];
+				// Check if the Pokemon has a Lead set
+				let canClear = false;
+				for (const set of sets) {
+					if (["Hazard Removal"].includes(set.role)) canClear = true;
+				}
+				
+				if (canClear === false) {
+					continue;
+				}
+			}
 
 			if (leadsRemaining) {
-				if (
-					isDoubles && DOUBLES_NO_LEAD_POKEMON.includes(species.baseSpecies) ||
-					!isDoubles && NO_LEAD_POKEMON.includes(species.baseSpecies)
-				) {
-					if (pokemon.length + leadsRemaining === this.maxTeamSize) continue;
-					set = this.randomSet(species, teamDetails, false, isDoubles);
-					pokemon.push(set);
-				} else {
-					set = this.randomSet(species, teamDetails, true, isDoubles);
-					pokemon.unshift(set);
-					leadsRemaining--;
-				}
+				if (pokemon.length + leadsRemaining === this.maxTeamSize) continue;
+				set = this.randomSet(species, teamDetails, false, isDoubles);
+				pokemon.push(set);
 			} else {
 				set = this.randomSet(species, teamDetails, false, isDoubles);
 				pokemon.push(set);
@@ -881,117 +887,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		teamDetails: RandomTeamsTypes.TeamDetails = {},
 		isLead = false
 	): RandomTeamsTypes.RandomSet {
-		if (NUMBER_OF_MONS >= 6) {
-			TEAM_TYPE = this.sampleIfArray(TEAM_TYPES);
-			NUMBER_OF_MONS = 0;
-			NUMBER_OF_LEADS = 0;
-			NUMBER_OF_HAZARD_REMOVERS = 0;
-			cachedTeamMembers = [];
-		}
-		let ensureMon = false;
-		let checkSpecies = species;
-		checkSpecies = this.dex.species.get(checkSpecies);
-		let checkName = checkSpecies.baseSpecies;
-		let checkSets = this.randomSets[checkSpecies.id]["sets"];
-		let teamHasSpecies = false;
-		let i = 0;
-		
-		switch (TEAM_TYPE) {
-		case "Balanced":
-			if (NUMBER_OF_LEADS < 1) {
-				do {
-					teamHasSpecies = false;
-					checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
-					checkSpecies = this.dex.species.get(checkSpecies);
-					checkSets = this.randomSets[checkSpecies.id]["sets"];
-					checkName = checkSpecies.baseSpecies;
-					
-					if (Array.isArray(cachedTeamMembers) && NUMBER_OF_MONS > 0)
-					{
-						for (i = 0; i < NUMBER_OF_MONS; i++)
-						{
-							if (cachedTeamMembers[i].monName == checkName)
-							{
-								teamHasSpecies = true;
-								break;
-							}
-						}
-					}
-					
-					for (const checkSet of checkSets) {
-						if (LEAD_ROLES.includes(checkSet.role) && !teamHasSpecies) {
-							ensureMon = true;
-							break;
-						}
-					}
-				} while (!ensureMon)
-			} else if (NUMBER_OF_HAZARD_REMOVERS < 1 && NUMBER_OF_LEADS > 0) {
-				do {
-					teamHasSpecies = false;
-					checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
-					checkSpecies = this.dex.species.get(checkSpecies);
-					checkSets = this.randomSets[checkSpecies.id]["sets"];
-					checkName = checkSpecies.baseSpecies;
-					
-					if (Array.isArray(cachedTeamMembers) && NUMBER_OF_MONS > 0)
-					{
-						for (i = 0; i < NUMBER_OF_MONS; i++)
-						{
-							if (cachedTeamMembers[i].monName == checkName)
-							{
-								teamHasSpecies = true;
-								break;
-							}
-						}
-					}
-					
-					for (const checkSet of checkSets) {
-						if (['Hazard Removal'].includes(checkSet.role) && !teamHasSpecies) {
-							ensureMon = true;
-							break;
-						}
-					}
-				} while (!ensureMon)
-			}
-			break;
-		}
-		
-		// Loop through team members to check if we already have a Pokemon of this species
-		if (Array.isArray(cachedTeamMembers) && NUMBER_OF_MONS > 0)
-		{
-			for (i = 0; i < NUMBER_OF_MONS; i++)
-			{
-				if (cachedTeamMembers[i].monName == checkName)
-				{
-					teamHasSpecies = true;
-					break;
-				}
-			}
-		}
-		
-		// Reroll our set if we already have a Pokemon of this species
-		if (teamHasSpecies === true) {
-			do {
-				teamHasSpecies = false;
-				checkSpecies = this.sampleIfArray(SPECIES_WITH_SETS);
-				checkSpecies = this.dex.species.get(checkSpecies);
-				checkName = checkSpecies.baseSpecies;
-				
-				if (Array.isArray(cachedTeamMembers) && NUMBER_OF_MONS > 0)
-				{
-					for (i = 0; i < NUMBER_OF_MONS; i++)
-					{
-						if (cachedTeamMembers[i].monName == checkName)
-						{
-							teamHasSpecies = true;
-							break;
-						}
-					}
-				}
-			} while (teamHasSpecies)
-		}
-		
-		species = checkSpecies;
 		const forme = this.getForme(species);
 		const sets = this.randomSets[species.id]["sets"];
 		const possibleSets = [];
@@ -1148,18 +1043,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		} else if (['Hazard Removal'].includes(role)) {
 			NUMBER_OF_HAZARD_REMOVERS++;
 		}
-		
-		NUMBER_OF_MONS++;
-		
-		let currentMember = {
-			monName: species.baseSpecies,
-			monSpecies: forme,
-			monItem: item,
-			monAbility: ability,
-			monRole: role
-		};
-		
-		cachedTeamMembers.push(currentMember);
 
 		return {
 			name: species.baseSpecies,
