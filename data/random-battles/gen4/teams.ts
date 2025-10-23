@@ -330,34 +330,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				
-				if (NUMBER_OF_LEADS < 1)
-				{
-					let checkSets = this.randomSets[species.id]["sets"];
-					// Check if the Pokemon has a Lead set
-					let canLead = false;
-					for (let checkSet of checkSets) {
-						if (LEAD_ROLES.includes(checkSet.role)) canLead = true;
-					}
-					
-					if (canLead === false) {
-						skip = true;
-					}
-				}
-				
-				if (NUMBER_OF_HAZARD_REMOVERS < 1 && NUMBER_OF_LEADS > 0)
-				{
-					let checkSets = this.randomSets[species.id]["sets"];
-					// Check if the Pokemon has a Lead set
-					let canClear = false;
-					for (let checkSet of checkSets) {
-						if (["Hazard Removal"].includes(checkSet.role)) canClear = true;
-					}
-					
-					if (canClear === false) {
-						skip = true;
-					}
-				}
-				
 				if (skip) continue;
 
 				// Count Dry Skin/Fluffy as Fire weaknesses
