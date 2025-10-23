@@ -555,6 +555,7 @@ declare namespace RandomTeamsTypes {
 		ivs?: number[];
 		item?: string;
 		nature?: string;
+		inclination?: Inclination;
 	}
 	export interface RandomSpeciesData {
 		level?: number;
@@ -570,4 +571,6 @@ declare namespace RandomTeamsTypes {
 		'Bulky Screens Setter' | 'Glass Cannon' | 'Fling Setup' | 'TR Setter' | 'TR Attacker' | 'Baton Passer' |
 		'Fast Pivot' | 'Bulky Pivot' | 'Hazard Removal' | 'TR Lead' | 'Sun Setup' | 'Anti-Lead' | 'Switch Trapper' | 
 		'Sand Lead' | 'Sun Lead' | 'Hail Lead' | 'Rain Lead';
+		
+	export type Inclination = 'Mixed' | 'Physical' | 'Special' | 'Support';
 }

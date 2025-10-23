@@ -877,7 +877,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 				// Limit two of any type
 				for (const typeName of types) {
-					if (typeCount[typeName] >= 2 * limitFactor) {
+					if ((typeCount[typeName] >= 2 * limitFactor) && !Object.values(species.abilities).includes('Color Change')) {
 						skip = true;
 						break;
 					}
@@ -886,19 +886,28 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 				// Limit two weak to any type, and one double weak to any type
 				for (const typeName of this.dex.types.names()) {
-					// it's weak to the type
-					if (this.dex.getEffectiveness(typeName, species) > 0) {
-						if (!typeWeaknesses[typeName]) typeWeaknesses[typeName] = 0;
-						if (typeWeaknesses[typeName] >= 2 * limitFactor) {
-							skip = true;
-							break;
+					if (Object.values(species.abilities).includes('Color Change')) {
+						if (typeName == 'Ghost' || typeName == 'Dragon') {
+							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
+								skip = true;
+								break;
+							}
 						}
-					}
-					if (this.dex.getEffectiveness(typeName, species) > 1) {
-						if (!typeDoubleWeaknesses[typeName]) typeDoubleWeaknesses[typeName] = 0;
-						if (typeDoubleWeaknesses[typeName] >= limitFactor) {
-							skip = true;
-							break;
+					} else {
+						// it's weak to the type
+						if (this.dex.getEffectiveness(typeName, species) > 0) {
+							if (!typeWeaknesses[typeName]) typeWeaknesses[typeName] = 0;
+							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
+								skip = true;
+								break;
+							}
+						}
+						if (this.dex.getEffectiveness(typeName, species) > 1) {
+							if (!typeDoubleWeaknesses[typeName]) typeDoubleWeaknesses[typeName] = 0;
+							if (typeDoubleWeaknesses[typeName] >= limitFactor) {
+								skip = true;
+								break;
+							}
 						}
 					}
 				}
@@ -925,24 +934,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						if (REMOVAL_ROLES.includes(checkSet.role)) {
 							skip = false;
 							break;
-						}
-					}
-				}
-				
-				if (leadNum > 0 && removalNum > 0)
-				{
-					if (physicalAttackers < 1)
-					{
-						if (species.baseStats.atk < species.baseStats.spa)
-						{
-							skip = true;
-						}
-					}
-					else if (specialAttackers < 1)
-					{
-						if (species.baseStats.spa < species.baseStats.atk)
-						{
-							skip = true;
 						}
 					}
 				}
