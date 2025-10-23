@@ -51,6 +51,11 @@ const TEAM_TYPES = [
 	"Balanced",
 ];
 
+// Lead Roles
+const LEAD_ROLES = [
+	'Fast Lead', 'Bulky Lead', 'Anti-Lead', 'Sand Lead', 'Sun Lead', 'Hail Lead', 'Rain Lead',
+];
+
 let TEAM_TYPE = "Balanced";
 let NUMBER_OF_MONS = 0;
 let NUMBER_OF_LEADS = 0;
@@ -711,7 +716,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 					
 					for (const checkSet of checkSets) {
-						if (['Fast Lead', 'Bulky Lead'].includes(checkSet.role) && !teamHasSpecies) {
+						if (LEAD_ROLES.includes(checkSet.role) && !teamHasSpecies) {
 							ensureMon = true;
 							break;
 						}
@@ -797,12 +802,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		// 'Sun Setter' | 'Rain Setter' | 'Hail Setter' | 'Sand Setter' | 'Sun Attacker' | 'Rain Attacker' |
 		// 'Hail Attacker' | 'Sand Attacker' | 'Fast Lead' | 'Bulky Lead' | 'Trick Scarf' | 'Fast Screens Setter' |
 		// 'Slow Screens Setter' | 'Glass Cannon' | 'Fling Setup' | 'TR Setter' | 'TR Attacker' | 'Baton Passer' |
-		// 'Fast Pivot' | 'Bulky Pivot' | 'Hazard Removal' | 'TR Lead' | 'Sun Setup';
+		// 'Fast Pivot' | 'Bulky Pivot' | 'Hazard Removal' | 'TR Lead' | 'Sun Setup' | 'Anti-Lead' | 'Switch Trapper' | 
+		// 'Sand Lead' | 'Sun Lead' | 'Hail Lead' | 'Rain Lead';
 		
 		// Check if the Pokemon has a Lead set
 		let canLead = false;
 		for (const set of sets) {
-			if (NUMBER_OF_LEADS < 1 && ['Fast Lead', 'Bulky Lead'].includes(set.role)) canLead = true;
+			if (NUMBER_OF_LEADS < 1 && LEAD_ROLES.includes(set.role)) canLead = true;
 		}
 		
 		// Check if the Pokemon has a Hazard Removal set
@@ -819,10 +825,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (canHazardRemover && set.role !== 'Hazard Removal') continue;
 			
 			// Prevent Lead if the team already has a lead
-			if (NUMBER_OF_LEADS > 0 && ['Fast Lead', 'Bulky Lead'].includes(set.role)) continue;
+			if (NUMBER_OF_LEADS > 0 && LEAD_ROLES.includes(set.role)) continue;
 			
 			// Enforce Lead if the team does not have one
-			if (canLead && !['Fast Lead', 'Bulky Lead'].includes(set.role)) continue;
+			if (canLead && !LEAD_ROLES.includes(set.role)) continue;
 			
 			possibleSets.push(set);
 		}
@@ -934,7 +940,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const shuffledMoves = Array.from(moves);
 		this.prng.shuffle(shuffledMoves);
 		
-		if (['Fast Lead', 'Bulky Lead'].includes(role)) {
+		if (LEAD_ROLES.includes(role)) {
 			NUMBER_OF_LEADS++;
 		} else if (['Hazard Removal'].includes(role)) {
 			NUMBER_OF_HAZARD_REMOVERS++;

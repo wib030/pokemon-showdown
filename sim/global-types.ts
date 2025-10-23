@@ -568,5 +568,6 @@ declare namespace RandomTeamsTypes {
 		'Sun Setter' | 'Rain Setter' | 'Hail Setter' | 'Sand Setter' | 'Sun Attacker' | 'Rain Attacker' |
 		'Hail Attacker' | 'Sand Attacker'| 'Fast Lead' | 'Bulky Lead' | 'Choice Trick' | 'Fast Screens Setter' | 
 		'Bulky Screens Setter' | 'Glass Cannon' | 'Fling Setup' | 'TR Setter' | 'TR Attacker' | 'Baton Passer' |
-		'Fast Pivot' | 'Bulky Pivot' | 'Hazard Removal' | 'TR Lead' | 'Sun Setup';
+		'Fast Pivot' | 'Bulky Pivot' | 'Hazard Removal' | 'TR Lead' | 'Sun Setup' | 'Anti-Lead' | 'Switch Trapper' | 
+		'Sand Lead' | 'Sun Lead' | 'Hail Lead' | 'Rain Lead';
 }

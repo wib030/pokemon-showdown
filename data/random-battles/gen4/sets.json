@@ -1275,13 +1275,133 @@
         ]
     },
     "gengar": {
-        "level": 77,
+        "level": 100,
         "sets": [
             {
-                "role": "Wallbreaker",
-                "movepool": ["explosion", "focusblast", "painsplit", "shadowball", "sludgebomb", "substitute", "trick", "willowisp"],
+                "role": "Fast Attacker",
+                "movepool": ["shadowball", "sludgebomb", "focusblast", "hiddenpowerfire"],
                 "abilities": ["Levitate"],
-                "preferredTypes": ["Fighting"]
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["shadowball", "sludgebomb", "focusblast", "chillingspell"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["shadowball", "sludgebomb", "focusblast", "hiddenpowerfire"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["shadowball", "sludgebomb", "focusblast", "hiddenpowerfire"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["shadowball", "sludgebomb", "focusblast", "chillingspell"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["shadowball", "sludgebomb", "focusblast", "chillingspell"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["shadowball", "sludgebomb", "focuspunch", "substitute"],
+                "abilities": ["Levitate"],
+                "evs": [0, 32, 0, 252, 0, 224],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["shadowball", "focusblast", "chillingspell", "willowisp"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["shadowball", "sludgebomb", "focusblast", "trick"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["shadowball", "sludgebomb", "focusblast", "trick"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["shadowball", "focusblast", "willowisp", "taunt"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Timid"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["shadowball", "sludgebomb", "hiddenpowerfighting", "substitute"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [30, 3, 30, 30, 30, 30],
+				"item": "Petaya Berry",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["shadowball", "chillingspell", "willowisp", "substitute"],
+                "abilities": ["Levitate"],
+                "evs": [44, 0, 0, 212, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Timid"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["shadowball", "sludgebomb", "focusblast", "curse"],
+                "abilities": ["Levitate"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Timid"
             }
         ]
     },
@@ -1503,17 +1623,124 @@
         ]
     },
     "gyarados": {
-        "level": 77,
+        "level": 100,
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["dragondance", "earthquake", "stoneedge", "substitute", "waterfall"],
-                "abilities": ["Intimidate"]
+                "movepool": ["wavecrash", "hailcannon", "earthquake", "dragondance"],
+                "abilities": ["Intimidate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Adamant"
             },
-            {
-                "role": "Bulky Setup",
-                "movepool": ["dragondance", "rest", "sleeptalk", "waterfall"],
-                "abilities": ["Intimidate"]
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["waterfall", "hailcannon", "earthquake", "dragondance"],
+                "abilities": ["Intimidate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["waterfall", "hailcannon", "bounce", "dragondance"],
+                "abilities": ["Intimidate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["wavecrash", "hailcannon", "earthquake", "dragondance"],
+                "abilities": ["Intimidate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Mystic Water",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["wavecrash", "hailcannon", "bounce", "dragondance"],
+                "abilities": ["Intimidate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["wavecrash", "hailcannon", "bounce", "dragondance"],
+                "abilities": ["Intimidate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Mystic Water",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["wavecrash", "hailcannon", "bounce", "dragondance"],
+                "abilities": ["Intimidate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["wavecrash", "hailcannon", "earthquake", "dragondance"],
+                "abilities": ["Intimidate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["wavecrash", "hailcannon", "bounce", "dragondance"],
+                "abilities": ["Intimidate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["wavecrash", "hailcannon", "earthquake", "dragondance"],
+                "abilities": ["Intimidate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Fast Bulky Setup",
+                "movepool": ["waterfall", "bounce", "dragondance", "substitute"],
+                "abilities": ["Intimidate"],
+				"evs": [132, 204, 0, 0, 0, 172],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["waterfall", "hailcannon", "taunt", "dragondance"],
+                "abilities": ["Intimidate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["wavecrash", "dragontail", "thunderwave", "taunt"],
+                "abilities": ["Intimidate"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish"
             }
         ]
     },
@@ -6012,18 +6239,340 @@
         ]
     },
     "jirachi": {
-        "level": 74,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
-                "movepool": ["bodyslam", "firepunch", "healingwish", "ironhead", "protect", "stealthrock", "toxic", "uturn", "wish"],
-                "abilities": ["Serene Grace"]
-            },
-            {
-                "role": "Bulky Setup",
-                "movepool": ["calmmind", "hiddenpowerfire", "psychic", "substitute", "thunderbolt", "wish"],
+                "role": "Fast Pivot",
+                "movepool": ["ironhead", "zenheadbutt", "icepunch", "uturn"],
                 "abilities": ["Serene Grace"],
-                "preferredTypes": ["Electric"]
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["ironhead", "zenheadbutt", "icepunch", "trick"],
+                "abilities": ["Serene Grace"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["ironhead", "zenheadbutt", "firepunch", "uturn"],
+                "abilities": ["Serene Grace"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["ironhead", "zenheadbutt", "firepunch", "trick"],
+                "abilities": ["Serene Grace"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["ironhead", "zenheadbutt", "icepunch", "uturn"],
+                "abilities": ["Serene Grace"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["ironhead", "zenheadbutt", "firepunch", "uturn"],
+                "abilities": ["Serene Grace"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["ironhead", "zenheadbutt", "icepunch", "trick"],
+                "abilities": ["Serene Grace"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["ironhead", "zenheadbutt", "firepunch", "trick"],
+                "abilities": ["Serene Grace"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["ironhead", "zenheadbutt", "icepunch", "meteormash"],
+                "abilities": ["Serene Grace"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["ironhead", "zenheadbutt", "firepunch", "meteormash"],
+                "abilities": ["Serene Grace"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["ironhead", "bodyslam", "wish", "protect"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 52, 68, 0, 0, 136],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["ironhead", "bodyslam", "wish", "uturn"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 52, 68, 0, 0, 136],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["ironhead", "bodyslam", "wish", "stealthrock"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 52, 68, 0, 0, 136],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["ironhead", "bodyslam", "uturn", "stealthrock"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 52, 68, 0, 0, 136],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["lavaplume", "psychic", "calmmind", "substitute"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 120, 0, 0, 136],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["lavaplume", "psychic", "calmmind", "reflect"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 136, 0, 0, 120],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["meteormash", "drainpunch", "cosmicpower", "protect"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 240, 0, 0, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["meteormash", "drainpunch", "cosmicpower", "protect"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 0, 0, 240, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["meteormash", "drainpunch", "cosmicpower", "substitute"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 240, 0, 0, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["meteormash", "drainpunch", "cosmicpower", "substitute"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 0, 0, 240, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["meteormash", "drainpunch", "cosmicpower", "refresh"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 240, 0, 0, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["meteormash", "drainpunch", "cosmicpower", "refresh"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 0, 0, 240, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["psychic", "thunder", "calmmind", "protect"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 240, 0, 0, 16],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["psychic", "thunder", "calmmind", "substitute"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 240, 0, 0, 16],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["doomdesire", "psychicscream", "wish", "uturn"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 68, 16, 48, 124],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["doomdesire", "psychicscream", "stealthrock", "uturn"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 68, 16, 48, 124],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["ironhead", "zenheadbutt", "uturn", "healingwish"],
+                "abilities": ["Serene Grace"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["ironhead", "zenheadbutt", "firepunch", "healingwish"],
+                "abilities": ["Serene Grace"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["ironhead", "zenheadbutt", "icepunch", "healingwish"],
+                "abilities": ["Serene Grace"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["uturn", "wish", "reflect", "lightscreen"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 188, 0, 52, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["uturn", "wish", "reflect", "lightscreen"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 68, 0, 172, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["lavaplume", "healingwish", "reflect", "lightscreen"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 188, 0, 52, 16],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["lavaplume", "healingwish", "reflect", "lightscreen"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 0, 68, 0, 172, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Careful"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["ironhead", "lavaplume", "cosmicpower", "luckychant"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 32, 0, 0, 0, 224],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["ironhead", "lavaplume", "toxic", "uturn"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 32, 0, 0, 0, 224],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["ironhead", "lavaplume", "stealthrock", "uturn"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 32, 0, 0, 0, 224],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["ironhead", "lavaplume", "wish", "uturn"],
+                "abilities": ["Serene Grace"],
+				"evs": [252, 32, 0, 0, 0, 224],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
             }
         ]
     },
@@ -6093,17 +6642,178 @@
         ]
     },
     "infernape": {
-        "level": 76,
+        "level": 100,
         "sets": [
             {
-                "role": "Wallbreaker",
-                "movepool": ["closecombat", "grassknot", "machpunch", "overheat", "stealthrock"],
-                "abilities": ["Blaze"]
+                "role": "Fast Pivot",
+                "movepool": ["closecombat", "overheat", "taunt", "uturn"],
+                "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Belt",
+				"nature": "Hasty"
             },
-            {
+			{
+                "role": "Fast Lead",
+                "movepool": ["fakeout", "closecombat", "overheat", "stealthrock"],
+                "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["uturn", "closecombat", "overheat", "stealthrock"],
+                "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["uturn", "closecombat", "overheat", "stealthrock"],
+                "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Belt",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["closecombat", "firepunch", "machpunch", "swordsdance"],
+                "abilities": ["Iron Fist"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Loaded Gloves",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["closecombat", "flareblitz", "machpunch", "swordsdance"],
+                "abilities": ["Iron Fist"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["heatwave", "vacuumwave", "hiddenpowerice", "nastyplot"],
+                "abilities": ["Blaze"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["heatwave", "vacuumwave", "grassknot", "nastyplot"],
+                "abilities": ["Blaze"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["closecombat", "overheat", "taunt", "endeavor"],
+                "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Naive"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["closecombat", "flareblitz", "machpunch", "uturn"],
+                "abilities": ["Iron Fist"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["closecombat", "firepunch", "machpunch", "uturn"],
+                "abilities": ["Iron Fist"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
                 "role": "Fast Attacker",
-                "movepool": ["closecombat", "flareblitz", "machpunch", "stoneedge", "swordsdance", "uturn"],
-                "abilities": ["Blaze"]
+                "movepool": ["fireblast", "closecombat", "grassknot", "uturn"],
+                "abilities": ["Blaze"],
+				"evs": [0, 16, 0, 252, 0, 240],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Naive"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["fireblast", "closecombat", "hiddenpowerice", "uturn"],
+                "abilities": ["Blaze"],
+				"evs": [0, 16, 0, 252, 0, 240],
+				"ivs": [31, 30, 30, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Naive"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["closecombat", "flareblitz", "grassknot", "uturn"],
+                "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Naive"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["closecombat", "overheat", "grassknot", "uturn"],
+                "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Naive"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["closecombat", "flareblitz", "encore", "stealthrock"],
+                "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["firepunch", "machpunch", "bulkup", "slackoff"],
+                "abilities": ["Iron Fist"],
+				"evs": [240, 0, 0, 0, 252, 16],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["firepunch", "machpunch", "thunderpunch", "substitute"],
+                "abilities": ["Iron Fist"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [30, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["machpunch", "flareblitz", "endeavor", "counter"],
+                "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly"
             }
         ]
     },
@@ -6592,12 +7302,115 @@
         ]
     },
     "honchkrow": {
-        "level": 82,
+        "level": 100,
         "sets": [
             {
-                "role": "Wallbreaker",
-                "movepool": ["bravebird", "heatwave", "pursuit", "roost", "suckerpunch", "superpower"],
-                "abilities": ["Insomnia"]
+                "role": "Switch Trapper",
+                "movepool": ["bravebird", "nightslash", "superpower", "pursuit"],
+                "abilities": ["Shakedown"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["bravebird", "nightslash", "superpower", "pursuit"],
+                "abilities": ["Super Luck"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["bravebird", "nightslash", "superpower", "fling"],
+                "abilities": ["Shakedown"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Bracer",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["bravebird", "nightslash", "superpower", "fling"],
+                "abilities": ["Super Luck"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Bracer",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["bravebird", "nightslash", "icywind", "roost"],
+                "abilities": ["Super Luck"],
+				"evs": [116, 216, 0, 0, 0, 176],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["bravebird", "nightslash", "thunderwave", "roost"],
+                "abilities": ["Shakedown"],
+				"evs": [116, 216, 0, 0, 0, 176],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["bravebird", "thunderwave", "defog", "roost"],
+                "abilities": ["Shakedown"],
+				"evs": [116, 216, 0, 0, 0, 176],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["hurricane", "darkpulse", "icywind", "nastyplot"],
+                "abilities": ["Super Luck"],
+				"evs": [80, 0, 0, 252, 0, 176],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["hurricane", "darkpulse", "icywind", "nastyplot"],
+                "abilities": ["Super Luck"],
+				"evs": [76, 0, 4, 252, 0, 176],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Bulky Setup",
+                "movepool": ["darkpulse", "hiddenpowerfighting", "calmmind", "roost"],
+                "abilities": ["Super Luck"],
+				"evs": [252, 0, 76, 0, 0, 180],
+				"ivs": [31, 3, 30, 30, 30, 30],
+				"item": "Leftovers",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["bravebird", "nightslash", "superpower", "heatwave"],
+                "abilities": ["Super Luck"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Hasty"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["bravebird", "nightslash", "taunt", "roost"],
+                "abilities": ["Super Luck"],
+				"evs": [116, 216, 0, 0, 0, 176],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly"
             }
         ]
     },
@@ -6886,12 +7699,115 @@
         ]
     },
     "hippowdon": {
-        "level": 80,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
-                "movepool": ["earthquake", "roar", "slackoff", "stealthrock", "stoneedge", "toxic"],
-                "abilities": ["Sand Stream"]
+                "role": "Sand Lead",
+                "movepool": ["earthquake", "whirlwind", "stealthrock", "slackoff"],
+                "abilities": ["Sand Stream"],
+				"evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Smooth Rock",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "whirlwind", "stealthrock", "slackoff"],
+                "abilities": ["Sand Stream"],
+				"evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish"
+            },
+			{
+                "role": "Sand Lead",
+                "movepool": ["earthquake", "whirlwind", "stealthrock", "slackoff"],
+                "abilities": ["Sand Stream"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Smooth Rock",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "whirlwind", "stealthrock", "slackoff"],
+                "abilities": ["Sand Stream"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "toxic", "stealthrock", "slackoff"],
+                "abilities": ["Sand Stream"],
+				"evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "toxic", "stealthrock", "slackoff"],
+                "abilities": ["Sand Stream"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful"
+            },
+			{
+                "role": "Sand Setter",
+                "movepool": ["earthquake", "toxic", "stockpile", "swallow"],
+                "abilities": ["Sand Stream"],
+				"evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Smooth Rock",
+				"nature": "Impish"
+            },
+			{
+                "role": "Sand Setter",
+                "movepool": ["earthquake", "toxic", "stockpile", "swallow"],
+                "abilities": ["Sand Stream"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Smooth Rock",
+				"nature": "Careful"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["earthquake", "toxic", "stockpile", "swallow"],
+                "abilities": ["Sand Stream"],
+				"evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["earthquake", "toxic", "stockpile", "swallow"],
+                "abilities": ["Sand Stream"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthquake", "stoneedge", "curse", "slackoff"],
+                "abilities": ["Sand Stream"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful"
+            },
+			{
+                "role": "Sand Setter",
+                "movepool": ["earthquake", "stoneedge", "curse", "slackoff"],
+                "abilities": ["Sand Stream"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Smooth Rock",
+				"nature": "Careful"
             }
         ]
     },
@@ -7504,17 +8420,187 @@
         ]
     },
     "gliscor": {
-        "level": 80,
+        "level": 100,
         "sets": [
             {
-                "role": "Staller",
-                "movepool": ["earthquake", "roost", "stealthrock", "stoneedge", "taunt", "toxic", "uturn"],
-                "abilities": ["Hyper Cutter"]
+                "role": "Hazard Removal",
+                "movepool": ["earthquake", "knockoff", "defog", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [252, 0, 28, 0, 80, 148],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Impish"
             },
-            {
-                "role": "Bulky Setup",
-                "movepool": ["earthquake", "roost", "stoneedge", "swordsdance"],
-                "abilities": ["Hyper Cutter"]
+			{
+                "role": "Hazard Removal",
+                "movepool": ["earthquake", "uturn", "defog", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [252, 0, 28, 0, 80, 148],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Impish"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["earthquake", "taunt", "defog", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [252, 0, 28, 0, 80, 148],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Impish"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["earthquake", "knockoff", "defog", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [248, 0, 0, 0, 188, 72],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Careful"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["earthquake", "uturn", "defog", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [248, 0, 0, 0, 188, 72],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Careful"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["earthquake", "taunt", "defog", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [248, 0, 0, 0, 188, 72],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["earthquake", "uturn", "taunt", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [248, 0, 0, 0, 188, 72],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["earthquake", "uturn", "taunt", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [252, 0, 28, 0, 80, 148],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "stealthrock", "defog", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [252, 0, 28, 0, 80, 148],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Impish"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "stealthrock", "defog", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [248, 0, 0, 0, 188, 72],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["earthquake", "uturn", "tailwind", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [248, 0, 0, 0, 188, 72],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Careful"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["earthquake", "uturn", "tailwind", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [252, 0, 28, 0, 80, 148],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Impish"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["earthquake", "uturn", "protect", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [248, 0, 0, 0, 188, 72],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Careful"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["earthquake", "uturn", "protect", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [252, 0, 28, 0, 80, 148],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Impish"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["earthquake", "substitute", "batonpass", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [248, 0, 0, 0, 188, 72],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Careful"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["earthquake", "substitute", "batonpass", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [252, 0, 28, 0, 80, 148],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Impish"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["earthquake", "rockpolish", "batonpass", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [248, 0, 0, 0, 188, 72],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Careful"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["earthquake", "rockpolish", "batonpass", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [252, 0, 28, 0, 80, 148],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Impish"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["earthquake", "swordsdance", "batonpass", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [248, 0, 0, 0, 188, 72],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Careful"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["earthquake", "swordsdance", "batonpass", "roost"],
+                "abilities": ["Poison Heal"],
+				"evs": [252, 0, 28, 0, 80, 148],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Toxic Orb",
+				"nature": "Impish"
             }
         ]
     },
@@ -8071,23 +9157,196 @@
         ]
     },
     "heatran": {
-        "level": 74,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["earthpower", "eruption", "explosion", "fireblast"],
-                "abilities": ["Flash Fire"]
-            },
-            {
-                "role": "Bulky Attacker",
-                "movepool": ["dragonpulse", "earthpower", "explosion", "fireblast", "hiddenpowergrass", "lavaplume", "roar", "stealthrock", "toxic"],
-                "abilities": ["Flash Fire"],
-                "preferredTypes": ["Ground"]
-            },
-            {
                 "role": "Staller",
-                "movepool": ["earthpower", "fireblast", "lavaplume", "protect", "substitute", "toxic"],
-                "abilities": ["Flash Fire"]
+                "movepool": ["magmastorm", "earthpower", "hiddenpowerice", "protect"],
+                "abilities": ["Flash Fire"],
+				"evs": [4, 0, 0, 252, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Modest"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["lavaplume", "hiddenpowerice", "substitute", "protect"],
+                "abilities": ["Flash Fire"],
+				"evs": [84, 0, 0, 164, 52, 208],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["lavaplume", "toxic", "substitute", "protect"],
+                "abilities": ["Flash Fire"],
+				"evs": [84, 0, 0, 164, 52, 208],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["lavaplume", "stealthrock", "roar", "protect"],
+                "abilities": ["Flash Fire"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["flamethrower", "earthpower", "hiddenpowerice", "overheat"],
+                "abilities": ["Flash Fire"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["flamethrower", "earthpower", "hiddenpowerice", "overheat"],
+                "abilities": ["Flash Fire"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Calm"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["lavaplume", "torment", "substitute", "protect"],
+                "abilities": ["Flash Fire"],
+				"evs": [244, 0, 0, 0, 56, 208],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["magmastorm", "solarbeam", "earthpower", "sunnyday"],
+                "abilities": ["Flash Fire"],
+				"evs": [116, 0, 0, 184, 0, 208],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Modest"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["magmastorm", "solarbeam", "hiddenpowerice", "sunnyday"],
+                "abilities": ["Flash Fire"],
+				"evs": [116, 0, 0, 184, 0, 208],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Modest"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["magmastorm", "solarbeam", "hiddenpowerice", "sunnyday"],
+                "abilities": ["Flash Fire"],
+				"evs": [132, 0, 0, 168, 0, 208],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Air Balloon",
+				"nature": "Modest"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["magmastorm", "solarbeam", "earthpower", "sunnyday"],
+                "abilities": ["Flash Fire"],
+				"evs": [132, 0, 0, 168, 0, 208],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Air Balloon",
+				"nature": "Modest"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["lavaplume", "stealthrock", "roar", "protect"],
+                "abilities": ["Flash Fire"],
+				"evs": [248, 0, 232, 0, 28, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["lavaplume", "stealthrock", "roar", "protect"],
+                "abilities": ["Flash Fire"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["lavaplume", "stealthrock", "roar", "taunt"],
+                "abilities": ["Flash Fire"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["lavaplume", "roar", "toxic", "protect"],
+                "abilities": ["Flash Fire"],
+				"evs": [248, 0, 232, 0, 28, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["magmastorm", "earthpower", "firechase", "protect"],
+                "abilities": ["Flash Fire"],
+				"evs": [4, 0, 0, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Modest"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["firechase", "earthpower", "hiddenpowerice", "overheat"],
+                "abilities": ["Flash Fire"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Calm"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["magmastorm", "earthpower", "firechase", "taunt"],
+                "abilities": ["Flash Fire"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Air Balloon",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["magmastorm", "earthpower", "rocktomb", "taunt"],
+                "abilities": ["Flash Fire"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Air Balloon",
+				"nature": "Timid"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["magmastorm", "hiddenpowerice", "rocktomb", "taunt"],
+                "abilities": ["Flash Fire"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Air Balloon",
+				"nature": "Timid"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["magmastorm", "hiddenpowerice", "firechase", "taunt"],
+                "abilities": ["Flash Fire"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Air Balloon",
+				"nature": "Timid"
             }
         ]
     },
