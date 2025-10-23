@@ -357,31 +357,33 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			
 			if (NUMBER_OF_LEADS < 1)
 			{
-				const checkSets = this.randomSets[species.id]["sets"];
+				let checkSets = this.randomSets[species.id]["sets"];
 				// Check if the Pokemon has a Lead set
 				let canLead = false;
-				for (const checkSet of checkSets) {
+				for (let checkSet of checkSets) {
 					if (LEAD_ROLES.includes(checkSet.role)) canLead = true;
 				}
 				
 				if (canLead === false) {
-					continue;
+					skip = true;
 				}
 			}
 			
 			if (NUMBER_OF_HAZARD_REMOVERS < 1 && NUMBER_OF_LEADS > 0)
 			{
-				const checkSets = this.randomSets[species.id]["sets"];
+				let checkSets = this.randomSets[species.id]["sets"];
 				// Check if the Pokemon has a Lead set
 				let canClear = false;
-				for (const checkSet of checkSets) {
+				for (let checkSet of checkSets) {
 					if (["Hazard Removal"].includes(checkSet.role)) canClear = true;
 				}
 				
 				if (canClear === false) {
-					continue;
+					skip = true;
 				}
 			}
+			
+			if (skip) continue;
 
 			if (leadsRemaining) {
 				if (pokemon.length + leadsRemaining === this.maxTeamSize) continue;
