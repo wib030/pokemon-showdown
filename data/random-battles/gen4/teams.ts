@@ -41,19 +41,10 @@ const PRIORITY_POKEMON = [
 	'cacturne', 'dusknoir', 'honchkrow', 'mamoswine', 'scizor', 'shedinja', 'shiftry',
 ];
 
-// Team types
-const TEAM_TYPES = [
-	"Balanced",
-];
-
 // Lead Roles
 const LEAD_ROLES = [
 	'Fast Lead', 'Bulky Lead', 'Anti-Lead', 'Sand Lead', 'Sun Lead', 'Hail Lead', 'Rain Lead',
 ];
-
-let TEAM_TYPE = "Balanced";
-let NUMBER_OF_LEADS = 0;
-let NUMBER_OF_HAZARD_REMOVERS = 0;
 
 export class RandomGen4Teams extends RandomGen5Teams {
 	override randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = require('./sets.json');
@@ -312,7 +303,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		}
 
 		// Enforce hazard removal on Bulky Support and Hazard Removal if the team doesn't already have it
-		if (['Bulky Support', 'Hazard Removal'].includes(role) && NUMBER_OF_HAZARD_REMOVERS < 1) {
+		if (['Bulky Support', 'Hazard Removal'].includes(role) && teamDetails.removalNum < 1) {
 			if (movePool.includes('rapidspin')) {
 				counter = this.addMove('rapidspin', moves, types, abilities, teamDetails, species, isLead,
 					movePool, preferredType, role);
@@ -678,24 +669,24 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		// Check if the Pokemon has a Lead set
 		let canLead = false;
 		for (const set of sets) {
-			if (NUMBER_OF_LEADS < 1 && LEAD_ROLES.includes(set.role)) canLead = true;
+			if (teamDetails.leadNum < 1 && LEAD_ROLES.includes(set.role)) canLead = true;
 		}
 		
 		// Check if the Pokemon has a Hazard Removal set
 		let canHazardRemover = false;
 		for (const set of sets) {
-			if ((NUMBER_OF_HAZARD_REMOVERS < 1 && NUMBER_OF_LEADS > 0) && set.role === 'Hazard Removal') canHazardRemover = true;
+			if ((teamDetails.removalNum < 1 && teamDetails.leadNum > 0) && set.role === 'Hazard Removal') canHazardRemover = true;
 		}
 		
 		for (const set of sets) {
 			// Prevent Hazard Removal if the team already has removal
-			if (NUMBER_OF_HAZARD_REMOVERS > 0 && set.role === 'Hazard Removal') continue;
+			if (teamDetails.removalNum > 0 && set.role === 'Hazard Removal') continue;
 			
 			// Enforce Hazard Removal if the team does not have removal
 			if (canHazardRemover && set.role !== 'Hazard Removal') continue;
 			
 			// Prevent Lead if the team already has a lead
-			if (NUMBER_OF_LEADS > 0 && LEAD_ROLES.includes(set.role)) continue;
+			if (teamDetails.leadNum > 0 && LEAD_ROLES.includes(set.role)) continue;
 			
 			// Enforce Lead if the team does not have one
 			if (canLead && !LEAD_ROLES.includes(set.role)) continue;
@@ -811,9 +802,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		this.prng.shuffle(shuffledMoves);
 		
 		if (LEAD_ROLES.includes(role)) {
-			NUMBER_OF_LEADS++;
+			teamDetails.leadNum++;
 		} else if (['Hazard Removal'].includes(role)) {
-			NUMBER_OF_HAZARD_REMOVERS++;
+			teamDetails.removalNum++;
 		}
 
 		return {
@@ -903,7 +894,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				
-				if (NUMBER_OF_LEADS < 1)
+				if (teamDetails.leadNum < 1)
 				{
 					let checkSets = this.randomSets[species.id]["sets"];
 					// Check if the Pokemon has a Lead set
@@ -916,7 +907,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				
-				if (NUMBER_OF_HAZARD_REMOVERS < 1 && NUMBER_OF_LEADS > 0)
+				if (teamDetails.removalNum < 1 && teamDetails.leadNum > 0)
 				{
 					let checkSets = this.randomSets[species.id]["sets"];
 					// Check if the Pokemon has a Lead set

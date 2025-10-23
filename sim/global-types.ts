@@ -475,6 +475,8 @@ declare namespace RandomTeamsTypes {
 		illusion?: number;
 		statusCure?: number;
 		teraBlast?: number;
+		leadNum?: number;
+		removalNum?: number;
 	}
 	export interface FactoryTeamDetails {
 		megaCount?: number;
