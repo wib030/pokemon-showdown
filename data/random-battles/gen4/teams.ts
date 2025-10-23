@@ -933,14 +933,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				{
 					if (physicalAttackers < 1)
 					{
-						if (ATTACKING_ROLES.includes(set.role) && species.baseStats.atk < species.baseStats.spa)
+						if (species.baseStats.atk < species.baseStats.spa)
 						{
 							skip = true;
 						}
 					}
 					else if (specialAttackers < 1)
 					{
-						if (ATTACKING_ROLES.includes(set.role) && species.baseStats.spa < species.baseStats.atk)
+						if (species.baseStats.spa < species.baseStats.atk)
 						{
 							skip = true;
 						}
