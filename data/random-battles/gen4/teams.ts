@@ -1247,14 +1247,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 	}
 	
 	/*
-	Returns true if the source type has an immunity, false otherwise.
+	Returns true if the attacking type has an immunity, false otherwise.
 	*/
-	CheckTypeHasImmunity(
-		source: { type: string } | string
-	): boolean {
+	function CheckTypeHasImmunity(attackingType)
+	{
 		for (const typeName of this.dex.types.names())
 		{
-			if (!this.dex.getImmunity(source, typeName)) {
+			if (!this.dex.getImmunity(attackingType, typeName)) {
 				return true;
 			}
 		}
