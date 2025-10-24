@@ -936,24 +936,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							}
 						}
 					} else { // We don't have Color Change
-
-						// Current generated mon is not immune to current type
-						if (this.dex.getImmunity(typeName, types))
-						{
-							if ((set.ability === 'Dry Skin' || set.ability === 'Water Absorb' || set.ability === 'Storm Drain') && typeName === 'Water') {
-								typeImmunities[typeName]++;
-							} else if ((set.ability === 'Flash Fire') && typeName === 'Fire') {
-								typeImmunities[typeName]++;
-							} else if ((set.ability === 'Levitate') && typeName === 'Ground') {
-								typeImmunities[typeName]++;
-							} else if ((set.ability === 'Lightning Rod' || set.ability === 'Volt Absorb' || set.ability === 'Motor Drive') && typeName === 'Electric') {
-								typeImmunities[typeName]++;
-							} else {
-								if (!this.dex.getImmunity(typeName, types)) {
-									typeImmunities[typeName]++;
-								}
-							}
-						}
 						// Current generated mon is 2x weak to the type
 						if (this.dex.getEffectiveness(typeName, species) > 0) {
 							if (!typeWeaknesses[typeName]) typeWeaknesses[typeName] = 0;
