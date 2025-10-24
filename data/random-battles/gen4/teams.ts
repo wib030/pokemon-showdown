@@ -878,6 +878,33 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			if (!isMonotype && !this.forceMonotype) {
 				let skip = false;
+				
+				if (leadNum < 1)
+				{
+					let checkSets = this.randomSets[species.id]["sets"];
+					// Check if the Pokemon has a Lead set
+					skip = true;
+					for (let checkSet of checkSets) {
+						if (LEAD_ROLES.includes(checkSet.role)) {
+							skip = false;
+							break;
+						}
+					}
+				}
+				
+				if (removalNum < 1 && leadNum > 0)
+				{
+					let checkSets = this.randomSets[species.id]["sets"];
+					// Check if the Pokemon has a Lead set
+					skip = true;
+					for (let checkSet of checkSets) {
+						if (REMOVAL_ROLES.includes(checkSet.role)) {
+							skip = false;
+							break;
+						}
+					}
+				}
+				if (skip) continue;
 
 				// Limit two of any type
 				for (const typeName of types) {
@@ -916,33 +943,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 					}
 				}
-				
-				if (leadNum < 1)
-				{
-					let checkSets = this.randomSets[species.id]["sets"];
-					// Check if the Pokemon has a Lead set
-					skip = true;
-					for (let checkSet of checkSets) {
-						if (LEAD_ROLES.includes(checkSet.role)) {
-							skip = false;
-							break;
-						}
-					}
-				}
-				
-				if (removalNum < 1 && leadNum > 0)
-				{
-					let checkSets = this.randomSets[species.id]["sets"];
-					// Check if the Pokemon has a Lead set
-					skip = true;
-					for (let checkSet of checkSets) {
-						if (REMOVAL_ROLES.includes(checkSet.role)) {
-							skip = false;
-							break;
-						}
-					}
-				}
-				if (skip) continue;
 
 				// Count Dry Skin as a Fire weakness
 				if (this.dex.getEffectiveness('Fire', species) === 0 && Object.values(species.abilities).includes('Dry Skin')) {
