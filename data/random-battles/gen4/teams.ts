@@ -684,8 +684,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		isLead = false,
 		leadNum: number,
 		removalNum: number,
-		ensureLead: bool,
-		ensureRemoval: bool,
 	): RandomTeamsTypes.RandomSet {
 		species = this.dex.species.get(species);
 		const forme = this.getForme(species);
@@ -710,13 +708,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		for (const set of sets) {
 			// Enforce Lead if the team does not have one
-			if (ensureLead && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
+			if (leadNum === 0 && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
 			
 			// Prevent Lead if the team already has more than one lead
 			if (leadNum > 1 && LEAD_ROLES.includes(set.role)) continue;
 			
 			// Enforce Removal if the team does not have removal
-			if (ensureRemoval && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
+			if (removalNum === 0 && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
 			
 			// Prevent Removal if the team already has more than one removal
 			if (removalNum > 1 && REMOVAL_ROLES.includes(set.role)) continue;
@@ -880,10 +878,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let physicalAttackers = 0;
 		let specialAttackers = 0;
 		let maxSingleType = 2;
-		
-		let ensureLead = false;
-		let ensureRemoval = false;
-		let typeWeaknessRerolls = 0;
 
 		const pokemonList = Object.keys(this.randomSets);
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
@@ -903,7 +897,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			const types = species.types;
 			let skip = false;
-			let weaknessRerolls = 0;
 
 			if (!isMonotype && !this.forceMonotype) {
 				if (pokemon.length > 0)
@@ -927,9 +920,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 									if (this.dex.getEffectiveness(checkTypeName, species) > 0 && prevMonTypeWeaknesses[checkTypeName] > 0) {
 										skip = true;
 										break;
-									} else if (weaknessRerolls > 100) {
-										skip = false;
-										break;
 									}
 								}
 								
@@ -937,7 +927,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 					}
 					if (skip) {
-						weaknessRerolls++;
 						continue;
 					}
 				}
@@ -996,7 +985,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 			}
 
-			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum, ensureLead, ensureRemoval);
+			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
 
 			// Okay, the set passes, add it to our team
 			pokemon.push(set);
