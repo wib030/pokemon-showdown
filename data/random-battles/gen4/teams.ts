@@ -883,6 +883,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let skip = false;
 
 			if (!isMonotype && !this.forceMonotype) {
+				/*
 				if (leadNum < 1)
 				{
 					let checkSets = this.randomSets[species.id]["sets"];
@@ -909,6 +910,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				if (skip) continue;
+				*/
 
 				// Limit two of a single type, and one of any other type
 				for (const typeName of types) {
