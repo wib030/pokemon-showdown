@@ -974,6 +974,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					let checkSets = this.randomSets[species.id]["sets"];
 					// Check if the Pokemon has a Lead set
 					skip = true;
+					ensureLead = false;
 					for (let checkSet of checkSets) {
 						if (LEAD_ROLES.includes(checkSet.role)) {
 							skip = false;
@@ -988,6 +989,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					let checkSets = this.randomSets[species.id]["sets"];
 					// Check if the Pokemon has a Lead set
 					skip = true;
+					ensureRemoval = false;
 					for (let checkSet of checkSets) {
 						if (REMOVAL_ROLES.includes(checkSet.role)) {
 							skip = false;
