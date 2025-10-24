@@ -692,15 +692,31 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const sets = this.randomSets[species.id]["sets"];
 		const possibleSets = [];
 		
+		let hasLeadSet = false;
+		for (let set of sets) {
+			if (LEAD_ROLES.includes(set.role)) {
+				hasLeadSet = true;
+				break;
+			}
+		}
+		
+		let hasRemovalSet = false;
+		for (let set of sets) {
+			if (REMOVAL_ROLES.includes(set.role)) {
+				hasRemovalSet = true;
+				break;
+			}
+		}
+		
 		for (const set of sets) {
 			// Enforce Lead if the team does not have one
-			if (ensureLead && !LEAD_ROLES.includes(set.role)) continue;
+			if (ensureLead && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
 			
 			// Prevent Lead if the team already has more than one lead
 			if (leadNum > 1 && LEAD_ROLES.includes(set.role)) continue;
 			
 			// Enforce Removal if the team does not have removal
-			if (ensureRemoval && !REMOVAL_ROLES.includes(set.role)) continue;
+			if (ensureRemoval && && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
 			
 			// Prevent Removal if the team already has more than one removal
 			if (removalNum > 1 && REMOVAL_ROLES.includes(set.role)) continue;
