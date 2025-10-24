@@ -1096,7 +1096,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			// Count Dry Skin as a Fire weakness
 			if (set.ability === 'Dry Skin' && this.dex.getEffectiveness('Fire', species) === 0) {
 				typeWeaknesses['Fire']++;
-				prevMonTypeWeaknesses[typeName]++;
+				prevMonTypeWeaknesses['Fire']++;
 			}
 
 			// Increment level 100 counter
