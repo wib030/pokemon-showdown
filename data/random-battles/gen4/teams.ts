@@ -906,6 +906,37 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			typeWeaknessRerolls = 0;
 
 			if (!isMonotype && !this.forceMonotype) {
+				if (leadNum < 1)
+				{
+					let checkSets = this.randomSets[species.id]["sets"];
+					// Check if the Pokemon has a Lead set
+					skip = true;
+					ensureLead = false;
+					for (let checkSet of checkSets) {
+						if (LEAD_ROLES.includes(checkSet.role)) {
+							skip = false;
+							ensureLead = true;
+							break;
+						}
+					}
+				}
+				
+				if (removalNum < 1 && leadNum > 0)
+				{
+					let checkSets = this.randomSets[species.id]["sets"];
+					// Check if the Pokemon has a Lead set
+					skip = true;
+					ensureRemoval = false;
+					for (let checkSet of checkSets) {
+						if (REMOVAL_ROLES.includes(checkSet.role)) {
+							skip = false;
+							ensureRemoval = true;
+							break;
+						}
+					}
+				}
+				if (skip) continue;
+				
 				if (pokemon.length > 0)
 				{
 					for (const typeName of types) {
@@ -992,37 +1023,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					if (!typeWeaknesses['Fire']) typeWeaknesses['Fire'] = 0;
 					if (typeWeaknesses['Fire'] >= 3 * limitFactor) continue;
 				}
-				
-				if (leadNum < 1)
-				{
-					let checkSets = this.randomSets[species.id]["sets"];
-					// Check if the Pokemon has a Lead set
-					skip = true;
-					ensureLead = false;
-					for (let checkSet of checkSets) {
-						if (LEAD_ROLES.includes(checkSet.role)) {
-							skip = false;
-							ensureLead = true;
-							break;
-						}
-					}
-				}
-				
-				if (removalNum < 1 && leadNum > 0)
-				{
-					let checkSets = this.randomSets[species.id]["sets"];
-					// Check if the Pokemon has a Lead set
-					skip = true;
-					ensureRemoval = false;
-					for (let checkSet of checkSets) {
-						if (REMOVAL_ROLES.includes(checkSet.role)) {
-							skip = false;
-							ensureRemoval = true;
-							break;
-						}
-					}
-				}
-				if (skip) continue;
 			}
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum, ensureLead, ensureRemoval);
