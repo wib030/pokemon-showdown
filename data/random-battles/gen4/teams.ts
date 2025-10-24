@@ -979,6 +979,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							{
 								skip = true;
 							}
+							
+							if (typeName === 'Fire' && set.ability === 'Flash Fire')
+							{
+								skip = false;
+							}
 						}
 					}
 					if (skip) break;
@@ -1002,6 +1007,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						if (!this.dex.getImmunity(typeName, defendingTypeName)) {
 							typeHasImmunity = true;
 							break;
+						}
+						
+						if (typeName === 'Fire') {
+							typeHasImmunity = true;
 						}
 					}
 					
