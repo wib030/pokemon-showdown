@@ -982,13 +982,21 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						{
 							skip = true;
 							if (Object.values(species.abilities).includes('Color Change')) {
-								if (typeName.includes(COLOR_CHANGE_RESIST)&& prevMonTypeWeaknesses[typeName] === 0) {
+								if (typeName.includes(COLOR_CHANGE_RESIST)) {
 									skip = false;
-									break;
 								}
 							}
-							else if (this.dex.getEffectiveness(typeName, species) < 0 && prevMonTypeWeaknesses[typeName] === 0) {
+							else if (this.dex.getEffectiveness(typeName, species) < 0) {
 								skip = false;
+							}
+							
+							if (skip === false) {
+								// Skip the roll if the Pokemon shares any weaknessess with the previous Pokemon
+								for (const checkTypeName of types) {
+									if (this.dex.getEffectiveness(checkTypeName, species) > 0 && prevMonTypeWeaknesses[checkTypeName] > 0) {
+										skip = true;
+									}
+								}
 								break;
 							}
 						}
