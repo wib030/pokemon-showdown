@@ -848,6 +848,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const typeCount: { [k: string]: number } = {};
 		const typeWeaknesses: { [k: string]: number } = {};
 		const typeDoubleWeaknesses: { [k: string]: number } = {};
+		const typeResistances: { [k: string]: number } = {};
+		const typeDoubleResistances: { [k: string]: number } = {};
 		const teamDetails: RandomTeamsTypes.TeamDetails = {};
 		let numMaxLevelPokemon = 0;
 		
@@ -906,7 +908,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 				if (skip) continue;
 
-				// Limit two of any type
+				// Limit two of a single type, and one of any other type
 				for (const typeName of types) {
 					if (typeCount[typeName] === maxSingleType) {
 						maxSingleType = 1;
@@ -973,11 +975,16 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 			}
 
-			// Increment weakness counter
+			// Increment weakness and resistance counter
 			for (const typeName of this.dex.types.names()) {
 				if (Object.values(species.abilities).includes('Color Change')) {
 					if (typeName === 'Ghost' || typeName === 'Dragon') {
 						typeWeaknesses[typeName]++;
+					}
+					if (typeName === 'Poison' || typeName === 'Steel' || typeName === 'Fire'
+					|| typeName === 'Water' || typeName === 'Grass' || typeName === 'Electric'
+					|| typeName === 'Psychic' || typeName === 'Ice' || typeName === 'Dark') {
+						typeResistances[typeName]++;
 					}
 				} else {
 					// it's weak to the type
@@ -986,6 +993,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 					if (this.dex.getEffectiveness(typeName, species) > 1) {
 						typeDoubleWeaknesses[typeName]++;
+					}
+					
+					// it resists the type
+					if (this.dex.getEffectiveness(typeName, species) < 0) {
+						typeResistances[typeName]++;
+					}
+					if (this.dex.getEffectiveness(typeName, species) < -1) {
+						typeDoubleResistances[typeName]++;
 					}
 				}
 			}
