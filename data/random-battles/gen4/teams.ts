@@ -711,13 +711,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (leadNum === 0 && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
 			
 			// Prevent Lead if the team already has more than one lead
-			// if (leadNum > 1 && LEAD_ROLES.includes(set.role)) continue;
+			if (leadNum > 1 && LEAD_ROLES.includes(set.role)) continue;
 			
 			// Enforce Removal if the team does not have removal
 			if (removalNum === 0 && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
 			
 			// Prevent Removal if the team already has more than one removal
-			// if (removalNum > 1 && REMOVAL_ROLES.includes(set.role)) continue;
+			if (removalNum > 1 && REMOVAL_ROLES.includes(set.role)) continue;
 			
 			possibleSets.push(set);
 		}
@@ -897,6 +897,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			const types = species.types;
 			let skip = false;
+			let weaknessRerolls = 0;
 
 			if (!isMonotype && !this.forceMonotype) {
 				if (pokemon.length > 0)
@@ -921,6 +922,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 									if (this.dex.getEffectiveness(checkTypeName, species) > 0 && prevMonTypeWeaknesses[checkTypeName] > 0) {
 										skip = true;
 										break;
+									} else if (weaknessRerolls > 100) {
+										skip = false;
+										break;
 									}
 								}
 								break;
@@ -928,6 +932,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 					}
 					if (skip) {
+						weaknessRerolls++;
 						continue;
 					}
 				}
