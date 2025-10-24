@@ -708,13 +708,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		for (const set of sets) {
 			// Enforce Lead if the team does not have one
-			if (leadNum === 0 && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
+			// if (leadNum === 0 && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
 			
 			// Prevent Lead if the team already has more than one lead
 			// if (leadNum > 1 && LEAD_ROLES.includes(set.role)) continue;
 			
 			// Enforce Removal if the team does not have removal
-			if ((removalNum === 0 && leadNum > 0) && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
+			// if ((removalNum === 0 && leadNum > 0) && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
 			
 			// Prevent Removal if the team already has more than one removal
 			// if (removalNum > 1 && REMOVAL_ROLES.includes(set.role)) continue;
@@ -904,6 +904,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let weaknessRerolls = 0;
 
 			if (!isMonotype && !this.forceMonotype) {
+				/*
 				if (leadNum < 1)
 				{
 					sets = this.randomSets[checkSpecies.id]["sets"];
@@ -917,7 +918,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				} else if (removalNum < 1 && leadNum > 0) {
 					sets = this.randomSets[checkSpecies.id]["sets"];
-					// Check if the Pokemon has a Lead set
+					// Check if the Pokemon has a Removal set
 					skip = true;
 					for (let set of sets) {
 						if (REMOVAL_ROLES.includes(set.role)) {
@@ -927,6 +928,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				if (skip) continue;
+				*/
 				
 				if (pokemon.length > 0)
 				{
