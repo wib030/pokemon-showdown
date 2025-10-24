@@ -916,36 +916,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 					if (skip) continue;
 				}
-				
-				if (leadNum < 1)
-				{
-					let checkSets = this.randomSets[species.id]["sets"];
-					// Check if the Pokemon has a Lead set
-					skip = true;
-					for (let checkSet of checkSets) {
-						if (LEAD_ROLES.includes(checkSet.role)) {
-							skip = false;
-							ensureLead = true;
-							break;
-						}
-					}
-				}
-				
-				if (removalNum < 1 && leadNum > 0)
-				{
-					let checkSets = this.randomSets[species.id]["sets"];
-					// Check if the Pokemon has a Lead set
-					skip = true;
-					for (let checkSet of checkSets) {
-						if (REMOVAL_ROLES.includes(checkSet.role)) {
-							skip = false;
-							ensureRemoval = true;
-							break;
-						}
-					}
-				}
-				if (skip) continue;
-
 				// Limit two of a single type, and one of any other type
 				for (const typeName of types) {
 					if (typeCount[typeName] === maxSingleType) {
@@ -998,6 +968,35 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					if (!typeWeaknesses['Fire']) typeWeaknesses['Fire'] = 0;
 					if (typeWeaknesses['Fire'] >= 3 * limitFactor) continue;
 				}
+				
+				if (leadNum < 1)
+				{
+					let checkSets = this.randomSets[species.id]["sets"];
+					// Check if the Pokemon has a Lead set
+					skip = true;
+					for (let checkSet of checkSets) {
+						if (LEAD_ROLES.includes(checkSet.role)) {
+							skip = false;
+							ensureLead = true;
+							break;
+						}
+					}
+				}
+				
+				if (removalNum < 1 && leadNum > 0)
+				{
+					let checkSets = this.randomSets[species.id]["sets"];
+					// Check if the Pokemon has a Lead set
+					skip = true;
+					for (let checkSet of checkSets) {
+						if (REMOVAL_ROLES.includes(checkSet.role)) {
+							skip = false;
+							ensureRemoval = true;
+							break;
+						}
+					}
+				}
+				if (skip) continue;
 			}
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum, ensureLead, ensureRemoval);
