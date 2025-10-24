@@ -968,85 +968,23 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			
 			if (pokemon.length > 0)
 			{
-			
-			for (const typeName of this.dex.types.names()) {
-				// Current generated mon is not immune to current type
+				for (const typeName of this.dex.types.names()) {
+					// Current generated mon is not immune to current type
 
-				if (typesToImmune && typesToImmune.length > 0)
-				{
-					if (typesToImmune.includes(typeName))
+					if (typesToImmune && typesToImmune.length > 0)
 					{
-						if (this.dex.getImmunity(typeName, types))
+						if (typesToImmune.includes(typeName))
 						{
-							switch (typeName)
-							{
-								case 'Fire':
-									if (set.ability !== 'Flash Fire')
-									{
-										skip = true;
-									}
-									break;
-
-								case 'Water':
-									if (set.ability !== 'Dry Skin' && set.ability !== 'Water Absorb' && set.ability !== 'Storm Drain')
-									{
-										skip = true;
-									}
-									break;
-
-								case 'Ground':
-									if (set.ability !== 'Levitate')
-									{
-										skip = true;
-									}
-									break;
-
-								case 'Electric':
-									if (set.ability !== 'Lightning Rod' && set.ability !== 'Volt Absorb' && set.ability !== 'Motor Drive')
-									{
-										skip = true;
-									}
-									break;
-
-								default:
-									skip = true;
-									break;
-							}
-						}
-					}
-				}
-
-				if (typesToResist && typesToResist.length > 0)
-				{
-					// Current generated mon is not resistant to current type
-					if (typesToResist.includes(typeName))
-					{
-						if (this.dex.getEffectiveness(typeName, species) > -1)
-						{
-							if (set.Ability !== 'Color Change')
+							if (this.dex.getImmunity(typeName, types))
 							{
 								switch (typeName)
 								{
 									case 'Fire':
-										if (set.ability === 'Flash Fire')
+										if (set.ability !== 'Flash Fire')
 										{
-											break;
+											skip = true;
 										}
-										if (this.dex.getEffectiveness(typeName, species) < 1
-											&& (set.ability === 'Thick Fat' || set.ability === 'Heatproof'))
-										{
-											break;
-										}
-										skip = true;
 										break;
-
-									case 'Ice':
-									if (this.dex.getEffectiveness(typeName, species) < 0
-										&& set.ability === 'Thick Fat')
-									{
-										break;
-									}
-									break;
 
 									case 'Water':
 										if (set.ability !== 'Dry Skin' && set.ability !== 'Water Absorb' && set.ability !== 'Storm Drain')
@@ -1074,28 +1012,88 @@ export class RandomGen4Teams extends RandomGen5Teams {
 										break;
 								}
 							}
-							else
+						}
+					}
+
+					if (typesToResist && typesToResist.length > 0)
+					{
+						// Current generated mon is not resistant to current type
+						if (typesToResist.includes(typeName))
+						{
+							if (this.dex.getEffectiveness(typeName, species) > -1)
 							{
-								switch (typeName)
+								if (set.ability !== 'Color Change')
 								{
-									case 'Dragon':
-									case 'Ghost':
-										skip = true;
+									switch (typeName)
+									{
+										case 'Fire':
+											if (set.ability === 'Flash Fire')
+											{
+												break;
+											}
+											if (this.dex.getEffectiveness(typeName, species) < 1
+												&& (set.ability === 'Thick Fat' || set.ability === 'Heatproof'))
+											{
+												break;
+											}
+											skip = true;
+											break;
+
+										case 'Ice':
+										if (this.dex.getEffectiveness(typeName, species) < 0
+											&& set.ability === 'Thick Fat')
+										{
+											break;
+										}
 										break;
 
-									default:
-										break;
+										case 'Water':
+											if (set.ability !== 'Dry Skin' && set.ability !== 'Water Absorb' && set.ability !== 'Storm Drain')
+											{
+												skip = true;
+											}
+											break;
+
+										case 'Ground':
+											if (set.ability !== 'Levitate')
+											{
+												skip = true;
+											}
+											break;
+
+										case 'Electric':
+											if (set.ability !== 'Lightning Rod' && set.ability !== 'Volt Absorb' && set.ability !== 'Motor Drive')
+											{
+												skip = true;
+											}
+											break;
+
+										default:
+											skip = true;
+											break;
+									}
+								}
+								else
+								{
+									switch (typeName)
+									{
+										case 'Dragon':
+										case 'Ghost':
+											skip = true;
+											break;
+
+										default:
+											break;
+									}
 								}
 							}
 						}
 					}
+
+					if (skip) break;
 				}
 
-				if (skip) break;
-			}
-
-			if (skip) continue;
-			
+				if (skip) continue;
 			}
 
 			typesToResist = [];
