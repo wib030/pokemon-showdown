@@ -867,6 +867,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		let ensureLead = false;
 		let ensureRemoval = false;
+		let typeWeaknessRerolls = 0;
 
 		const pokemonList = Object.keys(this.randomSets);
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
@@ -886,6 +887,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			const types = species.types;
 			let skip = false;
+			typeWeaknessRerolls = 0;
 
 			if (!isMonotype && !this.forceMonotype) {
 				if (pokemon.length > 0)
@@ -914,8 +916,12 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							}
 						}
 					}
-					if (skip) continue;
+					if (skip && typeWeaknessRerolls < 100) {
+						typeWeaknessRerolls++;
+						continue;
+					}
 				}
+				
 				// Limit two of a single type, and one of any other type
 				for (const typeName of types) {
 					if (typeCount[typeName] === maxSingleType) {
