@@ -1015,7 +1015,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			// Increment weakness, resistance and immunity counter
 			for (const typeName of this.dex.types.names()) {
-				if (Object.values(species.abilities).includes('Color Change')) {
+				if (set.ability === 'Color Change') {
 					if (typeName.includes(COLOR_CHANGE_WEAK)) {
 						typeWeaknesses[typeName]++;
 					}
