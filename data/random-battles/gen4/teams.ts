@@ -880,10 +880,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			const limitFactor = Math.round(this.maxTeamSize / 6) || 1;
 
 			const types = species.types;
+			let skip = false;
 
 			if (!isMonotype && !this.forceMonotype) {
-				let skip = false;
-				
 				if (leadNum < 1)
 				{
 					let checkSets = this.randomSets[species.id]["sets"];
