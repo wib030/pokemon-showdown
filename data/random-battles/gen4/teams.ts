@@ -1005,7 +1005,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 					}
 					
-					if (CheckTypeHasImmunity(typeName))
+					if (typeHasImmunity)
 					{
 						typesToImmune.push(typeName);
 					}
