@@ -67,6 +67,18 @@ const ATTACKING_ROLES = [
 	'TR Attacker', 'Fast Pivot', 'Bulky Pivot', 'Sun Setup', 'Switch Trapper',
 ];
 
+// Immunity abilities
+const IMMUNITY_ABILITIES: { [k: string]: string[] } = {
+	waterabsorb: ["Water"],
+	stormdrain: ["Water"],
+	dryskin: ["Water"],
+	flashfire: ["Fire"],
+	levitate: ["Ground"],
+	lightningrod: ["Electric"],
+	motordrive: ["Electric"],
+	voltabsorb: ["Electric"],
+};
+
 export class RandomGen4Teams extends RandomGen5Teams {
 	override randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = require('./sets.json');
 
@@ -906,6 +918,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
 			
+			const abilityState = this.dex.abilities.get(set.ability);
+			
 			if (!isMonotype && !this.forceMonotype) {
 				/*
 				if (leadNum < 1)
@@ -952,7 +966,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								}
 							}
 							else if (this.dex.getEffectiveness(typeName, species) < 0
-							|| !this.dex.getImmunity(typeName, types)) {
+							|| (IMMUNITY_ABILITIES[abilityState.id]?.includes(typeName) ||	!this.dex.getImmunity(typeName, types))) {
 								skip = false;
 							}
 							
@@ -1111,23 +1125,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 					
 					// it is immune to the type
-					if ((set.ability === 'Dry Skin' || set.ability === 'Water Absorb' || set.ability === 'Storm Drain') && typeName === 'Water') {
+					if (IMMUNITY_ABILITIES[abilityState.id]?.includes(typeName) || !this.dex.getImmunity(typeName, types)) {
 						typeImmunities[typeName]++;
 						prevMonTypeImmunities[typeName]++;
-					} else if ((set.ability === 'Flash Fire') && typeName === 'Fire') {
-						typeImmunities[typeName]++;
-						prevMonTypeImmunities[typeName]++;
-					} else if ((set.ability === 'Levitate') && typeName === 'Ground') {
-						typeImmunities[typeName]++;
-						prevMonTypeImmunities[typeName]++;
-					} else if ((set.ability === 'Lightning Rod' || set.ability === 'Volt Absorb' || set.ability === 'Motor Drive') && typeName === 'Electric') {
-						typeImmunities[typeName]++;
-						prevMonTypeImmunities[typeName]++;
-					} else {
-						if (!this.dex.getImmunity(typeName, types)) {
-							typeImmunities[typeName]++;
-							prevMonTypeImmunities[typeName]++;
-						}
 					}
 				}
 			}
