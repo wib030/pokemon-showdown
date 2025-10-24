@@ -908,8 +908,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 				// Limit two of any type
 				for (const typeName of types) {
-					if ((typeCount[typeName] >= maxSingleType * limitFactor) && !Object.values(species.abilities).includes('Color Change')) {
+					if (typeCount[typeName] === maxSingleType) {
 						maxSingleType = 1;
+					}
+					if ((typeCount[typeName] >= maxSingleType * limitFactor) && !Object.values(species.abilities).includes('Color Change')) {
 						skip = true;
 						break;
 					}
