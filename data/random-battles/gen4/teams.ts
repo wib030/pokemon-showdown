@@ -901,6 +901,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let checkSpecies = this.dex.species.get(species);
 
 			if (!isMonotype && !this.forceMonotype) {
+				/*
 				if (leadNum < 1)
 				{
 					sets = this.randomSets[checkSpecies.id]["sets"];
@@ -924,6 +925,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				if (skip) continue;
+				*/
 				
 				if (pokemon.length > 0)
 				{
