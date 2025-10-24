@@ -1102,8 +1102,16 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 			}
 
-			this.prng.shuffle(typesToImmune);
-			this.prng.shuffle(typesToResist);
+			if ( typesToResist && typesToResist.length )
+			{
+				this.prng.shuffle(typesToResist);
+			}
+
+			if ( typesToImmune && typesToImmune.length )
+			{
+				this.prng.shuffle(typesToImmune);
+			}
+			
 
 			// Okay, the set passes, add it to our team
 			pokemon.push(set);
