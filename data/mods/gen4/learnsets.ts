@@ -11192,6 +11192,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			wavecrash: ["4T"],
 			healbell: ["4L1"],
 			whirlpool: ["4L13"],
+			weatherball: ["4L50"],
 		},
 	},
 	jolteon: {
@@ -11216,7 +11217,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hiddenpower: ["4M", "3M"],
 			hyperbeam: ["4M", "3M"],
 			irontail: ["4M", "3M"],
-			lastresort: ["4T", "4L55"],
+			lastresort: ["4T", "4L60"],
 			lightscreen: ["4M"],
 			magnetrise: ["4T"],
 			mimic: ["3T"],
@@ -11256,6 +11257,12 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			covet: ["4L1"],
 			voltswitch: ["4L35"],
 			healbell: ["4L1"],
+			weatherball: ["4L50"],
+			spikes: ["4L43"],
+			spikecannon: ["4L53"],
+			surf: ["4M"],
+			charge: ["4L1"],
+			aurasphere: ["4L56"],
 		},
 	},
 	flareon: {
@@ -11321,6 +11328,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			flareblitz: ["4L45"],
 			solarbeam: ["4L50"],
 			healbell: ["4L1"],
+			weatherball: ["4L50"],
 		},
 	},
 	espeon: {
@@ -11463,6 +11471,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			knockoff: ["4L42"],
 			yawn: ["4L50"],
 			healbell: ["4L1"],
+			weatherball: ["4L50"],
 		},
 	},
 	leafeon: {
@@ -11527,6 +11536,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			covet: ["4L1"],
 			leechseed: ["4L20"],
 			healbell: ["4L1"],
+			weatherball: ["4L50"],
 		},
 	},
 	glaceon: {
@@ -11588,6 +11598,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			chillingspell: ["4L30"],
 			freezedry: ["4L35"],
 			healbell: ["4L1"],
+			weatherball: ["4L50"],
 		},
 	},
 	porygon: {

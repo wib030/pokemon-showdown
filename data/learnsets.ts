@@ -16298,6 +16298,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wavecrash: ["4T"],
 			healbell: ["4L1"],
 			whirlpool: ["4L13"],
+			weatherball: ["4L50"],
 		},
 		eventData: [
 			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["tailwhip", "tackle", "helpinghand", "sandattack"]},
@@ -16326,7 +16327,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			hiddenpower: ["4M", "3M"],
 			hyperbeam: ["4M", "3M"],
 			irontail: ["4M", "3M"],
-			lastresort: ["4T", "4L55"],
+			lastresort: ["4T", "4L60"],
 			lightscreen: ["4M"],
 			magnetrise: ["4T"],
 			mimic: ["3T"],
@@ -16366,6 +16367,12 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			covet: ["4L1"],
 			voltswitch: ["4L35"],
 			healbell: ["4L1"],
+			weatherball: ["4L50"],
+			spikes: ["4L43"],
+			spikecannon: ["4L53"],
+			surf: ["4M"],
+			charge: ["4L1"],
+			aurasphere: ["4L56"],
 		},
 		eventData: [
 			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["tailwhip", "tackle", "helpinghand", "sandattack"]},
@@ -16435,6 +16442,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			flareblitz: ["4L45"],
 			solarbeam: ["4L50"],
 			healbell: ["4L1"],
+			weatherball: ["4L50"],
 		},
 		eventData: [
 			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["tailwhip", "tackle", "helpinghand", "sandattack"]},
@@ -16586,6 +16594,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			knockoff: ["4L42"],
 			yawn: ["4L50"],
 			healbell: ["4L1"],
+			weatherball: ["4L50"],
 		},
 		eventData: [
 			{generation: 3, level: 70, moves: ["feintattack", "meanlook", "screech", "moonlight"], pokeball: "pokeball"},
@@ -16655,6 +16664,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			covet: ["4L1"],
 			leechseed: ["4L20"],
 			healbell: ["4L1"],
+			weatherball: ["4L50"],
 		},
 		eventData: [
 			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["tailwhip", "tackle", "helpinghand", "sandattack"]},
@@ -16720,6 +16730,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			chillingspell: ["4L30"],
 			freezedry: ["4L35"],
 			healbell: ["4L1"],
+			weatherball: ["4L50"],
 		},
 		eventData: [
 			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["tailwhip", "tackle", "helpinghand", "sandattack"]},
