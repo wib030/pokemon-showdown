@@ -905,11 +905,12 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let skip = false;
 			typeWeaknessRerolls = 0;
 			let sets = this.randomSets[species.id]["sets"];
+			let checkSpecies = this.dex.species.get(species);
 
 			if (!isMonotype && !this.forceMonotype) {
 				if (leadNum < 1)
 				{
-					sets = this.randomSets[species.id]["sets"];
+					sets = this.randomSets[checkSpecies.id]["sets"];
 					// Check if the Pokemon has a Lead set
 					skip = true;
 					ensureLead = false;
@@ -921,7 +922,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 					}
 				} else if (removalNum < 1 && leadNum > 0) {
-					sets = this.randomSets[species.id]["sets"];
+					sets = this.randomSets[checkSpecies.id]["sets"];
 					// Check if the Pokemon has a Lead set
 					skip = true;
 					ensureRemoval = false;
