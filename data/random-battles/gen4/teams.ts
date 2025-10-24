@@ -922,7 +922,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 										break;
 									}
 								}
-								
+								break;
 							}
 						}
 					}
