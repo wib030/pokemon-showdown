@@ -51,6 +51,15 @@ const REMOVAL_ROLES = [
 	'Defog', 'Spinner',
 ];
 
+// Color Change type chart stuff
+const COLOR_CHANGE_RESIST = [
+	'Poison', 'Steel', 'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dark',
+];
+
+const COLOR_CHANGE_WEAK = [
+	'Dragon', 'Ghost',
+];
+
 // Attacking Roles
 const ATTACKING_ROLES = [
 	'Fast Attacker', 'Setup Sweeper', 'Wallbreaker', 'Bulky Attacker', 'Bulky Setup', 'Fast Bulky Setup', 'AV Pivot', 'Doubles Fast Attacker', 'Doubles Setup Sweeper', 'Doubles Wallbreaker', 
@@ -881,6 +890,28 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let skip = false;
 
 			if (!isMonotype && !this.forceMonotype) {
+				if (pokemon.length > 0)
+				{
+					for (const typeName of types) {
+						if (typeWeaknesses[typeName] > typeResistances[typeName])
+						{
+							skip = true;
+							if (Object.values(species.abilities).includes('Color Change')) {
+								if (typeName.includes(COLOR_CHANGE_RESIST)) {
+									skip = false;
+									break;
+								}
+							}
+							else if (this.dex.getEffectiveness(typeName, species) < 0)
+							{
+								skip = false;
+								break;
+							}
+						}
+					}
+					if (skip) continue;
+				}
+				
 				/*
 				if (leadNum < 1)
 				{
@@ -925,10 +956,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				// Limit two weak to any type, and one double weak to a single type
 				for (const typeName of this.dex.types.names()) {
 					if (!typeResistances[typeName]) typeResistances[typeName] = 0;
+					if (!typeDoubleResistances[typeName]) typeResistances[typeName] = 0;
 					if (!typeImmunities[typeName]) typeImmunities[typeName] = 0;
+					if (!typeWeaknesses[typeName]) typeWeaknesses[typeName] = 0;
+					if (!typeDoubleWeaknesses[typeName]) typeDoubleWeaknesses[typeName] = 0;
+					
 					// Color change consideration
 					if (Object.values(species.abilities).includes('Color Change')) {
-						if (typeName === 'Ghost' || typeName === 'Dragon') {
+						if (typeName.includes(COLOR_CHANGE_WEAK)) {
 							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
 								skip = true;
 								break;
@@ -937,7 +972,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					} else { // We don't have Color Change
 						// Current generated mon is 2x weak to the type
 						if (this.dex.getEffectiveness(typeName, species) > 0) {
-							if (!typeWeaknesses[typeName]) typeWeaknesses[typeName] = 0;
 							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
 								skip = true;
 								break;
@@ -945,7 +979,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 						// Currently generated mon is 4x weak to the type
 						if (this.dex.getEffectiveness(typeName, species) > 1) {
-							if (!typeDoubleWeaknesses[typeName]) typeDoubleWeaknesses[typeName] = 0;
 							if (typeDoubleWeaknesses[typeName] >= limitFactor) {
 								skip = true;
 								break;
@@ -985,12 +1018,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			// Increment weakness, resistance and immunity counter
 			for (const typeName of this.dex.types.names()) {
 				if (Object.values(species.abilities).includes('Color Change')) {
-					if (typeName === 'Ghost' || typeName === 'Dragon') {
+					if (typeName.includes(COLOR_CHANGE_WEAK)) {
 						typeWeaknesses[typeName]++;
 					}
-					if (typeName === 'Poison' || typeName === 'Steel' || typeName === 'Fire'
-					|| typeName === 'Water' || typeName === 'Grass' || typeName === 'Electric'
-					|| typeName === 'Psychic' || typeName === 'Ice' || typeName === 'Dark') {
+					if (typeName.includes(COLOR_CHANGE_RESIST)) {
 						typeResistances[typeName]++;
 					}
 				} else {
