@@ -1245,22 +1245,22 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 		return pokemon;
 	}
-}
-
-/*
-	Returns true if the source type has an immunity, false otherwise.
-*/
-function CheckTypeHasImmunity(
-	source: { type: string } | string
-): boolean {
-	for (const typeName of this.dex.types.names())
-	{
-		if (!this.dex.getImmunity(source, typeName)) {
-			return true;
-		}
-	}
 	
-	return false;
+	/*
+	Returns true if the source type has an immunity, false otherwise.
+	*/
+	function CheckTypeHasImmunity(
+		source: { type: string } | string
+	): boolean {
+		for (const typeName of this.dex.types.names())
+		{
+			if (!this.dex.getImmunity(source, typeName)) {
+				return true;
+			}
+		}
+		
+		return false;
+	}
 }
 
 export default RandomGen4Teams;
