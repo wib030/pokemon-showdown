@@ -964,7 +964,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
 			
-			if (pokemon.length > 1)
+			if (pokemon.length > 0)
 			{
 			
 			for (const typeName of this.dex.types.names()) {
