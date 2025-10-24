@@ -1112,7 +1112,17 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			{
 				if (typeDoubleWeaknesses[typeName] > typeImmunities[typeName])
 				{
-					if (CheckTypeHasImmunity(typeName))
+					let typeHasImmunity = false;
+					
+					for (const defendingTypeName of this.dex.types.names())
+					{
+						if (!this.dex.getImmunity(typeName, defendingTypeName)) {
+							typeHasImmunity = true;
+							break;
+						}
+					}
+					
+					if (typeHasImmunity)
 					{
 						typesToImmune.push(typeName);
 					}
@@ -1244,21 +1254,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		}
 
 		return pokemon;
-	}
-	
-	/*
-	Returns true if the attacking type has an immunity, false otherwise.
-	*/
-	function CheckTypeHasImmunity(attackingType)
-	{
-		for (const typeName of this.dex.types.names())
-		{
-			if (!this.dex.getImmunity(attackingType, typeName)) {
-				return true;
-			}
-		}
-		
-		return false;
 	}
 }
 
