@@ -314,13 +314,13 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["bravebird", "heatwave", "return", "roost"],
-                "abilities": ["Tangled Feet"],
+                "abilities": ["No Guard"],
 				"inclination": "Mixed"
             },
             {
                 "role": "Wallbreaker",
                 "movepool": ["bravebird", "doubleedge", "pursuit", "quickattack", "return", "roost", "uturn"],
-                "abilities": ["Tangled Feet"],
+                "abilities": ["No Guard"],
 				"inclination": "Physical"
             }
         ]
@@ -331,7 +331,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["crunch", "facade", "protect", "suckerpunch", "swordsdance", "uturn"],
-                "abilities": ["Guts"],
+                "abilities": ["Simple"],
 				"inclination": "Physical"
             }
         ]
@@ -471,7 +471,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["encore", "focusblast", "grassknot", "hiddenpowerice", "nastyplot", "surf", "thunderbolt"],
-                "abilities": ["Static"],
+                "abilities": ["Lightning Rod"],
 				"inclination": "Special"
             }
         ]
@@ -482,13 +482,13 @@
             {
                 "role": "Hazard Removal",
                 "movepool": ["earthquake", "nightslash", "rapidspin", "stealthrock", "stoneedge", "toxic"],
-                "abilities": ["Sand Veil"],
+                "abilities": ["Rough Skin"],
 				"inclination": "Physical"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["earthquake", "nightslash", "stoneedge", "substitute", "swordsdance", "xscissor"],
-                "abilities": ["Sand Veil"],
+                "abilities": ["Rough Skin"],
                 "preferredTypes": ["Rock"],
 				"inclination": "Physical"
             }
@@ -500,7 +500,7 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["earthquake", "fireblast", "icebeam", "roar", "sludgebomb", "stealthrock", "toxicspikes"],
-                "abilities": ["Poison Point"],
+                "abilities": ["Poison Point", "Competitive"],
 				"inclination": "Mixed"
             }
         ]
@@ -511,7 +511,7 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["earthquake", "fireblast", "icebeam", "megahorn", "sludgebomb", "stealthrock", "suckerpunch", "thunderbolt"],
-                "abilities": ["Poison Point"],
+                "abilities": ["Sheer Force"],
 				"inclination": "Mixed"
             }
         ]
@@ -522,13 +522,13 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["aromatherapy", "doubleedge", "fireblast", "icebeam", "softboiled", "stealthrock", "thunderwave"],
-                "abilities": ["Magic Guard"],
+                "abilities": ["Magic Guard", "Unaware"],
 				"inclination": "Mixed"
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["calmmind", "icebeam", "softboiled", "thunderbolt"],
-                "abilities": ["Magic Guard"],
+                "abilities": ["Magic Guard", "Unaware"],
 				"inclination": "Special"
             }
         ]
@@ -539,7 +539,7 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["energyball", "fireblast", "hiddenpowerrock", "hypnosis", "nastyplot"],
-                "abilities": ["Flash Fire"],
+                "abilities": ["Drought"],
                 "preferredTypes": ["Grass"],
 				"inclination": "Special"
             }
@@ -551,19 +551,19 @@
             {
                 "role": "Fast Support",
                 "movepool": ["doubleedge", "protect", "thunderwave", "toxic", "wish"],
-                "abilities": ["Cute Charm"],
+                "abilities": ["Free Sample", "Frisk"],
 				"inclination": "Physical"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["bodyslam", "fireblast", "healbell", "protect", "stealthrock", "wish"],
-                "abilities": ["Cute Charm"],
+                "abilities": ["Free Sample", "Frisk"],
 				"inclination": "Mixed"
             },
             {
                 "role": "Staller",
                 "movepool": ["protect", "seismictoss", "toxic", "wish"],
-                "abilities": ["Cute Charm"],
+                "abilities": ["Free Sample", "Frisk"],
 				"inclination": "Support"
             }
         ]
@@ -574,13 +574,13 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["aromatherapy", "energyball", "hiddenpowerground", "sleeppowder", "sludgebomb", "synthesis"],
-                "abilities": ["Chlorophyll"],
+                "abilities": ["Chlorophyll", "Strangle Weed"],
 				"inclination": "Special"
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["hiddenpowerfire", "sludgebomb", "solarbeam", "sunnyday"],
-                "abilities": ["Chlorophyll"],
+                "abilities": ["Chlorophyll", "Strangle Weed"],
 				"inclination": "Special"
             }
         ]
@@ -591,13 +591,13 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["aromatherapy", "seedbomb", "spore", "stunspore", "synthesis", "xscissor"],
-                "abilities": ["Dry Skin"],
+                "abilities": ["Chlorophyll", "Dry Skin"],
 				"inclination": "Physical"
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["pursuit", "seedbomb", "spore", "swordsdance", "xscissor"],
-                "abilities": ["Dry Skin"],
+                "abilities": ["Chlorophyll", "Dry Skin"],
 				"inclination": "Physical"
             }
         ]
@@ -619,7 +619,7 @@
             {
                 "role": "Fast Support",
                 "movepool": ["earthquake", "nightslash", "stealthrock", "stoneedge", "suckerpunch"],
-                "abilities": ["Arena Trap"],
+                "abilities": ["Sand Force"],
                 "preferredTypes": ["Rock"],
 				"inclination": "Physical"
             }
@@ -643,7 +643,7 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["calmmind", "encore", "focusblast", "hiddenpowergrass", "hydropump", "icebeam", "psychic", "surf"],
-                "abilities": ["Cloud Nine"],
+                "abilities": ["Cloud Nine", "Headache"],
                 "preferredTypes": ["Ice"],
 				"inclination": "Special"
             }
@@ -655,7 +655,7 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["closecombat", "earthquake", "encore", "stoneedge", "uturn"],
-                "abilities": ["Vital Spirit"],
+                "abilities": ["Defiant"],
                 "preferredTypes": ["Rock"],
 				"inclination": "Physical"
             }
@@ -1043,7 +1043,7 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["haze", "hydropump", "icebeam", "rapidspin", "sludgebomb", "surf", "toxicspikes"],
-                "abilities": ["Clear Body", "Liquid Ooze"],
+                "abilities": ["Rain Dish", "Liquid Ooze"],
 				"inclination": "Special"
             }
         ]
@@ -1054,7 +1054,7 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["earthquake", "explosion", "stealthrock", "stoneedge", "suckerpunch", "toxic"],
-                "abilities": ["Rock Head"],
+                "abilities": ["Sturdy", "No Guard"],
 				"inclination": "Physical"
             }
         ]
@@ -1076,14 +1076,14 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["fireblast", "icebeam", "psychic", "slackoff", "surf", "thunderwave", "toxic"],
-                "abilities": ["Own Tempo"],
+                "abilities": ["Magic Guard"],
                 "preferredTypes": ["Psychic"],
 				"inclination": "Special"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["calmmind", "psychic", "slackoff", "surf"],
-                "abilities": ["Own Tempo"],
+                "abilities": ["Magic Guard"],
 				"inclination": "Special"
             }
         ]
@@ -1239,7 +1239,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["bravebird", "pursuit", "quickattack", "return", "roost"],
-                "abilities": ["Early Bird"],
+                "abilities": ["Adaptability"],
 				"inclination": "Physical"
             }
         ]
@@ -1250,19 +1250,19 @@
             {
                 "role": "Staller",
                 "movepool": ["icebeam", "protect", "surf", "toxic"],
-                "abilities": ["Thick Fat"],
+                "abilities": ["Thick Fat", "Unaware"],
 				"inclination": "Special"
             },
             {
                 "role": "Fast Attacker",
                 "movepool": ["raindance", "rest", "surf", "toxic"],
-                "abilities": ["Hydration"],
+                "abilities": ["Thick Fat", "Unaware"],
 				"inclination": "Special"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["encore", "icebeam", "raindance", "rest", "surf", "toxic"],
-                "abilities": ["Hydration", "Thick Fat"],
+                "abilities": ["Thick Fat", "Unaware"],
 				"inclination": "Special"
             }
         ]
@@ -1273,7 +1273,7 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["brickbreak", "curse", "explosion", "gunkshot", "icepunch", "payback", "poisonjab", "rest", "shadowsneak"],
-                "abilities": ["Sticky Hold"],
+                "abilities": ["Slurp Up", "Poison Touch"],
                 "preferredTypes": ["Fighting"],
 				"inclination": "Physical"
             }
@@ -1565,19 +1565,19 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["protect", "psychic", "thunderwave", "toxic", "wish"],
-                "abilities": ["Insomnia"],
+                "abilities": ["Bad Dreams", "Forewarn"],
 				"inclination": "Special"
             },
             {
                 "role": "Staller",
                 "movepool": ["protect", "seismictoss", "toxic", "wish"],
-                "abilities": ["Insomnia"],
+                "abilities": ["Bad Dreams", "Forewarn"],
 				"inclination": "Support"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["batonpass", "focusblast", "nastyplot", "psychic"],
-                "abilities": ["Insomnia"],
+                "abilities": ["Bad Dreams", "Forewarn"],
 				"inclination": "Special"
             }
         ]
@@ -1588,13 +1588,13 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["crabhammer", "return", "superpower", "swordsdance", "xscissor"],
-                "abilities": ["Hyper Cutter"],
+                "abilities": ["Sheer Force"],
 				"inclination": "Physical"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["agility", "crabhammer", "return", "swordsdance"],
-                "abilities": ["Hyper Cutter"],
+                "abilities": ["Sheer Force"],
 				"inclination": "Physical"
             }
         ]
@@ -1605,7 +1605,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["explosion", "hiddenpowerice", "signalbeam", "taunt", "thunderbolt"],
-                "abilities": ["Static"],
+                "abilities": ["Static", "Sturdy"],
                 "preferredTypes": ["Ice"],
 				"inclination": "Special"
             }
@@ -1629,7 +1629,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["doubleedge", "earthquake", "firepunch", "stealthrock", "stoneedge", "swordsdance"],
-                "abilities": ["Rock Head"],
+                "abilities": ["Skill Link"],
                 "preferredTypes": ["Rock"],
 				"inclination": "Physical"
             }
@@ -1641,14 +1641,14 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["closecombat", "earthquake", "machpunch", "rapidspin", "stoneedge", "suckerpunch"],
-                "abilities": ["Limber"],
+                "abilities": ["Unburden"],
                 "preferredTypes": ["Rock"],
 				"inclination": "Physical"
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["bulkup", "closecombat", "earthquake", "machpunch", "stoneedge", "suckerpunch"],
-                "abilities": ["Limber"],
+                "abilities": ["Unburden"],
                 "preferredTypes": ["Rock"],
 				"inclination": "Physical"
             }
@@ -1660,13 +1660,13 @@
             {
                 "role": "Hazard Removal",
                 "movepool": ["closecombat", "drainpunch", "icepunch", "machpunch", "rapidspin", "stoneedge"],
-                "abilities": ["Iron Fist"],
+                "abilities": ["Iron Fist", "Technician"],
 				"inclination": "Physical"
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["bulkup", "closecombat", "drainpunch", "icepunch", "machpunch", "stoneedge"],
-                "abilities": ["Iron Fist"],
+                "abilities": ["Iron Fist", "Technician"],
 				"inclination": "Physical"
             }
         ]
@@ -1677,13 +1677,13 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["explosion", "fireblast", "haze", "painsplit", "sludgebomb", "willowisp"],
-                "abilities": ["Levitate"],
+                "abilities": ["Levitate", "Neutralizing Gas"],
 				"inclination": "Special"
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["fireblast", "rest", "sleeptalk", "sludgebomb"],
-                "abilities": ["Levitate"],
+                "abilities": ["Levitate", "Neutralizing Gas"],
 				"inclination": "Special"
             }
         ]
@@ -1711,7 +1711,7 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["icebeam", "megahorn", "raindance", "return", "waterfall"],
-                "abilities": ["Swift Swim"],
+                "abilities": ["Swift Swim", "Volt Absorb"],
 				"inclination": "Physical"
             }
         ]
@@ -1797,7 +1797,7 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["doubleedge", "earthquake", "payback", "pursuit", "return", "stoneedge"],
-                "abilities": ["Intimidate"],
+                "abilities": ["Adaptability"],
 				"inclination": "Physical"
             }
         ]
@@ -2116,7 +2116,7 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["earthpower", "icebeam", "spikes", "stealthrock", "surf", "toxicspikes"],
-                "abilities": ["Shell Armor", "Swift Swim"],
+                "abilities": ["Battle Armor", "Swift Swim"],
                 "preferredTypes": ["Ice"],
 				"inclination": "Special"
             }
@@ -2339,13 +2339,13 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["heatwave", "hiddenpowerice", "roost", "substitute", "thunderbolt", "toxic", "uturn"],
-                "abilities": ["Pressure"],
+                "abilities": ["Static", "Drizzle"],
 				"inclination": "Special"
             },
             {
                 "role": "Fast Attacker",
                 "movepool": ["heatwave", "hiddenpowerice", "roost", "thunderbolt", "uturn"],
-                "abilities": ["Pressure"],
+                "abilities": ["Static", "Drizzle"],
 				"inclination": "Special"
             }
         ]
@@ -2356,7 +2356,7 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["airslash", "fireblast", "hiddenpowergrass", "roost", "substitute", "toxic", "uturn"],
-                "abilities": ["Pressure"],
+                "abilities": ["Flame Body", "Drought"],
 				"inclination": "Special"
             }
         ]
@@ -2493,19 +2493,19 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["psychic", "softboiled", "stealthrock", "taunt", "uturn", "willowisp"],
-                "abilities": ["Synchronize"],
+                "abilities": ["Synchronize", "Genetic Freak"],
 				"inclination": "Special"
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["aurasphere", "batonpass", "earthpower", "fireblast", "nastyplot", "psychic", "softboiled"],
-                "abilities": ["Synchronize"],
+                "abilities": ["Synchronize", "Genetic Freak"],
 				"inclination": "Special"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["batonpass", "earthquake", "explosion", "swordsdance", "zenheadbutt"],
-                "abilities": ["Synchronize"],
+                "abilities": ["Synchronize", "Genetic Freak"],
                 "preferredTypes": ["Ground"],
 				"inclination": "Physical"
             }
@@ -2517,7 +2517,7 @@
             {
                 "role": "Staller",
                 "movepool": ["aromatherapy", "earthquake", "energyball", "leechseed", "synthesis", "toxic"],
-                "abilities": ["Overgrow"],
+                "abilities": ["Overgrow", "Drought"],
 				"inclination": "Mixed"
             }
         ]
@@ -2528,7 +2528,7 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["eruption", "fireblast", "focusblast", "hiddenpowergrass", "hiddenpowerrock"],
-                "abilities": ["Blaze"],
+                "abilities": ["Blaze", "Mold Breaker"],
 				"inclination": "Special"
             }
         ]
@@ -2539,19 +2539,19 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["dragondance", "earthquake", "icepunch", "waterfall"],
-                "abilities": ["Torrent"],
+                "abilities": ["Strong Jaw"],
 				"inclination": "Physical"
             },
             {
                 "role": "Fast Attacker",
                 "movepool": ["aquajet", "return", "swordsdance", "waterfall"],
-                "abilities": ["Torrent"],
+                "abilities": ["Strong Jaw"],
 				"inclination": "Physical"
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["aquajet", "earthquake", "icepunch", "superpower", "waterfall"],
-                "abilities": ["Torrent"],
+                "abilities": ["Strong Jaw"],
                 "preferredTypes": ["Ice"],
 				"inclination": "Physical"
             }
@@ -2563,7 +2563,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["aquatail", "doubleedge", "firepunch", "shadowclaw", "trick", "uturn"],
-                "abilities": ["Keen Eye"],
+                "abilities": ["Unburden"],
 				"inclination": "Physical"
             }
         ]
@@ -2574,7 +2574,7 @@
             {
                 "role": "Staller",
                 "movepool": ["airslash", "nightshade", "roost", "toxic", "whirlwind"],
-                "abilities": ["Insomnia"],
+                "abilities": ["Intimidate"],
 				"inclination": "Special"
             }
         ]
@@ -2873,14 +2873,14 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["calmmind", "grassknot", "heatwave", "hiddenpowerfighting", "psychic", "roost", "trick", "uturn"],
-                "abilities": ["Synchronize"],
+                "abilities": ["Magic Bounce"],
                 "preferredTypes": ["Fire"],
 				"inclination": "Special"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["heatwave", "hiddenpowerfighting", "psychic", "roost", "thunderwave", "toxic"],
-                "abilities": ["Synchronize"],
+                "abilities": ["Magic Bounce"],
 				"inclination": "Special"
             }
         ]
@@ -3135,7 +3135,7 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["earthquake", "explosion", "stealthrock", "stoneedge", "suckerpunch", "toxic", "woodhammer"],
-                "abilities": ["Rock Head"],
+                "abilities": ["Rock Solid"],
 				"inclination": "Physical"
             }
         ]
@@ -3146,14 +3146,14 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["encore", "focusblast", "hiddenpowergrass", "hydropump", "icebeam", "rest", "surf", "toxic"],
-                "abilities": ["Water Absorb"],
+                "abilities": ["Drizzle"],
                 "preferredTypes": ["Ice"],
 				"inclination": "Special"
             },
             {
                 "role": "Staller",
                 "movepool": ["encore", "icebeam", "protect", "surf", "toxic"],
-                "abilities": ["Water Absorb"],
+                "abilities": ["Drizzle"],
 				"inclination": "Special"
             }
         ]
@@ -3164,13 +3164,13 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["encore", "energyball", "sleeppowder", "toxic", "uturn"],
-                "abilities": ["Chlorophyll"],
+                "abilities": ["Chlorophyll", "Thirsty"],
 				"inclination": "Special"
             },
             {
                 "role": "Fast Support",
                 "movepool": ["hiddenpowerflying", "leechseed", "protect", "sleeppowder", "substitute"],
-                "abilities": ["Chlorophyll"],
+                "abilities": ["Chlorophyll", "Thirsty"],
 				"inclination": "Special"
             }
         ]
@@ -3181,7 +3181,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["earthpower", "hiddenpowerfire", "hiddenpowerice", "hiddenpowerrock", "leafstorm", "sludgebomb"],
-                "abilities": ["Chlorophyll"],
+                "abilities": ["Solar Power", "Thirsty"],
 				"inclination": "Special"
             }
         ]
@@ -3192,7 +3192,7 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["earthquake", "encore", "icebeam", "recover", "toxic", "waterfall"],
-                "abilities": ["Water Absorb"],
+                "abilities": ["Water Absorb", "Unaware"],
 				"inclination": "Physical"
             }
         ]
@@ -3455,14 +3455,14 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["fireblast", "icebeam", "psychic", "slackoff", "surf", "thunderwave", "toxic"],
-                "abilities": ["Own Tempo"],
+                "abilities": ["Magic Guard"],
                 "preferredTypes": ["Psychic"],
 				"inclination": "Special"
             },
             {
                 "role": "Wallbreaker",
                 "movepool": ["fireblast", "icebeam", "psychic", "slackoff", "surf", "trick", "trickroom"],
-                "abilities": ["Own Tempo"],
+                "abilities": ["Magic Guard"],
                 "preferredTypes": ["Psychic"],
 				"inclination": "Special"
             }
@@ -3496,7 +3496,7 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["batonpass", "calmmind", "hiddenpowerfighting", "psychic", "substitute", "thunderbolt"],
-                "abilities": ["Inner Focus"],
+                "abilities": ["Early Bird", "Gluttony"],
 				"inclination": "Special"
             }
         ]
@@ -3680,13 +3680,13 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["earthquake", "explosion", "ironhead", "roar", "stealthrock", "stoneedge", "toxic"],
-                "abilities": ["Rock Head"],
+                "abilities": ["Magnet Pull", "Shed Skin"],
 				"inclination": "Physical"
             },
             {
                 "role": "Staller",
                 "movepool": ["earthquake", "ironhead", "protect", "toxic"],
-                "abilities": ["Rock Head"],
+                "abilities": ["Magnet Pull", "Shed Skin"],
 				"inclination": "Physical"
             }
         ]
@@ -3697,7 +3697,7 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["closecombat", "crunch", "healbell", "return", "thunderwave"],
-                "abilities": ["Intimidate"],
+                "abilities": ["Intimidate", "Guts"],
 				"inclination": "Physical"
             }
         ]
@@ -3708,7 +3708,7 @@
             {
                 "role": "Fast Support",
                 "movepool": ["destinybond", "explosion", "spikes", "thunderwave", "toxicspikes", "waterfall"],
-                "abilities": ["Poison Point", "Swift Swim"],
+                "abilities": ["Intimidate", "Swift Swim"],
 				"inclination": "Physical"
             }
         ]
@@ -3736,7 +3736,7 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["encore", "knockoff", "stealthrock", "toxic"],
-                "abilities": ["Gluttony"],
+                "abilities": ["Sturdy", "Shield Dust"],
 				"inclination": "Support"
             }
         ]
@@ -3747,13 +3747,13 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["closecombat", "facade", "megahorn", "nightslash"],
-                "abilities": ["Guts"],
+                "abilities": ["Guts", "Compound Eyes"],
 				"inclination": "Physical"
             },
             {
                 "role": "Fast Attacker",
                 "movepool": ["closecombat", "earthquake", "megahorn", "nightslash", "stoneedge", "swordsdance"],
-                "abilities": ["Guts"],
+                "abilities": ["Guts", "Compound Eyes"],
 				"inclination": "Physical"
             }
         ]
@@ -3792,7 +3792,7 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["explosion", "powergem", "recover", "stealthrock", "surf", "toxic"],
-                "abilities": ["Natural Cure"],
+                "abilities": ["Magic Guard"],
 				"inclination": "Special"
             }
         ]
@@ -3803,7 +3803,7 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["energyball", "fireblast", "icebeam", "surf", "thunderwave"],
-                "abilities": ["Sniper"],
+                "abilities": ["Sniper", "Suction Cups"],
 				"inclination": "Special"
             }
         ]
@@ -3814,7 +3814,7 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["icebeam", "iceshard", "rapidspin", "seismictoss", "toxic"],
-                "abilities": ["Vital Spirit"],
+                "abilities": ["Slush Rush"],
 				"inclination": "Special"
             }
         ]
@@ -3842,13 +3842,13 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["bravebird", "roost", "spikes", "stealthrock", "whirlwind"],
-                "abilities": ["Keen Eye"],
+                "abilities": ["Sturdy"],
 				"inclination": "Physical"
             },
             {
                 "role": "Staller",
                 "movepool": ["bravebird", "roost", "spikes", "stealthrock", "toxic"],
-                "abilities": ["Keen Eye"],
+                "abilities": ["Sturdy"],
 				"inclination": "Physical"
             }
         ]
@@ -3859,7 +3859,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["darkpulse", "fireblast", "hiddenpowergrass", "nastyplot", "suckerpunch"],
-                "abilities": ["Flash Fire"],
+                "abilities": ["Solar Power"],
 				"inclination": "Special"
             }
         ]
@@ -3893,14 +3893,14 @@
             {
                 "role": "Hazard Removal",
                 "movepool": ["earthquake", "iceshard", "rapidspin", "stealthrock", "stoneedge", "toxic"],
-                "abilities": ["Sturdy"],
+                "abilities": ["Sturdy", "Steadfast"],
                 "preferredTypes": ["Rock"],
 				"inclination": "Physical"
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["earthquake", "gunkshot", "iceshard", "stealthrock", "stoneedge"],
-                "abilities": ["Sturdy"],
+                "abilities": ["Sturdy", "Steadfast"],
                 "preferredTypes": ["Rock"],
 				"inclination": "Physical"
             }
@@ -3923,7 +3923,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["earthquake", "hypnosis", "megahorn", "return", "suckerpunch", "thunderbolt"],
-                "abilities": ["Intimidate"],
+                "abilities": ["Snow Warning"],
                 "preferredTypes": ["Ground"],
 				"inclination": "Physical"
             }
@@ -3935,7 +3935,7 @@
             {
                 "role": "Fast Support",
                 "movepool": ["explosion", "spikes", "spore", "stealthrock", "whirlwind"],
-                "abilities": ["Own Tempo"],
+                "abilities": ["Dabble"],
 				"inclination": "Special"
             }
         ]
@@ -3957,7 +3957,7 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["bodyslam", "curse", "earthquake", "healbell", "milkdrink", "stealthrock", "toxic"],
-                "abilities": ["Thick Fat"],
+                "abilities": ["Thick Fat", "Fresh Milk"],
 				"inclination": "Physical"
             }
         ]
@@ -4296,13 +4296,13 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["calmmind", "rest", "sleeptalk", "surf"],
-                "abilities": ["Pressure"],
+                "abilities": ["Pressure", "Rain Dish"],
 				"inclination": "Special"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["calmmind", "hydropump", "icebeam", "rest", "substitute", "surf"],
-                "abilities": ["Pressure"],
+                "abilities": ["Pressure", "Rain Dish"],
 				"inclination": "Special"
             }
         ]
@@ -4330,13 +4330,13 @@
             {
                 "role": "Staller",
                 "movepool": ["aeroblast", "earthquake", "roost", "substitute", "toxic", "whirlwind"],
-                "abilities": ["Pressure"],
+                "abilities": ["Multiscale"],
 				"inclination": "Special"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["aeroblast", "calmmind", "earthpower", "roost"],
-                "abilities": ["Pressure"],
+                "abilities": ["Multiscale"],
 				"inclination": "Special"
             }
         ]
@@ -4347,7 +4347,7 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["bravebird", "earthquake", "roost", "sacredfire", "substitute", "toxic"],
-                "abilities": ["Pressure"],
+                "abilities": ["Magic Guard"],
 				"inclination": "Physical"
             }
         ]
@@ -4743,13 +4743,13 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["earthquake", "focusblast", "hiddenpowerfire", "hiddenpowerice", "leafstorm", "rockslide"],
-                "abilities": ["Overgrow"],
+                "abilities": ["Unburden"],
 				"inclination": "Mixed"
             },
             {
                 "role": "Staller",
                 "movepool": ["energyball", "hiddenpowerfire", "hiddenpowerice", "leechseed", "substitute"],
-                "abilities": ["Overgrow"],
+                "abilities": ["Unburden"],
 				"inclination": "Special"
             }
         ]
@@ -4822,7 +4822,7 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["bugbuzz", "hiddenpowerground", "psychic", "uturn"],
-                "abilities": ["Swarm"],
+                "abilities": ["Serene Grace"],
 				"inclination": "Special"
             }
         ]
@@ -4861,13 +4861,13 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["darkpulse", "explosion", "hiddenpowerfire", "leafstorm", "lowkick", "suckerpunch"],
-                "abilities": ["Chlorophyll", "Early Bird"],
+                "abilities": ["Chlorophyll", "Solar Power"],
 				"inclination": "Mixed"
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["lowkick", "seedbomb", "suckerpunch", "swordsdance"],
-                "abilities": ["Chlorophyll", "Early Bird"],
+                "abilities": ["Chlorophyll", "Solar Power"],
 				"inclination": "Physical"
             }
         ]
@@ -4895,7 +4895,7 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["airslash", "hiddenpowergrass", "hydropump", "icebeam", "roost", "surf", "toxic", "uturn"],
-                "abilities": ["Keen Eye"],
+                "abilities": ["Drizzle"],
 				"inclination": "Special"
             }
         ]
@@ -4906,14 +4906,14 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["focusblast", "healingwish", "psychic", "shadowball", "thunderbolt", "trick"],
-                "abilities": ["Trace"],
+                "abilities": ["Trace", "Rivalry"],
                 "preferredTypes": ["Fighting"],
 				"inclination": "Special"
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["calmmind", "focusblast", "psychic", "shadowball", "substitute", "willowisp"],
-                "abilities": ["Trace"],
+                "abilities": ["Trace", "Rivalry"],
                 "preferredTypes": ["Fighting"],
 				"inclination": "Special"
             }
@@ -5241,7 +5241,7 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["bulkup", "bulletpunch", "closecombat", "payback", "stoneedge"],
-                "abilities": ["Thick Fat"],
+                "abilities": ["Guts"],
 				"inclination": "Physical"
             }
         ]
@@ -5337,7 +5337,7 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["payback", "recover", "seismictoss", "toxic", "willowisp"],
-                "abilities": ["Keen Eye"],
+                "abilities": ["Magic Bounce"],
 				"inclination": "Physical"
             }
         ]
@@ -5511,7 +5511,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["flamethrower", "hiddenpowerice", "overheat", "switcheroo", "thunderbolt"],
-                "abilities": ["Static"],
+                "abilities": ["Motor Drive", "Lightning Rod"],
 				"inclination": "Special"
             }
         ]
@@ -5522,14 +5522,14 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["batonpass", "encore", "hiddenpowerice", "nastyplot", "thunderbolt"],
-                "abilities": ["Plus"],
+                "abilities": ["Quick Feet"],
                 "preferredTypes": ["Ice"],
 				"inclination": "Special"
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["grassknot", "hiddenpowerice", "nastyplot", "thunderbolt"],
-                "abilities": ["Plus"],
+                "abilities": ["Quick Feet"],
 				"inclination": "Special"
             }
         ]
@@ -5540,14 +5540,14 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["batonpass", "encore", "hiddenpowerice", "nastyplot", "thunderbolt"],
-                "abilities": ["Minus"],
+                "abilities": ["Static"],
                 "preferredTypes": ["Ice"],
 				"inclination": "Special"
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["grassknot", "hiddenpowerice", "nastyplot", "thunderbolt"],
-                "abilities": ["Minus"],
+                "abilities": ["Static"],
 				"inclination": "Special"
             }
         ]
@@ -5558,19 +5558,19 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["batonpass", "bugbuzz", "substitute", "tailglow"],
-                "abilities": ["Swarm"],
+                "abilities": ["Unaware"],
 				"inclination": "Special"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["batonpass", "bugbuzz", "encore", "tailglow"],
-                "abilities": ["Swarm"],
+                "abilities": ["Unaware"],
 				"inclination": "Special"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["batonpass", "bugbuzz", "roost", "tailglow"],
-                "abilities": ["Swarm"],
+                "abilities": ["Unaware"],
 				"inclination": "Special"
             }
         ]
@@ -5581,7 +5581,7 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["bugbuzz", "encore", "roost", "thunderwave", "toxic", "uturn"],
-                "abilities": ["Tinted Lens"],
+                "abilities": ["Poison Heal"],
 				"inclination": "Special"
             }
         ]
@@ -5744,7 +5744,7 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["earthquake", "explosion", "lavaplume", "rapidspin", "stealthrock", "yawn"],
-                "abilities": ["White Smoke"],
+                "abilities": ["Drought"],
 				"inclination": "Mixed"
             }
         ]
@@ -5755,13 +5755,13 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["focusblast", "healbell", "psychic", "thunderwave", "toxic"],
-                "abilities": ["Thick Fat"],
+                "abilities": ["Thick Fat", "Scrappy"],
 				"inclination": "Special"
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["calmmind", "focusblast", "psychic", "shadowball", "trick"],
-                "abilities": ["Thick Fat"],
+                "abilities": ["Thick Fat", "Scrappy"],
 				"inclination": "Special"
             }
         ]
@@ -5772,19 +5772,19 @@
             {
                 "role": "Staller",
                 "movepool": ["encore", "protect", "seismictoss", "shadowball", "substitute", "toxic"],
-                "abilities": ["Own Tempo"],
+                "abilities": ["Cute Charm"],
 				"inclination": "Support"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["protect", "seismictoss", "toxic", "wish"],
-                "abilities": ["Own Tempo"],
+                "abilities": ["Cute Charm"],
 				"inclination": "Support"
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["doubleedge", "fakeout", "lowkick", "shadowball", "suckerpunch"],
-                "abilities": ["Own Tempo"],
+                "abilities": ["Cute Charm"],
                 "preferredTypes": ["Fighting"],
 				"inclination": "Physical"
             }
@@ -5931,13 +5931,13 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["darkpulse", "encore", "seedbomb", "spikes", "suckerpunch", "superpower"],
-                "abilities": ["Sand Veil"],
+                "abilities": ["Rough Skin"],
 				"inclination": "Physical"
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["seedbomb", "suckerpunch", "superpower", "swordsdance"],
-                "abilities": ["Sand Veil"],
+                "abilities": ["Rough Skin"],
 				"inclination": "Physical"
             }
         ]
@@ -6103,7 +6103,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["closecombat", "nightslash", "quickattack", "return", "swordsdance"],
-                "abilities": ["Immunity"],
+                "abilities": ["Guts"],
                 "preferredTypes": ["Dark"],
 				"inclination": "Physical"
             }
@@ -6242,7 +6242,7 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["earthquake", "explosion", "icebeam", "psychic", "rapidspin", "stealthrock", "toxic"],
-                "abilities": ["Levitate"],
+                "abilities": ["Levitate", "Memory"],
 				"inclination": "Mixed"
             }
         ]
@@ -6253,7 +6253,7 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["curse", "earthquake", "recover", "seedbomb", "stealthrock", "stoneedge", "swordsdance", "toxic"],
-                "abilities": ["Suction Cups"],
+                "abilities": ["Storm Drain"],
 				"inclination": "Physical"
             }
         ]
@@ -6264,13 +6264,13 @@
             {
                 "role": "Hazard Removal",
                 "movepool": ["earthquake", "rapidspin", "stealthrock", "stoneedge", "toxic", "xscissor"],
-                "abilities": ["Battle Armor"],
+                "abilities": ["Water Absorb"],
 				"inclination": "Physical"
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["aquatail", "earthquake", "rockpolish", "stealthrock", "stoneedge", "swordsdance", "xscissor"],
-                "abilities": ["Battle Armor"],
+                "abilities": ["Water Absorb"],
 				"inclination": "Physical"
             }
         ]
@@ -6281,13 +6281,13 @@
             {
                 "role": "Staller",
                 "movepool": ["haze", "icebeam", "recover", "surf", "toxic"],
-                "abilities": ["Marvel Scale"],
+                "abilities": ["Competitive"],
 				"inclination": "Special"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["icebeam", "rest", "sleeptalk", "surf", "toxic"],
-                "abilities": ["Marvel Scale"],
+                "abilities": ["Competitive"],
 				"inclination": "Special"
             }
         ]
@@ -6729,13 +6729,13 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["earthquake", "headsmash", "stealthrock", "toxic", "waterfall"],
-                "abilities": ["Rock Head"],
+                "abilities": ["Swift Swim"],
 				"inclination": "Physical"
             },
             {
                 "role": "Wallbreaker",
                 "movepool": ["doubleedge", "earthquake", "headsmash", "rockpolish", "waterfall"],
-                "abilities": ["Rock Head"],
+                "abilities": ["Swift Swim"],
                 "preferredTypes": ["Ground"],
 				"inclination": "Physical"
             }
@@ -6770,14 +6770,14 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["agility", "earthquake", "explosion", "meteormash", "zenheadbutt"],
-                "abilities": ["Clear Body"],
+                "abilities": ["Clear Body", "Sand Force"],
                 "preferredTypes": ["Ground"],
 				"inclination": "Physical"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["bulletpunch", "earthquake", "explosion", "meteormash", "stealthrock", "zenheadbutt"],
-                "abilities": ["Clear Body"],
+                "abilities": ["Clear Body", "Sand Force"],
                 "preferredTypes": ["Ground"],
 				"inclination": "Physical"
             }
@@ -7371,13 +7371,13 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["earthquake", "stealthrock", "stoneedge", "synthesis", "woodhammer"],
-                "abilities": ["Overgrow"],
+                "abilities": ["Skill Link"],
 				"inclination": "Physical"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["earthquake", "rockpolish", "stoneedge", "woodhammer"],
-                "abilities": ["Overgrow"],
+                "abilities": ["Skill Link"],
 				"inclination": "Physical"
             }
         ]
@@ -7749,13 +7749,15 @@
                 "role": "Fast Attacker",
                 "movepool": ["bravebird", "closecombat", "doubleedge", "pursuit", "quickattack", "return", "uturn"],
                 "abilities": ["Intimidate"],
-                "preferredTypes": ["Fighting"]
+                "preferredTypes": ["Fighting"],
+				"inclination": "Physical"
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["bravebird", "closecombat", "return", "roost", "uturn"],
                 "abilities": ["Intimidate"],
-                "preferredTypes": ["Fighting"]
+                "preferredTypes": ["Fighting"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -7764,13 +7766,15 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["curse", "quickattack", "return", "waterfall"],
-                "abilities": ["Simple"]
+                "movepool": ["swordsdance", "quickattack", "return", "waterfall"],
+                "abilities": ["Simple"],
+				"inclination": "Physical"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["curse", "quickattack", "return", "waterfall"],
-                "abilities": ["Simple"]
+                "abilities": ["Simple"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -7780,7 +7784,8 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["brickbreak", "nightslash", "return", "swordsdance", "xscissor"],
-                "abilities": ["Swarm"]
+                "abilities": ["Swarm"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -7791,12 +7796,14 @@
                 "role": "Bulky Attacker",
                 "movepool": ["crunch", "icefang", "roar", "superpower", "thunderbolt", "toxic"],
                 "abilities": ["Intimidate"],
-                "preferredTypes": ["Fighting"]
+                "preferredTypes": ["Fighting"],
+				"inclination": "Physical"
             },
             {
                 "role": "Staller",
                 "movepool": ["protect", "superpower", "thunderbolt", "toxic"],
-                "abilities": ["Intimidate"]
+                "abilities": ["Intimidate"],
+				"inclination": "Special"
             }
         ]
     },
@@ -7806,7 +7813,8 @@
             {
                 "role": "Fast Support",
                 "movepool": ["energyball", "hiddenpowerground", "leafstorm", "sleeppowder", "sludgebomb", "spikes", "synthesis", "toxicspikes"],
-                "abilities": ["Natural Cure"]
+                "abilities": ["Technician"],
+				"inclination": "Special"
             }
         ]
     },
@@ -7816,13 +7824,15 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["earthquake", "firepunch", "rockpolish", "stoneedge", "zenheadbutt"],
-                "abilities": ["Mold Breaker"],
-                "preferredTypes": ["Ground"]
+                "abilities": ["Chloroplast"],
+                "preferredTypes": ["Ground"],
+				"inclination": "Physical"
             },
             {
                 "role": "Fast Attacker",
                 "movepool": ["earthquake", "headsmash", "stoneedge", "superpower"],
-                "abilities": ["Mold Breaker"]
+                "abilities": ["Chloroplast"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -7832,7 +7842,8 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["metalburst", "protect", "roar", "rockslide", "stealthrock", "toxic"],
-                "abilities": ["Sturdy"]
+                "abilities": ["Sturdy", "Marvel Scale"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -7842,7 +7853,8 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["hiddenpowerground", "hiddenpowerrock", "leafstorm", "psychic", "signalbeam"],
-                "abilities": ["Anticipation"]
+                "abilities": ["Levitate"],
+				"inclination": "Special"
             }
         ]
     },
@@ -7852,7 +7864,8 @@
             {
                 "role": "Staller",
                 "movepool": ["earthquake", "rest", "sleeptalk", "toxic"],
-                "abilities": ["Anticipation"]
+                "abilities": ["Levitate"],
+				"inclination": "Support"
             }
         ]
     },
@@ -7862,7 +7875,8 @@
             {
                 "role": "Staller",
                 "movepool": ["flashcannon", "protect", "stealthrock", "suckerpunch", "toxic"],
-                "abilities": ["Anticipation"]
+                "abilities": ["Levitate"],
+				"inclination": "Support"
             }
         ]
     },
@@ -7876,7 +7890,8 @@
                 "evs": [0, 8, 0, 252, 0, 248],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Focus Sash",
-				"nature": "Hasty"
+				"nature": "Hasty",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -7885,7 +7900,8 @@
                 "evs": [0, 8, 0, 252, 0, 248],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Expert Belt",
-				"nature": "Hasty"
+				"nature": "Hasty",
+				"inclination": "Special"
             },
 			{
                 "role": "Setup Sweeper",
@@ -7894,7 +7910,8 @@
                 "evs": [0, 0, 24, 252, 0, 232],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Focus Sash",
-				"nature": "Modest"
+				"nature": "Modest",
+				"inclination": "Special"
             },
 			{
                 "role": "Setup Sweeper",
@@ -7903,7 +7920,8 @@
                 "evs": [0, 0, 8, 252, 0, 248],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Life Orb",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Hazard Removal",
@@ -7912,7 +7930,8 @@
                 "evs": [0, 8, 0, 252, 0, 248],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Wide Lens",
-				"nature": "Naive"
+				"nature": "Naive",
+				"inclination": "Special"
             },
 			{
                 "role": "Berry Sweeper",
@@ -7921,7 +7940,8 @@
                 "evs": [0, 0, 8, 252, 0, 248],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Petaya Berry",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Glass Cannon",
@@ -7930,7 +7950,8 @@
                 "evs": [0, 8, 0, 252, 0, 248],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Specs",
-				"nature": "Naive"
+				"nature": "Naive",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Pivot",
@@ -7939,7 +7960,8 @@
                 "evs": [0, 252, 8, 0, 0, 248],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Band",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Setup Sweeper",
@@ -7948,7 +7970,8 @@
                 "evs": [0, 252, 24, 0, 0, 232],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Focus Sash",
-				"nature": "Adamant"
+				"nature": "Adamant",
+				"inclination": "Physical"
             },
 			{
                 "role": "Setup Sweeper",
@@ -7957,7 +7980,8 @@
                 "evs": [0, 252, 8, 0, 0, 248],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Expert Belt",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             }
         ]
     },
@@ -7967,7 +7991,8 @@
             {
                 "role": "Staller",
                 "movepool": ["hiddenpowerflying", "roost", "toxic", "uturn"],
-                "abilities": ["Pressure"]
+                "abilities": ["Pressure"],
+				"inclination": "Support"
             }
         ]
     },
@@ -7977,12 +8002,14 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["discharge", "superfang", "thunderbolt", "thunderwave", "toxic", "uturn"],
-                "abilities": ["Pickup", "Run Away"]
+                "abilities": ["Serene Grace"],
+				"inclination": "Special"
             },
             {
                 "role": "Staller",
                 "movepool": ["protect", "thunderbolt", "toxic", "uturn"],
-                "abilities": ["Pickup", "Run Away"]
+                "abilities": ["Serene Grace"],
+				"inclination": "Special"
             }
         ]
     },
@@ -7993,12 +8020,14 @@
                 "role": "Fast Attacker",
                 "movepool": ["aquajet", "crunch", "icepunch", "return", "waterfall"],
                 "abilities": ["Swift Swim"],
-                "preferredTypes": ["Ice"]
+                "preferredTypes": ["Ice"],
+				"inclination": "Physical"
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["bulkup", "icepunch", "return", "substitute", "waterfall"],
-                "abilities": ["Swift Swim"]
+                "abilities": ["Swift Swim"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -8008,12 +8037,14 @@
             {
                 "role": "Staller",
                 "movepool": ["aromatherapy", "energyball", "hiddenpowerground", "leechseed", "synthesis", "toxic"],
-                "abilities": ["Flower Gift"]
+                "abilities": ["Flower Gift"],
+				"inclination": "Special"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["energyball", "hiddenpowerfire", "hiddenpowerice", "leechseed", "substitute"],
-                "abilities": ["Flower Gift"]
+                "abilities": ["Flower Gift"],
+				"inclination": "Special"
             }
         ]
     },
@@ -8023,7 +8054,8 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["earthquake", "icebeam", "recover", "surf", "toxic"],
-                "abilities": ["Sticky Hold"]
+                "abilities": ["Storm Drain"],
+				"inclination": "Special"
             }
         ]
     },
@@ -8033,7 +8065,8 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["fakeout", "lowkick", "payback", "pursuit", "return", "uturn"],
-                "abilities": ["Technician"]
+                "abilities": ["Technician"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -8043,7 +8076,8 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["batonpass", "calmmind", "hiddenpowerfighting", "rest", "shadowball", "substitute", "thunderbolt"],
-                "abilities": ["Unburden"]
+                "abilities": ["Unburden"],
+				"inclination": "Special"
             }
         ]
     },
@@ -8053,12 +8087,14 @@
             {
                 "role": "Fast Support",
                 "movepool": ["batonpass", "encore", "return", "substitute", "thunderwave", "toxic"],
-                "abilities": ["Cute Charm"]
+                "abilities": ["Scrappy"],
+				"inclination": "Physical"
             },
             {
                 "role": "Wallbreaker",
                 "movepool": ["healingwish", "icepunch", "return", "skyuppercut", "switcheroo"],
-                "abilities": ["Cute Charm"]
+                "abilities": ["Scrappy"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -8068,12 +8104,14 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["destinybond", "hiddenpowerfighting", "painsplit", "shadowball", "substitute", "taunt", "willowisp"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Special"
             },
             {
                 "role": "Wallbreaker",
                 "movepool": ["hiddenpowerfighting", "nastyplot", "shadowball", "thunderbolt", "trick"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Special"
             }
         ]
     },
@@ -8087,7 +8125,8 @@
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Band",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Switch Trapper",
@@ -8096,7 +8135,8 @@
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Band",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fling Setup",
@@ -8105,7 +8145,8 @@
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Power Bracer",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fling Setup",
@@ -8114,7 +8155,8 @@
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Power Bracer",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fast Attacker",
@@ -8123,7 +8165,8 @@
 				"evs": [116, 216, 0, 0, 0, 176],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fast Attacker",
@@ -8132,7 +8175,8 @@
 				"evs": [116, 216, 0, 0, 0, 176],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Hazard Removal",
@@ -8141,7 +8185,8 @@
 				"evs": [116, 216, 0, 0, 0, 176],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Setup Sweeper",
@@ -8150,7 +8195,8 @@
 				"evs": [80, 0, 0, 252, 0, 176],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Setup Sweeper",
@@ -8159,7 +8205,8 @@
 				"evs": [76, 0, 4, 252, 0, 176],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Salac Berry",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Bulky Setup",
@@ -8168,7 +8215,8 @@
 				"evs": [252, 0, 76, 0, 0, 180],
 				"ivs": [31, 3, 30, 30, 30, 30],
 				"item": "Leftovers",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -8177,7 +8225,8 @@
 				"evs": [0, 252, 0, 4, 0, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Scarf",
-				"nature": "Hasty"
+				"nature": "Hasty",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fast Support",
@@ -8186,7 +8235,8 @@
 				"evs": [116, 216, 0, 0, 0, 176],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             }
         ]
     },
@@ -8196,7 +8246,8 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["fakeout", "irontail", "return", "shadowclaw", "uturn"],
-                "abilities": ["Thick Fat"]
+                "abilities": ["Thick Fat", "Defiant"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -8206,7 +8257,8 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["crunch", "explosion", "fireblast", "poisonjab", "pursuit", "suckerpunch", "taunt"],
-                "abilities": ["Aftermath"]
+                "abilities": ["Aftermath"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -8220,7 +8272,8 @@
 				"evs": [252, 252, 0, 0, 4, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Mental Herb",
-				"nature": "Brave"
+				"nature": "Brave",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Lead",
@@ -8229,7 +8282,8 @@
 				"evs": [252, 252, 0, 0, 4, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Mental Herb",
-				"nature": "Brave"
+				"nature": "Brave",
+				"inclination": "Physical"
             },
 			{
                 "role": "TR Setter",
@@ -8238,7 +8292,8 @@
 				"evs": [252, 252, 0, 0, 4, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Mental Herb",
-				"nature": "Brave"
+				"nature": "Brave",
+				"inclination": "Physical"
             },
 			{
                 "role": "TR Setter",
@@ -8247,7 +8302,8 @@
 				"evs": [252, 252, 0, 0, 4, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Mental Herb",
-				"nature": "Brave"
+				"nature": "Brave",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Support",
@@ -8256,7 +8312,8 @@
 				"evs": [252, 0, 4, 0, 252, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Leftovers",
-				"nature": "Sassy"
+				"nature": "Sassy",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Support",
@@ -8265,7 +8322,8 @@
 				"evs": [252, 0, 4, 0, 252, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Leftovers",
-				"nature": "Sassy"
+				"nature": "Sassy",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Support",
@@ -8274,7 +8332,8 @@
 				"evs": [252, 0, 252, 0, 4, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Leftovers",
-				"nature": "Relaxed"
+				"nature": "Relaxed",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Support",
@@ -8283,7 +8342,8 @@
 				"evs": [252, 0, 252, 0, 4, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Leftovers",
-				"nature": "Relaxed"
+				"nature": "Relaxed",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Support",
@@ -8292,7 +8352,8 @@
 				"evs": [252, 0, 128, 0, 128, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Leftovers",
-				"nature": "Relaxed"
+				"nature": "Relaxed",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Support",
@@ -8301,7 +8362,8 @@
 				"evs": [252, 0, 128, 0, 128, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Leftovers",
-				"nature": "Sassy"
+				"nature": "Sassy",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Support",
@@ -8310,7 +8372,8 @@
 				"evs": [252, 0, 128, 0, 128, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Leftovers",
-				"nature": "Relaxed"
+				"nature": "Relaxed",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Support",
@@ -8319,7 +8382,8 @@
 				"evs": [252, 0, 128, 0, 128, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Leftovers",
-				"nature": "Sassy"
+				"nature": "Sassy",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Attacker",
@@ -8328,7 +8392,8 @@
 				"evs": [252, 0, 252, 4, 0, 0],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Bold"
+				"nature": "Bold",
+				"inclination": "Special"
             },
 			{
                 "role": "Bulky Attacker",
@@ -8337,7 +8402,8 @@
 				"evs": [244, 0, 152, 12, 100, 0],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Calm"
+				"nature": "Calm",
+				"inclination": "Special"
             },
 			{
                 "role": "TR Setter",
@@ -8346,7 +8412,8 @@
 				"evs": [252, 252, 4, 0, 0, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Adamant Orb",
-				"nature": "Brave"
+				"nature": "Brave",
+				"inclination": "Physical"
             },
 			{
                 "role": "TR Setter",
@@ -8355,7 +8422,8 @@
 				"evs": [252, 252, 4, 0, 0, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Adamant Orb",
-				"nature": "Brave"
+				"nature": "Brave",
+				"inclination": "Physical"
             },
 			{
                 "role": "TR Setter",
@@ -8364,7 +8432,8 @@
 				"evs": [244, 112, 152, 0, 0, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Red Card",
-				"nature": "Brave"
+				"nature": "Brave",
+				"inclination": "Physical"
             },
 			{
                 "role": "TR Setter",
@@ -8373,7 +8442,8 @@
 				"evs": [244, 112, 152, 0, 0, 0],
 				"ivs": [31, 31, 31, 31, 31, 0],
 				"item": "Red Card",
-				"nature": "Brave"
+				"nature": "Brave",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Screens Setter",
@@ -8382,7 +8452,8 @@
 				"evs": [244, 0, 152, 12, 100, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Light Clay",
-				"nature": "Sassy"
+				"nature": "Sassy",
+				"inclination": "Support"
             },
 			{
                 "role": "Bulky Screens Setter",
@@ -8391,7 +8462,8 @@
 				"evs": [244, 0, 152, 12, 100, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Light Clay",
-				"nature": "Sassy"
+				"nature": "Sassy",
+				"inclination": "Support"
             },
 			{
                 "role": "Bulky Setup",
@@ -8400,7 +8472,8 @@
 				"evs": [244, 12, 4, 0, 248, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Sassy"
+				"nature": "Sassy",
+				"inclination": "Special"
             },
 			{
                 "role": "Bulky Setup",
@@ -8409,7 +8482,8 @@
 				"evs": [244, 12, 4, 0, 248, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Sassy"
+				"nature": "Sassy",
+				"inclination": "Special"
             }
         ]
     },
@@ -8419,12 +8493,14 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["chatter", "encore", "heatwave", "hiddenpowergrass", "hypervoice", "nastyplot"],
-                "abilities": ["Tangled Feet"]
+                "abilities": ["Quick Feet"],
+				"inclination": "Special"
             },
             {
                 "role": "Fast Attacker",
                 "movepool": ["chatter", "heatwave", "hiddenpowergrass", "hypervoice", "uturn"],
-                "abilities": ["Tangled Feet"]
+                "abilities": ["Quick Feet"],
+				"inclination": "Special"
             }
         ]
     },
@@ -8434,12 +8510,14 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["calmmind", "darkpulse", "rest", "sleeptalk"],
-                "abilities": ["Pressure"]
+                "abilities": ["Pressure"],
+				"inclination": "Special"
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["darkpulse", "painsplit", "pursuit", "shadowsneak", "suckerpunch", "willowisp"],
-                "abilities": ["Pressure"]
+                "abilities": ["Pressure"],
+				"inclination": "Mixed"
             }
         ]
     },
@@ -8449,17 +8527,20 @@
             {
                 "role": "Fast Support",
                 "movepool": ["earthquake", "fireblast", "outrage", "stealthrock", "stoneedge"],
-                "abilities": ["Sand Veil"]
+                "abilities": ["Rough Skin"],
+				"inclination": "Physical"
             },
             {
                 "role": "Fast Attacker",
                 "movepool": ["earthquake", "firefang", "outrage", "stoneedge", "swordsdance"],
-                "abilities": ["Sand Veil"]
+                "abilities": ["Rough Skin"],
+				"inclination": "Physical"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["dragonclaw", "earthquake", "substitute", "swordsdance"],
-                "abilities": ["Sand Veil"]
+                "abilities": ["Rough Skin"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -8469,8 +8550,9 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["closecombat", "crunch", "extremespeed", "stoneedge", "swordsdance"],
-                "abilities": ["Inner Focus"],
-                "preferredTypes": ["Normal"]
+                "abilities": ["Scrappy"],
+                "preferredTypes": ["Normal"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -8484,7 +8566,8 @@
 				"evs": [252, 0, 184, 0, 72, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Smooth Rock",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Lead",
@@ -8493,7 +8576,8 @@
 				"evs": [252, 0, 184, 0, 72, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Sand Lead",
@@ -8502,7 +8586,8 @@
 				"evs": [252, 0, 4, 0, 252, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Smooth Rock",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Lead",
@@ -8511,7 +8596,8 @@
 				"evs": [252, 0, 4, 0, 252, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Lead",
@@ -8520,7 +8606,8 @@
 				"evs": [252, 0, 184, 0, 72, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Lead",
@@ -8529,7 +8616,8 @@
 				"evs": [252, 0, 4, 0, 252, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Sand Setter",
@@ -8538,7 +8626,8 @@
 				"evs": [252, 0, 184, 0, 72, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Smooth Rock",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Sand Setter",
@@ -8547,7 +8636,8 @@
 				"evs": [252, 0, 4, 0, 252, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Smooth Rock",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Staller",
@@ -8556,7 +8646,8 @@
 				"evs": [252, 0, 184, 0, 72, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Staller",
@@ -8565,7 +8656,8 @@
 				"evs": [252, 0, 4, 0, 252, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Setup",
@@ -8574,7 +8666,8 @@
 				"evs": [252, 0, 4, 0, 252, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Sand Setter",
@@ -8583,7 +8676,8 @@
 				"evs": [252, 0, 4, 0, 252, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Smooth Rock",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             }
         ]
     },
@@ -8593,13 +8687,15 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["aquatail", "crunch", "earthquake", "poisonjab", "pursuit", "swordsdance"],
-                "abilities": ["Battle Armor"],
-                "preferredTypes": ["Ground"]
+                "abilities": ["Defiant"],
+                "preferredTypes": ["Ground"],
+				"inclination": "Physical"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["crunch", "earthquake", "poisonjab", "taunt", "toxicspikes", "whirlwind"],
-                "abilities": ["Battle Armor"]
+                "abilities": ["Defiant"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -8609,7 +8705,8 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["crosschop", "earthquake", "icepunch", "poisonjab", "substitute", "suckerpunch", "swordsdance"],
-                "abilities": ["Dry Skin"]
+                "abilities": ["Dry Skin"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -8619,12 +8716,14 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["knockoff", "powerwhip", "sleeppowder", "synthesis"],
-                "abilities": ["Levitate"]
+                "abilities": ["Free Sample"],
+				"inclination": "Physical"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["powerwhip", "return", "sleeppowder", "swordsdance", "synthesis"],
-                "abilities": ["Levitate"]
+                "abilities": ["Free Sample"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -8634,7 +8733,8 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["hiddenpowerelectric", "hiddenpowergrass", "icebeam", "raindance", "surf", "uturn"],
-                "abilities": ["Swift Swim"]
+                "abilities": ["Storm Drain"],
+				"inclination": "Special"
             }
         ]
     },
@@ -8648,7 +8748,8 @@
 				"evs": [0, 36, 0, 232, 0, 240],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Expert Belt",
-				"nature": "Mild"
+				"nature": "Mild",
+				"inclination": "Special"
             },
 			{
                 "role": "Hail Setter",
@@ -8657,7 +8758,8 @@
 				"evs": [252, 0, 0, 0, 96, 160],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Icy Rock",
-				"nature": "Calm"
+				"nature": "Calm",
+				"inclination": "Special"
             },
 			{
                 "role": "Bulky Attacker",
@@ -8666,7 +8768,8 @@
 				"evs": [252, 0, 0, 0, 96, 160],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Calm"
+				"nature": "Calm",
+				"inclination": "Support"
             },
 			{
                 "role": "Bulky Support",
@@ -8675,7 +8778,8 @@
 				"evs": [252, 0, 0, 0, 96, 160],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Calm"
+				"nature": "Calm",
+				"inclination": "Support"
             },
 			{
                 "role": "Bulky Attacker",
@@ -8684,7 +8788,8 @@
 				"evs": [252, 0, 0, 0, 16, 240],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Assault Vest",
-				"nature": "Calm"
+				"nature": "Calm",
+				"inclination": "Special"
             },
 			{
                 "role": "Setup Sweeper",
@@ -8693,7 +8798,8 @@
 				"evs": [32, 252, 0, 0, 0, 224],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Wide Lens",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Hail Attacker",
@@ -8702,7 +8808,8 @@
 				"evs": [16, 252, 0, 0, 0, 240],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Band",
-				"nature": "Adamant"
+				"nature": "Adamant",
+				"inclination": "Physical"
             },
 			{
                 "role": "Hail Attacker",
@@ -8711,7 +8818,8 @@
 				"evs": [32, 252, 0, 0, 0, 224],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Choice Specs",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Hail Attacker",
@@ -8720,7 +8828,8 @@
 				"evs": [32, 252, 0, 0, 0, 224],
 				"ivs": [31, 2, 31, 30, 31, 30],
 				"item": "Choice Specs",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -8729,7 +8838,8 @@
 				"evs": [0, 26, 0, 248, 0, 224],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Scarf",
-				"nature": "Hasty"
+				"nature": "Hasty",
+				"inclination": "Special"
             },
 			{
                 "role": "Bulky Support",
@@ -8738,7 +8848,8 @@
 				"evs": [252, 0, 0, 0, 96, 160],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Icy Rock",
-				"nature": "Calm"
+				"nature": "Calm",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Support",
@@ -8747,7 +8858,8 @@
 				"evs": [236, 0, 0, 48, 0, 224],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Big Root",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Hail Setter",
@@ -8756,7 +8868,8 @@
 				"evs": [32, 0, 0, 252, 0, 224],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Icy Rock",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Bulky Support",
@@ -8765,7 +8878,8 @@
 				"evs": [252, 0, 0, 0, 96, 160],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Calm"
+				"nature": "Calm",
+				"inclination": "Support"
             }
         ]
     },
@@ -8775,7 +8889,8 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["icepunch", "iceshard", "lowkick", "nightslash", "pursuit", "swordsdance"],
-                "abilities": ["Pressure"]
+                "abilities": ["Shakedown"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -8785,12 +8900,14 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["explosion", "flashcannon", "hiddenpowerfire", "hiddenpowerground", "hiddenpowerice", "thunderbolt"],
-                "abilities": ["Magnet Pull"]
+                "abilities": ["Magnet Pull"],
+				"inclination": "Special"
             },
             {
                 "role": "Staller",
                 "movepool": ["hiddenpowerice", "protect", "thunderbolt", "toxic"],
-                "abilities": ["Magnet Pull"]
+                "abilities": ["Magnet Pull"],
+				"inclination": "Special"
             }
         ]
     },
@@ -8800,13 +8917,15 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["bodyslam", "healbell", "protect", "toxic", "wish"],
-                "abilities": ["Own Tempo"]
+                "abilities": ["Aftermath"],
+				"inclination": "Support"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["bodyslam", "earthquake", "explosion", "powerwhip", "return", "swordsdance"],
-                "abilities": ["Own Tempo"],
-                "preferredTypes": ["Ground"]
+                "abilities": ["Aftermath"],
+                "preferredTypes": ["Ground"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -8816,7 +8935,8 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["earthquake", "icepunch", "megahorn", "rockpolish", "stealthrock", "stoneedge"],
-                "abilities": ["Solid Rock"]
+                "abilities": ["Filter"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -8826,12 +8946,14 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["earthquake", "hiddenpowerfire", "leafstorm", "morningsun", "powerwhip", "rockslide", "sleeppowder"],
-                "abilities": ["Chlorophyll"]
+                "abilities": ["Magic Guard"],
+				"inclination": "Mixed"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["earthquake", "powerwhip", "rockslide", "swordsdance"],
-                "abilities": ["Chlorophyll"]
+                "abilities": ["Magic Guard"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -8845,7 +8967,8 @@
                 "evs": [244, 0, 4, 0, 44, 216],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fast Attacker",
@@ -8854,7 +8977,8 @@
                 "evs": [0, 252, 0, 4, 0, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Scarf",
-				"nature": "Hasty"
+				"nature": "Hasty",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fast Bulky Setup",
@@ -8863,7 +8987,8 @@
                 "evs": [0, 252, 4, 0, 0, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Air Balloon",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fast Attacker",
@@ -8872,7 +8997,8 @@
                 "evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Expert Belt",
-				"nature": "Adamant"
+				"nature": "Adamant",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fast Attacker",
@@ -8881,7 +9007,8 @@
                 "evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Expert Belt",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Setup",
@@ -8890,7 +9017,8 @@
                 "evs": [244, 0, 4, 0, 44, 216],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Setup",
@@ -8899,7 +9027,8 @@
                 "evs": [244, 0, 4, 0, 44, 216],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Big Root",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fling Setup",
@@ -8908,7 +9037,8 @@
                 "evs": [0, 252, 92, 0, 0, 164],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Power Anklet",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fast Bulky Setup",
@@ -8917,7 +9047,8 @@
                 "evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Air Balloon",
-				"nature": "Adamant"
+				"nature": "Adamant",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fast Attacker",
@@ -8926,7 +9057,8 @@
                 "evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 2, 31, 30, 31, 31],
 				"item": "Flame Orb",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -8935,7 +9067,8 @@
                 "evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Flame Orb",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -8944,7 +9077,8 @@
                 "evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Flame Orb",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -8953,7 +9087,8 @@
                 "evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 2, 31, 30, 31, 31],
 				"item": "Flame Orb",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -8962,7 +9097,8 @@
                 "evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Flame Orb",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -8971,7 +9107,8 @@
                 "evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 2, 31, 30, 31, 31],
 				"item": "Flame Orb",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -8980,7 +9117,8 @@
                 "evs": [0, 4, 0, 252, 4, 252],
 				"ivs": [30, 31, 30, 31, 31, 31],
 				"item": "Flame Orb",
-				"nature": "Hasty"
+				"nature": "Hasty",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -8989,7 +9127,8 @@
                 "evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Flame Orb",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -8998,7 +9137,8 @@
                 "evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 2, 31, 30, 31, 31],
 				"item": "Flame Orb",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Berry Sweeper",
@@ -9007,7 +9147,8 @@
                 "evs": [36, 252, 0, 0, 4, 216],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Liechi Berry",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Berry Sweeper",
@@ -9016,7 +9157,8 @@
                 "evs": [36, 252, 0, 0, 4, 216],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Salac Berry",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Wallbreaker",
@@ -9025,7 +9167,8 @@
                 "evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Band",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Setup",
@@ -9034,7 +9177,8 @@
                 "evs": [36, 252, 0, 0, 4, 216],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Berry Sweeper",
@@ -9043,7 +9187,8 @@
                 "evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Liechi Berry",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             }
         ]
     },
@@ -9054,7 +9199,8 @@
                 "role": "Fast Attacker",
                 "movepool": ["earthquake", "fireblast", "focusblast", "hiddenpowerice", "taunt", "thunderbolt"],
                 "abilities": ["Flame Body"],
-                "preferredTypes": ["Electric"]
+                "preferredTypes": ["Electric"],
+				"inclination": "Special"
             }
         ]
     },
@@ -9064,17 +9210,20 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["airslash", "aurasphere", "batonpass", "nastyplot", "roost", "thunderwave"],
-                "abilities": ["Serene Grace"]
+                "abilities": ["Serene Grace"],
+				"inclination": "Special"
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["airslash", "healbell", "roost", "thunderwave"],
-                "abilities": ["Serene Grace"]
+                "abilities": ["Serene Grace"],
+				"inclination": "Special"
             },
             {
                 "role": "Fast Attacker",
                 "movepool": ["airslash", "aurasphere", "fireblast", "trick"],
-                "abilities": ["Serene Grace"]
+                "abilities": ["Serene Grace"],
+				"inclination": "Special"
             }
         ]
     },
@@ -9084,12 +9233,14 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["airslash", "bugbuzz", "hiddenpowerfire", "hiddenpowerground", "protect"],
-                "abilities": ["Speed Boost"]
+                "abilities": ["Speed Boost"],
+				"inclination": "Special"
             },
             {
                 "role": "Wallbreaker",
                 "movepool": ["airslash", "bugbuzz", "hiddenpowerfire", "hiddenpowerground", "uturn"],
-                "abilities": ["Tinted Lens"]
+                "abilities": ["Tinted Lens"],
+				"inclination": "Special"
             }
         ]
     },
@@ -9099,13 +9250,15 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["healbell", "leafblade", "synthesis", "toxic"],
-                "abilities": ["Leaf Guard"]
+                "abilities": ["Chlorophyll"],
+				"inclination": "Physical"
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["batonpass", "doubleedge", "leafblade", "substitute", "swordsdance", "synthesis", "xscissor"],
-                "abilities": ["Leaf Guard"],
-                "preferredTypes": ["Normal"]
+                "abilities": ["Chlorophyll"],
+                "preferredTypes": ["Normal"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -9119,7 +9272,8 @@
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Choice Scarf",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -9128,7 +9282,8 @@
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Choice Specs",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -9137,7 +9292,8 @@
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 2, 31, 30, 31, 30],
 				"item": "Choice Scarf",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -9146,7 +9302,8 @@
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 3, 30, 31, 30, 30],
 				"item": "Choice Scarf",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Berry Sweeper",
@@ -9155,7 +9312,8 @@
 				"evs": [4, 0, 0, 252, 0, 252],
 				"ivs": [31, 2, 31, 30, 31, 30],
 				"item": "Salac Berry",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Berry Sweeper",
@@ -9164,7 +9322,8 @@
 				"evs": [4, 0, 0, 252, 0, 252],
 				"ivs": [31, 3, 30, 31, 30, 30],
 				"item": "Salac Berry",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -9173,7 +9332,8 @@
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 2, 31, 30, 31, 30],
 				"item": "Choice Specs",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -9182,7 +9342,8 @@
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 3, 30, 31, 30, 30],
 				"item": "Choice Specs",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Baton Passer",
@@ -9191,7 +9352,8 @@
 				"evs": [4, 0, 0, 252, 0, 252],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Starf Berry",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             }
         ]
     },
@@ -9205,7 +9367,8 @@
 				"evs": [252, 0, 28, 0, 80, 148],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Hazard Removal",
@@ -9214,7 +9377,8 @@
 				"evs": [252, 0, 28, 0, 80, 148],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Hazard Removal",
@@ -9223,7 +9387,8 @@
 				"evs": [252, 0, 28, 0, 80, 148],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Hazard Removal",
@@ -9232,7 +9397,8 @@
 				"evs": [248, 0, 0, 0, 188, 72],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Hazard Removal",
@@ -9241,7 +9407,8 @@
 				"evs": [248, 0, 0, 0, 188, 72],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Hazard Removal",
@@ -9250,7 +9417,8 @@
 				"evs": [248, 0, 0, 0, 188, 72],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Support",
@@ -9259,7 +9427,8 @@
 				"evs": [248, 0, 0, 0, 188, 72],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Support",
@@ -9268,7 +9437,8 @@
 				"evs": [252, 0, 28, 0, 80, 148],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Lead",
@@ -9277,7 +9447,8 @@
 				"evs": [252, 0, 28, 0, 80, 148],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Lead",
@@ -9286,7 +9457,8 @@
 				"evs": [248, 0, 0, 0, 188, 72],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Support",
@@ -9295,7 +9467,8 @@
 				"evs": [248, 0, 0, 0, 188, 72],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Support",
@@ -9304,7 +9477,8 @@
 				"evs": [252, 0, 28, 0, 80, 148],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Staller",
@@ -9313,7 +9487,8 @@
 				"evs": [248, 0, 0, 0, 188, 72],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Staller",
@@ -9322,7 +9497,8 @@
 				"evs": [252, 0, 28, 0, 80, 148],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Baton Passer",
@@ -9331,7 +9507,8 @@
 				"evs": [248, 0, 0, 0, 188, 72],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Baton Passer",
@@ -9340,7 +9517,8 @@
 				"evs": [252, 0, 28, 0, 80, 148],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Baton Passer",
@@ -9349,7 +9527,8 @@
 				"evs": [248, 0, 0, 0, 188, 72],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Baton Passer",
@@ -9358,7 +9537,8 @@
 				"evs": [252, 0, 28, 0, 80, 148],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Baton Passer",
@@ -9367,7 +9547,8 @@
 				"evs": [248, 0, 0, 0, 188, 72],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Baton Passer",
@@ -9376,7 +9557,8 @@
 				"evs": [252, 0, 28, 0, 80, 148],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Toxic Orb",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             }
         ]
     },
@@ -9386,7 +9568,8 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["earthquake", "iceshard", "stealthrock", "stoneedge", "superpower"],
-                "abilities": ["Snow Cloak"]
+                "abilities": ["Thick Fat"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -9396,7 +9579,8 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["darkpulse", "hiddenpowerfighting", "icebeam", "nastyplot", "thunderbolt", "triattack", "trick"],
-                "abilities": ["Adaptability", "Download"]
+                "abilities": ["Adaptability", "Flare Boost"],
+				"inclination": "Special"
             }
         ]
     },
@@ -9410,7 +9594,8 @@
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Assault Vest",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fast Attacker",
@@ -9419,7 +9604,8 @@
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Assault Vest",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Glass Cannon",
@@ -9428,7 +9614,8 @@
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Scarf",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Glass Cannon",
@@ -9437,7 +9624,8 @@
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Band",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Berry Sweeper",
@@ -9446,7 +9634,8 @@
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Salac Berry",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Berry Sweeper",
@@ -9455,7 +9644,8 @@
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Liechi Berry",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Setup",
@@ -9464,7 +9654,8 @@
 				"evs": [252, 4, 0, 0, 0, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fast Attacker",
@@ -9473,7 +9664,8 @@
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Focus Sash",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fast Attacker",
@@ -9482,7 +9674,8 @@
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Focus Sash",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Fast Attacker",
@@ -9491,7 +9684,8 @@
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Focus Sash",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Choice Trick",
@@ -9500,7 +9694,8 @@
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Scarf",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             }
         ]
     },
@@ -9510,7 +9705,8 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["earthpower", "explosion", "powergem", "stealthrock", "thunderwave", "toxic"],
-                "abilities": ["Magnet Pull"]
+                "abilities": ["Magnet Pull", "Sand Stream"],
+				"inclination": "Special"
             }
         ]
     },
@@ -9524,7 +9720,8 @@
 				"evs": [252, 4, 0, 0, 252, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Careful"
+				"nature": "Careful",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Attacker",
@@ -9533,7 +9730,8 @@
 				"evs": [252, 4, 252, 0, 0, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Assault Vest",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Lead",
@@ -9542,7 +9740,8 @@
 				"evs": [252, 252, 4, 0, 0, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Custap Berry",
-				"nature": "Adamant"
+				"nature": "Adamant",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Lead",
@@ -9551,7 +9750,8 @@
 				"evs": [252, 252, 4, 0, 0, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Custap Berry",
-				"nature": "Adamant"
+				"nature": "Adamant",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Attacker",
@@ -9560,7 +9760,8 @@
 				"evs": [244, 252, 0, 0, 12, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Adamant"
+				"nature": "Adamant",
+				"inclination": "Physical"
             },
 			{
                 "role": "TR Attacker",
@@ -9569,7 +9770,8 @@
 				"evs": [252, 72, 120, 0, 64, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Loaded Gloves",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Attacker",
@@ -9578,7 +9780,8 @@
 				"evs": [252, 252, 4, 0, 0, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Life Orb",
-				"nature": "Adamant"
+				"nature": "Adamant",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Attacker",
@@ -9587,7 +9790,8 @@
 				"evs": [252, 252, 0, 0, 4, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Band",
-				"nature": "Adamant"
+				"nature": "Adamant",
+				"inclination": "Physical"
             },
 			{
                 "role": "Berry Sweeper",
@@ -9596,7 +9800,8 @@
 				"evs": [244, 12, 252, 0, 0, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Liechi Berry",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Bulky Attacker",
@@ -9605,7 +9810,8 @@
 				"evs": [252, 72, 120, 0, 64, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             },
 			{
                 "role": "Staller",
@@ -9614,7 +9820,8 @@
 				"evs": [252, 72, 120, 0, 64, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Zoom Lens",
-				"nature": "Impish"
+				"nature": "Impish",
+				"inclination": "Physical"
             }
         ]
     },
@@ -9624,7 +9831,8 @@
             {
                 "role": "Fast Support",
                 "movepool": ["destinybond", "icebeam", "shadowball", "spikes", "taunt", "thunderwave"],
-                "abilities": ["Snow Cloak"]
+                "abilities": ["Slush Rush"],
+				"inclination": "Special"
             }
         ]
     },
@@ -9634,12 +9842,14 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["hiddenpowerfighting", "hiddenpowerice", "shadowball", "thunderbolt", "trick"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Special"
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["painsplit", "shadowball", "thunderbolt", "thunderwave", "willowisp"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Special"
             }
         ]
     },
@@ -9650,12 +9860,14 @@
                 "role": "Bulky Attacker",
                 "movepool": ["overheat", "painsplit", "shadowball", "thunderbolt", "trick", "willowisp"],
                 "abilities": ["Levitate"],
-                "preferredTypes": ["Fire"]
+                "preferredTypes": ["Fire"],
+				"inclination": "Special"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["rest", "shadowball", "sleeptalk", "thunderbolt"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Special"
             }
         ]
     },
@@ -9666,12 +9878,14 @@
                 "role": "Bulky Attacker",
                 "movepool": ["hydropump", "painsplit", "shadowball", "thunderbolt", "trick", "willowisp"],
                 "abilities": ["Levitate"],
-                "preferredTypes": ["Water"]
+                "preferredTypes": ["Water"],
+				"inclination": "Special"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["rest", "shadowball", "sleeptalk", "thunderbolt"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Special"
             }
         ]
     },
@@ -9682,12 +9896,14 @@
                 "role": "Bulky Attacker",
                 "movepool": ["blizzard", "painsplit", "shadowball", "thunderbolt", "trick", "willowisp"],
                 "abilities": ["Levitate"],
-                "preferredTypes": ["Ice"]
+                "preferredTypes": ["Ice"],
+				"inclination": "Special"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["rest", "shadowball", "sleeptalk", "thunderbolt"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Special"
             }
         ]
     },
@@ -9697,12 +9913,14 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["painsplit", "shadowball", "thunderbolt", "willowisp"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Special"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["rest", "shadowball", "sleeptalk", "thunderbolt"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Special"
             }
         ]
     },
@@ -9713,12 +9931,14 @@
                 "role": "Bulky Attacker",
                 "movepool": ["leafstorm", "painsplit", "shadowball", "thunderbolt", "trick", "willowisp"],
                 "abilities": ["Levitate"],
-                "preferredTypes": ["Grass"]
+                "preferredTypes": ["Grass"],
+				"inclination": "Special"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["rest", "shadowball", "sleeptalk", "thunderbolt"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Special"
             }
         ]
     },
@@ -9728,7 +9948,8 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["healbell", "psychic", "stealthrock", "thunderwave", "uturn", "yawn"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Support"
             }
         ]
     },
@@ -9738,12 +9959,14 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["calmmind", "healingwish", "hiddenpowerfighting", "icebeam", "psychic", "thunderbolt", "trick", "uturn"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Special"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["hiddenpowerfighting", "psychic", "stealthrock", "thunderwave", "toxic", "uturn"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Special"
             }
         ]
     },
@@ -9757,7 +9980,8 @@
                 "evs": [0, 0, 4, 252, 0, 252],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Fist Plate",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
             {
                 "role": "Fast Attacker",
@@ -9766,7 +9990,8 @@
                 "evs": [0, 4, 0, 252, 0, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Mind Plate",
-				"nature": "Naive"
+				"nature": "Naive",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Lead",
@@ -9775,7 +10000,8 @@
                 "evs": [0, 252, 0, 4, 0, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Focus Sash",
-				"nature": "Naive"
+				"nature": "Naive",
+				"inclination": "Support"
             },
 			{
                 "role": "Fast Attacker",
@@ -9784,7 +10010,8 @@
                 "evs": [0, 4, 0, 252, 0, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Expert Belt",
-				"nature": "Naive"
+				"nature": "Naive",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Attacker",
@@ -9793,7 +10020,8 @@
                 "evs": [0, 252, 4, 0, 0, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Band",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
 			{
                 "role": "Setup Sweeper",
@@ -9802,7 +10030,8 @@
                 "evs": [4, 0, 0, 252, 0, 252],
 				"ivs": [31, 3, 30, 30, 30, 30],
 				"item": "Life Orb",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Setup Sweeper",
@@ -9811,7 +10040,8 @@
                 "evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Mind Plate",
-				"nature": "Modest"
+				"nature": "Modest",
+				"inclination": "Special"
             },
 			{
                 "role": "Choice Trick",
@@ -9820,7 +10050,8 @@
                 "evs": [0, 4, 0, 252, 0, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Choice Scarf",
-				"nature": "Naive"
+				"nature": "Naive",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Lead",
@@ -9829,7 +10060,8 @@
                 "evs": [0, 0, 4, 252, 0, 252],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Life Orb",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Lead",
@@ -9838,7 +10070,8 @@
                 "evs": [0, 92, 164, 0, 0, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Focus Sash",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Support"
             },
 			{
                 "role": "Fast Screens Setter",
@@ -9847,7 +10080,8 @@
                 "evs": [31, 0, 252, 0, 8, 216],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Light Clay",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Support"
             },
 			{
                 "role": "Choice Trick",
@@ -9856,7 +10090,8 @@
                 "evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 3, 30, 30, 30, 30],
 				"item": "Choice Specs",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Setup Sweeper",
@@ -9865,7 +10100,8 @@
                 "evs": [0, 0, 0, 252, 0, 252],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Icicle Plate",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "TR Lead",
@@ -9874,7 +10110,8 @@
                 "evs": [32, 0, 252, 0, 8, 216],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Focus Sash",
-				"nature": "Jolly"
+				"nature": "Jolly",
+				"inclination": "Support"
             },
 			{
                 "role": "Berry Sweeper",
@@ -9883,7 +10120,8 @@
                 "evs": [4, 0, 0, 252, 0, 252],
 				"ivs": [31, 3, 30, 30, 30, 30],
 				"item": "Petaya Berry",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Lead",
@@ -9892,7 +10130,8 @@
                 "evs": [0, 0, 4, 252, 0, 252],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Fist Plate",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Setup Sweeper",
@@ -9901,7 +10140,8 @@
                 "evs": [0, 0, 4, 252, 0, 252],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Mind Plate",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             }
         ]
     },
@@ -9912,12 +10152,14 @@
                 "role": "Bulky Attacker",
                 "movepool": ["aurasphere", "dracometeor", "fireblast", "roar", "stealthrock", "thunderbolt", "toxic"],
                 "abilities": ["Pressure"],
-                "preferredTypes": ["Fire"]
+                "preferredTypes": ["Fire"],
+				"inclination": "Special"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["bulkup", "outrage", "rest", "sleeptalk"],
-                "abilities": ["Pressure"]
+                "abilities": ["Pressure"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -9928,7 +10170,8 @@
                 "role": "Bulky Attacker",
                 "movepool": ["dracometeor", "fireblast", "hydropump", "spacialrend", "thunderwave"],
                 "abilities": ["Pressure"],
-                "preferredTypes": ["Fire"]
+                "preferredTypes": ["Fire"],
+				"inclination": "Special"
             }
         ]
     },
@@ -9942,7 +10185,8 @@
 				"evs": [4, 0, 0, 252, 0, 252],
 				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Modest"
+				"nature": "Modest",
+				"inclination": "Special"
             },
 			{
                 "role": "Staller",
@@ -9951,7 +10195,8 @@
 				"evs": [84, 0, 0, 164, 52, 208],
 				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Staller",
@@ -9960,7 +10205,8 @@
 				"evs": [84, 0, 0, 164, 52, 208],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Bulky Lead",
@@ -9969,7 +10215,8 @@
 				"evs": [252, 0, 4, 0, 252, 0],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Calm"
+				"nature": "Calm",
+				"inclination": "Special"
             },
 			{
                 "role": "Bulky Attacker",
@@ -9978,7 +10225,8 @@
 				"evs": [252, 0, 4, 0, 252, 0],
 				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Choice Scarf",
-				"nature": "Calm"
+				"nature": "Calm",
+				"inclination": "Special"
             },
 			{
                 "role": "Bulky Attacker",
@@ -9987,7 +10235,8 @@
 				"evs": [252, 0, 4, 0, 252, 0],
 				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Choice Specs",
-				"nature": "Calm"
+				"nature": "Calm",
+				"inclination": "Special"
             },
 			{
                 "role": "Staller",
@@ -9996,7 +10245,8 @@
 				"evs": [244, 0, 0, 0, 56, 208],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Sun Attacker",
@@ -10005,7 +10255,8 @@
 				"evs": [116, 0, 0, 184, 0, 208],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Modest"
+				"nature": "Modest",
+				"inclination": "Special"
             },
 			{
                 "role": "Sun Attacker",
@@ -10014,7 +10265,8 @@
 				"evs": [116, 0, 0, 184, 0, 208],
 				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Modest"
+				"nature": "Modest",
+				"inclination": "Special"
             },
 			{
                 "role": "Sun Attacker",
@@ -10023,7 +10275,8 @@
 				"evs": [132, 0, 0, 168, 0, 208],
 				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Air Balloon",
-				"nature": "Modest"
+				"nature": "Modest",
+				"inclination": "Special"
             },
 			{
                 "role": "Sun Attacker",
@@ -10032,7 +10285,8 @@
 				"evs": [132, 0, 0, 168, 0, 208],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Air Balloon",
-				"nature": "Modest"
+				"nature": "Modest",
+				"inclination": "Special"
             },
 			{
                 "role": "Bulky Lead",
@@ -10041,7 +10295,8 @@
 				"evs": [248, 0, 232, 0, 28, 0],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Bold"
+				"nature": "Bold",
+				"inclination": "Special"
             },
 			{
                 "role": "Bulky Lead",
@@ -10050,7 +10305,8 @@
 				"evs": [248, 0, 8, 0, 252, 0],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Calm"
+				"nature": "Calm",
+				"inclination": "Special"
             },
 			{
                 "role": "Bulky Lead",
@@ -10059,7 +10315,8 @@
 				"evs": [248, 0, 8, 0, 252, 0],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Calm"
+				"nature": "Calm",
+				"inclination": "Special"
             },
 			{
                 "role": "Staller",
@@ -10068,7 +10325,8 @@
 				"evs": [248, 0, 232, 0, 28, 0],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Bold"
+				"nature": "Bold",
+				"inclination": "Special"
             },
 			{
                 "role": "Switch Trapper",
@@ -10077,7 +10335,8 @@
 				"evs": [4, 0, 0, 252, 0, 252],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
-				"nature": "Modest"
+				"nature": "Modest",
+				"inclination": "Special"
             },
 			{
                 "role": "Switch Trapper",
@@ -10086,7 +10345,8 @@
 				"evs": [252, 0, 4, 0, 252, 0],
 				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Choice Specs",
-				"nature": "Calm"
+				"nature": "Calm",
+				"inclination": "Special"
             },
 			{
                 "role": "Switch Trapper",
@@ -10095,7 +10355,8 @@
 				"evs": [0, 0, 4, 252, 0, 252],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Air Balloon",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Support",
@@ -10104,7 +10365,8 @@
 				"evs": [0, 0, 4, 252, 0, 252],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Air Balloon",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Fast Support",
@@ -10113,7 +10375,8 @@
 				"evs": [0, 0, 4, 252, 0, 252],
 				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Air Balloon",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             },
 			{
                 "role": "Switch Trapper",
@@ -10122,7 +10385,8 @@
 				"evs": [0, 0, 4, 252, 0, 252],
 				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Air Balloon",
-				"nature": "Timid"
+				"nature": "Timid",
+				"inclination": "Special"
             }
         ]
     },
@@ -10132,7 +10396,8 @@
             {
                 "role": "Staller",
                 "movepool": ["earthquake", "return", "substitute", "thunderwave"],
-                "abilities": ["Slow Start"]
+                "abilities": ["Slow Start"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -10142,7 +10407,8 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["dracometeor", "earthquake", "outrage", "shadowball", "shadowsneak", "willowisp"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Mixed"
             }
         ]
     },
@@ -10152,7 +10418,8 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["calmmind", "dragonpulse", "rest", "sleeptalk"],
-                "abilities": ["Pressure"]
+                "abilities": ["Pressure"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10162,12 +10429,14 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["calmmind", "hiddenpowerfighting", "moonlight", "psychic", "signalbeam"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Special"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["hiddenpowerfighting", "moonlight", "psychic", "thunderwave", "toxic"],
-                "abilities": ["Levitate"]
+                "abilities": ["Levitate"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10177,12 +10446,14 @@
             {
                 "role": "Staller",
                 "movepool": ["raindance", "rest", "surf", "toxic"],
-                "abilities": ["Hydration"]
+                "abilities": ["Reckless"],
+				"inclination": "Special"
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["healbell", "icebeam", "surf", "toxic", "uturn"],
-                "abilities": ["Hydration"]
+                "abilities": ["Reckless"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10192,7 +10463,8 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["energyball", "icebeam", "surf", "tailglow"],
-                "abilities": ["Hydration"]
+                "abilities": ["Hydration"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10202,12 +10474,14 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["darkpulse", "darkvoid", "focusblast", "nastyplot"],
-                "abilities": ["Bad Dreams"]
+                "abilities": ["Bad Dreams"],
+				"inclination": "Special"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["darkpulse", "darkvoid", "nastyplot", "substitute"],
-                "abilities": ["Bad Dreams"]
+                "abilities": ["Bad Dreams"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10218,7 +10492,8 @@
                 "role": "Fast Support",
                 "movepool": ["airslash", "earthpower", "leechseed", "seedflare", "substitute", "synthesis"],
                 "abilities": ["Natural Cure"],
-                "preferredTypes": ["Flying"]
+                "preferredTypes": ["Flying"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10228,7 +10503,8 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["airslash", "earthpower", "hiddenpowerice", "leechseed", "seedflare", "substitute"],
-                "abilities": ["Serene Grace"]
+                "abilities": ["Serene Grace"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10239,7 +10515,8 @@
                 "role": "Setup Sweeper",
                 "movepool": ["earthquake", "extremespeed", "recover", "shadowclaw", "swordsdance"],
                 "abilities": ["Multitype"],
-                "preferredTypes": ["Ground"]
+                "preferredTypes": ["Ground"],
+				"inclination": "Physical"
             }
         ]
     },
@@ -10249,12 +10526,14 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["calmmind", "earthpower", "fireblast", "judgment", "recover"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["calmmind", "earthpower", "icebeam", "judgment"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10264,7 +10543,8 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["calmmind", "focusblast", "judgment", "recover", "refresh"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10275,12 +10555,14 @@
                 "role": "Setup Sweeper",
                 "movepool": ["earthquake", "extremespeed", "outrage", "recover", "swordsdance"],
                 "abilities": ["Multitype"],
-                "preferredTypes": ["Ground"]
+                "preferredTypes": ["Ground"],
+				"inclination": "Physical"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["calmmind", "earthpower", "fireblast", "judgment", "recover", "refresh"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10290,7 +10572,8 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["calmmind", "icebeam", "judgment", "recover"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10300,7 +10583,8 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["calmmind", "darkpulse", "icebeam", "judgment", "recover"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10310,7 +10594,8 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["calmmind", "earthpower", "icebeam", "judgment", "recover", "thunderbolt"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10320,7 +10605,8 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["calmmind", "earthpower", "judgment", "recover", "refresh"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10330,7 +10616,8 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["calmmind", "focusblast", "judgment", "recover", "willowisp"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10340,12 +10627,14 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["calmmind", "fireblast", "judgment", "recover"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["calmmind", "earthpower", "icebeam", "judgment"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10356,12 +10645,14 @@
                 "role": "Setup Sweeper",
                 "movepool": ["earthquake", "extremespeed", "recover", "stoneedge", "swordsdance"],
                 "abilities": ["Multitype"],
-                "preferredTypes": ["Rock"]
+                "preferredTypes": ["Rock"],
+				"inclination": "Physical"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["calmmind", "icebeam", "judgment", "recover"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10371,7 +10662,8 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["calmmind", "earthpower", "judgment", "recover", "thunderbolt"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10382,13 +10674,15 @@
                 "role": "Setup Sweeper",
                 "movepool": ["calmmind", "earthpower", "fireblast", "recover", "sludgebomb"],
                 "abilities": ["Multitype"],
-                "preferredTypes": ["Ground"]
+                "preferredTypes": ["Ground"],
+				"inclination": "Special"
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["earthquake", "fireblast", "icebeam", "recover", "sludgebomb", "stealthrock", "willowisp"],
                 "abilities": ["Multitype"],
-                "preferredTypes": ["Ground"]
+                "preferredTypes": ["Ground"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10399,7 +10693,8 @@
                 "role": "Setup Sweeper",
                 "movepool": ["calmmind", "darkpulse", "focusblast", "judgment", "recover"],
                 "abilities": ["Multitype"],
-                "preferredTypes": ["Fighting"]
+                "preferredTypes": ["Fighting"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10410,12 +10705,14 @@
                 "role": "Setup Sweeper",
                 "movepool": ["earthquake", "extremespeed", "recover", "stoneedge", "swordsdance"],
                 "abilities": ["Multitype"],
-                "preferredTypes": ["Ground"]
+                "preferredTypes": ["Ground"],
+				"inclination": "Physical"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["calmmind", "earthpower", "fireblast", "judgment", "recover"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10425,12 +10722,14 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["earthquake", "judgment", "recover", "toxic", "willowisp"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Physical"
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["calmmind", "earthpower", "judgment", "recover"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             }
         ]
     },
@@ -10440,7 +10739,8 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["calmmind", "icebeam", "judgment", "recover", "willowisp"],
-                "abilities": ["Multitype"]
+                "abilities": ["Multitype"],
+				"inclination": "Special"
             }
         ]
     }

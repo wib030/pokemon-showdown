@@ -995,8 +995,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (set.moves.includes('reflect') && set.moves.includes('lightscreen')) teamDetails.screens = 1;
 			if (LEAD_ROLES.includes(set.role)) leadNum++;
 			if (REMOVAL_ROLES.includes(set.role)) removalNum++;
-			if (ATTACKING_ROLES.includes(set.role) && species.baseStats.atk >= species.baseStats.spa && set.evs.atk > set.evs.spa) physicalAttackers++;
-			if (ATTACKING_ROLES.includes(set.role) && species.baseStats.spa >= species.baseStats.atk && set.evs.spa > set.evs.atk) specialAttackers++;
+			if (ATTACKING_ROLES.includes(set.role) && set.inclination === 'Physical') physicalAttackers++;
+			if (ATTACKING_ROLES.includes(set.role) && set.inclination === 'Special') specialAttackers++;
 		}
 		if (pokemon.length < this.maxTeamSize && pokemon.length < 12) {
 			throw new Error(`Could not build a random team for ${this.format} (seed=${seed})`);

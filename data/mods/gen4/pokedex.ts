@@ -82,6 +82,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	froslass: {
 		inherit: true,
 		baseStats: { hp: 70, atk: 80, def: 70, spa: 95, spd: 70, spe: 110 },
+		abilities: { 0: "Slush Rush" },
 	},
 	sentret: {
 		inherit: true,
