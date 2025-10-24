@@ -67,6 +67,11 @@ const ATTACKING_ROLES = [
 	'TR Attacker', 'Fast Pivot', 'Bulky Pivot', 'Sun Setup', 'Switch Trapper',
 ];
 
+// Order to check type in
+const TYPE_NAMES = [
+	'Rock', 'Fighting', 'Ground', 'Fire', 'Dragon', 'Dark', 'Ice', 'Water', 'Ghost', 'Electric', 'Psychic', 'Poison', 'Flying', 'Grass', 'Steel', 'Bug', 'Normal',
+];
+
 export class RandomGen4Teams extends RandomGen5Teams {
 	override randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = require('./sets.json');
 
@@ -932,7 +937,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				
 				if (pokemon.length > 0)
 				{
-					for (const typeName of this.dex.types.names()) {
+					for (const typeName of TYPE_NAMES) {
 						if (typeWeaknesses[typeName] > typeResistances[typeName])
 						{
 							skip = true;
@@ -948,7 +953,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							
 							if (skip === false) {
 								// Skip the roll if the Pokemon shares any weaknessess with the previous Pokemon
-								for (const checkTypeName of this.dex.types.names()) {
+								for (const checkTypeName of TYPE_NAMES) {
 									if (this.dex.getEffectiveness(checkTypeName, species) > 0 && prevMonTypeWeaknesses[checkTypeName] > 0) {
 										skip = true;
 										break;
