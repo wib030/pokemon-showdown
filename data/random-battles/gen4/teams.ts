@@ -878,7 +878,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let physicalAttackers = 0;
 		let specialAttackers = 0;
 		let maxSingleType = 2;
-		let checkSpecies = this.dex.species.get(species);
+		let checkSpecies;
 
 		const pokemonList = Object.keys(this.randomSets);
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
