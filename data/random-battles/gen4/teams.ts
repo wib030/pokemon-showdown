@@ -903,7 +903,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			const types = species.types;
 			let skip = false;
-			typeWeaknessRerolls = 0;
 
 			if (!isMonotype && !this.forceMonotype) {
 				if (pokemon.length > 0)
@@ -921,23 +920,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								skip = false;
 							}
 							
-							if (skip === false) {
-								// Skip the roll if the Pokemon shares any weaknessess with the previous Pokemon
-								for (const checkTypeName of types) {
-									if (this.dex.getEffectiveness(checkTypeName, species) > 0 && prevMonTypeWeaknesses[checkTypeName] > 0) {
-										skip = true;
-										break;
-									} else {
-										if (typeWeaknessRerolls >= 100) skip = false;
-										break;
-									}
-								}
-								break;
-							}
+							if (skip === false) break;
 						}
 					}
 					if (skip) {
-						typeWeaknessRerolls++;
 						continue;
 					}
 				}
