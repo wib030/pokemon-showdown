@@ -860,6 +860,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let specialAttackers = 0;
 		
 		let maxSingleType = 2;
+		let typesToResist = new Array<string>();
+		let typesToImmune = new Array<string>();
 
 		const pokemonList = Object.keys(this.randomSets);
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
@@ -923,6 +925,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 				// Limit two weak to any type, and one double weak to a single type
 				for (const typeName of this.dex.types.names()) {
+					if (!typeResistances[typeName]) typeResistances[typeName] = 0;
+					if (!typeImmunities[typeName]) typeImmunities[typeName] = 0;
 					// Color change consideration
 					if (Object.values(species.abilities).includes('Color Change')) {
 						if (typeName === 'Ghost' || typeName === 'Dragon') {
@@ -937,18 +941,18 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						if (this.dex.getImmunity(typeName, types))
 						{
 							if ((set.ability === 'Dry Skin' || set.ability === 'Water Absorb' || set.ability === 'Storm Drain') && typeName === 'Water') {
-                        typeImmunities[typeName]++;
-                    } else if ((set.ability === 'Flash Fire') && typeName === 'Fire') {
-                        typeImmunities[typeName]++;
-                    } else if ((set.ability === 'Levitate') && typeName === 'Ground') {
-                        typeImmunities[typeName]++;
-                    } else if ((set.ability === 'Lightning Rod' || set.ability === 'Volt Absorb' || set.ability === 'Motor Drive') && typeName === 'Electric') {
-                        typeImmunities[typeName]++;
-                    } else {
-                        if (!this.dex.getImmunity(typeName, types)) {
-                            typeImmunities[typeName]++;
-                        }
-                    }
+								typeImmunities[typeName]++;
+							} else if ((set.ability === 'Flash Fire') && typeName === 'Fire') {
+								typeImmunities[typeName]++;
+							} else if ((set.ability === 'Levitate') && typeName === 'Ground') {
+								typeImmunities[typeName]++;
+							} else if ((set.ability === 'Lightning Rod' || set.ability === 'Volt Absorb' || set.ability === 'Motor Drive') && typeName === 'Electric') {
+								typeImmunities[typeName]++;
+							} else {
+								if (!this.dex.getImmunity(typeName, types)) {
+									typeImmunities[typeName]++;
+								}
+							}
 						}
 						// Current generated mon is 2x weak to the type
 						if (this.dex.getEffectiveness(typeName, species) > 0) {
@@ -968,6 +972,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 					}
 				}
+				if (skip) continue;
 
 				// Count Dry Skin as a Fire weakness
 				if (this.dex.getEffectiveness('Fire', species) === 0 && Object.values(species.abilities).includes('Dry Skin')) {
@@ -1099,8 +1104,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			if (skip) continue;
 
-			let typesToResist: string[] = new Array();
-			let typesToImmune: string[] = new Array();
+			typesToResist = new Array<string>();
+			typesToImmune = new Array<string>();
 
 			for (const typeName of this.dex.types.names())
 			{
