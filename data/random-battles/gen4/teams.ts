@@ -923,6 +923,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 				// Limit two weak to any type, and one double weak to a single type
 				for (const typeName of this.dex.types.names()) {
+					// Color change consideration
 					if (Object.values(species.abilities).includes('Color Change')) {
 						if (typeName === 'Ghost' || typeName === 'Dragon') {
 							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
@@ -930,8 +931,26 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								break;
 							}
 						}
-					} else {
-						// it's weak to the type
+					} else { // We don't have Color Change
+
+						// Current generated mon is not immune to current type
+						if (this.dex.getImmunity(typeName, types))
+						{
+							if ((set.ability === 'Dry Skin' || set.ability === 'Water Absorb' || set.ability === 'Storm Drain') && typeName === 'Water') {
+                        typeImmunities[typeName]++;
+                    } else if ((set.ability === 'Flash Fire') && typeName === 'Fire') {
+                        typeImmunities[typeName]++;
+                    } else if ((set.ability === 'Levitate') && typeName === 'Ground') {
+                        typeImmunities[typeName]++;
+                    } else if ((set.ability === 'Lightning Rod' || set.ability === 'Volt Absorb' || set.ability === 'Motor Drive') && typeName === 'Electric') {
+                        typeImmunities[typeName]++;
+                    } else {
+                        if (!this.dex.getImmunity(typeName, types)) {
+                            typeImmunities[typeName]++;
+                        }
+                    }
+						}
+						// Current generated mon is 2x weak to the type
 						if (this.dex.getEffectiveness(typeName, species) > 0) {
 							if (!typeWeaknesses[typeName]) typeWeaknesses[typeName] = 0;
 							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
@@ -939,6 +958,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								break;
 							}
 						}
+						// Currently generated mon is 4x weak to the type
 						if (this.dex.getEffectiveness(typeName, species) > 1) {
 							if (!typeDoubleWeaknesses[typeName]) typeDoubleWeaknesses[typeName] = 0;
 							if (typeDoubleWeaknesses[typeName] >= limitFactor) {
@@ -957,6 +977,142 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			}
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
+
+			for (const typeName of this.dex.types.names()) {
+				// Current generated mon is not immune to current type
+
+				if (typesToImmune.includes(typeName))
+				{
+					if (this.dex.getImmunity(typeName, types))
+					{
+						switch (typeName)
+						{
+							case 'Fire':
+								if (set.ability !== 'Flash Fire')
+								{
+									skip = true;
+								}
+								break;
+
+							case 'Water':
+								if (set.ability !== 'Dry Skin' && set.ability !== 'Water Absorb' && set.ability !== 'Storm Drain')
+								{
+									skip = true;
+								}
+								break;
+
+							case 'Ground':
+								if (set.ability !== 'Levitate')
+								{
+									skip = true;
+								}
+								break;
+
+							case 'Electric':
+								if (set.ability !== 'Lightning Rod' && set.ability !== 'Volt Absorb' && set.ability !== 'Motor Drive')
+								{
+									skip = true;
+								}
+								break;
+
+							default:
+								skip = true;
+								break;
+						}
+					}
+				}
+
+				// Current generated mon is not resistant to current type
+				if (typesToResist.includes(typeName))
+				{
+					if (this.dex.getEffectiveness(typeName, species) > -1)
+					{
+						if (set.Ability !== 'Color Change')
+						{
+							switch (typeName)
+							{
+								case 'Fire':
+									if (set.ability === 'Flash Fire')
+									{
+										break;
+									}
+									if (this.dex.getEffectiveness(typeName, species) < 1
+										&& (set.ability === 'Thick Fat' || set.ability === 'Heatproof'))
+									{
+										break;
+									}
+									skip = true;
+									break;
+
+								case 'Ice':
+								if (this.dex.getEffectiveness(typeName, species) < 0
+									&& set.ability === 'Thick Fat')
+								{
+									break;
+								}
+								break;
+
+								case 'Water':
+									if (set.ability !== 'Dry Skin' && set.ability !== 'Water Absorb' && set.ability !== 'Storm Drain')
+									{
+										skip = true;
+									}
+									break;
+
+								case 'Ground':
+									if (set.ability !== 'Levitate')
+									{
+										skip = true;
+									}
+									break;
+
+								case 'Electric':
+									if (set.ability !== 'Lightning Rod' && set.ability !== 'Volt Absorb' && set.ability !== 'Motor Drive')
+									{
+										skip = true;
+									}
+									break;
+
+								default:
+									skip = true;
+									break;
+							}
+						}
+						else
+						{
+							switch (typeName)
+							{
+								case 'Dragon':
+								case 'Ghost':
+									skip = true;
+									break;
+
+								default:
+									break;
+							}
+						}
+					}
+				}
+			}
+
+			if (skip) continue;
+
+			let typesToResist: string[] = new Array();
+			let typesToImmune: string[] = new Array();
+
+			for (const typeName of this.dex.types.names())
+			{
+				if (typeDoubleWeaknesses[typeName] > typeImmunities[typeName])
+				{
+					typesToImmune.push(typeName);
+				}
+
+				if (typeWeaknesses[typeName] > typeResistances[typeName]
+				&& !!typesToResist.some( weakType => weakType === typeName ))
+				{
+					typesToResist.push(typeName);
+				}
+			}
 
 			// Okay, the set passes, add it to our team
 			pokemon.push(set);
