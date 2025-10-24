@@ -860,8 +860,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let specialAttackers = 0;
 		
 		let maxSingleType = 2;
-		let typesToResist = new Array<string>();
-		let typesToImmune = new Array<string>();
+		let typesToResist: string[];
+		let typesToImmune: string[];
 
 		const pokemonList = Object.keys(this.randomSets);
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
@@ -1090,8 +1090,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			
 			}
 
-			typesToResist = new Array<string>();
-			typesToImmune = new Array<string>();
+			let typesToResist: string[];
+			let typesToImmune: string[];
 
 			for (const typeName of this.dex.types.names())
 			{
