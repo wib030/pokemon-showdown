@@ -708,13 +708,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		for (const set of sets) {
 			// Enforce Lead if the team does not have one
-			// if (leadNum === 0 && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
+			if (leadNum === 0 && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
 			
 			// Prevent Lead if the team already has more than one lead
 			// if (leadNum > 1 && LEAD_ROLES.includes(set.role)) continue;
 			
 			// Enforce Removal if the team does not have removal
-			// if (removalNum === 0 && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
+			if (removalNum === 0 && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
 			
 			// Prevent Removal if the team already has more than one removal
 			// if (removalNum > 1 && REMOVAL_ROLES.includes(set.role)) continue;
@@ -878,12 +878,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let physicalAttackers = 0;
 		let specialAttackers = 0;
 		let maxSingleType = 2;
+		let checkSpecies = this.dex.species.get(species);
 
 		const pokemonList = Object.keys(this.randomSets);
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
 		while (baseSpeciesPool.length && pokemon.length < this.maxTeamSize) {
 			const baseSpecies = this.sampleNoReplace(baseSpeciesPool);
 			const species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
+			checkSpecies = this.dex.species.get(species);
 			if (!species.exists) continue;
 
 			// Limit to one of each species (Species Clause)
@@ -900,6 +902,30 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let weaknessRerolls = 0;
 
 			if (!isMonotype && !this.forceMonotype) {
+				if (leadNum < 1)
+				{
+					sets = this.randomSets[checkSpecies.id]["sets"];
+					// Check if the Pokemon has a Lead set
+					skip = true;
+					for (const set of sets) {
+						if (LEAD_ROLES.includes(set.role)) {
+							skip = false;
+							break;
+						}
+					}
+				} else if (removalNum < 1 && leadNum > 0) {
+					sets = this.randomSets[checkSpecies.id]["sets"];
+					// Check if the Pokemon has a Lead set
+					skip = true;
+					for (let set of sets) {
+						if (REMOVAL_ROLES.includes(set.role)) {
+							skip = false;
+							break;
+						}
+					}
+				}
+				if (skip) continue;
+				
 				if (pokemon.length > 0)
 				{
 					for (const typeName of this.dex.types.names()) {
