@@ -887,7 +887,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				// Limit two weak to any type, and one double weak to any type
 				for (const typeName of this.dex.types.names()) {
 					if (Object.values(species.abilities).includes('Color Change')) {
-						if (typeName == 'Ghost' || typeName == 'Dragon') {
+						if (typeName === 'Ghost' || typeName === 'Dragon') {
 							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
 								skip = true;
 								break;
@@ -968,8 +968,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			// Increment weakness counter
 			for (const typeName of this.dex.types.names()) {
-				if (set.ability === 'Color Change') {
-					if (typeName == 'Ghost' || typeName == 'Dragon') {
+				if (Object.values(species.abilities).includes('Color Change')) {
+					if (typeName === 'Ghost' || typeName === 'Dragon') {
 						typeWeaknesses[typeName]++;
 					}
 				} else {
