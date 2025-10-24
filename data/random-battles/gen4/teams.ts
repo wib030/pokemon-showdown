@@ -904,31 +904,29 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			const types = species.types;
 			let skip = false;
 			typeWeaknessRerolls = 0;
+			let sets = this.randomSets[species.id]["sets"];
 
 			if (!isMonotype && !this.forceMonotype) {
 				if (leadNum < 1)
 				{
-					let checkSets = this.randomSets[species.id]["sets"];
+					sets = this.randomSets[species.id]["sets"];
 					// Check if the Pokemon has a Lead set
 					skip = true;
 					ensureLead = false;
-					for (let checkSet of checkSets) {
-						if (LEAD_ROLES.includes(checkSet.role)) {
+					for (const set of sets) {
+						if (LEAD_ROLES.includes(set.role)) {
 							skip = false;
 							ensureLead = true;
 							break;
 						}
 					}
-				}
-				
-				if (removalNum < 1 && leadNum > 0)
-				{
-					let checkSets = this.randomSets[species.id]["sets"];
+				} else if (removalNum < 1 && leadNum > 0) {
+					sets = this.randomSets[species.id]["sets"];
 					// Check if the Pokemon has a Lead set
 					skip = true;
 					ensureRemoval = false;
-					for (let checkSet of checkSets) {
-						if (REMOVAL_ROLES.includes(checkSet.role)) {
+					for (let set of sets) {
+						if (REMOVAL_ROLES.includes(set.role)) {
 							skip = false;
 							ensureRemoval = true;
 							break;
