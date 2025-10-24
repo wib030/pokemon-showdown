@@ -890,29 +890,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let skip = false;
 
 			if (!isMonotype && !this.forceMonotype) {
-				if (pokemon.length > 0)
-				{
-					for (const typeName of types) {
-						if (typeWeaknesses[typeName] > typeResistances[typeName])
-						{
-							skip = true;
-							if (Object.values(species.abilities).includes('Color Change')) {
-								if (typeName.includes(COLOR_CHANGE_RESIST)) {
-									skip = false;
-									break;
-								}
-							}
-							else if (this.dex.getEffectiveness(typeName, species) < 0)
-							{
-								skip = false;
-								break;
-							}
-						}
-					}
-					if (skip) continue;
-				}
-				
-				/*
 				if (leadNum < 1)
 				{
 					let checkSets = this.randomSets[species.id]["sets"];
@@ -939,7 +916,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				if (skip) continue;
-				*/
 
 				// Limit two of a single type, and one of any other type
 				for (const typeName of types) {
@@ -992,6 +968,28 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (this.dex.getEffectiveness('Fire', species) === 0 && Object.values(species.abilities).includes('Dry Skin')) {
 					if (!typeWeaknesses['Fire']) typeWeaknesses['Fire'] = 0;
 					if (typeWeaknesses['Fire'] >= 3 * limitFactor) continue;
+				}
+				
+				if (pokemon.length > 0)
+				{
+					for (const typeName of types) {
+						if (typeWeaknesses[typeName] > typeResistances[typeName])
+						{
+							skip = true;
+							if (Object.values(species.abilities).includes('Color Change')) {
+								if (typeName.includes(COLOR_CHANGE_RESIST)) {
+									skip = false;
+									break;
+								}
+							}
+							else if (this.dex.getEffectiveness(typeName, species) < 0)
+							{
+								skip = false;
+								break;
+							}
+						}
+					}
+					if (skip) continue;
 				}
 			}
 
