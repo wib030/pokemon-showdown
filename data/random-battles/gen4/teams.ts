@@ -1025,7 +1025,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							{
 								if (this.dex.getEffectiveness(typeName, species) > -1)
 								{
-									/*
 									if (set.ability !== 'Color Change') //Object.values(species.abilities).includes('Color Change')
 									{
 										switch (typeName)
@@ -1090,7 +1089,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 												break;
 										}
 									}
-									*/
 									skip = true;
 								}
 							}
