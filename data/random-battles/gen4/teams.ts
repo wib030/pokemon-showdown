@@ -684,36 +684,26 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		isLead = false,
 		leadNum: number,
 		removalNum: number,
+		ensureLead: bool,
+		ensureRemoval: bool,
 	): RandomTeamsTypes.RandomSet {
 		species = this.dex.species.get(species);
 		const forme = this.getForme(species);
 		const sets = this.randomSets[species.id]["sets"];
 		const possibleSets = [];
 		
-		// Check if the Pokemon has a Lead set
-		let canLead = false;
 		for (const set of sets) {
-			if (leadNum < 1 && LEAD_ROLES.includes(set.role)) canLead = true;
-		}
-		
-		// Check if the Pokemon has a Defog or Spinner set
-		let canHazardRemover = false;
-		for (const set of sets) {
-			if ((removalNum < 1 && leadNum > 0) && REMOVAL_ROLES.includes(set.role)) canHazardRemover = true;
-		}
-		
-		for (const set of sets) {
-			// Prevent Removal if the team already has removal
-			if (removalNum > 0 && REMOVAL_ROLES.includes(set.role)) continue;
+			// Enforce Lead if the team does not have one
+			if (ensureLead && !LEAD_ROLES.includes(set.role)) continue;
+			
+			// Prevent Lead if the team already has more than one lead
+			if (leadNum > 1 && LEAD_ROLES.includes(set.role)) continue;
 			
 			// Enforce Removal if the team does not have removal
-			if (canHazardRemover && !REMOVAL_ROLES.includes(set.role)) continue;
+			if (ensureRemoval && !REMOVAL_ROLES.includes(set.role)) continue;
 			
-			// Prevent Lead if the team already has a lead
-			if (leadNum > 0 && LEAD_ROLES.includes(set.role)) continue;
-			
-			// Enforce Lead if the team does not have one
-			if (canLead && !LEAD_ROLES.includes(set.role)) continue;
+			// Prevent Removal if the team already has more than one removal
+			if (removalNum > 1 && REMOVAL_ROLES.includes(set.role)) continue;
 			
 			possibleSets.push(set);
 		}
@@ -874,6 +864,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let physicalAttackers = 0;
 		let specialAttackers = 0;
 		let maxSingleType = 2;
+		
+		let ensureLead = false;
+		let ensureRemoval = false;
 
 		const pokemonList = Object.keys(this.randomSets);
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
@@ -895,6 +888,35 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let skip = false;
 
 			if (!isMonotype && !this.forceMonotype) {
+				if (pokemon.length > 0)
+				{
+					for (const typeName of types) {
+						if (typeWeaknesses[typeName] > typeResistances[typeName])
+						{
+							skip = true;
+							if (Object.values(species.abilities).includes('Color Change')) {
+								if (typeName.includes(COLOR_CHANGE_RESIST)) {
+									skip = false;
+								}
+							}
+							else if (this.dex.getEffectiveness(typeName, species) < 0) {
+								skip = false;
+							}
+							
+							if (skip === false) {
+								// Skip the roll if the Pokemon shares any weaknessess with the previous Pokemon
+								for (const checkTypeName of types) {
+									if (this.dex.getEffectiveness(checkTypeName, species) > 0 && prevMonTypeWeaknesses[checkTypeName] > 0) {
+										skip = true;
+									}
+								}
+								break;
+							}
+						}
+					}
+					if (skip) continue;
+				}
+				
 				if (leadNum < 1)
 				{
 					let checkSets = this.randomSets[species.id]["sets"];
@@ -903,6 +925,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					for (let checkSet of checkSets) {
 						if (LEAD_ROLES.includes(checkSet.role)) {
 							skip = false;
+							ensureLead = true;
 							break;
 						}
 					}
@@ -916,6 +939,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					for (let checkSet of checkSets) {
 						if (REMOVAL_ROLES.includes(checkSet.role)) {
 							skip = false;
+							ensureRemoval = true;
 							break;
 						}
 					}
@@ -974,38 +998,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					if (!typeWeaknesses['Fire']) typeWeaknesses['Fire'] = 0;
 					if (typeWeaknesses['Fire'] >= 3 * limitFactor) continue;
 				}
-				
-				if (pokemon.length > 0)
-				{
-					for (const typeName of types) {
-						if (typeWeaknesses[typeName] > typeResistances[typeName])
-						{
-							skip = true;
-							if (Object.values(species.abilities).includes('Color Change')) {
-								if (typeName.includes(COLOR_CHANGE_RESIST)) {
-									skip = false;
-								}
-							}
-							else if (this.dex.getEffectiveness(typeName, species) < 0) {
-								skip = false;
-							}
-							
-							if (skip === false) {
-								// Skip the roll if the Pokemon shares any weaknessess with the previous Pokemon
-								for (const checkTypeName of types) {
-									if (this.dex.getEffectiveness(checkTypeName, species) > 0 && prevMonTypeWeaknesses[checkTypeName] > 0) {
-										skip = true;
-									}
-								}
-								break;
-							}
-						}
-					}
-					if (skip) continue;
-				}
 			}
 
-			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
+			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum, ensureLead, ensureRemoval);
 
 			// Okay, the set passes, add it to our team
 			pokemon.push(set);
