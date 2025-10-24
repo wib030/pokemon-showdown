@@ -860,8 +860,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let specialAttackers = 0;
 		
 		let maxSingleType = 2;
-		let typesToResist: string[];
-		let typesToImmune: string[];
+		let typesToResist: string[] = [];
+		let typesToImmune: string[] = [];
 
 		const pokemonList = Object.keys(this.randomSets);
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
@@ -1119,6 +1119,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 			}
 			
+			/*
 			if ( typesToResist && typesToResist.length )
 			{
 				this.prng.shuffle(typesToResist);
@@ -1128,6 +1129,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			{
 				this.prng.shuffle(typesToImmune);
 			}
+			*/
 
 			// Okay, the set passes, add it to our team
 			pokemon.push(set);
