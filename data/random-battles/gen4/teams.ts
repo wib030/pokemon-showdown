@@ -1090,8 +1090,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			
 			}
 
-			let typesToResist: string[];
-			let typesToImmune: string[];
+			typesToResist = [];
+			typesToImmune = [];
 
 			for (const typeName of this.dex.types.names())
 			{
