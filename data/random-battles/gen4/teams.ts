@@ -883,6 +883,27 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let skip = false;
 
 			if (!isMonotype && !this.forceMonotype) {
+				if (pokemon.length > 0)
+				{
+					for (const typeName of this.dex.types.names()) {
+						// Current generated mon is not immune to current type
+
+						if (typesToImmune && typesToImmune.length > 0)
+						{
+							if (typesToImmune.includes(typeName))
+							{
+								if (this.dex.getImmunity(typeName, types))
+								{
+									skip = true;
+								}
+							}
+						}
+						if (skip) break;
+					}
+
+					if (skip) continue;
+				}
+				
 				/*
 				if (leadNum < 1)
 				{
@@ -965,32 +986,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			}
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
-			
-			if (pokemon.length > 0)
-			{
-				for (const typeName of this.dex.types.names()) {
-					// Current generated mon is not immune to current type
-
-					if (typesToImmune && typesToImmune.length > 0)
-					{
-						if (typesToImmune.includes(typeName))
-						{
-							if (this.dex.getImmunity(typeName, types))
-							{
-								skip = true;
-							}
-							
-							if (typeName === 'Fire' && set.ability === 'Flash Fire')
-							{
-								skip = false;
-							}
-						}
-					}
-					if (skip) break;
-				}
-
-				if (skip) continue;
-			}
 
 			typesToResist = [];
 			typesToImmune = [];
@@ -1007,10 +1002,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						if (!this.dex.getImmunity(typeName, defendingTypeName)) {
 							typeHasImmunity = true;
 							break;
-						}
-						
-						if (typeName === 'Fire') {
-							typeHasImmunity = true;
 						}
 					}
 					
