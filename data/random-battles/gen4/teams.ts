@@ -1106,14 +1106,22 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			typesToResist = [];
 			typesToImmune = [];
-
+			
+			// Loop through double weaknessess and push to typesToImmune variable
 			for (const typeName of this.dex.types.names())
 			{
 				if (typeDoubleWeaknesses[typeName] > typeImmunities[typeName])
 				{
-					typesToImmune.push(typeName);
+					if (CheckTypeHasImmunity(typeName))
+					{
+						typesToImmune.push(typeName);
+					}
 				}
-
+			}
+			
+			// Loop through type weaknesses and push to typesToResist variable
+			for (const typeName of this.dex.types.names())
+			{
 				if (typeWeaknesses[typeName] > typeResistances[typeName]
 				&& !!typesToResist.some( weakType => weakType === typeName ))
 				{
@@ -1237,6 +1245,22 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 		return pokemon;
 	}
+}
+
+/*
+	Returns true if the source type has an immunity, false otherwise.
+*/
+function CheckTypeHasImmunity(
+	source: { type: string } | string
+): boolean {
+	for (const typeName of this.dex.types.names())
+	{
+		if (!this.dex.getImmunity(source, typeName)) {
+			return true;
+		}
+	}
+	
+	return false;
 }
 
 export default RandomGen4Teams;
