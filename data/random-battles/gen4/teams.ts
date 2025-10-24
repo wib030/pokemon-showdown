@@ -851,6 +851,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const typeResistances: { [k: string]: number } = {};
 		const typeDoubleResistances: { [k: string]: number } = {};
 		const teamDetails: RandomTeamsTypes.TeamDetails = {};
+		const typeImmunities: { [k: string]: number } = {};
 		let numMaxLevelPokemon = 0;
 		
 		let leadNum = 0;
@@ -975,7 +976,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 			}
 
-			// Increment weakness and resistance counter
+			// Increment weakness, resistance and immunity counter
 			for (const typeName of this.dex.types.names()) {
 				if (Object.values(species.abilities).includes('Color Change')) {
 					if (typeName === 'Ghost' || typeName === 'Dragon') {
@@ -1001,6 +1002,21 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 					if (this.dex.getEffectiveness(typeName, species) < -1) {
 						typeDoubleResistances[typeName]++;
+					}
+					
+					// it is immune to the type
+					if ((set.ability === 'Dry Skin' || set.ability === 'Water Absorb' || set.ability === 'Storm Drain') && typeName === 'Water') {
+						typeImmunities[typeName]++;
+					} else if ((set.ability === 'Flash Fire') && typeName === 'Fire') {
+						typeImmunities[typeName]++;
+					} else if ((set.ability === 'Levitate') && typeName === 'Ground') {
+						typeImmunities[typeName]++;
+					} else if ((set.ability === 'Lightning Rod' || set.ability === 'Volt Absorb') && typeName === 'Electric') {
+						typeImmunities[typeName]++;
+					} else {
+						if (!this.dex.getImmunity(typeName, types)) {
+							typeImmunities[typeName]++;
+						}
 					}
 				}
 			}
