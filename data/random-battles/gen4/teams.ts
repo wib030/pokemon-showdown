@@ -1093,6 +1093,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 					}
 				}
+
+				if (skip) break;
 			}
 
 			if (skip) continue;
@@ -1113,6 +1115,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					typesToResist.push(typeName);
 				}
 			}
+
+			this.prng.shuffle(typesToImmune);
+			this.prng.shuffle(typesToResist);
 
 			// Okay, the set passes, add it to our team
 			pokemon.push(set);
