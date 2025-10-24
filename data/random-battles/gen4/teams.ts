@@ -714,7 +714,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			// if (leadNum > 1 && LEAD_ROLES.includes(set.role)) continue;
 			
 			// Enforce Removal if the team does not have removal
-			if (removalNum === 0 && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
+			if ((removalNum === 0 && leadNum > 0) && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
 			
 			// Prevent Removal if the team already has more than one removal
 			// if (removalNum > 1 && REMOVAL_ROLES.includes(set.role)) continue;
