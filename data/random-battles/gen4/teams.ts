@@ -1015,6 +1015,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							}
 						}
 
+						if (skip) break;
+
 						if (typesToResist && typesToResist.length > 0)
 						{
 							// Current generated mon is not resistant to current type
