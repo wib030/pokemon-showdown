@@ -910,13 +910,15 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								for (const checkTypeName of types) {
 									if (this.dex.getEffectiveness(checkTypeName, species) > 0 && prevMonTypeWeaknesses[checkTypeName] > 0) {
 										skip = true;
+									} else {
+										if (typeWeaknessRerolls >= 100) skip = false;
 									}
 								}
 								break;
 							}
 						}
 					}
-					if (skip && typeWeaknessRerolls < 100) {
+					if (skip) {
 						typeWeaknessRerolls++;
 						continue;
 					}
