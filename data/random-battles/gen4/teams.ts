@@ -67,11 +67,6 @@ const ATTACKING_ROLES = [
 	'TR Attacker', 'Fast Pivot', 'Bulky Pivot', 'Sun Setup', 'Switch Trapper',
 ];
 
-// Order to check type in
-const TYPE_NAMES = [
-	'Rock', 'Fighting', 'Ground', 'Fire', 'Dragon', 'Dark', 'Ice', 'Water', 'Ghost', 'Electric', 'Psychic', 'Poison', 'Flying', 'Grass', 'Steel', 'Bug', 'Normal',
-];
-
 export class RandomGen4Teams extends RandomGen5Teams {
 	override randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = require('./sets.json');
 
@@ -864,6 +859,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 		const baseFormes: { [k: string]: number } = {};
 		const typeCount: { [k: string]: number } = {};
+		
 		const typeWeaknesses: { [k: string]: number } = {};
 		const typeDoubleWeaknesses: { [k: string]: number } = {};
 		const typeResistances: { [k: string]: number } = {};
@@ -908,6 +904,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let skip = false;
 			let weaknessRerolls = 0;
 
+			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
+			
 			if (!isMonotype && !this.forceMonotype) {
 				/*
 				if (leadNum < 1)
@@ -937,7 +935,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				
 				if (pokemon.length > 0)
 				{
-					for (const typeName of TYPE_NAMES) {
+					for (const typeName of this.dex.types.names()) {
+						if (typeWeaknesses[typeName] > typeResistances[typeName])
+						{
+								
+						}
+					}
+					
+					for (const typeName of this.dex.types.names()) {
 						if (typeWeaknesses[typeName] > typeResistances[typeName])
 						{
 							skip = true;
@@ -953,7 +958,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							
 							if (skip === false) {
 								// Skip the roll if the Pokemon shares any weaknessess with the previous Pokemon
-								for (const checkTypeName of TYPE_NAMES) {
+								for (const checkTypeName of this.dex.types.names()) {
 									if (this.dex.getEffectiveness(checkTypeName, species) > 0 && prevMonTypeWeaknesses[checkTypeName] > 0) {
 										skip = true;
 										break;
@@ -1029,8 +1034,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					if (typeWeaknesses['Fire'] >= 3 * limitFactor) continue;
 				}
 			}
-
-			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
 
 			// Okay, the set passes, add it to our team
 			pokemon.push(set);
