@@ -968,12 +968,18 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			// Increment weakness counter
 			for (const typeName of this.dex.types.names()) {
-				// it's weak to the type
-				if (this.dex.getEffectiveness(typeName, species) > 0) {
-					typeWeaknesses[typeName]++;
-				}
-				if (this.dex.getEffectiveness(typeName, species) > 1) {
-					typeDoubleWeaknesses[typeName]++;
+				if (set.ability === 'Color Change') {
+					if (typeName == 'Ghost' || typeName == 'Dragon') {
+						typeWeaknesses[typeName]++;
+					}
+				} else {
+					// it's weak to the type
+					if (this.dex.getEffectiveness(typeName, species) > 0) {
+						typeWeaknesses[typeName]++;
+					}
+					if (this.dex.getEffectiveness(typeName, species) > 1) {
+						typeDoubleWeaknesses[typeName]++;
+					}
 				}
 			}
 			// Count Dry Skin as a Fire weakness
