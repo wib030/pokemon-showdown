@@ -920,7 +920,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 				if (skip) continue;
 
-				// Limit two weak to any type, and one double weak to any type
+				// Limit two weak to any type, and one double weak to a single type
 				for (const typeName of this.dex.types.names()) {
 					if (Object.values(species.abilities).includes('Color Change')) {
 						if (typeName === 'Ghost' || typeName === 'Dragon') {
