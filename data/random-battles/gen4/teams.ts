@@ -910,7 +910,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 									skip = false;
 								}
 							}
-							else if (this.dex.getEffectiveness(typeName, species) < 0) {
+							else if (this.dex.getEffectiveness(typeName, species) < 0
+							|| !this.dex.getImmunity(typeName, types)) {
 								skip = false;
 							}
 							
@@ -931,11 +932,15 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				
-				// Limit two of a single type, and one of any other type
-				for (const typeName of types) {
+				// Update max type limit of types if it has been reached once
+				for (const typeName of this.dex.types.names()) {
 					if (typeCount[typeName] === maxSingleType) {
 						maxSingleType = 1;
 					}
+				}
+				
+				// Limit two of a single type, and one of any other type
+				for (const typeName of types) {
 					if ((typeCount[typeName] >= maxSingleType * limitFactor) && !Object.values(species.abilities).includes('Color Change')) {
 						skip = true;
 						break;
