@@ -1101,7 +1101,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					typesToResist.push(typeName);
 				}
 			}
-
+			
+			/*
 			if ( typesToResist && typesToResist.length )
 			{
 				this.prng.shuffle(typesToResist);
@@ -1111,7 +1112,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			{
 				this.prng.shuffle(typesToImmune);
 			}
-			
+			*/
 
 			// Okay, the set passes, add it to our team
 			pokemon.push(set);
