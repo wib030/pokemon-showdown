@@ -990,10 +990,21 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				} else {
 					// it's weak to the type
 					if (this.dex.getEffectiveness(typeName, species) > 0) {
-						typeWeaknesses[typeName]++;
+						if (set.ability === 'Thick Fat' && (typeName === 'Fire' || typeName === 'Ice')) {
+							// Do not increment the weakness counter
+						} else {
+							typeWeaknesses[typeName]++;
+						}
 					}
 					if (this.dex.getEffectiveness(typeName, species) > 1) {
-						typeDoubleWeaknesses[typeName]++;
+						if (set.ability === 'Thick Fat' && (typeName === 'Fire' || typeName === 'Ice')) {
+							typeWeaknesses[typeName]++;
+						} else {
+							typeDoubleWeaknesses[typeName]++;
+						}
+					}
+					if (set.ability === 'Thick Fat' && this.dex.getEffectiveness(typeName, species) === 0 && (typeName === 'Fire' || typeName === 'Ice')) {
+						typeResistances[typeName]++;
 					}
 					
 					// it resists the type
@@ -1003,6 +1014,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					if (this.dex.getEffectiveness(typeName, species) < -1) {
 						typeDoubleResistances[typeName]++;
 					}
+					if (set.ability === 'Thick Fat' && this.dex.getEffectiveness(typeName, species) === 0 && (typeName === 'Fire' || typeName === 'Ice')) {
+						typeResistances[typeName]++;
+					}
 					
 					// it is immune to the type
 					if ((set.ability === 'Dry Skin' || set.ability === 'Water Absorb' || set.ability === 'Storm Drain') && typeName === 'Water') {
@@ -1011,7 +1025,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						typeImmunities[typeName]++;
 					} else if ((set.ability === 'Levitate') && typeName === 'Ground') {
 						typeImmunities[typeName]++;
-					} else if ((set.ability === 'Lightning Rod' || set.ability === 'Volt Absorb') && typeName === 'Electric') {
+					} else if ((set.ability === 'Lightning Rod' || set.ability === 'Volt Absorb' || set.ability === 'Motor Drive') && typeName === 'Electric') {
 						typeImmunities[typeName]++;
 					} else {
 						if (!this.dex.getImmunity(typeName, types)) {
