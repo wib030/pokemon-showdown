@@ -963,7 +963,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			}
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
-
+			
+			if (pokemon.length > 1)
+			{
+			
 			for (const typeName of this.dex.types.names()) {
 				// Current generated mon is not immune to current type
 
@@ -1084,6 +1087,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			}
 
 			if (skip) continue;
+			
+			}
 
 			typesToResist = new Array<string>();
 			typesToImmune = new Array<string>();
@@ -1102,7 +1107,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 			}
 			
-			/*
 			if ( typesToResist && typesToResist.length )
 			{
 				this.prng.shuffle(typesToResist);
@@ -1112,7 +1116,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			{
 				this.prng.shuffle(typesToImmune);
 			}
-			*/
 
 			// Okay, the set passes, add it to our team
 			pokemon.push(set);
