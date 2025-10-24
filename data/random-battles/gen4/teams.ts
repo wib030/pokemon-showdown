@@ -907,7 +907,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (!isMonotype && !this.forceMonotype) {
 				if (pokemon.length > 0)
 				{
-					for (const typeName of types) {
+					for (const typeName of this.dex.types.names()) {
 						if (typeWeaknesses[typeName] > typeResistances[typeName])
 						{
 							skip = true;
@@ -920,7 +920,16 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								skip = false;
 							}
 							
-							if (skip === false) break;
+							if (skip === false) {
+								// Skip the roll if the Pokemon shares any weaknessess with the previous Pokemon
+								for (const checkTypeName of this.dex.types.names()) {
+									if (this.dex.getEffectiveness(checkTypeName, species) > 0 && prevMonTypeWeaknesses[checkTypeName] > 0) {
+										skip = true;
+										break;
+									}
+								}
+								
+							}
 						}
 					}
 					if (skip) {
