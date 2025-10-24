@@ -903,8 +903,38 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			const types = species.types;
 			let skip = false;
+			let sets = this.randomSets[species.id]["sets"];
+			let checkSpecies = this.dex.species.get(species);
 
 			if (!isMonotype && !this.forceMonotype) {
+				if (leadNum < 1)
+				{
+					sets = this.randomSets[checkSpecies.id]["sets"];
+					// Check if the Pokemon has a Lead set
+					skip = true;
+					ensureLead = false;
+					for (const set of sets) {
+						if (LEAD_ROLES.includes(set.role)) {
+							skip = false;
+							ensureLead = true;
+							break;
+						}
+					}
+				} else if (removalNum < 1 && leadNum > 0) {
+					sets = this.randomSets[checkSpecies.id]["sets"];
+					// Check if the Pokemon has a Lead set
+					skip = true;
+					ensureRemoval = false;
+					for (let set of sets) {
+						if (REMOVAL_ROLES.includes(set.role)) {
+							skip = false;
+							ensureRemoval = true;
+							break;
+						}
+					}
+				}
+				if (skip) continue;
+				
 				if (pokemon.length > 0)
 				{
 					for (const typeName of this.dex.types.names()) {
