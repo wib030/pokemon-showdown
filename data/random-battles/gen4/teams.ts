@@ -860,8 +860,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let specialAttackers = 0;
 		
 		let maxSingleType = 2;
-		let typesToResist = [];
-		let typesToImmune = [];
 
 		const pokemonList = Object.keys(this.randomSets);
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
@@ -883,27 +881,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let skip = false;
 
 			if (!isMonotype && !this.forceMonotype) {
-				if (pokemon.length > 0)
-				{
-					for (const typeName of this.dex.types.names()) {
-						// Current generated mon is not immune to current type
-
-						if (typesToImmune && typesToImmune.length > 0)
-						{
-							if (typesToImmune.includes(typeName))
-							{
-								if (this.dex.getImmunity(typeName, types))
-								{
-									skip = true;
-								}
-							}
-						}
-						if (skip) break;
-					}
-
-					if (skip) continue;
-				}
-				
 				/*
 				if (leadNum < 1)
 				{
@@ -986,53 +963,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			}
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
-
-			typesToResist = [];
-			typesToImmune = [];
-			
-			// Loop through double weaknessess and push to typesToImmune variable
-			for (const typeName of this.dex.types.names())
-			{
-				if (typeDoubleWeaknesses[typeName] > typeImmunities[typeName])
-				{
-					let typeHasImmunity = false;
-					
-					for (const defendingTypeName of this.dex.types.names())
-					{
-						if (!this.dex.getImmunity(typeName, defendingTypeName)) {
-							typeHasImmunity = true;
-							break;
-						}
-					}
-					
-					if (typeHasImmunity)
-					{
-						typesToImmune.push(typeName);
-					}
-				}
-			}
-			
-			// Loop through type weaknesses and push to typesToResist variable
-			for (const typeName of this.dex.types.names())
-			{
-				if (typeWeaknesses[typeName] > typeResistances[typeName]
-				&& !!typesToResist.some( weakType => weakType === typeName ))
-				{
-					typesToResist.push(typeName);
-				}
-			}
-			
-			/*
-			if ( typesToResist && typesToResist.length )
-			{
-				this.prng.shuffle(typesToResist);
-			}
-
-			if ( typesToImmune && typesToImmune.length )
-			{
-				this.prng.shuffle(typesToImmune);
-			}
-			*/
 
 			// Okay, the set passes, add it to our team
 			pokemon.push(set);
