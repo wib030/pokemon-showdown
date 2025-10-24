@@ -861,13 +861,18 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const typeDoubleResistances: { [k: string]: number } = {};
 		const teamDetails: RandomTeamsTypes.TeamDetails = {};
 		const typeImmunities: { [k: string]: number } = {};
-		let numMaxLevelPokemon = 0;
 		
+		const prevMonTypeWeaknesses: { [k: string]: number } = {};
+		const prevMonTypeDoubleWeaknesses: { [k: string]: number } = {};
+		const prevMonTypeResistances: { [k: string]: number } = {};
+		const prevMonTypeDoubleResistances: { [k: string]: number } = {};
+		const prevMonTypeImmunities: { [k: string]: number } = {};
+		
+		let numMaxLevelPokemon = 0;
 		let leadNum = 0;
 		let removalNum = 0;
 		let physicalAttackers = 0;
 		let specialAttackers = 0;
-		
 		let maxSingleType = 2;
 
 		const pokemonList = Object.keys(this.randomSets);
@@ -977,13 +982,12 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						{
 							skip = true;
 							if (Object.values(species.abilities).includes('Color Change')) {
-								if (typeName.includes(COLOR_CHANGE_RESIST)) {
+								if (typeName.includes(COLOR_CHANGE_RESIST)&& prevMonTypeWeaknesses[typeName] === 0) {
 									skip = false;
 									break;
 								}
 							}
-							else if (this.dex.getEffectiveness(typeName, species) < 0)
-							{
+							else if (this.dex.getEffectiveness(typeName, species) < 0 && prevMonTypeWeaknesses[typeName] === 0) {
 								skip = false;
 								break;
 							}
@@ -1012,15 +1016,25 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					typeCount[typeName] = 1;
 				}
 			}
+			
+			for (const typeName of this.dex.types.names()) {
+				prevMonTypeResistances[typeName] = 0;
+				prevMonTypeResistances[typeName] = 0;
+				prevMonTypeImmunities[typeName] = 0;
+				prevMonTypeWeaknesses[typeName] = 0;
+				prevMonTypeDoubleWeaknesses[typeName] = 0;
+			}
 
 			// Increment weakness, resistance and immunity counter
 			for (const typeName of this.dex.types.names()) {
 				if (set.ability === 'Color Change') {
 					if (typeName.includes(COLOR_CHANGE_WEAK)) {
 						typeWeaknesses[typeName]++;
+						prevMonTypeWeaknesses[typeName]++;
 					}
 					if (typeName.includes(COLOR_CHANGE_RESIST)) {
 						typeResistances[typeName]++;
+						prevMonTypeResistances[typeName]++;
 					}
 				} else {
 					// it's weak to the type
@@ -1029,48 +1043,63 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							// Do not increment the weakness counter
 						} else {
 							typeWeaknesses[typeName]++;
+							prevMonTypeWeaknesses[typeName]++;
 						}
 					}
 					if (this.dex.getEffectiveness(typeName, species) > 1) {
 						if (set.ability === 'Thick Fat' && (typeName === 'Fire' || typeName === 'Ice')) {
 							typeWeaknesses[typeName]++;
+							prevMonTypeWeaknesses[typeName]++;
 						} else {
 							typeDoubleWeaknesses[typeName]++;
+							prevMonTypeDoubleWeaknesses[typeName]++;
 						}
 					}
 					if (set.ability === 'Thick Fat' && this.dex.getEffectiveness(typeName, species) === 0 && (typeName === 'Fire' || typeName === 'Ice')) {
 						typeResistances[typeName]++;
+						prevMonTypeResistances[typeName]++;
 					}
 					
 					// it resists the type
 					if (this.dex.getEffectiveness(typeName, species) < 0) {
 						typeResistances[typeName]++;
+						prevMonTypeResistances[typeName]++;
 					}
 					if (this.dex.getEffectiveness(typeName, species) < -1) {
 						typeDoubleResistances[typeName]++;
+						prevMonTypeDoubleResistances[typeName]++;
 					}
 					if (set.ability === 'Thick Fat' && this.dex.getEffectiveness(typeName, species) === 0 && (typeName === 'Fire' || typeName === 'Ice')) {
 						typeResistances[typeName]++;
+						prevMonTypeResistances[typeName]++;
 					}
 					
 					// it is immune to the type
 					if ((set.ability === 'Dry Skin' || set.ability === 'Water Absorb' || set.ability === 'Storm Drain') && typeName === 'Water') {
 						typeImmunities[typeName]++;
+						prevMonTypeImmunities[typeName]++;
 					} else if ((set.ability === 'Flash Fire') && typeName === 'Fire') {
 						typeImmunities[typeName]++;
+						prevMonTypeImmunities[typeName]++;
 					} else if ((set.ability === 'Levitate') && typeName === 'Ground') {
 						typeImmunities[typeName]++;
+						prevMonTypeImmunities[typeName]++;
 					} else if ((set.ability === 'Lightning Rod' || set.ability === 'Volt Absorb' || set.ability === 'Motor Drive') && typeName === 'Electric') {
 						typeImmunities[typeName]++;
+						prevMonTypeImmunities[typeName]++;
 					} else {
 						if (!this.dex.getImmunity(typeName, types)) {
 							typeImmunities[typeName]++;
+							prevMonTypeImmunities[typeName]++;
 						}
 					}
 				}
 			}
 			// Count Dry Skin as a Fire weakness
-			if (set.ability === 'Dry Skin' && this.dex.getEffectiveness('Fire', species) === 0) typeWeaknesses['Fire']++;
+			if (set.ability === 'Dry Skin' && this.dex.getEffectiveness('Fire', species) === 0) {
+				typeWeaknesses['Fire']++;
+				prevMonTypeWeaknesses[typeName]++;
+			}
 
 			// Increment level 100 counter
 			if (set.level === 100) numMaxLevelPokemon++;
