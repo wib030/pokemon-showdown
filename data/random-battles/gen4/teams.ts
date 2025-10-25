@@ -965,14 +965,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					let typeDefenseScore = 0;
 					
 					for (const typeName of this.dex.types.names()) {
-						typeDefenseScore = typeResistances[typeName] + (typeImmunities[typeName] * 2);
-						if (typeDoubleWeaknesses[typeName] > typeDefenseScore) {
-							doubleWeaknessExists = true;
-							break;
+						for (const checkTypeName of this.dex.types.names()) {
+							typeDefenseScore = typeResistances[checkTypeName] + (typeImmunities[checkTypeName] * 2);
+							if (typeDoubleWeaknesses[checkTypeName] > typeDefenseScore) {
+								doubleWeaknessExists = true;
+								break;
+							}
 						}
-					}
-					
-					for (const typeName of this.dex.types.names()) {
 						typeAttackScore = (doubleWeaknessExists) ? typeDoubleWeaknesses[typeName] : typeWeaknesses[typeName];
 						typeDefenseScore = typeResistances[typeName] + (typeImmunities[typeName] * 2);
 						if (typeAttackScore > typeDefenseScore)
