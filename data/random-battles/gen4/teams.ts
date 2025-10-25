@@ -1034,14 +1034,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				
 				// Limit two of a single type, and one of any other type
 				for (const typeName of types) {
-					if ((typeCount[typeName] >= maxSingleType * limitFactor) && set.ability !== 'Color Change' && set.ability !== 'Imposter') {
+					if ((typeCount[typeName] >= maxSingleType * limitFactor) && !Object.values(species.abilities).includes('Color Change')) {
 						skip = true;
 						break;
 					}
 				}
 				if (skip) continue;
 				
-				// Limit two weak to any type
+				// Limit two weak to any type, and one double weak to a single type
 				if (Array.isArray(WeaknessList) && WeaknessList.length) {
 					for (const Weakness of WeaknessList)
 					{
@@ -1050,6 +1050,21 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						
 						if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 0) {
 							if (weakCount >= 2 * limitFactor) {
+								skip = true;
+								break;
+							}
+						}
+					}
+				}
+				
+				if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length) {
+					for (const DoubleWeakness of DoubleWeaknessList)
+					{
+						let typeName = DoubleWeakness.type;
+						let weakCount = DoubleWeakness.frequency;
+						
+						if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 1) {
+							if (weakCount >= 1 * limitFactor) {
 								skip = true;
 								break;
 							}
