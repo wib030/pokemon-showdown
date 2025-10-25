@@ -100,100 +100,100 @@ class TypeFrequency {
 	frequency: number = 0;
 }
 
-function precheckImmunity(
-	source: { type: string } | string,
-	target: { getTypes: () => string[] } | { types: string[] } | string[] | string,
-	targetAbility: string
-): boolean {
-	const sourceType: string = typeof source !== 'string' ? source.type : source;
-	// @ts-expect-error really wish TS would support this
-	const targetTyping: string[] | string = target.getTypes?.() || target.types || target;
-	const abilityState = this.dex.abilities.get(targetAbility);
-	if (IMMUNITY_ABILITIES[abilityState.id]?.includes(sourceType)) {
-		return false;
-	}
-	if (Array.isArray(targetTyping)) {
-		for (const type of targetTyping) {
-			if (!this.getImmunity(sourceType, type))
-			{
-				return false;
-			}
-		}
-		return true;
-	}
-	const typeData = this.types.get(targetTyping);
-	if (typeData && typeData.damageTaken[sourceType] === 3) return false;
-	return true;
-}
-
-function precheckEffectiveness(
-	source: { type: string } | string,
-	target: { getTypes: () => string[] } | { types: string[] } | string[] | string,
-	targetAbility: string
-): number {
-	const abilityState = this.dex.abilities.get(targetAbility);
-	let sourceType: string = typeof source !== 'string' ? source.type : source;
-	// @ts-expect-error really wish TS would support this
-	let targetTyping: string[] | string = target.getTypes?.() || target.types || target;
-	let totalTypeMod = 0;
-	if (TYPE_ALTERING_ABILITIES.includes(abilityState.id))
-	{
-		if (Array.isArray(targetTyping)) {
-			if (abilityState.id === 'colorchange') {
-				targetType = [sourceType];
-			}
-			else {
-				targetTyping = ["Ghost"];
-			}
-		}
-		else {
-			if (abilityState.id === 'colorchange') {
-				targetTyping = sourceType;
-			}
-			else {
-				targetTyping = "Ghost";
-			}
-		}
-	}
-	if (Array.isArray(targetTyping)) {
-		for (const type of targetTyping) {
-			totalTypeMod += this.getEffectiveness(sourceType, type);
-		}
-		// return totalTypeMod;
-	}
-	else {
-		const typeData = this.types.get(targetTyping);
-		if (!typeData) totalTypeMod = 0;
-		switch (typeData.damageTaken[sourceType]) {
-		case 1: totalTypeMod = 1; // super-effective
-		case 2: totalTypeMod = -1; // resist
-		// in case of weird situations like Gravity, immunity is handled elsewhere
-		default: totalTypeMod = 0;
-		}
-	}
-	if (RESISTANCE_ABILITIES[abilityState.id]?.includes(sourceType)) {
-		totalTypeMod--;
-	}
-	if (WEAKNESS_ABILITIES[abilityState.id]?.includes(sourceType)) {
-		totalTypeMod++;
-	}
-	return totalTypeMod
-}
-
-function TypeMatchupListShuffleAndConcat(list: TypeFrequency[]) {
-	const max = list.reduce((a, b) => Math.max(a,b));
-	var i = list.length, j, temp;
-	while(--i > 0) {
-		j = Math.floor(Math.random()*(i+1));
-		temp = list[j];
-		list[j] = list[i];
-		list[i] = temp;
-	}
-	list = list.filter((y) => y.frequency === max);
-}
-
 export class RandomGen4Teams extends RandomGen5Teams {
 	override randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = require('./sets.json');
+	
+	precheckImmunity(
+		source: { type: string } | string,
+		target: { getTypes: () => string[] } | { types: string[] } | string[] | string,
+		targetAbility: string
+	): boolean {
+		const sourceType: string = typeof source !== 'string' ? source.type : source;
+		// @ts-expect-error really wish TS would support this
+		const targetTyping: string[] | string = target.getTypes?.() || target.types || target;
+		const abilityState = this.dex.abilities.get(targetAbility);
+		if (IMMUNITY_ABILITIES[abilityState.id]?.includes(sourceType)) {
+			return false;
+		}
+		if (Array.isArray(targetTyping)) {
+			for (const type of targetTyping) {
+				if (!this.getImmunity(sourceType, type))
+				{
+					return false;
+				}
+			}
+			return true;
+		}
+		const typeData = this.types.get(targetTyping);
+		if (typeData && typeData.damageTaken[sourceType] === 3) return false;
+		return true;
+	}
+
+	precheckEffectiveness(
+		source: { type: string } | string,
+		target: { getTypes: () => string[] } | { types: string[] } | string[] | string,
+		targetAbility: string
+	): number {
+		const abilityState = this.dex.abilities.get(targetAbility);
+		let sourceType: string = typeof source !== 'string' ? source.type : source;
+		// @ts-expect-error really wish TS would support this
+		let targetTyping: string[] | string = target.getTypes?.() || target.types || target;
+		let totalTypeMod = 0;
+		if (TYPE_ALTERING_ABILITIES.includes(abilityState.id))
+		{
+			if (Array.isArray(targetTyping)) {
+				if (abilityState.id === 'colorchange') {
+					targetType = [sourceType];
+				}
+				else {
+					targetTyping = ["Ghost"];
+				}
+			}
+			else {
+				if (abilityState.id === 'colorchange') {
+					targetTyping = sourceType;
+				}
+				else {
+					targetTyping = "Ghost";
+				}
+			}
+		}
+		if (Array.isArray(targetTyping)) {
+			for (const type of targetTyping) {
+				totalTypeMod += this.getEffectiveness(sourceType, type);
+			}
+			// return totalTypeMod;
+		}
+		else {
+			const typeData = this.types.get(targetTyping);
+			if (!typeData) totalTypeMod = 0;
+			switch (typeData.damageTaken[sourceType]) {
+			case 1: totalTypeMod = 1; // super-effective
+			case 2: totalTypeMod = -1; // resist
+			// in case of weird situations like Gravity, immunity is handled elsewhere
+			default: totalTypeMod = 0;
+			}
+		}
+		if (RESISTANCE_ABILITIES[abilityState.id]?.includes(sourceType)) {
+			totalTypeMod--;
+		}
+		if (WEAKNESS_ABILITIES[abilityState.id]?.includes(sourceType)) {
+			totalTypeMod++;
+		}
+		return totalTypeMod
+	}
+
+	TypeMatchupListShuffleAndConcat(list: TypeFrequency[]) {
+		const max = list.reduce((a, b) => Math.max(a,b));
+		var i = list.length, j, temp;
+		while(--i > 0) {
+			j = Math.floor(Math.random()*(i+1));
+			temp = list[j];
+			list[j] = list[i];
+			list[i] = temp;
+		}
+		list = list.filter((y) => y.frequency === max);
+	}
 
 	constructor(format: string | Format, prng: PRNG | PRNGSeed | null) {
 		super(format, prng);
