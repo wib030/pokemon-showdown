@@ -1041,16 +1041,15 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 				if (skip) continue;
 
-				/*
 				// Limit two weak to any type, and one double weak to a single type
-				if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length) {
-					for (const DoubleWeakness of DoubleWeaknessList)
+				if (Array.isArray(WeaknessList) && WeaknessList.length) {
+					for (const Weakness of WeaknessList)
 					{
-						let typeName = DoubleWeakness.type;
-						let weakCount = DoubleWeakness.frequency;
+						let typeName = Weakness.type;
+						let weakCount = Weakness.frequency;
 						
-						if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 1) {
-							if (weakCount >= 1 * limitFactor) {
+						if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 0) {
+							if (weakCount >= 2 * limitFactor) {
 								skip = true;
 								break;
 							}
@@ -1058,7 +1057,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				if (skip) continue;
-				*/
 			}
 
 			// Okay, the set passes, add it to our team
