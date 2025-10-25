@@ -976,20 +976,22 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						{
 							let typeName = DoubleWeakness.type;
 							let doubleWeakCount = DoubleWeakness.frequency;
+							
+							if (doubleWeakCount > 0) {
+								if (IMMUNE_TYPES.includes(typeName)) {
+									if (ImmunityList?.some(y => y.type === typeName && y.frequency <= doubleWeakCount)) {
+										if (this.dex.precheckImmunity(typeName, types, set.ability)) {
+											skip = true;
+											break;
+										}
+									}
+								}
 
-							if (IMMUNE_TYPES.includes(typeName)) {
-								if (ImmunityList?.some(y => y.type === typeName && y.frequency <= doubleWeakCount)) {
-									if (this.dex.precheckImmunity(typeName, types, set.ability)) {
+								if (DoubleResistList?.some(y => y.type === typeName && y.frequency <= doubleWeakCount)) {
+									if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -2) {
 										skip = true;
 										break;
 									}
-								}
-							}
-
-							if (DoubleResistList?.some(y => y.type === typeName && y.frequency <= doubleWeakCount)) {
-								if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -2) {
-									skip = true;
-									break;
 								}
 							}
 						}
@@ -1003,27 +1005,29 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						{
 							let typeName = Weakness.type;
 							let weakCount = Weakness.frequency;
+							
+							if (weakCount > 0) {
+								if (IMMUNE_TYPES.includes(typeName)) {
+									if (ImmunityList?.some(y => y.type === typeName && y.frequency <= weakCount)) {
+										if (this.dex.precheckImmunity(typeName, types, set.ability)) {
+											skip = true;
+											break;
+										}
+									}
+								}
 
-							if (IMMUNE_TYPES.includes(typeName)) {
-								if (ImmunityList?.some(y => y.type === typeName && y.frequency <= weakCount)) {
-									if (this.dex.precheckImmunity(typeName, types, set.ability)) {
+								if (DoubleResistList?.some(y => y.type === typeName && y.frequency <= weakCount)) {
+									if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -2) {
 										skip = true;
 										break;
 									}
 								}
-							}
 
-							if (DoubleResistList?.some(y => y.type === typeName && y.frequency <= weakCount)) {
-								if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -2) {
-									skip = true;
-									break;
-								}
-							}
-
-							if (ResistList?.some(y => y.type === typeName && y.frequency <= weakCount)) {
-								if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -1) {
-									skip = true;
-									break;
+								if (ResistList?.some(y => y.type === typeName && y.frequency <= weakCount)) {
+									if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -1) {
+										skip = true;
+										break;
+									}
 								}
 							}
 						}
@@ -1039,6 +1043,24 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						break;
 					}
 				}
+				if (skip) continue;
+				
+				// Limit two weak to any type
+				for (const typeName of this.dex.types.names()) {
+					for (const Weakness of WeaknessList)
+					{
+						let typeName = Weakness.type;
+						let weakCount = Weakness.frequency;
+						
+						if (WeaknessList?.some(y => y.type === typeName && y.frequency >= 2)) {
+							if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 0) {
+								skip = true;
+								break;
+							}
+						}
+					}
+				}
+				
 				if (skip) continue;
 			}
 
