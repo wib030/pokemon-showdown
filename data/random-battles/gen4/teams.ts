@@ -902,11 +902,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		*/
 		const teamDetails: RandomTeamsTypes.TeamDetails = {};
 
-		let WeaknessList: TypeFrequency[];
-		let DoubleWeaknessList: TypeFrequency[];
-		let ImmunityList: TypeFrequency[];
-		let ResistList: TypeFrequency[];
-		let DoubleResistList: TypeFrequency[];
+		let WeaknessList: TypeFrequency[] = [];
+		let DoubleWeaknessList: TypeFrequency[] = [];
+		let ImmunityList: TypeFrequency[] = [];
+		let ResistList: TypeFrequency[] = [];
+		let DoubleResistList: TypeFrequency[] = [];
 		
 		let leadNum = 0;
 		let removalNum = 0;
