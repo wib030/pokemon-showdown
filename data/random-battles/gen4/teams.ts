@@ -1052,30 +1052,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 				/*
 				// Limit two weak to any type, and one double weak to a single type
-				for (const typeName of this.dex.types.names()) {
-					if (!typeResistances[typeName]) typeResistances[typeName] = 0;
-					if (!typeDoubleResistances[typeName]) typeResistances[typeName] = 0;
-					if (!typeImmunities[typeName]) typeImmunities[typeName] = 0;
-					if (!typeWeaknesses[typeName]) typeWeaknesses[typeName] = 0;
-					if (!typeDoubleWeaknesses[typeName]) typeDoubleWeaknesses[typeName] = 0;
-					
-					// Current generated mon is 2x weak to the type
-					
-					if (TYPE_ALTERING_ABILITIES.includes(abilityState.id)) {
-						if (WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName)) {
-							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
-								skip = true;
-								break;
-							}
-						}
-					} else {
-						if (this.dex.getEffectiveness(typeName, species) > 0) {
-							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
-								skip = true;
-								break;
-							}
-						} else if (this.dex.getEffectiveness(typeName, species) > 1) { // Current generated mon is 4x weak to the type
-							if (typeDoubleWeaknesses[typeName] >= limitFactor) {
+				if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length) {
+					for (const DoubleWeakness of DoubleWeaknessList)
+					{
+						let typeName = DoubleWeakness.type;
+						let weakCount = DoubleWeakness.frequency;
+						
+						if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 1) {
+							if (weakCount >= 1 * limitFactor) {
 								skip = true;
 								break;
 							}
