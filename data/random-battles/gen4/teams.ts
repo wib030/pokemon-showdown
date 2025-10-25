@@ -970,8 +970,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				
 				if (pokemon.length > 0)
 				{
-					TypeMatchupListShuffleAndConcat(DoubleWeaknessList);
-					TypeMatchupListShuffleAndConcat(WeaknessList);
+					this.dex.TypeMatchupListShuffleAndConcat(DoubleWeaknessList);
+					this.dex.TypeMatchupListShuffleAndConcat(WeaknessList);
 
 					/*
 					DoubleWeaknessList.sort((a, b) => {
@@ -998,7 +998,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 						if (IMMUNE_TYPES.includes(typeName)) {
 							if (ImmunityList?.some(y => y.type === typeName && y.frequency < doubleWeakCount)) {
-								if (precheckImmunity(typeName, types, set.ability)) {
+								if (this.dex.precheckImmunity(typeName, types, set.ability)) {
 									skip = true;
 									break;
 								}
@@ -1006,7 +1006,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 
 						if (DoubleResistList?.some(y => y.type === typeName && y.frequency < doubleWeakCount)) {
-							if (precheckEffectiveness(typeName, species, set.ability) > -2) {
+							if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -2) {
 								skip = true;
 								break;
 							}
@@ -1022,7 +1022,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 						if (IMMUNE_TYPES.includes(typeName)) {
 							if (ImmunityList?.some(y => y.type === typeName && y.frequency < weakCount)) {
-								if (precheckImmunity(typeName, types, set.ability)) {
+								if (this.dex.precheckImmunity(typeName, types, set.ability)) {
 									skip = true;
 									break;
 								}
@@ -1030,14 +1030,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 
 						if (DoubleResistList?.some(y => y.type === typeName && y.frequency < weakCount)) {
-							if (precheckEffectiveness(typeName, species, set.ability) > -2) {
+							if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -2) {
 								skip = true;
 								break;
 							}
 						}
 
 						if (ResistList?.some(y => y.type === typeName && y.frequency < weakCount)) {
-							if (precheckEffectiveness(typeName, species, set.ability) > -1) {
+							if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -1) {
 								skip = true;
 								break;
 							}
@@ -1127,8 +1127,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				let MonResist = new TypeFrequency();
 				let MonDoubleResist = new TypeFrequency();
 
-				if (precheckEffectiveness(typeName, species, set.ability) > 0) {
-					if (precheckEffectiveness(typeName, species, set.ability) > 1) {
+				if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 0) {
+					if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 1) {
 						DoubleWeakness.type = typeName;
 						DoubleWeakness.frequency++;
 						DoubleWeaknessList.push(DoubleWeakness);
@@ -1140,8 +1140,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				else {
-					if (precheckEffectiveness(typeName, species, set.ability) < 0) {
-						if (precheckEffectiveness(typeName, species, set.ability) < -1) {
+					if (this.dex.precheckEffectiveness(typeName, species, set.ability) < 0) {
+						if (this.dex.precheckEffectiveness(typeName, species, set.ability) < -1) {
 						MonDoubleResist.type = typeName;
 						MonDoubleResist.frequency++;
 						DoubleResistList.push(MonDoubleResist);
@@ -1154,7 +1154,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 
-				if (!precheckImmunity(typeName, types, set.ability)) {
+				if (!this.dex.precheckImmunity(typeName, types, set.ability)) {
 					MonImmunity.type = typeName;
 					MonImmunity.frequency++;
 					ImmunityList.push(MonImmunity);
