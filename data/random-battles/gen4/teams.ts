@@ -990,9 +990,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const typeDoubleWeaknesses: { [k: string]: number } = {};
 		const typeResistances: { [k: string]: number } = {};
 		const typeDoubleResistances: { [k: string]: number } = {};
+		const typeImmunities: { [k: string]: number } = {};
 		*/
 		const teamDetails: RandomTeamsTypes.TeamDetails = {};
-		const typeImmunities: { [k: string]: number } = {};
 
 		let WeaknessList: TypeFrequency[];
 		let DoubleWeaknessList: TypeFrequency[];
@@ -1000,13 +1000,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let ResistList: TypeFrequency[];
 		let DoubleResistList: TypeFrequency[];
 		
-		const prevMonTypeWeaknesses: { [k: string]: number } = {};
-		const prevMonTypeDoubleWeaknesses: { [k: string]: number } = {};
-		const prevMonTypeResistances: { [k: string]: number } = {};
-		const prevMonTypeDoubleResistances: { [k: string]: number } = {};
-		const prevMonTypeImmunities: { [k: string]: number } = {};
-		
-		let numMaxLevelPokemon = 0;
 		let leadNum = 0;
 		let removalNum = 0;
 		let physicalAttackers = 0;
@@ -1035,7 +1028,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			const types = species.types;
 			let skip = false;
-			let weaknessRerolls = 0;
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
 			
@@ -1147,12 +1139,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					if (skip) continue;
 				}
 				
+				/*
 				// Update max type limit of types if it has been reached once
 				for (const typeName of this.dex.types.names()) {
 					if (typeCount[typeName] === maxSingleType) {
 						maxSingleType = 1;
 					}
 				}
+				*/
 				
 				// Limit two of a single type, and one of any other type
 				for (const typeName of types) {
@@ -1216,14 +1210,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					typeCount[typeName] = 1;
 				}
 			}
-			
-			for (const typeName of this.dex.types.names()) {
-				prevMonTypeResistances[typeName] = 0;
-				prevMonTypeResistances[typeName] = 0;
-				prevMonTypeImmunities[typeName] = 0;
-				prevMonTypeWeaknesses[typeName] = 0;
-				prevMonTypeDoubleWeaknesses[typeName] = 0;
-			}
 
 			// Increment weakness, resistance and immunity counter
 			for (const typeName of this.dex.types.names()) {
@@ -1273,7 +1259,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (TYPE_ALTERING_ABILITIES.includes(abilityState.id)) {
 					if (WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName)) {
 						typeWeaknesses[typeName]++;
-						prevMonTypeWeaknesses[typeName]++;
 					}
 				} else {
 					if (this.dex.getEffectiveness(typeName, species) > 0) {
@@ -1281,16 +1266,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							// Do not increment the weakness counter
 						} else {
 							typeWeaknesses[typeName]++;
-							prevMonTypeWeaknesses[typeName]++;
 						}
 					} else if (this.dex.getEffectiveness(typeName, species) > 1) { // Generated mon is 4x weak to the type
 						// Thick Fat consideration
 						if (set.ability === 'Thick Fat' && (typeName === 'Fire' || typeName === 'Ice')) {
 							typeWeaknesses[typeName]++;
-							prevMonTypeWeaknesses[typeName]++;
 						} else {
 							typeDoubleWeaknesses[typeName]++;
-							prevMonTypeDoubleWeaknesses[typeName]++;
 						}
 					}
 				}
@@ -1300,35 +1282,29 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				// Thick Fat consideration
 				if (set.ability === 'Thick Fat' && this.dex.getEffectiveness(typeName, species) === 0 && (typeName === 'Fire' || typeName === 'Ice')) {
 					typeResistances[typeName]++;
-					prevMonTypeResistances[typeName]++;
 				}
 				
 				// Generated mon is 2x resistant to the type
 				if (TYPE_ALTERING_ABILITIES.includes(abilityState.id)) {
 					if (RESISTANCE_ABILITIES[abilityState.id]?.includes(typeName)) {
 						typeResistances[typeName]++;
-						prevMonTypeResistances[typeName]++;
 					}
 				} else {
 					if (this.dex.getEffectiveness(typeName, species) < 0) {
 						typeResistances[typeName]++;
-						prevMonTypeResistances[typeName]++;
 					} else if (this.dex.getEffectiveness(typeName, species) < -1) { // Generated mon is 4x resistant to the type
 						typeDoubleResistances[typeName]++;
-						prevMonTypeDoubleResistances[typeName]++;
 					}
 				}
 				
 				// Thick Fat consideration
 				if (set.ability === 'Thick Fat' && this.dex.getEffectiveness(typeName, species) === 0 && (typeName === 'Fire' || typeName === 'Ice')) {
 					typeResistances[typeName]++;
-					prevMonTypeResistances[typeName]++;
 				}
 				
 				// Generated mon is immune to the type
 				if (IMMUNITY_ABILITIES[abilityState.id]?.includes(typeName) || !this.dex.getImmunity(typeName, types)) {
 					typeImmunities[typeName]++;
-					prevMonTypeImmunities[typeName]++;
 				}
 				*/
 			}
@@ -1336,12 +1312,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			// Count Dry Skin as a Fire weakness
 			if (set.ability === 'Dry Skin' && this.dex.getEffectiveness('Fire', species) === 0) {
 				typeWeaknesses['Fire']++;
-				prevMonTypeWeaknesses['Fire']++;
 			}
 			*/
-
-			// Increment level 100 counter
-			if (set.level === 100) numMaxLevelPokemon++;
 
 			// Team details
 			if (set.ability === 'Snow Warning' || set.moves.includes('hail') || (set.ability === 'Forecast' && set.item === 'Icy Rock')) teamDetails.hail = 1;
