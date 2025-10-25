@@ -974,7 +974,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								// Skip the roll if the Pokemon shares any weaknessess with the previous Pokemon
 								for (const checkTypeName of this.dex.types.names()) {
 									if (TYPE_ALTERING_ABILITIES.includes(abilityState.id)) {
-										if (WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName) && prevMonTypeWeaknesses[checkTypeName] > 0) {
+										if (WEAKNESS_ABILITIES[abilityState.id]?.includes(checkTypeName) && prevMonTypeWeaknesses[checkTypeName] > 0) {
 											skip = true;
 											break;
 										} else if (weaknessRerolls > 100) {
@@ -1028,7 +1028,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					// Current generated mon is 2x weak to the type
 					
 					if (TYPE_ALTERING_ABILITIES.includes(abilityState.id)) {
-						if (WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName) && prevMonTypeWeaknesses[checkTypeName] > 0) {
+						if (WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName)) {
 							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
 								skip = true;
 								break;
