@@ -1225,7 +1225,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (ATTACKING_ROLES.includes(set.role) && set.inclination === 'Special') specialAttackers++;
 		}
 		if (pokemon.length < this.maxTeamSize && pokemon.length < 12) {
-			throw new Error(`Could not build a random team for ${this.format} (seed=${seed}) (WeaknessList={WeaknessList}) (DoubleWeaknessList={DoubleWeaknessList})`);
+			throw new Error(`Could not build a random team for ${this.format} (seed=${seed}) (WeaknessList=${WeaknessList}) (DoubleWeaknessList=${DoubleWeaknessList})`);
 		}
 
 		return pokemon;
