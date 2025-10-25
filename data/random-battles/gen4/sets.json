@@ -309,19 +309,77 @@
         ]
     },
     "pidgeot": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["bravebird", "heatwave", "return", "roost"],
+                "movepool": ["hurricane", "heatwave", "uturn", "roost"],
                 "abilities": ["No Guard"],
-				"inclination": "Mixed"
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Timid",
+				"inclination": "Special"
             },
-            {
-                "role": "Wallbreaker",
-                "movepool": ["bravebird", "doubleedge", "pursuit", "quickattack", "return", "roost", "uturn"],
+			{
+                "role": "Fast Attacker",
+                "movepool": ["hurricane", "heatwave", "hiddenpowerfighting", "roost"],
                 "abilities": ["No Guard"],
-				"inclination": "Physical"
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [30, 0, 31, 30, 30, 30],
+				"item": "Expert Belt",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["hurricane", "heatwave", "uturn", "hiddenpowerfighting"],
+                "abilities": ["No Guard"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [30, 0, 31, 30, 30, 30],
+				"item": "Expert Belt",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["hurricane", "heatwave", "uturn", "substitute"],
+                "abilities": ["No Guard"],
+				"evs": [4, 0, 0, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["hurricane", "heatwave", "uturn", "substitute"],
+                "abilities": ["No Guard"],
+				"evs": [4, 0, 0, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["hurricane", "heatwave", "uturn", "hiddenpowerfighting"],
+                "abilities": ["No Guard"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [30, 0, 31, 30, 30, 30],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["hurricane", "heatwave", "uturn", "hiddenpowerfighting"],
+                "abilities": ["No Guard"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [30, 0, 31, 30, 30, 30],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
             }
         ]
     },
