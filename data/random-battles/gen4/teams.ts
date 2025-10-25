@@ -950,14 +950,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (pokemon.length > 0)
 				{
 					for (const typeName of this.dex.types.names()) {
-						if (typeWeaknesses[typeName] > typeResistances[typeName])
-						{
-							
-						}
-					}
-					
-					for (const typeName of this.dex.types.names()) {
-						if (typeWeaknesses[typeName] > (typeResistances[typeName] + (typeImmunities[typeName] * 2)))
+						let typeDefenseScore = typeResistances[typeName] + (typeImmunities[typeName] * 2);
+						if (typeWeaknesses[typeName] > typeDefenseScore)
 						{
 							skip = true;
 							if (Object.values(species.abilities).includes('Color Change')) {
