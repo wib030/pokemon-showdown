@@ -965,9 +965,17 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						if (typeWeaknesses[typeName] > typeDefenseScore)
 						{
 							skip = true;
-							if ((this.dex.getEffectiveness(typeName, species) < 0 || RESISTANCE_ABILITIES[abilityState.id]?.includes(typeName))
-							|| (IMMUNITY_ABILITIES[abilityState.id]?.includes(typeName) ||	!this.dex.getImmunity(typeName, types))) {
-								skip = false;
+							
+							if (TYPE_ALTERING_ABILITIES.includes(abilityState.id)) {
+								if ((RESISTANCE_ABILITIES[abilityState.id]?.includes(typeName))
+								|| (IMMUNITY_ABILITIES[abilityState.id]?.includes(typeName))) {
+									skip = false;
+								}
+							} else {
+								if ((this.dex.getEffectiveness(typeName, species) < 0)
+								|| (IMMUNITY_ABILITIES[abilityState.id]?.includes(typeName) ||	!this.dex.getImmunity(typeName, types))) {
+									skip = false;
+								}
 							}
 							
 							if (skip === false) {
