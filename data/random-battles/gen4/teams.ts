@@ -103,7 +103,7 @@ class TypeFrequency {
 export class RandomGen4Teams extends RandomGen5Teams {
 	override randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = require('./sets.json');
 	
-	precheckImmunity(
+	override precheckImmunity(
 		source: { type: string } | string,
 		target: { getTypes: () => string[] } | { types: string[] } | string[] | string,
 		targetAbility: string
@@ -129,7 +129,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		return true;
 	}
 
-	precheckEffectiveness(
+	override precheckEffectiveness(
 		source: { type: string } | string,
 		target: { getTypes: () => string[] } | { types: string[] } | string[] | string,
 		targetAbility: string
@@ -183,7 +183,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		return totalTypeMod
 	}
 
-	TypeMatchupListShuffleAndConcat(list: TypeFrequency[]) {
+	override TypeMatchupListShuffleAndConcat(list: TypeFrequency[]) {
 		const max = list.reduce((a, b) => Math.max(a,b));
 		var i = list.length, j, temp;
 		while(--i > 0) {
