@@ -978,7 +978,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							let doubleWeakCount = DoubleWeakness.frequency;
 
 							if (IMMUNE_TYPES.includes(typeName)) {
-								if (doubleWeakCount > 0 && ImmunityList?.some(y => y.type === typeName && y.frequency <= doubleWeakCount)) {
+								if (doubleWeakCount > 0 && ImmunityList?.some(y => y.type === typeName && y.frequency < doubleWeakCount)) {
 									if (this.dex.precheckImmunity(typeName, types, set.ability)) {
 										skip = true;
 										break;
@@ -986,7 +986,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								}
 							}
 
-							if (doubleWeakCount > 0 && DoubleResistList?.some(y => y.type === typeName && y.frequency <= doubleWeakCount)) {
+							if (doubleWeakCount > 0 && DoubleResistList?.some(y => y.type === typeName && y.frequency < doubleWeakCount)) {
 								if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -2) {
 									skip = true;
 									break;
@@ -1005,7 +1005,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							let weakCount = Weakness.frequency;
 
 							if (IMMUNE_TYPES.includes(typeName)) {
-								if (weakCount > 0 && ImmunityList?.some(y => y.type === typeName && y.frequency <= weakCount)) {
+								if (weakCount > 0 && ImmunityList?.some(y => y.type === typeName && y.frequency < weakCount)) {
 									if (this.dex.precheckImmunity(typeName, types, set.ability)) {
 										skip = true;
 										break;
@@ -1013,14 +1013,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								}
 							}
 
-							if (weakCount > 0 && DoubleResistList?.some(y => y.type === typeName && y.frequency <= weakCount)) {
+							if (weakCount > 0 && DoubleResistList?.some(y => y.type === typeName && y.frequency < weakCount)) {
 								if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -2) {
 									skip = true;
 									break;
 								}
 							}
 
-							if (weakCount > 0 && ResistList?.some(y => y.type === typeName && y.frequency <= weakCount)) {
+							if (weakCount > 0 && ResistList?.some(y => y.type === typeName && y.frequency < weakCount)) {
 								if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -1) {
 									skip = true;
 									break;
@@ -1031,15 +1031,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						if (skip) continue;
 					}
 				}
-				
-				/*
-				// Update max type limit of types if it has been reached once
-				for (const typeName of this.dex.types.names()) {
-					if (typeCount[typeName] === maxSingleType) {
-						maxSingleType = 1;
-					}
-				}
-				*/
 				
 				// Limit two of a single type, and one of any other type
 				for (const typeName of types) {
