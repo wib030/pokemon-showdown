@@ -68,19 +68,27 @@ const IMMUNITY_ABILITIES: { [k: string]: string[] } = {
 	lightningrod: ["Electric"],
 	motordrive: ["Electric"],
 	voltabsorb: ["Electric"],
+	ghostly: ["Normal", "Fighting"],
 };
 
 // Resistance abilities
 const RESISTANCE_ABILITIES: { [k: string]: string[] } = {
 	unownenergy: ["Flying", "Poison", "Ground", "Rock", "Steel", "Fire", "Water", "Grass", "Electric", "Ice", "Dragon", "Fighting", "Psychic"],
 	colorchange: ["Poison", "Steel", "Fire", "Water", "Grass", "Electric", "Psychic", "Ice", "Dark"],
+	ghostly: ["Poison", "Bug"],
 };
 
 // Weakness abilities
 const WEAKNESS_ABILITIES: { [k: string]: string[] } = {
 	unownenergy: ["Normal"],
 	colorchange: ["Dragon", "Ghost"],
+	ghostly: ["Ghost", "Dark"],
 };
+
+// Abilities that consider resistance and weakness differently
+const TYPE_ALTERING_ABILITIES = [
+	'unownenergy', 'colorchange', 'ghostly',
+];
 
 export class RandomGen4Teams extends RandomGen5Teams {
 	override randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = require('./sets.json');
@@ -965,12 +973,22 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							if (skip === false) {
 								// Skip the roll if the Pokemon shares any weaknessess with the previous Pokemon
 								for (const checkTypeName of this.dex.types.names()) {
-									if ((this.dex.getEffectiveness(checkTypeName, species) > 0 || WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName)) && prevMonTypeWeaknesses[checkTypeName] > 0) {
-										skip = true;
-										break;
-									} else if (weaknessRerolls > 100) {
-										skip = false;
-										break;
+									if (TYPE_ALTERING_ABILITIES.includes(abilityState.id)) {
+										if (WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName) && prevMonTypeWeaknesses[checkTypeName] > 0) {
+											skip = true;
+											break;
+										} else if (weaknessRerolls > 100) {
+											skip = false;
+											break;
+										}
+									} else {
+										if (this.dex.getEffectiveness(checkTypeName, species) > 0 && prevMonTypeWeaknesses[checkTypeName] > 0) {
+											skip = true;
+											break;
+										} else if (weaknessRerolls > 100) {
+											skip = false;
+											break;
+										}
 									}
 								}
 								break;
@@ -1007,17 +1025,26 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					if (!typeWeaknesses[typeName]) typeWeaknesses[typeName] = 0;
 					if (!typeDoubleWeaknesses[typeName]) typeDoubleWeaknesses[typeName] = 0;
 					
-					// Color change consideration
 					// Current generated mon is 2x weak to the type
-					if (this.dex.getEffectiveness(typeName, species) > 0 || WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName)) {
-						if (typeWeaknesses[typeName] >= 2 * limitFactor) {
-							skip = true;
-							break;
+					
+					if (TYPE_ALTERING_ABILITIES.includes(abilityState.id)) {
+						if (WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName) && prevMonTypeWeaknesses[checkTypeName] > 0) {
+							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
+								skip = true;
+								break;
+							}
 						}
-					} else if (this.dex.getEffectiveness(typeName, species) > 1) { // Current generated mon is 4x weak to the type
-						if (typeDoubleWeaknesses[typeName] >= limitFactor) {
-							skip = true;
-							break;
+					} else {
+						if (this.dex.getEffectiveness(typeName, species) > 0) {
+							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
+								skip = true;
+								break;
+							}
+						} else if (this.dex.getEffectiveness(typeName, species) > 1) { // Current generated mon is 4x weak to the type
+							if (typeDoubleWeaknesses[typeName] >= limitFactor) {
+								skip = true;
+								break;
+							}
 						}
 					}
 				}
@@ -1059,21 +1086,28 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			// Increment weakness, resistance and immunity counter
 			for (const typeName of this.dex.types.names()) {
 				// Generated mon is 2x weak to the type
-				if (this.dex.getEffectiveness(typeName, species) > 0 || WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName)) {
-					if (set.ability === 'Thick Fat' && (typeName === 'Fire' || typeName === 'Ice')) {
-						// Do not increment the weakness counter
-					} else {
+				if (TYPE_ALTERING_ABILITIES.includes(abilityState.id)) {
+					if (WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName)) {
 						typeWeaknesses[typeName]++;
 						prevMonTypeWeaknesses[typeName]++;
 					}
-				} else if (this.dex.getEffectiveness(typeName, species) > 1) { // Generated mon is 4x weak to the type
-					// Thick Fat consideration
-					if (set.ability === 'Thick Fat' && (typeName === 'Fire' || typeName === 'Ice')) {
-						typeWeaknesses[typeName]++;
-						prevMonTypeWeaknesses[typeName]++;
-					} else {
-						typeDoubleWeaknesses[typeName]++;
-						prevMonTypeDoubleWeaknesses[typeName]++;
+				} else {
+					if (this.dex.getEffectiveness(typeName, species) > 0) {
+						if (set.ability === 'Thick Fat' && (typeName === 'Fire' || typeName === 'Ice')) {
+							// Do not increment the weakness counter
+						} else {
+							typeWeaknesses[typeName]++;
+							prevMonTypeWeaknesses[typeName]++;
+						}
+					} else if (this.dex.getEffectiveness(typeName, species) > 1) { // Generated mon is 4x weak to the type
+						// Thick Fat consideration
+						if (set.ability === 'Thick Fat' && (typeName === 'Fire' || typeName === 'Ice')) {
+							typeWeaknesses[typeName]++;
+							prevMonTypeWeaknesses[typeName]++;
+						} else {
+							typeDoubleWeaknesses[typeName]++;
+							prevMonTypeDoubleWeaknesses[typeName]++;
+						}
 					}
 				}
 				
@@ -1084,12 +1118,19 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 				
 				// Generated mon is 2x resistant to the type
-				if (this.dex.getEffectiveness(typeName, species) < 0 || RESISTANCE_ABILITIES[abilityState.id]?.includes(typeName)) {
-					typeResistances[typeName]++;
-					prevMonTypeResistances[typeName]++;
-				} else if (this.dex.getEffectiveness(typeName, species) < -1) { // Generated mon is 4x resistant to the type
-					typeDoubleResistances[typeName]++;
-					prevMonTypeDoubleResistances[typeName]++;
+				if (TYPE_ALTERING_ABILITIES.includes(abilityState.id)) {
+					if (RESISTANCE_ABILITIES[abilityState.id]?.includes(typeName)) {
+						typeResistances[typeName]++;
+						prevMonTypeResistances[typeName]++;
+					}
+				} else {
+					if (this.dex.getEffectiveness(typeName, species) < 0) {
+						typeResistances[typeName]++;
+						prevMonTypeResistances[typeName]++;
+					} else if (this.dex.getEffectiveness(typeName, species) < -1) { // Generated mon is 4x resistant to the type
+						typeDoubleResistances[typeName]++;
+						prevMonTypeDoubleResistances[typeName]++;
+					}
 				}
 				
 				// Thick Fat consideration
