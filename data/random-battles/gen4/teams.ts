@@ -58,6 +58,11 @@ const ATTACKING_ROLES = [
 	'TR Attacker', 'Fast Pivot', 'Bulky Pivot', 'Sun Setup', 'Switch Trapper',
 ];
 
+// Types with immunities
+const IMMUNE_TYPES = [
+	"Normal", "Fighting", "Poison", "Ground", "Ghost", "Fire", "Water", "Electric", "Psychic",
+];
+
 // Immunity abilities
 const IMMUNITY_ABILITIES: { [k: string]: string[] } = {
 	waterabsorb: ["Water"],
@@ -73,7 +78,7 @@ const IMMUNITY_ABILITIES: { [k: string]: string[] } = {
 
 // Resistance abilities
 const RESISTANCE_ABILITIES: { [k: string]: string[] } = {
-	unownenergy: ["Flying", "Poison", "Ground", "Rock", "Steel", "Fire", "Water", "Grass", "Electric", "Ice", "Dragon", "Fighting", "Psychic"],
+	unownenergy: ["Flying", "Poison", "Ground", "Rock", "Steel", "Fire", "Water", "Grass", "Electric", "Ice", "Dragon", "Fighting", "Psychic", "Bug", "Ghost", "Dark"],
 	thickfat: ["Fire", "Ice"],
 	heatproof: ["Fire"],
 };
