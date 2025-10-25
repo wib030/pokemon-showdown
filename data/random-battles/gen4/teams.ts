@@ -100,10 +100,7 @@ class TypeFrequency {
 	frequency: number = 0;
 }
 
-export class RandomGen4Teams extends RandomGen5Teams {
-	override randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = require('./sets.json');
-	
-	static precheckImmunity(
+function precheckImmunity(
 		source: { type: string } | string,
 		target: { getTypes: () => string[] } | { types: string[] } | string[] | string,
 		targetAbility: string
@@ -117,7 +114,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		}
 		if (Array.isArray(targetTyping)) {
 			for (const type of targetTyping) {
-				if (!this.getImmunity(sourceType, type))
+				if (!this.dex.getImmunity(sourceType, type))
 				{
 					return false;
 				}
@@ -129,7 +126,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		return true;
 	}
 
-	static precheckEffectiveness(
+	function precheckEffectiveness(
 		source: { type: string } | string,
 		target: { getTypes: () => string[] } | { types: string[] } | string[] | string,
 		targetAbility: string
@@ -160,7 +157,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		}
 		if (Array.isArray(targetTyping)) {
 			for (const type of targetTyping) {
-				totalTypeMod += this.getEffectiveness(sourceType, type);
+				totalTypeMod += this.dex.getEffectiveness(sourceType, type);
 			}
 			// return totalTypeMod;
 		}
@@ -183,7 +180,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		return totalTypeMod
 	}
 
-	static TypeMatchupListShuffleAndConcat(list: TypeFrequency[]) {
+	function TypeMatchupListShuffleAndConcat(list: TypeFrequency[]) {
 		const max = list.reduce((a, b) => Math.max(a,b));
 		var i = list.length, j, temp;
 		while(--i > 0) {
@@ -194,6 +191,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		}
 		list = list.filter((y) => y.frequency === max);
 	}
+
+export class RandomGen4Teams extends RandomGen5Teams {
+	override randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = require('./sets.json');
 
 	constructor(format: string | Format, prng: PRNG | PRNGSeed | null) {
 		super(format, prng);
