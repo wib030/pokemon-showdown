@@ -95,6 +95,11 @@ const TYPE_ALTERING_ABILITIES = [
 	'colorchange', 'ghostly',
 ];
 
+class TypeFrequency {
+	type: string;
+	frequency: number = 0;
+}
+
 function precheckImmunity(
 	source: { type: string } | string,
 	target: { getTypes: () => string[] } | { types: string[] } | string[] | string,
@@ -173,6 +178,18 @@ function precheckEffectiveness(
 		totalTypeMod++;
 	}
 	return totalTypeMod
+}
+
+function TypeMatchupListShuffleAndConcat(list: TypeFrequency[]) {
+	const max = list.reduce((a, b) => Math.max(a,b));
+	var i = list.length, j, temp;
+	while(--i > 0) {
+		j = Math.floor(Math.random()*(i+1));
+		temp = list[j];
+		list[j] = list[i];
+		list[i] = temp;
+	}
+	list = list.filter((y) => y.frequency === max);
 }
 
 export class RandomGen4Teams extends RandomGen5Teams {
