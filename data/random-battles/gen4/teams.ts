@@ -1208,12 +1208,12 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let newString = '';
 			for (const Weakness of WeaknessList) {
 				newString = `Type: ${Weakness.type} Frequency: ${Weakness.frequency} `;
-				returnMessage.concat(newString);
+				returnMessage += newString;
 			}
-			returnMessage.concat('DoubleWeaknessList: ');
+			returnMessage += 'DoubleWeaknessList: ';
 			for (const DoubleWeakness of DoubleWeaknessList) {
 				newString = `Type: ${DoubleWeakness.type} Frequency: ${DoubleWeakness.frequency} `;
-				returnMessage.concat(newString);
+				returnMessage += newString;
 			}
 			throw new Error(`Could not build a random team for ${this.format} (seed=${seed}) ${returnMessage}`);
 		}
