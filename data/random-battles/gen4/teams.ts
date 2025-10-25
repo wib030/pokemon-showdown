@@ -1040,6 +1040,24 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				if (skip) continue;
+				
+				// Limit two weak to any type
+				for (const typeName of this.dex.types.names()) {
+					for (const Weakness of WeaknessList)
+					{
+						let typeName = Weakness.type;
+						let weakCount = Weakness.frequency;
+						
+						if (WeaknessList?.some(y => y.type === typeName && y.frequency >= 2)) {
+							if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 0) {
+								skip = true;
+								break;
+							}
+						}
+					}
+				}
+				
+				if (skip) continue;
 			}
 
 			// Okay, the set passes, add it to our team
