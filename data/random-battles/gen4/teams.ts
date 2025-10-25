@@ -984,13 +984,21 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 		const baseFormes: { [k: string]: number } = {};
 		const typeCount: { [k: string]: number } = {};
-		
+
+		/*
 		const typeWeaknesses: { [k: string]: number } = {};
 		const typeDoubleWeaknesses: { [k: string]: number } = {};
 		const typeResistances: { [k: string]: number } = {};
 		const typeDoubleResistances: { [k: string]: number } = {};
+		*/
 		const teamDetails: RandomTeamsTypes.TeamDetails = {};
 		const typeImmunities: { [k: string]: number } = {};
+
+		let WeaknessList: TypeFrequency[];
+		let DoubleWeaknessList: TypeFrequency[];
+		let ImmunityList: TypeFrequency[];
+		let ResistList: TypeFrequency[];
+		let DoubleResistList: TypeFrequency[];
 		
 		const prevMonTypeWeaknesses: { [k: string]: number } = {};
 		const prevMonTypeDoubleWeaknesses: { [k: string]: number } = {};
@@ -1062,65 +1070,81 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				
 				if (pokemon.length > 0)
 				{
+					TypeMatchupListShuffleAndConcat(DoubleWeaknessList);
+					TypeMatchupListShuffleAndConcat(WeaknessList);
+
+					/*
+					DoubleWeaknessList.sort((a, b) => {
+						return a.frequency - b.frequency;
+					})
+
+					WeaknessList.sort((a, b) => {
+						return a.frequency - b.frequency;
+					})
+
+					ImmunityList.sort((a, b) => {
+						return a.frequency - b.frequency;
+					})
+					*/
+
 					let doubleWeaknessExists = false;
 					let typeAttackScore = 0;
 					let typeDefenseScore = 0;
-					
-					for (const typeName of this.dex.types.names()) {
-						for (const checkTypeName of this.dex.types.names()) {
-							typeDefenseScore = typeResistances[checkTypeName] + (typeImmunities[checkTypeName] * 2);
-							if (prevMonTypeDoubleWeaknesses[checkTypeName] > typeDefenseScore) {
-								doubleWeaknessExists = true;
-								break;
+
+					for (const DoubleWeakness of DoubleWeaknessList)
+					{
+						let typeName = DoubleWeakness.type;
+						let doubleWeakCount = DoubleWeakness.frequency;
+
+						if (IMMUNE_TYPES.includes(typeName)) {
+							if (ImmunityList?.some(y => y.type === typeName && y.frequency < doubleWeakCount)) {
+								if (precheckImmunity(typeName, types, set.ability)) {
+									skip = true;
+									break;
+								}
 							}
 						}
-						typeAttackScore = (doubleWeaknessExists) ? typeDoubleWeaknesses[typeName] : typeWeaknesses[typeName];
-						typeDefenseScore = typeResistances[typeName] + (typeImmunities[typeName] * 2);
-						if (typeAttackScore > typeDefenseScore)
-						{
-							skip = true;
-							
-							if (TYPE_ALTERING_ABILITIES.includes(abilityState.id)) {
-								if ((RESISTANCE_ABILITIES[abilityState.id]?.includes(typeName))
-								|| (IMMUNITY_ABILITIES[abilityState.id]?.includes(typeName))) {
-									skip = false;
-								}
-							} else {
-								if ((this.dex.getEffectiveness(typeName, species) < 0)
-								|| (IMMUNITY_ABILITIES[abilityState.id]?.includes(typeName) ||	!this.dex.getImmunity(typeName, types))) {
-									skip = false;
-								}
-							}
-							
-							if (skip === false) {
-								// Skip the roll if the Pokemon shares any weaknessess with the previous Pokemon
-								for (const checkTypeName of this.dex.types.names()) {
-									if (TYPE_ALTERING_ABILITIES.includes(abilityState.id)) {
-										if (WEAKNESS_ABILITIES[abilityState.id]?.includes(checkTypeName) && prevMonTypeWeaknesses[checkTypeName] > 0) {
-											skip = true;
-											break;
-										} else if (weaknessRerolls > 100) {
-											skip = false;
-											break;
-										}
-									} else {
-										if (this.dex.getEffectiveness(checkTypeName, species) > 0 && prevMonTypeWeaknesses[checkTypeName] > 0) {
-											skip = true;
-											break;
-										} else if (weaknessRerolls > 100) {
-											skip = false;
-											break;
-										}
-									}
-								}
+
+						if (DoubleResistList?.some(y => y.type === typeName && y.frequency < doubleWeakCount)) {
+							if (precheckEffectiveness(typeName, species, set.ability) > -2) {
+								skip = true;
 								break;
 							}
 						}
 					}
-					if (skip) {
-						weaknessRerolls++;
-						continue;
+
+					if (skip) continue;
+
+					for (const Weakness of WeaknessList)
+					{
+						let typeName = Weakness.type;
+						let weakCount = Weakness.frequency;
+
+						if (IMMUNE_TYPES.includes(typeName)) {
+							if (ImmunityList?.some(y => y.type === typeName && y.frequency < weakCount)) {
+								if (precheckImmunity(typeName, types, set.ability)) {
+									skip = true;
+									break;
+								}
+							}
+						}
+
+						if (DoubleResistList?.some(y => y.type === typeName && y.frequency < weakCount)) {
+							if (precheckEffectiveness(typeName, species, set.ability) > -2) {
+								skip = true;
+								break;
+							}
+						}
+
+						if (ResistList?.some(y => y.type === typeName && y.frequency < weakCount)) {
+							if (precheckEffectiveness(typeName, species, set.ability) > -1) {
+								skip = true;
+								break;
+							}
+						}
 					}
+
+					if (skip) continue;
 				}
 				
 				// Update max type limit of types if it has been reached once
@@ -1139,6 +1163,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 				if (skip) continue;
 
+				/*
 				// Limit two weak to any type, and one double weak to a single type
 				for (const typeName of this.dex.types.names()) {
 					if (!typeResistances[typeName]) typeResistances[typeName] = 0;
@@ -1171,12 +1196,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				if (skip) continue;
-
-				// Count Dry Skin as a Fire weakness
-				if (this.dex.getEffectiveness('Fire', species) === 0 && Object.values(species.abilities).includes('Dry Skin')) {
-					if (!typeWeaknesses['Fire']) typeWeaknesses['Fire'] = 0;
-					if (typeWeaknesses['Fire'] >= 3 * limitFactor) continue;
-				}
+				*/
 			}
 
 			// Okay, the set passes, add it to our team
@@ -1207,6 +1227,48 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			// Increment weakness, resistance and immunity counter
 			for (const typeName of this.dex.types.names()) {
+				let Weakness = new TypeFrequency();
+				let DoubleWeakness = new TypeFrequency();
+				let MonImmunity = new TypeFrequency();
+				let MonResist = new TypeFrequency();
+				let MonDoubleResist = new TypeFrequency();
+
+				if (precheckEffectiveness(typeName, species, set.ability) > 0) {
+					if (precheckEffectiveness(typeName, species, set.ability) > 1) {
+						DoubleWeakness.type = typeName;
+						DoubleWeakness.frequency++;
+						DoubleWeaknessList.push(DoubleWeakness);
+					}
+					else {
+						Weakness.type = typeName;
+						Weakness.frequency++;
+						WeaknessList.push(Weakness);
+					}
+				}
+				else {
+					if (precheckEffectiveness(typeName, species, set.ability) < 0) {
+						if (precheckEffectiveness(typeName, species, set.ability) < -1) {
+						MonDoubleResist.type = typeName;
+						MonDoubleResist.frequency++;
+						DoubleResistList.push(MonDoubleResist);
+						}
+						else {
+							MonResist.type = typeName;
+							MonResist.frequency++;
+							ResistList.push(MonResist);
+						}
+					}
+				}
+
+				if (!precheckImmunity(typeName, types, set.ability)) {
+					MonImmunity.type = typeName;
+					MonImmunity.frequency++;
+					ImmunityList.push(MonImmunity);
+				}
+
+				/*
+				// Weaknesses
+
 				// Generated mon is 2x weak to the type
 				if (TYPE_ALTERING_ABILITIES.includes(abilityState.id)) {
 					if (WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName)) {
@@ -1232,7 +1294,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 					}
 				}
-				
+
+				// Resistances
+
 				// Thick Fat consideration
 				if (set.ability === 'Thick Fat' && this.dex.getEffectiveness(typeName, species) === 0 && (typeName === 'Fire' || typeName === 'Ice')) {
 					typeResistances[typeName]++;
@@ -1266,12 +1330,15 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					typeImmunities[typeName]++;
 					prevMonTypeImmunities[typeName]++;
 				}
+				*/
 			}
+			/*
 			// Count Dry Skin as a Fire weakness
 			if (set.ability === 'Dry Skin' && this.dex.getEffectiveness('Fire', species) === 0) {
 				typeWeaknesses['Fire']++;
 				prevMonTypeWeaknesses['Fire']++;
 			}
+			*/
 
 			// Increment level 100 counter
 			if (set.level === 100) numMaxLevelPokemon++;
