@@ -51,15 +51,6 @@ const REMOVAL_ROLES = [
 	'Defog', 'Spinner',
 ];
 
-// Color Change type chart stuff
-const COLOR_CHANGE_RESIST = [
-	'Poison', 'Steel', 'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dark',
-];
-
-const COLOR_CHANGE_WEAK = [
-	'Dragon', 'Ghost',
-];
-
 // Attacking Roles
 const ATTACKING_ROLES = [
 	'Fast Attacker', 'Setup Sweeper', 'Wallbreaker', 'Bulky Attacker', 'Bulky Setup', 'Fast Bulky Setup', 'AV Pivot', 'Doubles Fast Attacker', 'Doubles Setup Sweeper', 'Doubles Wallbreaker', 
@@ -77,6 +68,18 @@ const IMMUNITY_ABILITIES: { [k: string]: string[] } = {
 	lightningrod: ["Electric"],
 	motordrive: ["Electric"],
 	voltabsorb: ["Electric"],
+};
+
+// Resistance abilities
+const RESISTANCE_ABILITIES: { [k: string]: string[] } = {
+	unownenergy: ["Flying", "Poison", "Ground", "Rock", "Steel", "Fire", "Water", "Grass", "Electric", "Ice", "Dragon", "Fighting", "Psychic"],
+	colorchange: ["Poison", "Steel", "Fire", "Water", "Grass", "Electric", "Psychic", "Ice", "Dark"],
+};
+
+// Weakness abilities
+const WEAKNESS_ABILITIES: { [k: string]: string[] } = {
+	unownenergy: ["Normal"],
+	colorchange: ["Dragon", "Ghost"],
 };
 
 export class RandomGen4Teams extends RandomGen5Teams {
@@ -954,12 +957,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						if (typeWeaknesses[typeName] > typeDefenseScore)
 						{
 							skip = true;
-							if (Object.values(species.abilities).includes('Color Change')) {
-								if (typeName.includes(COLOR_CHANGE_RESIST)) {
-									skip = false;
-								}
-							}
-							else if (this.dex.getEffectiveness(typeName, species) < 0
+							if ((this.dex.getEffectiveness(typeName, species) < 0 || RESISTANCE_ABILITIES[abilityState.id]?.includes(typeName))
 							|| (IMMUNITY_ABILITIES[abilityState.id]?.includes(typeName) ||	!this.dex.getImmunity(typeName, types))) {
 								skip = false;
 							}
@@ -967,7 +965,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							if (skip === false) {
 								// Skip the roll if the Pokemon shares any weaknessess with the previous Pokemon
 								for (const checkTypeName of this.dex.types.names()) {
-									if (this.dex.getEffectiveness(checkTypeName, species) > 0 && prevMonTypeWeaknesses[checkTypeName] > 0) {
+									if ((this.dex.getEffectiveness(checkTypeName, species) > 0 || WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName)) && prevMonTypeWeaknesses[checkTypeName] > 0) {
 										skip = true;
 										break;
 									} else if (weaknessRerolls > 100) {
@@ -1010,27 +1008,16 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					if (!typeDoubleWeaknesses[typeName]) typeDoubleWeaknesses[typeName] = 0;
 					
 					// Color change consideration
-					if (Object.values(species.abilities).includes('Color Change')) {
-						if (typeName.includes(COLOR_CHANGE_WEAK)) {
-							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
-								skip = true;
-								break;
-							}
+					// Current generated mon is 2x weak to the type
+					if (this.dex.getEffectiveness(typeName, species) > 0 || WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName)) {
+						if (typeWeaknesses[typeName] >= 2 * limitFactor) {
+							skip = true;
+							break;
 						}
-					} else { // We don't have Color Change
-						// Current generated mon is 2x weak to the type
-						if (this.dex.getEffectiveness(typeName, species) > 0) {
-							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
-								skip = true;
-								break;
-							}
-						}
-						// Currently generated mon is 4x weak to the type
-						if (this.dex.getEffectiveness(typeName, species) > 1) {
-							if (typeDoubleWeaknesses[typeName] >= limitFactor) {
-								skip = true;
-								break;
-							}
+					} else if (this.dex.getEffectiveness(typeName, species) > 1) { // Current generated mon is 4x weak to the type
+						if (typeDoubleWeaknesses[typeName] >= limitFactor) {
+							skip = true;
+							break;
 						}
 					}
 				}
@@ -1071,58 +1058,50 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			// Increment weakness, resistance and immunity counter
 			for (const typeName of this.dex.types.names()) {
-				if (set.ability === 'Color Change') {
-					if (typeName.includes(COLOR_CHANGE_WEAK)) {
+				// Generated mon is 2x weak to the type
+				if (this.dex.getEffectiveness(typeName, species) > 0 || WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName)) {
+					if (set.ability === 'Thick Fat' && (typeName === 'Fire' || typeName === 'Ice')) {
+						// Do not increment the weakness counter
+					} else {
 						typeWeaknesses[typeName]++;
 						prevMonTypeWeaknesses[typeName]++;
 					}
-					if (typeName.includes(COLOR_CHANGE_RESIST)) {
-						typeResistances[typeName]++;
-						prevMonTypeResistances[typeName]++;
+				} else if (this.dex.getEffectiveness(typeName, species) > 1) { // Generated mon is 4x weak to the type
+					// Thick Fat consideration
+					if (set.ability === 'Thick Fat' && (typeName === 'Fire' || typeName === 'Ice')) {
+						typeWeaknesses[typeName]++;
+						prevMonTypeWeaknesses[typeName]++;
+					} else {
+						typeDoubleWeaknesses[typeName]++;
+						prevMonTypeDoubleWeaknesses[typeName]++;
 					}
-				} else {
-					// it's weak to the type
-					if (this.dex.getEffectiveness(typeName, species) > 0) {
-						if (set.ability === 'Thick Fat' && (typeName === 'Fire' || typeName === 'Ice')) {
-							// Do not increment the weakness counter
-						} else {
-							typeWeaknesses[typeName]++;
-							prevMonTypeWeaknesses[typeName]++;
-						}
-					}
-					if (this.dex.getEffectiveness(typeName, species) > 1) {
-						if (set.ability === 'Thick Fat' && (typeName === 'Fire' || typeName === 'Ice')) {
-							typeWeaknesses[typeName]++;
-							prevMonTypeWeaknesses[typeName]++;
-						} else {
-							typeDoubleWeaknesses[typeName]++;
-							prevMonTypeDoubleWeaknesses[typeName]++;
-						}
-					}
-					if (set.ability === 'Thick Fat' && this.dex.getEffectiveness(typeName, species) === 0 && (typeName === 'Fire' || typeName === 'Ice')) {
-						typeResistances[typeName]++;
-						prevMonTypeResistances[typeName]++;
-					}
-					
-					// it resists the type
-					if (this.dex.getEffectiveness(typeName, species) < 0) {
-						typeResistances[typeName]++;
-						prevMonTypeResistances[typeName]++;
-					}
-					if (this.dex.getEffectiveness(typeName, species) < -1) {
-						typeDoubleResistances[typeName]++;
-						prevMonTypeDoubleResistances[typeName]++;
-					}
-					if (set.ability === 'Thick Fat' && this.dex.getEffectiveness(typeName, species) === 0 && (typeName === 'Fire' || typeName === 'Ice')) {
-						typeResistances[typeName]++;
-						prevMonTypeResistances[typeName]++;
-					}
-					
-					// it is immune to the type
-					if (IMMUNITY_ABILITIES[abilityState.id]?.includes(typeName) || !this.dex.getImmunity(typeName, types)) {
-						typeImmunities[typeName]++;
-						prevMonTypeImmunities[typeName]++;
-					}
+				}
+				
+				// Thick Fat consideration
+				if (set.ability === 'Thick Fat' && this.dex.getEffectiveness(typeName, species) === 0 && (typeName === 'Fire' || typeName === 'Ice')) {
+					typeResistances[typeName]++;
+					prevMonTypeResistances[typeName]++;
+				}
+				
+				// Generated mon is 2x resistant to the type
+				if (this.dex.getEffectiveness(typeName, species) < 0 || RESISTANCE_ABILITIES[abilityState.id]?.includes(typeName)) {
+					typeResistances[typeName]++;
+					prevMonTypeResistances[typeName]++;
+				} else if (this.dex.getEffectiveness(typeName, species) < -1) { // Generated mon is 4x resistant to the type
+					typeDoubleResistances[typeName]++;
+					prevMonTypeDoubleResistances[typeName]++;
+				}
+				
+				// Thick Fat consideration
+				if (set.ability === 'Thick Fat' && this.dex.getEffectiveness(typeName, species) === 0 && (typeName === 'Fire' || typeName === 'Ice')) {
+					typeResistances[typeName]++;
+					prevMonTypeResistances[typeName]++;
+				}
+				
+				// Generated mon is immune to the type
+				if (IMMUNITY_ABILITIES[abilityState.id]?.includes(typeName) || !this.dex.getImmunity(typeName, types)) {
+					typeImmunities[typeName]++;
+					prevMonTypeImmunities[typeName]++;
 				}
 			}
 			// Count Dry Skin as a Fire weakness
