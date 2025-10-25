@@ -960,9 +960,22 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				
 				if (pokemon.length > 0)
 				{
+					let doubleWeaknessExists = false;
+					let typeAttackScore = 0;
+					let typeDefenseScore = 0;
+					
 					for (const typeName of this.dex.types.names()) {
-						let typeDefenseScore = typeResistances[typeName] + (typeImmunities[typeName] * 2);
-						if (typeWeaknesses[typeName] > typeDefenseScore)
+						typeDefenseScore = typeResistances[typeName] + (typeImmunities[typeName] * 2);
+						if (typeDoubleWeaknesses[typeName] > typeDefenseScore) {
+							doubleWeaknessExists = true;
+							break;
+						}
+					}
+					
+					for (const typeName of this.dex.types.names()) {
+						typeAttackScore = if (doubleWeaknessExists) ? typeDoubleWeaknesses[typeName] : typeWeaknesses[typeName];
+						typeDefenseScore = typeResistances[typeName] + (typeImmunities[typeName] * 2);
+						if (typeAttackScore > typeDefenseScore)
 						{
 							skip = true;
 							
