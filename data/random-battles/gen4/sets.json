@@ -343,20 +343,20 @@
             },
 			{
                 "role": "Berry Sweeper",
-                "movepool": ["hurricane", "heatwave", "uturn", "substitute"],
+                "movepool": ["hurricane", "heatwave", "hiddenpowerfighting", "substitute"],
                 "abilities": ["No Guard"],
 				"evs": [4, 0, 0, 252, 0, 252],
-				"ivs": [31, 0, 31, 31, 31, 31],
+				"ivs": [31, 0, 30, 30, 30, 30],
 				"item": "Salac Berry",
 				"nature": "Timid",
 				"inclination": "Special"
             },
 			{
                 "role": "Berry Sweeper",
-                "movepool": ["hurricane", "heatwave", "uturn", "substitute"],
+                "movepool": ["hurricane", "heatwave", "hiddenpowerfighting", "substitute"],
                 "abilities": ["No Guard"],
 				"evs": [4, 0, 0, 252, 0, 252],
-				"ivs": [31, 0, 31, 31, 31, 31],
+				"ivs": [31, 0, 30, 30, 30, 30],
 				"item": "Petaya Berry",
 				"nature": "Timid",
 				"inclination": "Special"
