@@ -1205,12 +1205,15 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		}
 		if (pokemon.length < this.maxTeamSize && pokemon.length < 12) {
 			let returnMessage = "WeaknessList: ";
+			let newString = '';
 			for (const Weakness of WeaknessList) {
-				returnMessage .= `Type: ${Weakness.type} Frequency: ${Weakness.frequency} `;
+				newString = `Type: ${Weakness.type} Frequency: ${Weakness.frequency} `;
+				returnMessage.concat(newString);
 			}
-			returnMessage .= "DoubleWeaknessList: ";
+			returnMessage.concat('DoubleWeaknessList: ');
 			for (const DoubleWeakness of DoubleWeaknessList) {
-				returnMessage .= `Type: ${DoubleWeakness.type} Frequency: ${DoubleWeakness.frequency} `;
+				newString = `Type: ${DoubleWeakness.type} Frequency: ${DoubleWeakness.frequency} `;
+				returnMessage.concat(newString);
 			}
 			throw new Error(`Could not build a random team for ${this.format} (seed=${seed}) ${returnMessage}`);
 		}
