@@ -893,9 +893,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const baseFormes: { [k: string]: number } = {};
 		const typeCount: { [k: string]: number } = {};
 
-		/*
 		const typeWeaknesses: { [k: string]: number } = {};
 		const typeDoubleWeaknesses: { [k: string]: number } = {};
+		/*
 		const typeResistances: { [k: string]: number } = {};
 		const typeDoubleResistances: { [k: string]: number } = {};
 		const typeImmunities: { [k: string]: number } = {};
@@ -1042,14 +1042,18 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (skip) continue;
 
 				// Limit two weak to any type, and one double weak to a single type
-				if (Array.isArray(WeaknessList) && WeaknessList.length) {
-					for (const Weakness of WeaknessList)
-					{
-						let typeName = Weakness.type;
-						let weakCount = Weakness.frequency;
-						
-						if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 0) {
-							if (weakCount >= 2 * limitFactor) {
+				for (const typeName of this.dex.types.names()) {
+					// it's weak to the type
+					if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 0) {
+						if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 1) {
+							if (!typeDoubleWeaknesses[typeName]) typeDoubleWeaknesses[typeName] = 0;
+							if (typeDoubleWeaknesses[typeName] >= limitFactor) {
+								skip = true;
+								break;
+							}
+						} else {
+							if (!typeWeaknesses[typeName]) typeWeaknesses[typeName] = 0;
+							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
 								skip = true;
 								break;
 							}
@@ -1090,11 +1094,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						DoubleWeakness.type = typeName;
 						DoubleWeakness.frequency++;
 						DoubleWeaknessList.push(DoubleWeakness);
+						typeDoubleWeaknesses[typeName]++;
 					}
 					else {
 						Weakness.type = typeName;
 						Weakness.frequency++;
 						WeaknessList.push(Weakness);
+						typeWeaknesses[typeName]++;
 					}
 				}
 				else {
