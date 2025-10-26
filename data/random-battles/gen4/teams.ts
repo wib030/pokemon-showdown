@@ -951,7 +951,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			const abilityState = this.dex.abilities.get(set.ability);
 			
 			if (!isMonotype && !this.forceMonotype) {
-				/*
 				if (leadNum < 1)
 				{
 					sets = this.randomSets[checkSpecies.id]["sets"];
@@ -980,7 +979,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					if (rerollAttempts > maxRerolls) skipReroll = true;
 					if (!skipReroll) continue;
 				}
-				*/
 				
 				if (pokemon.length > 0)
 				{
@@ -1062,8 +1060,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				
-				/*
-				// Limit two of a single type, and one of any other type
+				// Limit two of any type
 				for (const typeName of types) {
 					if ((typeCount[typeName] >= maxSingleType * limitFactor) && set.ability !== 'Color Change' && set.ability !== 'Imposter') {
 						skip = true;
@@ -1077,32 +1074,49 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					if (!skipReroll) continue;
 				}
 				
-				// Limit two weak to any type, and one double weak to a single type
-				for (const typeName of this.dex.types.names()) {
-					// it's weak to the type
-					if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 0) {
-						if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 1) {
-							if (!typeDoubleWeaknesses[typeName]) typeDoubleWeaknesses[typeName] = 0;
-							if (typeDoubleWeaknesses[typeName] >= limitFactor) {
-								skip = true;
-								break;
-							}
-						} else {
-							if (!typeWeaknesses[typeName]) typeWeaknesses[typeName] = 0;
-							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
+				// Limit two weak to any type
+				if (Array.isArray(WeaknessListFull) && WeaknessListFull.length) {
+					for (const Weakness of WeaknessListFull)
+					{
+						let typeName = Weakness.type;
+						let weakCount = Weakness.frequency;
+
+						if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 0) {
+							if (weakCount >= 2 * limitFactor) {
 								skip = true;
 								break;
 							}
 						}
 					}
+					if (skip) {
+						rerollAttempts++;
+						rerollAttemptsTotal++;
+						if (rerollAttempts > maxRerolls) skipReroll = true;
+						if (!skipReroll) continue;
+					}
 				}
-				if (skip) {
-					rerollAttempts++;
-					rerollAttemptsTotal++;
-					if (rerollAttempts > maxRerolls) skipReroll = true;
-					if (!skipReroll) continue;
+				
+				// Limit one double weak to a single type
+				if (Array.isArray(DoubleWeaknessListFull) && DoubleWeaknessListFull.length) {
+					for (const Weakness of DoubleWeaknessListFull)
+					{
+						let typeName = Weakness.type;
+						let weakCount = Weakness.frequency;
+
+						if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 1) {
+							if (weakCount >= limitFactor) {
+								skip = true;
+								break;
+							}
+						}
+					}
+					if (skip) {
+						rerollAttempts++;
+						rerollAttemptsTotal++;
+						if (rerollAttempts > maxRerolls) skipReroll = true;
+						if (!skipReroll) continue;
+					}
 				}
-				*/
 			}
 
 			// Okay, the set passes, add it to our team
