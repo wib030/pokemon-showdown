@@ -1818,6 +1818,19 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			if (!move.allies?.length) return null;
 			return 15;
 		},
+		onModifyTypePriority: -1,
+			onModifyType(move, pokemon) {
+				if (!move.allies?.length) {
+					move.type = 'Dark';
+				} else {
+					let attacker = move.allies!.shift()!;
+					if (attacker.hasAbility('normalize')) {
+						move.type = 'Normal';
+					} else {
+						move.type = 'Dark';
+					}
+				}
+			},
 		onModifyMove(move, pokemon) {
 			pokemon.addVolatile('beatup');
 			move.type = 'Dark';
