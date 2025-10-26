@@ -946,6 +946,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			const types = species.types;
 			let checkTypes = types;
 			let skip = false;
+			let skipWeaknessCheck = false;
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
 			
@@ -1020,6 +1021,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 										if (this.dex.precheckImmunity(typeName, checkTypes, set.ability)) {
 											skip = true;
 											break;
+										} else {
+											skipWeaknessCheck = true;
 										}
 									}
 								}
@@ -1028,6 +1031,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 									if (this.dex.precheckEffectiveness(typeName, checkTypes, set.ability) > -2) {
 										skip = true;
 										break;
+									} else {
+										skipWeaknessCheck = true;
 									}
 								}
 							}
@@ -1041,7 +1046,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 					}
 					
-					if (Array.isArray(WeaknessListFull) && WeaknessListFull.length) {
+					if (Array.isArray(WeaknessListFull) && WeaknessListFull.length && !skipWeaknessCheck) {
 						WeaknessList = WeaknessListFull;
 						if (Array.isArray(WeaknessList) && WeaknessList.length) {
 							this.dex.TypeMatchupListShuffleAndConcat(WeaknessList);
