@@ -944,9 +944,32 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			const limitFactor = Math.round(this.maxTeamSize / 6) || 1;
 
 			const types = species.types;
+			let checkTypes = types;
 			let skip = false;
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
+			
+			if (set.ability === 'Multitype') {
+				switch (set.item) {
+					case 'Fist Plate': checkTypes = 'Fighting'; break;
+					case 'Sky Plate': checkTypes = 'Flying'; break;
+					case 'Toxic Plate': checkTypes = 'Poison'; break;
+					case 'Earth Plate': checkTypes = 'Ground'; break;
+					case 'Stone Plate': checkTypes = 'Rock'; break;
+					case 'Insect Plate': checkTypes = 'Bug'; break;
+					case 'Spooky Plate': checkTypes = 'Ghost'; break;
+					case 'Iron Plate': checkTypes = 'Steel'; break;
+					case 'Flame Plate': checkTypes = 'Fire'; break;
+					case 'Splash Plate': checkTypes = 'Water'; break;
+					case 'Meadow Plate': checkTypes = 'Grass'; break;
+					case 'Zap Plate': checkTypes = 'Electric'; break;
+					case 'Mind Plate': checkTypes = 'Psychic'; break;
+					case 'Icicle Plate': checkTypes = 'Ice'; break;
+					case 'Draco Plate': checkTypes = 'Dragon'; break;
+					case 'Dread Plate': checkTypes = 'Dark'; break;
+					default: break;
+				}
+			}
 			
 			const abilityState = this.dex.abilities.get(set.ability);
 			
@@ -995,7 +1018,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 								if (IMMUNE_TYPES.includes(typeName)) {
 									if (doubleWeakCount > 0 && ImmunityList?.some(y => y.type === typeName && y.frequency < doubleWeakCount)) {
-										if (this.dex.precheckImmunity(typeName, types, set.ability)) {
+										if (this.dex.precheckImmunity(typeName, checkTypes, set.ability)) {
 											skip = true;
 											break;
 										}
@@ -1003,7 +1026,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								}
 
 								if (doubleWeakCount > 0 && DoubleResistList?.some(y => y.type === typeName && y.frequency < doubleWeakCount)) {
-									if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -2) {
+									if (this.dex.precheckEffectiveness(typeName, checkTypes, set.ability) > -2) {
 										skip = true;
 										break;
 									}
@@ -1030,7 +1053,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 								if (IMMUNE_TYPES.includes(typeName)) {
 									if (weakCount > 0 && ImmunityList?.some(y => y.type === typeName && y.frequency < weakCount)) {
-										if (this.dex.precheckImmunity(typeName, types, set.ability)) {
+										if (this.dex.precheckImmunity(typeName, checkTypes, set.ability)) {
 											skip = true;
 											break;
 										}
@@ -1038,14 +1061,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								}
 
 								if (weakCount > 0 && DoubleResistList?.some(y => y.type === typeName && y.frequency < weakCount)) {
-									if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -2) {
+									if (this.dex.precheckEffectiveness(typeName, checkTypes, set.ability) > -2) {
 										skip = true;
 										break;
 									}
 								}
 
 								if (weakCount > 0 && ResistList?.some(y => y.type === typeName && y.frequency < weakCount)) {
-									if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -1) {
+									if (this.dex.precheckEffectiveness(typeName, checkTypes, set.ability) > -1) {
 										skip = true;
 										break;
 									}
@@ -1079,8 +1102,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				// Limit two weak to any type, and one double weak to a single type
 				for (const typeName of this.dex.types.names()) {
 					// it's weak to the type
-					if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 0) {
-						if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 1) {
+					if (this.dex.precheckEffectiveness(typeName, checkTypes, set.ability) > 0) {
+						if (this.dex.precheckEffectiveness(typeName, checkTypes, set.ability) > 1) {
 							if (!typeDoubleWeaknesses[typeName]) typeDoubleWeaknesses[typeName] = 0;
 							if (typeDoubleWeaknesses[typeName] >= limitFactor) {
 								skip = true;
@@ -1131,8 +1154,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				let MonDoubleResist = new TypeFrequency();
 				let TempIndex = 0;
 
-				if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 0) {
-					if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 1) {
+				if (this.dex.precheckEffectiveness(typeName, checkTypes, set.ability) > 0) {
+					if (this.dex.precheckEffectiveness(typeName, checkTypes, set.ability) > 1) {
 						if (DoubleWeaknessListFull?.some(y => y.type === typeName)) {
 							TempIndex = DoubleWeaknessListFull.findIndex(y => y.type === typeName);
 							DoubleWeaknessListFull[TempIndex].frequency++;
@@ -1156,8 +1179,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				else {
-					if (this.dex.precheckEffectiveness(typeName, species, set.ability) < 0) {
-						if (this.dex.precheckEffectiveness(typeName, species, set.ability) < -1) {
+					if (this.dex.precheckEffectiveness(typeName, checkTypes, set.ability) < 0) {
+						if (this.dex.precheckEffectiveness(typeName, checkTypes, set.ability) < -1) {
 						MonDoubleResist.type = typeName;
 						MonDoubleResist.frequency++;
 						DoubleResistList.push(MonDoubleResist);
@@ -1170,7 +1193,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 
-				if (!this.dex.precheckImmunity(typeName, types, set.ability)) {
+				if (!this.dex.precheckImmunity(typeName, checkTypes, set.ability)) {
 					MonImmunity.type = typeName;
 					MonImmunity.frequency++;
 					ImmunityList.push(MonImmunity);
