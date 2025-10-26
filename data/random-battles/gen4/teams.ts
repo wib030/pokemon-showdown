@@ -920,6 +920,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let checkSpecies;
 		let sets;
 		let rerollAttempts = 0;
+		let rerollAttemptsTotal = 0;
+		let skipReroll = false;
 
 		const pokemonList = Object.keys(this.randomSets);
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
@@ -928,6 +930,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			const species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
 			checkSpecies = this.dex.species.get(species);
 			if (!species.exists) continue;
+			
+			skipReroll = false;
 
 			// Limit to one of each species (Species Clause)
 			if (baseFormes[species.baseSpecies]) continue;
@@ -971,7 +975,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 				if (skip) {
 					rerollAttempts++;
-					continue;
+					rerollAttemptsTotal++;
+					if (rerollAttempts >= 250) skipReroll = true;
+					if (!skipReroll) continue;
 				}
 				*/
 				
@@ -1005,7 +1011,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 							if (skip) {
 								rerollAttempts++;
-								continue;
+								rerollAttemptsTotal++;
+								if (rerollAttempts >= 250) skipReroll = true;
+								if (!skipReroll) continue;
 							}
 						}
 					}
@@ -1045,9 +1053,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 							if (skip) {
 								rerollAttempts++;
-								if (rerollAttempts <= 250) {
-									continue;
-								}
+								rerollAttemptsTotal++;
+								if (rerollAttempts >= 250) skipReroll = true;
+								if (!skipReroll) continue;
 							}
 						}
 					}
@@ -1063,7 +1071,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 				if (skip) {
 					rerollAttempts++;
-					continue;
+					rerollAttemptsTotal++;
+					if (rerollAttempts >= 250) skipReroll = true;
+					if (!skipReroll) continue;
 				}
 				
 				// Limit two weak to any type, and one double weak to a single type
@@ -1087,13 +1097,16 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 				if (skip) {
 					rerollAttempts++;
-					continue;
+					rerollAttemptsTotal++;
+					if (rerollAttempts >= 250) skipReroll = true;
+					if (!skipReroll) continue;
 				}
 				*/
 			}
 
 			// Okay, the set passes, add it to our team
 			pokemon.push(set);
+			rerollAttempts = 0;
 
 			// Don't bother tracking details for the last Pokemon
 			if (pokemon.length === this.maxTeamSize) break;
@@ -1253,7 +1266,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				newString = ` (Type: ${DoubleWeakness.type}, Frequency: ${DoubleWeakness.frequency})`;
 				returnMessage += newString;
 			}
-			throw new Error(`Could not build a random team for ${this.format} (seed=${seed}) ${returnMessage} Reroll Attempts: ${rerollAttempts}`);
+			throw new Error(`Could not build a random team for ${this.format} (seed=${seed}) ${returnMessage} Reroll Attempts: ${rerollAttemptsTotal}`);
 		}
 
 		return pokemon;
