@@ -322,7 +322,6 @@ export class ModdedDex {
 		// @ts-expect-error really wish TS would support this
 		const targetTyping: string[] | string = target.getTypes?.() || target.types || target;
 		const abilityState = this.abilities.get(targetAbility);
-		if (sourceType === 'Fairy') return true;
 		if (IMMUNITY_ABILITIES[abilityState.id]?.includes(sourceType)) {
 			return false;
 		}
