@@ -1045,7 +1045,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 							if (skip) {
 								rerollAttempts++;
-								continue;
+								if (rerollAttempts <= 250) {
+									continue;
+								}
 							}
 						}
 					}
