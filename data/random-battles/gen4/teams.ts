@@ -973,7 +973,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				
 				if (pokemon.length > 0)
 				{
-					DoubleWeaknessList = DoubleWeaknessListFull;
+					if (Array.isArray(DoubleWeaknessListFull) && DoubleWeaknessListFull.length) DoubleWeaknessList = DoubleWeaknessListFull;
 					if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length) {
 						this.dex.TypeMatchupListShuffleAndConcat(DoubleWeaknessList);
 						for (const DoubleWeakness of DoubleWeaknessList)
@@ -1001,7 +1001,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						if (skip) continue;
 					}
 					
-					WeaknessList = WeaknessListFull;
+					if (Array.isArray(WeaknessListFull) && WeaknessListFull.length) WeaknessList = WeaknessListFull;
 					if (Array.isArray(WeaknessList) && WeaknessList.length) {
 						this.dex.TypeMatchupListShuffleAndConcat(WeaknessList);
 						for (const Weakness of WeaknessList)
