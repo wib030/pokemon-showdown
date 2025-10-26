@@ -975,8 +975,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			
 			if (!isMonotype && !this.forceMonotype) {
 				/*
-				if (leadNum < 1)
-				{
+				if (leadNum < 1) {
 					sets = this.randomSets[checkSpecies.id]["sets"];
 					// Check if the Pokemon has a Lead set
 					skip = true;
@@ -1164,6 +1163,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							DoubleWeakness.frequency++;
 							DoubleWeaknessListFull.push(DoubleWeakness);
 						}
+						if (!typeDoubleWeaknesses[typeName]) typeDoubleWeaknesses[typeName] = 0;
 						typeDoubleWeaknesses[typeName]++;
 					}
 					else {
@@ -1175,6 +1175,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							Weakness.frequency++;
 							WeaknessListFull.push(Weakness);
 						}
+						if (!typeWeaknesses[typeName]) typeWeaknesses[typeName] = 0;
 						typeWeaknesses[typeName]++;
 					}
 				}
@@ -1198,69 +1199,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					MonImmunity.frequency++;
 					ImmunityList.push(MonImmunity);
 				}
-
-				/*
-				// Weaknesses
-
-				// Generated mon is 2x weak to the type
-				if (TYPE_ALTERING_ABILITIES.includes(abilityState.id)) {
-					if (WEAKNESS_ABILITIES[abilityState.id]?.includes(typeName)) {
-						typeWeaknesses[typeName]++;
-					}
-				} else {
-					if (this.dex.getEffectiveness(typeName, species) > 0) {
-						if (set.ability === 'Thick Fat' && (typeName === 'Fire' || typeName === 'Ice')) {
-							// Do not increment the weakness counter
-						} else {
-							typeWeaknesses[typeName]++;
-						}
-					} else if (this.dex.getEffectiveness(typeName, species) > 1) { // Generated mon is 4x weak to the type
-						// Thick Fat consideration
-						if (set.ability === 'Thick Fat' && (typeName === 'Fire' || typeName === 'Ice')) {
-							typeWeaknesses[typeName]++;
-						} else {
-							typeDoubleWeaknesses[typeName]++;
-						}
-					}
-				}
-
-				// Resistances
-
-				// Thick Fat consideration
-				if (set.ability === 'Thick Fat' && this.dex.getEffectiveness(typeName, species) === 0 && (typeName === 'Fire' || typeName === 'Ice')) {
-					typeResistances[typeName]++;
-				}
-				
-				// Generated mon is 2x resistant to the type
-				if (TYPE_ALTERING_ABILITIES.includes(abilityState.id)) {
-					if (RESISTANCE_ABILITIES[abilityState.id]?.includes(typeName)) {
-						typeResistances[typeName]++;
-					}
-				} else {
-					if (this.dex.getEffectiveness(typeName, species) < 0) {
-						typeResistances[typeName]++;
-					} else if (this.dex.getEffectiveness(typeName, species) < -1) { // Generated mon is 4x resistant to the type
-						typeDoubleResistances[typeName]++;
-					}
-				}
-				
-				// Thick Fat consideration
-				if (set.ability === 'Thick Fat' && this.dex.getEffectiveness(typeName, species) === 0 && (typeName === 'Fire' || typeName === 'Ice')) {
-					typeResistances[typeName]++;
-				}
-				
-				// Generated mon is immune to the type
-				if (IMMUNITY_ABILITIES[abilityState.id]?.includes(typeName) || !this.dex.getImmunity(typeName, types)) {
-					typeImmunities[typeName]++;
-				}
-				*/
 			}
-			/*
-			// Count Dry Skin as a Fire weakness
-			if (set.ability === 'Dry Skin' && this.dex.getEffectiveness('Fire', species) === 0) {
-				typeWeaknesses['Fire']++;
-			}
-			*/
 
 			// Team details
 			if (set.ability === 'Snow Warning' || set.moves.includes('hail') || (set.ability === 'Forecast' && set.item === 'Icy Rock')) teamDetails.hail = 1;
