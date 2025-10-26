@@ -908,6 +908,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let ResistList: TypeFrequency[] = [];
 		let DoubleResistList: TypeFrequency[] = [];
 		
+		let WeaknessListFull: TypeFrequency[] = [];
+		let DoubleWeaknessListFull: TypeFrequency[] = [];
+		
 		let leadNum = 0;
 		let removalNum = 0;
 		let physicalAttackers = 0;
@@ -970,6 +973,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				
 				if (pokemon.length > 0)
 				{
+					DoubleWeaknessList = DoubleWeaknessListFull;
 					if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length) {
 						this.dex.TypeMatchupListShuffleAndConcat(DoubleWeaknessList);
 						for (const DoubleWeakness of DoubleWeaknessList)
@@ -997,6 +1001,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						if (skip) continue;
 					}
 					
+					WeaknessList = WeaknessListFull;
 					if (Array.isArray(WeaknessList) && WeaknessList.length) {
 						this.dex.TypeMatchupListShuffleAndConcat(WeaknessList);
 						for (const Weakness of WeaknessList)
@@ -1092,24 +1097,24 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 				if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 0) {
 					if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 1) {
-						if (DoubleWeaknessList?.some(y => y.type === typeName)) {
-							TempIndex = DoubleWeaknessList.findIndex(y => y.type === typeName);
-							DoubleWeaknessList[TempIndex].frequency++;
+						if (DoubleWeaknessListFull?.some(y => y.type === typeName)) {
+							TempIndex = DoubleWeaknessListFull.findIndex(y => y.type === typeName);
+							DoubleWeaknessListFull[TempIndex].frequency++;
 						} else {
 							DoubleWeakness.type = typeName;
 							DoubleWeakness.frequency++;
-							DoubleWeaknessList.push(DoubleWeakness);
+							DoubleWeaknessListFull.push(DoubleWeakness);
 						}
 						typeDoubleWeaknesses[typeName]++;
 					}
 					else {
-						if (DoubleWeaknessList?.some(y => y.type === typeName)) {
-							TempIndex = WeaknessList.findIndex(y => y.type === typeName);
-							WeaknessList[TempIndex].frequency++;
+						if (WeaknessListFull?.some(y => y.type === typeName)) {
+							TempIndex = WeaknessListFull.findIndex(y => y.type === typeName);
+							WeaknessListFull[TempIndex].frequency++;
 						} else {
 							Weakness.type = typeName;
 							Weakness.frequency++;
-							WeaknessList.push(Weakness);
+							WeaknessListFull.push(Weakness);
 						}
 						typeWeaknesses[typeName]++;
 					}
