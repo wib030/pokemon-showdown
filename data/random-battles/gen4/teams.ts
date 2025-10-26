@@ -1127,7 +1127,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							DoubleWeakness.frequency++;
 							DoubleWeaknessListFull.push(DoubleWeakness);
 						}
-						typeDoubleWeaknesses[typeName]++;
 					}
 					else {
 						if (WeaknessListFull?.some(y => y.type === typeName)) {
@@ -1138,7 +1137,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							Weakness.frequency++;
 							WeaknessListFull.push(Weakness);
 						}
-						typeWeaknesses[typeName]++;
 					}
 				}
 				else {
@@ -1248,7 +1246,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				newString = ` (Type: ${Weakness.type}, Frequency: ${Weakness.frequency})`;
 				returnMessage += newString;
 			}
-			returnMessage += 'DoubleWeaknessList: ';
+			returnMessage += ' DoubleWeaknessList: ';
 			for (const DoubleWeakness of DoubleWeaknessList) {
 				newString = ` (Type: ${DoubleWeakness.type}, Frequency: ${DoubleWeakness.frequency})`;
 				returnMessage += newString;
