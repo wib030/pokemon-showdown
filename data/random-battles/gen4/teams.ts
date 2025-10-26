@@ -973,67 +973,71 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				
 				if (pokemon.length > 0)
 				{
-					if (Array.isArray(DoubleWeaknessListFull) && DoubleWeaknessListFull.length) DoubleWeaknessList = DoubleWeaknessListFull;
-					if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length) {
-						this.dex.TypeMatchupListShuffleAndConcat(DoubleWeaknessList);
-						for (const DoubleWeakness of DoubleWeaknessList)
-						{
-							let typeName = DoubleWeakness.type;
-							let doubleWeakCount = DoubleWeakness.frequency;
+					if (Array.isArray(DoubleWeaknessListFull) && DoubleWeaknessListFull.length) {
+						DoubleWeaknessList = DoubleWeaknessListFull;
+						if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length) {
+							this.dex.TypeMatchupListShuffleAndConcat(DoubleWeaknessList);
+							for (const DoubleWeakness of DoubleWeaknessList)
+							{
+								let typeName = DoubleWeakness.type;
+								let doubleWeakCount = DoubleWeakness.frequency;
 
-							if (IMMUNE_TYPES.includes(typeName)) {
-								if (doubleWeakCount > 0 && ImmunityList?.some(y => y.type === typeName && y.frequency < doubleWeakCount)) {
-									if (this.dex.precheckImmunity(typeName, types, set.ability)) {
+								if (IMMUNE_TYPES.includes(typeName)) {
+									if (doubleWeakCount > 0 && ImmunityList?.some(y => y.type === typeName && y.frequency < doubleWeakCount)) {
+										if (this.dex.precheckImmunity(typeName, types, set.ability)) {
+											skip = true;
+											break;
+										}
+									}
+								}
+
+								if (doubleWeakCount > 0 && DoubleResistList?.some(y => y.type === typeName && y.frequency < doubleWeakCount)) {
+									if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -2) {
 										skip = true;
 										break;
 									}
 								}
 							}
 
-							if (doubleWeakCount > 0 && DoubleResistList?.some(y => y.type === typeName && y.frequency < doubleWeakCount)) {
-								if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -2) {
-									skip = true;
-									break;
-								}
-							}
+							if (skip) continue;
 						}
-
-						if (skip) continue;
 					}
 					
-					if (Array.isArray(WeaknessListFull) && WeaknessListFull.length) WeaknessList = WeaknessListFull;
-					if (Array.isArray(WeaknessList) && WeaknessList.length) {
-						this.dex.TypeMatchupListShuffleAndConcat(WeaknessList);
-						for (const Weakness of WeaknessList)
-						{
-							let typeName = Weakness.type;
-							let weakCount = Weakness.frequency;
+					if (Array.isArray(WeaknessListFull) && WeaknessListFull.length) {
+						WeaknessList = WeaknessListFull;
+						if (Array.isArray(WeaknessList) && WeaknessList.length) {
+							this.dex.TypeMatchupListShuffleAndConcat(WeaknessList);
+							for (const Weakness of WeaknessList)
+							{
+								let typeName = Weakness.type;
+								let weakCount = Weakness.frequency;
 
-							if (IMMUNE_TYPES.includes(typeName)) {
-								if (weakCount > 0 && ImmunityList?.some(y => y.type === typeName && y.frequency < weakCount)) {
-									if (this.dex.precheckImmunity(typeName, types, set.ability)) {
+								if (IMMUNE_TYPES.includes(typeName)) {
+									if (weakCount > 0 && ImmunityList?.some(y => y.type === typeName && y.frequency < weakCount)) {
+										if (this.dex.precheckImmunity(typeName, types, set.ability)) {
+											skip = true;
+											break;
+										}
+									}
+								}
+
+								if (weakCount > 0 && DoubleResistList?.some(y => y.type === typeName && y.frequency < weakCount)) {
+									if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -2) {
+										skip = true;
+										break;
+									}
+								}
+
+								if (weakCount > 0 && ResistList?.some(y => y.type === typeName && y.frequency < weakCount)) {
+									if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -1) {
 										skip = true;
 										break;
 									}
 								}
 							}
 
-							if (weakCount > 0 && DoubleResistList?.some(y => y.type === typeName && y.frequency < weakCount)) {
-								if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -2) {
-									skip = true;
-									break;
-								}
-							}
-
-							if (weakCount > 0 && ResistList?.some(y => y.type === typeName && y.frequency < weakCount)) {
-								if (this.dex.precheckEffectiveness(typeName, species, set.ability) > -1) {
-									skip = true;
-									break;
-								}
-							}
+							if (skip) continue;
 						}
-
-						if (skip) continue;
 					}
 				}
 				
