@@ -1658,13 +1658,126 @@
         ]
     },
     "electrode": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Wallbreaker",
-                "movepool": ["explosion", "hiddenpowerice", "signalbeam", "taunt", "thunderbolt"],
-                "abilities": ["Static", "Sturdy"],
-                "preferredTypes": ["Ice"],
+                "role": "Fast Lead",
+                "movepool": ["voltswitch", "spikes", "surf", "explosion"],
+                "abilities": ["Sturdy"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Air Balloon",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["voltswitch", "spikes", "surf", "thunderbolt"],
+                "abilities": ["Sturdy"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Magnet",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["voltswitch", "spikes", "surf", "thunder"],
+                "abilities": ["Sturdy"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Wide Lens",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["voltswitch", "spikes", "surf", "thunder"],
+                "abilities": ["Sturdy"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Wide Lens",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["thunderwave", "spikes", "uturn", "thunderbolt"],
+                "abilities": ["Sturdy"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Red Card",
+				"nature": "Hasty",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["thunderwave", "spikes", "voltswitch", "thunderbolt"],
+                "abilities": ["Sturdy"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Red Card",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["voltswitch", "surf", "spikes", "taunt"],
+                "abilities": ["Sturdy"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Magnet",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["voltswitch", "surf", "toxic", "taunt"],
+                "abilities": ["Sturdy"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Magnet",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["voltswitch", "surf", "discharge", "taunt"],
+                "abilities": ["Sturdy"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Magnet",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["thunderbolt", "surf", "hiddenpowerice", "substitute"],
+                "abilities": ["Sturdy"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [30, 2, 30, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["thunderbolt", "surf", "hiddenpowerice", "chargebeam"],
+                "abilities": ["Sturdy"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [30, 2, 30, 31, 31, 31],
+				"item": "Magnet",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["voltswitch", "surf", "toxic", "substitute"],
+                "abilities": ["Sturdy"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Magnet",
+				"nature": "Timid",
 				"inclination": "Special"
             }
         ]
