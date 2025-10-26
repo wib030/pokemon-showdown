@@ -895,11 +895,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 		const typeWeaknesses: { [k: string]: number } = {};
 		const typeDoubleWeaknesses: { [k: string]: number } = {};
-		/*
-		const typeResistances: { [k: string]: number } = {};
-		const typeDoubleResistances: { [k: string]: number } = {};
-		const typeImmunities: { [k: string]: number } = {};
-		*/
 		const teamDetails: RandomTeamsTypes.TeamDetails = {};
 
 		let WeaknessList: TypeFrequency[] = [];
