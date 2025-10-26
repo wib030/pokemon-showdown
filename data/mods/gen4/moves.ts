@@ -1827,6 +1827,15 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		},
 		condition: {
 			duration: 1,
+			onModifyTypePriority: -1,
+			onModifyType(move, pokemon) {
+				let attacker = move.allies!.shift()!;
+				if (attacker.hasAbility('normalize')) {
+					move.type = 'Normal';
+				} else {
+					move.type = 'Dark';
+				}
+			},
 			onModifyAtkPriority: -101,
 			onModifyAtk(atk, pokemon, defender, move) {
 				// https://www.smogon.com/forums/posts/8992145/
