@@ -1818,19 +1818,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			if (!move.allies?.length) return null;
 			return 15;
 		},
-		onModifyTypePriority: -1,
-			onModifyType(move, pokemon) {
-				if (!move.allies?.length) {
-					move.type = 'Dark';
-				} else {
-					let attacker = move.allies!.shift()!;
-					if (attacker.hasAbility('normalize')) {
-						move.type = 'Normal';
-					} else {
-						move.type = 'Dark';
-					}
-				}
-			},
 		onModifyMove(move, pokemon) {
 			pokemon.addVolatile('beatup');
 			move.type = 'Dark';
@@ -1887,6 +1874,14 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				case 'ironfist':
 					attackStat = attackStat * 13 / 10;
 					break;
+				case 'normalize':
+					move.type = 'Normal';
+					attackStat = attackStat * 12 / 10;
+					break;
+				}
+				
+				if (attacker.ability !== 'normalize') {
+					move.type = 'Dark';
 				}
 				
 				switch (attacker.item.id) {
