@@ -892,10 +892,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 		const baseFormes: { [k: string]: number } = {};
 		const typeCount: { [k: string]: number } = {};
-
+		
+		/*
 		const typeWeaknesses: { [k: string]: number } = {};
 		const typeDoubleWeaknesses: { [k: string]: number } = {};
-		/*
 		const typeResistances: { [k: string]: number } = {};
 		const typeDoubleResistances: { [k: string]: number } = {};
 		const typeImmunities: { [k: string]: number } = {};
@@ -1100,21 +1100,21 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 				
 				// Limit two weak to any type, and one double weak to a single type
-				for (const typeName of this.dex.types.names()) {
+				for (const Weakness of WeaknessListFull) {
 					// it's weak to the type
-					if (this.dex.precheckEffectiveness(typeName, checkTypes, set.ability) > 0) {
-						if (this.dex.precheckEffectiveness(typeName, checkTypes, set.ability) > 1) {
-							if (!typeDoubleWeaknesses[typeName]) typeDoubleWeaknesses[typeName] = 0;
-							if (typeDoubleWeaknesses[typeName] >= limitFactor) {
-								skip = true;
-								break;
-							}
-						} else {
-							if (!typeWeaknesses[typeName]) typeWeaknesses[typeName] = 0;
-							if (typeWeaknesses[typeName] >= 2 * limitFactor) {
-								skip = true;
-								break;
-							}
+					if (this.dex.precheckEffectiveness(Weakness.type, checkTypes, set.ability) > 0) {
+						if (Weakness.frequency >= 2 * limitFactor) {
+							skip = true;
+							break;
+						}
+					}
+				}
+				for (const DoubleWeakness of DoubleWeaknessListFull) {
+					// it's weak to the type
+					if (this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) > 0) {
+						if (DoubleWeakness.frequency >= 2 * limitFactor) {
+							skip = true;
+							break;
 						}
 					}
 				}
@@ -1164,8 +1164,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							DoubleWeakness.frequency++;
 							DoubleWeaknessListFull.push(DoubleWeakness);
 						}
-						if (!typeDoubleWeaknesses[typeName]) typeDoubleWeaknesses[typeName] = 0;
-						typeDoubleWeaknesses[typeName]++;
 					}
 					else {
 						if (WeaknessListFull?.some(y => y.type === typeName)) {
@@ -1176,8 +1174,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							Weakness.frequency++;
 							WeaknessListFull.push(Weakness);
 						}
-						if (!typeWeaknesses[typeName]) typeWeaknesses[typeName] = 0;
-						typeWeaknesses[typeName]++;
 					}
 				}
 				else {
