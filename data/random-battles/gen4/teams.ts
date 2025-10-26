@@ -1185,22 +1185,37 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				else {
 					if (this.dex.precheckEffectiveness(typeName, checkTypes, set.ability) < 0) {
 						if (this.dex.precheckEffectiveness(typeName, checkTypes, set.ability) < -1) {
-						MonDoubleResist.type = typeName;
-						MonDoubleResist.frequency++;
-						DoubleResistList.push(MonDoubleResist);
+							if (DoubleResistList?.some(y => y.type === typeName)) {
+								TempIndex = DoubleResistList.findIndex(y => y.type === typeName);
+								DoubleResistList[TempIndex].frequency++;
+							} else {
+								MonDoubleResist.type = typeName;
+								MonDoubleResist.frequency++;
+								DoubleResistList.push(MonDoubleResist);
+							}
 						}
 						else {
-							MonResist.type = typeName;
-							MonResist.frequency++;
-							ResistList.push(MonResist);
+							if (ResistList?.some(y => y.type === typeName)) {
+								TempIndex = ResistList.findIndex(y => y.type === typeName);
+								ResistList[TempIndex].frequency++;
+							} else {
+								MonResist.type = typeName;
+								MonResist.frequency++;
+								ResistList.push(MonResist);
+							}
 						}
 					}
 				}
-
+				
 				if (!this.dex.precheckImmunity(typeName, checkTypes, set.ability)) {
-					MonImmunity.type = typeName;
-					MonImmunity.frequency++;
-					ImmunityList.push(MonImmunity);
+					if (ImmunityList?.some(y => y.type === typeName)) {
+						TempIndex = ImmunityList.findIndex(y => y.type === typeName);
+						ImmunityList[TempIndex].frequency++;
+					} else {
+						MonImmunity.type = typeName;
+						MonImmunity.frequency++;
+						ImmunityList.push(MonImmunity);
+					}
 				}
 			}
 
