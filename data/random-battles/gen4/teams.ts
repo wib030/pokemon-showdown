@@ -919,6 +919,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		let checkSpecies;
 		let sets;
+		let rerollAttempts = 0;
 
 		const pokemonList = Object.keys(this.randomSets);
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
@@ -943,8 +944,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
 			
 			const abilityState = this.dex.abilities.get(set.ability);
-			
-			let rerollAttempts = 0;
 			
 			if (!isMonotype && !this.forceMonotype) {
 				/*
