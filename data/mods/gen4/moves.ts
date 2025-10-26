@@ -1874,14 +1874,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				case 'ironfist':
 					attackStat = attackStat * 13 / 10;
 					break;
-				case 'normalize':
-					move.type = 'Normal';
-					attackStat = attackStat * 12 / 10;
-					break;
-				}
-				
-				if (attacker.ability !== 'normalize') {
-					move.type = 'Dark';
 				}
 				
 				switch (attacker.item.id) {
