@@ -944,6 +944,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			
 			const abilityState = this.dex.abilities.get(set.ability);
 			
+			let rerollAttempts = 0;
+			
 			if (!isMonotype && !this.forceMonotype) {
 				/*
 				if (leadNum < 1)
@@ -968,7 +970,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 					}
 				}
-				if (skip) continue;
+				if (skip) {
+					rerollAttempts++;
+					continue;
+				}
 				*/
 				
 				if (pokemon.length > 0)
@@ -999,7 +1004,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								}
 							}
 
-							if (skip) continue;
+							if (skip) {
+								rerollAttempts++;
+								continue;
+							}
 						}
 					}
 					
@@ -1036,11 +1044,15 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								}
 							}
 
-							if (skip) continue;
+							if (skip) {
+								rerollAttempts++;
+								continue;
+							}
 						}
 					}
 				}
 				
+				/*
 				// Limit two of a single type, and one of any other type
 				for (const typeName of types) {
 					if ((typeCount[typeName] >= maxSingleType * limitFactor) && set.ability !== 'Color Change' && set.ability !== 'Imposter') {
@@ -1048,8 +1060,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						break;
 					}
 				}
-				if (skip) continue;
-
+				if (skip) {
+					rerollAttempts++;
+					continue;
+				}
+				
 				// Limit two weak to any type, and one double weak to a single type
 				for (const typeName of this.dex.types.names()) {
 					// it's weak to the type
@@ -1069,7 +1084,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						}
 					}
 				}
-				if (skip) continue;
+				if (skip) {
+					rerollAttempts++;
+					continue;
+				}
+				*/
 			}
 
 			// Okay, the set passes, add it to our team
@@ -1227,15 +1246,15 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let returnMessage = "WeaknessList: ";
 			let newString = '';
 			for (const Weakness of WeaknessList) {
-				newString = `Type: ${Weakness.type} Frequency: ${Weakness.frequency} `;
+				newString = ` (Type: ${Weakness.type}, Frequency: ${Weakness.frequency})`;
 				returnMessage += newString;
 			}
 			returnMessage += 'DoubleWeaknessList: ';
 			for (const DoubleWeakness of DoubleWeaknessList) {
-				newString = `Type: ${DoubleWeakness.type} Frequency: ${DoubleWeakness.frequency} `;
+				newString = ` (Type: ${DoubleWeakness.type}, Frequency: ${DoubleWeakness.frequency})`;
 				returnMessage += newString;
 			}
-			throw new Error(`Could not build a random team for ${this.format} (seed=${seed}) ${returnMessage}`);
+			throw new Error(`Could not build a random team for ${this.format} (seed=${seed}) ${returnMessage} Reroll Attempts: ${rerollAttempts}`);
 		}
 
 		return pokemon;
