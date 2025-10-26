@@ -1036,7 +1036,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 									}
 								}
 							}
-
 							if (skip) {
 								rerollAttempts++;
 								rerollAttemptsTotal++;
@@ -1078,7 +1077,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 									}
 								}
 							}
-
 							if (skip) {
 								rerollAttempts++;
 								rerollAttemptsTotal++;
