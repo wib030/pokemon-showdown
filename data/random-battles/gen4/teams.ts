@@ -919,6 +919,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		let checkSpecies;
 		let sets;
+		const maxRerolls = 495;
 		let rerollAttempts = 0;
 		let rerollAttemptsTotal = 0;
 		let skipReroll = false;
@@ -976,7 +977,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (skip) {
 					rerollAttempts++;
 					rerollAttemptsTotal++;
-					if (rerollAttempts >= 250) skipReroll = true;
+					if (rerollAttempts > maxRerolls) skipReroll = true;
 					if (!skipReroll) continue;
 				}
 				*/
@@ -1012,7 +1013,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							if (skip) {
 								rerollAttempts++;
 								rerollAttemptsTotal++;
-								if (rerollAttempts >= 250) skipReroll = true;
+								if (rerollAttempts > maxRerolls) skipReroll = true;
 								if (!skipReroll) continue;
 							}
 						}
@@ -1054,7 +1055,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							if (skip) {
 								rerollAttempts++;
 								rerollAttemptsTotal++;
-								if (rerollAttempts >= 250) skipReroll = true;
+								if (rerollAttempts > maxRerolls) skipReroll = true;
 								if (!skipReroll) continue;
 							}
 						}
@@ -1072,7 +1073,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (skip) {
 					rerollAttempts++;
 					rerollAttemptsTotal++;
-					if (rerollAttempts >= 250) skipReroll = true;
+					if (rerollAttempts > maxRerolls) skipReroll = true;
 					if (!skipReroll) continue;
 				}
 				
@@ -1098,7 +1099,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (skip) {
 					rerollAttempts++;
 					rerollAttemptsTotal++;
-					if (rerollAttempts >= 250) skipReroll = true;
+					if (rerollAttempts > maxRerolls) skipReroll = true;
 					if (!skipReroll) continue;
 				}
 				*/
