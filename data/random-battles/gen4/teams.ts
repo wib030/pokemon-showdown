@@ -1088,18 +1088,29 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				let MonImmunity = new TypeFrequency();
 				let MonResist = new TypeFrequency();
 				let MonDoubleResist = new TypeFrequency();
+				let TempIndex = 0;
 
 				if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 0) {
 					if (this.dex.precheckEffectiveness(typeName, species, set.ability) > 1) {
-						DoubleWeakness.type = typeName;
-						DoubleWeakness.frequency++;
-						DoubleWeaknessList.push(DoubleWeakness);
+						if (DoubleWeaknessList?.some(y => y.type === typeName)) {
+							TempIndex = DoubleWeaknessList.findIndex(y => y.type === typeName);
+							DoubleWeaknessList[TempIndex].frequency++;
+						} else {
+							DoubleWeakness.type = typeName;
+							DoubleWeakness.frequency++;
+							DoubleWeaknessList.push(DoubleWeakness);
+						}
 						typeDoubleWeaknesses[typeName]++;
 					}
 					else {
-						Weakness.type = typeName;
-						Weakness.frequency++;
-						WeaknessList.push(Weakness);
+						if (DoubleWeaknessList?.some(y => y.type === typeName)) {
+							TempIndex = WeaknessList.findIndex(y => y.type === typeName);
+							WeaknessList[TempIndex].frequency++;
+						} else {
+							Weakness.type = typeName;
+							Weakness.frequency++;
+							WeaknessList.push(Weakness);
+						}
 						typeWeaknesses[typeName]++;
 					}
 				}
