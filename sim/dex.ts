@@ -322,6 +322,7 @@ export class ModdedDex {
 		// @ts-expect-error really wish TS would support this
 		const targetTyping: string[] | string = target.getTypes?.() || target.types || target;
 		const abilityState = this.abilities.get(targetAbility);
+		if (abilityState.id === 'imposter') return true;
 		if (IMMUNITY_ABILITIES[abilityState.id]?.includes(sourceType)) {
 			return false;
 		}
@@ -350,6 +351,7 @@ export class ModdedDex {
 		let targetTyping: string[] | string = target.getTypes?.() || target.types || target;
 		let totalTypeMod = 0;
 		if (sourceType === 'Fairy') return 0;
+		if (abilityState.id === 'imposter') return 0;
 		if (TYPE_ALTERING_ABILITIES.includes(abilityState.id))
 		{
 			if (Array.isArray(targetTyping)) {
