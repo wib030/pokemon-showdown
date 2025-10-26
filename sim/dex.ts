@@ -398,7 +398,10 @@ export class ModdedDex {
 	}
 
 	TypeMatchupListShuffleAndConcat(list: TypeFrequency[]) {
-		const max = list.reduce((a, b) => a.frequency > b.frequency ? a : b);
+		let max = 0;
+		for (const entry of list) {
+			if (entry.frequency > max) max = entry.frequency;
+		}
 		var i = list.length, j, temp;
 		while(--i > 0) {
 			j = Math.floor(Math.random()*(i+1));
@@ -406,7 +409,7 @@ export class ModdedDex {
 			list[j] = list[i];
 			list[i] = temp;
 		}
-		list = list.filter((y) => y.frequency === max.frequency);
+		list = list.filter((y) => y.frequency === max);
 	}
 
 	getDescs(table: keyof TextTableData, id: ID, dataEntry: AnyObject) {
