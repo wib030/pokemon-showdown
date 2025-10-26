@@ -1671,7 +1671,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	toxic: {
 		inherit: true,
-		accuracy: 90,
+		accuracy: 95,
 	},
 	fireblast: {
 		inherit: true,
@@ -3054,5 +3054,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	hex: {
 		inherit: true,
 		basePower: 65,
+	},
+	seedflare: {
+		inherit: true,
+		accuracy: 90,
 	},
 };
