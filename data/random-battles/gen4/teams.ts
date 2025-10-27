@@ -1099,8 +1099,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (skip) {
 					rerollAttempts++;
 					rerollAttemptsTotal++;
-					if (rerollAttempts > maxRerolls) skipReroll = true;
-					if (!skipReroll) continue;
+					continue;
 				}
 				
 				// Limit two weak to any type, and one double weak to a single type
@@ -1125,8 +1124,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (skip) {
 					rerollAttempts++;
 					rerollAttemptsTotal++;
-					if (rerollAttempts > maxRerolls) skipReroll = true;
-					if (!skipReroll) continue;
+					continue;
 				}
 			}
 
