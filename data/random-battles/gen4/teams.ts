@@ -921,7 +921,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let sets;
 		const maxRerolls = 495;
 		let rerollAttempts = 0;
-		let doubleWeaknessRerolls = 0;
 		let rerollAttemptsTotal = 0;
 		let skipReroll = false;
 
@@ -934,7 +933,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (!species.exists) continue;
 			
 			skipReroll = false;
-			doubleWeaknessRerolls = 0;
 
 			// Limit to one of each species (Species Clause)
 			if (baseFormes[species.baseSpecies]) continue;
@@ -1019,7 +1017,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							this.dex.TypeMatchupListShuffleAndConcat(DoubleWeaknessList);
 							for (const DoubleWeakness of DoubleWeaknessList)
 							{
-								if (doubleWeaknessRerolls > (maxRerolls / 2)) {
+								if (rerollAttempts > maxRerolls) {
 									if (DoubleWeakness.frequency > 0 && ResistList?.some(y => y.type === DoubleWeakness.type && y.frequency < DoubleWeakness.frequency)) {
 										if (this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) > -1) {
 											skip = true;
@@ -1056,12 +1054,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							if (skip) {
 								rerollAttempts++;
 								rerollAttemptsTotal++;
-								if (rerollAttempts > maxRerolls) {
-									skipReroll = true;
-								} else {
-									skipReroll = false;
-								}
-								if (!skipReroll) continue;
+								continue;
 							}
 						}
 					}
