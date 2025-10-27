@@ -1002,7 +1002,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (skip) {
 					rerollAttempts++;
 					rerollAttemptsTotal++;
-					if (rerollAttempts > maxRerolls) skipReroll = true;
+					if (rerollAttempts > maxRerolls) {
+						skipReroll = true;
+					} else {
+						skipReroll = false;
+					}
 					if (!skipReroll) continue;
 				}
 				*/
@@ -1048,9 +1052,12 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							}
 							if (skip) {
 								rerollAttempts++;
-								doubleWeaknessRerolls++;
 								rerollAttemptsTotal++;
-								if (rerollAttempts > maxRerolls) skipReroll = true;
+								if (rerollAttempts > maxRerolls) {
+									skipReroll = true;
+								} else {
+									skipReroll = false;
+								}
 								if (!skipReroll) continue;
 							}
 						}
@@ -1088,7 +1095,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							if (skip) {
 								rerollAttempts++;
 								rerollAttemptsTotal++;
-								if (rerollAttempts > maxRerolls) skipReroll = true;
+								if (rerollAttempts > maxRerolls) {
+									skipReroll = true;
+								} else {
+									skipReroll = false;
+								}
 								if (!skipReroll) continue;
 							}
 						}
@@ -1105,7 +1116,12 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (skip) {
 					rerollAttempts++;
 					rerollAttemptsTotal++;
-					continue;
+					if (rerollAttempts > maxRerolls) {
+						skipReroll = true;
+					} else {
+						skipReroll = false;
+					}
+					if (!skipReroll) continue;
 				}
 				
 				// Limit two weak to any type, and one double weak to a single type
@@ -1130,7 +1146,12 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (skip) {
 					rerollAttempts++;
 					rerollAttemptsTotal++;
-					continue;
+					if (rerollAttempts > maxRerolls) {
+						skipReroll = true;
+					} else {
+						skipReroll = false;
+					}
+					if (!skipReroll) continue;
 				}
 			}
 
