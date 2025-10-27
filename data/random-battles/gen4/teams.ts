@@ -1026,6 +1026,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 											break;
 										} else {
 											skipWeaknessCheck = true;
+											break;
 										}
 									}
 								} else {
@@ -1036,6 +1037,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 												break;
 											} else {
 												skipWeaknessCheck = true;
+												break;
 											}
 										}
 									}
@@ -1046,6 +1048,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 											break;
 										} else {
 											skipWeaknessCheck = true;
+											break;
 										}
 									}
 								}
@@ -1074,6 +1077,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 										if (this.dex.precheckImmunity(Weakness.type, checkTypes, set.ability)) {
 											skip = true;
 											break;
+										} else {
+											break;
 										}
 									}
 								}
@@ -1082,12 +1087,16 @@ export class RandomGen4Teams extends RandomGen5Teams {
 									if (this.dex.precheckEffectiveness(Weakness.type, checkTypes, set.ability) > -2) {
 										skip = true;
 										break;
+									} else {
+										break;
 									}
 								}
 
 								if (Weakness.frequency > 0 && ResistList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency)) {
 									if (this.dex.precheckEffectiveness(Weakness.type, checkTypes, set.ability) > -1) {
 										skip = true;
+										break;
+									} else {
 										break;
 									}
 								}
