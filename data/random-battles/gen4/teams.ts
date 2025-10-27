@@ -1009,7 +1009,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				
 				if (pokemon.length > 0)
 				{
-					if (Array.isArray(DoubleWeaknessListFull) && DoubleWeaknessListFull.length && doubleWeaknessRerolls < (maxRerolls / 2)) {
+					if (Array.isArray(DoubleWeaknessListFull) && DoubleWeaknessListFull.length && doubleWeaknessRerolls < maxRerolls) {
 						DoubleWeaknessList = DoubleWeaknessListFull;
 						if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length) {
 							this.dex.TypeMatchupListShuffleAndConcat(DoubleWeaknessList);
@@ -1085,14 +1085,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 				
 				// Limit two of a single type, and one of any other type
-				if (maxSingleType === 2) {
-					for (const typeName of this.dex.types.names()) {
-						if ((typeCount[typeName] === maxSingleType) && set.ability !== 'Color Change' && set.ability !== 'Imposter') {
-							maxSingleType = 1;
-						}
-					}
-				}
-				
 				for (const typeName of types) {
 					if ((typeCount[typeName] >= maxSingleType * limitFactor) && set.ability !== 'Color Change' && set.ability !== 'Imposter') {
 						skip = true;
@@ -1116,9 +1108,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				for (const DoubleWeakness of DoubleWeaknessListFull) {
-					// it's weak to the type
+					// it's double weak to the type
 					if (this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) > 0) {
-						if (DoubleWeakness.frequency >= 2 * limitFactor) {
+						if (DoubleWeakness.frequency >= limitFactor) {
 							skip = true;
 							break;
 						}
