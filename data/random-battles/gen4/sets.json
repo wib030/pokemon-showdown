@@ -3792,7 +3792,7 @@
             },
 			{
                 "role": "Bulky Attacker",
-                "movepool": ["judgment", "ancientpower", "goldenbinding", "cosmicpowerpower"],
+                "movepool": ["judgment", "ancientpower", "goldenbinding", "cosmicpower"],
                 "abilities": ["Unown Energy"],
 				"evs": [252, 0, 252, 0, 4, 0],
 				"ivs": [31, 0, 31, 31, 31, 31],
@@ -3802,7 +3802,7 @@
             },
 			{
                 "role": "Bulky Attacker",
-                "movepool": ["judgment", "ancientpower", "goldenbinding", "cosmicpowerpower"],
+                "movepool": ["judgment", "ancientpower", "goldenbinding", "cosmicpower"],
                 "abilities": ["Unown Energy"],
 				"evs": [252, 0, 4, 0, 252, 0],
 				"ivs": [31, 0, 31, 31, 31, 31],
@@ -8254,16 +8254,6 @@
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Life Orb",
 				"nature": "Timid",
-				"inclination": "Special"
-            },
-			{
-                "role": "Defog",
-                "movepool": ["hurricane", "bugbuzz", "uturn", "defog"],
-                "abilities": ["Tinted Lens"],
-                "evs": [0, 8, 0, 252, 0, 248],
-				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Wide Lens",
-				"nature": "Naive",
 				"inclination": "Special"
             },
 			{
