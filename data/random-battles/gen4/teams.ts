@@ -784,6 +784,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const ivPool = set.ivs || '';
 		const setItem = set.item || '';
 		const nature = set.nature || 'Serious';
+		
+		let specificEVs = false;
+		let specificIVs = false;
 
 		let ability = '';
 		let item = undefined;
@@ -793,10 +796,12 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		if (evPool !== '') {
 			evs = { hp: evPool[0], atk: evPool[1], def: evPool[2], spa: evPool[3], spd: evPool[4], spe: evPool[5] };
+			specificEVs = true;
 		}
 		
 		if (ivPool !== '') {
 			ivs = { hp: ivPool[0], atk: ivPool[1], def: ivPool[2], spa: ivPool[3], spd: ivPool[4], spe: ivPool[5] };
+			specificIVs = true;
 		}
 
 		const types = species.types;
@@ -832,7 +837,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (move.startsWith('hiddenpower')) hasHiddenPower = true;
 		}
 
-		if (hasHiddenPower) {
+		if (hasHiddenPower && !specificIVs) {
 			let hpType;
 			for (const move of moves) {
 				if (move.startsWith('hiddenpower')) hpType = move.substr(11);
@@ -846,41 +851,42 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		}
 
 		// Prepare optimal HP
-		const srImmunity = ability === 'Magic Guard';
-		const srWeakness = srImmunity ? 0 : this.dex.getEffectiveness('Rock', species);
-		while (evs.hp > 1) {
-			const hp = Math.floor(Math.floor(2 * species.baseStats.hp + ivs.hp + Math.floor(evs.hp / 4) + 100) * level / 100 + 10);
-			if (moves.has('substitute') && item === 'Sitrus Berry') {
-				// Two Substitutes should activate Sitrus Berry
-				if (hp % 4 === 0) break;
-			} else if (moves.has('bellydrum') && item === 'Sitrus Berry') {
-				// Belly Drum should activate Sitrus Berry
-				if (hp % 2 === 0) break;
-			} else {
-				// Maximize number of Stealth Rock switch-ins
-				if (srWeakness <= 0) break;
-				if (srWeakness === 1 && ['Black Sludge', 'Leftovers', 'Life Orb'].includes(item)) break;
-				if (item !== 'Sitrus Berry' && hp % (4 / srWeakness) > 0) break;
-				// Minimise number of Stealth Rock switch-ins to activate Sitrus Berry
-				if (item === 'Sitrus Berry' && hp % (4 / srWeakness) === 0) break;
+		if (!specificEVs) {
+			const srImmunity = ability === 'Magic Guard';
+			const srWeakness = srImmunity ? 0 : this.dex.getEffectiveness('Rock', species);
+			while (evs.hp > 1) {
+				const hp = Math.floor(Math.floor(2 * species.baseStats.hp + ivs.hp + Math.floor(evs.hp / 4) + 100) * level / 100 + 10);
+				if (moves.has('substitute') && item === 'Sitrus Berry') {
+					// Two Substitutes should activate Sitrus Berry
+					if (hp % 4 === 0) break;
+				} else if (moves.has('bellydrum') && item === 'Sitrus Berry') {
+					// Belly Drum should activate Sitrus Berry
+					if (hp % 2 === 0) break;
+				} else {
+					// Maximize number of Stealth Rock switch-ins
+					if (srWeakness <= 0) break;
+					if (srWeakness === 1 && ['Black Sludge', 'Leftovers', 'Life Orb'].includes(item)) break;
+					if (item !== 'Sitrus Berry' && hp % (4 / srWeakness) > 0) break;
+					// Minimise number of Stealth Rock switch-ins to activate Sitrus Berry
+					if (item === 'Sitrus Berry' && hp % (4 / srWeakness) === 0) break;
+				}
+				evs.hp -= 4;
 			}
-			evs.hp -= 4;
+			
+			// Minimize confusion damage
+			if (!counter.get('Physical') && !moves.has('transform')) {
+				evs.atk = 0;
+				ivs.atk = hasHiddenPower ? (ivs.atk || 31) - 28 : 0;
+			}
+
+			if (['gyroball', 'metalburst', 'trickroom'].some(m => moves.has(m))) {
+				evs.spe = 0;
+				ivs.spe = hasHiddenPower ? (ivs.spe || 31) - 28 : 0;
+			}
 		}
 
-		// Minimize confusion damage
-		if (!counter.get('Physical') && !moves.has('transform')) {
-			evs.atk = 0;
-			ivs.atk = hasHiddenPower ? (ivs.atk || 31) - 28 : 0;
-		}
-
-		if (['gyroball', 'metalburst', 'trickroom'].some(m => moves.has(m))) {
-			evs.spe = 0;
-			ivs.spe = hasHiddenPower ? (ivs.spe || 31) - 28 : 0;
-		}
-
-		// shuffle moves to add more randomness to camomons
-		const shuffledMoves = Array.from(moves);
-		this.prng.shuffle(shuffledMoves);
+		// Don't shuffle the moves
+		const newMoves = Array.from(moves);
 
 		return {
 			name: species.baseSpecies,
@@ -889,7 +895,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			shiny: this.randomChance(1, 1024),
 			nature,
 			level,
-			moves: shuffledMoves,
+			moves: newMoves,
 			ability,
 			evs,
 			ivs,
