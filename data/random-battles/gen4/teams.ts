@@ -95,6 +95,24 @@ const TYPE_ALTERING_ABILITIES = [
 	'colorchange', 'ghostly',
 ];
 
+// List of Rare Pokemon (1/3 chance to reroll if species is rolled)
+const RARE_POKEMON = [
+	'articuno', 'zapdos', 'moltres', 'raikou', 'entei', 'suicune',
+	'regirock', 'regice', 'registeel', 'uxie', 'mesprit', 'azelf',
+	'heatran', 'regigigas', 'cresselia', 'mew', 'celebi', 'jirachi',
+	'manaphy', 'shaymin',
+];
+
+// List of Very Rare Pokemon (2/3 chance to reroll if species is rolled)
+const VERY_RARE_POKEMON = [
+	'mewtwo', 'lugia', 'hooh', 'latios', 'latias', 'kyogre', 'groudon',
+	'rayquaza', 'dialga', 'palkia', 'giratina', 'giratinaorigin', 'arceus',
+	'arceusbug', 'arceusdark', 'arceusdragon', 'arceuselectric', 'arceusfighting',
+	'arceusfire', 'arceusflying', 'arceusghost', 'arceusgrass', 'arceusground',
+	'arceusice', 'arceuspoison', 'arceuspsychic', 'arceusrock', 'arceussteel',
+	'arceuswater', 'shayminsky', 'darkrai', 'phione',
+];
+
 class TypeFrequency {
 	type: string = '';
 	frequency: number = 0;
@@ -948,6 +966,17 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			// Dynamically scale limits for different team sizes. The default and minimum value is 1.
 			const limitFactor = Math.round(this.maxTeamSize / 6) || 1;
+			
+			// If we get a rare or very rare Pokemon make a roll to determine if we keep it
+			if (RARE_POKEMON.includes(checkSpecies)) {
+				if (this.sample([true, false, false])) {
+					continue;
+				}
+			} else if (VERY_RARE_POKEMON.includes(checkSpecies)) {
+				if (this.sample([true, true, false])) {
+					continue;
+				}
+			}
 
 			const types = species.types;
 			let checkTypes = types;
