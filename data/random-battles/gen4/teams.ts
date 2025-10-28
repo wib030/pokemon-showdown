@@ -991,28 +991,16 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			
 			if (!isMonotype && !this.forceMonotype) {
 				sets = this.randomSets[checkSpecies.id]["sets"];
-				
-				let leadSetCount = 0;
-				let onlyLeadSets = false;
 				let hasLeadSet = false;
+				let hasRemovalSet = false;
+				
 				for (const set of sets) {
 					if (LEAD_ROLES.includes(set.role)) {
 						hasLeadSet = true;
-						leadSetCount++;
-					}
-				}
-				if (leadSetCount === sets.length) onlyLeadSets = true;
-				
-				let removalSetCount = 0;
-				let onlyRemovalSets = false;
-				let hasRemovalSet = false;
-				for (const set of sets) {
-					if (REMOVAL_ROLES.includes(set.role)) {
+					} else if (REMOVAL_ROLES.includes(set.role)) {
 						hasRemovalSet = true;
-						removalSetCount++;
 					}
 				}
-				if (removalSetCount === sets.length) onlyRemovalSets = true;
 				
 				if (pokemon.length === leadSlot && leadNum === 0) {
 					// Check if the Pokemon has a Lead set
@@ -1021,9 +1009,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					// Check if the Pokemon has a Lead set
 					if (!hasRemovalSet) skip = true;
 				}
-				
-				if (leadNum > 0 && onlyLeadSets) skip = true;
-				if (removalNum > 0 && onlyRemovalSets) skip = true;
 				
 				if (skip) {
 					rerollAttempts++;
