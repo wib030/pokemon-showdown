@@ -975,7 +975,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			const abilityState = this.dex.abilities.get(set.ability);
 			
 			if (!isMonotype && !this.forceMonotype) {
-				/*
 				if (leadNum < 1) {
 					sets = this.randomSets[checkSpecies.id]["sets"];
 					// Check if the Pokemon has a Lead set
@@ -1007,7 +1006,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 					if (!skipReroll) continue;
 				}
-				*/
 				
 				if (pokemon.length > 0)
 				{
