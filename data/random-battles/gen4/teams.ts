@@ -1028,7 +1028,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					// If we have more than two weaknesses to a single type, then ignore double weak rerolling and prioritize resisting it
 					if (Array.isArray(WeaknessListFull) && WeaknessListFull.length) {
 						for (const Weakness of WeaknessListFull) {
-							if (Weakness.frequency > 2 && ResistList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency)) {
+							if (Weakness.frequency > 2 && ResistList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency) && DoubleResistList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency) && ImmunityList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency)) {
 								skipDoubleWeaknessCheck = true;
 							} else {
 								skipDoubleWeaknessCheck = false;
