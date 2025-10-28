@@ -741,16 +741,16 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		for (const set of sets) {
 			// Enforce Lead if the team does not have one
-			if (leadNum === 0 && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
+			if (leadNum < 1 && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
 			
-			// Prevent Lead if the team already has more than one lead
-			if (leadNum > 1 && LEAD_ROLES.includes(set.role)) continue;
+			// Prevent Lead if we already have a lead mon
+			if (leadNum > 0 && LEAD_ROLES.includes(set.role)) continue;
 			
 			// Enforce Removal if the team does not have removal
-			if (removalNum === 0 && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
+			if (removalNum < 1 && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
 			
-			// Prevent Removal if the team already has more than one removal
-			if (removalNum > 1 && REMOVAL_ROLES.includes(set.role)) continue;
+			// Prevent Removal if we already have a removal mon
+			if (removalNum > 0 && REMOVAL_ROLES.includes(set.role)) continue;
 			
 			possibleSets.push(set);
 		}
@@ -952,6 +952,40 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let skip = false;
 			let skipWeaknessCheck = false;
 			let skipDoubleWeaknessCheck = false;
+			
+			if (pokemon.length === leadSlot && leadNum < 1) {
+				sets = this.randomSets[checkSpecies.id]["sets"];
+				// Check if the Pokemon has a Lead set
+				skip = true;
+				for (const set of sets) {
+					if (LEAD_ROLES.includes(set.role)) {
+						skip = false;
+						break;
+					}
+				}
+			} else if (pokemon.length === removalSlot && removalNum < 1) {
+				sets = this.randomSets[checkSpecies.id]["sets"];
+				// Check if the Pokemon has a Removal set
+				skip = true;
+				for (let set of sets) {
+					if (REMOVAL_ROLES.includes(set.role)) {
+						skip = false;
+						break;
+					}
+				}
+			}
+			if (skip) {
+				rerollAttempts++;
+				rerollAttemptsTotal++;
+				if (rerollAttempts > maxRerolls) {
+					skipReroll = true;
+				} else {
+					skipReroll = false;
+				}
+				if (!skipReroll) {
+					continue;
+				}
+			}
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
 			
@@ -990,40 +1024,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			const abilityState = this.dex.abilities.get(set.ability);
 			
 			if (!isMonotype && !this.forceMonotype) {
-				if (pokemon.length === leadSlot && leadNum === 0) {
-					sets = this.randomSets[checkSpecies.id]["sets"];
-					// Check if the Pokemon has a Lead set
-					skip = true;
-					for (const set of sets) {
-						if (LEAD_ROLES.includes(set.role)) {
-							skip = false;
-							break;
-						}
-					}
-				} else if (pokemon.length === removalSlot && removalNum === 0) {
-					sets = this.randomSets[checkSpecies.id]["sets"];
-					// Check if the Pokemon has a Removal set
-					skip = true;
-					for (let set of sets) {
-						if (REMOVAL_ROLES.includes(set.role)) {
-							skip = false;
-							break;
-						}
-					}
-				}
-				if (skip) {
-					rerollAttempts++;
-					rerollAttemptsTotal++;
-					if (rerollAttempts > maxRerolls) {
-						skipReroll = true;
-					} else {
-						skipReroll = false;
-					}
-					if (!skipReroll) {
-						continue;
-					}
-				}
-				
 				if (pokemon.length > 0)
 				{
 					// If we have more than or equal to two weaknesses to a single type, then ignore double weak rerolling and prioritize resisting it
