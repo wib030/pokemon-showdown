@@ -745,14 +745,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			// Enforce Lead if the team does not have one
 			if (ensureLead && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
 			
-			// Prevent Lead if the team already has more than one lead
-			if (leadNum > 1 && LEAD_ROLES.includes(set.role)) continue;
+			// Prevent Lead if we aren't ensuring lead, and if we roll true 
+			if ((!ensureLead && this.sample([true, true, false])) && LEAD_ROLES.includes(set.role)) continue;
 			
 			// Enforce Removal if the team does not have removal
 			if (ensureRemoval && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
 			
-			// Prevent Removal if the team already has more than one removal
-			if (removalNum > 1 && REMOVAL_ROLES.includes(set.role)) continue;
+			// Prevent Removal if we aren't ensuring removal, and if we roll true 
+			if ((!ensureRemoval && this.sample([true, true, false])) && REMOVAL_ROLES.includes(set.role)) continue;
 			
 			possibleSets.push(set);
 		}
@@ -1025,10 +1025,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (!isMonotype && !this.forceMonotype) {
 				if (pokemon.length > 0)
 				{
-					// If we have more than two weaknesses to a single type, then ignore double weak rerolling and prioritize resisting it
+					// If we have more than or equal to two weaknesses to a single type, then ignore double weak rerolling and prioritize resisting it
 					if (Array.isArray(WeaknessListFull) && WeaknessListFull.length) {
 						for (const Weakness of WeaknessListFull) {
-							if (Weakness.frequency > 2 && ResistList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency) && DoubleResistList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency) && ImmunityList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency)) {
+							if (Weakness.frequency >= 2 && ResistList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency) && DoubleResistList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency) && ImmunityList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency)) {
 								skipDoubleWeaknessCheck = true;
 							} else {
 								skipDoubleWeaknessCheck = false;
