@@ -41068,6 +41068,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			lowkick: ["4L1"],
 			superfang: ["4L43"],
 			roleplay: ["4L38"],
+			drainpunch: ["4M"],
 		},
 		encounters: [
 			{generation: 4, level: 22, pokeball: "safariball"},

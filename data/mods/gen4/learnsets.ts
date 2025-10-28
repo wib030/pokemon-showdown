@@ -33646,6 +33646,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			lowkick: ["4L1"],
 			superfang: ["4L43"],
 			roleplay: ["4L38"],
+			drainpunch: ["4M"],
 		},
 	},
 	carnivine: {

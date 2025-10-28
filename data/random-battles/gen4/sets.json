@@ -2751,18 +2751,86 @@
         ]
     },
     "ledian": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Staller",
-                "movepool": ["encore", "focusblast", "hiddenpowerflying", "knockoff", "roost", "toxic"],
+                "role": "Bulky Lead",
+                "movepool": ["uturn", "stickyweb", "encore", "rest"],
                 "abilities": ["Early Bird"],
-				"inclination": "Special"
+				"evs": [248, 0, 252, 0, 4, 4],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
             },
-            {
-                "role": "Fast Support",
-                "movepool": ["agility", "batonpass", "encore", "swordsdance"],
+			{
+                "role": "Bulky Lead",
+                "movepool": ["uturn", "stickyweb", "reflect", "rest"],
                 "abilities": ["Early Bird"],
+				"evs": [248, 0, 252, 0, 4, 4],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["uturn", "stickyweb", "lightscreen", "rest"],
+                "abilities": ["Early Bird"],
+				"evs": [248, 0, 252, 0, 4, 4],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["uturn", "stickyweb", "toxic", "rest"],
+                "abilities": ["Early Bird"],
+				"evs": [248, 0, 252, 0, 4, 4],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["spiderweb", "encore", "batonpass", "roost"],
+                "abilities": ["Rattled"],
+				"evs": [248, 0, 188, 0, 0, 72],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["spiderweb", "lightscreen", "batonpass", "roost"],
+                "abilities": ["Rattled"],
+				"evs": [248, 0, 188, 0, 0, 72],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["spiderweb", "reflect", "batonpass", "roost"],
+                "abilities": ["Rattled"],
+				"evs": [248, 0, 188, 0, 0, 72],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["uturn", "stickyweb", "toxicspikes", "rest"],
+                "abilities": ["Early Bird"],
+				"evs": [248, 0, 252, 0, 4, 4],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
 				"inclination": "Support"
             }
         ]
@@ -3640,12 +3708,106 @@
         ]
     },
     "unown": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["hiddenpowerfighting", "hiddenpowerpsychic"],
+                "movepool": ["judgment", "hiddenpowerfighting", "goldenbinding", "ancientpower"],
                 "abilities": ["Unown Energy"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 30, 30, 30, 30],
+				"item": "Mind Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["judgment", "hiddenpowerdark", "goldenbinding", "ancientpower"],
+                "abilities": ["Unown Energy"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 31, 31, 31, 31],
+				"item": "Fist Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["judgment", "hiddenpowerelectric", "goldenbinding", "ancientpower"],
+                "abilities": ["Unown Energy"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 31, 30, 31, 31],
+				"item": "Icicle Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["judgment", "hiddenpowerground", "goldenbinding", "ancientpower"],
+                "abilities": ["Unown Energy"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Stone Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["judgment", "hiddenpowerice", "goldenbinding", "ancientpower"],
+                "abilities": ["Unown Energy"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Earth Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["judgment", "hiddenpowerground", "goldenbinding", "ancientpower"],
+                "abilities": ["Unown Energy"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Flame Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["judgment", "hiddenpowerpsychic", "goldenbinding", "ancientpower"],
+                "abilities": ["Unown Energy"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 31, 31, 30],
+				"item": "Fist Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["judgment", "hiddenpowerfighting", "goldenbinding", "ancientpower"],
+                "abilities": ["Unown Energy"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 30, 30, 30, 30],
+				"item": "Dread Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["judgment", "ancientpower", "goldenbinding", "cosmicpowerpower"],
+                "abilities": ["Unown Energy"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["judgment", "ancientpower", "goldenbinding", "cosmicpowerpower"],
+                "abilities": ["Unown Energy"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
 				"inclination": "Special"
             }
         ]
@@ -8871,12 +9033,96 @@
         ]
     },
     "toxicroak": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["crosschop", "earthquake", "icepunch", "poisonjab", "substitute", "suckerpunch", "swordsdance"],
+                "movepool": ["closecombat", "gunkshot", "suckerpunch", "swordsdance"],
                 "abilities": ["Dry Skin"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["closecombat", "gunkshot", "suckerpunch", "swordsdance"],
+                "abilities": ["Dry Skin"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["closecombat", "gunkshot", "suckerpunch", "swordsdance"],
+                "abilities": ["Dry Skin"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Belt",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["closecombat", "knockoff", "swordsdance", "fling"],
+                "abilities": ["Dry Skin"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Anklet",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["closecombat", "gunkshot", "knockoff", "icepunch"],
+                "abilities": ["Dry Skin"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["closecombat", "gunkshot", "knockoff", "icepunch"],
+                "abilities": ["Shakedown"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["sludgebomb", "darkpulse", "vacuumwave", "nastyplot"],
+                "abilities": ["Dry Skin"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["sludgebomb", "darkpulse", "vacuumwave", "nastyplot"],
+                "abilities": ["Dry Skin"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Black Belt",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["poisonjab", "drainpunch", "substitute", "acupressure"],
+                "abilities": ["Dry Skin"],
+				"evs": [244, 12, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Jolly",
 				"inclination": "Physical"
             }
         ]
