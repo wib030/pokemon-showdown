@@ -6140,6 +6140,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(pokemon) {
 			this.add('-activate', pokemon, 'ability: Memory');
 			this.hint("As long as Memory stays active, all stat changes will be forgotten.");
+			this.hint("(Applies to all boostable stats excluding Speed.)", true);
 		},
 		onAnyModifyBoost(boosts, pokemon) {
 			boosts['def'] = 0;
