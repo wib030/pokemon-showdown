@@ -717,6 +717,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		isLead = false,
 		leadNum: number,
 		removalNum: number,
+		ensureLead: boolean,
+		ensureRemoval: boolean,
 	): RandomTeamsTypes.RandomSet {
 		species = this.dex.species.get(species);
 		const forme = this.getForme(species);
@@ -741,13 +743,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		for (const set of sets) {
 			// Enforce Lead if the team does not have one
-			if (leadNum === 0 && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
+			if (ensureLead && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
 			
 			// Prevent Lead if the team already has more than one lead
 			if (leadNum > 1 && LEAD_ROLES.includes(set.role)) continue;
 			
 			// Enforce Removal if the team does not have removal
-			if ((removalNum === 0 && leadNum > 0) && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
+			if (ensureRemoval && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
 			
 			// Prevent Removal if the team already has more than one removal
 			if (removalNum > 1 && REMOVAL_ROLES.includes(set.role)) continue;
@@ -923,6 +925,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let rerollAttempts = 0;
 		let rerollAttemptsTotal = 0;
 		let skipReroll = false;
+		
+		let randomTeamSlots = [0, 1, 2, 3, 4, 5];
+		let leadSlot = this.sampleNoReplace(randomTeamSlots);
+		let removalSlot = this.sampleNoReplace(randomTeamSlots);
 
 		const pokemonList = Object.keys(this.randomSets);
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
@@ -947,8 +953,49 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let checkTypes = types;
 			let skip = false;
 			let skipWeaknessCheck = false;
+			
+			let ensureLead = false;
+			let ensureRemoval = false;
+			
+			if (pokemon.length === leadSlot) {
+				sets = this.randomSets[checkSpecies.id]["sets"];
+				// Check if the Pokemon has a Lead set
+				skip = true;
+				for (const set of sets) {
+					if (LEAD_ROLES.includes(set.role)) {
+						ensureLead = true;
+						skip = false;
+						break;
+					}
+				}
+			} else if (pokemon.length === removalSlot) {
+				sets = this.randomSets[checkSpecies.id]["sets"];
+				// Check if the Pokemon has a Removal set
+				skip = true;
+				for (let set of sets) {
+					if (REMOVAL_ROLES.includes(set.role)) {
+						ensureRemoval = true;
+						skip = false;
+						break;
+					}
+				}
+			}
+			if (skip) {
+				rerollAttempts++;
+				rerollAttemptsTotal++;
+				if (rerollAttempts > maxRerolls) {
+					skipReroll = true;
+				} else {
+					skipReroll = false;
+				}
+				if (!skipReroll) {
+					ensureLead = false;
+					ensureRemoval = false;
+					continue;
+				}
+			}
 
-			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
+			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum, ensureLead, ensureRemoval);
 			
 			if (set.ability === 'Multitype') {
 				switch (set.item) {
@@ -975,38 +1022,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			const abilityState = this.dex.abilities.get(set.ability);
 			
 			if (!isMonotype && !this.forceMonotype) {
-				if (leadNum < 1) {
-					sets = this.randomSets[checkSpecies.id]["sets"];
-					// Check if the Pokemon has a Lead set
-					skip = true;
-					for (const set of sets) {
-						if (LEAD_ROLES.includes(set.role)) {
-							skip = false;
-							break;
-						}
-					}
-				} else if (removalNum < 1 && leadNum > 0) {
-					sets = this.randomSets[checkSpecies.id]["sets"];
-					// Check if the Pokemon has a Removal set
-					skip = true;
-					for (let set of sets) {
-						if (REMOVAL_ROLES.includes(set.role)) {
-							skip = false;
-							break;
-						}
-					}
-				}
-				if (skip) {
-					rerollAttempts++;
-					rerollAttemptsTotal++;
-					if (rerollAttempts > maxRerolls) {
-						skipReroll = true;
-					} else {
-						skipReroll = false;
-					}
-					if (!skipReroll) continue;
-				}
-				
 				if (pokemon.length > 0)
 				{
 					if (Array.isArray(DoubleWeaknessListFull) && DoubleWeaknessListFull.length) {
@@ -1052,6 +1067,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							if (skip) {
 								rerollAttempts++;
 								rerollAttemptsTotal++;
+								ensureLead = false;
+								ensureRemoval = false;
 								continue;
 							}
 						}
@@ -1100,7 +1117,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								} else {
 									skipReroll = false;
 								}
-								if (!skipReroll) continue;
+								if (!skipReroll) {
+									ensureLead = false;
+									ensureRemoval = false;
+									continue;
+								}
 							}
 						}
 					}
@@ -1110,6 +1131,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				for (const typeName of types) {
 					if ((typeCount[typeName] >= maxSingleType * limitFactor) && set.ability !== 'Color Change' && set.ability !== 'Imposter') {
 						skip = true;
+						ensureLead = false;
+						ensureRemoval = false;
 						break;
 					}
 				}
@@ -1121,7 +1144,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					} else {
 						skipReroll = false;
 					}
-					if (!skipReroll) continue;
+					if (!skipReroll) {
+						ensureLead = false;
+						ensureRemoval = false;
+						continue;
+					}
 				}
 				
 				// Limit two weak to any type, and one double weak to a single type
@@ -1130,6 +1157,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					if (this.dex.precheckEffectiveness(Weakness.type, checkTypes, set.ability) > 0) {
 						if (Weakness.frequency >= 2 * limitFactor) {
 							skip = true;
+							ensureLead = false;
+							ensureRemoval = false;
 							break;
 						}
 					}
@@ -1139,6 +1168,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					if (this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) > 0) {
 						if (DoubleWeakness.frequency >= limitFactor) {
 							skip = true;
+							ensureLead = false;
+							ensureRemoval = false;
 							break;
 						}
 					}
@@ -1151,7 +1182,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					} else {
 						skipReroll = false;
 					}
-					if (!skipReroll) continue;
+					if (!skipReroll) {
+						ensureLead = false;
+						ensureRemoval = false;
+						continue;
+					}
 				}
 			}
 
