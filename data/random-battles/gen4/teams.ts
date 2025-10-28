@@ -1020,6 +1020,16 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 			}
 			
+			if (set.ability === 'Forecast') {
+				switch (set.item) {
+					case 'Heat Rock': checkTypes = 'Fire'; break;
+					case 'Damp Rock': checkTypes = 'Water'; break;
+					case 'Smooth Rock': checkTypes = 'Rock'; break;
+					case 'Icy Rock': checkTypes = 'Ice'; break;
+					default: break;
+				}
+			}
+			
 			const abilityState = this.dex.abilities.get(set.ability);
 			
 			if (!isMonotype && !this.forceMonotype) {
