@@ -952,40 +952,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let skip = false;
 			let skipWeaknessCheck = false;
 			let skipDoubleWeaknessCheck = false;
-			
-			if (pokemon.length === leadSlot && leadNum === 0) {
-				sets = this.randomSets[checkSpecies.id]["sets"];
-				// Check if the Pokemon has a Lead set
-				skip = true;
-				for (const set of sets) {
-					if (LEAD_ROLES.includes(set.role)) {
-						skip = false;
-						break;
-					}
-				}
-			} else if (pokemon.length === removalSlot && removalNum === 0) {
-				sets = this.randomSets[checkSpecies.id]["sets"];
-				// Check if the Pokemon has a Removal set
-				skip = true;
-				for (let set of sets) {
-					if (REMOVAL_ROLES.includes(set.role)) {
-						skip = false;
-						break;
-					}
-				}
-			}
-			if (skip) {
-				rerollAttempts++;
-				rerollAttemptsTotal++;
-				if (rerollAttempts > maxRerolls) {
-					skipReroll = true;
-				} else {
-					skipReroll = false;
-				}
-				if (!skipReroll) {
-					continue;
-				}
-			}
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum);
 			
@@ -1024,6 +990,40 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			const abilityState = this.dex.abilities.get(set.ability);
 			
 			if (!isMonotype && !this.forceMonotype) {
+				if (pokemon.length === leadSlot && leadNum === 0) {
+					sets = this.randomSets[checkSpecies.id]["sets"];
+					// Check if the Pokemon has a Lead set
+					skip = true;
+					for (const set of sets) {
+						if (LEAD_ROLES.includes(set.role)) {
+							skip = false;
+							break;
+						}
+					}
+				} else if (pokemon.length === removalSlot && removalNum === 0) {
+					sets = this.randomSets[checkSpecies.id]["sets"];
+					// Check if the Pokemon has a Removal set
+					skip = true;
+					for (let set of sets) {
+						if (REMOVAL_ROLES.includes(set.role)) {
+							skip = false;
+							break;
+						}
+					}
+				}
+				if (skip) {
+					rerollAttempts++;
+					rerollAttemptsTotal++;
+					if (rerollAttempts > maxRerolls) {
+						skipReroll = true;
+					} else {
+						skipReroll = false;
+					}
+					if (!skipReroll) {
+						continue;
+					}
+				}
+				
 				if (pokemon.length > 0)
 				{
 					// If we have more than or equal to two weaknesses to a single type, then ignore double weak rerolling and prioritize resisting it
