@@ -643,9 +643,6 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	focussash: {
 		name: "Focus Sash",
 		shortDesc: "If holder's HP is full, will survive an attack that would KO it with 1 HP. Single use.",
-		gen4: {
-			shortDesc: "If holder's HP is full, survives all hits of one attack with at least 1 HP. Single use.",
-		},
 
 		end: "  [POKEMON] hung on using its Focus Sash!",
 	},
