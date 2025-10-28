@@ -384,12 +384,56 @@
         ]
     },
     "raticate": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Wallbreaker",
-                "movepool": ["crunch", "facade", "protect", "suckerpunch", "swordsdance", "uturn"],
+                "role": "Setup Sweeper",
+                "movepool": ["extremespeed", "suckerpunch", "uturn", "swordsdance"],
                 "abilities": ["Simple"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["extremespeed", "crunch", "uturn", "swordsdance"],
+                "abilities": ["Simple"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["extremespeed", "crunch", "swordsdance", "endure"],
+                "abilities": ["Simple"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["extremespeed", "crunch", "swordsdance", "endure"],
+                "abilities": ["Simple"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["extremespeed", "uturn", "superfang", "swordsdance"],
+                "abilities": ["Simple"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Cleanse Tag",
+				"nature": "Jolly",
 				"inclination": "Physical"
             }
         ]
@@ -6731,12 +6775,236 @@
         ]
     },
     "kecleon": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
-                "movepool": ["recover", "return", "stealthrock", "thunderwave", "toxic"],
+                "role": "Bulky Lead",
+                "movepool": ["seismictoss", "dragontail", "toxicspikes", "recover"],
                 "abilities": ["Color Change"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["seismictoss", "knockoff", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["knockoff", "uturn", "toxicspikes", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["knockoff", "uturn", "toxicspikes", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["knockoff", "uturn", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["knockoff", "uturn", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["seismictoss", "uturn", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["seismictoss", "uturn", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["seismictoss", "uturn", "toxicspikes", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["seismictoss", "uturn", "toxicspikes", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["toxic", "uturn", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["toxic", "uturn", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["toxic", "dragontail", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["toxic", "dragontail", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["icywind", "thunderwave", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["uturn", "counter", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["uturn", "counter", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["uturn", "counter", "toxicspikes", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["uturn", "counter", "toxicspikes", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "TR Lead",
+                "movepool": ["uturn", "trickroom", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "TR Lead",
+                "movepool": ["uturn", "trickroom", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["uturn", "trick", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Sticky Barb",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["uturn", "trick", "stealthrock", "recover"],
+                "abilities": ["Color Change"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Sticky Barb",
+				"nature": "Impish",
 				"inclination": "Support"
             }
         ]
@@ -7699,18 +7967,166 @@
         ]
     },
     "torterra": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Attacker",
-                "movepool": ["earthquake", "stealthrock", "stoneedge", "synthesis", "woodhammer"],
+                "role": "Bulky Lead",
+                "movepool": ["bulletseed", "rockblast", "earthquake", "stealthrock"],
                 "abilities": ["Skill Link"],
+				"evs": [212, 252, 44, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Adamant",
 				"inclination": "Physical"
             },
-            {
-                "role": "Bulky Setup",
-                "movepool": ["earthquake", "rockpolish", "stoneedge", "woodhammer"],
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["bulletseed", "rockblast", "earthquake", "rockpolish"],
                 "abilities": ["Skill Link"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Hard Stone",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["bulletseed", "rockblast", "earthquake", "rockpolish"],
+                "abilities": ["Skill Link"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Miracle Seed",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["bulletseed", "rockblast", "earthquake", "rockpolish"],
+                "abilities": ["Skill Link"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Soft Sand",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["bulletseed", "rockblast", "earthquake", "rockpolish"],
+                "abilities": ["Skill Link"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["bulletseed", "rockblast", "earthquake", "leechseed"],
+                "abilities": ["Skill Link"],
+				"evs": [216, 252, 40, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["bulletseed", "rockblast", "earthquake", "leafstorm"],
+                "abilities": ["Skill Link"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Naive",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["bulletseed", "rockblast", "earthquake", "crunch"],
+                "abilities": ["Skill Link"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockblast", "earthquake", "curse", "synthesis"],
+                "abilities": ["Skill Link"],
+				"evs": [216, 0, 40, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["bulletseed", "earthquake", "curse", "synthesis"],
+                "abilities": ["Skill Link"],
+				"evs": [216, 0, 40, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["bulletseed", "earthquake", "swordsdance", "rockpolish"],
+                "abilities": ["Skill Link"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Sitrus Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["rockblast", "earthquake", "swordsdance", "rockpolish"],
+                "abilities": ["Skill Link"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Sitrus Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["rockblast", "earthquake", "lightscreen", "leechseed"],
+                "abilities": ["Skill Link"],
+				"evs": [216, 252, 40, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["rockblast", "earthquake", "substitute", "rockpolish"],
+                "abilities": ["Skill Link"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["rockblast", "earthquake", "swordsdance", "endure"],
+                "abilities": ["Skill Link"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["rockblast", "earthquake", "stockpile", "swallow"],
+                "abilities": ["Skill Link"],
+				"evs": [216, 252, 40, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
 				"inclination": "Physical"
             }
         ]
