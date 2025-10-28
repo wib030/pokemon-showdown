@@ -953,41 +953,27 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let skipWeaknessCheck = false;
 			let skipDoubleWeaknessCheck = false;
 			
-			sets = this.randomSets[checkSpecies.id]["sets"];
-			
-			let leadSetCount = 0;
-			let onlyLeadSets = false;
-			let hasLeadSet = false;
-			for (const set of sets) {
-				if (LEAD_ROLES.includes(set.role)) {
-					hasLeadSet = true;
-					leadSetCount++;
-				}
-			}
-			if (leadSetCount === sets.length) onlyLeadSets = true;
-			
-			let removalSetCount = 0;
-			let onlyRemovalSets = false;
-			let hasRemovalSet = false;
-			for (const set of sets) {
-				if (REMOVAL_ROLES.includes(set.role)) {
-					hasRemovalSet = true;
-					removalSetCount++;
-				}
-			}
-			if (removalSetCount === sets.length) onlyRemovalSets = true;
-			
 			if (pokemon.length === leadSlot && leadNum === 0) {
+				sets = this.randomSets[checkSpecies.id]["sets"];
 				// Check if the Pokemon has a Lead set
-				if (!hasLeadSet) skip = true;
+				skip = true;
+				for (const set of sets) {
+					if (LEAD_ROLES.includes(set.role)) {
+						skip = false;
+						break;
+					}
+				}
 			} else if (pokemon.length === removalSlot && removalNum === 0) {
-				// Check if the Pokemon has a Lead set
-				if (!hasRemovalSet) skip = true;
+				sets = this.randomSets[checkSpecies.id]["sets"];
+				// Check if the Pokemon has a Removal set
+				skip = true;
+				for (let set of sets) {
+					if (REMOVAL_ROLES.includes(set.role)) {
+						skip = false;
+						break;
+					}
+				}
 			}
-			
-			if (leadNum > 0 && onlyLeadSets) skip = true;
-			if (removalNum > 0 && onlyRemovalSets) skip = true;
-			
 			if (skip) {
 				rerollAttempts++;
 				rerollAttemptsTotal++;
