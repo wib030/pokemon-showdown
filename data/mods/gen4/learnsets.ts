@@ -9605,6 +9605,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			waterpulse: ["4M", "3M"],
 			yawn: ["4L1"],
 			whirlpool: ["4L15"],
+			thunder: ["4M"],
 		},
 	},
 	goldeen: {

@@ -266,7 +266,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	jolteon: {
 		inherit: true,
-		baseStats: {hp: 65, atk: 65, def: 60, spa: 120, spd: 95, spe: 130},
+		baseStats: {hp: 65, atk: 65, def: 60, spa: 120, spd: 95, spe: 131},
 	},
 	hoppip: {
 		inherit: true,
