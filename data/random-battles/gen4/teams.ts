@@ -953,6 +953,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let checkTypes = types;
 			let skip = false;
 			let skipWeaknessCheck = false;
+			let skipDoubleWeaknessCheck = false;
 			
 			let ensureLead = false;
 			let ensureRemoval = false;
@@ -1024,7 +1025,18 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (!isMonotype && !this.forceMonotype) {
 				if (pokemon.length > 0)
 				{
-					if (Array.isArray(DoubleWeaknessListFull) && DoubleWeaknessListFull.length) {
+					// If we have more than two weaknesses to a single type, then ignore double weak rerolling and prioritize resisting it
+					if (Array.isArray(WeaknessListFull) && WeaknessListFull.length) {
+						for (const Weakness of WeaknessListFull) {
+							if (Weakness.frequency > 2 && ResistList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency)) {
+								skipDoubleWeaknessCheck = true;
+							} else {
+								skipDoubleWeaknessCheck = false;
+							}
+						}
+					}
+					
+					if (Array.isArray(DoubleWeaknessListFull) && DoubleWeaknessListFull.length && !skipDoubleWeaknessCheck) {
 						DoubleWeaknessList = DoubleWeaknessListFull;
 						if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length) {
 							this.dex.TypeMatchupListShuffleAndConcat(DoubleWeaknessList);
