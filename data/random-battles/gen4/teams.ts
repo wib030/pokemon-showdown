@@ -969,7 +969,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			const baseSpecies = this.sample(baseSpeciesPool);
 			const species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
 			checkSpecies = this.dex.species.get(species);
-			if (!species.exists) continue;
+			if (!species.exists && checkSpecies.id !== 'screamtail' && checkSpecies.id !== 'megamarill' checkSpecies.id !== 'wibblypuff') continue;
 			
 			skipReroll = false;
 
