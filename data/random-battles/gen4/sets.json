@@ -215,16 +215,6 @@
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Salac Berry",
-				"nature": "Modest",
-				"inclination": "Special"
-            },
-			{
-                "role": "Berry Sweeper",
-                "movepool": ["hydropump", "icebeam", "focusblast", "endure"],
-                "abilities": ["Torrent"],
-				"evs": [0, 0, 0, 252, 4, 252],
-				"ivs": [31, 0, 31, 31, 31, 31],
-				"item": "Petaya Berry",
 				"nature": "Timid",
 				"inclination": "Special"
             }
@@ -2315,16 +2305,6 @@
             },
 			{
                 "role": "Bulky Setup",
-                "movepool": ["freezedry", "surf", "calmmind", "block"],
-                "abilities": ["Water Absorb"],
-				"evs": [248, 0, 244, 16, 0, 0],
-				"ivs": [31, 0, 31, 31, 31, 31],
-				"item": "Leftovers",
-				"nature": "Bold",
-				"inclination": "Special"
-            },
-			{
-                "role": "Bulky Setup",
                 "movepool": ["freezedry", "whirlpool", "calmmind", "recover"],
                 "abilities": ["Water Absorb"],
 				"evs": [248, 0, 244, 16, 0, 0],
@@ -4266,26 +4246,6 @@
 				"ivs": [31, 3, 30, 30, 30, 30],
 				"item": "Dread Plate",
 				"nature": "Timid",
-				"inclination": "Special"
-            },
-			{
-                "role": "Bulky Attacker",
-                "movepool": ["judgment", "ancientpower", "goldenbinding", "cosmicpower"],
-                "abilities": ["Unown Energy"],
-				"evs": [252, 0, 252, 0, 4, 0],
-				"ivs": [31, 0, 31, 31, 31, 31],
-				"item": "Leftovers",
-				"nature": "Bold",
-				"inclination": "Special"
-            },
-			{
-                "role": "Bulky Attacker",
-                "movepool": ["judgment", "ancientpower", "goldenbinding", "cosmicpower"],
-                "abilities": ["Unown Energy"],
-				"evs": [252, 0, 4, 0, 252, 0],
-				"ivs": [31, 0, 31, 31, 31, 31],
-				"item": "Leftovers",
-				"nature": "Calm",
 				"inclination": "Special"
             }
         ]
@@ -8835,7 +8795,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Fast Lead",
+                "role": "Fast Pivot",
                 "movepool": ["uturn", "closecombat", "overheat", "stealthrock"],
                 "abilities": ["Blaze"],
 				"evs": [0, 252, 0, 4, 0, 252],
