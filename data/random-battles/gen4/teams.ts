@@ -885,8 +885,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			}
 		}
 
-		// Don't shuffle the moves
-		const newMoves = Array.from(moves);
+		// shuffle moves to add more randomness to camomons
+		const shuffledMoves = Array.from(moves);
+		this.prng.shuffle(shuffledMoves);
 
 		return {
 			name: species.baseSpecies,
@@ -895,7 +896,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			shiny: this.randomChance(1, 1024),
 			nature,
 			level,
-			moves: newMoves,
+			moves: shuffledMoves,
 			ability,
 			evs,
 			ivs,
