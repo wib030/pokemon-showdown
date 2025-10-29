@@ -1918,18 +1918,126 @@
         ]
     },
     "hitmonchan": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Spinner",
-                "movepool": ["closecombat", "drainpunch", "icepunch", "machpunch", "rapidspin", "stoneedge"],
-                "abilities": ["Iron Fist", "Technician"],
+                "role": "Bulky Attacker",
+                "movepool": ["closecombat", "icepunch", "thunderpunch", "machpunch"],
+                "abilities": ["Technician"],
+				"evs": [248, 252, 0, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Loaded Gloves",
+				"nature": "Adamant",
 				"inclination": "Physical"
             },
-            {
-                "role": "Bulky Attacker",
-                "movepool": ["bulkup", "closecombat", "drainpunch", "icepunch", "machpunch", "stoneedge"],
-                "abilities": ["Iron Fist", "Technician"],
+			{
+                "role": "Spinner",
+                "movepool": ["closecombat", "icepunch", "thunderpunch", "rapidspin"],
+                "abilities": ["Iron Fist"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Loaded Gloves",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["closecombat", "pursuit", "rapidspin", "bulkup"],
+                "abilities": ["Technician"],
+				"evs": [220, 40, 0, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["drainpunch", "pursuit", "rapidspin", "bulkup"],
+                "abilities": ["Iron Fist"],
+				"evs": [220, 40, 0, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["closecombat", "pursuit", "icepunch", "rapidspin"],
+                "abilities": ["Technician"],
+				"evs": [224, 40, 0, 0, 12, 232],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["focuspunch", "pursuit", "lovelypunch", "substitute"],
+                "abilities": ["Technician"],
+				"evs": [28, 252, 0, 0, 4, 224],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["closecombat", "pursuit", "icepunch", "thunderpunch"],
+                "abilities": ["Iron Fist"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["closecombat", "pursuit", "firepunch", "thunderpunch"],
+                "abilities": ["Iron Fist"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["closecombat", "pursuit", "icepunch", "lowsweep"],
+                "abilities": ["Technician"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["closecombat", "icepunch", "thunderpunch", "firepunch"],
+                "abilities": ["Iron Fist"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["closecombat", "pursuit", "rapidspin", "substitute"],
+                "abilities": ["Technician"],
+				"evs": [12, 244, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["drainpunch", "pursuit", "rapidspin", "substitute"],
+                "abilities": ["Technician"],
+				"evs": [12, 244, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
 				"inclination": "Physical"
             }
         ]
@@ -12646,6 +12754,181 @@
                 "movepool": ["calmmind", "icebeam", "judgment", "recover", "willowisp"],
                 "abilities": ["Multitype"],
 				"inclination": "Special"
+            }
+        ]
+    },
+	"screamtail": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "Fast Lead",
+                "movepool": ["hypervoice", "earthpower", "encore", "stealthrock"],
+                "abilities": ["Rock Star"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["hypervoice", "earthpower", "imprison", "stealthrock"],
+                "abilities": ["Rock Star"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["hypervoice", "earthpower", "icebeam", "nastyplot"],
+                "abilities": ["Rock Star"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Hard Stone",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["hypervoice", "earthpower", "icebeam", "nastyplot"],
+                "abilities": ["Rock Star"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["hypervoice", "earthpower", "flamethrower", "nastyplot"],
+                "abilities": ["Rock Star"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Hard Stone",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["hypervoice", "earthpower", "flamethrower", "nastyplot"],
+                "abilities": ["Rock Star"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["hypervoice", "earthpower", "substitute", "calmmind"],
+                "abilities": ["Rock Star"],
+				"evs": [244, 0, 12, 0, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["hypervoice", "earthpower", "substitute", "calmmind"],
+                "abilities": ["Rock Star"],
+				"evs": [132, 0, 72, 52, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Screens Setter",
+                "movepool": ["hypervoice", "earthpower", "reflect", "lightscreen"],
+                "abilities": ["Rock Star"],
+				"evs": [152, 0, 0, 104, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["hypervoice", "earthpower", "flamethrower", "thunderbolt"],
+                "abilities": ["Rock Star"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["hypervoice", "earthpower", "icebeam", "thunderbolt"],
+                "abilities": ["Rock Star"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["hypervoice", "earthpower", "flamethrower", "thunderbolt"],
+                "abilities": ["Rock Star"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["hypervoice", "earthpower", "icebeam", "thunderbolt"],
+                "abilities": ["Rock Star"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["hypervoice", "earthpower", "substitute", "batonpass"],
+                "abilities": ["Rock Star"],
+				"evs": [132, 0, 0, 124, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Starf Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthquake", "rockslide", "substitute", "bulkup"],
+                "abilities": ["Rivalry"],
+				"evs": [244, 0, 0, 0, 12, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthquake", "rockslide", "substitute", "bulkup"],
+                "abilities": ["Rivalry"],
+				"evs": [132, 52, 0, 0, 72, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "stoneedge", "hailcannon", "thunderpunch"],
+                "abilities": ["Rivalry"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
             }
         ]
     }
