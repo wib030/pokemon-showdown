@@ -743,34 +743,40 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const sets = this.randomSets[species.id]["sets"];
 		const possibleSets = [];
 		
+		let leadSetCount = 0;
+		let onlyLeadSets = false;
 		let hasLeadSet = false;
 		for (let set of sets) {
 			if (LEAD_ROLES.includes(set.role)) {
 				hasLeadSet = true;
-				break;
+				leadSetCount++;
 			}
 		}
+		if (leadSetCount === sets.length) onlyLeadSets = true;
 		
+		let removalSetCount = 0;
+		let onlyRemovalSets = false;
 		let hasRemovalSet = false;
 		for (let set of sets) {
 			if (REMOVAL_ROLES.includes(set.role)) {
 				hasRemovalSet = true;
-				break;
+				removalSetCount++;
 			}
 		}
+		if (removalSetCount === sets.length) onlyRemovalSets = true;
 		
 		for (const set of sets) {
 			// Enforce Lead if the team does not have one
 			if (ensureLead && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
 			
-			// Prevent Lead if we aren't ensuring lead, and if we roll true 
-			if ((!ensureLead && this.sample([true, true, false])) && LEAD_ROLES.includes(set.role)) continue;
+			// Prevent Lead if we aren't ensuring lead, and if we roll true, and if we don't only have lead sets
+			if ((!ensureLead && this.sample([true, true, false])) && !onlyLeadSets && LEAD_ROLES.includes(set.role)) continue;
 			
 			// Enforce Removal if the team does not have removal
 			if (ensureRemoval && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
 			
-			// Prevent Removal if we aren't ensuring removal, and if we roll true 
-			if ((!ensureRemoval && this.sample([true, true, false])) && REMOVAL_ROLES.includes(set.role)) continue;
+			// Prevent Removal if we aren't ensuring removal, and if we roll true, and if we don't only have removal sets
+			if ((!ensureRemoval && this.sample([true, true, false])) && !onlyRemovalSets && REMOVAL_ROLES.includes(set.role)) continue;
 			
 			possibleSets.push(set);
 		}
