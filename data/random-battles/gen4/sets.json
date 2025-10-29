@@ -2221,19 +2221,217 @@
         ]
     },
     "lapras": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
-                "movepool": ["healbell", "hydropump", "icebeam", "thunderbolt", "toxic"],
+                "role": "Bulky Setup",
+                "movepool": ["freezedry", "thunderbolt", "calmmind", "recover"],
                 "abilities": ["Water Absorb"],
+				"evs": [248, 0, 248, 12, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
 				"inclination": "Special"
             },
-            {
-                "role": "Staller",
-                "movepool": ["hydropump", "icebeam", "protect", "toxic"],
+			{
+                "role": "Bulky Setup",
+                "movepool": ["freezedry", "hydropump", "calmmind", "recover"],
                 "abilities": ["Water Absorb"],
+				"evs": [248, 0, 248, 12, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
 				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["iceshard", "dive", "curse", "recover"],
+                "abilities": ["Water Absorb"],
+				"evs": [248, 8, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hail Support",
+                "movepool": ["blizzard", "hydropump", "hail", "recover"],
+                "abilities": ["Ice Body"],
+				"evs": [248, 0, 244, 16, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Icy Rock",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Hail Support",
+                "movepool": ["blizzard", "hydropump", "hail", "recover"],
+                "abilities": ["Ice Body"],
+				"evs": [248, 0, 0, 124, 136, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Icy Rock",
+				"nature": "Calm",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["freezedry", "hydropump", "healbell", "recover"],
+                "abilities": ["Water Absorb"],
+				"evs": [248, 0, 244, 16, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["freezedry", "hydropump", "healbell", "recover"],
+                "abilities": ["Water Absorb"],
+				"evs": [248, 0, 0, 124, 136, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["hailcannon", "wavecrash", "dragondance", "recover"],
+                "abilities": ["Water Absorb"],
+				"evs": [92, 164, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["freezedry", "hydropump", "substitute", "calmmind"],
+                "abilities": ["Water Absorb"],
+				"evs": [252, 0, 248, 8, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["freezedry", "surf", "calmmind", "block"],
+                "abilities": ["Water Absorb"],
+				"evs": [248, 0, 244, 16, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["freezedry", "whirlpool", "calmmind", "recover"],
+                "abilities": ["Water Absorb"],
+				"evs": [248, 0, 244, 16, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Hail Support",
+                "movepool": ["freezedry", "whirlpool", "calmmind", "recover"],
+                "abilities": ["Ice Body"],
+				"evs": [248, 0, 244, 16, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icywind", "perishsong", "block", "recover"],
+                "abilities": ["Water Absorb"],
+				"evs": [248, 0, 244, 16, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icywind", "perishsong", "block", "recover"],
+                "abilities": ["Water Absorb"],
+				"evs": [248, 0, 0, 124, 136, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["icywind", "hydropump", "calmmind", "recover"],
+                "abilities": ["Water Absorb"],
+				"evs": [248, 0, 68, 16, 0, 176],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["freezedry", "hydropump", "thunderbolt", "psychic"],
+                "abilities": ["Water Absorb"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["freezedry", "hydropump", "toxic", "recover"],
+                "abilities": ["Water Absorb"],
+				"evs": [248, 0, 248, 8, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["freezedry", "perishsong", "block", "recover"],
+                "abilities": ["Water Absorb"],
+				"evs": [248, 0, 248, 8, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Red Card",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["hailcannon", "waterfall", "drillrun", "dragondance"],
+                "abilities": ["Water Absorb"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hail Attacker",
+                "movepool": ["hailcannon", "waterfall", "drillrun", "dragondance"],
+                "abilities": ["Ice Body"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["hailcannon", "wavecrash", "drillrun", "dragondance"],
+                "abilities": ["Water Absorb"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Muscle Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
             }
         ]
     },
@@ -2266,18 +2464,186 @@
         ]
     },
     "jolteon": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Attacker",
-                "movepool": ["batonpass", "hiddenpowerice", "substitute", "thunderbolt", "toxic"],
+                "role": "Glass Cannon",
+                "movepool": ["thunderbolt", "surf", "aurasphere", "hiddenpowerice"],
                 "abilities": ["Volt Absorb"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
 				"inclination": "Special"
             },
-            {
-                "role": "Fast Attacker",
-                "movepool": ["hiddenpowerice", "shadowball", "signalbeam", "thunderbolt"],
+			{
+                "role": "Fast Lead",
+                "movepool": ["thunderbolt", "shadowball", "hiddenpowerfire", "spikecannon"],
                 "abilities": ["Volt Absorb"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Focus Sash",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["thunderbolt", "surf", "voltswitch", "hiddenpowerice"],
+                "abilities": ["Volt Absorb"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["thunderbolt", "shadowball", "surf", "spikecannon"],
+                "abilities": ["Volt Absorb"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["thunderbolt", "aurasphere", "hiddenpowerice", "substitute"],
+                "abilities": ["Volt Absorb"],
+				"evs": [4, 0, 0, 252, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["thunderbolt", "surf", "aurasphere", "hiddenpowerice"],
+                "abilities": ["Volt Absorb"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "surf", "aurasphere", "hiddenpowerice"],
+                "abilities": ["Volt Absorb"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "surf", "aurasphere", "hiddenpowerice"],
+                "abilities": ["Volt Absorb"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["discharge", "hiddenpowerice", "substitute", "batonpass"],
+                "abilities": ["Volt Absorb"],
+				"evs": [244, 0, 0, 12, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["thunderbolt", "aurasphere", "voltswitch", "hiddenpowerice"],
+                "abilities": ["Volt Absorb"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Air Balloon",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["thunderbolt", "surf", "voltswitch", "hiddenpowerfire"],
+                "abilities": ["Volt Absorb"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Air Balloon",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["thunderbolt", "aurasphere", "shadowball", "hiddenpowerice"],
+                "abilities": ["Volt Absorb"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "AV Pivot",
+                "movepool": ["voltswitch", "shadowball", "aurasphere", "hiddenpowerice"],
+                "abilities": ["Volt Absorb"],
+				"evs": [120, 0, 0, 136, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "AV Pivot",
+                "movepool": ["voltswitch", "surf", "shadowball", "spikecannon"],
+                "abilities": ["Volt Absorb"],
+				"evs": [120, 0, 0, 136, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["thunderbolt", "aurasphere", "hiddenpowerice", "endure"],
+                "abilities": ["Volt Absorb"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["thunder", "weatherball", "hiddenpowerice", "voltswitch"],
+                "abilities": ["Volt Absorb"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["thunderbolt", "weatherball", "aurasphere", "voltswitch"],
+                "abilities": ["Volt Absorb"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["thunderbolt", "weatherball", "shadowball", "voltswitch"],
+                "abilities": ["Volt Absorb"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
 				"inclination": "Special"
             }
         ]
@@ -4310,25 +4676,197 @@
         ]
     },
     "kingdra": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Setup",
-                "movepool": ["dragondance", "outrage", "rest", "substitute", "waterfall"],
-                "abilities": ["Sniper", "Swift Swim"],
-				"inclination": "Physical"
-            },
-            {
-                "role": "Setup Sweeper",
-                "movepool": ["dracometeor", "hydropump", "icebeam", "raindance", "waterfall"],
+                "role": "Rain Attacker",
+                "movepool": ["icebeam", "octazooka", "dracometeor", "raindance"],
                 "abilities": ["Swift Swim"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Wise Glasses",
+				"nature": "Timid",
 				"inclination": "Special"
             },
-            {
-                "role": "Bulky Support",
-                "movepool": ["dragondance", "outrage", "rest", "sleeptalk"],
-                "abilities": ["Sniper", "Swift Swim"],
+			{
+                "role": "Rain Attacker",
+                "movepool": ["icebeam", "octazooka", "dracometeor", "raindance"],
+                "abilities": ["Swift Swim"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["icebeam", "octazooka", "outrage", "dragondance"],
+                "abilities": ["Sniper"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Scope Lens",
+				"nature": "Naive",
+				"inclination": "Special"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["waterfall", "outrage", "bounce", "raindance"],
+                "abilities": ["Swift Swim"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Jolly",
 				"inclination": "Physical"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["waterfall", "outrage", "substitute", "raindance"],
+                "abilities": ["Swift Swim"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["waterfall", "outrage", "substitute", "raindance"],
+                "abilities": ["Swift Swim"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["waterfall", "outrage", "substitute", "dragondance"],
+                "abilities": ["Swift Swim"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["waterfall", "outrage", "substitute", "dragondance"],
+                "abilities": ["Swift Swim"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["waterfall", "outrage", "rest", "dragondance"],
+                "abilities": ["Swift Swim"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Chesto Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["waterfall", "outrage", "dracometeor", "dragondance"],
+                "abilities": ["Swift Swim"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Dragon Fang",
+				"nature": "Lonely",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["waterfall", "outrage", "dracometeor", "dragondance"],
+                "abilities": ["Swift Swim"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Dragon Fang",
+				"nature": "Hasty",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["waterfall", "outrage", "focusenergy", "dragondance"],
+                "abilities": ["Sniper"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Scope Lens",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["waterfall", "outrage", "substitute", "dragondance"],
+                "abilities": ["Swift Swim"],
+				"evs": [244, 44, 96, 0, 0, 124],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["waterfall", "outrage", "substitute", "dragondance"],
+                "abilities": ["Swift Swim"],
+				"evs": [244, 136, 4, 0, 0, 124],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["waterfall", "outrage", "substitute", "dragondance"],
+                "abilities": ["Swift Swim"],
+				"evs": [244, 44, 0, 0, 96, 124],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["hydropump", "blizzard", "dracometeor", "thunder"],
+                "abilities": ["Swift Swim"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["hydropump", "blizzard", "dracometeor", "thunder"],
+                "abilities": ["Swift Swim"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["hydropump", "icebeam", "dracometeor", "thunder"],
+                "abilities": ["Swift Swim"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["hydropump", "icebeam", "dracometeor", "thunder"],
+                "abilities": ["Swift Swim"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
             }
         ]
     },
