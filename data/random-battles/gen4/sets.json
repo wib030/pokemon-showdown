@@ -199,16 +199,6 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Anti-Lead",
-                "movepool": ["surf", "icebeam", "rapidspin", "mirrorcoat"],
-                "abilities": ["Torrent"],
-				"evs": [252, 0, 60, 0, 196, 0],
-				"ivs": [31, 0, 31, 31, 31, 31],
-				"item": "Focus Sash",
-				"nature": "Calm",
-				"inclination": "Special"
-            },
-			{
                 "role": "Berry Sweeper",
                 "movepool": ["hydropump", "icebeam", "focusblast", "endure"],
                 "abilities": ["Torrent"],
@@ -8086,12 +8076,86 @@
         ]
     },
     "latias": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Attacker",
-                "movepool": ["calmmind", "dracometeor", "psychic", "roost"],
+                "role": "Bulky Setup",
+                "movepool": ["dragonpulse", "aurasphere", "calmmind", "recover"],
                 "abilities": ["Levitate"],
+				"evs": [248, 0, 176, 28, 24, 32],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["dragonpulse", "aurasphere", "calmmind", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 56, 28, 24, 152],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["dragonpulse", "aurasphere", "calmmind", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 164, 8, 24, 64],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Hazard Removal",
+                "movepool": ["dracometeor", "defog", "reflect", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 164, 8, 24, 64],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["dracometeor", "reflect", "lightscreen", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 8, 100, 0, 152],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["dracometeor", "reflect", "lightscreen", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 56, 28, 24, 152],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["dracometeor", "reflect", "lightscreen", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 176, 28, 24, 32],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["psychicscream", "dracometeor", "wish", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 176, 28, 24, 32],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
 				"inclination": "Special"
             }
         ]
