@@ -1034,6 +1034,31 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum, ensureLead, ensureRemoval);
 			
+			// Reroll the Pokemon if we rolled a set that conflicts with the teams existing weather
+			
+			if (set.ability === 'Snow Warning' || set.moves.includes('hail') || (set.ability === 'Forecast' && set.item === 'Icy Rock')) {
+				if (teamDetails.rain === 1 || teamDetails.sand === 1 || teamDetails.sun === 1) {
+					continue;
+				}
+			}
+			
+			if (set.ability === 'Drizzle' || set.moves.includes('raindance') || (set.ability === 'Forecast' && set.item === 'Damp Rock')) {
+				if (teamDetails.hail === 1 || teamDetails.sand === 1 || teamDetails.sun === 1) {
+					continue;
+				}
+			}
+			
+			if (set.ability === 'Sand Stream' || set.moves.includes('sandstorm') || (set.ability === 'Forecast' && set.item === 'Smooth Rock')) {
+				if (teamDetails.hail === 1 || teamDetails.rain === 1 || teamDetails.sun === 1) {
+					continue;
+				}
+			}
+			if (set.ability === 'Drought' || set.moves.includes('sunnyday') || (set.ability === 'Forecast' && set.item === 'Heat Rock')) {
+				if (teamDetails.hail === 1 || teamDetails.rain === 1 || teamDetails.sand === 1) {
+					continue;
+				}
+			}
+			
 			if (set.ability === 'Multitype') {
 				switch (set.item) {
 					case 'Fist Plate': checkTypes = 'Fighting'; break;
