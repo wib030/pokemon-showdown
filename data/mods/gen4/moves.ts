@@ -1961,6 +1961,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	mistball: {
 		inherit: true,
 		basePower: 95,
+		pp: 10,
 	},
 	meteormash: {
 		inherit: true,
@@ -3056,6 +3057,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		basePower: 65,
 	},
 	seedflare: {
+		inherit: true,
+		accuracy: 90,
+	},
+	thunderwave: {
 		inherit: true,
 		accuracy: 90,
 	},
