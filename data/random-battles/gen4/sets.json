@@ -6710,18 +6710,46 @@
         ]
     },
     "sharpedo": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Wallbreaker",
-                "movepool": ["aquajet", "crunch", "earthquake", "hydropump", "icebeam"],
+                "role": "Glass Cannon",
+                "movepool": ["chumrush", "crunch", "hailcannon", "focusblast"],
                 "abilities": ["Strong Jaw"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Hasty",
 				"inclination": "Physical"
             },
-            {
-                "role": "Fast Attacker",
-                "movepool": ["aquajet", "crunch", "earthquake", "icebeam", "waterfall"],
+			{
+                "role": "Glass Cannon",
+                "movepool": ["chumrush", "crunch", "hailcannon", "earthquake"],
                 "abilities": ["Strong Jaw"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["chumrush", "crunch", "hailcannon", "superfang"],
+                "abilities": ["Strong Jaw"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["chumrush", "crunch", "hailcannon", "taunt"],
+                "abilities": ["Strong Jaw"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly",
 				"inclination": "Physical"
             }
         ]
@@ -11967,19 +11995,67 @@
         ]
     },
     "mesprit": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["calmmind", "healingwish", "hiddenpowerfighting", "icebeam", "psychic", "thunderbolt", "trick", "uturn"],
+                "role": "Setup Sweeper",
+                "movepool": ["judgment", "drainpunch", "knockoff", "swordsdance"],
                 "abilities": ["Levitate"],
-				"inclination": "Special"
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Jolly",
+				"inclination": "Physical"
             },
-            {
-                "role": "Bulky Support",
-                "movepool": ["hiddenpowerfighting", "psychic", "stealthrock", "thunderwave", "toxic", "uturn"],
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["psychocut", "judgment", "knockoff", "swordsdance"],
                 "abilities": ["Levitate"],
-				"inclination": "Special"
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Fist Plate",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["psychocut", "drainpunch", "judgment", "swordsdance"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Icicle Plate",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["judgment", "drainpunch", "outrage", "swordsdance"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["judgment", "drainpunch", "rapidspin", "swordsdance"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["judgment", "knockoff", "rapidspin", "swordsdance"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Jolly",
+				"inclination": "Physical"
             }
         ]
     },

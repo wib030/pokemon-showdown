@@ -2554,6 +2554,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	threefourfivedice: {
 		name: "Three-Four-Five Dice",
 		shortDesc: "Holder's moves that hit 2-5 times hit 3-5 times.",
+		fesc: "Holder's moves that hit 2-5 times have a 1/3 chance of hitting 3, 4, or 5 times. Moves that hit 10 times roll this twice, hitting 6-10 times.",
 	},
 	cleansetag: {
 		name: "Cleanse Tag",
