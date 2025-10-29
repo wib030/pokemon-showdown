@@ -784,6 +784,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const ivPool = set.ivs || '';
 		const setItem = set.item || '';
 		const nature = set.nature || 'Serious';
+		const inclination = set.inclination || 'Unset';
 		
 		let specificEVs = false;
 		let specificIVs = false;
@@ -902,6 +903,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			ivs,
 			item,
 			role,
+			inclination,
 		};
 	}
 	
@@ -1035,7 +1037,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum, ensureLead, ensureRemoval);
 			
 			// Reroll the Pokemon if we rolled a set that conflicts with the teams existing weather
-			
 			if (set.ability === 'Snow Warning' || set.moves.includes('hail') || (set.ability === 'Forecast' && set.item === 'Icy Rock')) {
 				if (teamDetails.rain === 1 || teamDetails.sand === 1 || teamDetails.sun === 1) {
 					continue;

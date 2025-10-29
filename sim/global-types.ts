@@ -572,5 +572,5 @@ declare namespace RandomTeamsTypes {
 		'Fast Pivot' | 'Bulky Pivot' | 'Defog' | 'TR Lead' | 'Sun Setup' | 'Anti-Lead' | 'Switch Trapper' | 
 		'Sand Lead' | 'Sun Lead' | 'Hail Lead' | 'Rain Lead' | 'Hail Support';
 		
-	export type Inclination = 'Mixed' | 'Physical' | 'Special' | 'Support';
+	export type Inclination = 'Mixed' | 'Physical' | 'Special' | 'Support' | 'Unset';
 }
