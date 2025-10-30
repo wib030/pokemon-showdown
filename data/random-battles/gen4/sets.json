@@ -12009,7 +12009,7 @@
             },
 			{
                 "role": "Setup Sweeper",
-                "movepool": ["psychocut", "judgment", "knockoff", "swordsdance"],
+                "movepool": ["zenheadbutt", "judgment", "knockoff", "swordsdance"],
                 "abilities": ["Levitate"],
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
@@ -12019,21 +12019,31 @@
             },
 			{
                 "role": "Setup Sweeper",
-                "movepool": ["psychocut", "drainpunch", "judgment", "swordsdance"],
+                "movepool": ["zenheadbutt", "drainpunch", "judgment", "swordsdance"],
                 "abilities": ["Levitate"],
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Icicle Plate",
+				"item": "Dread Plate",
 				"nature": "Jolly",
 				"inclination": "Physical"
             },
 			{
                 "role": "Setup Sweeper",
-                "movepool": ["judgment", "drainpunch", "outrage", "swordsdance"],
+                "movepool": ["zenheadbutt", "drainpunch", "judgment", "swordsdance"],
                 "abilities": ["Levitate"],
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Mind Plate",
+				"item": "Spooky Plate",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["zenheadbutt", "drainpunch", "judgment", "swordsdance"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Zap Plate",
 				"nature": "Jolly",
 				"inclination": "Physical"
             },
@@ -12056,6 +12066,456 @@
 				"item": "Mind Plate",
 				"nature": "Jolly",
 				"inclination": "Physical"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psychic", "aurasphere", "shadowball", "trick"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psychic", "aurasphere", "thunderbolt", "trick"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["zenheadbutt", "drainpunch", "uturn", "trick"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psyshock", "aurasphere", "shadowball", "trick"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psyshock", "aurasphere", "thunderbolt", "trick"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psychic", "aurasphere", "thunderbolt", "trick"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psyshock", "aurasphere", "thunderbolt", "trick"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psychic", "aurasphere", "shadowball", "trick"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["psyshock", "aurasphere", "shadowball", "trick"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["zenheadbutt", "drainpunch", "uturn", "trick"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["psychic", "thunderbolt", "substitute", "calmmind"],
+                "abilities": ["Levitate"],
+				"evs": [244, 0, 0, 4, 8, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["psychic", "thunderbolt", "rapidspin", "calmmind"],
+                "abilities": ["Levitate"],
+				"evs": [244, 0, 0, 4, 8, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["psychic", "chargebeam", "rapidspin", "substitute"],
+                "abilities": ["Levitate"],
+				"evs": [244, 0, 0, 4, 8, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["zenheadbutt", "drainpunch", "substitute", "swordsdance"],
+                "abilities": ["Levitate"],
+				"evs": [244, 4, 0, 0, 8, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["psychic", "chargebeam", "mindvirus", "substitute"],
+                "abilities": ["Levitate"],
+				"evs": [244, 0, 0, 4, 8, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["futuresight", "uturn", "stealthrock", "mindvirus"],
+                "abilities": ["Levitate"],
+				"evs": [240, 0, 0, 8, 8, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["futuresight", "rapidspin", "stealthrock", "mindvirus"],
+                "abilities": ["Levitate"],
+				"evs": [240, 0, 0, 8, 8, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["zenheadbutt", "drainpunch", "knockoff", "swordsdance"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["futuresight", "uturn", "reflect", "lightscreen"],
+                "abilities": ["Levitate"],
+				"evs": [240, 0, 0, 8, 8, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["mindvirus", "uturn", "reflect", "lightscreen"],
+                "abilities": ["Levitate"],
+				"evs": [240, 0, 0, 8, 8, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["judgment", "drainpunch", "uturn", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["judgment", "zenheadbutt", "uturn", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Fist Plate",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["judgment", "zenheadbutt", "uturn", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Dread Plate",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["judgment", "uturn", "rapidspin", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["judgment", "zenheadbutt", "rapidspin", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Dread Plate",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["judgment", "knockoff", "rapidspin", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["judgment", "aurasphere", "uturn", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["judgment", "psychic", "uturn", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Fist Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["judgment", "psyshock", "uturn", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Fist Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["judgment", "psyshock", "rapidspin", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Fist Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["judgment", "psychic", "rapidspin", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Fist Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["judgment", "psyshock", "rapidspin", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Earth Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["judgment", "psychic", "rapidspin", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Earth Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["judgment", "psyshock", "rapidspin", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Flame Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["judgment", "psychic", "rapidspin", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Flame Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["judgment", "psyshock", "rapidspin", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Zap Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["judgment", "psychic", "rapidspin", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Zap Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["judgment", "chargebeam", "rapidspin", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["futuresight", "uturn", "rapidspin", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [240, 0, 0, 8, 8, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["psychic", "imprison", "rapidspin", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [240, 0, 0, 8, 8, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["judgment", "zenheadbutt", "uturn", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Spooky Plate",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["futuresight", "healingwish", "reflect", "lightscreen"],
+                "abilities": ["Levitate"],
+				"evs": [240, 0, 0, 8, 8, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["psychic", "thunderbolt", "rapidspin", "substitute"],
+                "abilities": ["Levitate"],
+				"evs": [244, 0, 0, 4, 8, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["psychic", "thunderbolt", "calmmind", "reflect"],
+                "abilities": ["Levitate"],
+				"evs": [240, 0, 132, 0, 0, 136],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["psychicscream", "judgment", "shadowball", "rapidspin"],
+                "abilities": ["Levitate"],
+				"evs": [32, 0, 0, 252, 8, 216],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Flame Plate",
+				"nature": "Timid",
+				"inclination": "Special"
             }
         ]
     },
