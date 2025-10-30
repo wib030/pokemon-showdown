@@ -1115,7 +1115,32 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 					
 					if (Array.isArray(DoubleWeaknessListFull) && DoubleWeaknessListFull.length && !skipDoubleWeaknessCheck) {
+						
+						// May implement this better later but this code will help in not picking a resist to the same type over and over
+						for (const DoubleWeakness of DoubleWeaknessListFull) {
+							let typeResistScore = 0;
+							
+							if (DoubleResistList?.some(y => y.type === DoubleWeakness.type)) {
+								for (const Resist of DoubleResistList) {
+									if (Resist.type === DoubleWeakness.type) {
+										typeResistScore += Resist.frequency;
+									}
+								}
+							}
+							
+							if (ImmunityList?.some(y => y.type === DoubleWeakness.type)) {
+								for (const Immunity of ImmunityList) {
+									if (Immunity.type === DoubleWeakness.type) {
+										typeResistScore += Immunity.frequency;
+									}
+								}
+							}
+							
+							DoubleWeakness.frequency -= typeResistScore;
+						}
+						
 						DoubleWeaknessList = DoubleWeaknessListFull;
+						
 						if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length) {
 							this.dex.TypeMatchupListShuffleAndConcat(DoubleWeaknessList);
 							for (const DoubleWeakness of DoubleWeaknessList)
@@ -1165,7 +1190,40 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 					
 					if (Array.isArray(WeaknessListFull) && WeaknessListFull.length && !skipWeaknessCheck) {
+						
+						// May implement this better later but this code will help in not picking a resist to the same type over and over
+						for (const Weakness of WeaknessListFull) {
+							let typeResistScore = 0;
+							
+							if (ResistList?.some(y => y.type === Weakness.type)) {
+								for (const Resist of ResistList) {
+									if (Resist.type === Weakness.type) {
+										typeResistScore += Resist.frequency;
+									}
+								}
+							}
+							
+							if (DoubleResistList?.some(y => y.type === Weakness.type)) {
+								for (const Resist of DoubleResistList) {
+									if (Resist.type === Weakness.type) {
+										typeResistScore += Resist.frequency;
+									}
+								}
+							}
+							
+							if (ImmunityList?.some(y => y.type === Weakness.type)) {
+								for (const Immunity of ImmunityList) {
+									if (Immunity.type === Weakness.type) {
+										typeResistScore += Immunity.frequency;
+									}
+								}
+							}
+							
+							Weakness.frequency -= typeResistScore;
+						}
+						
 						WeaknessList = WeaknessListFull;
+						
 						if (Array.isArray(WeaknessList) && WeaknessList.length) {
 							this.dex.TypeMatchupListShuffleAndConcat(WeaknessList);
 							for (const Weakness of WeaknessList)
