@@ -4993,12 +4993,56 @@
         ]
     },
     "miltank": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Attacker",
-                "movepool": ["bodyslam", "curse", "earthquake", "healbell", "milkdrink", "stealthrock", "toxic"],
+                "role": "Bulky Lead",
+                "movepool": ["bodyslam", "earthquake", "milkdrink", "stealthrock"],
                 "abilities": ["Thick Fat", "Fresh Milk"],
+				"evs": [240, 60, 132, 0, 76, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["bodyslam", "earthquake", "milkdrink", "curse"],
+                "abilities": ["Thick Fat", "Fresh Milk"],
+				"evs": [240, 60, 16, 0, 192, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["bodyslam", "earthquake", "milkdrink", "healbell"],
+                "abilities": ["Thick Fat", "Fresh Milk"],
+				"evs": [240, 60, 132, 0, 76, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["seismictoss", "toxic", "milkdrink", "stealthrock"],
+                "abilities": ["Thick Fat", "Fresh Milk"],
+				"evs": [240, 0, 192, 0, 76, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["return", "earthquake", "fling", "milkdrink"],
+                "abilities": ["Thick Fat", "Fresh Milk"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Bracer",
+				"nature": "Jolly",
 				"inclination": "Physical"
             }
         ]
@@ -8122,20 +8166,386 @@
         ]
     },
     "metagross": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Setup Sweeper",
-                "movepool": ["agility", "earthquake", "explosion", "meteormash", "zenheadbutt"],
+                "role": "Bulky Lead",
+                "movepool": ["meteormash", "earthquake", "stealthrock", "explosion"],
                 "abilities": ["Clear Body", "Sand Force"],
-                "preferredTypes": ["Ground"],
+                "evs": [248, 156, 0, 0, 104, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Adamant",
 				"inclination": "Physical"
             },
-            {
-                "role": "Bulky Support",
-                "movepool": ["bulletpunch", "earthquake", "explosion", "meteormash", "stealthrock", "zenheadbutt"],
+			{
+                "role": "Bulky Setup",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "agility"],
+                "abilities": ["Clear Body"],
+                "evs": [120, 252, 0, 0, 0, 136],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["meteormash", "earthquake", "icepunch", "agility"],
+                "abilities": ["Clear Body"],
+                "evs": [120, 252, 0, 0, 0, 136],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "agility"],
+                "abilities": ["Clear Body"],
+                "evs": [12, 252, 0, 0, 0, 244],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["meteormash", "earthquake", "icepunch", "agility"],
+                "abilities": ["Clear Body"],
+                "evs": [12, 252, 0, 0, 0, 244],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "pursuit"],
+                "abilities": ["Clear Body"],
+                "evs": [68, 252, 0, 0, 188, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Attacker",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "pursuit"],
+                "abilities": ["Sand Force"],
+                "evs": [68, 252, 0, 0, 188, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "bulletpunch"],
+                "abilities": ["Clear Body"],
+                "evs": [68, 252, 0, 0, 188, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Attacker",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "bulletpunch"],
+                "abilities": ["Sand Force"],
+                "evs": [68, 252, 0, 0, 188, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["meteormash", "earthquake", "icepunch", "pursuit"],
+                "abilities": ["Clear Body"],
+                "evs": [68, 252, 0, 0, 188, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Attacker",
+                "movepool": ["meteormash", "earthquake", "icepunch", "pursuit"],
+                "abilities": ["Sand Force"],
+                "evs": [68, 252, 0, 0, 188, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["meteormash", "earthquake", "icepunch", "bulletpunch"],
+                "abilities": ["Clear Body"],
+                "evs": [68, 252, 0, 0, 188, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Attacker",
+                "movepool": ["meteormash", "earthquake", "icepunch", "bulletpunch"],
+                "abilities": ["Sand Force"],
+                "evs": [68, 252, 0, 0, 188, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["meteormash", "zenheadbutt", "earthquake", "thunderpunch"],
                 "abilities": ["Clear Body", "Sand Force"],
-                "preferredTypes": ["Ground"],
+                "evs": [24, 252, 0, 0, 4, 228],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["meteormash", "zenheadbutt", "earthquake", "icepunch"],
+                "abilities": ["Clear Body", "Sand Force"],
+                "evs": [24, 252, 0, 0, 4, 228],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["meteormash", "zenheadbutt", "earthquake", "pursuit"],
+                "abilities": ["Clear Body", "Sand Force"],
+                "evs": [24, 252, 0, 0, 4, 228],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["meteormash", "zenheadbutt", "earthquake", "explosion"],
+                "abilities": ["Clear Body", "Sand Force"],
+                "evs": [24, 252, 0, 0, 4, 228],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["meteormash", "zenheadbutt", "earthquake", "trick"],
+                "abilities": ["Clear Body", "Sand Force"],
+                "evs": [24, 252, 0, 0, 4, 228],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "lightscreen"],
+                "abilities": ["Clear Body"],
+                "evs": [248, 156, 0, 0, 104, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["meteormash", "earthquake", "icepunch", "lightscreen"],
+                "abilities": ["Clear Body"],
+                "evs": [248, 156, 0, 0, 104, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Attacker",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "lightscreen"],
+                "abilities": ["Sand Force"],
+                "evs": [248, 156, 0, 0, 104, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Attacker",
+                "movepool": ["meteormash", "earthquake", "icepunch", "lightscreen"],
+                "abilities": ["Sand Force"],
+                "evs": [248, 156, 0, 0, 104, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "substitute"],
+                "abilities": ["Clear Body", "Sand Attacker"],
+                "evs": [108, 252, 0, 0, 12, 136],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "substitute"],
+                "abilities": ["Clear Body", "Sand Attacker"],
+                "evs": [12, 252, 0, 0, 0, 244],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["meteormash", "earthquake", "icepunch", "substitute"],
+                "abilities": ["Clear Body", "Sand Attacker"],
+                "evs": [108, 252, 0, 0, 12, 136],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["meteormash", "earthquake", "icepunch", "substitute"],
+                "abilities": ["Clear Body", "Sand Attacker"],
+                "evs": [12, 252, 0, 0, 0, 244],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "bulletpunch"],
+                "abilities": ["Clear Body"],
+                "evs": [248, 252, 0, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Attacker",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "bulletpunch"],
+                "abilities": ["Sand Force"],
+                "evs": [248, 252, 0, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["meteormash", "earthquake", "icepunch", "bulletpunch"],
+                "abilities": ["Clear Body"],
+                "evs": [248, 252, 0, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Attacker",
+                "movepool": ["meteormash", "earthquake", "icepunch", "bulletpunch"],
+                "abilities": ["Sand Force"],
+                "evs": [248, 252, 0, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["meteormash", "earthquake", "pursuit", "bulletpunch"],
+                "abilities": ["Clear Body"],
+                "evs": [248, 252, 0, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Attacker",
+                "movepool": ["meteormash", "earthquake", "pursuit", "bulletpunch"],
+                "abilities": ["Sand Force"],
+                "evs": [248, 252, 0, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "icepunch"],
+                "abilities": ["Clear Body"],
+                "evs": [248, 252, 0, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Attacker",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "icepunch"],
+                "abilities": ["Sand Force"],
+                "evs": [248, 252, 0, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "agility"],
+                "abilities": ["Clear Body"],
+                "evs": [120, 252, 0, 0, 0, 136],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["meteormash", "earthquake", "icepunch", "agility"],
+                "abilities": ["Clear Body"],
+                "evs": [120, 252, 0, 0, 0, 136],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["meteormash", "earthquake", "thunderpunch", "agility"],
+                "abilities": ["Clear Body"],
+                "evs": [12, 252, 0, 0, 0, 244],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["meteormash", "earthquake", "icepunch", "agility"],
+                "abilities": ["Clear Body"],
+                "evs": [12, 252, 0, 0, 0, 244],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant",
 				"inclination": "Physical"
             }
         ]
