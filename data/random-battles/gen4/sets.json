@@ -4842,18 +4842,116 @@
         ]
     },
     "steelix": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
-                "movepool": ["earthquake", "explosion", "ironhead", "roar", "stealthrock", "stoneedge", "toxic"],
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "gyroball", "stoneedge", "stealthrock"],
                 "abilities": ["Magnet Pull", "Shed Skin"],
+				"evs": [248, 8, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Sassy",
 				"inclination": "Physical"
             },
-            {
-                "role": "Staller",
-                "movepool": ["earthquake", "ironhead", "protect", "toxic"],
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "gyroball", "crunch", "stealthrock"],
                 "abilities": ["Magnet Pull", "Shed Skin"],
+				"evs": [248, 8, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Sassy",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthquake", "gyroball", "crunch", "curse"],
+                "abilities": ["Magnet Pull", "Shed Skin"],
+				"evs": [248, 8, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Sassy",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["earthquake", "stoneedge", "gyroball", "explosion"],
+                "abilities": ["Magnet Pull", "Shed Skin"],
+				"evs": [4, 252, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Choice Band",
+				"nature": "Brave",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["earthquake", "gyroball", "crunch", "explosion"],
+                "abilities": ["Magnet Pull", "Shed Skin"],
+				"evs": [4, 252, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Choice Band",
+				"nature": "Brave",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthquake", "gyroball", "curse", "rest"],
+                "abilities": ["Shed Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Sassy",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthquake", "crunch", "curse", "rest"],
+                "abilities": ["Shed Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthquake", "dragontail", "curse", "rest"],
+                "abilities": ["Shed Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "dragontail", "crunch", "stealthrock"],
+                "abilities": ["Magnet Pull", "Shed Skin"],
+				"evs": [4, 252, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "dragontail", "crunch", "stealthrock"],
+                "abilities": ["Magnet Pull", "Shed Skin"],
+				"evs": [4, 252, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["earthquake", "gyroball", "crunch", "stoneedge"],
+                "abilities": ["Magnet Pull", "Shed Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Assault Vest",
+				"nature": "Sassy",
 				"inclination": "Physical"
             }
         ]
@@ -5004,19 +5102,277 @@
         ]
     },
     "skarmory": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
-                "movepool": ["bravebird", "roost", "spikes", "stealthrock", "whirlwind"],
+                "role": "Bulky Lead",
+                "movepool": ["bravebird", "taunt", "spikes", "roost"],
                 "abilities": ["Sturdy"],
+				"evs": [252, 4, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Defog",
+                "movepool": ["bravebird", "defog", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 4, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["bravebird", "whirlwind", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 4, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["bravebird", "toxic", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 4, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["icywind", "taunt", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 4, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["bravebird", "taunt", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Defog",
+                "movepool": ["bravebird", "defog", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["bravebird", "whirlwind", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["bravebird", "toxic", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["icywind", "taunt", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["bravebird", "taunt", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 24, 0, 232, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Defog",
+                "movepool": ["bravebird", "defog", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 24, 0, 232, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["bravebird", "whirlwind", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 24, 0, 232, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["bravebird", "toxic", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 24, 0, 232, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["icywind", "taunt", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 24, 0, 232, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["dualwingbeat", "taunt", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Adamant",
 				"inclination": "Physical"
             },
-            {
-                "role": "Staller",
-                "movepool": ["bravebird", "roost", "spikes", "stealthrock", "toxic"],
+			{
+                "role": "Bulky Lead",
+                "movepool": ["counter", "taunt", "spikes", "roost"],
                 "abilities": ["Sturdy"],
-				"inclination": "Physical"
+				"evs": [252, 0, 24, 0, 232, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["counter", "taunt", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["steelwing", "taunt", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 4, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["steelwing", "taunt", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["steelwing", "taunt", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 24, 0, 232, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["steelwing", "toxic", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 4, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["steelwing", "toxic", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["steelwing", "toxic", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 24, 0, 232, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Defog",
+                "movepool": ["steelwing", "defog", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 24, 0, 232, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Defog",
+                "movepool": ["steelwing", "defog", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 4, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Defog",
+                "movepool": ["steelwing", "defog", "spikes", "roost"],
+                "abilities": ["Sturdy"],
+				"evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
             }
         ]
     },
@@ -11679,12 +12035,176 @@
         ]
     },
     "rhyperior": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["earthquake", "icepunch", "megahorn", "rockpolish", "stealthrock", "stoneedge"],
+                "movepool": ["rockblast", "closecombat", "firepunch", "stealthrock"],
                 "abilities": ["Filter"],
+				"evs": [176, 252, 0, 0, 80, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["rockblast", "closecombat", "firepunch", "stealthrock"],
+                "abilities": ["Filter"],
+				"evs": [4, 252, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["rockblast", "closecombat", "megahorn", "stealthrock"],
+                "abilities": ["Filter"],
+				"evs": [176, 252, 0, 0, 80, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["rockblast", "closecombat", "megahorn", "stealthrock"],
+                "abilities": ["Filter"],
+				"evs": [4, 252, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["rockblast", "closecombat", "thunderpunch", "stealthrock"],
+                "abilities": ["Filter"],
+				"evs": [176, 252, 0, 0, 80, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["rockblast", "closecombat", "thunderpunch", "stealthrock"],
+                "abilities": ["Filter"],
+				"evs": [4, 252, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["rockblast", "closecombat", "megahorn", "thunderpunch"],
+                "abilities": ["Filter"],
+				"evs": [20, 252, 0, 0, 236, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["stoneedge", "closecombat", "megahorn", "thunderpunch"],
+                "abilities": ["Filter"],
+				"evs": [20, 252, 0, 0, 236, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["rockblast", "closecombat", "firepunch", "rockpolish"],
+                "abilities": ["Filter"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["rockblast", "closecombat", "thunderpunch", "rockpolish"],
+                "abilities": ["Filter"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["rockblast", "closecombat", "megahorn", "rockpolish"],
+                "abilities": ["Filter"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockblast", "focuspunch", "substitute", "curse"],
+                "abilities": ["Filter"],
+				"evs": [244, 12, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["rockblast", "closecombat", "swordsdance", "rockpolish"],
+                "abilities": ["Filter"],
+				"evs": [0, 8, 0, 0, 252, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["rockblast", "closecombat", "swordsdance", "rockpolish"],
+                "abilities": ["Filter"],
+				"evs": [176, 0, 0, 0, 80, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["rockblast", "closecombat", "megahorn", "stoneedge"],
+                "abilities": ["Filter"],
+				"evs": [4, 252, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["stoneedge", "closecombat", "megahorn", "thunderpunch"],
+                "abilities": ["Filter"],
+				"evs": [4, 252, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["stoneedge", "closecombat", "megahorn", "firepunch"],
+                "abilities": ["Filter"],
+				"evs": [4, 252, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
 				"inclination": "Physical"
             }
         ]
