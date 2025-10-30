@@ -94,7 +94,7 @@ export const Avatars = new class {
 	src(avatar: AvatarID) {
 		if (avatar.includes('.')) return '';
 		const avatarUrl = avatar.startsWith('#') ? `trainers-custom/${avatar.slice(1)}.png` : `trainers/${avatar}.png`;
-		return `https://${Config.routes.client}/sprites/${avatarUrl}`;
+		return `https://wib030.github.io/pokemon-sprites/sprites/${avatarUrl}`;
 	}
 	exists(avatar: string) {
 		if (avatar.includes('.')) {

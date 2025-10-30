@@ -3034,7 +3034,7 @@ function runSearch(query: { target: string, cmd: string, message: string }, user
 function runRandtype(target: string, cmd: string, message: string) {
 	const icon: any = {};
 	for (const type of Dex.types.names()) {
-		icon[type] = `<img src="https://${Config.routes.client}/sprites/types/${type}.png" width="32" height="14">`;
+		icon[type] = `<img src="https://wib030.github.io/pokemon-sprites/sprites/types/${type}.png" width="32" height="14">`;
 	}
 	let randomOutput = 0;
 	target = target.trim();

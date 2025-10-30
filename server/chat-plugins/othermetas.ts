@@ -334,7 +334,7 @@ export const commands: Chat.ChatCommands = {
 				buf += `<span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://${Config.routes.dex}/items/${aStone.id}" target="_blank">${aStone.name}</a></span> `;
 			}
 			if (deltas.type && deltas.type !== 'mono') {
-				buf += `<span class="col typecol"><img src="https://${Config.routes.client}/sprites/types/${deltas.type}.png" alt="${deltas.type}" height="14" width="32"></span> `;
+				buf += `<span class="col typecol"><img src="https://wib030.github.io/pokemon-sprites/sprites/types/${deltas.type}.png" alt="${deltas.type}" height="14" width="32"></span> `;
 			} else {
 				buf += `<span class="col typecol"></span>`;
 			}
@@ -512,7 +512,7 @@ export const commands: Chat.ChatCommands = {
 		buf += '<span class="col typecol">';
 		if (species.types && fusion.name.length) {
 			for (const type of species.types) {
-				buf += `<img src="https://${Config.routes.client}/sprites/types/${type}.png" alt="${type}" height="14" width="32">`;
+				buf += `<img src="https://wib030.github.io/pokemon-sprites/sprites/types/${type}.png" alt="${type}" height="14" width="32">`;
 			}
 		}
 		buf += '</span> ';

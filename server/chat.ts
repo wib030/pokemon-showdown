@@ -2441,7 +2441,7 @@ export const Chat = new class {
 		buf += '<span class="col typecol">';
 		if (species.types) {
 			for (const type of species.types) {
-				buf += `<img src="https://${Config.routes.client}/sprites/types/${type}.png" alt="${type}" height="14" width="32">`;
+				buf += `<img src="https://wib030.github.io/pokemon-sprites/sprites/types/${type}.png" alt="${type}" height="14" width="32">`;
 			}
 		}
 		buf += '</span> ';
@@ -2485,8 +2485,8 @@ export const Chat = new class {
 		buf += `<span class="col movenamecol"><a href="https://${Config.routes.dex}/moves/${move.id}">${move.name}</a></span> `;
 		// encoding is important for the ??? type icon
 		const encodedMoveType = encodeURIComponent(move.type);
-		buf += `<span class="col typecol"><img src="//${Config.routes.client}/sprites/types/${encodedMoveType}.png" alt="${move.type}" width="32" height="14">`;
-		buf += `<img src="//${Config.routes.client}/sprites/categories/${move.category}.png" alt="${move.category}" width="32" height="14"></span> `;
+		buf += `<span class="col typecol"><img src="//wib030.github.io/pokemon-sprites/sprites/types/${encodedMoveType}.png" alt="${move.type}" width="32" height="14">`;
+		buf += `<img src="//wib030.github.io/pokemon-sprites/sprites/categories/${move.category}.png" alt="${move.category}" width="32" height="14"></span> `;
 		if (move.basePower) {
 			buf += `<span class="col labelcol"><em>Power</em><br>${typeof move.basePower === 'number' ? move.basePower : '—'}</span> `;
 		}
