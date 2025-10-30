@@ -645,24 +645,322 @@
         ]
     },
     "nidoqueen": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Attacker",
-                "movepool": ["earthquake", "fireblast", "icebeam", "roar", "sludgebomb", "stealthrock", "toxicspikes"],
-                "abilities": ["Poison Point", "Competitive"],
-				"inclination": "Mixed"
+                "role": "Bulky Lead",
+                "movepool": ["beatup", "superfang", "stealthrock", "slackoff"],
+                "abilities": ["Poison Point"],
+				"evs": [248, 0, 92, 0, 168, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["beatup", "superfang", "toxicspikes", "slackoff"],
+                "abilities": ["Poison Point"],
+				"evs": [248, 0, 92, 0, 168, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthpower", "icebeam", "slackoff", "stealthrock"],
+                "abilities": ["Competitive"],
+				"evs": [248, 0, 92, 0, 168, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Calm",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthpower", "icebeam", "slackoff", "toxicspikes"],
+                "abilities": ["Competitive"],
+				"evs": [248, 0, 92, 0, 168, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Calm",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["beatup", "superfang", "stealthrock", "slackoff"],
+                "abilities": ["Poison Point"],
+				"evs": [248, 0, 152, 0, 108, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["beatup", "superfang", "toxicspikes", "slackoff"],
+                "abilities": ["Poison Point"],
+				"evs": [248, 0, 152, 0, 108, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthpower", "icebeam", "slackoff", "stealthrock"],
+                "abilities": ["Competitive"],
+				"evs": [248, 0, 152, 0, 108, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthpower", "icebeam", "slackoff", "toxicspikes"],
+                "abilities": ["Competitive"],
+				"evs": [248, 0, 152, 0, 108, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["poisonfang", "superfang", "stealthrock", "slackoff"],
+                "abilities": ["Poison Point"],
+				"evs": [248, 0, 92, 0, 168, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["poisonfang", "superfang", "toxicspikes", "slackoff"],
+                "abilities": ["Poison Point"],
+				"evs": [248, 0, 92, 0, 168, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["superfang", "dragontail", "stealthrock", "slackoff"],
+                "abilities": ["Poison Point"],
+				"evs": [248, 0, 152, 0, 108, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["superfang", "dragontail", "stealthrock", "slackoff"],
+                "abilities": ["Poison Point"],
+				"evs": [248, 0, 92, 0, 168, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["poisonfang", "taunt", "stealthrock", "slackoff"],
+                "abilities": ["Poison Point"],
+				"evs": [248, 0, 92, 0, 168, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["poisonfang", "taunt", "stealthrock", "slackoff"],
+                "abilities": ["Poison Point"],
+				"evs": [248, 0, 152, 0, 108, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["poisonfang", "taunt", "toxicspikes", "slackoff"],
+                "abilities": ["Poison Point"],
+				"evs": [248, 0, 92, 0, 168, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["poisonfang", "taunt", "toxicspikes", "slackoff"],
+                "abilities": ["Poison Point"],
+				"evs": [248, 0, 152, 0, 108, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Support"
             }
         ]
     },
     "nidoking": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["earthquake", "fireblast", "icebeam", "megahorn", "sludgebomb", "stealthrock", "suckerpunch", "thunderbolt"],
+                "movepool": ["earthpower", "sludgebomb", "flamethrower", "icebeam"],
                 "abilities": ["Sheer Force"],
-				"inclination": "Mixed"
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthpower", "sludgebomb", "thunderbolt", "icebeam"],
+                "abilities": ["Sheer Force"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthpower", "poisonjab", "thunderbolt", "icebeam"],
+                "abilities": ["Sheer Force"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Naive",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthpower", "stealthrock", "thunderbolt", "icebeam"],
+                "abilities": ["Sheer Force"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthpower", "stealthrock", "flamethrower", "icebeam"],
+                "abilities": ["Sheer Force"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthpower", "toxicspikes", "thunderbolt", "icebeam"],
+                "abilities": ["Sheer Force"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthpower", "toxicspikes", "flamethrower", "icebeam"],
+                "abilities": ["Sheer Force"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["earthpower", "thunderbolt", "flamethrower", "fling"],
+                "abilities": ["Sheer Force"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Anklet",
+				"nature": "Naive",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["earthpower", "thunderbolt", "icebeam", "fling"],
+                "abilities": ["Sheer Force"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Anklet",
+				"nature": "Naive",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["earthpower", "thunderbolt", "flamethrower", "fling"],
+                "abilities": ["Sheer Force"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Lens",
+				"nature": "Naive",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["earthpower", "thunderbolt", "icebeam", "fling"],
+                "abilities": ["Sheer Force"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Lens",
+				"nature": "Naive",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "stoneedge", "poisonjab", "firepunch"],
+                "abilities": ["Rivalry"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "rockslide", "poisonjab", "firepunch"],
+                "abilities": ["Sheer Force"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthpower", "sludgebomb", "thunderbolt", "icebeam"],
+                "abilities": ["Sheer Force"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthpower", "sludgebomb", "thunderbolt", "flamethrower"],
+                "abilities": ["Sheer Force"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
             }
         ]
     },
