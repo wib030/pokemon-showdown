@@ -1275,7 +1275,16 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				
-				// Limit two of any type
+				// Limit two of a single type, and one of any other type
+				
+				if (maxSingleType === 2) {
+					for (const typeName of this.dex.types.names()) {
+						if ((typeCount[typeName] >= 2)) {
+							maxSingleType = 1;
+						}
+					}
+				}
+				
 				for (const typeName of types) {
 					if ((typeCount[typeName] >= maxSingleType * limitFactor) && set.ability !== 'Color Change' && set.ability !== 'Imposter') {
 						skip = true;
