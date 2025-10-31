@@ -1898,6 +1898,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	uproar: {
 		inherit: true,
 		basePower: 60,
+		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1, nosleeptalk: 1, failinstruct: 1 },
 		condition: {
 			onStart(target) {
 				this.add('-start', target, 'Uproar');
@@ -2106,6 +2107,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	chatter: {
 		inherit: true,
 		basePower: 70,
+		flags: {
+			protect: 1, mirror: 1, sound: 1, distance: 1, bypasssub: 1,
+			nosleeptalk: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1,
+		},
 		secondary: {
 			chance: 31,
 			volatileStatus: 'confusion',
@@ -2622,7 +2627,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	howl: {
 		inherit: true,
-		flags: { snatch: 1, sound: 1, bypasssub: 1, metronome: 1 },
+		flags: { snatch: 1, sound: 1, metronome: 1 },
 		boosts: {
 			atk: 1,
 		},
@@ -3063,5 +3068,29 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	thunderwave: {
 		inherit: true,
 		accuracy: 90,
+	},
+	growl: {
+		flags: { protect: 1, reflectable: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
+	},
+	sing: {
+		flags: { protect: 1, reflectable: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
+	},
+	supersonic: {
+		flags: { protect: 1, reflectable: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
+	},
+	screech: {
+		flags: { protect: 1, reflectable: 1, mirror: 1, sound: 1, bypasssub: 1, allyanim: 1, metronome: 1 },
+	},
+	metalsound: {
+		flags: { protect: 1, reflectable: 1, mirror: 1, sound: 1, bypasssub: 1, allyanim: 1, metronome: 1 },
+	},
+	grasswhistle: {
+		flags: { protect: 1, reflectable: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
+	},
+	hypervoice: {
+		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
+	},
+	bugbuzz: {
+		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
 	},
 };
