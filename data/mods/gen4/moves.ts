@@ -1288,7 +1288,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 			onTryPrimaryHitPriority: -1,
 			onTryPrimaryHit(target, source, move) {
-				if (target === source || move.flags['bypasssub']) {
+				if (target === source || move.flags['bypasssub'] || move.infiltrates) {
 					return;
 				}
 				let damage = this.actions.getDamage(source, target, move);
@@ -1718,7 +1718,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	snore: {
 		inherit: true,
 		basePower: 60,
-		flags: { protect: 1, mirror: 1, sound: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
 	},
 	octazooka: {
 		inherit: true,
@@ -2622,7 +2622,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	howl: {
 		inherit: true,
-		flags: { snatch: 1, sound: 1, metronome: 1 },
+		flags: { snatch: 1, sound: 1, bypasssub: 1, metronome: 1 },
 		boosts: {
 			atk: 1,
 		},

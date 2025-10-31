@@ -5663,7 +5663,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (this.checkMoveMakesContact(move, source, target)) {
 				if (this.randomChance(3, 10)) {
 					source.addVolatile('attract', this.effectState.target);
-					this.boost({ evasion: -1 }, source);
+					this.boost({ evasion: -1 }, source, target);
 				}
 			}
 		},
