@@ -34136,6 +34136,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			magiccoat: ["4L1"],
 			healbell: ["4L1"],
 			roleplay: ["4L1"],
+			recover: ["4L53"],
 		},
 	},
 	mesprit: {

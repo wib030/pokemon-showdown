@@ -41561,6 +41561,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			magiccoat: ["4L1"],
 			healbell: ["4L1"],
 			roleplay: ["4L1"],
+			recover: ["4L53"],
 		},
 		eventData: [
 			{generation: 4, level: 50, shiny: 1, moves: ["confusion", "yawn", "futuresight", "amnesia"]},
