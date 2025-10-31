@@ -6047,18 +6047,706 @@
         ]
     },
     "tyranitar": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Attacker",
-                "movepool": ["crunch", "earthquake", "fireblast", "icebeam", "pursuit", "stealthrock", "stoneedge", "superpower"],
+                "role": "Offensive Tank",
+                "movepool": ["knockoff", "earthquake", "dragontail", "stealthrock"],
                 "abilities": ["Sand Stream"],
+				"evs": [248, 4, 0, 0, 204, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
 				"inclination": "Physical"
             },
-            {
-                "role": "Bulky Setup",
-                "movepool": ["crunch", "dragondance", "earthquake", "firepunch", "icepunch", "stoneedge"],
+			{
+                "role": "Offensive Tank",
+                "movepool": ["knockoff", "earthquake", "dragontail", "stealthrock"],
                 "abilities": ["Sand Stream"],
+				"evs": [248, 8, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Offensive Tank",
+                "movepool": ["knockoff", "stoneedge", "dragontail", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 0, 0, 0, 208, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Offensive Tank",
+                "movepool": ["knockoff", "stoneedge", "dragontail", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Offensive Tank",
+                "movepool": ["knockoff", "stoneedge", "icepunch", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 20, 0, 0, 188, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Offensive Tank",
+                "movepool": ["knockoff", "stoneedge", "icepunch", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 20, 0, 0, 240, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["knockoff", "stoneedge", "thunderwave", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 0, 0, 0, 208, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["knockoff", "stoneedge", "thunderwave", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "stoneedge", "taunt", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 0, 0, 0, 208, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "stoneedge", "taunt", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Setter",
+                "movepool": ["knockoff", "stoneedge", "thunderwave", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 0, 0, 0, 208, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Smooth Rock",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Setter",
+                "movepool": ["knockoff", "stoneedge", "thunderwave", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Smooth Rock",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Setter",
+                "movepool": ["knockoff", "stoneedge", "toxic", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 0, 0, 0, 208, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Smooth Rock",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Setter",
+                "movepool": ["knockoff", "stoneedge", "toxic", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Smooth Rock",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Setter",
+                "movepool": ["knockoff", "stoneedge", "icepunch", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 20, 0, 0, 188, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Smooth Rock",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Setter",
+                "movepool": ["knockoff", "stoneedge", "icepunch", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 20, 0, 0, 240, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Smooth Rock",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Setter",
+                "movepool": ["knockoff", "earthquake", "icepunch", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 20, 0, 0, 188, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Smooth Rock",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sand Setter",
+                "movepool": ["knockoff", "earthquake", "icepunch", "stealthrock"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 20, 0, 0, 240, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Smooth Rock",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["stoneedge", "knockoff", "earthquake", "icepunch"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [200, 252, 0, 0, 4, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["stoneedge", "knockoff", "earthquake", "icepunch"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [200, 252, 0, 0, 56, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["stoneedge", "knockoff", "earthquake", "lowkick"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [200, 252, 0, 0, 4, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["stoneedge", "knockoff", "earthquake", "lowkick"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [200, 252, 0, 0, 56, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "earthquake"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [200, 252, 0, 0, 4, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "earthquake"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [200, 252, 0, 0, 56, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "icepunch"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [200, 252, 0, 0, 4, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "icepunch"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [200, 252, 0, 0, 56, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "firepunch"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [200, 252, 0, 0, 4, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "firepunch"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [200, 252, 0, 0, 56, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "lowkick"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [200, 252, 0, 0, 4, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "lowkick"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [200, 252, 0, 0, 56, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "lowkick"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "icepunch"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "earthquake"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "earthquake"],
+                "abilities": ["Sand Stream"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "lowkick"],
+                "abilities": ["Sand Stream"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "icepunch"],
+                "abilities": ["Sand Stream"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["stoneedge", "knockoff", "icepunch", "earthquake"],
+                "abilities": ["Sand Stream"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "AV Tank",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "earthquake"],
+                "abilities": ["Sand Stream"],
+				"evs": [200, 0, 4, 0, 252, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "AV Tank",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "earthquake"],
+                "abilities": ["Sand Stream"],
+				"evs": [200, 0, 56, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "AV Tank",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "icepunch"],
+                "abilities": ["Sand Stream"],
+				"evs": [200, 0, 4, 0, 252, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "AV Tank",
+                "movepool": ["stoneedge", "knockoff", "pursuit", "icepunch"],
+                "abilities": ["Sand Stream"],
+				"evs": [200, 0, 56, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "knockoff", "earthquake", "dragondance"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "knockoff", "earthquake", "dragondance"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "knockoff", "icepunch", "dragondance"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "knockoff", "icepunch", "dragondance"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "knockoff", "firepunch", "dragondance"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "knockoff", "firepunch", "dragondance"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "crunch", "earthquake", "dragondance"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "crunch", "earthquake", "dragondance"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "crunch", "superpower", "dragondance"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "crunch", "superpower", "dragondance"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "crunch", "lowkick", "dragondance"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Lum Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "crunch", "lowkick", "dragondance"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["stoneedge", "knockoff", "earthquake", "fling"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Anklet",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["stoneedge", "knockoff", "icepunch", "fling"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Anklet",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["stoneedge", "knockoff", "firepunch", "fling"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Anklet",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["stoneedge", "knockoff", "lowkick", "fling"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Anklet",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["stoneedge", "knockoff", "earthquake", "fling"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Bracer",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["stoneedge", "knockoff", "icepunch", "fling"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Bracer",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["stoneedge", "knockoff", "firepunch", "fling"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Bracer",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["stoneedge", "knockoff", "lowkick", "fling"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 8, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Bracer",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "knockoff", "superpower", "rockpolish"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "knockoff", "superpower", "rockpolish"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Glasses",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "knockoff", "earthquake", "rockpolish"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "knockoff", "icepunch", "rockpolish"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["stoneedge", "knockoff", "earthquake", "curse"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [248, 8, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["stoneedge", "knockoff", "protect", "curse"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [248, 48, 0, 0, 212, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["stoneedge", "knockoff", "earthquake", "irondefense"],
+                "abilities": ["Sand Stream", "Rattled"],
+				"evs": [248, 32, 44, 0, 184, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["stoneedge", "knockoff", "counter", "taunt"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 208, 0, 0, 0, 52],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["stoneedge", "knockoff", "counter", "taunt"],
+                "abilities": ["Sand Stream"],
+				"evs": [248, 208, 0, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Adamant",
 				"inclination": "Physical"
             }
         ]
@@ -6511,24 +7199,356 @@
         ]
     },
     "swampert": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
+                "role": "Bulky Lead",
+                "movepool": ["waterfall", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 108, 0, 152, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["waterfall", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 76, 108, 0, 76, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["waterfall", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 16, 108, 0, 136, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["waterfall", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 16, 144, 0, 92, 8],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["waterfall", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 240, 0, 20, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["toxic", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 108, 0, 152, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["toxic", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 108, 0, 144, 8],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["toxic", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 240, 0, 20, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["icywind", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 240, 0, 20, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["icywind", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 108, 0, 152, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["icywind", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 108, 0, 144, 8],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["icywind", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 76, 108, 0, 76, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["waterfall", "earthquake", "hailcannon", "curse"],
+                "abilities": ["Torrent"],
+				"evs": [248, 76, 108, 0, 76, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["waterfall", "earthquake", "hailcannon", "curse"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 108, 0, 152, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "earthquake", "hailcannon", "curse"],
+                "abilities": ["Torrent"],
+				"evs": [248, 76, 108, 0, 76, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "earthquake", "hailcannon", "curse"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 108, 0, 152, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["roar", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 108, 0, 152, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["roar", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 240, 0, 20, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["roar", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 108, 0, 144, 8],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["roar", "earthquake", "hailcannon", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 76, 108, 0, 76, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthquake", "hailcannon", "curse", "rest"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 108, 0, 152, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
                 "role": "Bulky Attacker",
-                "movepool": ["earthquake", "icebeam", "roar", "stealthrock", "toxic", "waterfall"],
+                "movepool": ["wavecrash", "earthquake", "hailcannon", "stoneedge"],
                 "abilities": ["Torrent"],
+				"evs": [200, 252, 0, 0, 0, 56],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
 				"inclination": "Physical"
             },
-            {
-                "role": "Staller",
-                "movepool": ["earthquake", "protect", "toxic", "waterfall"],
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["wavecrash", "earthquake", "hailcannon", "hammerarm"],
                 "abilities": ["Torrent"],
+				"evs": [200, 252, 0, 0, 0, 56],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
 				"inclination": "Physical"
             },
-            {
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["wavecrash", "earthquake", "hailcannon", "lowkick"],
+                "abilities": ["Torrent"],
+				"evs": [200, 252, 0, 0, 0, 56],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["wavecrash", "earthquake", "hailcannon", "superpower"],
+                "abilities": ["Torrent"],
+				"evs": [200, 252, 0, 0, 0, 56],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
                 "role": "Fast Attacker",
-                "movepool": ["earthquake", "icepunch", "stoneedge", "waterfall"],
+                "movepool": ["wavecrash", "earthquake", "hailcannon", "stoneedge"],
                 "abilities": ["Torrent"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["wavecrash", "earthquake", "hailcannon", "superpower"],
+                "abilities": ["Torrent"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["whirlpool", "toxic", "sleeptalk", "rest"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 108, 0, 152, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthpower", "icebeam", "muddywater", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 0, 252, 8, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "hailcannon", "counter", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 108, 0, 152, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "hailcannon", "counter", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 76, 108, 0, 76, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "hailcannon", "mirrorcoat", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 108, 0, 152, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "hailcannon", "mirrorcoat", "stealthrock"],
+                "abilities": ["Torrent"],
+				"evs": [248, 76, 108, 0, 76, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["earthquake", "hailcannon", "toxic", "protect"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 108, 0, 152, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["dive", "hailcannon", "toxic", "protect"],
+                "abilities": ["Torrent"],
+				"evs": [248, 0, 108, 0, 152, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
 				"inclination": "Physical"
             }
         ]
@@ -7570,12 +8590,116 @@
         ]
     },
     "torkoal": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
-                "movepool": ["earthquake", "explosion", "lavaplume", "rapidspin", "stealthrock", "yawn"],
+                "role": "Sun Lead",
+                "movepool": ["lavaplume", "firechase", "rapidspin", "stealthrock"],
                 "abilities": ["Drought"],
+				"evs": [248, 0, 40, 0, 220, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Calm",
+				"inclination": "Special"
+            },
+			{
+                "role": "Sun Lead",
+                "movepool": ["lavaplume", "solarbeam", "rapidspin", "stealthrock"],
+                "abilities": ["Drought"],
+				"evs": [248, 0, 40, 52, 168, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Calm",
+				"inclination": "Special"
+            },
+			{
+                "role": "Sun Lead",
+                "movepool": ["lavaplume", "willowisp", "rapidspin", "stealthrock"],
+                "abilities": ["Drought"],
+				"evs": [248, 0, 40, 0, 220, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Sun Lead",
+                "movepool": ["lavaplume", "earthquake", "rapidspin", "stealthrock"],
+                "abilities": ["Drought"],
+				"evs": [248, 28, 40, 0, 192, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Sassy",
+				"inclination": "Mixed"
+            },
+			{
+                "role": "Sun Lead",
+                "movepool": ["willowisp", "rocktomb", "rapidspin", "stealthrock"],
+                "abilities": ["Drought"],
+				"evs": [248, 24, 40, 0, 196, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Sassy",
+				"inclination": "Support"
+            },
+			{
+                "role": "Sun Lead",
+                "movepool": ["overheat", "firechase", "rapidspin", "stealthrock"],
+                "abilities": ["Drought"],
+				"evs": [248, 0, 40, 220, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Quiet",
+				"inclination": "Special"
+            },
+			{
+                "role": "Sun Lead",
+                "movepool": ["lavaplume", "firechase", "rapidspin", "stealthrock"],
+                "abilities": ["Drought"],
+				"evs": [248, 0, 40, 220, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Quiet",
+				"inclination": "Special"
+            },
+			{
+                "role": "Sun Lead",
+                "movepool": ["earthpower", "firechase", "rapidspin", "stealthrock"],
+                "abilities": ["Drought"],
+				"evs": [248, 0, 40, 220, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Quiet",
+				"inclination": "Special"
+            },
+			{
+                "role": "Sun Support",
+                "movepool": ["lavaplume", "willowisp", "amnesia", "rest"],
+                "abilities": ["Drought"],
+				"evs": [248, 0, 40, 0, 220, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Special"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["overheat", "firechase", "solarbeam", "earthpower"],
+                "abilities": ["Drought"],
+				"evs": [248, 0, 0, 252, 8, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["lavaplume", "earthquake", "stoneedge", "curse"],
+                "abilities": ["Drought"],
+				"evs": [248, 28, 40, 0, 192, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Sassy",
 				"inclination": "Mixed"
             }
         ]
@@ -13212,13 +14336,377 @@
         ]
     },
     "uxie": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
-                "movepool": ["healbell", "psychic", "stealthrock", "thunderwave", "uturn", "yawn"],
+                "role": "Bulky Lead",
+                "movepool": ["knockoff", "uturn", "stickyweb", "stealthrock"],
                 "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
 				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["knockoff", "uturn", "stickyweb", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 12, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["knockoff", "uturn", "recover", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["knockoff", "uturn", "recover", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 12, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["knockoff", "uturn", "recover", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["knockoff", "uturn", "recover", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 12, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["judgment", "thunder", "calmmind", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["judgment", "thunder", "calmmind", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 100, 0, 0, 160],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["judgment", "thunder", "calmmind", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 252, 8, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["uturn", "reflect", "lightscreen", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["uturn", "reflect", "lightscreen", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 12, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["judgment", "psychic", "calmmind", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Zap Plate",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["judgment", "psychic", "calmmind", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 100, 0, 0, 160],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Zap Plate",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["judgment", "psychic", "calmmind", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 252, 8, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Zap Plate",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["judgment", "psychic", "calmmind", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Fist Plate",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["judgment", "psychic", "calmmind", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 100, 0, 0, 160],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Fist Plate",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["judgment", "psychic", "calmmind", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 252, 8, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Fist Plate",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "uturn", "mindvirus", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "uturn", "mindvirus", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 12, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "uturn", "mindvirus", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "uturn", "mindvirus", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 12, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["uturn", "stickyweb", "healbell", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["uturn", "stickyweb", "healbell", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 12, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["uturn", "stealthrock", "healbell", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["uturn", "stealthrock", "healbell", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 12, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["uturn", "judgment", "healbell", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 12, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["uturn", "judgment", "healbell", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["judgment", "memento", "stickyweb", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["judgment", "memento", "stickyweb", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["judgment", "memento", "stickyweb", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 12, 248],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["judgment", "memento", "stickyweb", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 12, 248],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Mind Plate",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["uturn", "perishsong", "stealthrock", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["uturn", "perishsong", "stealthrock", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 12, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["uturn", "perishsong", "stickyweb", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["uturn", "perishsong", "stickyweb", "recover"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 12, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["judgment", "gigadrain", "calmmind", "substitute"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 12, 0, 0, 248],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Spooky Plate",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["judgment", "gigadrain", "calmmind", "substitute"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 252, 8, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Spooky Plate",
+				"nature": "Bold",
+				"inclination": "Special"
             }
         ]
     },
