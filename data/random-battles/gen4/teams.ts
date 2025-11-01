@@ -1426,7 +1426,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			}
 			throw new Error(`Could not build a random team for ${this.format} (seed=${seed}) ${returnMessage} Reroll Attempts: ${rerollAttemptsTotal}`);
 		} else {
-			
+			/*
 			let returnMessage = "WeaknessList: ";
 			let newString = '';
 			for (const Weakness of WeaknessListFull) {
@@ -1439,7 +1439,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				returnMessage += newString;
 			}
 			throw new Error(`${returnMessage} Reroll Attempts: ${rerollAttemptsTotal}`);
-			
+			*/
 		}
 		return pokemon;
 	}
