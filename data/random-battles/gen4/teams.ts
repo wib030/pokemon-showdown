@@ -101,7 +101,7 @@ const RARE_POKEMON = [
 	'regirock', 'regice', 'registeel', 'uxie', 'mesprit', 'azelf',
 	'heatran', 'regigigas', 'cresselia', 'mew', 'celebi', 'jirachi',
 	'manaphy', 'shaymin', 'shayminsky', 'darkrai', 'latios', 'latias',
-	'wobbuffet',
+	'wobbuffet', 'unown',
 ];
 
 // List of Very Rare Pokemon (1/8 chance to keep if species is rolled, otherwise it is rerolled)
