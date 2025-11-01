@@ -4579,7 +4579,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Defog",
+                "role": "Fast Pivot",
                 "movepool": ["poisonfang", "uturn", "defog", "roost"],
                 "abilities": ["Speed Boost"],
 				"evs": [244, 0, 12, 0, 0, 252],
@@ -4639,7 +4639,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Defog",
+                "role": "Fast Pivot",
                 "movepool": ["bravebird", "uturn", "roost", "defog"],
                 "abilities": ["Speed Boost"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -4649,7 +4649,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Defog",
+                "role": "Fast Pivot",
                 "movepool": ["bravebird", "poisonfang", "uturn", "defog"],
                 "abilities": ["Speed Boost"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -4719,7 +4719,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Defog",
+                "role": "Fast Pivot",
                 "movepool": ["poisonfang", "uturn", "defog", "roost"],
                 "abilities": ["Speed Boost"],
 				"evs": [248, 0, 220, 0, 24, 16],
@@ -4729,7 +4729,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Defog",
+                "role": "Bulky Support",
                 "movepool": ["poisonfang", "superfang", "defog", "roost"],
                 "abilities": ["Speed Boost"],
 				"evs": [248, 0, 220, 0, 24, 16],

@@ -1623,6 +1623,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	garchomp: {
 		inherit: true,
+		baseStats: { hp: 108, atk: 130, def: 95, spa: 80, spd: 85, spe: 100 },
 		abilities: {0: "Rough Skin"},
 	},
 	shellder: {
