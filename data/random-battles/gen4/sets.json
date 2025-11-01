@@ -17025,7 +17025,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["lavaplume", "stealthrock", "roar", "protect"],
                 "abilities": ["Flash Fire"],
 				"evs": [252, 0, 4, 0, 252, 0],
@@ -17105,7 +17105,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["lavaplume", "stealthrock", "roar", "protect"],
                 "abilities": ["Flash Fire"],
 				"evs": [248, 0, 232, 0, 28, 0],
@@ -17115,7 +17115,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["lavaplume", "stealthrock", "roar", "protect"],
                 "abilities": ["Flash Fire"],
 				"evs": [248, 0, 8, 0, 252, 0],
@@ -17125,7 +17125,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["lavaplume", "stealthrock", "roar", "taunt"],
                 "abilities": ["Flash Fire"],
 				"evs": [248, 0, 8, 0, 252, 0],
