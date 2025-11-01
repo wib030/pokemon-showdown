@@ -95,22 +95,21 @@ const TYPE_ALTERING_ABILITIES = [
 	'colorchange', 'ghostly',
 ];
 
-// List of Rare Pokemon (1/3 chance to reroll if species is rolled)
+// List of Rare Pokemon (1/4 chance to keep if species is rolled, otherwise it is rerolled)
 const RARE_POKEMON = [
 	'articuno', 'zapdos', 'moltres', 'raikou', 'entei', 'suicune',
 	'regirock', 'regice', 'registeel', 'uxie', 'mesprit', 'azelf',
 	'heatran', 'regigigas', 'cresselia', 'mew', 'celebi', 'jirachi',
-	'manaphy', 'shaymin',
+	'manaphy', 'shaymin', 'shayminsky', 'darkrai', 'latios', 'latias',
 ];
 
-// List of Very Rare Pokemon (2/3 chance to reroll if species is rolled)
+// List of Very Rare Pokemon (1/8 chance to keep if species is rolled, otherwise it is rerolled)
 const VERY_RARE_POKEMON = [
-	'mewtwo', 'lugia', 'hooh', 'latios', 'latias', 'kyogre', 'groudon',
-	'rayquaza', 'dialga', 'palkia', 'giratina', 'giratinaorigin', 'arceus',
-	'arceusbug', 'arceusdark', 'arceusdragon', 'arceuselectric', 'arceusfighting',
-	'arceusfire', 'arceusflying', 'arceusghost', 'arceusgrass', 'arceusground',
-	'arceusice', 'arceuspoison', 'arceuspsychic', 'arceusrock', 'arceussteel',
-	'arceuswater', 'shayminsky', 'darkrai', 'phione',
+	'mewtwo', 'lugia', 'hooh', 'kyogre', 'groudon', 'rayquaza', 'dialga', 'palkia',
+	'giratina', 'giratinaorigin', 'arceus', 'arceusbug', 'arceusdark', 'arceusdragon',
+	'arceuselectric', 'arceusfighting', 'arceusfire', 'arceusflying', 'arceusghost',
+	'arceusgrass', 'arceusground', 'arceusice', 'arceuspoison', 'arceuspsychic',
+	'arceusrock', 'arceussteel', 'arceuswater',
 ];
 
 class TypeFrequency {
@@ -998,11 +997,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			
 			// If we get a rare or very rare Pokemon make a roll to determine if we keep it
 			if (RARE_POKEMON.includes(checkSpecies)) {
-				if (this.sample([true, false, false])) {
+				if (!this.sample([true, false, false, false])) {
 					continue;
 				}
 			} else if (VERY_RARE_POKEMON.includes(checkSpecies)) {
-				if (this.sample([true, true, false])) {
+				if (!this.sample([true, false, false, false, false, false, false, false])) {
 					continue;
 				}
 			}
