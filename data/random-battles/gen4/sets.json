@@ -255,7 +255,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Defog",
+                "role": "Fast Pivot",
                 "movepool": ["uturn", "poisonjab", "knockoff", "defog"],
                 "abilities": ["Adaptability"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -265,7 +265,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Defog",
+                "role": "Fast Pivot",
                 "movepool": ["uturn", "poisonjab", "knockoff", "defog"],
                 "abilities": ["Adaptability"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -4075,7 +4075,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Defog",
+                "role": "Hail Setter",
                 "movepool": ["blizzard", "uturn", "defog", "roost"],
                 "abilities": ["Snow Warning"],
 				"evs": [248, 0, 0, 0, 248, 12],
@@ -4125,7 +4125,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Defog",
+                "role": "Bulky Support",
                 "movepool": ["blizzard", "hurricane", "defog", "roost"],
                 "abilities": ["Snow Warning"],
 				"evs": [248, 0, 0, 0, 248, 12],

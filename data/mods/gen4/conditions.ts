@@ -188,10 +188,28 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		onResidualOrder: 11,
 	},
 	stall: {
-		// In gen 3-4, the chance of protect succeeding does not fall below 1/8.
-		// See http://upokecenter.dreamhosters.com/dex/?lang=en&move=182
-		inherit: true,
+		// Protect, Detect, Endure counter
+		name: 'stall',
+		duration: 2,
 		counterMax: 8,
+		onStart() {
+			this.effectState.counter = 3;
+		},
+		onStallMove(pokemon) {
+			// this.effectState.counter should never be undefined here.
+			// However, just in case, use 1 if it is undefined.
+			const counter = this.effectState.counter || 1;
+			this.debug(`Success chance: ${Math.round(100 / counter)}%`);
+			const success = this.randomChance(1, counter);
+			if (!success) delete pokemon.volatiles['stall'];
+			return success;
+		},
+		onRestart() {
+			if (this.effectState.counter < (this.effect as Condition).counterMax!) {
+				this.effectState.counter *= 3;
+			}
+			this.effectState.duration = 2;
+		},
 	},
 	// Arceus's true typing for all its formes is Normal, and it's only Multitype
 	// that changes its type, but its formes are specified to be their corresponding
