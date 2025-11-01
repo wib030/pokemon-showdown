@@ -780,13 +780,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (ensureLead && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
 			
 			// Prevent Lead if we aren't ensuring lead, and if we roll true, and if we don't only have lead sets
-			if ((!ensureLead && !onlyLeadSets && LEAD_ROLES.includes(set.role)) continue;
+			if (!ensureLead && !onlyLeadSets && LEAD_ROLES.includes(set.role)) continue;
 			
 			// Enforce Removal if the team does not have removal
 			if (ensureRemoval && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
 			
 			// Prevent Removal if we aren't ensuring removal, and if we roll true, and if we don't only have removal sets
-			if ((!ensureRemoval && !onlyRemovalSets && REMOVAL_ROLES.includes(set.role)) continue;
+			if (!ensureRemoval && !onlyRemovalSets && REMOVAL_ROLES.includes(set.role)) continue;
 			
 			// Enforce Hazard Tank role if we have a Hazards Tank set and the ensureHazardTank bool is true
 			if (ensureHazardTank && hasHazardTankSet && !['Hazards Tank'].includes(set.role)) continue;
@@ -1040,7 +1040,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						break;
 					}
 				}
-			} else if (pokemon.length === hazardTankSlot && hasAntiLead === true) {
+			} else if (pokemon.length === hazardTankSlot && hasAntiLead) {
 				sets = this.randomSets[checkSpecies.id]["sets"];
 				// Check if the Pokemon has a Hazard Tank set
 				skip = true;
