@@ -968,7 +968,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		let checkSpecies;
 		let sets;
-		const maxRerolls = 999;
+		const maxRerolls = 2500;
 		let rerollAttempts = 0;
 		let rerollAttemptsTotal = 0;
 		let skipReroll = false;
