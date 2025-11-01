@@ -3232,23 +3232,6 @@
             }
         ]
     },
-    "scyther": {
-        "level": 99,
-        "sets": [
-            {
-                "role": "Setup Sweeper",
-                "movepool": ["aerialace", "brickbreak", "bugbite", "roost", "swordsdance"],
-                "abilities": ["Technician"],
-				"inclination": "Physical"
-            },
-            {
-                "role": "Wallbreaker",
-                "movepool": ["aerialace", "brickbreak", "pursuit", "uturn"],
-                "abilities": ["Technician"],
-				"inclination": "Physical"
-            }
-        ]
-    },
     "jynx": {
         "level": 99,
         "sets": [
@@ -3969,7 +3952,7 @@
         "level": 99,
         "sets": [
             {
-                "role": "Spinner",
+                "role": "Fast Support",
                 "movepool": ["aquajet", "rapidspin", "stealthrock", "stoneedge", "superpower", "waterfall"],
                 "abilities": ["Battle Armor", "Swift Swim"],
 				"inclination": "Physical"
