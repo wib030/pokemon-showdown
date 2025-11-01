@@ -965,19 +965,837 @@
         ]
     },
     "clefable": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
                 "role": "Bulky Support",
-                "movepool": ["aromatherapy", "doubleedge", "fireblast", "icebeam", "softboiled", "stealthrock", "thunderwave"],
+                "movepool": ["icebeam", "thunderwave", "seismictoss", "softboiled"],
                 "abilities": ["Magic Guard", "Unaware"],
-				"inclination": "Mixed"
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
             },
-            {
-                "role": "Setup Sweeper",
-                "movepool": ["calmmind", "icebeam", "softboiled", "thunderbolt"],
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "stealthrock", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "thunderwave", "seismictoss", "softboiled"],
                 "abilities": ["Magic Guard", "Unaware"],
+				"evs": [248, 0, 200, 48, 12, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "stealthrock", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 200, 48, 12, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "encore", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 200, 48, 12, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "encore", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "aromatherapy", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 200, 48, 12, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "aromatherapy", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "healbell", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 200, 48, 12, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "healbell", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "toxic", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 200, 48, 12, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "toxic", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Offensive Tank",
+                "movepool": ["icebeam", "thunder", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard", "Unaware"],
+				"evs": [248, 0, 200, 48, 12, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
 				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["flamethrower", "stealthrock", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 200, 52, 8, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["flamethrower", "encore", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 200, 52, 8, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["flamethrower", "aromatherapy", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 200, 52, 8, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["flamethrower", "healbell", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 200, 52, 8, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Offensive Tank",
+                "movepool": ["flamethrower", "thunder", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard", "Unaware"],
+				"evs": [248, 0, 200, 52, 8, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["icebeam", "chargebeam", "encore", "softboiled"],
+                "abilities": ["Magic Guard", "Unaware"],
+				"evs": [248, 0, 200, 48, 12, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["flamethrower", "thunderwave", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard", "Unaware"],
+				"evs": [248, 0, 88, 52, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["flamethrower", "stealthrock", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 88, 52, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["flamethrower", "encore", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 88, 52, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["flamethrower", "aromatherapy", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 88, 52, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["flamethrower", "healbell", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 88, 52, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["flamethrower", "toxic", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 88, 52, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "thunderwave", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard", "Unaware"],
+				"evs": [248, 0, 92, 48, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "stealthrock", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 92, 48, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "encore", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 92, 48, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "aromatherapy", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 92, 48, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "healbell", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 92, 48, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["icebeam", "toxic", "seismictoss", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 92, 48, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["icebeam", "chargebeam", "encore", "softboiled"],
+                "abilities": ["Magic Guard", "Unaware"],
+				"evs": [248, 0, 92, 48, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "stealthrock", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "thunderwave", "softboiled"],
+                "abilities": ["Magic Guard", "Unaware"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "aromatherapy", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "healbell", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "toxic", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "encore", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "stealthrock", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 140, 0, 120, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "thunderwave", "softboiled"],
+                "abilities": ["Magic Guard", "Unaware"],
+				"evs": [248, 0, 140, 0, 120, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "aromatherapy", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 140, 0, 120, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "healbell", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 140, 0, 120, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "toxic", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 140, 0, 120, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "encore", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 140, 0, 120, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "stealthrock", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "thunderwave", "softboiled"],
+                "abilities": ["Magic Guard", "Unaware"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "encore", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "aromatherapy", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "healbell", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "toxic", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "stealthrock", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "thunderwave", "softboiled"],
+                "abilities": ["Magic Guard", "Unaware"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "aromatherapy", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "healbell", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "encore", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "seismictoss", "toxic", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "toxic", "wish", "protect"],
+                "abilities": ["Magic Guard"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "toxic", "wish", "protect"],
+                "abilities": ["Magic Guard"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "toxic", "wish", "protect"],
+                "abilities": ["Magic Guard"],
+				"evs": [252, 0, 136, 0, 120, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "toxic", "wish", "protect"],
+                "abilities": ["Magic Guard"],
+				"evs": [252, 0, 200, 0, 56, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["icebeam", "thunderbolt", "calmmind", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 252, 8, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["icebeam", "thunderbolt", "calmmind", "softboiled"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 8, 252, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["icebeam", "thunderbolt", "calmmind", "softboiled"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 252, 8, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "stealthrock", "softboiled",  "trick"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Sticky Barb",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "stealthrock", "softboiled",  "trick"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 140, 0, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Sticky Barb",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "stealthrock", "softboiled",  "trick"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Sticky Barb",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["seismictoss", "stealthrock", "softboiled",  "trick"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Sticky Barb",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["knockoff", "softboiled", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["knockoff", "softboiled", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["knockoff", "softboiled", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 140, 0, 120, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["knockoff", "softboiled", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["seismictoss", "softboiled", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["seismictoss", "softboiled", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 140, 0, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["seismictoss", "softboiled", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["seismictoss", "softboiled", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["seismictoss", "encore", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["seismictoss", "encore", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["seismictoss", "encore", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 140, 0, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["seismictoss", "encore", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["seismictoss", "healingwish", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["seismictoss", "healingwish", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 140, 0, 120, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["seismictoss", "healingwish", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["seismictoss", "healingwish", "reflect",  "lightscreen"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Bold",
+				"inclination": "Support"
             }
         ]
     },
@@ -8457,16 +9275,6 @@
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Three-Four-Five Dice",
-				"nature": "Jolly",
-				"inclination": "Physical"
-            },
-			{
-                "role": "Anti-Lead",
-                "movepool": ["chumrush", "crunch", "hailcannon", "taunt"],
-                "abilities": ["Strong Jaw"],
-				"evs": [0, 252, 0, 0, 4, 252],
-				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Focus Sash",
 				"nature": "Jolly",
 				"inclination": "Physical"
             }
