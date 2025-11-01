@@ -668,7 +668,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["earthpower", "icebeam", "slackoff", "stealthrock"],
                 "abilities": ["Competitive"],
 				"evs": [248, 0, 92, 0, 168, 0],
@@ -678,7 +678,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["earthpower", "icebeam", "slackoff", "toxicspikes"],
                 "abilities": ["Competitive"],
 				"evs": [248, 0, 92, 0, 168, 0],
@@ -708,7 +708,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["earthpower", "icebeam", "slackoff", "stealthrock"],
                 "abilities": ["Competitive"],
 				"evs": [248, 0, 152, 0, 108, 0],
@@ -718,7 +718,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["earthpower", "icebeam", "slackoff", "toxicspikes"],
                 "abilities": ["Competitive"],
 				"evs": [248, 0, 152, 0, 108, 0],
@@ -728,7 +728,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["poisonfang", "superfang", "stealthrock", "slackoff"],
                 "abilities": ["Poison Point"],
 				"evs": [248, 0, 92, 0, 168, 0],
@@ -738,7 +738,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["poisonfang", "superfang", "toxicspikes", "slackoff"],
                 "abilities": ["Poison Point"],
 				"evs": [248, 0, 92, 0, 168, 0],
@@ -748,7 +748,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["superfang", "dragontail", "stealthrock", "slackoff"],
                 "abilities": ["Poison Point"],
 				"evs": [248, 0, 152, 0, 108, 0],
@@ -758,7 +758,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["superfang", "dragontail", "stealthrock", "slackoff"],
                 "abilities": ["Poison Point"],
 				"evs": [248, 0, 92, 0, 168, 0],
@@ -4228,7 +4228,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["dragontail", "stealthrock", "toxic", "roost"],
                 "abilities": ["Multiscale"],
                 "evs": [252, 236, 20, 0, 0, 0],
@@ -5663,7 +5663,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["earthquake", "gyroball", "stoneedge", "stealthrock"],
                 "abilities": ["Magnet Pull", "Shed Skin"],
 				"evs": [248, 8, 0, 0, 252, 0],
@@ -5673,7 +5673,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["earthquake", "gyroball", "crunch", "stealthrock"],
                 "abilities": ["Magnet Pull", "Shed Skin"],
 				"evs": [248, 8, 0, 0, 252, 0],
@@ -5953,7 +5953,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["bravebird", "toxic", "spikes", "roost"],
                 "abilities": ["Sturdy"],
 				"evs": [252, 4, 252, 0, 0, 0],
@@ -5993,7 +5993,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["bravebird", "whirlwind", "spikes", "roost"],
                 "abilities": ["Sturdy"],
 				"evs": [252, 0, 184, 0, 72, 0],
@@ -6003,7 +6003,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["bravebird", "toxic", "spikes", "roost"],
                 "abilities": ["Sturdy"],
 				"evs": [252, 0, 184, 0, 72, 0],
@@ -6043,7 +6043,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["bravebird", "whirlwind", "spikes", "roost"],
                 "abilities": ["Sturdy"],
 				"evs": [252, 0, 24, 0, 232, 0],
@@ -6053,7 +6053,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["bravebird", "toxic", "spikes", "roost"],
                 "abilities": ["Sturdy"],
 				"evs": [252, 0, 24, 0, 232, 0],
@@ -6133,7 +6133,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["steelwing", "toxic", "spikes", "roost"],
                 "abilities": ["Sturdy"],
 				"evs": [252, 4, 252, 0, 0, 0],
@@ -6143,7 +6143,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["steelwing", "toxic", "spikes", "roost"],
                 "abilities": ["Sturdy"],
 				"evs": [252, 0, 184, 0, 72, 0],
@@ -6153,7 +6153,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["steelwing", "toxic", "spikes", "roost"],
                 "abilities": ["Sturdy"],
 				"evs": [252, 0, 24, 0, 232, 0],
@@ -6468,7 +6468,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["bodyslam", "earthquake", "milkdrink", "stealthrock"],
                 "abilities": ["Thick Fat", "Fresh Milk"],
 				"evs": [240, 60, 132, 0, 76, 0],
@@ -6498,7 +6498,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["seismictoss", "toxic", "milkdrink", "stealthrock"],
                 "abilities": ["Thick Fat", "Fresh Milk"],
 				"evs": [240, 0, 192, 0, 76, 0],
@@ -8020,7 +8020,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["waterfall", "earthquake", "hailcannon", "stealthrock"],
                 "abilities": ["Torrent"],
 				"evs": [248, 0, 108, 0, 152, 0],
@@ -8030,7 +8030,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["waterfall", "earthquake", "hailcannon", "stealthrock"],
                 "abilities": ["Torrent"],
 				"evs": [248, 76, 108, 0, 76, 0],
@@ -8040,7 +8040,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["waterfall", "earthquake", "hailcannon", "stealthrock"],
                 "abilities": ["Torrent"],
 				"evs": [248, 16, 108, 0, 136, 0],
@@ -8050,7 +8050,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["waterfall", "earthquake", "hailcannon", "stealthrock"],
                 "abilities": ["Torrent"],
 				"evs": [248, 16, 144, 0, 92, 8],
@@ -8060,7 +8060,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["waterfall", "earthquake", "hailcannon", "stealthrock"],
                 "abilities": ["Torrent"],
 				"evs": [248, 0, 240, 0, 20, 0],
@@ -8070,7 +8070,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["toxic", "earthquake", "hailcannon", "stealthrock"],
                 "abilities": ["Torrent"],
 				"evs": [248, 0, 108, 0, 152, 0],
@@ -8080,7 +8080,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["toxic", "earthquake", "hailcannon", "stealthrock"],
                 "abilities": ["Torrent"],
 				"evs": [248, 0, 108, 0, 144, 8],
@@ -8090,7 +8090,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["toxic", "earthquake", "hailcannon", "stealthrock"],
                 "abilities": ["Torrent"],
 				"evs": [248, 0, 240, 0, 20, 0],
@@ -8100,7 +8100,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["icywind", "earthquake", "hailcannon", "stealthrock"],
                 "abilities": ["Torrent"],
 				"evs": [248, 0, 240, 0, 20, 0],
@@ -8110,7 +8110,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["icywind", "earthquake", "hailcannon", "stealthrock"],
                 "abilities": ["Torrent"],
 				"evs": [248, 0, 108, 0, 152, 0],
@@ -8120,7 +8120,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["icywind", "earthquake", "hailcannon", "stealthrock"],
                 "abilities": ["Torrent"],
 				"evs": [248, 0, 108, 0, 144, 8],
@@ -8130,7 +8130,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["icywind", "earthquake", "hailcannon", "stealthrock"],
                 "abilities": ["Torrent"],
 				"evs": [248, 76, 108, 0, 76, 0],
@@ -8300,7 +8300,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["earthpower", "icebeam", "muddywater", "stealthrock"],
                 "abilities": ["Torrent"],
 				"evs": [248, 0, 0, 252, 8, 0],
@@ -9020,7 +9020,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["dragontail", "toxic", "substitute", "stealthrock"],
                 "abilities": ["Filter"],
                 "evs": [252, 0, 4, 0, 252, 0],
@@ -12692,100 +12692,490 @@
         "level": 100,
         "sets": [
             {
-                "role": "Bulky Lead",
-                "movepool": ["stealthrock", "spikes", "rapidspin", "explosion"],
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stickyweb", "spikes", "toxicspikes"],
                 "abilities": ["Levitate"],
-				"evs": [252, 0, 164, 0, 92, 0],
+				"evs": [248, 0, 8, 0, 252, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Focus Sash",
+				"item": "Leftovers",
 				"nature": "Careful",
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
-                "movepool": ["stealthrock", "toxicspikes", "rapidspin", "explosion"],
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stickyweb", "spikes", "toxicspikes"],
                 "abilities": ["Levitate"],
-				"evs": [252, 0, 164, 0, 92, 0],
+				"evs": [248, 0, 252, 0, 8, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Focus Sash",
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stickyweb", "spikes", "toxicspikes"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 40, 0, 220, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stickyweb", "spikes", "toxicspikes"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stickyweb", "spikes", "toxicspikes"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 56, 0, 120, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
 				"nature": "Careful",
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
-                "movepool": ["stealthrock", "stickyweb", "rapidspin", "explosion"],
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stickyweb", "spikes", "toxicspikes"],
                 "abilities": ["Levitate"],
-				"evs": [252, 0, 164, 0, 92, 0],
+				"evs": [248, 0, 176, 0, 0, 84],
 				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Focus Sash",
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stickyweb", "spikes", "toxicspikes"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 176, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
 				"nature": "Careful",
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
-                "movepool": ["stealthrock", "spikes", "rapidspin", "metalburst"],
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "toxicspikes"],
                 "abilities": ["Levitate"],
-				"evs": [252, 0, 164, 0, 92, 0],
+				"evs": [248, 0, 8, 0, 252, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Focus Sash",
+				"item": "Leftovers",
 				"nature": "Careful",
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
-                "movepool": ["stealthrock", "toxicspikes", "rapidspin", "metalburst"],
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "toxicspikes"],
                 "abilities": ["Levitate"],
-				"evs": [252, 0, 164, 0, 92, 0],
+				"evs": [248, 0, 252, 0, 8, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Focus Sash",
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "toxicspikes"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 40, 0, 220, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "toxicspikes"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "toxicspikes"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 56, 0, 120, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
 				"nature": "Careful",
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
-                "movepool": ["stealthrock", "stickyweb", "rapidspin", "metalburst"],
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "toxicspikes"],
                 "abilities": ["Levitate"],
-				"evs": [252, 0, 164, 0, 92, 0],
+				"evs": [248, 0, 176, 0, 0, 84],
 				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Focus Sash",
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "toxicspikes"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 176, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
 				"nature": "Careful",
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
-                "movepool": ["stealthrock", "spikes", "suckerpunch", "endeavor"],
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "stickyweb"],
                 "abilities": ["Levitate"],
-				"evs": [252, 0, 164, 0, 92, 0],
+				"evs": [248, 0, 8, 0, 252, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Focus Sash",
+				"item": "Leftovers",
 				"nature": "Careful",
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
-                "movepool": ["stealthrock", "toxicspikes", "suckerpunch", "endeavor"],
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "stickyweb"],
                 "abilities": ["Levitate"],
-				"evs": [252, 0, 164, 0, 92, 0],
+				"evs": [248, 0, 252, 0, 8, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Focus Sash",
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 40, 0, 220, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 56, 0, 120, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
 				"nature": "Careful",
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
-                "movepool": ["stealthrock", "stickyweb", "suckerpunch", "endeavor"],
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "stickyweb"],
                 "abilities": ["Levitate"],
-				"evs": [252, 0, 164, 0, 92, 0],
+				"evs": [248, 0, 176, 0, 0, 84],
 				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Focus Sash",
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 176, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
 				"nature": "Careful",
 				"inclination": "Support"
             },
 			{
-                "role": "Spinner",
-                "movepool": ["stealthrock", "spikes", "rapidspin", "spiderweb"],
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "toxic"],
                 "abilities": ["Levitate"],
-				"evs": [252, 0, 164, 0, 92, 0],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "toxic"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "toxic"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 40, 0, 220, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "toxic"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "toxic"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 56, 0, 120, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "toxic"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 176, 0, 0, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "stealthrock", "spikes", "toxic"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 176, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "metalburst", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "metalburst", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "metalburst", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 40, 0, 220, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "metalburst", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "metalburst", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 56, 0, 120, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "metalburst", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 176, 0, 0, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "metalburst", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 176, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "metalburst", "endeavor", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "metalburst", "endeavor", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "metalburst", "endeavor", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 40, 0, 220, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "metalburst", "endeavor", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "metalburst", "endeavor", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 56, 0, 120, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "metalburst", "endeavor", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 176, 0, 0, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "metalburst", "endeavor", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 176, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "skillswap", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "skillswap", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "skillswap", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 40, 0, 220, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "skillswap", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "skillswap", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 56, 0, 120, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "skillswap", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 176, 0, 0, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rapidspin", "skillswap", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 176, 84],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
 				"nature": "Careful",
@@ -12793,9 +13183,9 @@
             },
 			{
                 "role": "Spinner",
-                "movepool": ["stealthrock", "toxicspikes", "rapidspin", "spiderweb"],
+                "movepool": ["rapidspin", "spiderweb", "protect", "stickyweb"],
                 "abilities": ["Levitate"],
-				"evs": [252, 0, 164, 0, 92, 0],
+				"evs": [248, 0, 8, 0, 252, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
 				"nature": "Careful",
@@ -12803,9 +13193,39 @@
             },
 			{
                 "role": "Spinner",
-                "movepool": ["stealthrock", "stickyweb", "rapidspin", "spiderweb"],
+                "movepool": ["rapidspin", "spiderweb", "protect", "stickyweb"],
                 "abilities": ["Levitate"],
-				"evs": [252, 0, 164, 0, 92, 0],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["rapidspin", "spiderweb", "protect", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 40, 0, 220, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["rapidspin", "spiderweb", "protect", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["rapidspin", "spiderweb", "protect", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 56, 0, 120, 84],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
 				"nature": "Careful",
@@ -12813,30 +13233,370 @@
             },
 			{
                 "role": "Spinner",
-                "movepool": ["stealthrock", "spikes", "rapidspin", "gyroball"],
+                "movepool": ["rapidspin", "spiderweb", "protect", "stickyweb"],
                 "abilities": ["Levitate"],
-				"evs": [252, 0, 164, 0, 92, 0],
-				"ivs": [31, 31, 31, 31, 31, 0],
+				"evs": [248, 0, 176, 0, 0, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["rapidspin", "spiderweb", "protect", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 176, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
 				"nature": "Careful",
 				"inclination": "Support"
             },
 			{
-                "role": "Spinner",
-                "movepool": ["stealthrock", "toxicspikes", "rapidspin", "gyroball"],
+                "role": "Bulky Lead",
+                "movepool": ["explosion", "stealthrock", "spikes", "stickyweb"],
                 "abilities": ["Levitate"],
-				"evs": [252, 0, 164, 0, 92, 0],
-				"ivs": [31, 31, 31, 31, 31, 0],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["explosion", "stealthrock", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["explosion", "stealthrock", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 40, 0, 220, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["explosion", "stealthrock", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["explosion", "stealthrock", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 56, 0, 120, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["explosion", "stealthrock", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 176, 0, 0, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["explosion", "stealthrock", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 176, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["explosion", "endure", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["explosion", "endure", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["explosion", "endure", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 40, 0, 220, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["explosion", "endure", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["explosion", "endure", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 56, 0, 120, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["explosion", "endure", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 176, 0, 0, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["explosion", "endure", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 176, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["endeavor", "suckerpunch", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["endeavor", "suckerpunch", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["endeavor", "suckerpunch", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 40, 0, 220, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["endeavor", "suckerpunch", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["endeavor", "suckerpunch", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 56, 0, 120, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["endeavor", "suckerpunch", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 176, 0, 0, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["endeavor", "suckerpunch", "spikes", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 176, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["endeavor", "suckerpunch", "rapidspin", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["endeavor", "suckerpunch", "rapidspin", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["endeavor", "suckerpunch", "rapidspin", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 40, 0, 220, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["endeavor", "suckerpunch", "rapidspin", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 208, 0, 52, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["endeavor", "suckerpunch", "rapidspin", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 56, 0, 120, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["endeavor", "suckerpunch", "rapidspin", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 176, 0, 0, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["endeavor", "suckerpunch", "rapidspin", "stickyweb"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 0, 0, 176, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["spiderweb", "toxic", "spikes", "substitute"],
+                "abilities": ["Levitate"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
 				"nature": "Careful",
 				"inclination": "Support"
             },
 			{
-                "role": "Spinner",
-                "movepool": ["stealthrock", "stickyweb", "rapidspin", "gyroball"],
+                "role": "Staller",
+                "movepool": ["spiderweb", "toxic", "spikes", "substitute"],
                 "abilities": ["Levitate"],
-				"evs": [252, 0, 164, 0, 92, 0],
-				"ivs": [31, 31, 31, 31, 31, 0],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["spiderweb", "toxic", "spikes", "substitute"],
+                "abilities": ["Levitate"],
+				"evs": [252, 0, 36, 0, 220, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["spiderweb", "toxic", "spikes", "substitute"],
+                "abilities": ["Levitate"],
+				"evs": [252, 0, 208, 0, 48, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["spiderweb", "toxic", "spikes", "substitute"],
+                "abilities": ["Levitate"],
+				"evs": [252, 0, 52, 0, 120, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["spiderweb", "toxic", "spikes", "substitute"],
+                "abilities": ["Levitate"],
+				"evs": [252, 0, 172, 0, 0, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["spiderweb", "toxic", "spikes", "substitute"],
+                "abilities": ["Levitate"],
+				"evs": [252, 0, 0, 0, 172, 84],
+				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
 				"nature": "Careful",
 				"inclination": "Support"
