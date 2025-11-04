@@ -2432,7 +2432,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	memory: {
 		name: "Memory",
-		shortDesc: "While active: All Pokemon on the field ignore own stat changes, excluding Speed.",
+		shortDesc: "While active: All Pokemon on the field ignore all stat changes, excluding Speed.",
 	},
 	tossandturn: {
 		name: "Toss and Turn",
