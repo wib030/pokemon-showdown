@@ -25273,6 +25273,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			plow: ["4L1"],
 			iceshard: ["4L30"],
 			block: ["4L1"],
+			slackoff: ["4L53"],
 		},
 		encounters: [
 			{generation: 6, level: 24, maxEggMoves: 1},
