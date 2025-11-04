@@ -738,7 +738,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		removalNum: number,
 		ensureLead: boolean,
 		ensureRemoval: boolean,
-		ensureHazardTank: boolean,
 	): RandomTeamsTypes.RandomSet {
 		species = this.dex.species.get(species);
 		const forme = this.getForme(species);
@@ -787,9 +786,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			
 			// Prevent Removal if we aren't ensuring removal, and if we roll true, and if we don't only have removal sets
 			if (!ensureRemoval && !onlyRemovalSets && REMOVAL_ROLES.includes(set.role)) continue;
-			
-			// Enforce Hazard Tank role if we have a Hazards Tank set and the ensureHazardTank bool is true
-			if (ensureHazardTank && hasHazardTankSet && !['Hazards Tank'].includes(set.role)) continue;
 			
 			possibleSets.push(set);
 		}
@@ -1016,7 +1012,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			
 			let ensureLead = false;
 			let ensureRemoval = false;
-			let ensureHazardTank = false;
 			
 			if (pokemon.length === leadSlot) {
 				sets = this.randomSets[checkSpecies.id]["sets"];
@@ -1052,12 +1047,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (!skipReroll) {
 					ensureLead = false;
 					ensureRemoval = false;
-					ensureHazardTank = false;
 					continue;
 				}
 			}
 
-			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum, ensureLead, ensureRemoval, ensureHazardTank);
+			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum, ensureLead, ensureRemoval);
 			
 			// Reroll the Pokemon if we rolled a set that conflicts with the teams existing weather
 			if (set.ability === 'Snow Warning' || set.moves.includes('hail') || (set.ability === 'Forecast' && set.item === 'Icy Rock')) {
@@ -1178,7 +1172,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								rerollAttemptsTotal++;
 								ensureLead = false;
 								ensureRemoval = false;
-								ensureHazardTank = false;
 								continue;
 							}
 						}
@@ -1232,7 +1225,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								if (!skipReroll) {
 									ensureLead = false;
 									ensureRemoval = false;
-									ensureHazardTank = false;
 									continue;
 								}
 							}
@@ -1246,7 +1238,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						skip = true;
 						ensureLead = false;
 						ensureRemoval = false;
-						ensureHazardTank = false;
 						break;
 					}
 				}
@@ -1261,7 +1252,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					if (!skipReroll) {
 						ensureLead = false;
 						ensureRemoval = false;
-						ensureHazardTank = false;
 						continue;
 					}
 				}
@@ -1274,7 +1264,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							skip = true;
 							ensureLead = false;
 							ensureRemoval = false;
-							ensureHazardTank = false;
 							break;
 						}
 					}
@@ -1286,7 +1275,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							skip = true;
 							ensureLead = false;
 							ensureRemoval = false;
-							ensureHazardTank = false;
 							break;
 						}
 					}
@@ -1302,7 +1290,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					if (!skipReroll) {
 						ensureLead = false;
 						ensureRemoval = false;
-						ensureHazardTank = false;
 						continue;
 					}
 				}

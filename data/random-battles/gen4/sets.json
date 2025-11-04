@@ -627,19 +627,226 @@
         ]
     },
     "sandslash": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
                 "role": "Spinner",
-                "movepool": ["earthquake", "nightslash", "rapidspin", "stealthrock", "stoneedge", "toxic"],
+                "movepool": ["earthquake", "knockoff", "rapidspin", "stealthrock"],
                 "abilities": ["Rough Skin"],
+				"evs": [252, 44, 0, 0, 152, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
 				"inclination": "Physical"
             },
-            {
-                "role": "Bulky Setup",
-                "movepool": ["earthquake", "nightslash", "stoneedge", "substitute", "swordsdance", "xscissor"],
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "knockoff", "rapidspin", "stealthrock"],
                 "abilities": ["Rough Skin"],
-                "preferredTypes": ["Rock"],
+				"evs": [252, 44, 152, 0, 0, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "knockoff", "rapidspin", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 0, 244, 0, 12, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "knockoff", "rapidspin", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 0, 0, 0, 196, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "knockoff", "rapidspin", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "spikes", "rapidspin", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 44, 0, 0, 152, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "spikes", "rapidspin", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 44, 152, 0, 0, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "spikes", "rapidspin", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 0, 244, 0, 12, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "spikes", "rapidspin", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 0, 0, 0, 196, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "spikes", "rapidspin", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "superfang", "rapidspin", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 44, 0, 0, 152, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "superfang", "rapidspin", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 44, 152, 0, 0, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "superfang", "rapidspin", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 0, 244, 0, 12, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "superfang", "rapidspin", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 0, 0, 0, 196, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "superfang", "rapidspin", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["earthquake", "knockoff", "dragontail", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 44, 0, 0, 152, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["earthquake", "knockoff", "dragontail", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 44, 152, 0, 0, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["earthquake", "knockoff", "dragontail", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 0, 244, 0, 12, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["earthquake", "knockoff", "dragontail", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 0, 0, 0, 196, 60],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["earthquake", "knockoff", "dragontail", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "knockoff", "rapidspin", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [152, 104, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "knockoff", "rapidspin", "swordsdance"],
+                "abilities": ["Rough Skin"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
 				"inclination": "Physical"
             }
         ]
@@ -5853,12 +6060,96 @@
         ]
     },
     "corsola": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
-                "movepool": ["explosion", "powergem", "recover", "stealthrock", "surf", "toxic"],
+                "role": "Spinner",
+                "movepool": ["rapidspin", "powergem", "spikes", "recover"],
                 "abilities": ["Magic Guard"],
+				"evs": [248, 0, 12, 8, 240, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Sassy",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["rapidspin", "surf", "spikes", "recover"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 12, 8, 240, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Sassy",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["rapidspin", "earthpower", "spikes", "recover"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 12, 8, 240, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Sassy",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["rapidspin", "spikecannon", "stealthrock", "recover"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 20, 0, 240, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["rapidspin", "spikecannon", "toxicspikes", "recover"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 20, 0, 240, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["rapidspin", "stealthrock", "toxicspikes", "recover"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 20, 0, 240, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["powergem", "earthpower", "calmmind", "recover"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 244, 4, 12, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["powergem", "surf", "calmmind", "recover"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 244, 4, 12, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["surf", "icebeam", "calmmind", "recover"],
+                "abilities": ["Magic Guard"],
+				"evs": [248, 0, 244, 4, 12, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
 				"inclination": "Special"
             }
         ]
@@ -10643,13 +10934,117 @@
         ]
     },
     "glalie": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
-                "movepool": ["earthquake", "explosion", "icebeam", "spikes", "taunt"],
+                "role": "Fast Pivot",
+                "movepool": ["freezedry", "rapidspin", "spikes", "uturn"],
                 "abilities": ["Inner Focus"],
-				"inclination": "Mixed"
+				"evs": [184, 0, 0, 72, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["freezedry", "rapidspin", "spikes", "uturn"],
+                "abilities": ["Inner Focus"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Naive",
+				"inclination": "Support"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["freezedry", "rapidspin", "spikes", "uturn"],
+                "abilities": ["Inner Focus"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Naive",
+				"inclination": "Support"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["freezedry", "rapidspin", "spikes", "uturn"],
+                "abilities": ["Inner Focus"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Never-Melt Ice",
+				"nature": "Naive",
+				"inclination": "Support"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["freezedry", "stealthrock", "spikes", "uturn"],
+                "abilities": ["Inner Focus"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Never-Melt Ice",
+				"nature": "Naive",
+				"inclination": "Support"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["freezedry", "stealthrock", "spikes", "explosion"],
+                "abilities": ["Inner Focus"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Never-Melt Ice",
+				"nature": "Naive",
+				"inclination": "Support"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["freezedry", "superfang", "spikes", "uturn"],
+                "abilities": ["Inner Focus"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Never-Melt Ice",
+				"nature": "Naive",
+				"inclination": "Support"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["freezedry", "lightscreen", "spikes", "uturn"],
+                "abilities": ["Inner Focus"],
+				"evs": [184, 0, 0, 72, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Never-Melt Ice",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["freezedry", "lightscreen", "spikes", "uturn"],
+                "abilities": ["Inner Focus"],
+				"evs": [184, 0, 0, 72, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["freezedry", "lightscreen", "spikes", "uturn"],
+                "abilities": ["Inner Focus"],
+				"evs": [184, 0, 0, 72, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["freezedry", "taunt", "spikes", "explosion"],
+                "abilities": ["Inner Focus"],
+				"evs": [184, 0, 0, 72, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Naive",
+				"inclination": "Support"
             }
         ]
     },
