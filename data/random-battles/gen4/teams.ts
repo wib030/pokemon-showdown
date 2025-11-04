@@ -744,6 +744,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const sets = this.randomSets[species.id]["sets"];
 		const possibleSets = [];
 		
+		let tempSetCount = 0;
+		
 		let leadSetCount = 0;
 		let onlyLeadSets = false;
 		let hasLeadSet = false;
@@ -752,8 +754,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				hasLeadSet = true;
 				leadSetCount++;
 			}
+			tempSetCount++;
 		}
-		if (leadSetCount === sets.length) onlyLeadSets = true;
+		if (leadSetCount === tempSetCount) onlyLeadSets = true;
+		
+		tempSetCount = 0;
 		
 		let removalSetCount = 0;
 		let onlyRemovalSets = false;
@@ -763,16 +768,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				hasRemovalSet = true;
 				removalSetCount++;
 			}
+			tempSetCount++;
 		}
-		if (removalSetCount === sets.length) onlyRemovalSets = true;
-		
-		let hasHazardTankSet = false;
-		for (let set of sets) {
-			if (['Hazards Tank'].includes(set.role)) {
-				hasHazardTankSet = true;
-				break;
-			}
-		}
+		if (removalSetCount === tempSetCount) onlyRemovalSets = true;
 		
 		for (const set of sets) {
 			// Enforce Lead if the team does not have one
