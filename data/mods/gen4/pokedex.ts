@@ -1744,7 +1744,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	unown: {
 		inherit: true,
 		baseStats: {hp: 48, atk: 72, def: 48, spa: 72, spd: 48, spe: 72},
-		abilities: {0: "Unown Energy"},
+		abilities: {0: "Unown Force"},
 	},
 	whismur: {
 		inherit: true,

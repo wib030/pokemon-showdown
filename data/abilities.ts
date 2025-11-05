@@ -5991,7 +5991,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: -19,
 	},
-	unownenergy: {
+	unownforce: {
 		onSourceModifyDamage(damage, source, target, move) {
 			const noModifyType = [
 				'hiddenpower', 'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball', 'tossandturn',
@@ -6035,15 +6035,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			
 			if (moveType === '???') return;
 			if (moveType === 'Normal') {
-				this.hint("Unown Energy doubled the damage of the move!");
+				this.hint("Unown Force doubled the damage of the move!");
 				return this.chainModify(2);
 			} else {
-				this.hint("Unown Energy halved the damage of the move!");
+				this.hint("Unown Force halved the damage of the move!");
 				return this.chainModify(0.5);
 			}
 		},
 		flags: { rollable: 1 },
-		name: "Unown Energy",
+		name: "Unown Force",
 		rating: 3,
 		num: -20,
 	},

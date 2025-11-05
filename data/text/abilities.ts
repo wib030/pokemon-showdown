@@ -2398,8 +2398,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Pest",
 		shortDesc: "20% chance to endure a finishing attack; Mold Breaker ignores this.",
 	},
-	unownenergy: {
-		name: "Unown Energy",
+	unownforce: {
+		name: "Unown Force",
 		shortDesc: "Receives 2x damage from Normal-type moves; and half from other types, excluding ??? type.",
 	},
 	rocksolid: {

@@ -5575,7 +5575,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["judgment", "hiddenpowerfighting", "goldenbinding", "ancientpower"],
-                "abilities": ["Unown Energy"],
+                "abilities": ["Unown Force"],
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 3, 30, 30, 30, 30],
 				"item": "Mind Plate",
@@ -5585,7 +5585,7 @@
 			{
                 "role": "Wallbreaker",
                 "movepool": ["judgment", "hiddenpowerdark", "goldenbinding", "ancientpower"],
-                "abilities": ["Unown Energy"],
+                "abilities": ["Unown Force"],
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 3, 31, 31, 31, 31],
 				"item": "Fist Plate",
@@ -5595,7 +5595,7 @@
 			{
                 "role": "Wallbreaker",
                 "movepool": ["judgment", "hiddenpowerelectric", "goldenbinding", "ancientpower"],
-                "abilities": ["Unown Energy"],
+                "abilities": ["Unown Force"],
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 3, 31, 30, 31, 31],
 				"item": "Icicle Plate",
@@ -5605,7 +5605,7 @@
 			{
                 "role": "Wallbreaker",
                 "movepool": ["judgment", "hiddenpowerground", "goldenbinding", "ancientpower"],
-                "abilities": ["Unown Energy"],
+                "abilities": ["Unown Force"],
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 3, 31, 30, 30, 31],
 				"item": "Stone Plate",
@@ -5615,7 +5615,7 @@
 			{
                 "role": "Wallbreaker",
                 "movepool": ["judgment", "hiddenpowerice", "goldenbinding", "ancientpower"],
-                "abilities": ["Unown Energy"],
+                "abilities": ["Unown Force"],
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Earth Plate",
@@ -5625,7 +5625,7 @@
 			{
                 "role": "Wallbreaker",
                 "movepool": ["judgment", "hiddenpowerground", "goldenbinding", "ancientpower"],
-                "abilities": ["Unown Energy"],
+                "abilities": ["Unown Force"],
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 3, 31, 30, 30, 31],
 				"item": "Flame Plate",
@@ -5635,7 +5635,7 @@
 			{
                 "role": "Wallbreaker",
                 "movepool": ["judgment", "hiddenpowerpsychic", "goldenbinding", "ancientpower"],
-                "abilities": ["Unown Energy"],
+                "abilities": ["Unown Force"],
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 2, 31, 31, 31, 30],
 				"item": "Fist Plate",
@@ -5645,7 +5645,7 @@
 			{
                 "role": "Wallbreaker",
                 "movepool": ["judgment", "hiddenpowerfighting", "goldenbinding", "ancientpower"],
-                "abilities": ["Unown Energy"],
+                "abilities": ["Unown Force"],
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 3, 30, 30, 30, 30],
 				"item": "Dread Plate",

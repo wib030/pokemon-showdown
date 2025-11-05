@@ -83,14 +83,14 @@ const IMMUNITY_ABILITIES: { [k: string]: string[] } = {
 
 // Resistance abilities
 const RESISTANCE_ABILITIES: { [k: string]: string[] } = {
-	unownenergy: ["Flying", "Poison", "Ground", "Rock", "Steel", "Fire", "Water", "Grass", "Electric", "Ice", "Dragon", "Fighting", "Psychic", "Bug", "Ghost", "Dark"],
+	unownforce: ["Flying", "Poison", "Ground", "Rock", "Steel", "Fire", "Water", "Grass", "Electric", "Ice", "Dragon", "Fighting", "Psychic", "Bug", "Ghost", "Dark"],
 	thickfat: ["Fire", "Ice"],
 	heatproof: ["Fire"],
 };
 
 // Weakness abilities
 const WEAKNESS_ABILITIES: { [k: string]: string[] } = {
-	unownenergy: ["Normal"],
+	unownforce: ["Normal"],
 	colorchange: ["Dragon", "Ghost"],
 	ghostly: ["Ghost", "Dark"],
 };
