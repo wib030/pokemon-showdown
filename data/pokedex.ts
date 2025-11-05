@@ -8954,7 +8954,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 650,
 		color: "Black",
 		eggGroups: ["Undiscovered"],
-		requiredItem: "Water Plate",
+		requiredItem: "Splash Plate",
 		changesFrom: "Giratina",
 	},
 	cresselia: {
