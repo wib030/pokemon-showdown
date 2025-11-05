@@ -35142,6 +35142,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			magiccoat: ["4L1"],
 			tailwind: ["4L1"],
 			whirlpool: ["4L1"],
+			fling: ["4M"],
 		},
 	},
 	wibblypuff: {

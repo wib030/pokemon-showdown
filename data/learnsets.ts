@@ -42660,6 +42660,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			magiccoat: ["4L1"],
 			tailwind: ["4L1"],
 			whirlpool: ["4L1"],
+			fling: ["4M"],
 		},
 		eventData: [
 			{generation: 4, level: 100, moves: ["judgment", "roaroftime", "spacialrend", "shadowforce"], pokeball: "cherishball"},
