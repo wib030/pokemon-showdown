@@ -190,7 +190,7 @@ export class Hangman extends Rooms.SimpleRoomGame {
 	}
 
 	hangingMan() {
-		return `<img width="120" height="120" src="//wib030.github.io/pokemon-sprites/fx/hangman${this.incorrectGuesses === -1 ? 7 : this.incorrectGuesses}.png" />`;
+		return `<img width="120" height="120" src="//${Config.routes.client}/fx/hangman${this.incorrectGuesses === -1 ? 7 : this.incorrectGuesses}.png" />`;
 	}
 
 	generateWindow() {
