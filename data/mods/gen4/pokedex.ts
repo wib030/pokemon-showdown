@@ -1906,6 +1906,6 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	giratina: {
 		inherit: true,
-		abilities: { 0: "Pressure", H: "Antitype" },
+		abilities: { 0: "Pressure", 1: "Antitype" },
 	},
 };

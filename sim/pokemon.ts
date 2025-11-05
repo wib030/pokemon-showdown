@@ -1325,11 +1325,16 @@ export class Pokemon {
 		// Only ever relevant in Generation 4 since Generation 3 didn't have item-based forme changes
 		if (this.battle.gen === 4) {
 			if (this.species.num === 487) {
+				const item = this.getItem();
+				const targetForme = (item?.onPlate ? 'Giratina-' + item.onPlate : 'Giratina');
+				
 				// Giratina formes
 				if (this.species.name === 'Giratina' && this.item === 'griseousorb') {
 					this.formeChange('Giratina-Origin');
 				} else if (this.species.name === 'Giratina-Origin' && this.item !== 'griseousorb') {
 					this.formeChange('Giratina');
+				} else if (targetForme !== 'Giratina' && this.species.name !== targetForme) {
+					this.formeChange(targetForme);
 				}
 			}
 			if (this.species.num === 493) {

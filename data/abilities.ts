@@ -6210,13 +6210,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			return [type1, type2];
 		},
-		onSwitchIn(pokemon) {
-			const item = pokemon.getItem();
-			const targetForme = (item?.onPlate ? 'Giratina-' + item.onPlate : 'Giratina');
-			if (pokemon.species.name !== targetForme) {
-				pokemon.formeChange(targetForme);
-			}
-		},
 		flags: {},
 		name: "Antitype",
 		rating: 4,
