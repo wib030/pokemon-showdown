@@ -654,7 +654,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				if (target !== source && this.effectState.target.hasAlly(target) && this.getCategory(move) === 'Special') {
 					if (!target.getMoveHitData(move).crit && !move.infiltrates) {
 						this.debug('Light Screen weaken');
-						if (target.alliesAndSelf().length > 1) return this.chainModify(2, 3);
 						return this.chainModify(0.5);
 					}
 				}
@@ -1057,7 +1056,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				if (target !== source && this.effectState.target.hasAlly(target) && this.getCategory(move) === 'Physical') {
 					if (!target.getMoveHitData(move).crit && !move.infiltrates && move.id !== 'focuspunch') {
 						this.debug('Reflect weaken');
-						if (target.alliesAndSelf().length > 1) return this.chainModify(2, 3);
 						return this.chainModify(0.5);
 					}
 				}
