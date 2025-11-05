@@ -6210,7 +6210,21 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			return [type1, type2];
 		},
-		flags: {},
+		onBeforeSwitchIn(pokemon) {
+			pokemon.setType(pokemon.baseSpecies.types); // This will cause Antitype to trigger on switch-in as intended
+		},
+		onSwitchIn(pokemon) {
+			if (pokemon.ability === 'antitype') {
+				const item = pokemon.getItem();
+				const targetForme = (item?.onPlate ? 'Giratina-' + item.onPlate : 'Giratina');
+				if (targetForme !== 'Giratina') {
+					if (pokemon.species.name !== targetForme) {
+						pokemon.formeChange(targetForme);
+					}
+				}
+			}
+		},
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
 		name: "Antitype",
 		rating: 4,
 		num: -29,
