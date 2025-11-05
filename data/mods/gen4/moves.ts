@@ -281,7 +281,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		flags: { protect: 1, mirror: 1, metronome: 1, reflectable: 1 },
 		onTryHit(pokemon) {
-			if (pokemon.ability === 'multitype' || pokemon.item === 'griseousorb') {
+			if (pokemon.ability === 'multitype' || pokemon.ability === 'antitype' || pokemon.item === 'griseousorb') {
 				return false;
 			}
 		},
@@ -1101,7 +1101,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		onTryHit(target, source) {
 			if (target.ability === source.ability || source.hasItem('griseousorb')) return false;
-			if (target.getAbility().flags['failroleplay'] || source.ability === 'multitype') {
+			if (target.getAbility().flags['failroleplay'] || source.ability === 'multitype' || source.ability === 'antitype') {
 				return false;
 			}
 		},
@@ -1338,6 +1338,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		onTryHit(target, source, move) {
 			if (target.hasAbility('multitype') || source.hasAbility('multitype')) return false;
+			if (target.hasAbility('antitype') || source.hasAbility('antitype')) return false;
 		},
 	},
 	synthesis: {
@@ -1399,6 +1400,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		onTryHit(target, source, move) {
 			if (target.hasAbility('multitype') || source.hasAbility('multitype')) return false;
+			if (target.hasAbility('antitype') || source.hasAbility('antitype')) return false;
 		},
 	},
 	trickroom: {
@@ -1475,7 +1477,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	worryseed: {
 		inherit: true,
 		onTryHit(pokemon) {
-			const bannedAbilities = ['multitype', 'truant'];
+			const bannedAbilities = ['multitype', 'truant', 'antitype'];
 			if (bannedAbilities.includes(pokemon.ability) || pokemon.hasItem('griseousorb')) {
 				return false;
 			}
@@ -1560,7 +1562,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		},
 		onAfterHit(target, source, move) {
 			if (!target.item || target.itemState.knockedOff) return;
-			if (target.ability === 'multitype') return;
+			if (target.ability === 'multitype' || target.ability === 'antitype') return;
 			const item = target.getItem();
 			
 			if (item.id === 'toxicorb' && target.status === 'tox') {

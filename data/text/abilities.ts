@@ -2442,4 +2442,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Web Master",
 		shortDesc: "Immune to String Shot and Spider Web; Removes Sticky Web on switch-in.",
 	},
+	antitype: {
+		name: "Antitype",
+		shortDesc: "If this Pokemon is Giratina, its type changes depending on its held Plate. This Pokemon cannot lose its held item due to another Pokemon's attack.",
+	},
 };

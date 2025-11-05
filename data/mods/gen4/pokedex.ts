@@ -1904,4 +1904,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		baseStats: { hp: 110, atk: 160, def: 110, spa: 160, spd: 110, spe: 100 },
 	},
+	giratina: {
+		inherit: true,
+		abilities: { 0: "Pressure", H: "Antitype" },
+	},
 };

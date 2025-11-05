@@ -823,7 +823,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			const target = pokemon.side.randomFoe();
 			if (!target || target.fainted) return;
 			const ability = target.getAbility();
-			const bannedAbilities = ['forecast', 'multitype', 'trace'];
+			const bannedAbilities = ['forecast', 'multitype', 'trace', 'antitype'];
 			if (bannedAbilities.includes(target.ability)) {
 				return;
 			}

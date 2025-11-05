@@ -1831,8 +1831,8 @@ export class Pokemon {
 		if (!this.item || this.itemState.knockedOff) return false;
 		if (!source) source = this;
 		if (this.battle.gen === 4) {
-			if (toID(this.ability) === 'multitype') return false;
-			if (toID(source.ability) === 'multitype') return false;
+			if (toID(this.ability) === 'multitype' || toID(this.ability) === 'antitype') return false;
+			if (toID(source.ability) === 'multitype' || toID(source.ability) === 'antitype') return false;
 		}
 		const item = this.getItem();
 		if (this.battle.runEvent('TakeItem', this, source, null, item)) {
@@ -2079,7 +2079,7 @@ export class Pokemon {
 			if (typeof newType === 'string' ? newType === 'Stellar' : newType.includes('Stellar')) return false;
 			// First type of Arceus, Silvally cannot be normally changed
 			if ((this.battle.gen >= 5 && (this.species.num === 493 || this.species.num === 773)) ||
-				(this.battle.gen === 4 && this.hasAbility('multitype'))) {
+				(this.battle.gen === 4 && (this.hasAbility('multitype') || this.hasAbility('antitype')))) {
 				return false;
 			}
 			// Terastallized Pokemon cannot have their base type changed except via forme change

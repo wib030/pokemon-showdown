@@ -5968,7 +5968,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onPrepareHit(target, source, move) {
 			if (source.ignoringItem(true)) return false;
 			const item = source.getItem();
-			if (source.hasAbility('multitype') && item.onPlate) return false;
+			if ((source.hasAbility('multitype') || source.hasAbility('antitype')) && item.onPlate) return false;
 			if (source.baseSpecies.baseSpecies === 'Giratina' && item.id === 'griseousorb') return false;
 			if (!this.singleEvent('TakeItem', item, source.itemState, source, source, move, item)) return false;
 			if (!item.fling) return false;

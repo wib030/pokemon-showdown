@@ -6116,7 +6116,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (this.checkMoveMakesContact(move, source, target)) {
 				if (this.randomChance(3, 10)) {
 					if (!source.item || source.itemState.knockedOff) return;
-					if (source.ability === 'multitype') return;
+					if (source.ability === 'multitype' || source.ability === 'antitype') return;
 					const item = source.getItem();
 					
 					if (item.id === 'toxicorb' && source.status === 'tox') {
@@ -6187,5 +6187,39 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Web Master",
 		rating: 1,
 		num: -28,
+	},
+	antitype: {
+		onTypePriority: 1,
+		onType(types, pokemon) {
+			if (pokemon.transformed || pokemon.species.id !== 'giratina') return types;
+			let type1: string | undefined = 'Normal';
+			let type2: string | undefined = 'Normal';
+			type1 = pokemon.getItem().onPlate;
+			type2 = pokemon.getItem().onPlate;
+			if (!type1) {
+				type1 = 'Normal';
+			}
+			if (!type2) {
+				type2 = 'Normal';
+			}
+			if (type2 === 'Normal') {
+				type2 = type1;
+			}
+			if (type1 === type2) {
+				return [type1];
+			}
+			return [type1, type2];
+		},
+		onSwitchIn(pokemon) {
+			const item = pokemon.getItem();
+			const targetForme = (item?.onPlate ? 'Giratina-' + item.onPlate : 'Giratina');
+			if (pokemon.species.name !== targetForme) {
+				pokemon.formeChange(targetForme);
+			}
+		},
+		flags: {},
+		name: "Antitype",
+		rating: 4,
+		num: -29,
 	},
 };
