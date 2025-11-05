@@ -1865,6 +1865,54 @@ export const PokedexText: { [id: IDEntry]: PokedexText } = {
 	giratinaorigin: {
 		name: "Giratina-Origin",
 	},
+	giratinabug: {
+		name: "Giratina-Bug",
+	},
+	giratinadark: {
+		name: "Giratina-Dark",
+	},
+	giratinadragon: {
+		name: "Giratina-Dragon",
+	},
+	giratinaelectric: {
+		name: "Giratina-Electric",
+	},
+	giratinafighting: {
+		name: "Giratina-Fighting",
+	},
+	giratinafire: {
+		name: "Giratina-Fire",
+	},
+	giratinaflying: {
+		name: "Giratina-Flying",
+	},
+	giratinaghost: {
+		name: "Giratina-Ghost",
+	},
+	giratinagrass: {
+		name: "Giratina-Grass",
+	},
+	giratinaground: {
+		name: "Giratina-Ground",
+	},
+	giratinaice: {
+		name: "Giratina-Ice",
+	},
+	giratinapoison: {
+		name: "Giratina-Poison",
+	},
+	giratinapsychic: {
+		name: "Giratina-Psychic",
+	},
+	giratinarock: {
+		name: "Giratina-Rock",
+	},
+	giratinasteel: {
+		name: "Giratina-Steel",
+	},
+	giratinawater: {
+		name: "Giratina-Water",
+	},
 	cresselia: {
 		name: "Cresselia",
 	},
