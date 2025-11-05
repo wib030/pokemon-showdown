@@ -8682,8 +8682,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Black",
 		eggGroups: ["Undiscovered"],
 		tags: ["Restricted Legendary"],
-		otherFormes: ["Giratina-Origin"],
-		formeOrder: ["Giratina", "Giratina-Origin"],
+		otherFormes: ["Giratina-Origin", "Giratina-Bug", "Giratina-Dark", "Giratina-Dragon", "Giratina-Electric", "Giratina-Fighting", "Giratina-Fire", "Giratina-Flying", "Giratina-Ghost", "Giratina-Grass", "Giratina-Ground", "Giratina-Ice", "Giratina-Poison", "Giratina-Psychic", "Giratina-Rock", "Giratina-Steel", "Giratina-Water"],
+		formeOrder: ["Giratina", "Giratina-Origin", "Giratina-Bug", "Giratina-Dark", "Giratina-Dragon", "Giratina-Electric", "Giratina-Fighting", "Giratina-Fire", "Giratina-Flying", "Giratina-Ghost", "Giratina-Grass", "Giratina-Ground", "Giratina-Ice", "Giratina-Poison", "Giratina-Psychic", "Giratina-Rock", "Giratina-Steel", "Giratina-Water"],
 	},
 	giratinaorigin: {
 		num: 487,
