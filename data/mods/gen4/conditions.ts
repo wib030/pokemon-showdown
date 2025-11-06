@@ -231,23 +231,6 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			}
 		},
 	},
-	giratina: {
-		name: 'Giratina',
-		onBeforeSwitchIn(pokemon) {
-			pokemon.setType(pokemon.baseSpecies.types); // This will cause Antitype to trigger on switch-in as intended
-		},
-		onSwitchIn(pokemon) {
-			if (pokemon.ability === 'antitype') {
-				const item = pokemon.getItem();
-				const targetForme = (item?.onPlate ? 'Giratina-' + item.onPlate : 'Giratina');
-				if (targetForme !== 'Giratina') {
-					if (pokemon.species.name !== targetForme) {
-						pokemon.formeChange(targetForme);
-					}
-				}
-			}
-		},
-	},
 	raindance: {
 		inherit: true,
 		onFieldResidualOrder: 8,

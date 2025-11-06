@@ -859,37 +859,6 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			return [type];
 		},
 	},
-	giratina: {
-		name: 'Giratina',
-		onTypePriority: 1,
-		onType(types, pokemon) {
-			if (pokemon.transformed || pokemon.species.id !== 'giratina') return types;
-			let type1: string | undefined = 'Normal';
-			let type2: string | undefined = 'Normal';
-			type1 = pokemon.getItem().onPlate;
-			type2 = pokemon.getItem().onPlate;
-			if (!type1) {
-				type1 = 'Normal';
-			}
-			if (!type2) {
-				type2 = 'Normal';
-			}
-			if (type2 === 'Normal') {
-				type2 = type1;
-			}
-			if (type1 === type2) {
-				return [type1];
-			}
-			return [type1, type2];
-		},
-		onResidualOrder: 28,
-		onResidualSubOrder: 2,
-		onResidual(pokemon) {
-			if (pokemon.activeTurns) {
-				this.boost({ spe: 1 });
-			}
-		},
-	},
 	silvally: {
 		name: 'Silvally',
 		onTypePriority: 1,
