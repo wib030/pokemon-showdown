@@ -6191,18 +6191,38 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	antitype: {
 		onTypePriority: 1,
 		onType(types, pokemon) {
+			const item = pokemon.getItem();
 			if (pokemon.transformed || pokemon.species.id !== 'giratina') return types;
-			let type1: string | undefined = 'Normal';
-			let type2: string | undefined = 'Normal';
-			type1 = pokemon.getItem().onPlate;
-			type2 = pokemon.getItem().onPlate;
+			let type1: string | undefined = '???';
+			let type2: string | undefined = '???';
+			
+			switch (item.id) {
+				case 'fistplate': type1 = 'Flying'; type2 = 'Ghost'; break;
+				case 'skyplate': type1 = 'Electric'; type2 = 'Steel'; break;
+				case 'toxicplate': type1 = 'Psychic'; type2 = 'Steel'; break;
+				case 'earthplate': type1 = 'Water'; type2 = 'Flying'; break;
+				case 'stoneplate': type1 = 'Fighting'; type2 = 'Ground'; break;
+				case 'insectplate': type1 = 'Flying'; type2 = 'Steel'; break;
+				case 'spookyplate': type1 = 'Ghost'; type2 = 'Normal'; break;
+				case 'ironplate': type1 = 'Fire'; type2 = 'Water'; break;
+				case 'flameplate': type1 = 'Water'; type2 = 'Dragon'; break;
+				case 'splashplate': type1 = 'Electric'; type2 = 'Dragon'; break;
+				case 'meadowplate': type1 = 'Bug'; type2 = 'Steel'; break;
+				case 'zapplate': type1 = 'Ground'; type2 = 'Dragon'; break;
+				case 'mindplate': type1 = 'Ghost'; type2 = 'Dark'; break;
+				case 'icicleplate': type1 = 'Fighting'; type2 = 'Steel'; break;
+				case 'dracoplate': type1 = 'Ice'; type2 = 'Steel'; break;
+				case 'dreadplate': type1 = 'Fighting'; type2 = 'Dark'; break;
+				default: type1 = '???'; type2 = '???'; break;
+			}
+			
 			if (!type1) {
-				type1 = 'Normal';
+				type1 = '???';
 			}
 			if (!type2) {
-				type2 = 'Normal';
+				type2 = '???';
 			}
-			if (type2 === 'Normal') {
+			if (type2 === '???') {
 				type2 = type1;
 			}
 			if (type1 === type2) {
@@ -6216,7 +6236,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onSwitchIn(pokemon) {
 			if (pokemon.ability === 'antitype') {
 				const item = pokemon.getItem();
-				const targetForme = (item?.onPlate ? 'Giratina-' + item.onPlate : 'Giratina');
+				const targetForme = (item?.onPlate ? 'Giratina-Anti' + item.onPlate : 'Giratina');
 				if (targetForme !== 'Giratina') {
 					if (pokemon.species.name !== targetForme) {
 						pokemon.formeChange(targetForme);

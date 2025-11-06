@@ -116,7 +116,17 @@ const VERY_RARE_POKEMON = [
 	'arceuselectric', 'arceusfighting', 'arceusfire', 'arceusflying', 'arceusghost',
 	'arceusgrass', 'arceusground', 'arceusice', 'arceuspoison', 'arceuspsychic',
 	'arceusrock', 'arceussteel', 'arceuswater', 'deoxys', 'deoxysattack', 'deoxysdefense',
-	'deoxysspeed',
+	'deoxysspeed', 'giratinabug', 'giratinadark', 'giratinadragon',
+	'giratinaelectric', 'giratinafighting', 'giratinafire', 'giratinaflying', 'giratinaghost',
+	'giratinagrass', 'giratinaground', 'giratinaice', 'giratinapoison', 'giratinapsychic',
+	'giratinarock', 'giratinasteel', 'giratinawater',
+];
+
+const ALLOWED_UNUSUAL_SPECIES = [
+	'screamtail', 'wibblypuff', 'megamarill', 'giratinabug', 'giratinadark', 'giratinadragon',
+	'giratinaelectric', 'giratinafighting', 'giratinafire', 'giratinaflying', 'giratinaghost',
+	'giratinagrass', 'giratinaground', 'giratinaice', 'giratinapoison', 'giratinapsychic',
+	'giratinarock', 'giratinasteel', 'giratinawater',
 ];
 
 class TypeFrequency {
@@ -997,7 +1007,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			const baseSpecies = this.sample(baseSpeciesPool);
 			const species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
 			checkSpecies = this.dex.species.get(species);
-			if (!species.exists && checkSpecies.id !== 'screamtail' && checkSpecies.id !== 'megamarill' && checkSpecies.id !== 'wibblypuff') continue;
+			if (!species.exists && !ALLOWED_UNUSUAL_SPECIES.includes(checkSpecies.id)) continue;
 			
 			skipReroll = false;
 
@@ -1011,11 +1021,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			const limitFactor = Math.round(this.maxTeamSize / 6) || 1;
 			
 			// If we get a rare or very rare Pokemon make a roll to determine if we keep it
-			if (RARE_POKEMON.includes(checkSpecies)) {
+			if (RARE_POKEMON.includes(checkSpecies.id)) {
 				if (!this.sample([true, false, false, false])) {
 					continue;
 				}
-			} else if (VERY_RARE_POKEMON.includes(checkSpecies)) {
+			} else if (VERY_RARE_POKEMON.includes(checkSpecies.id)) {
 				if (!this.sample([true, false, false, false, false, false, false, false])) {
 					continue;
 				}
