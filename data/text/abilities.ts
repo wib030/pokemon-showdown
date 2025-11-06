@@ -1093,7 +1093,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 			shortDesc: "If this Pokemon is an Arceus, its type changes to match its held Plate.",
 		},
 		gen4: {
-			shortDesc: "If this Pokemon is an Arceus, its type changes to match its held Plate. This Pokemon cannot lose its held item due to another Pokemon's attack.",
+			shortDesc: "If this Pokemon is an Arceus, its type changes to match its held Plate.",
+			desc: "If this Pokemon is an Arceus, its type changes to match its held Plate. This Pokemon cannot lose its held item due to another Pokemon's attack.",
 		},
 	},
 	mummy: {
@@ -2444,6 +2445,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	antitype: {
 		name: "Antitype",
-		shortDesc: "If this Pokemon is Giratina, its type changes depending on its held Plate. This Pokemon cannot lose its held item due to another Pokemon's attack.",
+		shortDesc: "If this Pokemon is Giratina, its type changes depending on its held Plate.",
+		desc: "If this Pokemon is Giratina, its type changes depending on its held Plate. This Pokemon cannot lose its held item due to another Pokemon's attack.",
 	},
 };
