@@ -34679,6 +34679,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			gravity: ["4L1"],
 			magiccoat: ["4L1"],
 			tailwind: ["4L1"],
+			judgment: ["4L56"],
 		},
 	},
 	cresselia: {
