@@ -513,7 +513,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	mewtwo: {
 		inherit: true,
-		baseStats: {hp: 106, atk: 110, def: 90, spa: 204, spd: 90, spe: 130},
+		baseStats: {hp: 106, atk: 120, def: 80, spa: 184, spd: 100, spe: 130},
 	},
 	poochyena: {
 		inherit: true,
