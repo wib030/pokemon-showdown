@@ -10274,13 +10274,657 @@
         ]
     },
     "claydol": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
-                "movepool": ["earthquake", "explosion", "icebeam", "psychic", "rapidspin", "stealthrock", "toxic"],
-                "abilities": ["Levitate", "Memory"],
-				"inclination": "Mixed"
+                "role": "Bulky Setup",
+                "movepool": ["earthpower", "psyshock", "calmmind", "rest"],
+                "abilities": ["Levitate"],
+				"evs": [208, 0, 252, 44, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthpower", "psyshock", "calmmind", "rest"],
+                "abilities": ["Levitate"],
+				"evs": [208, 0, 236, 44, 0, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthpower", "icebeam", "substitute", "calmmind"],
+                "abilities": ["Levitate"],
+				"evs": [208, 0, 252, 44, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthpower", "icebeam", "substitute", "calmmind"],
+                "abilities": ["Levitate"],
+				"evs": [208, 0, 236, 44, 0, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthpower", "icebeam", "reflect", "calmmind"],
+                "abilities": ["Levitate"],
+				"evs": [208, 0, 252, 44, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthpower", "icebeam", "reflect", "calmmind"],
+                "abilities": ["Levitate"],
+				"evs": [208, 0, 236, 44, 0, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthpower", "icebeam", "rapidspin", "calmmind"],
+                "abilities": ["Levitate"],
+				"evs": [208, 0, 252, 44, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthpower", "icebeam", "rapidspin", "calmmind"],
+                "abilities": ["Levitate"],
+				"evs": [208, 0, 236, 44, 0, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["icebeam", "chargebeam", "substitute", "cosmicpower"],
+                "abilities": ["Levitate"],
+				"evs": [208, 0, 252, 44, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["icebeam", "chargebeam", "substitute", "cosmicpower"],
+                "abilities": ["Levitate"],
+				"evs": [208, 0, 236, 44, 0, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthpower", "icebeam", "rapidspin", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [252, 0, 48, 188, 0, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["toxic", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["toxic", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 244, 0, 16, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["toxic", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 240, 0, 0, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["toxic", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 40, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["toxic", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["toxic", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 60, 0, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["skillswap", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Memory"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["skillswap", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Memory"],
+				"evs": [248, 0, 244, 0, 16, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["skillswap", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Memory"],
+				"evs": [248, 0, 240, 0, 0, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["skillswap", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Memory"],
+				"evs": [248, 0, 200, 0, 40, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["skillswap", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Memory"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["skillswap", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Memory"],
+				"evs": [248, 0, 60, 0, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["reflect", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["reflect", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 244, 0, 16, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["reflect", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 240, 0, 0, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["reflect", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 40, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["reflect", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["reflect", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 60, 0, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["lightscreen", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["lightscreen", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 244, 0, 16, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["lightscreen", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 240, 0, 0, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["lightscreen", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 40, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["lightscreen", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["lightscreen", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 60, 0, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["psychic", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["psychic", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 244, 0, 16, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["psychic", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 240, 0, 0, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["psychic", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 40, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["psychic", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["psychic", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 60, 0, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["psyshock", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["psyshock", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 244, 0, 16, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["psyshock", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 240, 0, 0, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["psyshock", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 40, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["psyshock", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["psyshock", "rapidspin", "stealthrock", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 60, 0, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["rapidspin", "reflect", "lightscreen", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["rapidspin", "reflect", "lightscreen", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 244, 0, 16, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["rapidspin", "reflect", "lightscreen", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 240, 0, 0, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["rapidspin", "reflect", "lightscreen", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 40, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["rapidspin", "reflect", "lightscreen", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["rapidspin", "reflect", "lightscreen", "teleport"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 60, 0, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["explosion", "reflect", "lightscreen", "rest"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["explosion", "reflect", "lightscreen", "rest"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 244, 0, 16, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["explosion", "reflect", "lightscreen", "rest"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 240, 0, 0, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["explosion", "reflect", "lightscreen", "rest"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 40, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["explosion", "reflect", "lightscreen", "rest"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["explosion", "reflect", "lightscreen", "rest"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 60, 0, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["explosion", "reflect", "lightscreen", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 8, 0, 252, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["explosion", "reflect", "lightscreen", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 244, 0, 16, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["explosion", "reflect", "lightscreen", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 240, 0, 0, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["explosion", "reflect", "lightscreen", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 40, 20],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["explosion", "reflect", "lightscreen", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 200, 0, 60, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["explosion", "reflect", "lightscreen", "stealthrock"],
+                "abilities": ["Levitate"],
+				"evs": [248, 0, 60, 0, 200, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Careful",
+				"inclination": "Support"
             }
         ]
     },
