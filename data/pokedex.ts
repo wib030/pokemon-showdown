@@ -8682,8 +8682,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Black",
 		eggGroups: ["Undiscovered"],
 		tags: ["Restricted Legendary"],
-		otherFormes: ["Giratina-Origin", "Giratina-AntiBug", "Giratina-AntiDark", "Giratina-AntiDragon", "Giratina-AntiElectric", "Giratina-AntiFighting", "Giratina-AntiFire", "Giratina-AntiFlying", "Giratina-AntiGhost", "Giratina-AntiGrass", "Giratina-AntiGround", "Giratina-AntiIce", "Giratina-AntiPoison", "Giratina-AntiPsychic", "Giratina-AntiRock", "Giratina-AntiSteel", "Giratina-AntiWater"],
-		formeOrder: ["Giratina", "Giratina-Origin", "Giratina-AntiBug", "Giratina-AntiDark", "Giratina-AntiDragon", "Giratina-AntiElectric", "Giratina-AntiFighting", "Giratina-AntiFire", "Giratina-AntiFlying", "Giratina-AntiGhost", "Giratina-AntiGrass", "Giratina-AntiGround", "Giratina-AntiIce", "Giratina-AntiPoison", "Giratina-AntiPsychic", "Giratina-AntiRock", "Giratina-AntiSteel", "Giratina-AntiWater"],
+		otherFormes: ["Giratina-Origin", "Giratina-Anti-Bug", "Giratina-Anti-Dark", "Giratina-Anti-Dragon", "Giratina-Anti-Electric", "Giratina-Anti-Fighting", "Giratina-Anti-Fire", "Giratina-Anti-Flying", "Giratina-Anti-Ghost", "Giratina-Anti-Grass", "Giratina-Anti-Ground", "Giratina-Anti-Ice", "Giratina-Anti-Poison", "Giratina-Anti-Psychic", "Giratina-Anti-Rock", "Giratina-Anti-Steel", "Giratina-Anti-Water"],
+		formeOrder: ["Giratina", "Giratina-Origin", "Giratina-Anti-Bug", "Giratina-Anti-Dark", "Giratina-Anti-Dragon", "Giratina-Anti-Electric", "Giratina-Anti-Fighting", "Giratina-Anti-Fire", "Giratina-Anti-Flying", "Giratina-Anti-Ghost", "Giratina-Anti-Grass", "Giratina-Anti-Ground", "Giratina-Anti-Ice", "Giratina-Anti-Poison", "Giratina-Anti-Psychic", "Giratina-Anti-Rock", "Giratina-Anti-Steel", "Giratina-Anti-Water"],
 	},
 	giratinaorigin: {
 		num: 487,
@@ -8701,11 +8701,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Griseous Core",
 		changesFrom: "Giratina",
 	},
-	giratinabug: {
+	giratinaantibug: {
 		num: 487,
-		name: "Giratina-AntiBug",
+		name: "Giratina-Anti-Bug",
 		baseSpecies: "Giratina",
-		forme: "AntiBug",
+		forme: "Anti-Bug",
 		types: ['Flying', 'Steel'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },
@@ -8717,11 +8717,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Insect Plate",
 		changesFrom: "Giratina",
 	},
-	giratinadark: {
+	giratinaantidark: {
 		num: 487,
-		name: "Giratina-AntiDark",
+		name: "Giratina-Anti-Dark",
 		baseSpecies: "Giratina",
-		forme: "AntiDark",
+		forme: "Anti-Dark",
 		types: ['Fighting', 'Dark'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },
@@ -8733,11 +8733,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Dread Plate",
 		changesFrom: "Giratina",
 	},
-	giratinadragon: {
+	giratinaantidragon: {
 		num: 487,
-		name: "Giratina-AntiDragon",
+		name: "Giratina-Anti-Dragon",
 		baseSpecies: "Giratina",
-		forme: "AntiDragon",
+		forme: "Anti-Dragon",
 		types: ['Ice', 'Steel'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },
@@ -8749,11 +8749,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Draco Plate",
 		changesFrom: "Giratina",
 	},
-	giratinaelectric: {
+	giratinaantielectric: {
 		num: 487,
-		name: "Giratina-AntiElectric",
+		name: "Giratina-Anti-Electric",
 		baseSpecies: "Giratina",
-		forme: "AntiElectric",
+		forme: "Anti-Electric",
 		types: ['Ground', 'Dragon'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },
@@ -8765,11 +8765,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Zap Plate",
 		changesFrom: "Giratina",
 	},
-	giratinafighting: {
+	giratinaantifighting: {
 		num: 487,
-		name: "Giratina-AntiFighting",
+		name: "Giratina-Anti-Fighting",
 		baseSpecies: "Giratina",
-		forme: "AntiFighting",
+		forme: "Anti-Fighting",
 		types: ['Flying', 'Ghost'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },
@@ -8781,11 +8781,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Fist Plate",
 		changesFrom: "Giratina",
 	},
-	giratinafire: {
+	giratinaantifire: {
 		num: 487,
-		name: "Giratina-AntiFire",
+		name: "Giratina-Anti-Fire",
 		baseSpecies: "Giratina",
-		forme: "AntiFire",
+		forme: "Anti-Fire",
 		types: ['Water', 'Dragon'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },
@@ -8797,11 +8797,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Flame Plate",
 		changesFrom: "Giratina",
 	},
-	giratinaflying: {
+	giratinaantiflying: {
 		num: 487,
-		name: "Giratina-AntiFlying",
+		name: "Giratina-Anti-Flying",
 		baseSpecies: "Giratina",
-		forme: "AntiFlying",
+		forme: "Anti-Flying",
 		types: ['Electric', 'Steel'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },
@@ -8813,11 +8813,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Sky Plate",
 		changesFrom: "Giratina",
 	},
-	giratinaghost: {
+	giratinaantighost: {
 		num: 487,
-		name: "Giratina-AntiGhost",
+		name: "Giratina-Anti-Ghost",
 		baseSpecies: "Giratina",
-		forme: "AntiGhost",
+		forme: "Anti-Ghost",
 		types: ['Ghost', 'Normal'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },
@@ -8829,11 +8829,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Spooky Plate",
 		changesFrom: "Giratina",
 	},
-	giratinagrass: {
+	giratinaantigrass: {
 		num: 487,
-		name: "Giratina-AntiGrass",
+		name: "Giratina-Anti-Grass",
 		baseSpecies: "Giratina",
-		forme: "AntiGrass",
+		forme: "Anti-Grass",
 		types: ['Bug', 'Steel'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },
@@ -8845,11 +8845,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Meadow Plate",
 		changesFrom: "Giratina",
 	},
-	giratinaground: {
+	giratinaantiground: {
 		num: 487,
-		name: "Giratina-AntiGround",
+		name: "Giratina-Anti-Ground",
 		baseSpecies: "Giratina",
-		forme: "AntiGround",
+		forme: "Anti-Ground",
 		types: ['Water', 'Flying'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },
@@ -8861,11 +8861,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Earth Plate",
 		changesFrom: "Giratina",
 	},
-	giratinaice: {
+	giratinaantiice: {
 		num: 487,
-		name: "Giratina-AntiIce",
+		name: "Giratina-Anti-Ice",
 		baseSpecies: "Giratina",
-		forme: "AntiIce",
+		forme: "Anti-Ice",
 		types: ['Fighting', 'Steel'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },
@@ -8877,11 +8877,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Icicle Plate",
 		changesFrom: "Giratina",
 	},
-	giratinapoison: {
+	giratinaantipoison: {
 		num: 487,
-		name: "Giratina-AntiPoison",
+		name: "Giratina-Anti-Poison",
 		baseSpecies: "Giratina",
-		forme: "AntiPoison",
+		forme: "Anti-Poison",
 		types: ['Psychic', 'Steel'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },
@@ -8893,11 +8893,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Toxic Plate",
 		changesFrom: "Giratina",
 	},
-	giratinapsychic: {
+	giratinaantipsychic: {
 		num: 487,
-		name: "Giratina-AntiPsychic",
+		name: "Giratina-Anti-Psychic",
 		baseSpecies: "Giratina",
-		forme: "AntiPsychic",
+		forme: "Anti-Psychic",
 		types: ['Ghost', 'Dark'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },
@@ -8909,11 +8909,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Mind Plate",
 		changesFrom: "Giratina",
 	},
-	giratinarock: {
+	giratinaantirock: {
 		num: 487,
-		name: "Giratina-AntiRock",
+		name: "Giratina-Anti-Rock",
 		baseSpecies: "Giratina",
-		forme: "AntiRock",
+		forme: "Anti-Rock",
 		types: ['Fighting', 'Ground'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },
@@ -8925,11 +8925,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Stone Plate",
 		changesFrom: "Giratina",
 	},
-	giratinasteel: {
+	giratinaantisteel: {
 		num: 487,
-		name: "Giratina-AntiSteel",
+		name: "Giratina-Anti-Steel",
 		baseSpecies: "Giratina",
-		forme: "AntiSteel",
+		forme: "Anti-Steel",
 		types: ['Fire', 'Water'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },
@@ -8941,11 +8941,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Iron Plate",
 		changesFrom: "Giratina",
 	},
-	giratinawater: {
+	giratinaantiwater: {
 		num: 487,
-		name: "Giratina-AntiWater",
+		name: "Giratina-Anti-Water",
 		baseSpecies: "Giratina",
-		forme: "AntiWater",
+		forme: "Anti-Water",
 		types: ['Electric', 'Dragon'],
 		gender: "N",
 		baseStats: { hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90 },

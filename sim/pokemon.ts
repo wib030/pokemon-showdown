@@ -1326,7 +1326,7 @@ export class Pokemon {
 		if (this.battle.gen === 4) {
 			if (this.species.num === 487) {
 				const item = this.getItem();
-				const targetForme = (item?.onPlate ? 'Giratina-' + item.onPlate : 'Giratina');
+				const targetForme = (item?.onPlate ? 'Giratina-Anti-' + item.onPlate : 'Giratina');
 				
 				// Giratina formes
 				if (this.species.name === 'Giratina' && this.item === 'griseousorb') {

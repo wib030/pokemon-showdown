@@ -6236,7 +6236,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onSwitchIn(pokemon) {
 			if (pokemon.ability === 'antitype') {
 				const item = pokemon.getItem();
-				const targetForme = (item?.onPlate ? 'Giratina-Anti' + item.onPlate : 'Giratina');
+				const targetForme = (item?.onPlate ? 'Giratina-Anti-' + item.onPlate : 'Giratina');
 				if (targetForme !== 'Giratina') {
 					if (pokemon.species.name !== targetForme) {
 						pokemon.formeChange(targetForme);

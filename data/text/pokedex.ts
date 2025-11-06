@@ -1865,53 +1865,53 @@ export const PokedexText: { [id: IDEntry]: PokedexText } = {
 	giratinaorigin: {
 		name: "Giratina-Origin",
 	},
-	giratinabug: {
-		name: "Giratina-AntiBug",
+	giratinaantibug: {
+		name: "Giratina-Anti-Bug",
 	},
-	giratinadark: {
-		name: "Giratina-AntiDark",
+	giratinaantidark: {
+		name: "Giratina-Anti-Dark",
 	},
-	giratinadragon: {
-		name: "Giratina-AntiDragon",
+	giratinaantidragon: {
+		name: "Giratina-Anti-Dragon",
 	},
-	giratinaelectric: {
-		name: "Giratina-AntiElectric",
+	giratinaantielectric: {
+		name: "Giratina-Anti-Electric",
 	},
-	giratinafighting: {
-		name: "Giratina-AntiFighting",
+	giratinaantifighting: {
+		name: "Giratina-Anti-Fighting",
 	},
-	giratinafire: {
-		name: "Giratina-AntiFire",
+	giratinaantifire: {
+		name: "Giratina-Anti-Fire",
 	},
-	giratinaflying: {
-		name: "Giratina-AntiFlying",
+	giratinaantiflying: {
+		name: "Giratina-Anti-Flying",
 	},
-	giratinaghost: {
-		name: "Giratina-AntiGhost",
+	giratinaantighost: {
+		name: "Giratina-Anti-Ghost",
 	},
-	giratinagrass: {
-		name: "Giratina-AntiGrass",
+	giratinaantigrass: {
+		name: "Giratina-Anti-Grass",
 	},
-	giratinaground: {
-		name: "Giratina-AntiGround",
+	giratinaantiground: {
+		name: "Giratina-Anti-Ground",
 	},
-	giratinaice: {
-		name: "Giratina-AntiIce",
+	giratinaantiice: {
+		name: "Giratina-Anti-Ice",
 	},
-	giratinapoison: {
-		name: "Giratina-AntiPoison",
+	giratinaantipoison: {
+		name: "Giratina-Anti-Poison",
 	},
-	giratinapsychic: {
-		name: "Giratina-AntiPsychic",
+	giratinaantipsychic: {
+		name: "Giratina-Anti-Psychic",
 	},
-	giratinarock: {
-		name: "Giratina-AntiRock",
+	giratinaantirock: {
+		name: "Giratina-Anti-Rock",
 	},
-	giratinasteel: {
-		name: "Giratina-AntiSteel",
+	giratinaantisteel: {
+		name: "Giratina-Anti-Steel",
 	},
-	giratinawater: {
-		name: "Giratina-AntiWater",
+	giratinaantiwater: {
+		name: "Giratina-Anti-Water",
 	},
 	cresselia: {
 		name: "Cresselia",

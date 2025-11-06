@@ -116,17 +116,17 @@ const VERY_RARE_POKEMON = [
 	'arceuselectric', 'arceusfighting', 'arceusfire', 'arceusflying', 'arceusghost',
 	'arceusgrass', 'arceusground', 'arceusice', 'arceuspoison', 'arceuspsychic',
 	'arceusrock', 'arceussteel', 'arceuswater', 'deoxys', 'deoxysattack', 'deoxysdefense',
-	'deoxysspeed', 'giratinabug', 'giratinadark', 'giratinadragon',
-	'giratinaelectric', 'giratinafighting', 'giratinafire', 'giratinaflying', 'giratinaghost',
-	'giratinagrass', 'giratinaground', 'giratinaice', 'giratinapoison', 'giratinapsychic',
-	'giratinarock', 'giratinasteel', 'giratinawater',
+	'deoxysspeed', 'giratinaantibug', 'giratinaantidark', 'giratinaantidragon',
+	'giratinaantielectric', 'giratinaantifighting', 'giratinaantifire', 'giratinaantiflying',
+	'giratinaantighost', 'giratinaantigrass', 'giratinaantiground', 'giratinaantiice', 'giratinaantipoison',
+	'giratinaantipsychic', 'giratinaantirock', 'giratinaantisteel', 'giratinaantiwater',
 ];
 
 const ALLOWED_UNUSUAL_SPECIES = [
-	'screamtail', 'wibblypuff', 'megamarill', 'giratinabug', 'giratinadark', 'giratinadragon',
-	'giratinaelectric', 'giratinafighting', 'giratinafire', 'giratinaflying', 'giratinaghost',
-	'giratinagrass', 'giratinaground', 'giratinaice', 'giratinapoison', 'giratinapsychic',
-	'giratinarock', 'giratinasteel', 'giratinawater',
+	'screamtail', 'wibblypuff', 'megamarill', 'giratinaantibug', 'giratinaantidark', 'giratinaantidragon',
+	'giratinaantielectric', 'giratinaantifighting', 'giratinaantifire', 'giratinaantiflying',
+	'giratinaantighost', 'giratinaantigrass', 'giratinaantiground', 'giratinaantiice', 'giratinaantipoison',
+	'giratinaantipsychic', 'giratinaantirock', 'giratinaantisteel', 'giratinaantiwater',
 ];
 
 class TypeFrequency {
