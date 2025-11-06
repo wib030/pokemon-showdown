@@ -882,6 +882,13 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 			return [type1, type2];
 		},
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (pokemon.activeTurns) {
+				this.boost({ spe: 1 });
+			}
+		},
 	},
 	silvally: {
 		name: 'Silvally',
