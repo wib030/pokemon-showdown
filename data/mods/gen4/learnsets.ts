@@ -8082,6 +8082,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			painsplit: ["4L45"],
 			headsmash: ["4L53"],
 			lowkick: ["4L1"],
+			rockblast: ["4L41"],
 		},
 	},
 	tyrogue: {

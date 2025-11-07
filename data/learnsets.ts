@@ -12224,6 +12224,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			painsplit: ["4L45"],
 			headsmash: ["4L53"],
 			lowkick: ["4L1"],
+			rockblast: ["4L41"],
 		},
 		eventData: [
 			{generation: 3, level: 44, moves: ["sing", "earthquake", "swordsdance", "rockslide"]},
