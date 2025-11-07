@@ -999,12 +999,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let rerollAttemptsTotal = 0;
 		let skipReroll = false;
 		
-		let randomTeamSlotsFirst = [0, 1, 2];
-		let randomTeamSlotsSecond = [3, 4, 5];
-		
-		let leadSlot = this.sampleNoReplace(randomTeamSlotsFirst);
-		let removalSlot = this.sampleNoReplace(randomTeamSlotsSecond);
-		let hazardTankSlot = this.sampleNoReplace(randomTeamSlotsSecond);
+		let leadSlot = 0;
+		let removalSlot = 1;
+		let hazardTankSlot = 2;
 
 		const pokemonList = Object.keys(this.randomSets);
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
@@ -1479,6 +1476,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			}
 			throw new Error(`${returnMessage} Reroll Attempts: ${rerollAttemptsTotal}`);
 		} */
+		// Shuffle the team before it is returned
+		this.prng.shuffle(pokemon);
 		return pokemon;
 	}
 }
