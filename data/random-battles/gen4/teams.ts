@@ -1082,9 +1082,17 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			}
 			
 			if (skip) {
+				skip = false;
 				rerollAttempts++;
 				rerollAttemptsTotal++;
-				continue;
+				if (rerollAttempts > maxRerolls) {
+					skipReroll = true;
+				} else {
+					skipReroll = false;
+				}
+				if (!skipReroll) {
+					continue;
+				}
 			}
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum, ensureLead, ensureRemoval, ensureHazardTank);
@@ -1174,17 +1182,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (!isMonotype && !this.forceMonotype) {
 				if (pokemon.length > 0)
 				{
-					// If we have more than or equal to two weaknesses to a single type, then ignore double weak rerolling and prioritize resisting it
-					if (Array.isArray(WeaknessListFull) && WeaknessListFull.length) {
-						for (const Weakness of WeaknessListFull) {
-							if (Weakness.frequency >= 2 && ResistList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency) && DoubleResistList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency) && ImmunityList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency)) {
-								skipDoubleWeaknessCheck = true;
-							} else {
-								skipDoubleWeaknessCheck = false;
-							}
-						}
-					}
-					
 					if (Array.isArray(DoubleWeaknessListFull) && DoubleWeaknessListFull.length && !skipDoubleWeaknessCheck) {
 						
 						DoubleWeaknessList = DoubleWeaknessListFull;
@@ -1193,31 +1190,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							DoubleWeaknessList = this.dex.TypeMatchupListShuffleAndConcat(DoubleWeaknessList);
 							for (const DoubleWeakness of DoubleWeaknessList)
 							{
-								if (rerollAttempts > maxRerolls) {
-									if (DoubleWeakness.frequency > 0 && ResistList?.some(y => y.type === DoubleWeakness.type && y.frequency < DoubleWeakness.frequency)) {
-										if (this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) > -1) {
-											skip = true;
-										} else {
-											skip = false;
-											skipWeaknessCheck = true;
-											break;
-										}
-									}
-								} else {
-									if (IMMUNE_TYPES.includes(DoubleWeakness.type)) {
-										if (DoubleWeakness.frequency > 0 && ImmunityList?.some(y => y.type === DoubleWeakness.type && y.frequency < DoubleWeakness.frequency)) {
-											if (this.dex.precheckImmunity(DoubleWeakness.type, checkTypes, set.ability)) {
-												skip = true;
-											} else {
-												skip = false;
-												skipWeaknessCheck = true;
-												break;
-											}
-										}
-									}
-
-									if (DoubleWeakness.frequency > 0 && DoubleResistList?.some(y => y.type === DoubleWeakness.type && y.frequency < DoubleWeakness.frequency)) {
-										if (this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) > -2) {
+								if (IMMUNE_TYPES.includes(DoubleWeakness.type)) {
+									if (DoubleWeakness.frequency > 0 && ImmunityList?.some(y => y.type === DoubleWeakness.type && y.frequency < DoubleWeakness.frequency)) {
+										if (this.dex.precheckImmunity(DoubleWeakness.type, checkTypes, set.ability)) {
 											skip = true;
 										} else {
 											skip = false;
@@ -1226,12 +1201,29 @@ export class RandomGen4Teams extends RandomGen5Teams {
 										}
 									}
 								}
+
+								if (DoubleWeakness.frequency > 0 && DoubleResistList?.some(y => y.type === DoubleWeakness.type && y.frequency < DoubleWeakness.frequency)) {
+									if (this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) > -2) {
+										skip = true;
+									} else {
+										skip = false;
+										skipWeaknessCheck = true;
+										break;
+									}
+								}
 							}
 							if (skip) {
 								skip = false;
 								rerollAttempts++;
 								rerollAttemptsTotal++;
-								continue;
+								if (rerollAttempts > maxRerolls) {
+									skipReroll = true;
+								} else {
+									skipReroll = false;
+								}
+								if (!skipReroll) {
+									continue;
+								}
 							}
 						}
 					}
@@ -1277,7 +1269,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								skip = false;
 								rerollAttempts++;
 								rerollAttemptsTotal++;
-								continue;
+								if (rerollAttempts > maxRerolls) {
+									skipReroll = true;
+								} else {
+									skipReroll = false;
+								}
+								if (!skipReroll) {
+									continue;
+								}
 							}
 						}
 					}
@@ -1291,6 +1290,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				if (skip) {
+					skip = false;
 					rerollAttempts++;
 					rerollAttemptsTotal++;
 					if (rerollAttempts > maxRerolls) {
@@ -1323,6 +1323,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				if (skip) {
+					skip = false;
 					rerollAttempts++;
 					rerollAttemptsTotal++;
 					if (rerollAttempts > maxRerolls) {
