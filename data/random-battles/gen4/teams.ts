@@ -1177,8 +1177,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 									if (DoubleWeakness.frequency > 0 && ResistList?.some(y => y.type === DoubleWeakness.type && y.frequency < DoubleWeakness.frequency)) {
 										if (this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) > -1) {
 											skip = true;
-											break;
 										} else {
+											skip = false;
 											skipWeaknessCheck = true;
 											break;
 										}
@@ -1188,8 +1188,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 										if (DoubleWeakness.frequency > 0 && ImmunityList?.some(y => y.type === DoubleWeakness.type && y.frequency < DoubleWeakness.frequency)) {
 											if (this.dex.precheckImmunity(DoubleWeakness.type, checkTypes, set.ability) && this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) > -2) {
 												skip = true;
-												break;
 											} else {
+												skip = false;
 												skipWeaknessCheck = true;
 												break;
 											}
@@ -1199,8 +1199,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 									if (DoubleWeakness.frequency > 0 && DoubleResistList?.some(y => y.type === DoubleWeakness.type && y.frequency < DoubleWeakness.frequency)) {
 										if (this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) > -2) {
 											skip = true;
-											break;
 										} else {
+											skip = false;
 											skipWeaknessCheck = true;
 											break;
 										}
@@ -1227,8 +1227,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 									if (Weakness.frequency > 0 && ImmunityList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency)) {
 										if (this.dex.precheckImmunity(Weakness.type, checkTypes, set.ability)) {
 											skip = true;
-											break;
 										} else {
+											skip = false;
 											break;
 										}
 									}
@@ -1237,8 +1237,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								if (Weakness.frequency > 0 && DoubleResistList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency)) {
 									if (this.dex.precheckEffectiveness(Weakness.type, checkTypes, set.ability) > -2) {
 										skip = true;
-										break;
 									} else {
+										skip = false;
 										break;
 									}
 								}
@@ -1246,8 +1246,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								if (Weakness.frequency > 0 && ResistList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency)) {
 									if (this.dex.precheckEffectiveness(Weakness.type, checkTypes, set.ability) > -1) {
 										skip = true;
-										break;
 									} else {
+										skip = false;
 										break;
 									}
 								}
@@ -1255,14 +1255,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							if (skip) {
 								rerollAttempts++;
 								rerollAttemptsTotal++;
-								if (rerollAttempts > maxRerolls) {
-									skipReroll = true;
-								} else {
-									skipReroll = false;
-								}
-								if (!skipReroll) {
-									continue;
-								}
+								continue;
 							}
 						}
 					}
@@ -1278,14 +1271,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (skip) {
 					rerollAttempts++;
 					rerollAttemptsTotal++;
-					if (rerollAttempts > maxRerolls) {
-						skipReroll = true;
-					} else {
-						skipReroll = false;
-					}
-					if (!skipReroll) {
-						continue;
-					}
+					continue;
 				}
 				
 				// Limit two weak to any type, and one double weak to a single type
