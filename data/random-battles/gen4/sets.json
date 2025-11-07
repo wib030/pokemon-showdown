@@ -3210,13 +3210,76 @@
         ]
     },
     "marowak": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Wallbreaker",
-                "movepool": ["doubleedge", "earthquake", "firepunch", "stealthrock", "stoneedge", "swordsdance"],
+                "role": "Bulky Attacker",
+                "movepool": ["bonerush", "knockoff", "rockblast", "stealthrock"],
                 "abilities": ["Skill Link"],
-                "preferredTypes": ["Rock"],
+                "evs": [248, 160, 0, 0, 0, 100],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Thick Club",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["bonerush", "knockoff", "rockblast", "swordsdance"],
+                "abilities": ["Skill Link"],
+                "evs": [248, 160, 0, 0, 0, 100],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Thick Club",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["shadowclaw", "counter", "curse", "stealthrock"],
+                "abilities": ["Ghostly"],
+                "evs": [248, 184, 4, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["shadowclaw", "counter", "curse", "stealthrock"],
+                "abilities": ["Ghostly"],
+                "evs": [248, 184, 4, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["bonerush", "rockblast", "substitute", "swordsdance"],
+                "abilities": ["Skill Link"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["bonerush", "knockoff", "dragontail", "stealthrock"],
+                "abilities": ["Skill Link"],
+                "evs": [224, 20, 16, 0, 248, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["bonerush", "knockoff", "rockblast", "swordsdance"],
+                "abilities": ["Skill Link"],
+                "evs": [224, 20, 16, 0, 248, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
 				"inclination": "Physical"
             }
         ]
@@ -12159,24 +12222,226 @@
         ]
     },
     "regirock": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Attacker",
-                "movepool": ["earthquake", "explosion", "rest", "stealthrock", "stoneedge", "thunderwave", "toxic"],
+                "role": "Hazards Tank",
+                "movepool": ["rockslide", "earthquake", "curse", "stealthrock"],
                 "abilities": ["Rough Skin"],
+				"evs": [208, 48, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
 				"inclination": "Physical"
             },
-            {
-                "role": "Bulky Support",
-                "movepool": ["curse", "earthquake", "rest", "sleeptalk", "stoneedge"],
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "earthquake", "curse", "toxic"],
                 "abilities": ["Rough Skin"],
+				"evs": [208, 48, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
 				"inclination": "Physical"
             },
-            {
-                "role": "Staller",
-                "movepool": ["earthquake", "protect", "rockslide", "toxic"],
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "earthquake", "curse", "rest"],
                 "abilities": ["Rough Skin"],
+				"evs": [208, 48, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "earthquake", "drainpunch", "curse"],
+                "abilities": ["Rough Skin"],
+				"evs": [208, 48, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "dig", "curse", "toxic"],
+                "abilities": ["Rough Skin"],
+				"evs": [208, 48, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "earthquake", "icepunch", "curse"],
+                "abilities": ["Rough Skin"],
+				"evs": [208, 48, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "earthquake", "firepunch", "curse"],
+                "abilities": ["Rough Skin"],
+				"evs": [208, 48, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rockslide", "earthquake", "curse", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "earthquake", "curse", "toxic"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "earthquake", "curse", "rest"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "earthquake", "drainpunch", "curse"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "dig", "curse", "toxic"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "earthquake", "icepunch", "curse"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "earthquake", "firepunch", "curse"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["rockslide", "earthquake", "curse", "stealthrock"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "earthquake", "curse", "toxic"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "earthquake", "curse", "rest"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "earthquake", "drainpunch", "curse"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "dig", "curse", "toxic"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "earthquake", "icepunch", "curse"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["rockslide", "earthquake", "firepunch", "curse"],
+                "abilities": ["Rough Skin"],
+				"evs": [252, 4, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["stoneedge", "earthquake", "fling", "rockpolish"],
+                "abilities": ["Rough Skin"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Bracer",
+				"nature": "Jolly",
 				"inclination": "Physical"
             }
         ]
@@ -13480,13 +13745,77 @@
         ]
     },
     "bastiodon": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
+                "role": "Hazards Tank",
+                "movepool": ["metalburst", "stealthrock", "psychoshift", "slackoff"],
+                "abilities": ["Marvel Scale"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Flame Orb",
+				"nature": "Sassy",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["metalburst", "psyshieldbash", "stealthrock", "slackoff"],
+                "abilities": ["Marvel Scale", "Sturdy"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Sassy",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["psyshieldbash", "toxic", "stealthrock", "slackoff"],
+                "abilities": ["Marvel Scale", "Sturdy"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["metalburst", "roar", "stealthrock", "slackoff"],
+                "abilities": ["Marvel Scale", "Sturdy"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Sassy",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["psyshieldbash", "roar", "stealthrock", "slackoff"],
+                "abilities": ["Marvel Scale", "Sturdy"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
                 "role": "Bulky Support",
-                "movepool": ["metalburst", "protect", "roar", "rockslide", "stealthrock", "toxic"],
-                "abilities": ["Sturdy", "Marvel Scale"],
-				"inclination": "Physical"
+                "movepool": ["psyshieldbash", "roar", "toxic", "slackoff"],
+                "abilities": ["Marvel Scale", "Sturdy"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["psyshieldbash", "metalburst", "toxic", "slackoff"],
+                "abilities": ["Marvel Scale", "Sturdy"],
+				"evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Leftovers",
+				"nature": "Sassy",
+				"inclination": "Support"
             }
         ]
     },
