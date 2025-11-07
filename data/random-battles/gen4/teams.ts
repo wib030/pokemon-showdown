@@ -763,54 +763,59 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let tempSetCount = 0;
 		
 		let leadSetCount = 0;
-		let onlyLeadSets = false;
-		let hasLeadSet = false;
-		for (let set of sets) {
-			if (LEAD_ROLES.includes(set.role)) {
-				hasLeadSet = true;
-				leadSetCount++;
-			}
-			tempSetCount++;
-		}
-		if (leadSetCount === tempSetCount) onlyLeadSets = true;
-		
-		tempSetCount = 0;
-		
 		let removalSetCount = 0;
+		
+		let onlyLeadSets = false;
 		let onlyRemovalSets = false;
+		let onlyLeadAndRemovalSets = false;
+		
+		let hasLeadSet = false;
 		let hasRemovalSet = false;
+		let hasHazardTankSet = false;
+		
 		for (let set of sets) {
 			if (REMOVAL_ROLES.includes(set.role)) {
 				hasRemovalSet = true;
 				removalSetCount++;
 			}
+			else if (LEAD_ROLES.includes(set.role)) {
+				hasLeadSet = true;
+				leadSetCount++;
+			}
+			else if (NON_LEAD_HAZARD_ROLES.includes(set.role)) {
+				hasHazardTankSet = true;
+			}
 			tempSetCount++;
 		}
 		if (removalSetCount === tempSetCount) onlyRemovalSets = true;
-		
-		let hasHazardTankSet = false;
-		for (let set of sets) {
-			if (NON_LEAD_HAZARD_ROLES.includes(set.role)) {
-				hasHazardTankSet = true;
-				break;
-			}
-		}
+		if (leadSetCount === tempSetCount) onlyLeadSets = true;
+		if ((leadSetCount + removalSetCount) === tempSetCount) onlyLeadAndRemovalSets = true;
 		
 		for (const set of sets) {
-			// Enforce Lead if the team does not have one
-			if (ensureLead && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
-			
-			// Prevent Lead if we aren't ensuring lead, and if we don't only have lead sets
-			if (!ensureLead && !onlyLeadSets && LEAD_ROLES.includes(set.role)) continue;
-			
-			// Enforce Removal if the team does not have removal
-			if (ensureRemoval && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
-			
-			// Prevent Removal if we aren't ensuring removal, and if we don't only have removal sets
-			if (!ensureRemoval && !onlyRemovalSets && REMOVAL_ROLES.includes(set.role)) continue;
-			
-			// Enforce Hazards Tank if the team requires one
-			if (ensureHazardTank && hasHazardTankSet && !NON_LEAD_HAZARD_ROLES.includes(set.role)) continue;
+			if (ensureLead)
+			{
+				// Enforce Lead if the team does not have one
+				if (hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
+			}
+			else
+			{
+				// Prevent Lead if we aren't ensuring lead, and if we don't only have lead sets
+				if (!onlyLeadSets && !onlyLeadAndRemovalSets && LEAD_ROLES.includes(set.role)) continue;
+
+				// Enforce Hazards Tank if the team requires one
+				if (ensureHazardTank && hasHazardTankSet && !NON_LEAD_HAZARD_ROLES.includes(set.role)) continue;
+			}
+
+			if (ensureRemoval)
+			{
+				// Enforce Removal if the team does not have removal
+				if (hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
+			}
+			else
+			{
+				// Prevent Removal if we aren't ensuring removal, and if we don't only have removal sets
+				if (!onlyRemovalSets && !onlyLeadAndRemovalSets && REMOVAL_ROLES.includes(set.role)) continue;
+			}
 			
 			possibleSets.push(set);
 		}
