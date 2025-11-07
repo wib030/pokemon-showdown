@@ -1186,7 +1186,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								} else {
 									if (IMMUNE_TYPES.includes(DoubleWeakness.type)) {
 										if (DoubleWeakness.frequency > 0 && ImmunityList?.some(y => y.type === DoubleWeakness.type && y.frequency < DoubleWeakness.frequency)) {
-											if (this.dex.precheckImmunity(DoubleWeakness.type, checkTypes, set.ability) && this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) > -2) {
+											if (this.dex.precheckImmunity(DoubleWeakness.type, checkTypes, set.ability)) {
 												skip = true;
 											} else {
 												skip = false;
