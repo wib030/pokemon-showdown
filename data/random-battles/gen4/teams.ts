@@ -800,13 +800,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			// Enforce Lead if the team does not have one
 			if (ensureLead && hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
 			
-			// Prevent Lead if we aren't ensuring lead, and if we roll true, and if we don't only have lead sets
+			// Prevent Lead if we aren't ensuring lead, and if we don't only have lead sets
 			if (!ensureLead && !onlyLeadSets && LEAD_ROLES.includes(set.role)) continue;
 			
 			// Enforce Removal if the team does not have removal
 			if (ensureRemoval && hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
 			
-			// Prevent Removal if we aren't ensuring removal, and if we roll true, and if we don't only have removal sets
+			// Prevent Removal if we aren't ensuring removal, and if we don't only have removal sets
 			if (!ensureRemoval && !onlyRemovalSets && REMOVAL_ROLES.includes(set.role)) continue;
 			
 			// Enforce Hazards Tank if the team requires one
@@ -1079,14 +1079,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (skip) {
 				rerollAttempts++;
 				rerollAttemptsTotal++;
-				if (rerollAttempts > maxRerolls) {
-					skipReroll = true;
-				} else {
-					skipReroll = false;
-				}
-				if (!skipReroll) {
-					continue;
-				}
+				continue;
 			}
 
 			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum, ensureLead, ensureRemoval, ensureHazardTank);
