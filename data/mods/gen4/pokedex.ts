@@ -921,7 +921,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	solrock: {
 		inherit: true,
-		baseStats: {hp: 120, atk: 95, def: 95, spa: 55, spd: 65, spe: 70},
+		baseStats: {hp: 93, atk: 100, def: 109, spa: 74, spd: 83, spe: 72},
 		abilities: {0: "Drought", 1: "Roche Radius"},
 	},
 	spinda: {
