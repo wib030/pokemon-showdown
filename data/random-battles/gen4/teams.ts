@@ -1445,7 +1445,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			}
 			
 			returnMessage += ' WeaknessListFull: ';
-			let newString = '';
 			for (const Weakness of WeaknessListFull) {
 				newString = ` (Type: ${Weakness.type}, Frequency: ${Weakness.frequency})`;
 				returnMessage += newString;
