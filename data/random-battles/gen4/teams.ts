@@ -1137,6 +1137,26 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					case 'Dread Plate': checkTypes = 'Dark'; break;
 					default: break;
 				}
+			} else if (set.ability === 'Antitype') {
+				switch (set.item) {
+					case 'Fist Plate': checkTypes = ['Flying', 'Ghost']; break;
+					case 'Sky Plate': checkTypes = ['Electric', 'Steel']; break;
+					case 'Toxic Plate': checkTypes = ['Psychic', 'Steel']; break;
+					case 'Earth Plate': checkTypes = ['Water', 'Flying']; break;
+					case 'Stone Plate': checkTypes = ['Fighting', 'Ground']; break;
+					case 'Insect Plate': checkTypes = ['Flying', 'Steel']; break;
+					case 'Spooky Plate': checkTypes = ['Ghost', 'Normal']; break;
+					case 'Iron Plate': checkTypes = ['Fire', 'Water']; break;
+					case 'Flame Plate': checkTypes = ['Water', 'Dragon']; break;
+					case 'Splash Plate': checkTypes = ['Electric', 'Dragon']; break;
+					case 'Meadow Plate': checkTypes = ['Bug', 'Steel']; break;
+					case 'Zap Plate': checkTypes = ['Ground', 'Dragon']; break;
+					case 'Mind Plate': checkTypes = ['Ghost', 'Dark']; break;
+					case 'Icicle Plate': checkTypes = ['Fighting', 'Steel']; break;
+					case 'Draco Plate': checkTypes = ['Ice', 'Steel']; break;
+					case 'Dread Plate': checkTypes = ['Fighting', 'Dark']; break;
+					default: break;
+				}
 			}
 			
 			if (set.ability === 'Forecast') {
