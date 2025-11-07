@@ -19073,7 +19073,7 @@
             },
 			{
                 "role": "Bulky Setup",
-                "movepool": ["earthquake", "rockslide", "substitute", "bulkup"],
+                "movepool": ["earthquake", "stoneedge", "substitute", "bulkup"],
                 "abilities": ["Rivalry"],
 				"evs": [244, 0, 0, 0, 12, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
@@ -19083,7 +19083,7 @@
             },
 			{
                 "role": "Bulky Setup",
-                "movepool": ["earthquake", "rockslide", "substitute", "bulkup"],
+                "movepool": ["earthquake", "stoneedge", "substitute", "bulkup"],
                 "abilities": ["Rivalry"],
 				"evs": [132, 52, 0, 0, 72, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
