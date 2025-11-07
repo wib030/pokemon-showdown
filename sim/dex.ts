@@ -398,7 +398,7 @@ export class ModdedDex {
 	}
 
 	TypeMatchupListShuffleAndConcat(list: TypeFrequency[]) {
-		const max = list.reduce((a, b) => a.frequency > b.frequency ? a : b);
+		const max = list.reduce((a, b) => a.frequency >= b.frequency ? a : b);
 		var i = list.length, j, temp;
 		while(--i > 0) {
 			j = Math.floor(Math.random()*(i+1));
