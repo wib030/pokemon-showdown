@@ -1208,6 +1208,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								}
 							}
 							if (skip) {
+								skip = false;
 								rerollAttempts++;
 								rerollAttemptsTotal++;
 								continue;
@@ -1253,6 +1254,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 								}
 							}
 							if (skip) {
+								skip = false;
 								rerollAttempts++;
 								rerollAttemptsTotal++;
 								continue;
