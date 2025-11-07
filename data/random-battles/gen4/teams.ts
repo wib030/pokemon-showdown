@@ -1189,7 +1189,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							{
 								if (IMMUNE_TYPES.includes(DoubleWeakness.type)) {
 									if (DoubleWeakness.frequency > 0 && ImmunityList?.some(y => y.type === DoubleWeakness.type && y.frequency < DoubleWeakness.frequency)) {
-										if (this.dex.precheckImmunity(DoubleWeakness.type, checkTypes, set.ability)) {
+										if (this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) === -3) {
 											skip = true;
 										} else {
 											skip = false;
@@ -1235,7 +1235,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 							{
 								if (IMMUNE_TYPES.includes(Weakness.type)) {
 									if (Weakness.frequency > 0 && ImmunityList?.some(y => y.type === Weakness.type && y.frequency < Weakness.frequency)) {
-										if (this.dex.precheckImmunity(Weakness.type, checkTypes, set.ability)) {
+										if (this.dex.precheckEffectiveness(Weakness.type, checkTypes, set.ability) === -3) {
 											skip = true;
 										} else {
 											skip = false;
@@ -1409,7 +1409,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				
-				if (!this.dex.precheckImmunity(typeName, checkTypes, set.ability)) {
+				if (this.dex.precheckEffectiveness(typeName, checkTypes, set.ability) === -3) {
 					if (ImmunityList?.some(y => y.type === typeName)) {
 						TempIndex = ImmunityList.findIndex(y => y.type === typeName);
 						ImmunityList[TempIndex].frequency++;

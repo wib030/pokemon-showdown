@@ -352,6 +352,7 @@ export class ModdedDex {
 		let totalTypeMod = 0;
 		if (sourceType === 'Fairy') return 0;
 		if (abilityState.id === 'imposter') return 0;
+		if (!this.precheckImmunity(source, target, targetAbility)) return -3;
 		if (TYPE_ALTERING_ABILITIES.includes(abilityState.id))
 		{
 			if (Array.isArray(targetTyping)) {
