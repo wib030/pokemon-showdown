@@ -7065,20 +7065,186 @@
         ]
     },
     "donphan": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
                 "role": "Spinner",
-                "movepool": ["earthquake", "iceshard", "rapidspin", "stealthrock", "stoneedge", "toxic"],
-                "abilities": ["Sturdy", "Steadfast"],
-                "preferredTypes": ["Rock"],
+                "movepool": ["earthquake", "rapidspin", "slackoff", "stealthrock"],
+                "abilities": ["Sturdy"],
+                "evs": [252, 8, 8, 0, 240, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
 				"inclination": "Physical"
             },
-            {
-                "role": "Bulky Attacker",
-                "movepool": ["earthquake", "gunkshot", "iceshard", "stealthrock", "stoneedge"],
-                "abilities": ["Sturdy", "Steadfast"],
-                "preferredTypes": ["Rock"],
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "rapidspin", "slackoff", "stealthrock"],
+                "abilities": ["Sturdy"],
+                "evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "rapidspin", "slackoff", "stealthrock"],
+                "abilities": ["Sturdy"],
+                "evs": [252, 0, 44, 0, 212, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "rapidspin", "slackoff", "stealthrock"],
+                "abilities": ["Sturdy"],
+                "evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "knockoff", "rapidspin", "slackoff"],
+                "abilities": ["Steadfast"],
+                "evs": [252, 8, 8, 0, 240, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "knockoff", "rapidspin", "slackoff"],
+                "abilities": ["Steadfast"],
+                "evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "knockoff", "rapidspin", "slackoff"],
+                "abilities": ["Steadfast"],
+                "evs": [252, 0, 44, 0, 212, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["earthquake", "knockoff", "rapidspin", "slackoff"],
+                "abilities": ["Steadfast"],
+                "evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "counter", "stealthrock", "slackoff"],
+                "abilities": ["Sturdy"],
+                "evs": [252, 8, 8, 0, 240, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "counter", "stealthrock", "slackoff"],
+                "abilities": ["Sturdy"],
+                "evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "counter", "stealthrock", "slackoff"],
+                "abilities": ["Sturdy"],
+                "evs": [252, 0, 44, 0, 212, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "counter", "stealthrock", "slackoff"],
+                "abilities": ["Sturdy"],
+                "evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["knockoff", "stealthrock", "roar", "slackoff"],
+                "abilities": ["Sturdy"],
+                "evs": [252, 8, 8, 0, 240, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["knockoff", "stealthrock", "roar", "slackoff"],
+                "abilities": ["Sturdy"],
+                "evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["knockoff", "stealthrock", "roar", "slackoff"],
+                "abilities": ["Sturdy"],
+                "evs": [252, 0, 44, 0, 212, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["knockoff", "stealthrock", "roar", "slackoff"],
+                "abilities": ["Sturdy"],
+                "evs": [252, 0, 184, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["earthquake", "headsmash", "rockpolish", "slackoff"],
+                "abilities": ["Steadfast"],
+                "evs": [0, 252, 12, 0, 0, 244],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["earthquake", "stoneedge", "rockpolish", "substitute"],
+                "abilities": ["Steadfast"],
+                "evs": [12, 252, 0, 0, 0, 244],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
 				"inclination": "Physical"
             }
         ]
