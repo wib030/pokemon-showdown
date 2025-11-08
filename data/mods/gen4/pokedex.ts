@@ -416,7 +416,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	magcargo: {
 		inherit: true,
-		baseStats: {hp: 70, atk: 95, def: 120, spa: 95, spd: 80, spe: 30},
+		baseStats: {hp: 80, atk: 105, def: 185, spa: 115, spd: 80, spe: 30},
 		abilities: {0: "Water Absorb", 1: "Flame Body"},
 	},
 	magmortar: {
