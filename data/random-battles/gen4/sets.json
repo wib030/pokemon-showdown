@@ -2087,13 +2087,176 @@
         ]
     },
     "dugtrio": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Support",
-                "movepool": ["earthquake", "nightslash", "stealthrock", "stoneedge", "suckerpunch"],
-                "abilities": ["Sand Force"],
-                "preferredTypes": ["Rock"],
+                "role": "Fast Lead",
+                "movepool": ["earthquake", "stoneedge", "stealthrock", "memento"],
+                "abilities": ["Arena Trap"],
+                "evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["earthquake", "suckerpunch", "stealthrock", "memento"],
+                "abilities": ["Arena Trap"],
+                "evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["earthquake", "beatup", "stealthrock", "memento"],
+                "abilities": ["Arena Trap"],
+                "evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["earthquake", "beatup", "reversal", "stealthrock"],
+                "abilities": ["Arena Trap"],
+                "evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["earthquake", "suckerpunch", "reversal", "stealthrock"],
+                "abilities": ["Arena Trap"],
+                "evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["earthquake", "suckerpunch", "stoneedge", "stealthrock"],
+                "abilities": ["Arena Trap"],
+                "evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["earthquake", "stoneedge", "suckerpunch", "substitute"],
+                "abilities": ["Arena Trap"],
+                "evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["earthquake", "stoneedge", "beatup", "substitute"],
+                "abilities": ["Arena Trap"],
+                "evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["earthquake", "stoneedge", "explosion", "substitute"],
+                "abilities": ["Arena Trap"],
+                "evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "stoneedge", "beatup", "healingwish"],
+                "abilities": ["Arena Trap"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "stoneedge", "beatup", "memento"],
+                "abilities": ["Arena Trap"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "stoneedge", "explosion", "healingwish"],
+                "abilities": ["Arena Trap"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "stoneedge", "explosion", "memento"],
+                "abilities": ["Arena Trap"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "stoneedge", "suckerpunch", "healingwish"],
+                "abilities": ["Arena Trap"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "stoneedge", "suckerpunch", "explosion"],
+                "abilities": ["Arena Trap"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "stoneedge", "suckerpunch", "memento"],
+                "abilities": ["Arena Trap"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "stoneedge", "beatup", "memento"],
+                "abilities": ["Arena Trap"],
+                "evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "King's Rock",
+				"nature": "Jolly",
 				"inclination": "Physical"
             }
         ]
@@ -2522,12 +2685,176 @@
         ]
     },
     "golem": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Attacker",
-                "movepool": ["earthquake", "explosion", "stealthrock", "stoneedge", "suckerpunch", "toxic"],
-                "abilities": ["Sturdy", "No Guard"],
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "stoneedge", "firepunch", "stealthrock"],
+                "abilities": ["Sturdy"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "stoneedge", "suckerpunch", "stealthrock"],
+                "abilities": ["Sturdy"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "stoneedge", "icepunch", "stealthrock"],
+                "abilities": ["Sturdy"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "rockblast", "firepunch", "stealthrock"],
+                "abilities": ["Sturdy"],
+				"evs": [76, 252, 0, 0, 0, 180],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "rockblast", "suckerpunch", "stealthrock"],
+                "abilities": ["Sturdy"],
+				"evs": [76, 252, 0, 0, 0, 180],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "rockblast", "icepunch", "stealthrock"],
+                "abilities": ["Sturdy"],
+				"evs": [76, 252, 0, 0, 0, 180],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "rockblast", "counter", "stealthrock"],
+                "abilities": ["Sturdy"],
+				"evs": [76, 252, 0, 0, 0, 180],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["earthquake", "stoneedge", "firepunch", "rockpolish"],
+                "abilities": ["Sturdy"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["earthquake", "stoneedge", "icepunch", "rockpolish"],
+                "abilities": ["Sturdy"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["earthquake", "stoneedge", "suckerpunch", "rockpolish"],
+                "abilities": ["Sturdy"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "stoneedge", "explosion", "stealthrock"],
+                "abilities": ["Sturdy"],
+				"evs": [76, 252, 0, 0, 0, 180],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "stoneedge", "firepunch", "explosion"],
+                "abilities": ["Sturdy"],
+				"evs": [76, 252, 0, 0, 0, 180],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "stoneedge", "counter", "explosion"],
+                "abilities": ["Sturdy"],
+				"evs": [76, 252, 0, 0, 0, 180],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["earthquake", "stoneedge", "substitute", "rockpolish"],
+                "abilities": ["No Guard"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [30, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "stoneedge", "firepunch", "icepunch"],
+                "abilities": ["No Guard"],
+				"evs": [76, 252, 0, 0, 0, 180],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "stoneedge", "firepunch", "fling"],
+                "abilities": ["Sturdy"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Ball",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "stoneedge", "icepunch", "fling"],
+                "abilities": ["Sturdy"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Ball",
+				"nature": "Jolly",
 				"inclination": "Physical"
             }
         ]

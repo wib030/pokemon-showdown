@@ -1065,7 +1065,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						break;
 					}
 				}
-			} else if (pokemon.length === hazardTankSlot && hasAntiLead) {
+			} else if (pokemon.length === hazardTankSlot && hasAntiLead && teamDetails.stealthRock === 0) {
 				sets = this.randomSets[checkSpecies.id]["sets"];
 				// Check if the Pokemon has a Hazards Tank set
 				skip = true;
