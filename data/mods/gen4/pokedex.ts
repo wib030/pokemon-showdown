@@ -387,7 +387,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	lunatone: {
 		inherit: true,
-		baseStats: {hp: 90, atk: 55, def: 85, spa: 116, spd: 115, spe: 70},
+		baseStats: {hp: 84, atk: 60, def: 100, spa: 110, spd: 108, spe: 71},
 		abilities: {0: "Levitate", 1: "Tidal Force"},
 	},
 	luvdisc: {
