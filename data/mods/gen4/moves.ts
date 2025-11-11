@@ -1858,6 +1858,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 					attackStat *= 2;
 					break;
 				case 'hustle':
+				case 'technician':
 					attackStat = attackStat * 3 / 2;
 					break;
 				case 'guts':
@@ -1865,49 +1866,34 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 						attackStat = attackStat * 3 / 2;
 					}
 					break;
-				}
-				
-				switch (attacker.item.id) {
-				case 'choiceband':
-					attackStat = attackStat * 3 / 2;
-					break;
-				}
-				return attackStat;
-			},
-			basePowerCallback(pokemon, target, move) {
-				let attacker = move.allies!.shift()!;
-				let power = 15;
-				
-				switch (attacker.ability) {
-				case 'technician':
-					power = power * 3 / 2;
-					break;
 				case 'rivalry':
 					if (attacker.gender && defender.gender) {
 						if (attacker.gender === defender.gender) {
-							power = power * 3 / 2;
+							attackStat = attackStat * 3 / 2;
 						}
 					}
 					break;
 				case 'ironfist':
-					power = power * 13 / 10;
+					attackStat = attackStat * 13 / 10;
 					break;
 				}
 				
 				switch (attacker.item.id) {
 				case 'loadedgloves':
-					power = power * 6 / 5;
+					attackStat = attackStat * 6 / 5;
+					break;
+				case 'choiceband':
+					attackStat = attackStat * 3 / 2;
 					break;
 				case 'blackglasses':
 				case 'dreadplate':
-					power = power * 12 / 10;
+					attackStat = attackStat * 12 / 10;
 					break;
 				case 'muscleband':
-					power = power * 11 / 10;
+					attackStat = attackStat * 11 / 10;
 					break;
 				}
-				
-				return power;
+				return attackStat;
 			},
 		},
 	},
