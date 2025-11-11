@@ -1874,13 +1874,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				}
 				return attackStat;
 			},
-			onModifyDamage(damage, source, target, move) {
-				let attacker = move.allies!.shift()!;
-				if (attacker.ability === 'normalize' && !target.runImmunity('Normal')) {
-					return 0;
-				}
-				return damage;
-			},
 			basePowerCallback(pokemon, target, move) {
 				let attacker = move.allies!.shift()!;
 				let power = 15;
