@@ -1075,6 +1075,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			}
 
 			pokemonPool = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
+			
+			let outputMsg = "pokemonPool: ";
+			for (const Pokemon of pokemonPool) {
+				outputMsg += Pokemon + ' ';
+			}
+			outputMsg += `Type: ${type}`;
+			throw new Error(`${outputMsg}`);
 
 			const species = this.dex.species.get(this.sample(pokemonPool));
 
