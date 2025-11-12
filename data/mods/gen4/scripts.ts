@@ -63,7 +63,35 @@ export const Scripts: ModdedBattleScriptsData = {
 
 			const isCrit = target.getMoveHitData(move).crit;
 			if (isCrit) {
-				baseDamage = this.battle.modify(baseDamage, move.critModifier || 1.33);
+				let critValue = 2;
+				let critRatio = this.battle.runEvent('ModifyCritRatio', pokemon, target, move, move.critRatio || 0);
+				if (critRatio > 3) critValue = critRatio - 1;
+				if (pokemon.hasAbility('Sniper')) critValue += 2;
+				if (critValue > 8) critValue = 8;
+				
+				switch (critValue) {
+					case 3:
+						baseDamage = this.battle.modify(baseDamage, 1.5);
+						break;
+					case 4:
+						baseDamage = this.battle.modify(baseDamage, 2);
+						break;
+					case 5:
+						baseDamage = this.battle.modify(baseDamage, 2.5);
+						break;
+					case 6:
+						baseDamage = this.battle.modify(baseDamage, 3);
+						break;
+					case 7:
+						baseDamage = this.battle.modify(baseDamage, 3.5);
+						break;
+					case 8:
+						baseDamage = this.battle.modify(baseDamage, 4);
+						break;
+					default:
+						baseDamage = this.battle.modify(baseDamage, 1.33);
+						break;
+				}
 			}
 
 			// Mod 2 (Damage is floored after all multipliers are in)

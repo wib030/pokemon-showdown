@@ -1636,7 +1636,10 @@ export class BattleActions {
 
 		let critMult;
 		let critRatio = this.battle.runEvent('ModifyCritRatio', source, target, move, move.critRatio || 0);
-		if (this.battle.gen <= 5) {
+		if (this.battle.gen === 4) {
+			critRatio = this.battle.clampIntRange(critRatio, 0, 4);
+			critMult = [0, 24, 6, 2, 1];
+		} else if (this.battle.gen <= 5) {
 			critRatio = this.battle.clampIntRange(critRatio, 0, 5);
 			critMult = [0, 16, 8, 4, 3, 2];
 		} else {
