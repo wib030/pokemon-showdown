@@ -9493,19 +9493,197 @@
         ]
     },
     "ninjask": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Setup Sweeper",
-                "movepool": ["batonpass", "substitute", "swordsdance", "xscissor"],
+                "role": "Baton Pass Lead",
+                "movepool": ["uturn", "spikes", "protect", "batonpass"],
                 "abilities": ["Speed Boost"],
-				"inclination": "Physical"
+				"evs": [252, 4, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Support"
             },
-            {
-                "role": "Bulky Setup",
-                "movepool": ["batonpass", "protect", "swordsdance", "xscissor"],
+			{
+                "role": "Baton Pass Lead",
+                "movepool": ["leechlife", "spikes", "protect", "batonpass"],
                 "abilities": ["Speed Boost"],
-				"inclination": "Physical"
+				"evs": [252, 4, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Pass Lead",
+                "movepool": ["bugbite", "spikes", "protect", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [252, 4, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Pass Lead",
+                "movepool": ["uturn", "toxicspikes", "protect", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [252, 4, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Pass Lead",
+                "movepool": ["leechlife", "toxicspikes", "protect", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [252, 4, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Pass Lead",
+                "movepool": ["bugbite", "toxicspikes", "protect", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [252, 4, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["silverwind", "substitute", "protect", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 0, 0, 12, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["silverwind", "substitute", "protect", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 0, 0, 12, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["silverwind", "substitute", "protect", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 0, 0, 12, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Starf Berry",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["bugbite", "substitute", "protect", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 12, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["leechlife", "spite", "substitute", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 12, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["bugbite", "spite", "substitute", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 12, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["leechlife", "attract", "substitute", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 12, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["bugbite", "attract", "substitute", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 12, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Pass Lead",
+                "movepool": ["uturn", "spikes", "toxicspikes", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [152, 252, 0, 0, 8, 96],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Pass Lead",
+                "movepool": ["leechlife", "spikes", "toxicspikes", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [152, 252, 0, 0, 8, 96],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Pass Lead",
+                "movepool": ["bugbite", "spikes", "toxicspikes", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [152, 252, 0, 0, 8, 96],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Pass Lead",
+                "movepool": ["toxicspikes", "roost", "substitute", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 168, 0, 0, 0, 96],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Mental Herb",
+				"nature": "Jolly",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Pass Lead",
+                "movepool": ["spikes", "roost", "substitute", "batonpass"],
+                "abilities": ["Speed Boost"],
+				"evs": [244, 168, 0, 0, 0, 96],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Mental Herb",
+				"nature": "Jolly",
+				"inclination": "Support"
             }
         ]
     },
@@ -11496,18 +11674,156 @@
         ]
     },
     "armaldo": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
                 "role": "Spinner",
-                "movepool": ["earthquake", "rapidspin", "stealthrock", "stoneedge", "toxic", "xscissor"],
+                "movepool": ["knockoff", "stoneedge", "rapidspin", "stealthrock"],
                 "abilities": ["Water Absorb"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
 				"inclination": "Physical"
             },
-            {
-                "role": "Bulky Attacker",
-                "movepool": ["aquatail", "earthquake", "rockpolish", "stealthrock", "stoneedge", "swordsdance", "xscissor"],
+			{
+                "role": "Spinner",
+                "movepool": ["knockoff", "stoneedge", "rapidspin", "stealthrock"],
                 "abilities": ["Water Absorb"],
+				"evs": [36, 220, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["rockblast", "wavecrash", "rapidspin", "swordsdance"],
+                "abilities": ["Water Absorb"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["rockblast", "earthquake", "rapidspin", "swordsdance"],
+                "abilities": ["Water Absorb"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["knockoff", "toxic", "rapidspin", "stealthrock"],
+                "abilities": ["Water Absorb"],
+				"evs": [232, 24, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["knockoff", "rocktomb", "rapidspin", "stealthrock"],
+                "abilities": ["Water Absorb"],
+				"evs": [232, 24, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["knockoff", "toxic", "rapidspin", "protect"],
+                "abilities": ["Water Absorb"],
+				"evs": [232, 24, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["knockoff", "toxic", "rapidspin", "stealthrock"],
+                "abilities": ["Water Absorb"],
+				"evs": [232, 24, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["knockoff", "rocktomb", "rapidspin", "stealthrock"],
+                "abilities": ["Water Absorb"],
+				"evs": [232, 24, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["knockoff", "toxic", "rapidspin", "protect"],
+                "abilities": ["Water Absorb"],
+				"evs": [232, 24, 252, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["rockblast", "earthquake", "rockpolish", "swordsdance"],
+                "abilities": ["Water Absorb"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["rockblast", "earthquake", "aquajet", "swordsdance"],
+                "abilities": ["Water Absorb"],
+				"evs": [40, 252, 24, 0, 0, 192],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["rockblast", "earthquake", "aquajet", "swordsdance"],
+                "abilities": ["Water Absorb"],
+				"evs": [232, 252, 0, 0, 24, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["stoneedge", "earthquake", "aquajet", "swordsdance"],
+                "abilities": ["Water Absorb"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["rockslide", "earthquake", "aquajet", "swordsdance"],
+                "abilities": ["Water Absorb"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
 				"inclination": "Physical"
             }
         ]

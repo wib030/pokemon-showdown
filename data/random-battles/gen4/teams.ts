@@ -44,7 +44,7 @@ const PRIORITY_POKEMON = [
 
 // Lead Roles
 const LEAD_ROLES = [
-	'Fast Lead', 'Bulky Lead', 'Anti-Lead', 'Sand Lead', 'Sun Lead', 'Hail Lead', 'Rain Lead',
+	'Fast Lead', 'Bulky Lead', 'Anti-Lead', 'Sand Lead', 'Sun Lead', 'Hail Lead', 'Rain Lead', 'Baton Pass Lead',
 ];
 
 // Removal Roles
