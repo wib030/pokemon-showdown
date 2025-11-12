@@ -1,6 +1,7 @@
 import RandomGen5Teams from '../gen5/teams';
 import type { PRNG } from '../../../sim';
 import type { MoveCounter } from '../gen8/teams';
+import { Dex, toID } from '../../../sim/dex';
 
 // Moves that restore HP:
 const RECOVERY_MOVES = [
