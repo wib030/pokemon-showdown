@@ -994,7 +994,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			if (!resistFlag) continue;
 
-			pokemonPool[species].push(pokemon);
+			pokemonPool.push(pokemon);
 		}
 		return pokemonPool;
 	}
