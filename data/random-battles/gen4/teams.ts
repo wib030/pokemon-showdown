@@ -1063,6 +1063,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let physicalAttackerSlot = 3;
 		let specialAttackerSlot = 4;
 
+		let temp: TypeFrequency = {};
+
 		const pokemonList = Object.keys(this.randomSets);
 		let [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
 
@@ -1071,13 +1073,15 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		while (pokemonPool.length && pokemon.length < this.maxTeamSize) {
 			if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length > 0)
 			{
-				type = this.sample(DoubleWeaknessList).type;
+				temp = this.sample(DoubleWeaknessList);
+				type = temp.type;
 			}
 			else
 			{
 				if (Array.isArray(WeaknessList) && WeaknessList.length > 0)
 				{
-					type = this.sample(WeaknessList).type;
+					temp = this.sample(WeaknessList);
+					type = temp.type;
 				}
 			}
 
