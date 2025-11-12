@@ -7145,7 +7145,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 22,
 		color: "Brown",
 		prevo: "Chimchar",
-		evoLevel: 14,
+		evoLevel: 13,
 		evos: ["Infernape"],
 		eggGroups: ["Field", "Human-Like"],
 	},
