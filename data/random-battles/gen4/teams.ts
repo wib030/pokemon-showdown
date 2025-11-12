@@ -1074,14 +1074,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		while (baseSpeciesPool.length && pokemon.length < this.maxTeamSize) {
 			if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length > 0)
 			{
-				temp = DoubleWeaknessList[0];
+				temp = this.sample(DoubleWeaknessList);
 				type = temp.type;
 			}
 			else
 			{
 				if (Array.isArray(WeaknessList) && WeaknessList.length > 0)
 				{
-					temp = DoubleWeaknessList[0];
+					temp = this.sample(WeaknessList);
 					type = temp.type;
 				}
 			}
