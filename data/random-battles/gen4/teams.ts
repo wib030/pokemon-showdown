@@ -1069,10 +1069,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		// let pokemonPool = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
 
 		while (pokemonPool.length && pokemon.length < this.maxTeamSize) {
-			const baseSpecies = this.sample(baseSpeciesPool);
-			const species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
-
-
 			if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length > 0)
 			{
 				type = this.sample(DoubleWeaknessList);
@@ -1085,7 +1081,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 			}
 
-			pokemonPool = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
+			[pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
+			
+			const baseSpecies = this.sample(baseSpeciesPool);
+			const species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
 			
 			let outputMsg = "pokemonPool: ";
 			for (const Pokemon of pokemonPool) {
@@ -1093,8 +1092,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			}
 			outputMsg += `Type: ${type}`;
 			throw new Error(`${outputMsg}`);
-
-			const species = this.dex.species.get(this.sample(pokemonPool));
 
 			checkSpecies = this.dex.species.get(species);
 			if (!species.exists && !ALLOWED_UNUSUAL_SPECIES.includes(checkSpecies.id)) continue;
