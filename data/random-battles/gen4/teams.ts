@@ -977,7 +977,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 	): [{ [k: string]: string[] }, string[]] {
 		const exclude = pokemonToExclude.map(p => toID(p.species));
 		let pokemonPool: { [k: string]: string[] } = {};
-		let baseSpeciesPool: string[] = [];
+		let baseSpeciesPool = [];
 		let resistFlag = false;
 		for (const pokemon of pokemonList) {
 			let species = this.dex.species.get(pokemon);
