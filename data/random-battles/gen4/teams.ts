@@ -983,8 +983,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let species = this.dex.species.get(pokemon);
 			if (exclude.includes(species.id)) continue;
 			resistFlag = false;
+			const abilities = Object.values(species.abilities).filter(a => this.dex.abilities.get(a).gen <= this.gen);
 			
-			for (const ability of species.abilites)
+			for (const ability of abilities)
 			{
 				if (this.dex.precheckEffectiveness(type, species.types, ability) < 0)
 				{
