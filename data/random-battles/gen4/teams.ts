@@ -81,6 +81,15 @@ const IMMUNITY_ABILITIES: { [k: string]: string[] } = {
 	ghostly: ["Normal", "Fighting"],
 };
 
+const IMMUNITY_ABILITY_TYPES: { [k: string]: string[] } = {
+	Water: ["waterabsorb", "stormdrain", "dryskin"],
+	Fire: ["flashfire"],
+	Electric: ["lightningrod", "motordrive", "voltabsorb"],
+	Ground: ["levitate"],
+	Normal: ["ghostly"],
+	Fighting: ["ghostly"],
+};
+
 // Resistance abilities
 const RESISTANCE_ABILITIES: { [k: string]: string[] } = {
 	unownforce: ["Flying", "Poison", "Ground", "Rock", "Steel", "Fire", "Water", "Grass", "Electric", "Ice", "Dragon", "Fighting", "Psychic", "Bug", "Ghost", "Dark"],
@@ -959,7 +968,37 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			inclination,
 		};
 	}
-	
+
+	override getPokemonPool(
+		type: string,
+		pokemonToExclude: RandomTeamsTypes.RandomSet[] = [],
+		isMonotype = false,
+		pokemonList: string[]
+	): string[] {
+		const exclude = pokemonToExclude.map(p => toID(p.species));
+		const pokemonPool: { [k: string]: string[] } = {};
+		let resistFlag = false;
+		for (const pokemon of pokemonList) {
+			let species = this.dex.species.get(pokemon);
+			if (exclude.includes(species.id)) continue;
+
+			for (ability in species.abilites)
+			{
+				if (this.dex.precheckEffectiveness(type, species.types, ability) < 0)
+				{
+					resistFlag = true;
+				}
+
+				if (resistFlag) break;
+			}
+
+			if (!resistFlag) continue;
+
+			pokemonPool[species].push(pokemon);
+		}
+		return pokemonPool;
+	}
+
 	override randomTeam() {
 		this.enforceNoDirectCustomBanlistChanges();
 
@@ -970,7 +1009,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		// For Monotype
 		const isMonotype = !!this.forceMonotype || ruleTable.has('sametypeclause');
 		const typePool = this.dex.types.names();
-		const type = this.forceMonotype || this.sample(typePool);
+		let type = this.forceMonotype || this.sample(typePool);
 
 		const baseFormes: { [k: string]: number } = {};
 		const typeCount: { [k: string]: number } = {};
@@ -992,6 +1031,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		let WeaknessListFull: TypeFrequency[] = [];
 		let DoubleWeaknessListFull: TypeFrequency[] = [];
+
+		let resistTypes[] = [];
+		let weakTypes[] = [];
+		let abilities[] = [];
 		
 		let leadNum = 0;
 		let removalNum = 0;
@@ -1014,10 +1057,31 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let specialAttackerSlot = 4;
 
 		const pokemonList = Object.keys(this.randomSets);
-		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
-		while (baseSpeciesPool.length && pokemon.length < this.maxTeamSize) {
-			const baseSpecies = this.sample(baseSpeciesPool);
-			const species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
+		// const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
+
+		let pokemonPool[] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
+
+		while (pokemonPool.length && pokemon.length < this.maxTeamSize) {
+			// const baseSpecies = this.sample(baseSpeciesPool);
+			// const species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
+
+
+			if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList?.length)
+			{
+				type = this.sample(DoubleWeaknessList);
+			}
+			else
+			{
+				if (Array.isArray(WeaknessList) && WeaknessList?.length)
+				{
+					type = this.sample(WeaknessList);
+				}
+			}
+
+			pokemonPool = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
+
+			const species = this.dex.species.get(this.sample(pokemonPool));
+
 			checkSpecies = this.dex.species.get(species);
 			if (!species.exists && !ALLOWED_UNUSUAL_SPECIES.includes(checkSpecies.id)) continue;
 			
