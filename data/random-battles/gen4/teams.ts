@@ -1070,7 +1070,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 		// let pokemonPool = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
 
-		while (pokemonPool.length && pokemon.length < this.maxTeamSize) {
+		while (baseSpeciesPool.length && pokemon.length < this.maxTeamSize) {
 			[pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
 			
 			const baseSpecies = this.sample(baseSpeciesPool);
