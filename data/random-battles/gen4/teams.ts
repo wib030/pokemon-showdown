@@ -1031,10 +1031,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		let WeaknessListFull: TypeFrequency[] = [];
 		let DoubleWeaknessListFull: TypeFrequency[] = [];
-
-		let resistTypes[] = [];
-		let weakTypes[] = [];
-		let abilities[] = [];
 		
 		let leadNum = 0;
 		let removalNum = 0;
