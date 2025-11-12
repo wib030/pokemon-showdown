@@ -968,7 +968,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			inclination,
 		};
 	}
-
+	
 	override getPokemonPool(
 		type: string,
 		pokemonToExclude: RandomTeamsTypes.RandomSet[] = [],
@@ -976,15 +976,14 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		pokemonList: string[]
 	): [{ [k: string]: string[] }, string[]] {
 		const exclude = pokemonToExclude.map(p => toID(p.species));
-		let pokemonPool: { [k: string]: string[] } = {};
-		let baseSpeciesPool = [];
+		const pokemonPool: { [k: string]: string[] } = {};
+		const baseSpeciesPool = [];
 		let resistFlag = false;
 		for (const pokemon of pokemonList) {
 			let species = this.dex.species.get(pokemon);
 			if (exclude.includes(species.id)) continue;
-
 			resistFlag = false;
-
+			
 			for (ability in species.abilites)
 			{
 				if (this.dex.precheckEffectiveness(type, species.types, ability) < 0)
