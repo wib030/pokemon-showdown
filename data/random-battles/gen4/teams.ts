@@ -985,6 +985,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let type = this.forceMonotype || this.sample(typePool);
 		if (type === 'Fairy') type = 'Normal';
 		let prevType = '';
+		let typeMatchesPrev = true;
 
 		const baseFormes: { [k: string]: number } = {};
 		const typeCount: { [k: string]: number } = {};
