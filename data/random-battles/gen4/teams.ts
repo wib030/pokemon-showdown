@@ -1048,7 +1048,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					prevType = type;
 				}
 			}
-			else
+			else if (Array.isArray(WeaknessList) && WeaknessList.length > 0)
 			{
 				if (WeaknessList.length > 1)
 				{
