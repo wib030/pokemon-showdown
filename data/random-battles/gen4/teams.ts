@@ -1024,6 +1024,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const isMonotype = !!this.forceMonotype || ruleTable.has('sametypeclause');
 		const typePool = this.dex.types.names();
 		let type = this.forceMonotype || this.sample(typePool);
+		if (type === 'Fairy') type = 'Normal';
 
 		const baseFormes: { [k: string]: number } = {};
 		const typeCount: { [k: string]: number } = {};
