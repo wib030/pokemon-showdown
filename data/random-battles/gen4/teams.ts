@@ -974,9 +974,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		pokemonToExclude: RandomTeamsTypes.RandomSet[] = [],
 		isMonotype = false,
 		pokemonList: string[]
-	): string[] {
+	): [{ [k: string]: string[] }, string[]] {
 		const exclude = pokemonToExclude.map(p => toID(p.species));
-		let pokemonPool: string[] = [];
+		let pokemonPool: { [k: string]: string[] } = {};
+		let baseSpeciesPool: string[] = [];
 		let resistFlag = false;
 		for (const pokemon of pokemonList) {
 			let species = this.dex.species.get(pokemon);
@@ -994,9 +995,19 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 			if (!resistFlag) continue;
 
-			pokemonPool.push(pokemon);
+			if (species.baseSpecies in pokemonPool) {
+				pokemonPool[species.baseSpecies].push(pokemon);
+			} else {
+				pokemonPool[species.baseSpecies] = [pokemon];
+			}
 		}
-		return pokemonPool;
+		// Include base species 1x if 1-3 formes, 2x if 4-6 formes, 3x if 7+ formes
+		for (const baseSpecies of Object.keys(pokemonPool)) {
+			// Squawkabilly has 4 formes, but only 2 functionally different formes, so only include it 1x
+			const weight = (baseSpecies === 'Squawkabilly') ? 1 : Math.min(Math.ceil(pokemonPool[baseSpecies].length / 3), 3);
+			for (let i = 0; i < weight; i++) baseSpeciesPool.push(baseSpecies);
+		}
+		return [pokemonPool, baseSpeciesPool];
 	}
 
 	override randomTeam() {
@@ -1053,13 +1064,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let specialAttackerSlot = 4;
 
 		const pokemonList = Object.keys(this.randomSets);
-		// const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
+		let [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
 
-		let pokemonPool = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
+		// let pokemonPool = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
 
 		while (pokemonPool.length && pokemon.length < this.maxTeamSize) {
-			// const baseSpecies = this.sample(baseSpeciesPool);
-			// const species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
+			const baseSpecies = this.sample(baseSpeciesPool);
+			const species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
 
 
 			if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length > 0)
