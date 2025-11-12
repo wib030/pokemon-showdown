@@ -1072,6 +1072,20 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
 
 		while (baseSpeciesPool.length && pokemon.length < this.maxTeamSize) {
+			if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length > 0)
+			{
+				temp = DoubleWeaknessList[0];
+				type = temp.type;
+			}
+			else
+			{
+				if (Array.isArray(WeaknessList) && WeaknessList.length > 0)
+				{
+					temp = DoubleWeaknessList[0];
+					type = temp.type;
+				}
+			}
+			
 			[pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
 			const baseSpecies = this.sample(baseSpeciesPool);
 			let species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
