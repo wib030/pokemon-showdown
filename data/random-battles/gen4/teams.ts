@@ -69,47 +69,6 @@ const IMMUNE_TYPES = [
 	"Normal", "Fighting", "Poison", "Ground", "Ghost", "Fire", "Water", "Electric", "Psychic",
 ];
 
-// Immunity abilities
-const IMMUNITY_ABILITIES: { [k: string]: string[] } = {
-	waterabsorb: ["Water"],
-	stormdrain: ["Water"],
-	dryskin: ["Water"],
-	flashfire: ["Fire"],
-	levitate: ["Ground"],
-	lightningrod: ["Electric"],
-	motordrive: ["Electric"],
-	voltabsorb: ["Electric"],
-	ghostly: ["Normal", "Fighting"],
-};
-
-const IMMUNITY_ABILITY_TYPES: { [k: string]: string[] } = {
-	Water: ["waterabsorb", "stormdrain", "dryskin"],
-	Fire: ["flashfire"],
-	Electric: ["lightningrod", "motordrive", "voltabsorb"],
-	Ground: ["levitate"],
-	Normal: ["ghostly"],
-	Fighting: ["ghostly"],
-};
-
-// Resistance abilities
-const RESISTANCE_ABILITIES: { [k: string]: string[] } = {
-	unownforce: ["Flying", "Poison", "Ground", "Rock", "Steel", "Fire", "Water", "Grass", "Electric", "Ice", "Dragon", "Fighting", "Psychic", "Bug", "Ghost", "Dark"],
-	thickfat: ["Fire", "Ice"],
-	heatproof: ["Fire"],
-};
-
-// Weakness abilities
-const WEAKNESS_ABILITIES: { [k: string]: string[] } = {
-	unownforce: ["Normal"],
-	colorchange: ["Dragon", "Ghost"],
-	ghostly: ["Ghost", "Dark"],
-};
-
-// Abilities that consider resistance and weakness differently
-const TYPE_ALTERING_ABILITIES = [
-	'colorchange', 'ghostly',
-];
-
 // List of Rare Pokemon (1/4 chance to keep if species is rolled, otherwise it is rerolled)
 const RARE_POKEMON = [
 	'articuno', 'zapdos', 'moltres', 'raikou', 'entei', 'suicune',
@@ -1025,17 +984,11 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const typePool = this.dex.types.names();
 		let type = this.forceMonotype || this.sample(typePool);
 		if (type === 'Fairy') type = 'Normal';
+		let prevType = '';
 
 		const baseFormes: { [k: string]: number } = {};
 		const typeCount: { [k: string]: number } = {};
 		
-		/*
-		const typeWeaknesses: { [k: string]: number } = {};
-		const typeDoubleWeaknesses: { [k: string]: number } = {};
-		const typeResistances: { [k: string]: number } = {};
-		const typeDoubleResistances: { [k: string]: number } = {};
-		const typeImmunities: { [k: string]: number } = {};
-		*/
 		const teamDetails: RandomTeamsTypes.TeamDetails = {};
 
 		let WeaknessList: TypeFrequency[] = [];
@@ -1075,15 +1028,46 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		while (baseSpeciesPool.length && pokemon.length < this.maxTeamSize) {
 			if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length > 0)
 			{
-				temp = this.sample(DoubleWeaknessList);
-				type = temp.type;
+				if (DoubleWeaknessList.length > 1)
+				{
+					typeMatchesPrev = true;
+					
+					while (!typeMatchesPrev)
+					{
+						temp = this.sample(DoubleWeaknessList);
+						type = temp.type;
+						
+						if (type !== prevType) typeMatchesPrev = false;
+					}
+					prevType = type;
+				}
+				else
+				{
+					temp = this.sample(DoubleWeaknessList);
+					type = temp.type;
+					prevType = type;
+				}
 			}
 			else
 			{
-				if (Array.isArray(WeaknessList) && WeaknessList.length > 0)
+				if (WeaknessList.length > 1)
+				{
+					typeMatchesPrev = true;
+					
+					while (!typeMatchesPrev)
+					{
+						temp = this.sample(WeaknessList);
+						type = temp.type;
+						
+						if (type !== prevType) typeMatchesPrev = false;
+					}
+					prevType = type;
+				}
+				else
 				{
 					temp = this.sample(WeaknessList);
 					type = temp.type;
+					prevType = type;
 				}
 			}
 			
