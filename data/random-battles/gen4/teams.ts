@@ -984,7 +984,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (exclude.includes(species.id)) continue;
 			resistFlag = false;
 			
-			for (ability in species.abilites)
+			for (const ability of species.abilites)
 			{
 				if (this.dex.precheckEffectiveness(type, species.types, ability) < 0)
 				{
@@ -1069,13 +1069,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const pokemonList = Object.keys(this.randomSets);
 		let [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
 
-		// let pokemonPool = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
-
 		while (baseSpeciesPool.length && pokemon.length < this.maxTeamSize) {
 			[pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
-			
 			const baseSpecies = this.sample(baseSpeciesPool);
-			const species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
+			let species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
 			
 			/*
 			let outputMsg = "pokemonPool: ";
