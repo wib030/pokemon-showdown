@@ -1345,28 +1345,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (!isMonotype && !this.forceMonotype) {
 				if (pokemon.length > 0)
 				{
-					if (Array.isArray(DoubleWeaknessListFull) && DoubleWeaknessListFull.length && !skipDoubleWeaknessCheck) {
-						
-						DoubleWeaknessList = DoubleWeaknessListFull;
-						
-						if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length) {
-							DoubleWeaknessList = this.dex.TypeMatchupListShuffleAndConcat(DoubleWeaknessList);
-							for (const DoubleWeakness of DoubleWeaknessList)
-							{
-								if (IMMUNE_TYPES.includes(DoubleWeakness.type)) {
-									if (DoubleWeakness.frequency > 0 && ImmunityList?.some(y => y.type === DoubleWeakness.type && y.frequency < DoubleWeakness.frequency)) {
-										if (this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) !== -3) {
-											skip = true;
-										} else {
-											skip = false;
-											skipWeaknessCheck = true;
-											break;
-										}
-									}
-								}
-
-								if (DoubleWeakness.frequency > 0 && DoubleResistList?.some(y => y.type === DoubleWeakness.type && y.frequency < DoubleWeakness.frequency)) {
-									if (this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) > -2) {
+					if (Array.isArray(TempDoubleWeaknessList) && TempDoubleWeaknessList.length && !skipDoubleWeaknessCheck) {
+						DoubleWeaknessList = this.dex.TypeMatchupListShuffleAndConcat(TempDoubleWeaknessList);
+						for (const DoubleWeakness of DoubleWeaknessList)
+						{
+							if (IMMUNE_TYPES.includes(DoubleWeakness.type)) {
+								if (DoubleWeakness.frequency > 0 && ImmunityList?.some(y => y.type === DoubleWeakness.type && y.frequency < DoubleWeakness.frequency)) {
+									if (this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) !== -3) {
 										skip = true;
 									} else {
 										skip = false;
@@ -1375,28 +1360,34 @@ export class RandomGen4Teams extends RandomGen5Teams {
 									}
 								}
 							}
-							if (skip) {
-								skip = false;
-								rerollAttempts++;
-								rerollAttemptsTotal++;
-								if (rerollAttempts > maxRerolls) {
-									skipReroll = true;
+
+							if (DoubleWeakness.frequency > 0 && DoubleResistList?.some(y => y.type === DoubleWeakness.type && y.frequency < DoubleWeakness.frequency)) {
+								if (this.dex.precheckEffectiveness(DoubleWeakness.type, checkTypes, set.ability) > -2) {
+									skip = true;
 								} else {
-									skipReroll = false;
+									skip = false;
+									skipWeaknessCheck = true;
+									break;
 								}
-								if (!skipReroll) {
-									continue;
-								}
+							}
+						}
+						if (skip) {
+							skip = false;
+							rerollAttempts++;
+							rerollAttemptsTotal++;
+							if (rerollAttempts > maxRerolls) {
+								skipReroll = true;
+							} else {
+								skipReroll = false;
+							}
+							if (!skipReroll) {
+								continue;
 							}
 						}
 					}
 					
-					if (Array.isArray(WeaknessListFull) && WeaknessListFull.length && !skipWeaknessCheck) {
-						
-						WeaknessList = WeaknessListFull;
-						
-						if (Array.isArray(WeaknessList) && WeaknessList.length) {
-							WeaknessList = this.dex.TypeMatchupListShuffleAndConcat(WeaknessList);
+					if (Array.isArray(TempWeaknessList) && TempWeaknessList.length && !skipWeaknessCheck) {
+						WeaknessList = this.dex.TypeMatchupListShuffleAndConcat(TempWeaknessList);
 							for (const Weakness of WeaknessList)
 							{
 								if (IMMUNE_TYPES.includes(Weakness.type)) {
@@ -1441,7 +1432,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 									continue;
 								}
 							}
-						}
 					}
 				}
 				
