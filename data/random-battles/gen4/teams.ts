@@ -994,6 +994,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 
 		let WeaknessList: TypeFrequency[] = [];
 		let DoubleWeaknessList: TypeFrequency[] = [];
+		
+		let TempWeaknessList: TypeFrequency[] = [];
+		let TempDoubleWeaknessList: TypeFrequency[] = [];
+		
 		let ImmunityList: TypeFrequency[] = [];
 		let ResistList: TypeFrequency[] = [];
 		let DoubleResistList: TypeFrequency[] = [];
@@ -1029,13 +1033,83 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		while (baseSpeciesPool.length && pokemon.length < this.maxTeamSize) {
 			if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length > 0)
 			{
-				if (DoubleWeaknessList.length > 1)
+				TempDoubleWeaknessList = DoubleWeaknessListFull;
+				
+				// May implement this better later but this code will help in not picking a resist to the same type over and over
+				for (const DoubleWeakness of TempDoubleWeaknessList) {
+					let typeResistScore = 0;
+					
+					if (DoubleResistList?.some(y => y.type === DoubleWeakness.type)) {
+						for (const Resist of DoubleResistList) {
+							if (Resist.type === DoubleWeakness.type) {
+								typeResistScore += Resist.frequency;
+							}
+						}
+					}
+					
+					if (ImmunityList?.some(y => y.type === DoubleWeakness.type)) {
+						for (const Immunity of ImmunityList) {
+							if (Immunity.type === DoubleWeakness.type) {
+								typeResistScore += Immunity.frequency;
+							}
+						}
+					}
+					
+					DoubleWeakness.frequency -= typeResistScore;
+					if (DoubleWeakness.frequency < 0) DoubleWeakness.frequency = 0;
+				}
+				
+				TempDoubleWeaknessList = this.dex.TypeMatchupListShuffleAndConcat(TempDoubleWeaknessList);
+			}
+			
+			if (Array.isArray(WeaknessList) && WeaknessList.length > 0)
+			{
+				TempWeaknessList = WeaknessListFull;
+					
+				// May implement this better later but this code will help in not picking a resist to the same type over and over
+				for (const Weakness of TempWeaknessList) {
+					let typeResistScore = 0;
+					
+					if (ResistList?.some(y => y.type === Weakness.type)) {
+						for (const Resist of ResistList) {
+							if (Resist.type === Weakness.type) {
+								typeResistScore += Resist.frequency;
+							}
+						}
+					}
+					
+					if (DoubleResistList?.some(y => y.type === Weakness.type)) {
+						for (const Resist of DoubleResistList) {
+							if (Resist.type === Weakness.type) {
+								typeResistScore += Resist.frequency;
+							}
+						}
+					}
+					
+					if (ImmunityList?.some(y => y.type === Weakness.type)) {
+						for (const Immunity of ImmunityList) {
+							if (Immunity.type === Weakness.type) {
+								typeResistScore += Immunity.frequency;
+							}
+						}
+					}
+					
+					Weakness.frequency -= typeResistScore;
+					if (Weakness.frequency < 0) Weakness.frequency = 0;
+				}
+				
+				TempWeaknessList = this.dex.TypeMatchupListShuffleAndConcat(TempWeaknessList);
+			}
+			
+			if (Array.isArray(TempDoubleWeaknessList) && TempDoubleWeaknessList.length > 0)
+			{
+				if (TempDoubleWeaknessList.length > 1)
 				{
 					typeMatchesPrev = true;
 					
 					while (!typeMatchesPrev)
 					{
-						temp = this.sample(DoubleWeaknessList);
+						temp = this.sample(TempDoubleWeaknessList);
 						type = temp.type;
 						
 						if (type !== prevType) typeMatchesPrev = false;
@@ -1044,20 +1118,20 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 				else
 				{
-					temp = this.sample(DoubleWeaknessList);
+					temp = this.sample(TempDoubleWeaknessList);
 					type = temp.type;
 					prevType = type;
 				}
 			}
-			else if (Array.isArray(WeaknessList) && WeaknessList.length > 0)
+			else if (Array.isArray(TempWeaknessList) && TempWeaknessList.length > 0)
 			{
-				if (WeaknessList.length > 1)
+				if (TempWeaknessList.length > 1)
 				{
 					typeMatchesPrev = true;
 					
 					while (!typeMatchesPrev)
 					{
-						temp = this.sample(WeaknessList);
+						temp = this.sample(TempWeaknessList);
 						type = temp.type;
 						
 						if (type !== prevType) typeMatchesPrev = false;
@@ -1066,7 +1140,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 				else
 				{
-					temp = this.sample(WeaknessList);
+					temp = this.sample(TempWeaknessList);
 					type = temp.type;
 					prevType = type;
 				}
@@ -1075,15 +1149,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			[pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
 			const baseSpecies = this.sample(baseSpeciesPool);
 			let species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
-			
-			/*
-			let outputMsg = "pokemonPool: ";
-			for (const Pokemon of pokemonPool) {
-				outputMsg += Pokemon + ' ';
-			}
-			outputMsg += `Type: ${type}`;
-			throw new Error(`${outputMsg}`);
-			*/
 			
 			checkSpecies = this.dex.species.get(species);
 			if (!species.exists && !ALLOWED_UNUSUAL_SPECIES.includes(checkSpecies.id)) continue;
