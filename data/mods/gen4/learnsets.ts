@@ -3387,6 +3387,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			sleeppowder: ["4L15"],
 			luckychant: ["4L24"],
 			moonlight: ["4L33"],
+			weatherball: ["4L50"],
 		},
 	},
 	bellossom: {
@@ -3441,6 +3442,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			worryseed: ["4L9", "4T"],
 			luckychant: ["4L15"],
 			morningsun: ["4L33"],
+			weatherball: ["4L50"],
 		},
 	},
 	paras: {

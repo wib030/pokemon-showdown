@@ -5294,6 +5294,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			sleeppowder: ["4L15"],
 			luckychant: ["4L24"],
 			moonlight: ["4L33"],
+			weatherball: ["4L50"],
 		},
 	},
 	bellossom: {
@@ -5347,6 +5348,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			worryseed: ["4L9", "4T"],
 			luckychant: ["4L15"],
 			morningsun: ["4L33"],
+			weatherball: ["4L50"],
 		},
 	},
 	paras: {
