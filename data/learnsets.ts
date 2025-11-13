@@ -12701,7 +12701,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			attract: ["4M", "3M"],
 			bellydrum: ["4E", "3E"],
 			blizzard: ["4M", "3M"],
-			bodyslam: ["4E", "3T", "3E"],
+			bodyslam: ["4L29", "4E", "3T", "3E"],
 			brickbreak: ["4M", "3M"],
 			captivate: ["4M"],
 			counter: ["3T"],
@@ -12874,6 +12874,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dragontail: ["4T"],
 			block: ["4L1"],
 			whirlpool: ["4L27"],
+			bodyslam: ["4L29"],
 		},
 	},
 	koffing: {
