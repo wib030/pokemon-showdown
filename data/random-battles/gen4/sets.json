@@ -5592,13 +5592,107 @@
         ]
     },
     "bellossom": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
-                "movepool": ["energyball", "hiddenpowerfire", "hiddenpowerrock", "leafstorm", "leechseed", "sleeppowder", "stunspore", "synthesis"],
+                "role": "Sun Setup",
+                "movepool": ["gigadrain", "drainpunch", "hiddenpowerrock", "growth"],
                 "abilities": ["Chlorophyll"],
+				"evs": [232, 120, 0, 0, 0, 156],
+				"ivs": [31, 31, 30, 31, 30, 30],
+				"item": "Leftovers",
+				"nature": "Brave",
+				"inclination": "Mixed"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["leafstorm", "sludgebomb", "hiddenpowerground", "gigadrain"],
+                "abilities": ["Chlorophyll"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Choice Specs",
+				"nature": "Modest",
 				"inclination": "Special"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["leafstorm", "weatherball", "hiddenpowerrock", "gigadrain"],
+                "abilities": ["Chlorophyll"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Choice Specs",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["sludgebomb", "gigadrain", "leechseed", "substitute"],
+                "abilities": ["Chlorophyll"],
+				"evs": [248, 0, 0, 12, 0, 248],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["sludgebomb", "gigadrain", "leechseed", "substitute"],
+                "abilities": ["Chlorophyll"],
+				"evs": [248, 0, 96, 76, 0, 88],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Sun Setup",
+                "movepool": ["gigadrain", "weatherball", "hiddenpowerrock", "growth"],
+                "abilities": ["Chlorophyll"],
+				"evs": [0, 0, 8, 252, 0, 248],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Life Orb",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Sun Setter",
+                "movepool": ["weatherball", "leechseed", "substitute", "sunnyday"],
+                "abilities": ["Chlorophyll"],
+				"evs": [248, 0, 96, 20, 84, 60],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["gigadrain", "weatherball", "hiddenpowerrock", "solarbeam"],
+                "abilities": ["Chlorophyll"],
+				"evs": [248, 0, 0, 20, 240, 0],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Assault Vest",
+				"nature": "Calm",
+				"inclination": "Special"
+            },
+			{
+                "role": "Sun Setter",
+                "movepool": ["solarbeam", "weatherball", "hiddenpowerrock", "fling"],
+                "abilities": ["Chlorophyll"],
+				"evs": [56, 0, 4, 252, 0, 196],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Heat Rock",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Sun Setter",
+                "movepool": ["weatherball", "leechseed", "moonlight", "sunnyday"],
+                "abilities": ["Chlorophyll"],
+				"evs": [248, 0, 96, 20, 84, 60],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Bold",
+				"inclination": "Support"
             }
         ]
     },
