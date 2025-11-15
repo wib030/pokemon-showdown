@@ -470,7 +470,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	mawile: {
 		inherit: true,
 		types: ["Steel", "Dragon"],
-		baseStats: {hp: 50, atk: 95, def: 75, spa: 65, spd: 55, spe: 40},
+		baseStats: {hp: 50, atk: 105, def: 85, spa: 65, spd: 55, spe: 40},
 		abilities: {0: "Huge Power", 1: "Intimidate"},
 	},
 	medicham: {
