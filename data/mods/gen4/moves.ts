@@ -455,6 +455,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	growth: {
 		inherit: true,
+		pp: 20,
 		onModifyMove(move, pokemon) {
 			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) move.boosts = { atk: 2, spa: 2 };
 		},
@@ -2008,6 +2009,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	bounce: {
 		inherit: true,
+		pp: 10,
 		accuracy: 90,
 		basePower: 95,
 	},
