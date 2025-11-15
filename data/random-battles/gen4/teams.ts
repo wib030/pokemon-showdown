@@ -54,14 +54,14 @@ const REMOVAL_ROLES = [
 
 // Non-Lead Hazard Roles
 const NON_LEAD_HAZARD_ROLES = [
-	'Hazards Tank',
+	'Hazards Tank', 'Hazards Support',
 ];
 
 // Attacking Roles
 const ATTACKING_ROLES = [
 	'Fast Attacker', 'Setup Sweeper', 'Wallbreaker', 'Bulky Attacker', 'Bulky Setup', 'Fast Bulky Setup', 'AV Pivot', 'Doubles Fast Attacker', 'Doubles Setup Sweeper', 'Doubles Wallbreaker', 
 	'Doubles Bulky Attacker', 'Doubles Bulky Setup', 'Offensive Protect', 'Berry Sweeper', 'Sun Attacker', 'Rain Attacker', 'Hail Attacker', 'Sand Attacker', 'Glass Cannon', 'Fling Setup',
-	'TR Attacker', 'Fast Pivot', 'Bulky Pivot', 'Sun Setup', 'Switch Trapper',
+	'TR Attacker', 'Fast Pivot', 'Bulky Pivot', 'Sun Setup', 'Switch Trapper', 'Offensive Tank',
 ];
 
 // Types with immunities
@@ -1135,7 +1135,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						break;
 					}
 				}
-			} else if (pokemon.length === hazardTankSlot && hasAntiLead && teamDetails.stealthRock === 0) {
+			} else if (pokemon.length === hazardTankSlot && hasAntiLead && teamDetails.stealthRock === 0 && teamDetails.spikes === 0 && teamDetails.toxicspikes === 0) {
 				sets = this.randomSets[checkSpecies.id]["sets"];
 				// Check if the Pokemon has a Hazards Tank set
 				skip = true;

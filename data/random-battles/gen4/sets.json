@@ -11004,14 +11004,337 @@
         ]
     },
     "solrock": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["earthquake", "explosion", "rockpolish", "stealthrock", "stoneedge", "zenheadbutt"],
-                "abilities": ["Drought", "Roche Radius"],
-                "preferredTypes": ["Ground"],
+                "role": "Bulky Setup",
+                "movepool": ["earthpower", "flamethrower", "willowisp", "calmmind"],
+                "abilities": ["Drought"],
+                "evs": [232, 0, 144, 88, 0, 44],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthpower", "flamethrower", "morningsun", "calmmind"],
+                "abilities": ["Drought"],
+                "evs": [232, 0, 144, 88, 0, 44],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Sun Setter",
+                "movepool": ["earthquake", "stoneedge", "flareblitz", "morningsun"],
+                "abilities": ["Drought"],
+                "evs": [208, 252, 4, 0, 0, 44],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Adamant",
 				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["earthquake", "stoneedge", "willowisp", "morningsun"],
+                "abilities": ["Roche Radius"],
+                "evs": [208, 252, 4, 0, 0, 44],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["earthquake", "stoneedge", "stealthrock", "morningsun"],
+                "abilities": ["Roche Radius"],
+                "evs": [208, 252, 4, 0, 0, 44],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "stoneedge", "zenheadbutt", "rockpolish"],
+                "abilities": ["Roche Radius"],
+                "evs": [0, 252, 8, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["earthquake", "stoneedge", "flareblitz", "rockpolish"],
+                "abilities": ["Drought"],
+                "evs": [0, 252, 8, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["psyshock", "chargebeam", "morningsun", "cosmicpower"],
+                "abilities": ["Drought"],
+                "evs": [232, 0, 252, 4, 20, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["psychic", "ancientpower", "morningsun", "calmmind"],
+                "abilities": ["Drought"],
+                "evs": [232, 0, 252, 4, 20, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Hazards Support",
+                "movepool": ["psychicscream", "morningsun", "willowisp", "stealthrock"],
+                "abilities": ["Drought"],
+                "evs": [232, 0, 120, 0, 0, 156],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Support",
+                "movepool": ["psychicscream", "morningsun", "willowisp", "stealthrock"],
+                "abilities": ["Drought"],
+                "evs": [232, 0, 232, 0, 0, 44],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Support",
+                "movepool": ["psychicscream", "morningsun", "willowisp", "stealthrock"],
+                "abilities": ["Drought"],
+                "evs": [232, 0, 148, 0, 0, 128],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Hazards Support",
+                "movepool": ["psychicscream", "morningsun", "willowisp", "stealthrock"],
+                "abilities": ["Drought"],
+                "evs": [232, 0, 168, 0, 0, 108],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["earthquake", "stoneedge", "flareblitz", "stealthrock"],
+                "abilities": ["Roche Radius"],
+                "evs": [208, 252, 4, 0, 0, 44],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Custap Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "stoneedge", "zenheadbutt", "explosion"],
+                "abilities": ["Roche Radius"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "stoneedge", "zenheadbutt", "flareblitz"],
+                "abilities": ["Roche Radius"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["earthquake", "stoneedge", "reflect", "lightscreen"],
+                "abilities": ["Roche Radius"],
+                "evs": [248, 36, 224, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["earthquake", "stoneedge", "reflect", "lightscreen"],
+                "abilities": ["Roche Radius"],
+                "evs": [248, 36, 0, 0, 224, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["ancientpower", "willowisp", "calmmind", "batonpass"],
+                "abilities": ["Roche Radius"],
+                "evs": [248, 0, 216, 0, 0, 44],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["psychicscream", "cosmicpower", "morningsun", "batonpass"],
+                "abilities": ["Drought"],
+                "evs": [232, 0, 148, 0, 0, 128],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["psychicscream", "irondefense", "calmmind", "batonpass"],
+                "abilities": ["Roche Radius"],
+                "evs": [248, 0, 56, 0, 76, 128],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["rocktomb", "stealthrock", "rockpolish", "batonpass"],
+                "abilities": ["Drought"],
+                "evs": [232, 0, 28, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["chargebeam", "stealthrock", "rockpolish", "batonpass"],
+                "abilities": ["Drought"],
+                "evs": [232, 0, 28, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["earthquake", "willowisp", "lightscreen", "morningsun"],
+                "abilities": ["Roche Radius"],
+                "evs": [232, 36, 0, 0, 240, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["earthquake", "willowisp", "lightscreen", "morningsun"],
+                "abilities": ["Roche Radius"],
+                "evs": [232, 40, 192, 0, 0, 44],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["earthquake", "rockpolish", "substitute", "batonpass"],
+                "abilities": ["Roche Radius"],
+                "evs": [244, 16, 0, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Starf Berry",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["earthquake", "rockpolish", "substitute", "batonpass"],
+                "abilities": ["Roche Radius"],
+                "evs": [244, 16, 0, 0, 0, 248],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["rocktomb", "morningsun", "reflect", "lightscreen"],
+                "abilities": ["Drought"],
+                "evs": [248, 8, 12, 0, 240, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Adamant",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["rocktomb", "morningsun", "reflect", "lightscreen"],
+                "abilities": ["Drought"],
+                "evs": [248, 44, 192, 0, 24, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Screens Setter",
+                "movepool": ["rocktomb", "morningsun", "reflect", "lightscreen"],
+                "abilities": ["Drought"],
+                "evs": [248, 0, 192, 0, 24, 44],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Sun Setter",
+                "movepool": ["earthquake", "stoneedge", "morningsun", "batonpass"],
+                "abilities": ["Drought"],
+                "evs": [252, 36, 152, 0, 24, 44],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Sun Setter",
+                "movepool": ["earthquake", "stoneedge", "morningsun", "batonpass"],
+                "abilities": ["Drought"],
+                "evs": [252, 60, 128, 0, 24, 44],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Sun Setter",
+                "movepool": ["earthquake", "stoneedge", "morningsun", "batonpass"],
+                "abilities": ["Drought"],
+                "evs": [252, 104, 128, 0, 24, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Impish",
+				"inclination": "Support"
             }
         ]
     },
@@ -17789,12 +18112,256 @@
         ]
     },
     "porygonz": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["darkpulse", "hiddenpowerfighting", "icebeam", "nastyplot", "thunderbolt", "triattack", "trick"],
-                "abilities": ["Adaptability", "Flare Boost"],
+                "role": "Fast Pivot",
+                "movepool": ["triattack", "shadowball", "voltswitch", "icebeam"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["triattack", "shadowball", "voltswitch", "trick"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["triattack", "icebeam", "voltswitch", "trick"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["triattack", "shadowball", "agility", "substitute"],
+                "abilities": ["Adaptability"],
+				"evs": [20, 0, 0, 252, 0, 236],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["triattack", "shadowball", "nastyplot", "substitute"],
+                "abilities": ["Adaptability"],
+				"evs": [20, 0, 0, 252, 0, 236],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["triattack", "shadowball", "thunderbolt", "agility"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Silk Scarf",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["triattack", "shadowball", "chargebeam", "agility"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Silk Scarf",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["triattack", "shadowball", "voltswitch", "agility"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Silk Scarf",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["triattack", "shadowball", "nastyplot", "agility"],
+                "abilities": ["Adaptability"],
+				"evs": [232, 0, 228, 0, 0, 48],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["triattack", "shadowball", "chargebeam", "agility"],
+                "abilities": ["Adaptability"],
+				"evs": [232, 0, 228, 0, 0, 48],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["triattack", "shadowball", "voltswitch", "agility"],
+                "abilities": ["Flare Boost"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["triattack", "shadowball", "voltswitch", "trick"],
+                "abilities": ["Flare Boost"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["triattack", "shadowball", "trick", "agility"],
+                "abilities": ["Flare Boost"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["triattack", "darkpulse", "voltswitch", "icebeam"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Choice Trick",
+                "movepool": ["triattack", "darkpulse", "voltswitch", "trick"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["triattack", "darkpulse", "agility", "substitute"],
+                "abilities": ["Adaptability"],
+				"evs": [20, 0, 0, 252, 0, 236],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["triattack", "darkpulse", "nastyplot", "substitute"],
+                "abilities": ["Adaptability"],
+				"evs": [20, 0, 0, 252, 0, 236],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["triattack", "darkpulse", "thunderbolt", "agility"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Silk Scarf",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["triattack", "darkpulse", "chargebeam", "agility"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Silk Scarf",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["triattack", "darkpulse", "voltswitch", "agility"],
+                "abilities": ["Adaptability"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Silk Scarf",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["triattack", "darkpulse", "nastyplot", "agility"],
+                "abilities": ["Adaptability"],
+				"evs": [232, 0, 228, 0, 0, 48],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["triattack", "darkpulse", "chargebeam", "agility"],
+                "abilities": ["Adaptability"],
+				"evs": [232, 0, 228, 0, 0, 48],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["triattack", "darkpulse", "voltswitch", "agility"],
+                "abilities": ["Flare Boost"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["triattack", "darkpulse", "voltswitch", "trick"],
+                "abilities": ["Flare Boost"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["triattack", "darkpulse", "trick", "agility"],
+                "abilities": ["Flare Boost"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Timid",
 				"inclination": "Special"
             }
         ]
