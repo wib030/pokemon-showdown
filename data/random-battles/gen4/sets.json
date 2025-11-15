@@ -10383,14 +10383,207 @@
         ]
     },
     "wailord": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["hiddenpowergrass", "hydropump", "icebeam", "selfdestruct", "waterspout"],
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "return", "curse", "rest"],
                 "abilities": ["Unaware"],
-                "preferredTypes": ["Ice"],
-				"inclination": "Special"
+                "evs": [248, 0, 188, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "return", "curse", "rest"],
+                "abilities": ["Unaware"],
+                "evs": [248, 4, 116, 0, 140, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "return", "curse", "rest"],
+                "abilities": ["Unaware"],
+                "evs": [248, 4, 76, 0, 180, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "return", "curse", "rest"],
+                "abilities": ["Unaware"],
+                "evs": [192, 4, 96, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "return", "curse", "amnesia"],
+                "abilities": ["Unaware"],
+                "evs": [192, 4, 96, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "return", "curse", "amnesia"],
+                "abilities": ["Unaware"],
+                "evs": [248, 0, 188, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "return", "curse", "rest"],
+                "abilities": ["Unaware"],
+                "evs": [192, 4, 96, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Chesto Berry",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "return", "curse", "rest"],
+                "abilities": ["Unaware"],
+                "evs": [252, 0, 76, 0, 180, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Chesto Berry",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "bounce", "curse", "rest"],
+                "abilities": ["Unaware"],
+                "evs": [248, 0, 188, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "bounce", "curse", "rest"],
+                "abilities": ["Unaware"],
+                "evs": [248, 4, 116, 0, 140, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "bounce", "curse", "rest"],
+                "abilities": ["Unaware"],
+                "evs": [248, 4, 76, 0, 180, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "bounce", "curse", "rest"],
+                "abilities": ["Unaware"],
+                "evs": [192, 4, 96, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "bounce", "curse", "amnesia"],
+                "abilities": ["Unaware"],
+                "evs": [192, 4, 96, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "bounce", "curse", "amnesia"],
+                "abilities": ["Unaware"],
+                "evs": [248, 0, 188, 0, 72, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "bounce", "curse", "rest"],
+                "abilities": ["Unaware"],
+                "evs": [192, 4, 96, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Chesto Berry",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["wavecrash", "bounce", "curse", "rest"],
+                "abilities": ["Unaware"],
+                "evs": [252, 0, 76, 0, 180, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Chesto Berry",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["dive", "toxic", "curse", "substitute"],
+                "abilities": ["Unaware"],
+                "evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["dive", "toxic", "curse", "substitute"],
+                "abilities": ["Unaware"],
+                "evs": [252, 0, 76, 0, 180, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["dive", "toxic", "attract", "substitute"],
+                "abilities": ["Unaware"],
+                "evs": [252, 0, 4, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["dive", "toxic", "attract", "substitute"],
+                "abilities": ["Unaware"],
+                "evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
             }
         ]
     },
