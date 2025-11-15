@@ -930,7 +930,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 	}
 	
 	override getPokemonPool(
-		type: string,
+		typeList: TypeFrequency[],
 		pokemonToExclude: RandomTeamsTypes.RandomSet[] = [],
 		isMonotype = false,
 		pokemonList: string[]
@@ -943,19 +943,28 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let species = this.dex.species.get(pokemon);
 			if (exclude.includes(species.id)) continue;
 			resistFlag = false;
-			const abilities = Object.values(species.abilities).filter(a => this.dex.abilities.get(a).gen <= this.gen);
 			
-			for (const ability of abilities)
+			if (Array.isArray(typeList) && typeList.length > 0)
 			{
-				if (this.dex.precheckEffectiveness(type, species.types, ability) < 0)
+				const abilities = Object.values(species.abilities).filter(a => this.dex.abilities.get(a).gen <= this.gen);
+				
+				for (const Weakness of typeList)
 				{
-					resistFlag = true;
+					for (const ability of abilities)
+					{
+						if (this.dex.precheckEffectiveness(Weakness.type, species.types, ability) < 0)
+						{
+							resistFlag = true;
+						}
+
+						if (resistFlag) break;
+					}
+					
+					if (resistFlag) break;
 				}
 
-				if (resistFlag) break;
+				if (!resistFlag) continue;
 			}
-
-			if (!resistFlag) continue;
 
 			if (species.baseSpecies in pokemonPool) {
 				pokemonPool[species.baseSpecies].push(pokemon);
@@ -1001,6 +1010,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let WeaknessListFull: TypeFrequency[] = [];
 		let DoubleWeaknessListFull: TypeFrequency[] = [];
 		
+		let TypeList: TypeFrequency[] = [];
+		
 		let leadNum = 0;
 		let removalNum = 0;
 		let physicalAttackers = 0;
@@ -1024,55 +1035,19 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let temp: TypeFrequency = {};
 
 		const pokemonList = Object.keys(this.randomSets);
-		let [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
+		let [pokemonPool, baseSpeciesPool] = this.getPokemonPool(TypeList, pokemon, isMonotype, pokemonList);
 
 		while (baseSpeciesPool.length && pokemon.length < this.maxTeamSize) {
 			if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length > 0)
 			{
-				if (DoubleWeaknessList.length > 1)
-				{
-					typeMatchesPrev = true;
-					
-					while (!typeMatchesPrev)
-					{
-						temp = this.sample(DoubleWeaknessList);
-						type = temp.type;
-						
-						if (type !== prevType) typeMatchesPrev = false;
-					}
-					prevType = type;
-				}
-				else
-				{
-					temp = this.sample(DoubleWeaknessList);
-					type = temp.type;
-					prevType = type;
-				}
+				TypeList = DoubleWeaknessList;
 			}
 			else if (Array.isArray(WeaknessList) && WeaknessList.length > 0)
 			{
-				if (WeaknessList.length > 1)
-				{
-					typeMatchesPrev = true;
-					
-					while (!typeMatchesPrev)
-					{
-						temp = this.sample(WeaknessList);
-						type = temp.type;
-						
-						if (type !== prevType) typeMatchesPrev = false;
-					}
-					prevType = type;
-				}
-				else
-				{
-					temp = this.sample(WeaknessList);
-					type = temp.type;
-					prevType = type;
-				}
+				TypeList = WeaknessList;
 			}
 			
-			[pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
+			[pokemonPool, baseSpeciesPool] = this.getPokemonPool(TypeList, pokemon, isMonotype, pokemonList);
 			const baseSpecies = this.sample(baseSpeciesPool);
 			let species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
 			
