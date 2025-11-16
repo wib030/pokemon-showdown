@@ -30403,6 +30403,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			snap: ["4E"],
 			superfang: ["4L35"],
 			painsplit: ["4L48"],
+			superpower: ["4L52", "4T"],
+			headsmash: ["4L60"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["astonish", "faketears"], pokeball: "pokeball"},
