@@ -583,7 +583,11 @@ export const commands: Chat.ChatCommands = {
 		if (!this.runBroadcast()) return;
 		target = target.trim();
 		const gen = parseInt(cmd.substr(-1));
-		if (gen) target += `, gen${gen}`;
+		if (gen) {
+			target += `, gen${gen}`;
+		} else {
+			target += ', 4';
+		}
 
 		const { dex, format, targets } = this.splitFormat(target, true, true);
 
