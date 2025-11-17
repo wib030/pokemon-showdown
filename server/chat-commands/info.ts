@@ -586,7 +586,7 @@ export const commands: Chat.ChatCommands = {
 		if (gen) {
 			target += `, gen${gen}`;
 		} else {
-			target += ', 4';
+			target += ', gen4';
 		}
 
 		const { dex, format, targets } = this.splitFormat(target, true, true);
