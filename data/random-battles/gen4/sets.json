@@ -10022,18 +10022,186 @@
         ]
     },
     "mawile": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Setup",
-                "movepool": ["batonpass", "ironhead", "suckerpunch", "swordsdance"],
+                "role": "Berry Sweeper",
+                "movepool": ["outrage", "knockoff", "ironhead", "substitute"],
                 "abilities": ["Huge Power"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
 				"inclination": "Physical"
             },
-            {
-                "role": "Bulky Attacker",
-                "movepool": ["focuspunch", "ironhead", "substitute", "suckerpunch"],
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["outrage", "suckerpunch", "ironhead", "substitute"],
                 "abilities": ["Huge Power"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["outrage", "suckerpunch", "swordsdance", "substitute"],
+                "abilities": ["Huge Power"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["outrage", "ironhead", "swordsdance", "substitute"],
+                "abilities": ["Huge Power"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["outrage", "knockoff", "focuspunch", "substitute"],
+                "abilities": ["Huge Power"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["outrage", "knockoff", "ironhead", "headsmash"],
+                "abilities": ["Huge Power"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["outrage", "knockoff", "ironhead", "superpower"],
+                "abilities": ["Huge Power"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["outrage", "knockoff", "ironhead", "headsmash"],
+                "abilities": ["Huge Power"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["outrage", "knockoff", "ironhead", "superpower"],
+                "abilities": ["Huge Power"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["outrage", "suckerpunch", "ironhead", "superpower"],
+                "abilities": ["Huge Power"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["outrage", "knockoff", "headsmash", "substitute"],
+                "abilities": ["Huge Power"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["outrage", "superpower", "swordsdance", "substitute"],
+                "abilities": ["Huge Power"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dragonclaw", "superpower", "irondefense", "substitute"],
+                "abilities": ["Huge Power"],
+				"evs": [248, 4, 12, 0, 244, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dragonclaw", "superpower", "knockoff", "substitute"],
+                "abilities": ["Huge Power"],
+				"evs": [248, 0, 36, 0, 224, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dragonclaw", "superpower", "stockpile", "swallow"],
+                "abilities": ["Huge Power"],
+				"evs": [248, 0, 36, 0, 224, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["dragonclaw", "knockoff", "stockpile", "batonpass"],
+                "abilities": ["Huge Power"],
+				"evs": [248, 0, 36, 0, 224, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["dragonclaw", "swordsdance", "stockpile", "swallow"],
+                "abilities": ["Huge Power"],
+				"evs": [248, 100, 120, 0, 40, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["dragonclaw", "swordsdance", "taunt", "substitute"],
+                "abilities": ["Huge Power"],
+				"evs": [64, 208, 4, 0, 0, 232],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
 				"inclination": "Physical"
             }
         ]
