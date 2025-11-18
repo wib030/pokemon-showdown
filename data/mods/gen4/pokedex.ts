@@ -374,7 +374,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	lucario: {
 		inherit: true,
-		baseStats: {hp: 60, atk: 110, def: 70, spa: 125, spd: 55, spe: 99},
+		baseStats: {hp: 60, atk: 114, def: 80, spa: 129, spd: 55, spe: 99},
 		abilities: {0: "Scrappy", 1: "Iron Fist"},
 	},
 	ludicolo: {
