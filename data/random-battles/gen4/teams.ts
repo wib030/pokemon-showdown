@@ -570,10 +570,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 	): string {
 		if (abilities.length <= 1) return abilities[0];
 
-		// Hard-code abilities here
-		if (species.id === 'dewgong') return moves.has('raindance') ? 'Hydration' : 'Thick Fat';
-		if (species.id === 'cloyster' && counter.get('skilllink')) return 'Skill Link';
-
 		const abilityAllowed: string[] = [];
 		// Obtain a list of abilities that are allowed (not culled)
 		for (const ability of abilities) {
