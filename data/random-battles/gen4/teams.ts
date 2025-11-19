@@ -1013,6 +1013,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		let TypeList: TypeFrequency[] = [];
 		
+		let leadMonHazards = [];
+		
 		let leadNum = 0;
 		let removalNum = 0;
 		let physicalAttackers = 0;
@@ -1207,6 +1209,42 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				} else {
 					teamHasChoiceItem = true;
 				}
+			}
+			
+			// Store the hazards of lead and removal mons for comparison
+			if (pokemon.length === leadSlot) {
+				for (const move of set.moves) {
+					switch (move) {
+						case 'stealthrock':
+						case 'spikes':
+						case 'toxicspikes':
+						case 'stickyweb':
+							leadMonHazards.push(move);
+							break;
+					}
+				}
+			} else if (pokemon.length === removalSlot) {
+				for (const move of set.moves) {
+					switch (move) {
+						case 'stealthrock':
+						case 'spikes':
+						case 'toxicspikes':
+						case 'stickyweb':
+							if (leadMonHazards.includes(move)) {
+								leadMonHazards = [];
+								skip = true;
+							}
+							break;
+					}
+					if (skip) break;
+				}
+			}
+			
+			if (skip) continue;
+			
+			// Reroll hazard removal if it has Defog, and our lead has Sticky Web
+			if (pokemon.length === removalSlot) {
+				if (leadMonHazards.includes('stickyweb') && set.moves.includes('defog')) continue;
 			}
 			
 			/*
