@@ -1021,7 +1021,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		let checkSpecies;
 		let sets;
-		const maxRerolls = 2500;
+		const maxRerolls = 1000;
 		let rerollAttempts = 0;
 		let rerollAttemptsTotal = 0;
 		let skipReroll = false;
@@ -1038,7 +1038,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let [pokemonPool, baseSpeciesPool] = this.getPokemonPool(TypeList, pokemon, isMonotype, pokemonList);
 
 		while (baseSpeciesPool.length && pokemon.length < this.maxTeamSize) {
-			if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length > 0)
+			if (Array.isArray(DoubleWeaknessList) && DoubleWeaknessList.length > 0 && rerollAttempts < (maxRerolls / 2))
 			{
 				TypeList = DoubleWeaknessList;
 			}
