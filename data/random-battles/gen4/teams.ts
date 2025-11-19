@@ -1060,7 +1060,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (baseFormes[species.baseSpecies]) continue;
 
 			// Prevent Shedinja from generating after Sandstorm/Hail setters
-			if (species.name === 'Shedinja' && (teamDetails.sand || teamDetails.hail)) continue;
+			if ((species.name === 'Shedinja' || species.name === 'Phione') && (teamDetails.sand || teamDetails.hail)) continue;
 
 			// Dynamically scale limits for different team sizes. The default and minimum value is 1.
 			const limitFactor = Math.round(this.maxTeamSize / 6) || 1;
