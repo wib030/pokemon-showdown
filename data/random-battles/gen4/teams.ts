@@ -1123,7 +1123,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 						break;
 					}
 				}
-			} else if (pokemon.length === hazardTankSlot && hasAntiLead && teamDetails.stealthRock === 0 && teamDetails.spikes === 0 && teamDetails.toxicspikes === 0) {
+			} else if (pokemon.length === hazardTankSlot && hasAntiLead && teamDetails.stealthRock < 1 && teamDetails.spikes < 1 && teamDetails.toxicspikes < 1) {
 				sets = this.randomSets[checkSpecies.id]["sets"];
 				// Check if the Pokemon has a Hazards Tank set
 				skip = true;
@@ -1391,7 +1391,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					}
 				}
 				
-				// Limit two of a single type, and one of any other type
+				// Limit two of any type
 				for (const typeName of types) {
 					if ((typeCount[typeName] >= maxSingleType * limitFactor) && set.ability !== 'Color Change' && set.ability !== 'Imposter') {
 						skip = true;
