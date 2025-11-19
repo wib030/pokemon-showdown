@@ -20773,16 +20773,6 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Fast Lead",
-                "movepool": ["hypervoice", "earthpower", "imprison", "stealthrock"],
-                "abilities": ["Rock Star"],
-				"evs": [0, 0, 0, 252, 4, 252],
-				"ivs": [31, 0, 31, 31, 31, 31],
-				"item": "Focus Sash",
-				"nature": "Timid",
-				"inclination": "Special"
-            },
-			{
                 "role": "Setup Sweeper",
                 "movepool": ["hypervoice", "earthpower", "icebeam", "nastyplot"],
                 "abilities": ["Rock Star"],
