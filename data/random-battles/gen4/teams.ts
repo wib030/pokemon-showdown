@@ -1018,6 +1018,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let specialAttackers = 0;
 		let maxSingleType = 2;
 		let hasAntiLead = false;
+		let teamHasChoiceItem = false;
 		
 		let checkSpecies;
 		let sets;
@@ -1197,7 +1198,15 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					continue;
 				}
 			}
-
+			
+			// Reroll the Pokemon if the set has a choice item, and we already have one on the team
+			if (set.item === 'Choice Scarf' || set.item === 'Choice Band' || set.item === 'Choice Specs') {
+				if (teamHasChoiceItem) {
+					continue;
+				} else {
+					teamHasChoiceItem = true;
+				}
+			}
 			
 			/*
 			if (set.ability === 'Multitype') {
