@@ -735,8 +735,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		let onlyLeadSets = false;
 		let onlyRemovalSets = false;
-		let onlyLeadAndRemovalSets = false;
 		let onlyHazardTankSets = false;
+		let onlyPreventableSets = false;
 		
 		for (let set of sets) {
 			if (REMOVAL_ROLES.includes(set.role)) {
@@ -752,8 +752,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		}
 		if (removalSetCount === tempSetCount) onlyRemovalSets = true;
 		if (leadSetCount === tempSetCount) onlyLeadSets = true;
-		if ((leadSetCount + removalSetCount) === tempSetCount) onlyLeadAndRemovalSets = true;
 		if (hazardTankSetCount === tempSetCount) onlyHazardTankSets = true;
+		if ((leadSetCount + removalSetCount + hazardTankSetCount) === tempSetCount) onlyPreventableSets = true;
 		
 		for (const set of sets) {
 			if (ensureLead)
@@ -764,7 +764,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			else
 			{
 				// Prevent Lead if we aren't ensuring lead, and if we don't only have lead sets
-				if (!onlyLeadSets && !onlyLeadAndRemovalSets && LEAD_ROLES.includes(set.role)) continue;
+				if (!onlyLeadSets && !onlyPreventableSets && LEAD_ROLES.includes(set.role)) continue;
 				
 				// Enforce Physical Attacker if the team requires one
 				if (ensurePhysicalAttacker && !ATTACKING_ROLES.includes(set.role) && set.inclination !== 'Physical') continue;
@@ -781,7 +781,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			else
 			{
 				// Prevent Removal if we aren't ensuring removal, and if we don't only have removal sets
-				if (!onlyRemovalSets && !onlyLeadAndRemovalSets && REMOVAL_ROLES.includes(set.role)) continue;
+				if (!onlyRemovalSets && !onlyPreventableSets && REMOVAL_ROLES.includes(set.role)) continue;
 			}
 			
 			if (ensureHazardTank)
@@ -792,7 +792,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			else
 			{
 				// Prevent Hazard Tank if we aren't ensuring it, and if we don't only have Hazard Tank sets
-				if (!onlyHazardTankSets && NON_LEAD_HAZARD_ROLES.includes(set.role)) continue;
+				if (!onlyHazardTankSets && !onlyPreventableSets && NON_LEAD_HAZARD_ROLES.includes(set.role)) continue;
 			}
 			
 			possibleSets.push(set);
@@ -1211,41 +1211,26 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 			}
 			
-			// Store the hazards of lead and removal mons for comparison
-			if (pokemon.length === leadSlot) {
-				for (const move of set.moves) {
-					switch (move) {
-						case 'stealthrock':
-						case 'spikes':
-						case 'toxicspikes':
-						case 'stickyweb':
-							leadMonHazards.push(move);
-							break;
-					}
-				}
-			} else if (pokemon.length === removalSlot) {
-				for (const move of set.moves) {
-					switch (move) {
-						case 'stealthrock':
-						case 'spikes':
-						case 'toxicspikes':
-						case 'stickyweb':
-							if (leadMonHazards.includes(move)) {
-								leadMonHazards = [];
-								skip = true;
-							}
-							break;
-					}
-					if (skip) break;
-				}
-			}
+			// Reroll if our Pokemon has Defog, and our team has Sticky Web
+			if (teamDetails.stickyWeb > 0 && set.moves.includes('defog')) continue;
 			
-			if (skip) continue;
+			// Reroll if our Pokemon has Stealth Rock, and our team already has it
+			if (teamDetails.stealthRock > 0 && set.moves.includes('stealthrock')) continue;
 			
-			// Reroll hazard removal if it has Defog, and our lead has Sticky Web
-			if (pokemon.length === removalSlot) {
-				if (leadMonHazards.includes('stickyweb') && set.moves.includes('defog')) continue;
-			}
+			// Reroll if our Pokemon has Spikes, and our team already has it
+			if (teamDetails.spikes > 0 && set.moves.includes('spikes')) continue;
+			
+			// Reroll if our Pokemon has Toxic Spikes, and our team already has it
+			if (teamDetails.toxicSpikes > 0 && set.moves.includes('toxicspikes')) continue;
+			
+			// Reroll if our Pokemon has Sticky Web, and our team already has it
+			if (teamDetails.stickyWeb > 0 && set.moves.includes('stickyweb')) continue;
+			
+			// Reroll if our Pokemon has Rapid Spin, and our team already has it
+			if (teamDetails.rapidSpin > 0 && set.moves.includes('rapidspin')) continue;
+			
+			// Reroll if our Pokemon has Defog, and our team already has it
+			if (teamDetails.defog > 0 && set.moves.includes('defog')) continue;
 			
 			/*
 			if (set.ability === 'Multitype') {
@@ -1558,6 +1543,8 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (set.moves.includes('stealthrock')) teamDetails.stealthRock = 1;
 			if (set.moves.includes('toxicspikes')) teamDetails.toxicSpikes = 1;
 			if (set.moves.includes('rapidspin')) teamDetails.rapidSpin = 1;
+			if (set.moves.includes('stickyweb')) teamDetails.stickyWeb = 1;
+			if (set.moves.includes('defog')) teamDetails.defog = 1;
 			if (set.moves.includes('reflect') && set.moves.includes('lightscreen')) teamDetails.screens = 1;
 			if (LEAD_ROLES.includes(set.role)) leadNum++;
 			if (['Anti-Lead'].includes(set.role)) hasAntiLead = true;
