@@ -1046,6 +1046,15 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			{
 				TypeList = WeaknessList;
 			}
+			else
+			{
+				TypeList[0] = {type: 'Ghost', frequency: 1};
+
+				if (type !== 'Ghost')
+				{
+					TypeList[1] = {type: type, frequency: 1};
+				}
+			}
 			
 			[pokemonPool, baseSpeciesPool] = this.getPokemonPool(TypeList, pokemon, isMonotype, pokemonList);
 			const baseSpecies = this.sample(baseSpeciesPool);
@@ -1188,7 +1197,9 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					continue;
 				}
 			}
+
 			
+			/*
 			if (set.ability === 'Multitype') {
 				switch (set.item) {
 					case 'Fist Plate': checkTypes = 'Fighting'; break;
@@ -1230,6 +1241,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 					default: break;
 				}
 			}
+			*/
 			
 			if (set.ability === 'Forecast') {
 				switch (set.item) {
