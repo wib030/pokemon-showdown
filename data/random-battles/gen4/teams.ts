@@ -44,7 +44,7 @@ const PRIORITY_POKEMON = [
 
 // Lead Roles
 const LEAD_ROLES = [
-	'Fast Lead', 'Bulky Lead', 'Anti-Lead', 'Sand Lead', 'Sun Lead', 'Hail Lead', 'Rain Lead', 'Baton Pass Lead',
+	'Fast Lead', 'Bulky Lead', 'Anti-Lead', 'Sand Lead', 'Sun Lead', 'Hail Lead', 'Rain Lead', 'Baton Pass Lead', 'TR Lead',
 ];
 
 // Removal Roles
@@ -731,46 +731,40 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		let leadSetCount = 0;
 		let removalSetCount = 0;
+		let hazardTankSetCount = 0;
 		
 		let onlyLeadSets = false;
 		let onlyRemovalSets = false;
 		let onlyLeadAndRemovalSets = false;
-		
-		let hasLeadSet = false;
-		let hasRemovalSet = false;
-		let hasHazardTankSet = false;
+		let onlyHazardTankSets = false;
 		
 		for (let set of sets) {
 			if (REMOVAL_ROLES.includes(set.role)) {
-				hasRemovalSet = true;
 				removalSetCount++;
 			}
 			else if (LEAD_ROLES.includes(set.role)) {
-				hasLeadSet = true;
 				leadSetCount++;
 			}
 			else if (NON_LEAD_HAZARD_ROLES.includes(set.role)) {
-				hasHazardTankSet = true;
+				hazardTankSetCount++;
 			}
 			tempSetCount++;
 		}
 		if (removalSetCount === tempSetCount) onlyRemovalSets = true;
 		if (leadSetCount === tempSetCount) onlyLeadSets = true;
 		if ((leadSetCount + removalSetCount) === tempSetCount) onlyLeadAndRemovalSets = true;
+		if (hazardTankSetCount === tempSetCount) onlyHazardTankSets = true;
 		
 		for (const set of sets) {
 			if (ensureLead)
 			{
 				// Enforce Lead if the team does not have one
-				if (hasLeadSet && !LEAD_ROLES.includes(set.role)) continue;
+				if (!LEAD_ROLES.includes(set.role)) continue;
 			}
 			else
 			{
 				// Prevent Lead if we aren't ensuring lead, and if we don't only have lead sets
 				if (!onlyLeadSets && !onlyLeadAndRemovalSets && LEAD_ROLES.includes(set.role)) continue;
-
-				// Enforce Hazards Tank if the team requires one
-				if (ensureHazardTank && hasHazardTankSet && !NON_LEAD_HAZARD_ROLES.includes(set.role)) continue;
 				
 				// Enforce Physical Attacker if the team requires one
 				if (ensurePhysicalAttacker && !ATTACKING_ROLES.includes(set.role) && set.inclination !== 'Physical') continue;
@@ -782,12 +776,23 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			if (ensureRemoval)
 			{
 				// Enforce Removal if the team does not have removal
-				if (hasRemovalSet && !REMOVAL_ROLES.includes(set.role)) continue;
+				if (!REMOVAL_ROLES.includes(set.role)) continue;
 			}
 			else
 			{
 				// Prevent Removal if we aren't ensuring removal, and if we don't only have removal sets
 				if (!onlyRemovalSets && !onlyLeadAndRemovalSets && REMOVAL_ROLES.includes(set.role)) continue;
+			}
+			
+			if (ensureHazardTank)
+			{
+				// Enforce Hazards Tank if the team requires one
+				if (!NON_LEAD_HAZARD_ROLES.includes(set.role)) continue;
+			}
+			else
+			{
+				// Prevent Hazard Tank if we aren't ensuring it, and if we don't only have Hazard Tank sets
+				if (!onlyHazardTankSets && NON_LEAD_HAZARD_ROLES.includes(set.role)) continue;
 			}
 			
 			possibleSets.push(set);
