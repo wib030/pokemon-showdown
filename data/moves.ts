@@ -5973,7 +5973,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (!this.singleEvent('TakeItem', item, source.itemState, source, source, move, item)) return false;
 			if (!item.fling) return false;
 			move.basePower = item.fling.basePower;
-			this.debug(`BP: ${move.basePower}`);
 			if (item.id === 'dawnstone') {
 				if (target.status === 'slp' || target.hasAbility('comatose')) {
 					this.debug('BP doubled on sleeping target');
