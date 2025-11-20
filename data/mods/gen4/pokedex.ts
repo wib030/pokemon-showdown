@@ -635,6 +635,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	pelipper: {
 		inherit: true,
+		baseStats: { hp: 60, atk: 50, def: 100, spa: 95, spd: 70, spe: 65 },
 		abilities: {0: "Drizzle"},
 	},
 	persian: {
@@ -942,7 +943,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	staraptor: {
 		inherit: true,
 		types: ["Fighting", "Flying"],
-		baseStats: {hp: 95, atk: 120, def: 80, spa: 50, spd: 50, spe: 105},
+		baseStats: {hp: 95, atk: 120, def: 80, spa: 50, spd: 60, spe: 105},
 	},
 	starmie: {
 		inherit: true,
@@ -1425,7 +1426,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	bellossom: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 80, def: 85, spa: 110, spd: 130, spe: 70},
+		baseStats: {hp: 75, atk: 80, def: 95, spa: 110, spd: 130, spe: 70},
 		abilities: { 0: "Chlorophyll", 1: "Photosynthesis" },
 	},
 	bibarel: {
@@ -1708,7 +1709,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	dugtrio: {
 		inherit: true,
-		baseStats: {hp: 35, atk: 90, def: 50, spa: 50, spd: 70, spe: 140},
+		baseStats: {hp: 35, atk: 100, def: 50, spa: 50, spd: 70, spe: 140},
 		abilities: {0: "Arena Trap", 1: "Sand Force"},
 	},
 	eevee: {
