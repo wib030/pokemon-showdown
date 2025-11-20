@@ -1661,7 +1661,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	charizard: {
 		inherit: true,
 		types: ["Fire", "Dragon"],
-		baseStats: {hp: 98, atk: 104, def: 78, spa: 124, spd: 85, spe: 102},
+		baseStats: {hp: 98, atk: 99, def: 78, spa: 124, spd: 85, spe: 102},
 	},
 	glameow: {
 		inherit: true,
