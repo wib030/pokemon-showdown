@@ -114,7 +114,7 @@ export const STAT_NAMES: { [k: string]: string } = {
 const TIERS: { [k: string]: string } = {
 	uber: "Uber", ubers: "Uber",
 	ou: "OU", uu: "UU", ru: "RU", nu: "NU", pu: "PU",
-	mono: "Mono", monotype: "Mono", lc: "LC", littlecup: "LC", lcuber: "LC Uber", lcubers: "LC Uber", littlecupuber: "LC Uber", littlecupubers: "LC Uber",
+	mono: "Mono", monotype: "Mono", lc: "LC", littlecup: "LC", gen4lcuber: "LC Uber",
 };
 
 function formatAbility(ability: Ability | string) {
