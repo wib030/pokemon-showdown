@@ -184,6 +184,10 @@ export const Tags: { [id: IDEntry]: TagData } = {
 		name: "NFE",
 		speciesFilter: species => species.tier === 'NFE',
 	},
+	lcuber: {
+		name: "LC Uber",
+		speciesFilter: species => species.tier === 'LC Uber',
+	},
 	lc: {
 		name: "LC",
 		speciesFilter: species => species.doublesTier === 'LC',
