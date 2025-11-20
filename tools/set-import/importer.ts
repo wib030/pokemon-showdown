@@ -39,7 +39,7 @@ type GenerationNum = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 
 // The tiers we support, ie. ones that we have data sources for.
 export const TIERS = new Set([
-	'ubers', 'ou', 'uu', 'ru', 'nu', 'pu', 'zu', 'lc', 'gen4lcuber', 'cap', 'nationaldex',
+	'ubers', 'ou', 'uu', 'ru', 'nu', 'pu', 'zu', 'lc', 'lcuber', 'cap', 'nationaldex',
 	'doublesou', 'battlespotsingles', 'battlespotdoubles', 'battlestadiumsingles',
 	// UGH
 	'battlestadiumsinglesseries2', 'battlestadiumsinglesregulationc',

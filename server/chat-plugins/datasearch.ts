@@ -676,7 +676,7 @@ function runDexsearch(target: string, cmd: string, message: string, isTest: bool
 		publ: 'PUBL', pu: 'PU',
 		zubl: 'ZUBL', zu: 'ZU',
 		nfe: 'NFE',
-		lc: 'LC', gen4lcuber: 'LC Uber',
+		lc: 'LC', lcuber: 'LC Uber', lcubers: 'LC Uber',
 		cap: 'CAP', caplc: 'CAP LC', capnfe: 'CAP NFE',
 	});
 	const singlesTiersValues: { [k: string]: number } = Object.assign(Object.create(null), {
