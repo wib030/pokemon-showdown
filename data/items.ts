@@ -1362,6 +1362,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Draco Plate",
 		spritenum: 105,
 		onPlate: 'Dragon',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Dragon') {
@@ -1448,6 +1451,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Dread Plate",
 		spritenum: 110,
 		onPlate: 'Dark',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Dark') {
@@ -1513,6 +1519,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Earth Plate",
 		spritenum: 117,
 		onPlate: 'Ground',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Ground') {
@@ -1934,6 +1943,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Fist Plate",
 		spritenum: 143,
 		onPlate: 'Fighting',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Fighting') {
@@ -1969,6 +1981,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Flame Plate",
 		spritenum: 146,
 		onPlate: 'Fire',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Fire') {
@@ -2696,6 +2711,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Icicle Plate",
 		spritenum: 220,
 		onPlate: 'Ice',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Ice') {
@@ -2748,6 +2766,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Insect Plate",
 		spritenum: 223,
 		onPlate: 'Bug',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Bug') {
@@ -2786,6 +2807,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Iron Plate",
 		spritenum: 225,
 		onPlate: 'Steel',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Steel') {
@@ -3537,6 +3561,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Meadow Plate",
 		spritenum: 282,
 		onPlate: 'Grass',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Grass') {
@@ -3787,6 +3814,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Mind Plate",
 		spritenum: 291,
 		onPlate: 'Psychic',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Psychic') {
@@ -4292,6 +4322,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Pixie Plate",
 		spritenum: 610,
 		onPlate: 'Fairy',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move && move.type === 'Fairy') {
@@ -5381,6 +5414,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Sky Plate",
 		spritenum: 450,
 		onPlate: 'Flying',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Flying') {
@@ -5525,6 +5561,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Splash Plate",
 		spritenum: 463,
 		onPlate: 'Water',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Water') {
@@ -5545,6 +5584,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Spooky Plate",
 		spritenum: 464,
 		onPlate: 'Ghost',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Ghost') {
@@ -5707,6 +5749,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Stone Plate",
 		spritenum: 477,
 		onPlate: 'Rock',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Rock') {
@@ -5915,6 +5960,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Toxic Plate",
 		spritenum: 516,
 		onPlate: 'Poison',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Poison') {
@@ -7343,6 +7391,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Zap Plate",
 		spritenum: 572,
 		onPlate: 'Electric',
+		fling: {
+			basePower: 90,
+		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (move.type === 'Electric') {
