@@ -138,7 +138,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NU",
 	},
 	crobat: {
-		tier: "OU",
+		tier: "UU",
 	},
 	oddish: {
 		tier: "LC",
@@ -270,7 +270,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NU",
 	},
 	magnezone: {
-		tier: "OU",
+		tier: "(OU)",
 	},
 	farfetchd: {
 		tier: "OU",
@@ -402,7 +402,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NFE",
 	},
 	kingdra: {
-		tier: "OU",
+		tier: "UU",
 	},
 	goldeen: {
 		tier: "LC",
@@ -477,7 +477,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "OU",
 	},
 	jolteon: {
-		tier: "OU",
+		tier: "(OU)",
 	},
 	flareon: {
 		tier: "OU",
@@ -492,7 +492,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "UU",
 	},
 	glaceon: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	porygon: {
 		tier: "LC",
@@ -546,7 +546,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "Uber",
 	},
 	mew: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	chikorita: {
 		tier: "LC",
@@ -705,7 +705,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "LC",
 	},
 	forretress: {
-		tier: "OU",
+		tier: "(OU)",
 	},
 	dunsparce: {
 		tier: "NU",
@@ -805,7 +805,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "OU",
 	},
 	entei: {
-		tier: "OU",
+		tier: "(Uber)",
 	},
 	suicune: {
 		tier: "OU",
@@ -979,13 +979,13 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "LC",
 	},
 	delcatty: {
-		tier: "OU",
+		tier: "(OU)",
 	},
 	sableye: {
 		tier: "UU",
 	},
 	mawile: {
-		tier: "OU",
+		tier: "UU",
 	},
 	aron: {
 		tier: "LC",
@@ -1051,7 +1051,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "LC",
 	},
 	camerupt: {
-		tier: "OU",
+		tier: "UU",
 	},
 	torkoal: {
 		tier: "OU",
@@ -1108,7 +1108,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "LC",
 	},
 	crawdaunt: {
-		tier: "OU",
+		tier: "UU",
 	},
 	baltoy: {
 		tier: "LC",
@@ -1211,7 +1211,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NU",
 	},
 	salamence: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	beldum: {
 		tier: "LC",
@@ -1223,19 +1223,19 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "OU",
 	},
 	regirock: {
-		tier: "UU",
+		tier: "(Uber)",
 	},
 	regice: {
 		tier: "UU",
 	},
 	registeel: {
-		tier: "UU",
-	},
-	latias: {
 		tier: "OU",
 	},
+	latias: {
+		tier: "(OU)",
+	},
 	latios: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	kyogre: {
 		tier: "Uber",
@@ -1247,7 +1247,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "Uber",
 	},
 	jirachi: {
-		tier: "OU",
+		tier: "Uber",
 	},
 	deoxys: {
 		tier: "Uber",
@@ -1417,7 +1417,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NU",
 	},
 	garchomp: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	riolu: {
 		tier: "LC",
@@ -1483,7 +1483,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "OU",
 	},
 	azelf: {
-		tier: "OU",
+		tier: "(Uber)",
 	},
 	dialga: {
 		tier: "Uber",

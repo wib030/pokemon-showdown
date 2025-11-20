@@ -41233,6 +41233,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			rapidspin: ["4L39"],
 			tailwind: ["4L40"],
 			wavecrash: ["4T"],
+			batonpass: ["4L42"],
 		},
 		encounters: [
 			{generation: 4, level: 20},

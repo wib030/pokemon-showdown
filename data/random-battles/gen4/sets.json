@@ -17196,13 +17196,216 @@
         ]
     },
     "lucario": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["closecombat", "crunch", "extremespeed", "stoneedge", "swordsdance"],
+                "role": "Setup Sweeper",
+                "movepool": ["aurasphere", "shadowball", "nastyplot", "agility"],
                 "abilities": ["Scrappy"],
-                "preferredTypes": ["Normal"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["aurasphere", "shadowball", "substitute", "agility"],
+                "abilities": ["Scrappy"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [30, 0, 31, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["aurasphere", "shadowball", "flashcannon", "icepunch"],
+                "abilities": ["Scrappy"],
+                "evs": [0, 20, 0, 252, 0, 236],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Rash",
+				"inclination": "Special"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["aurasphere", "shadowball", "thunderpunch", "icepunch"],
+                "abilities": ["Iron Fist"],
+                "evs": [0, 20, 0, 252, 0, 236],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Rash",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["closecombat", "crunch", "bulletpunch", "swordsdance"],
+                "abilities": ["Scrappy"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["closecombat", "thunderpunch", "bulletpunch", "swordsdance"],
+                "abilities": ["Iron Fist"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["closecombat", "crunch", "extremespeed", "fling"],
+                "abilities": ["Scrappy"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Anklet",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["closecombat", "crunch", "extremespeed", "fling"],
+                "abilities": ["Scrappy"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Bracer",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["aurasphere", "shadowball", "dragonpulse", "fling"],
+                "abilities": ["Scrappy"],
+                "evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Lens",
+				"nature": "Naive",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["closecombat", "crunch", "swordsdance", "substitute"],
+                "abilities": ["Scrappy"],
+                "evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [30, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["aurasphere", "shadowball", "nastyplot", "substitute"],
+                "abilities": ["Scrappy"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [30, 0, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["aurasphere", "shadowball", "nastyplot", "agility"],
+                "abilities": ["Scrappy"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Air Balloon",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["closecombat", "firepunch", "thunderpunch", "icepunch"],
+                "abilities": ["Iron Fist"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["closecombat", "crunch", "blazekick", "icepunch"],
+                "abilities": ["Scrappy"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["aurasphere", "shadowball", "icepunch", "agility"],
+                "abilities": ["Scrappy"],
+                "evs": [0, 60, 0, 252, 0, 196],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Rash",
+				"inclination": "Special"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["aurasphere", "shadowball", "icepunch", "agility"],
+                "abilities": ["Iron Fist"],
+                "evs": [0, 60, 0, 252, 0, 196],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Rash",
+				"inclination": "Special"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["aurasphere", "shadowball", "focusblast", "hiddenpowerice"],
+                "abilities": ["Scrappy"],
+                "evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["aurasphere", "shadowball", "hiddenpowerfighting", "agility"],
+                "abilities": ["Scrappy"],
+                "evs": [56, 0, 0, 252, 0, 200],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Focus Sash",
+				"nature": "Rash",
+				"inclination": "Special"
+            },
+			{
+                "role": "Glass Cannon",
+                "movepool": ["aurasphere", "shadowball", "hiddenpowerice", "agility"],
+                "abilities": ["Scrappy"],
+                "evs": [56, 0, 4, 252, 0, 196],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Rash",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["drainpunch", "thunderpunch", "icepunch", "bulkup"],
+                "abilities": ["Iron Fist"],
+                "evs": [248, 16, 132, 0, 0, 112],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Naive",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["closecombat", "icepunch", "extremespeed", "swordsdance"],
+                "abilities": ["Scrappy"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Air Balloon",
+				"nature": "Naive",
 				"inclination": "Physical"
             }
         ]
@@ -17446,18 +17649,156 @@
         ]
     },
     "carnivine": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Support",
-                "movepool": ["knockoff", "powerwhip", "sleeppowder", "synthesis"],
+                "role": "Bulky Attacker",
+                "movepool": ["powerwhip", "knockoff", "worryseed", "leafstorm"],
                 "abilities": ["Free Sample"],
+				"evs": [224, 252, 32, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Brave",
 				"inclination": "Physical"
             },
-            {
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["powerwhip", "crunch", "firefang", "icefang"],
+                "abilities": ["Strong Jaw"],
+				"evs": [224, 252, 32, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["powerwhip", "crunch", "thunderfang", "icefang"],
+                "abilities": ["Strong Jaw"],
+				"evs": [224, 252, 32, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["powerwhip", "crunch", "icefang", "synthesis"],
+                "abilities": ["Strong Jaw"],
+				"evs": [224, 252, 32, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["powerwhip", "crunch", "thunderfang", "synthesis"],
+                "abilities": ["Strong Jaw"],
+				"evs": [224, 252, 32, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["powerwhip", "crunch", "firefang", "synthesis"],
+                "abilities": ["Strong Jaw"],
+				"evs": [224, 252, 32, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
                 "role": "Bulky Setup",
-                "movepool": ["powerwhip", "return", "sleeppowder", "swordsdance", "synthesis"],
+                "movepool": ["powerwhip", "crunch", "icefang", "swordsdance"],
+                "abilities": ["Strong Jaw"],
+				"evs": [224, 140, 144, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["powerwhip", "crunch", "firefang", "swordsdance"],
+                "abilities": ["Strong Jaw"],
+				"evs": [224, 172, 112, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["powerwhip", "knockoff", "stockpile", "swallow"],
                 "abilities": ["Free Sample"],
+				"evs": [248, 64, 72, 0, 124, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["powerwhip", "knockoff", "stockpile", "swallow"],
+                "abilities": ["Free Sample"],
+				"evs": [248, 64, 220, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "leechseed", "worryseed", "stockpile"],
+                "abilities": ["Free Sample"],
+				"evs": [248, 64, 220, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "leechseed", "worryseed", "stockpile"],
+                "abilities": ["Free Sample"],
+				"evs": [248, 64, 72, 0, 124, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "leechseed", "worryseed", "stockpile"],
+                "abilities": ["Free Sample"],
+				"evs": [248, 64, 72, 0, 124, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["gigadrain", "knockoff", "hiddenpowerice", "stockpile"],
+                "abilities": ["Free Sample"],
+				"evs": [224, 36, 0, 248, 0, 0],
+				"ivs": [31, 30, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Quiet",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["gigadrain", "knockoff", "hiddenpowerfire", "stockpile"],
+                "abilities": ["Free Sample"],
+				"evs": [224, 36, 0, 248, 0, 0],
+				"ivs": [31, 30, 31, 30, 31, 30],
+				"item": "Leftovers",
+				"nature": "Quiet",
 				"inclination": "Physical"
             }
         ]

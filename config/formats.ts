@@ -43,7 +43,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 4] OU",
 		mod: 'gen4',
 		ruleset: ['Standard', 'Evasion Abilities Clause', 'Baton Pass Stat Trap Clause', 'Freeze Clause Mod', 'Team Preview'],
-		banlist: ['AG', 'Uber', 'Arena Trap', 'Quick Claw', 'Soul Dew', 'Swagger'],
+		banlist: ['AG', 'Uber', 'Quick Claw', 'Soul Dew', 'Swagger'],
 	},
 	{
 		name: "[Gen 4] UU",

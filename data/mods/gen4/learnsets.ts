@@ -33840,6 +33840,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			rapidspin: ["4L39"],
 			tailwind: ["4L40"],
 			wavecrash: ["4T"],
+			batonpass: ["4L42"],
 		},
 	},
 	snover: {
