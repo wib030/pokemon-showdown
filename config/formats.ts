@@ -53,25 +53,17 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		unbanlist: ['Snow Cloak', 'Quick Claw', 'Swagger'],
 	},
 	{
+		name: "[Gen 4] RU",
+		mod: 'gen4',
+		ruleset: ['[Gen 4] UU'],
+		banlist: ['UU', 'RUBL'],
+	},
+	{
 		name: "[Gen 4] NU",
 		mod: 'gen4',
 		ruleset: ['[Gen 4] UU', 'Baton Pass Clause'],
-		banlist: ['UU', 'NUBL'],
+		banlist: ['RU', 'NUBL'],
 		unbanlist: ['Sand Veil', 'Baton Pass'],
-	},
-	{
-		name: "[Gen 4] RU",
-		mod: 'gen4',
-		ruleset: ['[Gen 4] NU'],
-		banlist: ['NU', 'RUBL'],
-	},
-	{
-		name: "[Gen 4] LC",
-		mod: 'gen4',
-		ruleset: ['Standard', 'Little Cup', 'Evasion Abilities Clause', 'Sleep Moves Clause', 'Team Preview'],
-		banlist: [
-			'LC Uber', 'Deep Sea Tooth', 'Berry Juice', 'Dragon Rage', 'Sonic Boom', 'Swagger',
-		],
 	},
 	{
 		name: "[Gen 4] Anything Goes",
