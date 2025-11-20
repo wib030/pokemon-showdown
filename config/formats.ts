@@ -50,7 +50,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'gen4',
 		ruleset: ['[Gen 4] OU', '!Baton Pass Stat Trap Clause', '!Freeze Clause Mod'],
 		banlist: ['OU', 'UUBL', 'Baton Pass'],
-		unbanlist: ['Arena Trap', 'Snow Cloak', 'Quick Claw', 'Swagger'],
+		unbanlist: ['Snow Cloak', 'Quick Claw', 'Swagger'],
 	},
 	{
 		name: "[Gen 4] NU",
@@ -60,13 +60,24 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		unbanlist: ['Sand Veil', 'Baton Pass'],
 	},
 	{
-		name: "[Gen 4] LC",
+		name: "[Gen 4] RU",
+		mod: 'gen4',
+		ruleset: ['[Gen 4] NU'],
+		banlist: ['NU', 'RUBL'],
+	},
+	{
+		name: "[Gen 4] LC Uber",
 		mod: 'gen4',
 		ruleset: ['Standard', 'Little Cup', 'Evasion Abilities Clause', 'Sleep Moves Clause', 'Team Preview'],
 		banlist: [
-			'Meditite', 'Misdreavus', 'Murkrow', 'Scyther', 'Sneasel', 'Tangela', 'Yanma',
-			'Berry Juice', 'Deep Sea Tooth', 'Dragon Rage', 'Sonic Boom', 'Swagger',
+			'Berry Juice', 'Dragon Rage', 'Sonic Boom', 'Swagger',
 		],
+	},
+	{
+		name: "[Gen 4] LC",
+		mod: 'gen4',
+		ruleset: ['Standard', 'Little Cup', 'Evasion Abilities Clause', 'Sleep Moves Clause', 'Team Preview'],
+		banlist: ['LC Uber', 'Deep Sea Tooth'],
 	},
 	{
 		name: "[Gen 4] Anything Goes",

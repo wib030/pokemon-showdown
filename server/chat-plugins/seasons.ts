@@ -12,7 +12,7 @@ export const BADGE_THRESHOLDS: Record<string, number> = {
 	bronze: 100,
 };
 export const FIXED_FORMATS = ['randombattle', 'ou'];
-export const FORMAT_POOL = ['ubers', 'uu', 'ru', 'nu', 'pu', 'lc', 'doublesou', 'monotype'];
+export const FORMAT_POOL = ['ubers', 'uu', 'ru', 'nu', 'pu', 'lc', 'lcuber', 'doublesou', 'monotype'];
 export const PUBLIC_PHASE_LENGTH = 3;
 
 interface SeasonData {

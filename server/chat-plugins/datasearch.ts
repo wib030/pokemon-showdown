@@ -128,7 +128,7 @@ export const commands: Chat.ChatCommands = {
 			`<details class="readmore"><summary><code>/dexsearch [parameter], [parameter], [parameter], ...</code>: searches for Pok\u00e9mon that fulfill the selected criteria.<br/>` +
 			`Search categories are: type, tier, color, moves, ability, gen, resists, weak, recovery, zrecovery, priority, stat, weight, height, egg group, pivot and restricted.<br/>` +
 			`Valid colors are: green, red, blue, white, brown, yellow, purple, pink, gray and black.<br/>` +
-			`Valid tiers are: AG/Uber/OU/UUBL/UU/RUBL/RU/NUBL/NU/PUBL/PU/ZUBL/ZU/NFE/LC/CAP/CAP NFE/CAP LC.<br/>` +
+			`Valid tiers are: AG/Uber/OU/UUBL/UU/RUBL/RU/NUBL/NU/PUBL/PU/ZUBL/ZU/NFE/LC/LC Uber/CAP/CAP NFE/CAP LC.<br/>` +
 			`Valid doubles tiers are: DUber/DOU/DBL/DUU/DNU.</summary>` +
 			`Types can be searched for by either having the type precede <code>type</code> or just using the type itself as a parameter; e.g., both <code>fire type</code> and <code>fire</code> show all Fire types; however, using <code>psychic</code> as a parameter will show all Pok\u00e9mon that learn the move Psychic and not Psychic types.<br/>` +
 			`<code>resists</code> followed by a type or move will show Pok\u00e9mon that resist that typing or move (e.g. <code>resists normal</code>).<br/>` +
@@ -676,7 +676,7 @@ function runDexsearch(target: string, cmd: string, message: string, isTest: bool
 		publ: 'PUBL', pu: 'PU',
 		zubl: 'ZUBL', zu: 'ZU',
 		nfe: 'NFE',
-		lc: 'LC',
+		lc: 'LC', lcuber: 'LC Uber', lcubers: 'LC Uber',
 		cap: 'CAP', caplc: 'CAP LC', capnfe: 'CAP NFE',
 	});
 	const singlesTiersValues: { [k: string]: number } = Object.assign(Object.create(null), {
@@ -688,7 +688,7 @@ function runDexsearch(target: string, cmd: string, message: string, isTest: bool
 		PUBL: 5, PU: 4,
 		ZUBL: 3, ZU: 2,
 		NFE: 1, 'CAP NFE': 1,
-		LC: 0, 'CAP LC': 0,
+		'LC Uber': 0, LC: 0, 'CAP LC': 0,
 		Illegal: -1,
 	});
 	const allDoublesTiers: { [k: string]: TierTypes.Singles | TierTypes.Other } = Object.assign(Object.create(null), {

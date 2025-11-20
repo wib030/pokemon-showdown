@@ -22448,7 +22448,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 10,
 		category: "Physical",
 		name: "Chum Rush",
-		pp: 15,
+		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1 },
 		basePowerCallback(pokemon, target) {

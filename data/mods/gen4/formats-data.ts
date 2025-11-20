@@ -495,7 +495,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "OU",
 	},
 	porygon: {
-		tier: "LCUber",
+		tier: "LC Uber",
 	},
 	porygon2: {
 		tier: "UU",
@@ -693,7 +693,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "RUBL",
 	},
 	wynaut: {
-		tier: "LCUber",
+		tier: "LC Uber",
 	},
 	wobbuffet: {
 		tier: "Uber",
@@ -1036,7 +1036,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "OU",
 	},
 	carvanha: {
-		tier: "LCUber",
+		tier: "LC Uber",
 	},
 	sharpedo: {
 		tier: "OU",
@@ -1375,7 +1375,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "UU",
 	},
 	drifloon: {
-		tier: "LCUber",
+		tier: "LC Uber",
 	},
 	drifblim: {
 		tier: "RU",
