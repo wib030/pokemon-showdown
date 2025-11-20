@@ -1250,7 +1250,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	alakazam: {
 		inherit: true,
-		baseStats: {hp: 55, atk: 50, def: 45, spa: 145, spd: 95, spe: 130},
+		baseStats: {hp: 55, atk: 50, def: 45, spa: 145, spd: 85, spe: 130},
 		abilities: {0: "Magic Guard", 1: "Inner Focus"},
 	},
 	swablu: {
@@ -1278,7 +1278,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	ampharos: {
 		inherit: true,
 		types: ["Electric", "Dragon"],
-		baseStats: {hp: 100, atk: 85, def: 95, spa: 120, spd: 100, spe: 65},
+		baseStats: {hp: 100, atk: 85, def: 95, spa: 130, spd: 100, spe: 65},
 		abilities: {0: "Mold Breaker"},
 	},
 	arbok: {
@@ -1425,7 +1425,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	bellossom: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 80, def: 95, spa: 110, spd: 130, spe: 70},
+		baseStats: {hp: 75, atk: 80, def: 85, spa: 110, spd: 130, spe: 70},
 		abilities: { 0: "Chlorophyll", 1: "Photosynthesis" },
 	},
 	bibarel: {
@@ -1488,7 +1488,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	chimecho: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 50, def: 80, spa: 95, spd: 160, spe: 70},
+		baseStats: {hp: 75, atk: 50, def: 70, spa: 95, spd: 160, spe: 70},
 	},
 	baltoy: {
 		inherit: true,
@@ -1609,7 +1609,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	delcatty: {
 		inherit: true,
 		types: ["Normal", "Ghost"],
-		baseStats: {hp: 95, atk: 85, def: 65, spa: 65, spd: 85, spe: 90},
+		baseStats: {hp: 95, atk: 85, def: 65, spa: 65, spd: 85, spe: 70},
 		abilities: {0: "Normalize", 1: "Aftermath"},
 	},
 	empoleon: {
@@ -1660,7 +1660,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	charizard: {
 		inherit: true,
 		types: ["Fire", "Dragon"],
-		baseStats: {hp: 88, atk: 94, def: 84, spa: 114, spd: 85, spe: 102},
+		baseStats: {hp: 98, atk: 104, def: 78, spa: 124, spd: 85, spe: 102},
 	},
 	glameow: {
 		inherit: true,
