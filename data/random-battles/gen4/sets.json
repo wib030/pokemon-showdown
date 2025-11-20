@@ -17800,6 +17800,76 @@
 				"item": "Leftovers",
 				"nature": "Quiet",
 				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["powerwhip", "crunch", "icefang", "stockpile"],
+                "abilities": ["Strong Jaw"],
+				"evs": [224, 152, 8, 0, 124, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["powerwhip", "crunch", "thunderfang", "stockpile"],
+                "abilities": ["Strong Jaw"],
+				"evs": [224, 152, 8, 0, 124, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["powerwhip", "crunch", "firefang", "stockpile"],
+                "abilities": ["Strong Jaw"],
+				"evs": [224, 152, 8, 0, 124, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["gigadrain", "crunch", "thunderfang", "hiddenpowerice"],
+                "abilities": ["Strong Jaw"],
+				"evs": [248, 24, 108, 32, 96, 0],
+				"ivs": [31, 30, 30, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Quiet",
+				"inclination": "Mixed"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["powerwhip", "knockoff", "leafstorm", "synthesis"],
+                "abilities": ["Free Sample"],
+				"evs": [224, 252, 32, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Brave",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["firefang", "stockpile", "leechseed", "substitute"],
+                "abilities": ["Strong Jaw"],
+				"evs": [252, 16, 32, 0, 208, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Support"
+            },
+			{
+                "role": "TR Attacker",
+                "movepool": ["powerwhip", "crunch", "icefang", "fling"],
+                "abilities": ["Strong Jaw"],
+				"evs": [248, 252, 4, 0, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 0],
+				"item": "Adamant Orb",
+				"nature": "Brave",
+				"inclination": "Physical"
             }
         ]
     },

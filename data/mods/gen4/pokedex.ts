@@ -109,7 +109,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	gardevoir: {
 		inherit: true,
 		types: ["Psychic"],
-		baseStats: { hp: 68, atk: 65, def: 65, spa: 125, spd: 115, spe: 90 },
+		baseStats: { hp: 98, atk: 65, def: 65, spa: 125, spd: 115, spe: 90 },
 		abilities: { 0: "Rivalry", 1: "Trace" },
 	},
 	shellos: {
@@ -1586,7 +1586,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	exeggutor: {
 		inherit: true,
-		baseStats: {hp: 95, atk: 95, def: 85, spa: 135, spd: 75, spe: 65},
+		baseStats: {hp: 95, atk: 115, def: 85, spa: 135, spd: 85, spe: 65},
 	},
 	huntail: {
 		inherit: true,
