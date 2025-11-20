@@ -77,7 +77,9 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 4] LC",
 		mod: 'gen4',
 		ruleset: ['Standard', 'Little Cup', 'Evasion Abilities Clause', 'Sleep Moves Clause', 'Team Preview'],
-		banlist: ['LC Uber', 'Deep Sea Tooth'],
+		banlist: [
+			'LC Uber', 'Deep Sea Tooth', 'Berry Juice', 'Dragon Rage', 'Sonic Boom', 'Swagger',
+		],
 	},
 	{
 		name: "[Gen 4] Anything Goes",
