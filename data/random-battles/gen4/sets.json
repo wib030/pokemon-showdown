@@ -135,13 +135,127 @@
         ]
     },
     "charizard": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["airslash", "dragonpulse", "fireblast", "hiddenpowergrass", "roost"],
+                "role": "Setup Sweeper",
+                "movepool": ["dragonclaw", "flareblitz", "earthquake", "dragondance"],
                 "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Dragon Fang",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["dragonclaw", "flareblitz", "earthquake", "dragondance"],
+                "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["outrage", "flareblitz", "earthquake", "overheat"],
+                "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Hasty",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["outrage", "flareblitz", "earthquake", "thunderpunch"],
+                "abilities": ["Blaze"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["dragonpulse", "heatwave", "earthquake", "dracometeor"],
+                "abilities": ["Blaze"],
+				"evs": [0, 40, 0, 252, 0, 216],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Naive",
 				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["dragonclaw", "flamethrower", "dragondance", "substitute"],
+                "abilities": ["Blaze"],
+				"evs": [12, 244, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Naive",
+				"inclination": "Mixed"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["dracometeor", "overheat", "heatwave", "hiddenpowerground"],
+                "abilities": ["Blaze"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["dragonclaw", "earthquake", "fireblast", "dragondance"],
+                "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 4, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Naive",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["dragonclaw", "flareblitz", "dragondance", "roost"],
+                "abilities": ["Blaze"],
+				"evs": [248, 32, 220, 0, 0, 8],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["dragonclaw", "flareblitz", "dragondance", "fling"],
+                "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["outrage", "flareblitz", "earthquake", "thunderpunch"],
+                "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["dragonclaw", "flareblitz", "earthquake", "dragondance"],
+                "abilities": ["Blaze"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Charcoal",
+				"nature": "Jolly",
+				"inclination": "Physical"
             }
         ]
     },
