@@ -31026,6 +31026,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			worryseed: ["4L31"],
 			psyshieldbash: ["4E"],
 			curse: ["4E"],
+			rockblast: ["4L40"],
 		},
 	},
 	rampardos: {
@@ -31119,6 +31120,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			leafstorm: ["4L55"],
 			painsplit: ["4L48"],
 			whirlpool: ["4L1"],
+			rockblast: ["4L45"],
 		},
 	},
 	shieldon: {

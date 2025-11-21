@@ -3159,25 +3159,47 @@
         ]
     },
     "dewgong": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Staller",
-                "movepool": ["icebeam", "protect", "surf", "toxic"],
-                "abilities": ["Thick Fat", "Unaware"],
-				"inclination": "Special"
+                "role": "Bulky Attacker",
+                "movepool": ["chumrush", "iciclespear", "mirrorcoat", "slackoff"],
+                "abilities": ["Unaware"],
+				"evs": [248, 36, 164, 0, 60, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
             },
-            {
-                "role": "Fast Attacker",
-                "movepool": ["raindance", "rest", "surf", "toxic"],
-                "abilities": ["Thick Fat", "Unaware"],
-				"inclination": "Special"
-            },
-            {
+			{
                 "role": "Bulky Support",
-                "movepool": ["encore", "icebeam", "raindance", "rest", "surf", "toxic"],
-                "abilities": ["Thick Fat", "Unaware"],
-				"inclination": "Special"
+                "movepool": ["chumrush", "iciclespear", "encore", "slackoff"],
+                "abilities": ["Unaware"],
+				"evs": [248, 36, 164, 0, 60, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["chumrush", "iciclespear", "stockpile", "swallow"],
+                "abilities": ["Unaware"],
+				"evs": [248, 36, 164, 0, 60, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["chumrush", "iciclespear", "protect", "wish"],
+                "abilities": ["Unaware"],
+				"evs": [248, 36, 164, 0, 60, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
             }
         ]
     },
