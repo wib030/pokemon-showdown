@@ -2373,7 +2373,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	chloroplast: {
 		name: "Chloroplast",
-		shortDesc: "Sunny Day active: Speed is 1.66x. Grass-type moves gain 1.5x power.",
+		shortDesc: "Grass-type moves gain 1.5x power. Sunny Day active: Speed is 1.66x.",
 	},
 	dabble: {
 		name: "Dabble",
