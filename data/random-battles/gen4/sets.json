@@ -17988,13 +17988,77 @@
         ]
     },
     "lumineon": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["hiddenpowerelectric", "hiddenpowergrass", "icebeam", "raindance", "surf", "uturn"],
+                "role": "Spinner",
+                "movepool": ["icywind", "rapidspin", "substitute", "batonpass"],
                 "abilities": ["Storm Drain"],
-				"inclination": "Special"
+				"evs": [244, 0, 8, 0, 36, 220],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["icywind", "rapidspin", "substitute", "batonpass"],
+                "abilities": ["Storm Drain"],
+				"evs": [244, 0, 136, 0, 12, 116],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["icywind", "rapidspin", "substitute", "batonpass"],
+                "abilities": ["Storm Drain"],
+				"evs": [244, 0, 4, 0, 212, 48],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["icywind", "rapidspin", "aquaring", "batonpass"],
+                "abilities": ["Storm Drain"],
+				"evs": [248, 0, 136, 0, 8, 116],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["icywind", "rapidspin", "aquaring", "batonpass"],
+                "abilities": ["Storm Drain"],
+				"evs": [248, 0, 0, 0, 212, 48],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["icywind", "hiddenpowerground", "rapidspin", "batonpass"],
+                "abilities": ["Storm Drain"],
+				"evs": [0, 0, 36, 252, 0, 220],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Spinner",
+                "movepool": ["icywind", "surf", "rapidspin", "batonpass"],
+                "abilities": ["Storm Drain"],
+				"evs": [0, 0, 36, 252, 0, 220],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Support"
             }
         ]
     },
