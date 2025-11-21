@@ -283,7 +283,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	kabutops: {
 		inherit: true,
-		baseStats: {hp: 60, atk: 135, def: 105, spa: 95, spd: 70, spe: 90},
+		baseStats: {hp: 60, atk: 135, def: 105, spa: 95, spd: 70, spe: 91},
 		abilities: {0: "Swift Swim", 1: "Sharpness"},
 	},
 	kangaskhan: {
