@@ -3200,6 +3200,86 @@
 				"item": "Leftovers",
 				"nature": "Impish",
 				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["chumrush", "iciclespear", "mirrorcoat", "slackoff"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 164, 0, 96, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["chumrush", "iciclespear", "encore", "slackoff"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 164, 0, 96, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["chumrush", "iciclespear", "stockpile", "swallow"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 164, 0, 96, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["chumrush", "iciclespear", "protect", "wish"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 164, 0, 96, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["chumrush", "iciclespear", "stockpile", "swallow"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 164, 0, 96, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Pivot",
+                "movepool": ["freezedry", "surf", "uturn", "slackoff"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 128, 132, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Pivot",
+                "movepool": ["freezedry", "surf", "uturn", "slackoff"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 164, 92, 4, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["freezedry", "wish", "protect", "uturn"],
+                "abilities": ["Unaware"],
+				"evs": [248, 0, 164, 84, 12, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
             }
         ]
     },
