@@ -1909,4 +1909,12 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Pressure", 1: "Antitype" },
 	},
+	palkia: {
+		inherit: true,
+		baseStats: { hp: 90, atk: 120, def: 100, spa: 160, spd: 130, spe: 100 },
+	},
+	dialga: {
+		inherit: true,
+		baseStats: { hp: 100, atk: 130, def: 130, spa: 150, spd: 100, spe: 90 },
+	},
 };
