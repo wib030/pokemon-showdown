@@ -7995,6 +7995,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			lovelypunch: ["4L34"],
 			closecombat: ["4L56"],
 			roleplay: ["4L30"],
+			drainpunch: ["4M"],
 		},
 		eventData: [
 			{generation: 3, level: 38, gender: "M", nature: "Quiet", ivs: {hp: 9, atk: 23, def: 25, spa: 20, spd: 15, spe: 10}, abilities: ["guts"], moves: ["seismictoss", "foresight", "revenge", "vitalthrow"], pokeball: "pokeball"},

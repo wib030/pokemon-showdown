@@ -5231,6 +5231,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			lovelypunch: ["4L34"],
 			closecombat: ["4L56"],
 			roleplay: ["4L30"],
+			drainpunch: ["4M"],
 		},
 	},
 	bellsprout: {
