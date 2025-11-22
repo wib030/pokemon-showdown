@@ -931,4 +931,11 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 			basePower: 60,
 		},
 	},
+	destinyknot: {
+		inherit: true,
+		fling: {
+			basePower: 10,
+			volatileStatus: 'attract',
+		},
+	},
 };
