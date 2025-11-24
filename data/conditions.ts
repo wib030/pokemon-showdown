@@ -478,7 +478,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('damprock')) {
+			if (source?.hasItem('damprock') || effect.id === 'fling') {
 				return 8;
 			}
 			return 5;
@@ -547,7 +547,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('heatrock')) {
+			if (source?.hasItem('heatrock') || effect.id === 'fling') {
 				return 10;
 			}
 			return 5;
@@ -628,7 +628,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('smoothrock')) {
+			if (source?.hasItem('smoothrock') || effect.id === 'fling') {
 				return 10;
 			}
 			return 5;
@@ -665,7 +665,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('icyrock')) {
+			if (source?.hasItem('icyrock') || effect.id === 'fling') {
 				return 10;
 			}
 			return 5;
