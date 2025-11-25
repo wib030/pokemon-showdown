@@ -4192,7 +4192,7 @@
                 "role": "Fast Bulky Setup",
                 "movepool": ["waterfall", "bounce", "dragondance", "substitute"],
                 "abilities": ["Intimidate"],
-				"evs": [132, 204, 0, 0, 0, 172],
+				"evs": [132, 200, 0, 0, 0, 176],
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Leftovers",
 				"nature": "Jolly",
