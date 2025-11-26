@@ -1177,7 +1177,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if (target === source || move.hasBounced || !move.flags['reflectable'] || target.isSemiInvulnerable()) {
 				return;
 			}
-			if (target.hasAbility('magicbounce')) return;
+			if (source.hasAbility('magicbounce') && target.hasAbility('magicbounce')) return;
 			const newMove = this.dex.getActiveMove(move.id);
 			newMove.hasBounced = true;
 			newMove.pranksterBoosted = false;
