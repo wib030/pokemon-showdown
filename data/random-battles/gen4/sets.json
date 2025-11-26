@@ -717,18 +717,6 @@
             }
         ]
     },
-    "pikachu": {
-        "level": 99,
-        "sets": [
-            {
-                "role": "Fast Attacker",
-                "movepool": ["fakeout", "grassknot", "hiddenpowerice", "surf", "thunderbolt", "volttackle"],
-                "abilities": ["Static"],
-                "preferredTypes": ["Ice"],
-				"inclination": "Special"
-            }
-        ]
-    },
     "raichu": {
         "level": 99,
         "sets": [
