@@ -649,7 +649,9 @@ export const commands: Chat.ChatCommands = {
 				buffer += `|raw|${Chat.getDataPokemonHTML(pokemon, dex.gen, displayedTier)}\n`;
 				if (showDetails) {
 					let weighthit = 20;
-					if (pokemon.weighthg >= 2000) {
+					if (pokemon.weighthg >= 5000) {
+						weighthit = 150;
+					} else if (pokemon.weighthg >= 2000) {
 						weighthit = 120;
 					} else if (pokemon.weighthg >= 1000) {
 						weighthit = 100;
