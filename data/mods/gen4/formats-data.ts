@@ -15,7 +15,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NFE",
 	},
 	charizard: {
-		tier: "UU",
+		tier: "OU",
 	},
 	squirtle: {
 		tier: "LC",
