@@ -6119,10 +6119,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					if (source.ability === 'multitype' || source.ability === 'antitype') return;
 					const item = source.getItem();
 					
-					if (item.id === 'toxicorb' && source.status === 'tox') {
-						this.add('-curestatus', source, 'tox', `[from] move: ${move}`);
+					if (item.id === 'toxicorb' && (source.status === 'tox' || source.status === 'psn')) {
+						this.add('-curestatus', source, source.status, `[from] move: ${move}`);
 						source.clearStatus();
-						this.hint("In Flucient Platinum, slurping up a Toxic Orb cures their status.", true);
+						this.hint("In Flucient Platinum, slurping up a Toxic Orb cures their toxic or poison status.", true);
 					}
 					
 					if (this.runEvent('TakeItem', source, target, move, item)) {
