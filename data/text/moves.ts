@@ -2730,7 +2730,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "This move's power is 20 if the target weighs less than 10 kg, 40 if less than 25 kg, 60 if less than 50 kg, 80 if less than 100 kg, 100 if less than 200 kg, and 120 if greater than or equal to 200 kg.",
 		shortDesc: "More power the heavier the target.",
 		gen4: {
-			desc: "This move's power is 20 if the target weighs less than 10 kg, 40 if less than 25 kg, 60 if less than 50 kg, 80 if less than 100 kg, 100 if less than 200 kg, and 150 if greater than or equal to 200 kg.",
+			desc: "This move's power is 20 if the target weighs less than 10 kg, 40 if less than 25 kg, 60 if less than 50 kg, 80 if less than 100 kg, 100 if less than 200 kg, 120 if less than 500 kg, and 150 if greater than or equal to 500 kg.",
 		},
 	},
 	grasspledge: {
@@ -3722,7 +3722,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			shortDesc: "30% chance to make the target flinch.",
 		},
 		gen4: {
-			desc: "This move's power is 20 if the target weighs less than 10 kg, 40 if less than 25 kg, 60 if less than 50 kg, 80 if less than 100 kg, 100 if less than 200 kg, and 150 if greater than or equal to 200 kg.",
+			desc: "This move's power is 20 if the target weighs less than 10 kg, 40 if less than 25 kg, 60 if less than 50 kg, 80 if less than 100 kg, 100 if less than 200 kg, 120 if less than 500 kg, and 150 if greater than or equal to 500 kg.",
 		},
 	},
 	lowsweep: {
