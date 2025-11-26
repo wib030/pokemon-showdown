@@ -2857,8 +2857,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		basePowerCallback(pokemon, target) {
 			const targetWeight = target.getWeight();
 			let bp;
-			if (targetWeight >= 2000) {
+			if (targetWeight >= 5000) {
 				bp = 150;
+			} else if (targetWeight >= 2000) {
+				bp = 120;
 			} else if (targetWeight >= 1000) {
 				bp = 100;
 			} else if (targetWeight >= 500) {
@@ -2879,8 +2881,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		basePowerCallback(pokemon, target) {
 			const targetWeight = target.getWeight();
 			let bp;
-			if (targetWeight >= 2000) {
+			if (targetWeight >= 5000) {
 				bp = 150;
+			} else if (targetWeight >= 2000) {
+				bp = 120;
 			} else if (targetWeight >= 1000) {
 				bp = 100;
 			} else if (targetWeight >= 500) {
