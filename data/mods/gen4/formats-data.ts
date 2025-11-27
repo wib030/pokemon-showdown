@@ -330,7 +330,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "LC",
 	},
 	electrode: {
-		tier: "UU",
+		tier: "OU",
 	},
 	exeggcute: {
 		tier: "LC",
@@ -1175,7 +1175,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "LC",
 	},
 	glalie: {
-		tier: "UU",
+		tier: "OU",
 	},
 	froslass: {
 		tier: "UU",
