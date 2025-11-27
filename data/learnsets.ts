@@ -17544,7 +17544,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			gust: ["4L1", "3L1"],
 			hail: ["4M", "4L60", "3M"],
 			haze: ["3S2"],
-			healbell: ["3S2"],
+			healbell: ["3S2", "4L1"],
 			hiddenpower: ["4M", "3M"],
 			hyperbeam: ["4M", "3M"],
 			icebeam: ["4M", "4L43", "4S3", "4S4", "3M", "3L49", "3S0", "3S1", "3S2"],
