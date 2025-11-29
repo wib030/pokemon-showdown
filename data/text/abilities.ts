@@ -2278,7 +2278,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Wonder Guard",
 		shortDesc: "This Pokemon can only be damaged by supereffective moves and indirect damage.",
 		gen4: {
-			shortDesc: "This Pokemon is only damaged by Fire Fang, supereffective moves, indirect damage.",
+			shortDesc: "This Pokemon can only be damaged by supereffective moves and indirect damage.",
 		},
 		gen3: {
 			shortDesc: "This Pokemon is only damaged by supereffective moves and indirect damage.",
