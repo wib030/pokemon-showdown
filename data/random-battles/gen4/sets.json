@@ -3648,20 +3648,20 @@
             },
 			{
                 "role": "Fast Lead",
-                "movepool": ["thunderwave", "spikes", "uturn", "thunderbolt"],
+                "movepool": ["hiddenpowerice", "spikes", "uturn", "thunderbolt"],
                 "abilities": ["Sturdy"],
                 "evs": [0, 0, 4, 252, 0, 252],
-				"ivs": [31, 0, 31, 31, 31, 31],
+				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Red Card",
 				"nature": "Hasty",
 				"inclination": "Special"
             },
 			{
                 "role": "Fast Lead",
-                "movepool": ["thunderwave", "spikes", "voltswitch", "thunderbolt"],
+                "movepool": ["hiddenpowerice", "spikes", "voltswitch", "thunderbolt"],
                 "abilities": ["Sturdy"],
                 "evs": [0, 0, 4, 252, 0, 252],
-				"ivs": [31, 0, 31, 31, 31, 31],
+				"ivs": [31, 2, 30, 31, 31, 31],
 				"item": "Red Card",
 				"nature": "Timid",
 				"inclination": "Special"
@@ -21447,7 +21447,7 @@
                 "abilities": ["Rock Star"],
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 0, 31, 31, 31, 31],
-				"item": "Focus Sash",
+				"item": "Expert Belt",
 				"nature": "Timid",
 				"inclination": "Special"
             },
