@@ -22336,7 +22336,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Golden Binding",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, bypasssub: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1 },
 		volatileStatus: 'disable',
 		onTryHit(target) {
 			if (!target.lastMove || target.lastMove.isZ || target.lastMove.isMax || target.lastMove.id === 'struggle' || target.lastMove.id === 'tossandturn' || target.volatiles['disable']) {
@@ -22491,7 +22491,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Psyscreen",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, mirror: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1 },
 		self: {
 			sideCondition: 'lightscreen',
 		},
