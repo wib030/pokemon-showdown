@@ -22449,7 +22449,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Chum Rush",
 		pp: 10,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bite: 1 },
 		basePowerCallback(pokemon, target) {
 			let bp = Math.floor((10 * 2 / 3) * (target.maxhp / target.hp));
 			if (bp > 80) bp = 80;
