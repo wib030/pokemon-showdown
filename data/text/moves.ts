@@ -1429,8 +1429,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "For 4 turns, the target's last move used becomes disabled. Fails if one of the target's moves is already disabled, if the target has not made a move, or if the target no longer knows the move.",
 		},
 		gen4: {
-			desc: "For 4 to 7 turns, the target's last move used becomes disabled. Fails if one of the target's moves is already disabled, if the target has not made a move, if the target no longer knows the move, or if the move has 0 PP.",
-			shortDesc: "For 4-7 turns, disables the target's last move.",
+			desc: "For 4 turns, the target's last move used becomes disabled. Fails if one of the target's moves is already disabled, if the target has not made a move, if the target no longer knows the move, or if the move has 0 PP.",
+			shortDesc: "For 4 turns, disables the target's last move.",
 		},
 		gen3: {
 			desc: "For 2 to 5 turns, the target's last move used becomes disabled. Fails if one of the target's moves is already disabled, if the target has not made a move, if the target no longer knows the move, or if the move has 0 PP.",
@@ -4022,6 +4022,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Meditate",
 		desc: "Raises the user's Attack by 1 stage. Gives the user Meditate condition, which raises Crit-rate by 1 stage.",
 		shortDesc: "Raises the user's Attack by 1. Raises Crit-rate by 1.",
+		
+		start: "#focusenergy",
 	},
 	mefirst: {
 		name: "Me First",
@@ -7741,8 +7743,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	goldenbinding: {
 		name: "Golden Binding",
-		desc: "For 4 to 7 turns, the target's last move used becomes disabled. Fails if one of the target's moves is already disabled, if the target has not made a move, if the target no longer knows the move, or if the move has 0 PP.",
-		shortDesc: "For 4-7 turns, disables the target's last move.",
+		desc: "For 4 turns, the target's last move used becomes disabled. Fails if one of the target's moves is already disabled, if the target has not made a move, if the target no longer knows the move, or if the move has 0 PP.",
+		shortDesc: "For 4 turns, disables the target's last move.",
 
 		start: "  [POKEMON]'s [MOVE] was disabled!",
 		end: "  [POKEMON]'s move is no longer disabled!",

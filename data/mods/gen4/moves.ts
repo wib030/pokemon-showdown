@@ -229,7 +229,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		volatileStatus: 'disable',
 		condition: {
 			durationCallback() {
-				return this.random(4, 8);
+				return 4;
 			},
 			noCopy: true,
 			onStart(pokemon) {
@@ -2559,7 +2559,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		volatileStatus: 'magnetrise',
 		onModifyPriority(priority, pokemon, target, move) {
 			if (pokemon.hasAbility('magnetpull')) {
-				this.add('-activate', pokemon, 'ability: Magnet Pull');
 				return priority + 1;
 			}
 		},
