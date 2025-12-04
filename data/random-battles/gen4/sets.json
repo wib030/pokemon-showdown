@@ -6496,26 +6496,6 @@
 				"item": "Leftovers",
 				"nature": "Impish",
 				"inclination": "Support"
-            },
-			{
-                "role": "Bulky Lead",
-                "movepool": ["stealthrock", "stickyweb", "gyroball", "explosion"],
-                "abilities": ["Sturdy"],
-				"evs": [252, 252, 4, 0, 0, 0],
-				"ivs": [31, 31, 31, 31, 31, 0],
-				"item": "Custap Berry",
-				"nature": "Brave",
-				"inclination": "Support"
-            },
-			{
-                "role": "Bulky Lead",
-                "movepool": ["spikes", "stickyweb", "gyroball", "explosion"],
-                "abilities": ["Sturdy"],
-				"evs": [252, 252, 4, 0, 0, 0],
-				"ivs": [31, 31, 31, 31, 31, 0],
-				"item": "Custap Berry",
-				"nature": "Brave",
-				"inclination": "Support"
             }
         ]
     },
