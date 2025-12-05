@@ -3994,12 +3994,146 @@
         ]
     },
     "seaking": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Setup Sweeper",
-                "movepool": ["icebeam", "megahorn", "raindance", "return", "waterfall"],
-                "abilities": ["Swift Swim", "Volt Absorb"],
+                "role": "Bulky Pivot",
+                "movepool": ["wavecrash", "knockoff", "toxic", "uturn"],
+                "abilities": ["Volt Absorb"],
+				"evs": [248, 0, 0, 0, 140, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Pivot",
+                "movepool": ["wavecrash", "hailcannon", "drillrun", "uturn"],
+                "abilities": ["Volt Absorb"],
+				"evs": [248, 112, 0, 0, 28, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Pivot",
+                "movepool": ["wavecrash", "hailcannon", "knockoff", "uturn"],
+                "abilities": ["Volt Absorb"],
+				"evs": [248, 112, 0, 0, 28, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Pivot",
+                "movepool": ["wavecrash", "hailcannon", "drillrun", "uturn"],
+                "abilities": ["Volt Absorb"],
+				"evs": [248, 60, 0, 0, 80, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Pivot",
+                "movepool": ["wavecrash", "hailcannon", "knockoff", "uturn"],
+                "abilities": ["Volt Absorb"],
+				"evs": [248, 12, 0, 0, 128, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["dive", "bounce", "toxic", "aquaring"],
+                "abilities": ["Volt Absorb"],
+				"evs": [248, 0, 0, 0, 140, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Pivot",
+                "movepool": ["wavecrash", "hailcannon", "knockoff", "uturn"],
+                "abilities": ["Volt Absorb"],
+				"evs": [248, 16, 108, 0, 16, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Pivot",
+                "movepool": ["wavecrash", "hailcannon", "knockoff", "uturn"],
+                "abilities": ["Volt Absorb"],
+				"evs": [248, 28, 108, 0, 4, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["wavecrash", "bounce", "substitute", "agility"],
+                "abilities": ["Volt Absorb"],
+				"evs": [172, 84, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["wavecrash", "drillrun", "toxic", "haze"],
+                "abilities": ["Volt Absorb"],
+				"evs": [248, 88, 108, 0, 44, 20],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["wavecrash", "drillrun", "toxic", "haze"],
+                "abilities": ["Volt Absorb"],
+				"evs": [248, 88, 0, 0, 152, 20],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["wavecrash", "bodyslam", "knockoff", "haze"],
+                "abilities": ["Volt Absorb"],
+				"evs": [248, 140, 0, 0, 100, 20],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["wavecrash", "knockoff", "uturn", "raindance"],
+                "abilities": ["Swift Swim"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Damp Rock",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Rain Attacker",
+                "movepool": ["wavecrash", "hailcannon", "drillpeck", "raindance"],
+                "abilities": ["Swift Swim"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Damp Rock",
+				"nature": "Jolly",
 				"inclination": "Physical"
             }
         ]
@@ -16917,18 +17051,106 @@
         ]
     },
     "lopunny": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Support",
-                "movepool": ["batonpass", "encore", "return", "substitute", "thunderwave", "toxic"],
+                "role": "Fast Pivot",
+                "movepool": ["highjumpkick", "return", "uturn", "healingwish"],
                 "abilities": ["Scrappy"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
 				"inclination": "Physical"
             },
-            {
-                "role": "Wallbreaker",
-                "movepool": ["healingwish", "icepunch", "return", "skyuppercut", "switcheroo"],
+			{
+                "role": "Fast Pivot",
+                "movepool": ["highjumpkick", "return", "uturn", "switcheroo"],
                 "abilities": ["Scrappy"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["highjumpkick", "return", "uturn", "fakeout"],
+                "abilities": ["Scrappy"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["highjumpkick", "return", "uturn", "fakeout"],
+                "abilities": ["Scrappy"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Silk Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["highjumpkick", "return", "uturn", "encore"],
+                "abilities": ["Scrappy"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Silk Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["focuspunch", "return", "substitute", "encore"],
+                "abilities": ["Scrappy"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["jumpkick", "return", "substitute", "encore"],
+                "abilities": ["Scrappy"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Baton Passer",
+                "movepool": ["highjumpkick", "return", "substitute", "batonpass"],
+                "abilities": ["Scrappy"],
+				"evs": [4, 252, 0, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["highjumpkick", "return", "uturn", "switcheroo"],
+                "abilities": ["Scrappy"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["highjumpkick", "return", "uturn", "fakeout"],
+                "abilities": ["Scrappy"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Wide Lens",
+				"nature": "Jolly",
 				"inclination": "Physical"
             }
         ]
