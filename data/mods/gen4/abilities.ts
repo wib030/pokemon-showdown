@@ -1181,6 +1181,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			const newMove = this.dex.getActiveMove(move.id);
 			newMove.hasBounced = true;
 			newMove.pranksterBoosted = false;
+			newMove.cowardBoosted = false;
 			this.actions.useMove(newMove, target, { target: source });
 			return null;
 		},
