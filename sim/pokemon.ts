@@ -623,9 +623,11 @@ export class Pokemon {
 		if (!unmodified) {
 			const statTable: { [s in StatIDExceptHP]: string } = { atk: 'Atk', def: 'Def', spa: 'SpA', spd: 'SpD', spe: 'Spe' };
 			stat = this.battle.runEvent('Modify' + statTable[statName], this, null, null, stat);
-			const cowardBoosted = this.battle.activeMove.cowardBoosted | false;
-			if (statName === 'spe' && cowardBoosted === true) {
-				stat *= 2;
+			const cowardBoosted = this.battle.activeMove.cowardBoosted;
+			if (cowardBoosted !== null) {
+				if (statName === 'spe' && cowardBoosted === true) {
+					stat *= 2;
+				}
 			}
 		}
 
