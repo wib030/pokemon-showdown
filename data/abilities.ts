@@ -6065,12 +6065,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -21,
 	},
 	coward: {
-		onModifyMove(move) {
-			if (move?.category === 'Status') {
-				move.cowardBoosted = true;
-			}
-		},
-		flags: {}, // flags: { rollable: 1 },
+		//flags: { rollable: 1 },
+		flags: {},
 		name: "Coward",
 		rating: 2,
 		num: -22,
