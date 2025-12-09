@@ -623,6 +623,10 @@ export class Pokemon {
 		if (!unmodified) {
 			const statTable: { [s in StatIDExceptHP]: string } = { atk: 'Atk', def: 'Def', spa: 'SpA', spd: 'SpD', spe: 'Spe' };
 			stat = this.battle.runEvent('Modify' + statTable[statName], this, null, null, stat);
+			
+			if (this.battle.activeMove?.category === 'Status' && this.battle.activePokemon?.hasAbility('Coward')) {
+				stat *= 2;
+			}
 		}
 
 		if (statName === 'spe' && stat > 10000 && !this.battle.format.battle?.trunc) stat = 10000;
