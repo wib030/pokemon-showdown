@@ -604,16 +604,6 @@
         "level": 100,
         "sets": [
             {
-                "role": "Defog",
-                "movepool": ["bravebird", "uturn", "defog", "roost"],
-                "abilities": ["Intimidate"],
-				"evs": [244, 0, 24, 0, 168, 72],
-				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Leftovers",
-				"nature": "Careful",
-				"inclination": "Physical"
-            },
-            {
                 "role": "Fast Attacker",
                 "movepool": ["dualwingbeat", "assurance", "drillrun", "uturn"],
                 "abilities": ["Technician"],
@@ -701,6 +691,16 @@
 				"ivs": [31, 31, 31, 31, 31, 31],
 				"item": "Liechi Berry",
 				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Defog",
+                "movepool": ["bravebird", "defog", "uturn", "roost"],
+                "abilities": ["Intimidate"],
+				"evs": [200, 4, 4, 0, 180, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
 				"inclination": "Physical"
             }
         ]

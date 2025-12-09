@@ -31846,7 +31846,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			tickle: ["4E"],
 			toxic: ["4M"],
 			worryseed: ["4T", "4L28"],
-			absol: ["4L1"],
+			absorb: ["4L1"],
 			megadrain: ["4L16"],
 			morningsun: ["4L25"],
 			weatherball: ["4E"],
