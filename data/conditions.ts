@@ -959,4 +959,12 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			if (this.effectState.source?.isActive || gmaxEffect) pokemon.tryTrap();
 		},
 	},
+	cowardboost: {
+		name: 'cowardboost',
+		noCopy: true,
+		duration: 1,
+		onModifySpe(spe, pokemon) {
+			return this.chainModify(2);
+		},
+	},
 };
