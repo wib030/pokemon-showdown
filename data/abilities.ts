@@ -6065,12 +6065,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -21,
 	},
 	coward: {
-		onBeforeMovePriority: -1,
-		onBeforeMove(pokemon, target, move) {
-			if (move.category === 'Status') {
-				pokemon.addVolatile('cowardboost');
-			}
-		},
 		//flags: { rollable: 1 },
 		flags: {},
 		name: "Coward",
