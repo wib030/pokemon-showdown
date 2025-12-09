@@ -6065,8 +6065,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -21,
 	},
 	coward: {
-		//flags: { rollable: 1 },
-		flags: {},
+		flags: {}, // flags: { rollable: 1 },
 		name: "Coward",
 		rating: 2,
 		num: -22,
