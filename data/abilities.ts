@@ -6065,7 +6065,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -21,
 	},
 	coward: {
-		flags: {}, // flags: { rollable: 1 },
+		// Implemented in getActionSpeed in sim/pokemon.ts
+		flags: { rollable: 1 },
 		name: "Coward",
 		rating: 2,
 		num: -22,
