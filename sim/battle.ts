@@ -2623,7 +2623,12 @@ export class Battle {
 		if (!action.pokemon) {
 			action.speed = 1;
 		} else {
-			action.speed = action.pokemon.getActionSpeed();
+			if (action.choice === 'move') {
+				let move = action.move;
+				action.speed = action.pokemon.getActionSpeed(move);
+			} else {
+				action.speed = action.pokemon.getActionSpeed();
+			}
 		}
 	}
 

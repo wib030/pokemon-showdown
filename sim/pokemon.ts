@@ -629,8 +629,13 @@ export class Pokemon {
 		return stat;
 	}
 
-	getActionSpeed() {
+	getActionSpeed(move?: Move) {
 		let speed = this.getStat('spe', false, false);
+		if (move) {
+			if (move.category === 'Status' && this.hasAbility('Coward')) {
+				speed *= 2;
+			}
+		}
 		const trickRoomCheck = this.battle.ruleTable.has('twisteddimensionmod') ?
 			!this.battle.field.getPseudoWeather('trickroom') : this.battle.field.getPseudoWeather('trickroom');
 		if (trickRoomCheck) {
