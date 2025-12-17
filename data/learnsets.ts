@@ -19254,6 +19254,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wavecrash: ["4T"],
 			lowkick: ["4L7"],
 			whirlpool: ["4L13"],
+			dragondance: ["4L52"],
 		},
 		eventData: [
 			{generation: 6, level: 50, isHidden: true, moves: ["icepunch", "crunch", "waterfall", "screech"], pokeball: "pokeball"},

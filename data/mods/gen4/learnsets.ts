@@ -13690,6 +13690,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			wavecrash: ["4T"],
 			lowkick: ["4L7"],
 			whirlpool: ["4L13"],
+			dragondance: ["4L52"],
 		},
 	},
 	sentret: {
