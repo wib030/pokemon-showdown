@@ -16508,7 +16508,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["explosion", "stealthrock", "spikes", "stickyweb"],
                 "abilities": ["Levitate"],
 				"evs": [248, 0, 8, 0, 252, 0],
@@ -16518,7 +16518,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["explosion", "stealthrock", "spikes", "stickyweb"],
                 "abilities": ["Levitate"],
 				"evs": [248, 0, 252, 0, 8, 0],
@@ -16528,7 +16528,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["explosion", "stealthrock", "spikes", "stickyweb"],
                 "abilities": ["Levitate"],
 				"evs": [248, 0, 40, 0, 220, 0],
@@ -16538,7 +16538,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["explosion", "stealthrock", "spikes", "stickyweb"],
                 "abilities": ["Levitate"],
 				"evs": [248, 0, 208, 0, 52, 0],
@@ -16548,7 +16548,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["explosion", "stealthrock", "spikes", "stickyweb"],
                 "abilities": ["Levitate"],
 				"evs": [248, 0, 56, 0, 120, 84],
@@ -16558,7 +16558,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["explosion", "stealthrock", "spikes", "stickyweb"],
                 "abilities": ["Levitate"],
 				"evs": [248, 0, 176, 0, 0, 84],
@@ -16568,7 +16568,7 @@
 				"inclination": "Support"
             },
 			{
-                "role": "Bulky Lead",
+                "role": "Hazards Tank",
                 "movepool": ["explosion", "stealthrock", "spikes", "stickyweb"],
                 "abilities": ["Levitate"],
 				"evs": [248, 0, 0, 0, 176, 84],
