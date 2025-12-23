@@ -3930,16 +3930,6 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Berry Sweeper",
-                "movepool": ["thunderbolt", "surf", "hiddenpowerice", "substitute"],
-                "abilities": ["Sturdy"],
-                "evs": [0, 0, 4, 252, 0, 252],
-				"ivs": [30, 2, 30, 31, 31, 31],
-				"item": "Petaya Berry",
-				"nature": "Timid",
-				"inclination": "Special"
-            },
-			{
                 "role": "Fast Attacker",
                 "movepool": ["thunderbolt", "surf", "hiddenpowerice", "chargebeam"],
                 "abilities": ["Sturdy"],
@@ -18375,7 +18365,7 @@
             },
 			{
                 "role": "Setup Sweeper",
-                "movepool": ["poisonjab", "drainpunch", "substitute", "acupressure"],
+                "movepool": ["poisonjab", "drainpunch", "icepunch", "acupressure"],
                 "abilities": ["Dry Skin"],
 				"evs": [244, 12, 0, 0, 0, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
