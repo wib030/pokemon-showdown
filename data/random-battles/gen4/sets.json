@@ -2747,13 +2747,246 @@
         ]
     },
     "machamp": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["bulletpunch", "dynamicpunch", "earthquake", "payback", "stoneedge", "toxic"],
+                "movepool": ["closecombat", "knockoff", "icepunch", "protect"],
+                "abilities": ["Guts"],
+                "evs": [64, 252, 0, 0, 12, 180],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["closecombat", "knockoff", "icepunch", "encore"],
+                "abilities": ["Guts"],
+                "evs": [64, 252, 0, 0, 12, 180],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["closecombat", "knockoff", "thunderpunch", "protect"],
+                "abilities": ["Guts"],
+                "evs": [64, 252, 0, 0, 12, 180],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["closecombat", "knockoff", "thunderpunch", "encore"],
+                "abilities": ["Guts"],
+                "evs": [64, 252, 0, 0, 12, 180],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["closecombat", "knockoff", "icepunch", "thunderpunch"],
+                "abilities": ["Guts"],
+                "evs": [64, 252, 0, 0, 12, 180],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["closecombat", "knockoff", "icepunch", "fling"],
+                "abilities": ["Guts"],
+                "evs": [64, 252, 0, 0, 12, 180],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["closecombat", "knockoff", "icepunch", "fireblast"],
+                "abilities": ["Guts"],
+                "evs": [0, 248, 0, 128, 0, 132],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Flame Orb",
+				"nature": "Naughty",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dynamicpunch", "knockoff", "fireblast", "substitute"],
                 "abilities": ["No Guard"],
-                "preferredTypes": ["Dark"],
+                "evs": [124, 252, 0, 0, 0, 132],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Naughty",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dynamicpunch", "knockoff", "bulkup", "substitute"],
+                "abilities": ["No Guard"],
+                "evs": [124, 252, 0, 0, 0, 132],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Naughty",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["focusblast", "fireblast", "hiddenpowerice", "knockoff"],
+                "abilities": ["No Guard"],
+                "evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [30, 31, 30, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Hasty",
+				"inclination": "Special"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["focusblast", "fireblast", "hiddenpowerdark", "vacuumwave"],
+                "abilities": ["No Guard"],
+                "evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["focusblast", "fireblast", "hiddenpowerdark", "vacuumwave"],
+                "abilities": ["No Guard"],
+                "evs": [48, 0, 4, 252, 0, 204],
+				"ivs": [31, 3, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["dynamicpunch", "knockoff", "icepunch", "fireblast"],
+                "abilities": ["No Guard"],
+                "evs": [0, 248, 0, 128, 0, 132],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Naughty",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["dynamicpunch", "knockoff", "icepunch", "bulletpunch"],
+                "abilities": ["No Guard"],
+                "evs": [48, 252, 4, 0, 0, 204],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["dynamicpunch", "knockoff", "icepunch", "thunderpunch"],
+                "abilities": ["No Guard"],
+                "evs": [48, 252, 4, 0, 0, 204],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["dynamicpunch", "knockoff", "icepunch", "stoneedge"],
+                "abilities": ["No Guard"],
+                "evs": [48, 252, 4, 0, 0, 204],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["drainpunch", "knockoff", "icepunch", "bulkup"],
+                "abilities": ["Guts"],
+                "evs": [120, 252, 4, 0, 0, 132],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["drainpunch", "knockoff", "icepunch", "bulkup"],
+                "abilities": ["Guts"],
+                "evs": [124, 252, 0, 0, 0, 132],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["drainpunch", "knockoff", "bulkup", "encore"],
+                "abilities": ["Guts"],
+                "evs": [124, 252, 0, 0, 0, 132],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["crosschop", "knockoff", "meditate", "encore"],
+                "abilities": ["No Guard"],
+                "evs": [120, 252, 4, 0, 0, 132],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["dynamicpunch", "knockoff", "icepunch", "stoneedge"],
+                "abilities": ["No Guard"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["dynamicpunch", "knockoff", "fireblast", "vacuumwave"],
+                "abilities": ["No Guard"],
+                "evs": [0, 252, 0, 124, 0, 132],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Lonely",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["drainpunch", "knockoff", "icepunch", "thunderpunch"],
+                "abilities": ["Guts"],
+                "evs": [252, 36, 36, 0, 184, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["dynamicpunch", "knockoff", "bulkup", "substitute"],
+                "abilities": ["No Guard"],
+                "evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [30, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
 				"inclination": "Physical"
             }
         ]
@@ -9225,18 +9458,116 @@
         ]
     },
     "sceptile": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["earthquake", "focusblast", "hiddenpowerfire", "hiddenpowerice", "leafstorm", "rockslide"],
+                "role": "Berry Sweeper",
+                "movepool": ["dragonpulse", "gigadrain", "thunderbolt", "endure"],
                 "abilities": ["Unburden"],
-				"inclination": "Mixed"
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Modest",
+				"inclination": "Special"
             },
-            {
-                "role": "Staller",
-                "movepool": ["energyball", "hiddenpowerfire", "hiddenpowerice", "leechseed", "substitute"],
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["dragonpulse", "gigadrain", "hiddenpowerfire", "endure"],
                 "abilities": ["Unburden"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Petaya Berry",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["dragonpulse", "gigadrain", "hiddenpowerground", "endure"],
+                "abilities": ["Unburden"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Petaya Berry",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["dragonpulse", "gigadrain", "focusblast", "endure"],
+                "abilities": ["Unburden"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["dragonpulse", "gigadrain", "thunderbolt", "substitute"],
+                "abilities": ["Unburden"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["dragonpulse", "gigadrain", "hiddenpowerfire", "substitute"],
+                "abilities": ["Unburden"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Petaya Berry",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["dragonpulse", "gigadrain", "hiddenpowerground", "substitute"],
+                "abilities": ["Unburden"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Petaya Berry",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["dragonpulse", "gigadrain", "focusblast", "substitute"],
+                "abilities": ["Unburden"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["outrage", "leafblade", "lowkick", "swordsdance"],
+                "abilities": ["Unburden"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["dragonpulse", "solarbeam", "leechseed", "fling"],
+                "abilities": ["Unburden"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Big Root",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fling Setup",
+                "movepool": ["dragonpulse", "gigadrain", "focusblast", "fling"],
+                "abilities": ["Unburden"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Power Lens",
+				"nature": "Mild",
 				"inclination": "Special"
             }
         ]
