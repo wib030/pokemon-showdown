@@ -1166,7 +1166,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "LC",
 	},
 	chimecho: {
-		tier: "UU",
+		tier: "OU",
 	},
 	absol: {
 		tier: "OU",
