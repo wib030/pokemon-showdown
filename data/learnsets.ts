@@ -24130,7 +24130,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			hiddenpower: ["4M", "3M"],
 			icebeam: ["4M", "3M"],
 			iceshard: ["4L24"],
-			iciclespear: ["4E", "3E"],
+			iciclespear: ["4L30", "4E", "3E"],
 			icywind: ["4T", "4L21", "3T"],
 			lightscreen: ["4M", "3M"],
 			mimic: ["3T"],
@@ -24167,6 +24167,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			flail: ["4L40"],
 			hailcannon: ["4L46"],
 			peatslide: ["4E"],
+			rockblast: ["4L30"],
+			freezedry: ["4L32"],
 		},
 		eventData: [
 			{generation: 3, level: 22, abilities: ["oblivious"], moves: ["charm", "ancientpower", "mist", "mudshot"]},
@@ -24237,6 +24239,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			thrash: ["4L41"],
 			iciclecrash: ["4L44"],
 			hailcannon: ["4L50"],
+			rockblast: ["4L32"],
+			iciclespear: ["4L32"],
+			freezedry: ["4L34"],
 		},
 		encounters: [
 			{generation: 6, level: 30},
@@ -24307,6 +24312,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			iciclecrash: ["4L44"],
 			hailcannon: ["4L50"],
 			block: ["4L1"],
+			rockblast: ["4L32"],
+			iciclespear: ["4L32"],
+			freezedry: ["4L34"],
 		},
 		eventData: [
 			{generation: 5, level: 34, gender: "M", isHidden: true, moves: ["hail", "icefang", "takedown", "doublehit"]},
