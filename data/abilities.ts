@@ -6141,7 +6141,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					
 					if (oldItem.id === 'leftovers') {
 						// Heal the Slurp Up mon for 1/8th max HP
-						this.heal(target.baseMaxhp / 8);
+						this.heal(target.baseMaxhp / 8, target, target);
 					}
 					
 					if (oldItem.id === 'poisonbarb') {
@@ -6156,7 +6156,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					
 					if (oldItem.id === 'sitrusberry') {
 						// Heal the Slurp Up mon for 1/4th max HP
-						this.heal(target.baseMaxhp / 4);
+						this.heal(target.baseMaxhp / 4, target, target);
 					}
 				}
 			}
