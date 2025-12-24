@@ -3525,7 +3525,7 @@
                 "abilities": ["Skill Link"],
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Expert Belt",
+				"item": "Focus Sash",
 				"nature": "Adamant",
 				"inclination": "Physical"
             },
@@ -3535,12 +3535,12 @@
                 "abilities": ["Skill Link"],
 				"evs": [0, 252, 0, 0, 4, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
-				"item": "Expert Belt",
+				"item": "Focus Sash",
 				"nature": "Adamant",
 				"inclination": "Physical"
             },
 			{
-                "role": "Fast Lead",
+                "role": "Hazards Tank",
                 "movepool": ["iciclespear", "rockblast", "spikecannon", "rapidspin"],
                 "abilities": ["Skill Link"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -18097,7 +18097,7 @@
             },
 			{
                 "role": "Glass Cannon",
-                "movepool": ["aurasphere", "shadowball", "hiddenpowerfighting", "agility"],
+                "movepool": ["aurasphere", "shadowball", "hiddenpowerfire", "agility"],
                 "abilities": ["Scrappy"],
                 "evs": [56, 0, 0, 252, 0, 200],
 				"ivs": [31, 2, 31, 30, 31, 30],
@@ -21961,6 +21961,198 @@
                 "movepool": ["calmmind", "dragonpulse", "rest", "sleeptalk"],
                 "abilities": ["Pressure"],
 				"inclination": "Special"
+            }
+        ]
+    },
+	"giratinaantibug": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Insect Plate",
+				"inclination": "Support"
+            }
+        ]
+    },
+	"giratinaantidark": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Dread Plate",
+				"inclination": "Support"
+            }
+        ]
+    },
+	"giratinaantidragon": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Draco Plate",
+				"inclination": "Support"
+            }
+        ]
+    },
+	"giratinaantielectric": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Zap Plate",
+				"inclination": "Support"
+            }
+        ]
+    },
+	"giratinaantifighting": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Fist Plate",
+				"inclination": "Support"
+            }
+        ]
+    },
+	"giratinaantifire": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Flame Plate",
+				"inclination": "Support"
+            }
+        ]
+    },
+	"giratinaantiflying": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Sky Plate",
+				"inclination": "Support"
+            }
+        ]
+    },
+	"giratinaantighost": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Spooky Plate",
+				"inclination": "Support"
+            }
+        ]
+    },
+	"giratinaantigrass": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Meadow Plate",
+				"inclination": "Support"
+            }
+        ]
+    },
+	"giratinaantiground": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Earth Plate",
+				"inclination": "Support"
+            }
+        ]
+    },
+	"giratinaantiice": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Icicle Plate",
+				"inclination": "Support"
+            }
+        ]
+    },
+	"giratinaantipoison": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Toxic Plate",
+				"inclination": "Support"
+            }
+        ]
+    },
+	"giratinaantipsychic": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Mind Plate",
+				"inclination": "Support"
+            }
+        ]
+    },
+	"giratinaantirock": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Stone Plate",
+				"inclination": "Support"
+            }
+        ]
+    },
+	"giratinaantisteel": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Iron Plate",
+				"inclination": "Support"
+            }
+        ]
+    },
+	"giratinaantiwater": {
+        "level": 99,
+        "sets": [
+            {
+                "role": "Staller",
+                "movepool": ["shadowforce", "judgment", "rest", "sleeptalk"],
+                "abilities": ["Antitype"],
+				"item": "Splash Plate",
+				"inclination": "Support"
             }
         ]
     },
