@@ -6136,7 +6136,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					
 					if (oldItem.id === 'flameorb') {
 						// Inflict burn on the Slurp Up mon
-						this.add('-status', target, 'brn', '[from] item: Flame Orb');
+						target.trySetStatus('brn', source);
 					}
 					
 					if (oldItem.id === 'leftovers') {
@@ -6146,7 +6146,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					
 					if (oldItem.id === 'poisonbarb') {
 						// Inflict poison on the Slurp Up mon
-						this.add('-status', target, 'psn', '[from] item: Poison Barb');
+						target.trySetStatus('psn', source);
 					}
 					
 					if (oldItem.id === 'stickybarb') {
