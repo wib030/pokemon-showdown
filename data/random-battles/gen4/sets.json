@@ -549,7 +549,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["extremespeed", "suckerpunch", "uturn", "swordsdance"],
                 "abilities": ["Simple"],
 				"evs": [4, 252, 0, 0, 0, 252],
@@ -559,7 +559,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["extremespeed", "crunch", "uturn", "swordsdance"],
                 "abilities": ["Simple"],
 				"evs": [4, 252, 0, 0, 0, 252],
@@ -589,7 +589,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["extremespeed", "uturn", "superfang", "swordsdance"],
                 "abilities": ["Simple"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -2850,7 +2850,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Priority Attacker",
                 "movepool": ["focusblast", "fireblast", "hiddenpowerdark", "vacuumwave"],
                 "abilities": ["No Guard"],
                 "evs": [0, 0, 4, 252, 0, 252],
@@ -2860,7 +2860,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Priority Attacker",
                 "movepool": ["focusblast", "fireblast", "hiddenpowerdark", "vacuumwave"],
                 "abilities": ["No Guard"],
                 "evs": [48, 0, 4, 252, 0, 204],
@@ -2880,7 +2880,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Priority Attacker",
                 "movepool": ["dynamicpunch", "knockoff", "icepunch", "bulletpunch"],
                 "abilities": ["No Guard"],
                 "evs": [48, 252, 4, 0, 0, 204],
@@ -2960,7 +2960,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "Priority Attacker",
                 "movepool": ["dynamicpunch", "knockoff", "fireblast", "vacuumwave"],
                 "abilities": ["No Guard"],
                 "evs": [0, 252, 0, 124, 0, 132],
@@ -3237,7 +3237,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Glass Cannon",
+                "role": "Priority Attacker",
                 "movepool": ["uturn", "bravebird", "quickattack", "knockoff"],
                 "abilities": ["Huge Power"],
                 "evs": [0, 252, 0, 0, 4, 252],
@@ -3267,7 +3267,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["bravebird", "quickattack", "nightslash", "swordsdance"],
                 "abilities": ["Huge Power"],
                 "evs": [0, 252, 4, 0, 0, 252],
@@ -3277,7 +3277,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["quickattack", "dualwingbeat", "knockoff", "swordsdance"],
                 "abilities": ["Huge Power"],
                 "evs": [0, 252, 0, 0, 4, 252],
@@ -3287,7 +3287,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Priority Attacker",
                 "movepool": ["bravebird", "return", "knockoff", "quickattack"],
                 "abilities": ["Huge Power"],
                 "evs": [252, 252, 0, 0, 0, 4],
@@ -3297,7 +3297,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["quickattack", "dualwingbeat", "knockoff", "swordsdance"],
                 "abilities": ["Huge Power"],
                 "evs": [0, 252, 0, 0, 4, 252],
@@ -3357,7 +3357,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Glass Cannon",
+                "role": "Priority Attacker",
                 "movepool": ["dualwingbeat", "quickattack", "knockoff", "psychup"],
                 "abilities": ["Huge Power"],
                 "evs": [0, 252, 4, 0, 0, 252],
@@ -4061,7 +4061,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Bulky Attacker",
+                "role": "Priority Attacker",
                 "movepool": ["closecombat", "icepunch", "thunderpunch", "machpunch"],
                 "abilities": ["Technician"],
 				"evs": [248, 252, 0, 0, 8, 0],
@@ -7015,13 +7015,13 @@
         "level": 99,
         "sets": [
             {
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["bugbite", "bulletpunch", "roost", "superpower", "swordsdance"],
                 "abilities": ["Technician"],
 				"inclination": "Physical"
             },
             {
-                "role": "Fast Attacker",
+                "role": "Priority Attacker",
                 "movepool": ["bulletpunch", "pursuit", "superpower", "uturn"],
                 "abilities": ["Technician"],
 				"inclination": "Physical"
@@ -9949,7 +9949,7 @@
         "level": 99,
         "sets": [
             {
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["bellydrum", "extremespeed", "seedbomb", "shadowclaw"],
                 "abilities": ["Gluttony"],
 				"inclination": "Physical"
@@ -10080,7 +10080,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["bulletseed", "machpunch", "rocktomb", "swordsdance"],
                 "abilities": ["Technician"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -12353,7 +12353,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Bulky Setup",
+                "role": "Priority Attacker",
                 "movepool": ["aquajet", "crabhammer", "knockoff", "swordsdance"],
                 "abilities": ["Adaptability"],
 				"evs": [252, 252, 0, 0, 4, 0],
@@ -12373,7 +12373,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Priority Attacker",
                 "movepool": ["aquajet", "crabhammer", "knockoff", "superpower"],
                 "abilities": ["Adaptability"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -12393,7 +12393,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["chumrush", "aquajet", "knockoff", "swordsdance"],
                 "abilities": ["Adaptability"],
 				"evs": [4, 252, 0, 0, 0, 252],
@@ -12403,7 +12403,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Priority Attacker",
                 "movepool": ["aquajet", "chumrush", "knockoff", "superpower"],
                 "abilities": ["Adaptability"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -13204,7 +13204,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["rockblast", "earthquake", "aquajet", "swordsdance"],
                 "abilities": ["Water Absorb"],
 				"evs": [40, 252, 24, 0, 0, 192],
@@ -13214,7 +13214,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["rockblast", "earthquake", "aquajet", "swordsdance"],
                 "abilities": ["Water Absorb"],
 				"evs": [232, 252, 0, 0, 24, 0],
@@ -13224,7 +13224,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["stoneedge", "earthquake", "aquajet", "swordsdance"],
                 "abilities": ["Water Absorb"],
 				"evs": [0, 252, 4, 0, 0, 252],
@@ -13234,7 +13234,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["rockslide", "earthquake", "aquajet", "swordsdance"],
                 "abilities": ["Water Absorb"],
 				"evs": [0, 252, 4, 0, 0, 252],
@@ -13606,7 +13606,7 @@
         "level": 100,
         "sets": [
             {
-                "role": "Glass Cannon",
+                "role": "Priority Attacker",
                 "movepool": ["shadowclaw", "knockoff", "shadowsneak", "trick"],
                 "abilities": ["Hustle"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -13616,7 +13616,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Glass Cannon",
+                "role": "Priority Attacker",
                 "movepool": ["shadowclaw", "knockoff", "shadowsneak", "trick"],
                 "abilities": ["Hustle"],
 				"evs": [252, 252, 0, 0, 0, 4],
@@ -14136,7 +14136,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Priority Attacker",
                 "movepool": ["meteormash", "earthquake", "thunderpunch", "bulletpunch"],
                 "abilities": ["Clear Body"],
                 "evs": [68, 252, 0, 0, 188, 0],
@@ -14176,7 +14176,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Wallbreaker",
+                "role": "Priority Attacker",
                 "movepool": ["meteormash", "earthquake", "icepunch", "bulletpunch"],
                 "abilities": ["Clear Body"],
                 "evs": [68, 252, 0, 0, 188, 0],
@@ -14326,7 +14326,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "Priority Attacker",
                 "movepool": ["meteormash", "earthquake", "thunderpunch", "bulletpunch"],
                 "abilities": ["Clear Body"],
                 "evs": [248, 252, 0, 0, 8, 0],
@@ -14346,7 +14346,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "Priority Attacker",
                 "movepool": ["meteormash", "earthquake", "icepunch", "bulletpunch"],
                 "abilities": ["Clear Body"],
                 "evs": [248, 252, 0, 0, 8, 0],
@@ -14366,7 +14366,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Attacker",
+                "role": "Priority Attacker",
                 "movepool": ["meteormash", "earthquake", "pursuit", "bulletpunch"],
                 "abilities": ["Clear Body"],
                 "evs": [248, 252, 0, 0, 8, 0],
@@ -15514,7 +15514,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["closecombat", "firepunch", "machpunch", "swordsdance"],
                 "abilities": ["Iron Fist"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -15524,7 +15524,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["closecombat", "flareblitz", "machpunch", "swordsdance"],
                 "abilities": ["Iron Fist"],
 				"evs": [0, 252, 0, 0, 4, 252],
@@ -15534,7 +15534,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["heatwave", "vacuumwave", "hiddenpowerice", "nastyplot"],
                 "abilities": ["Blaze"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -15544,7 +15544,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["heatwave", "vacuumwave", "grassknot", "nastyplot"],
                 "abilities": ["Blaze"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -15634,7 +15634,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Bulky Setup",
+                "role": "Priority Attacker",
                 "movepool": ["firepunch", "machpunch", "bulkup", "slackoff"],
                 "abilities": ["Iron Fist"],
 				"evs": [240, 0, 0, 0, 252, 16],
@@ -15899,13 +15899,13 @@
         "level": 99,
         "sets": [
             {
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["swordsdance", "quickattack", "return", "waterfall"],
                 "abilities": ["Simple"],
 				"inclination": "Physical"
             },
             {
-                "role": "Bulky Setup",
+                "role": "Priority Attacker",
                 "movepool": ["curse", "quickattack", "return", "waterfall"],
                 "abilities": ["Simple"],
 				"inclination": "Physical"
@@ -17966,7 +17966,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["closecombat", "crunch", "bulletpunch", "swordsdance"],
                 "abilities": ["Scrappy"],
                 "evs": [0, 252, 4, 0, 0, 252],
@@ -17976,7 +17976,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["closecombat", "thunderpunch", "bulletpunch", "swordsdance"],
                 "abilities": ["Iron Fist"],
                 "evs": [0, 252, 4, 0, 0, 252],
@@ -18126,7 +18126,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["closecombat", "icepunch", "extremespeed", "swordsdance"],
                 "abilities": ["Scrappy"],
                 "evs": [0, 252, 4, 0, 0, 252],
@@ -18344,7 +18344,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["sludgebomb", "darkpulse", "vacuumwave", "nastyplot"],
                 "abilities": ["Dry Skin"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -18354,7 +18354,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Setup Sweeper",
+                "role": "Priority Attacker",
                 "movepool": ["sludgebomb", "darkpulse", "vacuumwave", "nastyplot"],
                 "abilities": ["Dry Skin"],
 				"evs": [0, 0, 0, 252, 4, 252],
@@ -18365,7 +18365,7 @@
             },
 			{
                 "role": "Setup Sweeper",
-                "movepool": ["poisonjab", "drainpunch", "icepunch", "acupressure"],
+                "movepool": ["poisonjab", "drainpunch", "substitute", "acupressure"],
                 "abilities": ["Dry Skin"],
 				"evs": [244, 12, 0, 0, 0, 252],
 				"ivs": [31, 31, 31, 31, 31, 31],
@@ -19092,7 +19092,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Priority Attacker",
                 "movepool": ["closecombat", "wildcharge", "icepunch", "machpunch"],
                 "abilities": ["Motor Drive"],
                 "evs": [0, 252, 0, 0, 4, 252],
@@ -19102,7 +19102,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Fast Attacker",
+                "role": "Priority Attacker",
                 "movepool": ["closecombat", "wildcharge", "icepunch", "machpunch"],
                 "abilities": ["Motor Drive"],
                 "evs": [0, 252, 0, 0, 4, 252],
@@ -19664,12 +19664,336 @@
         ]
     },
     "mamoswine": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Wallbreaker",
-                "movepool": ["earthquake", "iceshard", "stealthrock", "stoneedge", "superpower"],
+                "role": "Offensive Tank",
+                "movepool": ["earthquake", "hailcannon", "knockoff", "stealthrock"],
                 "abilities": ["Thick Fat"],
+				"evs": [80, 252, 0, 0, 4, 172],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["earthquake", "hailcannon", "knockoff", "iceshard"],
+                "abilities": ["Thick Fat"],
+				"evs": [248, 52, 0, 0, 196, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Offensive Tank",
+                "movepool": ["earthquake", "iciclecrash", "knockoff", "stealthrock"],
+                "abilities": ["Thick Fat"],
+				"evs": [248, 80, 168, 0, 0, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Offensive Tank",
+                "movepool": ["earthquake", "hailcannon", "knockoff", "stealthrock"],
+                "abilities": ["Thick Fat"],
+				"evs": [248, 52, 196, 0, 0, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Offensive Tank",
+                "movepool": ["iciclespear", "rockblast", "earthquake", "stealthrock"],
+                "abilities": ["Thick Fat"],
+				"evs": [80, 252, 0, 0, 4, 172],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Three-Four-Five Dice",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["earthquake", "iciclecrash", "knockoff", "iceshard"],
+                "abilities": ["Thick Fat"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["earthquake", "iciclecrash", "stoneedge", "iceshard"],
+                "abilities": ["Thick Fat"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["earthquake", "iciclecrash", "superpower", "iceshard"],
+                "abilities": ["Thick Fat"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Band",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "iciclecrash", "knockoff", "superpower"],
+                "abilities": ["Thick Fat"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["earthquake", "iciclecrash", "knockoff", "stoneedge"],
+                "abilities": ["Thick Fat"],
+				"evs": [0, 252, 0, 0, 4, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["earthquake", "iciclecrash", "toxic", "protect"],
+                "abilities": ["Thick Fat"],
+				"evs": [248, 80, 168, 0, 0, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthquake", "iciclecrash", "iceshard", "curse"],
+                "abilities": ["Thick Fat"],
+				"evs": [248, 80, 0, 0, 180, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "iceshard", "endeavor", "stealthrock"],
+                "abilities": ["Thick Fat"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Lead",
+                "movepool": ["earthquake", "iceshard", "endeavor", "stealthrock"],
+                "abilities": ["Thick Fat"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["earthquake", "iciclecrash", "iceshard", "stealthrock"],
+                "abilities": ["Thick Fat"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Metronome",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Priority Attacker",
+                "movepool": ["earthquake", "iciclecrash", "iceshard", "knockoff"],
+                "abilities": ["Thick Fat"],
+				"evs": [80, 252, 0, 0, 4, 172],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Never-Melt Ice",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Priority Attacker",
+                "movepool": ["earthquake", "iciclecrash", "iceshard", "knockoff"],
+                "abilities": ["Thick Fat"],
+				"evs": [80, 252, 0, 0, 4, 172],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Priority Attacker",
+                "movepool": ["earthquake", "iciclecrash", "rocktomb", "iceshard"],
+                "abilities": ["Thick Fat"],
+				"evs": [48, 252, 0, 0, 4, 204],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Priority Attacker",
+                "movepool": ["earthquake", "iciclecrash", "rocktomb", "iceshard"],
+                "abilities": ["Thick Fat"],
+				"evs": [48, 252, 0, 0, 4, 204],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Priority Attacker",
+                "movepool": ["earthquake", "iciclecrash", "rocktomb", "iceshard"],
+                "abilities": ["Thick Fat"],
+				"evs": [48, 252, 0, 0, 4, 204],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Never-Melt Ice",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Priority Attacker",
+                "movepool": ["earthquake", "iciclecrash", "rocktomb", "iceshard"],
+                "abilities": ["Thick Fat"],
+				"evs": [48, 252, 0, 0, 4, 204],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Wide Lens",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["earthquake", "iciclecrash", "knockoff", "iceshard"],
+                "abilities": ["Thick Fat"],
+				"evs": [0, 252, 4, 0, 0, 252],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Jolly",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["earthquake", "iciclecrash", "knockoff", "iceshard"],
+                "abilities": ["Thick Fat"],
+				"evs": [80, 252, 0, 0, 4, 172],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Liechi Berry",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Priority Attacker",
+                "movepool": ["earthquake", "iciclecrash", "freezedry", "iceshard"],
+                "abilities": ["Thick Fat"],
+				"evs": [0, 252, 0, 84, 0, 172],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Never-Melt Ice",
+				"nature": "Naughty",
+				"inclination": "Mixed"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["earthquake", "earthpower", "freezedry", "superpower"],
+                "abilities": ["Thick Fat"],
+				"evs": [56, 252, 0, 188, 0, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Expert Belt",
+				"nature": "Rash",
+				"inclination": "Mixed"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["earthquake", "earthpower", "freezedry", "knockoff"],
+                "abilities": ["Thick Fat"],
+				"evs": [56, 252, 0, 188, 0, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Soft Sand",
+				"nature": "Rash",
+				"inclination": "Mixed"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["earthquake", "earthpower", "freezedry", "knockoff"],
+                "abilities": ["Thick Fat"],
+				"evs": [8, 252, 0, 236, 0, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Rash",
+				"inclination": "Mixed"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["earthquake", "iciclecrash", "knockoff", "scaryface"],
+                "abilities": ["Thick Fat"],
+				"evs": [28, 252, 0, 0, 0, 228],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["earthquake", "iciclecrash", "knockoff", "scaryface"],
+                "abilities": ["Thick Fat"],
+				"evs": [96, 252, 40, 0, 0, 120],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["earthquake", "iciclecrash", "knockoff", "scaryface"],
+                "abilities": ["Thick Fat"],
+				"evs": [92, 244, 0, 0, 0, 172],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["earthquake", "iciclecrash", "knockoff", "substitute"],
+                "abilities": ["Thick Fat"],
+				"evs": [172, 212, 0, 0, 0, 124],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["earthquake", "iciclecrash", "curse", "substitute"],
+                "abilities": ["Thick Fat"],
+				"evs": [172, 252, 76, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["earthquake", "iciclecrash", "knockoff", "toxic"],
+                "abilities": ["Thick Fat"],
+				"evs": [248, 80, 168, 0, 0, 12],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
 				"inclination": "Physical"
             }
         ]

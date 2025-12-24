@@ -61,7 +61,7 @@ const NON_LEAD_HAZARD_ROLES = [
 const ATTACKING_ROLES = [
 	'Fast Attacker', 'Setup Sweeper', 'Wallbreaker', 'Bulky Attacker', 'Bulky Setup', 'Fast Bulky Setup', 'AV Pivot', 'Doubles Fast Attacker', 'Doubles Setup Sweeper', 'Doubles Wallbreaker', 
 	'Doubles Bulky Attacker', 'Doubles Bulky Setup', 'Offensive Protect', 'Berry Sweeper', 'Sun Attacker', 'Rain Attacker', 'Hail Attacker', 'Sand Attacker', 'Glass Cannon', 'Fling Setup',
-	'TR Attacker', 'Fast Pivot', 'Bulky Pivot', 'Sun Setup', 'Switch Trapper', 'Offensive Tank',
+	'TR Attacker', 'Fast Pivot', 'Bulky Pivot', 'Sun Setup', 'Switch Trapper', 'Offensive Tank', 'Priority Attacker',
 ];
 
 // Types with immunities

@@ -571,7 +571,7 @@ declare namespace RandomTeamsTypes {
 		'Bulky Screens Setter' | 'Glass Cannon' | 'Fling Setup' | 'TR Setter' | 'TR Attacker' | 'Baton Passer' |
 		'Fast Pivot' | 'Bulky Pivot' | 'Defog' | 'TR Lead' | 'Sun Setup' | 'Anti-Lead' | 'Switch Trapper' | 
 		'Sand Lead' | 'Sun Lead' | 'Hail Lead' | 'Rain Lead' | 'Hail Support' | 'Sun Support' | 'Offensive Tank' |
-		'Status Tank' | 'AV Tank' | 'Hazards Tank' | 'Baton Pass Lead' | 'Hazards Support';
+		'Status Tank' | 'AV Tank' | 'Hazards Tank' | 'Baton Pass Lead' | 'Hazards Support' | 'Priority Attacker';
 		
 	export type Inclination = 'Mixed' | 'Physical' | 'Special' | 'Support' | 'Unset';
 }
