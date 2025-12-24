@@ -1570,17 +1570,18 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			if (!target.item || target.itemState.knockedOff) return;
 			if (target.ability === 'multitype' || target.ability === 'antitype') return;
 			const item = target.getItem();
-			
-			if (item.id === 'toxicorb' && (target.status === 'tox' || target.status === 'psn')) {
-				this.add('-curestatus', target, target.status, `[from] move: ${move}`);
-				target.clearStatus();
-				this.hint("In Flucient Platinum, knocking off a Toxic Orb cures their toxic or poison status.", true);
-			}
+			const oldItem = item;
 			
 			if (this.runEvent('TakeItem', target, source, move, item)) {
 				target.itemState.knockedOff = true;
 				this.add('-enditem', target, item.name, '[from] move: Knock Off', `[of] ${source}`);
 				this.hint("In Gens 3-4, Knock Off only makes the target's item unusable; it cannot obtain a new item.", true);
+			}
+			
+			if (oldItem.id === 'toxicorb' && (target.status === 'tox' || target.status === 'psn')) {
+				this.add('-curestatus', target, target.status, `[from] move: ${move}`);
+				target.clearStatus();
+				this.hint("In Flucient Platinum, knocking off a Toxic Orb cures their toxic or poison status.", true);
 			}
 		},
 		secondary: null,

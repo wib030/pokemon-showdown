@@ -6118,44 +6118,45 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					if (!source.item || source.itemState.knockedOff) return;
 					if (source.ability === 'multitype' || source.ability === 'antitype') return;
 					const item = source.getItem();
+					const oldItem = item;
 					
-					if (item.id === 'toxicorb' && (source.status === 'tox' || source.status === 'psn')) {
+					if (this.runEvent('TakeItem', source, target, move, item)) {
+						source.itemState.knockedOff = true;
+						this.add('-enditem', source, item.name, '[from] ability: Slurp Up', `[of] ${target}`);
+					}
+					
+					if (oldItem.id === 'toxicorb' && (source.status === 'tox' || source.status === 'psn')) {
 						this.add('-curestatus', source, source.status, `[from] move: ${move}`);
 						source.clearStatus();
 						this.hint("In Flucient Platinum, slurping up a Toxic Orb cures their toxic or poison status.", true);
 						
 						// Inflict toxic poison on the Slurp Up mon
-						this.add('-status', target, 'tox', '[from] item: Toxic Orb');
+						target.trySetStatus('tox', source);
 					}
 					
-					if (item.id === 'flameorb') {
+					if (oldItem.id === 'flameorb') {
 						// Inflict burn on the Slurp Up mon
 						this.add('-status', target, 'brn', '[from] item: Flame Orb');
 					}
 					
-					if (item.id === 'leftovers') {
+					if (oldItem.id === 'leftovers') {
 						// Heal the Slurp Up mon for 1/8th max HP
-						this.heal(target.baseMaxhp / 8, target);
+						this.heal(target.baseMaxhp / 8);
 					}
 					
-					if (item.id === 'poisonbarb') {
+					if (oldItem.id === 'poisonbarb') {
 						// Inflict poison on the Slurp Up mon
 						this.add('-status', target, 'psn', '[from] item: Poison Barb');
 					}
 					
-					if (item.id === 'stickybarb') {
+					if (oldItem.id === 'stickybarb') {
 						// Inflict sticky barb chip condition on the Slurp Up mon
 						target.addVolatile('stickybarbchip');
 					}
 					
-					if (item.id === 'sitrusberry') {
+					if (oldItem.id === 'sitrusberry') {
 						// Heal the Slurp Up mon for 1/4th max HP
-						this.heal(target.baseMaxhp / 4, target);
-					}
-					
-					if (this.runEvent('TakeItem', source, target, move, item)) {
-						source.itemState.knockedOff = true;
-						this.add('-enditem', source, item.name, '[from] ability: Slurp Up', `[of] ${target}`);
+						this.heal(target.baseMaxhp / 4);
 					}
 				}
 			}
