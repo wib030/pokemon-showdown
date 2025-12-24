@@ -767,10 +767,10 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (!onlyLeadSets && !onlyPreventableSets && LEAD_ROLES.includes(set.role)) continue;
 				
 				// Enforce Physical Attacker if the team requires one
-				if (ensurePhysicalAttacker && !ATTACKING_ROLES.includes(set.role) && set.inclination !== 'Physical') continue;
+				if (ensurePhysicalAttacker && !ATTACKING_ROLES.includes(set.role) && (set.inclination === 'Special' || set.inclination === 'Support')) continue;
 				
 				// Enforce Special Attacker if the team requires one
-				if (ensureSpecialAttacker && !ATTACKING_ROLES.includes(set.role) && set.inclination !== 'Special') continue;
+				if (ensureSpecialAttacker && !ATTACKING_ROLES.includes(set.role) && (set.inclination === 'Physical' || set.inclination === 'Support')) continue;
 			}
 
 			if (ensureRemoval)
@@ -1139,7 +1139,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				// Check if the Pokemon has a Physical Attacking set
 				skip = true;
 				for (let set of sets) {
-					if (ATTACKING_ROLES.includes(set.role) && set.inclination === 'Physical') {
+					if (ATTACKING_ROLES.includes(set.role) && (set.inclination === 'Physical' || set.inclination === 'Mixed')) {
 						ensurePhysicalAttacker = true;
 						skip = false;
 						break;
@@ -1150,7 +1150,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				// Check if the Pokemon has a Special Attacking set
 				skip = true;
 				for (let set of sets) {
-					if (ATTACKING_ROLES.includes(set.role) && set.inclination === 'Special') {
+					if (ATTACKING_ROLES.includes(set.role) && (set.inclination === 'Special' || set.inclination === 'Mixed')) {
 						ensureSpecialAttacker = true;
 						skip = false;
 						break;
