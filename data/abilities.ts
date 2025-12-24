@@ -6279,6 +6279,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	pealaway: {
 		onSwitchIn(pokemon) {
+			this.add('-activate', pokemon, 'ability: Peal Away');
 			const allies = [...pokemon.side.pokemon, ...pokemon.side.allySide?.pokemon || []];
 			for (const ally of allies) {
 				if (ally.hasAbility('soundproof') && !this.suppressingAbility(ally)) {
