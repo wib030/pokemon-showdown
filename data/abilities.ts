@@ -6131,12 +6131,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						this.hint("In Flucient Platinum, slurping up a Toxic Orb cures their toxic or poison status.", true);
 						
 						// Inflict toxic poison on the Slurp Up mon
-						target.trySetStatus('tox', source);
+						target.trySetStatus('tox', target);
 					}
 					
 					if (oldItem.id === 'flameorb') {
 						// Inflict burn on the Slurp Up mon
-						target.trySetStatus('brn', source);
+						target.trySetStatus('brn', target);
 					}
 					
 					if (oldItem.id === 'leftovers') {
@@ -6146,7 +6146,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					
 					if (oldItem.id === 'poisonbarb') {
 						// Inflict poison on the Slurp Up mon
-						target.trySetStatus('psn', source);
+						target.trySetStatus('psn', target);
 					}
 					
 					if (oldItem.id === 'stickybarb') {
