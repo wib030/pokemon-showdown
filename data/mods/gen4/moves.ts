@@ -2,8 +2,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	acupressure: {
 		inherit: true,
 		flags: { snatch: 1, metronome: 1 },
-		onHit(target) {
-			if (target.volatiles['substitute']) {
+		onHit(target, source, move) {
+			if (target.volatiles['substitute'] && source !== target) {
 				return false;
 			}
 			const stats: BoostID[] = [];
@@ -36,6 +36,11 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	aquaring: {
 		inherit: true,
 		flags: { metronome: 1 },
+		onHit(target, source, move) {
+			if (target.volatiles['substitute'] && source !== target) {
+				return false;
+			}
+		},
 		condition: {
 			onStart(pokemon) {
 				this.add('-start', pokemon, 'Aqua Ring');

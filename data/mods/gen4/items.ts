@@ -400,7 +400,8 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 				this.effectState.lastMove = move.id;
 			},
 			onModifyDamagePhase2(damage, source, target, move) {
-				return damage * ((100 + (15 * this.effectState.numConsecutive)) / 100);
+				const numConsecutive = this.effectState.numConsecutive > 5 ? 5 : this.effectState.numConsecutive;
+				return damage * ((100 + (15 * numConsecutive)) / 100);
 			},
 		},
 	},
