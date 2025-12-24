@@ -2450,7 +2450,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	pealaway: {
 		name: "Peal Away",
-		shortDesc: "On switch-in: Cures party and ally status.",
+		shortDesc: "On switch-in: Cures party and ally status. (Doesn't cure Soundproof)",
 		desc: "When this Pokemon switches-in, the Pokemon's party and their active ally has their status cured, unless they have the ability Soundproof.",
+		
+		activate: "  A bell chimed!",
 	},
 };
