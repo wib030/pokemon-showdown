@@ -1487,9 +1487,14 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: {hp: 76, atk: 65, def: 45, spa: 112, spd: 42, spe: 111},
 		abilities: {0: "Quick Feet"},
 	},
+	chingling: {
+		inherit: true,
+		abilities: {0: "Levitate", 1: "Peal Away"},
+	},
 	chimecho: {
 		inherit: true,
 		baseStats: {hp: 75, atk: 50, def: 70, spa: 95, spd: 160, spe: 70},
+		abilities: {0: "Levitate", 1: "Peal Away"},
 	},
 	baltoy: {
 		inherit: true,

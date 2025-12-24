@@ -2448,4 +2448,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		shortDesc: "If this Pokemon is Giratina, its type changes depending on its held Plate.",
 		desc: "If this Pokemon is Giratina, its type changes depending on its held Plate. This Pokemon cannot lose its held item due to another Pokemon's attack.",
 	},
+	pealaway: {
+		name: "Peal Away",
+		shortDesc: "On switch-in: Cures party and ally status.",
+		desc: "When this Pokemon switches-in, the Pokemon's party and their active ally has their status cured, unless they have the ability Soundproof.",
+	},
 };

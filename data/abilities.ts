@@ -6123,6 +6123,34 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						this.add('-curestatus', source, source.status, `[from] move: ${move}`);
 						source.clearStatus();
 						this.hint("In Flucient Platinum, slurping up a Toxic Orb cures their toxic or poison status.", true);
+						
+						// Inflict toxic poison on the Slurp Up mon
+						this.add('-status', target, 'tox', '[from] item: Toxic Orb');
+					}
+					
+					if (item.id === 'flameorb') {
+						// Inflict burn on the Slurp Up mon
+						this.add('-status', target, 'brn', '[from] item: Flame Orb');
+					}
+					
+					if (item.id === 'leftovers') {
+						// Heal the Slurp Up mon for 1/8th max HP
+						this.heal(target.baseMaxhp / 8, target);
+					}
+					
+					if (item.id === 'poisonbarb') {
+						// Inflict poison on the Slurp Up mon
+						this.add('-status', target, 'psn', '[from] item: Poison Barb');
+					}
+					
+					if (item.id === 'stickybarb') {
+						// Inflict sticky barb chip condition on the Slurp Up mon
+						target.addVolatile('stickybarbchip');
+					}
+					
+					if (item.id === 'sitrusberry') {
+						// Heal the Slurp Up mon for 1/4th max HP
+						this.heal(target.baseMaxhp / 4, target);
 					}
 					
 					if (this.runEvent('TakeItem', source, target, move, item)) {
@@ -6248,5 +6276,21 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Antitype",
 		rating: 4,
 		num: -29,
+	},
+	pealaway: {
+		onSwitchIn(pokemon) {
+			const allies = [...pokemon.side.pokemon, ...pokemon.side.allySide?.pokemon || []];
+			for (const ally of allies) {
+				if (ally.hasAbility('soundproof') && !this.suppressingAbility(ally)) {
+					if (ally.isActive) this.add('-immune', ally, '[from] ability: Soundproof');
+					continue;
+				}
+				ally.cureStatus(true);
+			}
+		},
+		flags: { rollable: 1 },
+		name: "Peal Away",
+		rating: 1,
+		num: -30,
 	},
 };
