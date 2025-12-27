@@ -22641,5 +22641,180 @@
 				"inclination": "Physical"
             }
         ]
-    }
+    },
+	"megamarill": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "dragontail", "encore", "milkdrink"],
+                "abilities": ["Thick Fat"],
+                "evs": [240, 0, 40, 0, 228, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "dragontail", "toxic", "milkdrink"],
+                "abilities": ["Thick Fat"],
+                "evs": [240, 0, 40, 0, 228, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "dragontail", "bodyslam", "milkdrink"],
+                "abilities": ["Thick Fat"],
+                "evs": [240, 0, 40, 0, 228, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "dragontail", "toxic", "milkdrink"],
+                "abilities": ["Thick Fat"],
+                "evs": [240, 0, 52, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "dragontail", "encore", "milkdrink"],
+                "abilities": ["Thick Fat"],
+                "evs": [240, 0, 52, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "dragontail", "bodyslam", "milkdrink"],
+                "abilities": ["Thick Fat"],
+                "evs": [240, 0, 52, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "dragontail", "bodyslam", "milkdrink"],
+                "abilities": ["Thick Fat"],
+                "evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "dragontail", "toxic", "milkdrink"],
+                "abilities": ["Thick Fat"],
+                "evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "dragontail", "encore", "milkdrink"],
+                "abilities": ["Thick Fat"],
+                "evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["whirlpool", "perishsong", "milkdrink", "protect"],
+                "abilities": ["Thick Fat"],
+                "evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["whirlpool", "perishsong", "milkdrink", "protect"],
+                "abilities": ["Thick Fat"],
+                "evs": [240, 0, 40, 0, 228, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Calm",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["whirlpool", "perishsong", "milkdrink", "protect"],
+                "abilities": ["Thick Fat"],
+                "evs": [240, 0, 52, 0, 216, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["whirlpool", "toxic", "encore", "milkdrink"],
+                "abilities": ["Thick Fat"],
+                "evs": [240, 0, 52, 0, 216, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["whirlpool", "toxic", "encore", "milkdrink"],
+                "abilities": ["Thick Fat"],
+                "evs": [240, 0, 40, 0, 228, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["whirlpool", "toxic", "encore", "milkdrink"],
+                "abilities": ["Thick Fat"],
+                "evs": [248, 0, 252, 0, 8, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["seismictoss", "whirlpool", "stockpile", "swallow"],
+                "abilities": ["Thick Fat"],
+                "evs": [240, 0, 52, 0, 216, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            },
+			{
+                "role": "Staller",
+                "movepool": ["whirlpool", "toxic", "stockpile", "swallow"],
+                "abilities": ["Thick Fat"],
+                "evs": [240, 0, 52, 0, 216, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Support"
+            }
+        ]
+    },
 }
