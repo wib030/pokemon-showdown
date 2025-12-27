@@ -49,7 +49,7 @@ const LEAD_ROLES = [
 
 // Removal Roles
 const REMOVAL_ROLES = [
-	'Defog', 'Spinner',
+	'Defog', 'Spinner', 'Secondary Defog',
 ];
 
 // Non-Lead Hazard Roles
@@ -1118,9 +1118,17 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				skip = true;
 				for (let set of sets) {
 					if (REMOVAL_ROLES.includes(set.role)) {
-						ensureRemoval = true;
-						skip = false;
-						break;
+						if (set.role === 'Secondary Defog') {
+							if (teamDetails.rapidSpin) {
+								ensureRemoval = true;
+								skip = false;
+								break;
+							}
+						} else {
+							ensureRemoval = true;
+							skip = false;
+							break;
+						}
 					}
 				}
 			} else if (pokemon.length === hazardTankSlot && hasAntiLead && teamDetails.stealthRock < 1 && teamDetails.spikes < 1 && teamDetails.toxicspikes < 1) {

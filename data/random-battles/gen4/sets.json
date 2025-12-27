@@ -694,7 +694,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Defog",
+                "role": "Secondary Defog",
                 "movepool": ["bravebird", "defog", "uturn", "roost"],
                 "abilities": ["Intimidate"],
 				"evs": [200, 4, 4, 0, 180, 120],
@@ -11821,7 +11821,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Defog",
+                "role": "Secondary Defog",
                 "movepool": ["dragontail", "defog", "willowisp", "roost"],
                 "abilities": ["Tangling Cotton"],
 				"evs": [252, 0, 0, 0, 192, 64],
@@ -11841,7 +11841,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Defog",
+                "role": "Secondary Defog",
                 "movepool": ["hurricane", "defog", "willowisp", "roost"],
                 "abilities": ["Tangling Cotton"],
 				"evs": [252, 0, 0, 0, 192, 64],
@@ -11871,7 +11871,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Defog",
+                "role": "Secondary Defog",
                 "movepool": ["dracometeor", "hurricane", "defog", "roost"],
                 "abilities": ["Tangling Cotton"],
 				"evs": [252, 0, 0, 100, 92, 64],
@@ -14754,7 +14754,7 @@
 				"inclination": "Special"
             },
 			{
-                "role": "Hazard Removal",
+                "role": "Defog",
                 "movepool": ["dracometeor", "defog", "reflect", "recover"],
                 "abilities": ["Levitate"],
 				"evs": [248, 0, 164, 8, 24, 64],
