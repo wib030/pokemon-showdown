@@ -1013,8 +1013,6 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		
 		let TypeList: TypeFrequency[] = [];
 		
-		let leadMonHazards = [];
-		
 		let leadNum = 0;
 		let removalNum = 0;
 		let physicalAttackers = 0;
