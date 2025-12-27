@@ -17557,7 +17557,7 @@
 				"inclination": "Physical"
             },
 			{
-                "role": "Defog",
+                "role": "Secondary Defog",
                 "movepool": ["bravebird", "thunderwave", "defog", "roost"],
                 "abilities": ["Shakedown"],
 				"evs": [116, 216, 0, 0, 0, 176],
