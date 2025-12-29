@@ -2369,7 +2369,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	shakedown: {
 		name: "Shakedown",
-		shortDesc: "This Pokemon's contact moves inflict Embargo on hit.",
+		shortDesc: "Own contact moves have a 30% chance to inflict Embargo on hit.",
 	},
 	chloroplast: {
 		name: "Chloroplast",

@@ -5804,7 +5804,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	shakedown: {
 		onSourceDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target)) {
-				target.addVolatile('embargo');
+				if (this.randomChance(3, 10)) {
+					target.addVolatile('embargo');
+				}
 			}
 		},
 		flags: { rollable: 1 },
