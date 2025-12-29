@@ -15496,6 +15496,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			morningsun: ["4L39"],
 			teleport: ["4L46"],
 			lowkick: ["4L1"],
+			firechase: ["4L27"],
+			eruption: ["4L51"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["leer", "smog", "firepunch", "ember"], pokeball: "pokeball"},
@@ -15573,6 +15575,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			teleport: ["4L46"],
 			lowkick: ["4L1"],
 			lowsweep: ["4L1"],
+			firechase: ["4L27"],
+			eruption: ["4L53"],
 		},
 		eventData: [
 			{generation: 4, level: 50, gender: "F", nature: "Modest", moves: ["flamethrower", "psychic", "hyperbeam", "solarbeam"], pokeball: "pokeball"},

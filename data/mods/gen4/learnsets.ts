@@ -10705,6 +10705,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			morningsun: ["4L39"],
 			teleport: ["4L46"],
 			lowkick: ["4L1"],
+			firechase: ["4L27"],
+			eruption: ["4L51"],
 		},
 	},
 	magmortar: {
@@ -10770,6 +10772,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			teleport: ["4L46"],
 			lowkick: ["4L1"],
 			lowsweep: ["4L1"],
+			firechase: ["4L27"],
+			eruption: ["4L53"],
 		},
 	},
 	pinsir: {
