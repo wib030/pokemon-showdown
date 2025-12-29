@@ -7712,6 +7712,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uturn: ["4M"],
 			surf: ["4M"],
 			magiccoat: ["4L43"],
+			rapidspin: ["4L28"],
 		},
 	},
 	electrode: {
@@ -7768,6 +7769,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uturn: ["4M"],
 			surf: ["4M"],
 			magiccoat: ["4L43"],
+			rapidspin: ["4L28"],
 		},
 	},
 	exeggcute: {

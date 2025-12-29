@@ -11622,6 +11622,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uturn: ["4M"],
 			surf: ["4M"],
 			magiccoat: ["4L43"],
+			rapidspin: ["4L28"],
 		},
 		eventData: [
 			{generation: 3, level: 19, moves: ["refresh", "mirrorcoat", "spark", "swift"]},
@@ -11735,6 +11736,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uturn: ["4M"],
 			surf: ["4M"],
 			magiccoat: ["4L43"],
+			rapidspin: ["4L28"],
 		},
 		encounters: [
 			{generation: 1, level: 3},
