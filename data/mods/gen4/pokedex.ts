@@ -1435,7 +1435,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	blastoise: {
 		inherit: true,
-		baseStats: {hp: 89, atk: 83, def: 120, spa: 105, spd: 105, spe: 78},
+		baseStats: {hp: 89, atk: 83, def: 120, spa: 105, spd: 105, spe: 60},
 		abilities: { 0: "Torrent", 1: "Mega Launcher" },
 	},
 	breloom: {
