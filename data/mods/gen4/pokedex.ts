@@ -1843,7 +1843,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	latias: {
 		inherit: true,
-		baseStats: { hp: 80, atk: 80, def: 90, spa: 110, spd: 130, spe: 118 },
+		baseStats: { hp: 90, atk: 80, def: 90, spa: 110, spd: 130, spe: 118 },
 	},
 	bonsly: {
 		inherit: true,
