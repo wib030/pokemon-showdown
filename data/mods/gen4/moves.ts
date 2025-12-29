@@ -2556,7 +2556,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	weatherball: {
 		inherit: true,
-		basePower: 60,
+		basePower: 55,
 		type: "Flying",
 	},
 	magnetrise: {
