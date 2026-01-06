@@ -13094,6 +13094,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			healbell: ["4L1"],
 			tailwind: ["4L1"],
 			whirlpool: ["4L1"],
+			futuresight: ["4L27"],
+			psyshock: ["4L32"],
 		},
 	},
 	chikorita: {
