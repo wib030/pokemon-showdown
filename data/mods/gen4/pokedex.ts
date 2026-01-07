@@ -975,7 +975,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	swalot: {
 		inherit: true,
-		baseStats: {hp: 120, atk: 73, def: 83, spa: 73, spd: 83, spe: 55},
+		baseStats: {hp: 120, atk: 73, def: 93, spa: 73, spd: 83, spe: 55},
 		abilities: {0: "Corrosion", 1: "Free Sample"},
 	},
 	swampert: {
