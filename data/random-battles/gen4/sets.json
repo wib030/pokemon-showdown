@@ -3505,13 +3505,426 @@
         ]
     },
     "muk": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Bulky Attacker",
-                "movepool": ["brickbreak", "curse", "explosion", "gunkshot", "icepunch", "payback", "poisonjab", "rest", "shadowsneak"],
-                "abilities": ["Slurp Up", "Poison Touch"],
-                "preferredTypes": ["Fighting"],
+                "role": "Offensive Tank",
+                "movepool": ["poisonjab", "knockoff", "icepunch", "painsplit"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 8, 224, 0, 28, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["icepunch", "thunderpunch", "curse", "painsplit"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 8, 0, 0, 252, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["poisonjab", "knockoff", "stockpile", "swallow"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 68, 192, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["knockoff", "focuspunch", "curse", "substitute"],
+                "abilities": ["Poison Touch"],
+                "evs": [252, 68, 0, 0, 188, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["thunderpunch", "icepunch", "painsplit", "toxicspikes"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 24, 236, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["thunderpunch", "icepunch", "painsplit", "toxicspikes"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 8, 224, 0, 28, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["thunderpunch", "icepunch", "painsplit", "toxicspikes"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 44, 0, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["thunderpunch", "icepunch", "protect", "toxicspikes"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 24, 236, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["thunderpunch", "icepunch", "protect", "toxicspikes"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 8, 224, 0, 28, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["thunderpunch", "icepunch", "protect", "toxicspikes"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 44, 0, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["poisonjab", "knockoff", "firepunch", "toxicspikes"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 24, 236, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["poisonjab", "knockoff", "firepunch", "toxicspikes"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 8, 224, 0, 28, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["poisonjab", "knockoff", "firepunch", "toxicspikes"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 44, 0, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["poisonjab", "knockoff", "icepunch", "toxicspikes"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 24, 236, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["poisonjab", "knockoff", "icepunch", "toxicspikes"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 8, 224, 0, 28, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["poisonjab", "knockoff", "icepunch", "toxicspikes"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 44, 0, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["poisonjab", "icepunch", "firepunch", "toxicspikes"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 24, 236, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["poisonjab", "icepunch", "firepunch", "toxicspikes"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 8, 224, 0, 28, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["poisonjab", "icepunch", "firepunch", "toxicspikes"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 44, 0, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["poisonjab", "knockoff", "curse", "protect"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 32, 0, 0, 228, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["poisonjab", "knockoff", "rocksmash", "curse"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 252, 0, 0, 8, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Adamant",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["thunderpunch", "icepunch", "stockpile", "swallow"],
+                "abilities": ["Poison Touch", "Slurp Up"],
+                "evs": [248, 12, 248, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Adamant",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["knockoff", "rocksmash", "stockpile", "swallow"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 20, 224, 0, 16, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Adamant",
+				"inclination": "Support"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["thunderpunch", "icepunch", "toxic", "haze"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 8, 224, 0, 28, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["thunderpunch", "icepunch", "toxic", "protect"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 8, 224, 0, 28, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["thunderpunch", "icepunch", "toxic", "stockpile"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 8, 224, 0, 28, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["poisonjab", "knockoff", "curse", "rest"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 32, 0, 0, 228, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["thunderpunch", "icepunch", "painsplit", "toxic"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 24, 236, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["thunderpunch", "icepunch", "painsplit", "toxic"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 8, 224, 0, 28, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["thunderpunch", "icepunch", "painsplit", "toxic"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 44, 0, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["thunderpunch", "icepunch", "protect", "toxic"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 24, 236, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["thunderpunch", "icepunch", "protect", "toxic"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 8, 224, 0, 28, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["thunderpunch", "icepunch", "protect", "toxic"],
+                "abilities": ["Slurp Up"],
+                "evs": [248, 44, 0, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["poisonjab", "knockoff", "firepunch", "toxic"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 24, 236, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["poisonjab", "knockoff", "firepunch", "toxic"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 8, 224, 0, 28, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["poisonjab", "knockoff", "firepunch", "toxic"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 44, 0, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["poisonjab", "knockoff", "icepunch", "toxic"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 24, 236, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["poisonjab", "knockoff", "icepunch", "toxic"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 8, 224, 0, 28, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["poisonjab", "knockoff", "icepunch", "toxic"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 44, 0, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["poisonjab", "icepunch", "firepunch", "toxic"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 24, 236, 0, 0, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Impish",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["poisonjab", "icepunch", "firepunch", "toxic"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 8, 224, 0, 28, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
+				"inclination": "Physical"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["poisonjab", "icepunch", "firepunch", "toxic"],
+                "abilities": ["Poison Touch"],
+                "evs": [248, 44, 0, 0, 216, 0],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Careful",
 				"inclination": "Physical"
             }
         ]
