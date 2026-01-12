@@ -7598,7 +7598,7 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["octazooka", "chargebeam", "icebeam", "recover"],
-                "abilities": ["Sniper"],
+                "abilities": ["Sniper", "Suction Cups"],
 				"evs": [248, 0, 244, 16, 0, 0],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Leftovers",
@@ -7638,7 +7638,7 @@
 			{
                 "role": "Berry Sweeper",
                 "movepool": ["octazooka", "icebeam", "chargebeam", "substitute"],
-                "abilities": ["Sniper"],
+                "abilities": ["Sniper", "Suction Cups"],
 				"evs": [20, 0, 0, 252, 0, 236],
 				"ivs": [31, 0, 31, 31, 31, 31],
 				"item": "Salac Berry",
