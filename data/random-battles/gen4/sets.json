@@ -7593,12 +7593,136 @@
         ]
     },
     "octillery": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["energyball", "fireblast", "icebeam", "surf", "thunderwave"],
-                "abilities": ["Sniper", "Suction Cups"],
+                "movepool": ["octazooka", "chargebeam", "icebeam", "recover"],
+                "abilities": ["Sniper"],
+				"evs": [248, 0, 244, 16, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Offensive Tank",
+                "movepool": ["octazooka", "icebeam", "energyball", "recover"],
+                "abilities": ["Sniper"],
+				"evs": [248, 0, 8, 252, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["octazooka", "icebeam", "energyball", "recover"],
+                "abilities": ["Sniper"],
+				"evs": [248, 0, 8, 252, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["octazooka", "icebeam", "energyball", "substitute"],
+                "abilities": ["Sniper"],
+				"evs": [4, 0, 0, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["octazooka", "icebeam", "chargebeam", "substitute"],
+                "abilities": ["Sniper"],
+				"evs": [20, 0, 0, 252, 0, 236],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Status Tank",
+                "movepool": ["octazooka", "icebeam", "thunderwave", "recover"],
+                "abilities": ["Sniper"],
+				"evs": [88, 0, 0, 168, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["octazooka", "energyball", "icebeam", "flamethrower"],
+                "abilities": ["Sniper"],
+				"evs": [248, 0, 8, 252, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Offensive Tank",
+                "movepool": ["octazooka", "flamethrower", "psychic", "recover"],
+                "abilities": ["Sniper"],
+				"evs": [248, 0, 8, 252, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Offensive Tank",
+                "movepool": ["octazooka", "icebeam", "psychic", "recover"],
+                "abilities": ["Sniper"],
+				"evs": [248, 0, 8, 252, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Offensive Tank",
+                "movepool": ["octazooka", "flamethrower", "sludgebomb", "recover"],
+                "abilities": ["Sniper"],
+				"evs": [248, 0, 8, 252, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["octazooka", "icebeam", "energyball", "recover"],
+                "abilities": ["Sniper"],
+				"evs": [248, 0, 8, 252, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Scope Lens",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["octazooka", "icebeam", "focusenergy", "recover"],
+                "abilities": ["Sniper"],
+				"evs": [248, 0, 8, 252, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["octazooka", "icebeam", "focusenergy", "recover"],
+                "abilities": ["Sniper"],
+				"evs": [248, 0, 244, 16, 0, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
 				"inclination": "Special"
             }
         ]

@@ -1335,4 +1335,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: -1,
 		num: 112,
 	},
+	sniper: {
+		inherit: true,
+		onModifyDamage() {},
+	},
 };
