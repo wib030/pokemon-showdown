@@ -5920,12 +5920,426 @@
         ]
     },
     "typhlosion": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["eruption", "fireblast", "focusblast", "hiddenpowergrass", "hiddenpowerrock"],
-                "abilities": ["Blaze", "Mold Breaker"],
+                "movepool": ["eruption", "focusblast", "hiddenpowerrock", "flamethrower"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["eruption", "focusblast", "hiddenpowerrock", "fireblast"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["eruption", "focusblast", "hiddenpowerrock", "overheat"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["eruption", "focusblast", "hiddenpowerrock", "heatwave"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["eruption", "focusblast", "extrasensory", "flamethrower"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["eruption", "focusblast", "extrasensory", "fireblast"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["eruption", "focusblast", "extrasensory", "overheat"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["eruption", "focusblast", "extrasensory", "heatwave"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["eruption", "focusblast", "extrasensory", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["overheat", "focusblast", "extrasensory", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["fireblast", "focusblast", "extrasensory", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["heatwave", "focusblast", "extrasensory", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["flamethrower", "focusblast", "extrasensory", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["fireblast", "focusblast", "hiddenpowerrock", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["flamethrower", "focusblast", "hiddenpowerrock", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["heatwave", "focusblast", "hiddenpowerrock", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["overheat", "focusblast", "hiddenpowerrock", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["eruption", "focusblast", "hiddenpowerrock", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["flamethrower", "focusblast", "hiddenpowerrock", "substitute"],
+                "abilities": ["Blaze"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [30, 3, 30, 31, 30, 30],
+				"item": "Salac Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["flamethrower", "focusblast", "hiddenpowerrock", "endure"],
+                "abilities": ["Blaze"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Salac Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["heatwave", "focusblast", "hiddenpowerrock", "substitute"],
+                "abilities": ["Blaze"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [30, 3, 30, 31, 30, 30],
+				"item": "Salac Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["heatwave", "focusblast", "hiddenpowerrock", "endure"],
+                "abilities": ["Blaze"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Salac Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["fireblast", "focusblast", "hiddenpowerrock", "substitute"],
+                "abilities": ["Blaze"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [30, 3, 30, 31, 30, 30],
+				"item": "Salac Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["fireblast", "focusblast", "hiddenpowerrock", "endure"],
+                "abilities": ["Blaze"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Salac Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["heatwave", "focusblast", "extrasensory", "substitute"],
+                "abilities": ["Blaze"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [30, 0, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["heatwave", "focusblast", "extrasensory", "endure"],
+                "abilities": ["Blaze"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["flamethrower", "focusblast", "extrasensory", "substitute"],
+                "abilities": ["Blaze"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [30, 0, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["flamethrower", "focusblast", "extrasensory", "endure"],
+                "abilities": ["Blaze"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["eruption", "counter", "extrasensory", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Focus Sash",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["eruption", "counter", "hiddenpowerrock", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Focus Sash",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["eruption", "counter", "hiddenpowerrock", "extrasensory"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Focus Sash",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["eruption", "counter", "hiddenpowerground", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Focus Sash",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Anti-Lead",
+                "movepool": ["eruption", "counter", "hiddenpowerground", "extrasensory"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Focus Sash",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["overheat", "focusblast", "extrasensory", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["overheat", "focusblast", "extrasensory", "hiddenpowerground"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["overheat", "focusblast", "extrasensory", "hiddenpowerrock"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 3, 30, 31, 30, 30],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["fireblast", "focusblast", "extrasensory", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Charcoal",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Switch Trapper",
+                "movepool": ["heatwave", "focusblast", "extrasensory", "firechase"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Charcoal",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["fireblast", "solarbeam", "extrasensory", "hiddenpowerice"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Power Herb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["heatwave", "solarbeam", "extrasensory", "hiddenpowerice"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 0, 0, 252, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Power Herb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["heatwave", "solarbeam", "hiddenpowerrock", "fling"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 31, 30, 31, 30, 30],
+				"item": "Heat Rock",
+				"nature": "Hasty",
+				"inclination": "Special"
+            },
+			{
+                "role": "Sun Attacker",
+                "movepool": ["heatwave", "solarbeam", "hiddenpowerice", "fling"],
+                "abilities": ["Mold Breaker"],
+				"evs": [0, 4, 0, 252, 0, 252],
+				"ivs": [31, 30, 30, 31, 31, 31],
+				"item": "Heat Rock",
+				"nature": "Hasty",
 				"inclination": "Special"
             }
         ]
