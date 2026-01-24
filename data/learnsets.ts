@@ -15659,6 +15659,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			tantrum: ["4E"],
 			bugbite: ["4L13"],
 			stringshot: ["4L1"],
+			leechlife: ["4L37"],
 		},
 		eventData: [
 			{generation: 3, level: 35, abilities: ["hypercutter"], moves: ["helpinghand", "guillotine", "falseswipe", "submission"]},

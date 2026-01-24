@@ -10853,6 +10853,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			tantrum: ["4E"],
 			bugbite: ["4L13"],
 			stringshot: ["4L1"],
+			leechlife: ["4L37"],
 		},
 	},
 	tauros: {
