@@ -14068,7 +14068,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dive: ["4T", "3M"],
 			doubleedge: ["3T"],
 			doubleteam: ["4M", "3M"],
-			dracometeor: ["4T"],
+			dracometeor: ["4T", "4L60"],
 			dragondance: ["4L52", "3L62"],
 			dragonpulse: ["4M", "4L45"],
 			endure: ["4M", "3T"],
