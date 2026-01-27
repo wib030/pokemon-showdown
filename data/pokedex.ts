@@ -2631,7 +2631,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 39,
 		color: "Red",
 		prevo: "Goldeen",
-		evoLevel: 28,
+		evoLevel: 22,
 		eggGroups: ["Water 2"],
 	},
 	staryu: {

@@ -9141,19 +9141,456 @@
         ]
     },
     "raikou": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Attacker",
-                "movepool": ["aurasphere", "hiddenpowerice", "shadowball", "thunderbolt"],
+                "role": "Bulky Setup",
+                "movepool": ["discharge", "hiddenpowerice", "calmmind", "rest"],
                 "abilities": ["Pressure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
 				"inclination": "Special"
             },
-            {
+			{
                 "role": "Bulky Setup",
-                "movepool": ["aurasphere", "calmmind", "hiddenpowerice", "substitute", "thunderbolt"],
+                "movepool": ["discharge", "hiddenpowerice", "substitute", "calmmind"],
                 "abilities": ["Pressure"],
-                "preferredTypes": ["Ice"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["discharge", "hiddenpowerice", "substitute", "calmmind"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 52, 0, 4, 200],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["thunderbolt", "hiddenpowerice", "substitute", "calmmind"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 52, 0, 4, 200],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["discharge", "shadowball", "substitute", "calmmind"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["discharge", "shadowball", "substitute", "calmmind"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 52, 0, 4, 200],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["thunderbolt", "shadowball", "substitute", "calmmind"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 52, 0, 4, 200],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["chargebeam", "shadowball", "rest", "sleeptalk"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 252, 0, 4, 0],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Bold",
+				"inclination": "Special"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["thunderbolt", "aurasphere", "shadowball", "calmmind"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 0, 12, 4, 240],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "shadowball", "protect"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "shadowball", "hiddenpowerice"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "shadowball", "hiddenpowerfire"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "shadowball", "thunderbolt"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "shadowball", "extrasensory"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "shadowball", "hiddenpowergrass"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 31, 30, 31, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "shadowball", "hiddenpowerice"],
+                "abilities": ["Pressure"],
+				"evs": [188, 0, 0, 252, 0, 68],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "shadowball", "hiddenpowerice"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "shadowball", "hiddenpowerice"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["discharge", "shadowball", "calmmind", "reflect"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 0, 12, 4, 240],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["thunderbolt", "aurasphere", "shadowball", "substitute"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [30, 0, 31, 31, 31, 31],
+				"item": "Petaya Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Setup Sweeper",
+                "movepool": ["thunderbolt", "aurasphere", "shadowball", "calmmind"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Air Balloon",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Screens Setter",
+                "movepool": ["voltswitch", "hiddenpowerice", "reflect", "lightscreen"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 0, 4, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Light Clay",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["thunderbolt", "hiddenpowerice", "calmmind", "magnetrise"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 0, 12, 4, 240],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Pivot",
+                "movepool": ["voltswitch", "aurasphere", "shadowball", "hiddenpowerice"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Assault Vest",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "shadowball", "volttackle"],
+                "abilities": ["Pressure"],
+				"evs": [0, 168, 0, 128, 0, 212],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Magnet",
+				"nature": "Lonely",
+				"inclination": "Mixed"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["thunderbolt", "aurasphere", "hiddenpowerice", "volttackle"],
+                "abilities": ["Pressure"],
+				"evs": [0, 172, 0, 124, 0, 212],
+				"ivs": [31, 30, 30, 31, 31, 31],
+				"item": "Magnet",
+				"nature": "Lonely",
+				"inclination": "Mixed"
+            },
+			{
+                "role": "Priority Attacker",
+                "movepool": ["thunderbolt", "aurasphere", "extremespeed", "volttackle"],
+                "abilities": ["Pressure"],
+				"evs": [0, 168, 0, 128, 0, 212],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Magnet",
+				"nature": "Lonely",
+				"inclination": "Mixed"
+            },
+			{
+                "role": "Priority Attacker",
+                "movepool": ["thunderbolt", "aurasphere", "extremespeed", "volttackle"],
+                "abilities": ["Pressure"],
+				"evs": [0, 168, 0, 128, 0, 212],
+				"ivs": [31, 31, 31, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Lonely",
+				"inclination": "Mixed"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["thunderbolt", "aurasphere", "hiddenpowerice", "volttackle"],
+                "abilities": ["Pressure"],
+				"evs": [0, 172, 0, 124, 0, 212],
+				"ivs": [31, 30, 30, 31, 31, 31],
+				"item": "Life Orb",
+				"nature": "Lonely",
+				"inclination": "Mixed"
+            },
+			{
+                "role": "Bulky Support",
+                "movepool": ["discharge", "hiddenpowerice", "substitute", "roar"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 0, 160, 0, 96],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["thunderbolt", "hiddenpowerice", "calmmind", "rest"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 0, 0, 4, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Chesto Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Wallbreaker",
+                "movepool": ["thunderbolt", "hiddenpowerice", "aurasphere", "calmmind"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 0, 12, 4, 240],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Rain Setter",
+                "movepool": ["thunder", "voltswitch", "hiddenpowerice", "raindance"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 0, 4, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Damp Rock",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["thunderbolt", "hiddenpowerice", "thunderwave", "calmmind"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 0, 12, 4, 240],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "hiddenpowerice", "toxic"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "hiddenpowerfire", "toxic"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Leftovers",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "hiddenpowerice", "toxic"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Leftovers",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Sun Setter",
+                "movepool": ["voltswitch", "aurasphere", "hiddenpowerfire", "sunnyday"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Heat Rock",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Berry Sweeper",
+                "movepool": ["thunderbolt", "hiddenpowerice", "calmmind", "substitute"],
+                "abilities": ["Pressure"],
+				"evs": [252, 0, 0, 12, 4, 240],
+				"ivs": [30, 0, 31, 31, 31, 31],
+				"item": "Salac Berry",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "shadowball", "thunderbolt"],
+                "abilities": ["Pressure"],
+				"evs": [188, 0, 0, 252, 0, 68],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "hiddenpowerfire", "thunderbolt"],
+                "abilities": ["Pressure"],
+				"evs": [184, 0, 0, 252, 0, 72],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Choice Scarf",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "aurasphere", "shadowball", "hiddenpowergrass"],
+                "abilities": ["Pressure"],
+				"evs": [188, 0, 0, 252, 0, 68],
+				"ivs": [30, 3, 31, 30, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "hiddenpowerice", "aurasphere", "thunderbolt"],
+                "abilities": ["Pressure"],
+				"evs": [188, 0, 0, 252, 0, 68],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "hiddenpowerice", "aurasphere", "thunderbolt"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Pivot",
+                "movepool": ["voltswitch", "hiddenpowerice", "aurasphere", "thunderbolt"],
+                "abilities": ["Pressure"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 30, 31, 31, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
 				"inclination": "Special"
             }
         ]
