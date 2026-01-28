@@ -1683,6 +1683,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	electabuzz: {
 		inherit: true,
+		baseStats: { hp: 65, atk: 83, def: 77, spa: 95, spd: 115, spe: 105 },
 		abilities: {0: "Static", 1: "Minus"},
 	},
 	electivire: {
