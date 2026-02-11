@@ -41469,6 +41469,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			hex: ["4L24"],
 			chillingspell: ["4L26"],
 			painsplit: ["4L1"],
+			nastyplot: ["4L1"],
 		},
 		eventData: [
 			{generation: 5, level: 10, nature: "Naughty", moves: ["uproar", "astonish", "trick", "thundershock"], pokeball: "cherishball"},

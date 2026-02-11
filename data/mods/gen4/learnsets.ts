@@ -34073,6 +34073,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hex: ["4L24"],
 			chillingspell: ["4L26"],
 			painsplit: ["4L1"],
+			nastyplot: ["4L1"],
 		},
 	},
 	rotomheat: {
