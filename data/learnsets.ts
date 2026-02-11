@@ -39054,6 +39054,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uturn: ["4M"],
 			thundershock: ["4L1"],
 			voltswitch: ["4L42"],
+			followme: ["4L40"],
 		},
 		eventData: [
 			{generation: 6, level: 50, nature: "Impish", ivs: {hp: 31, atk: 31, def: 31, spa: 14, spd: 31, spe: 31}, isHidden: true, moves: ["nuzzle", "superfang", "followme", "protect"], pokeball: "cherishball"},

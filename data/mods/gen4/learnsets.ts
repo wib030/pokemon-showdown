@@ -31704,6 +31704,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			uturn: ["4M"],
 			thundershock: ["4L1"],
 			voltswitch: ["4L42"],
+			followme: ["4L40"],
 		},
 	},
 	buizel: {
