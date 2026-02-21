@@ -412,12 +412,12 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	slugma: {
 		inherit: true,
-		abilities: {0: "Water Absorb", 1: "Flame Body"},
+		abilities: {0: "Exsolution", 1: "Flame Body"},
 	},
 	magcargo: {
 		inherit: true,
 		baseStats: {hp: 80, atk: 105, def: 185, spa: 115, spd: 80, spe: 30},
-		abilities: {0: "Water Absorb", 1: "Flame Body"},
+		abilities: {0: "Exsolution", 1: "Flame Body"},
 	},
 	magmortar: {
 		inherit: true,

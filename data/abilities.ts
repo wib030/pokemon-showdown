@@ -6297,4 +6297,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 1,
 		num: -30,
 	},
+	exsolution: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Water') {
+				if (!this.boost({ def: 1 })) {
+					this.add('-immune', target, '[from] ability: Exsolution');
+				}
+				return null;
+			}
+		},
+		flags: { breakable: 1, rollable: 1 },
+		name: "Exsolution",
+		rating: 3,
+		num: -31,
+	}
 };
