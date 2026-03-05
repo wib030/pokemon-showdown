@@ -1235,7 +1235,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "(OU)",
 	},
 	latios: {
-		tier: "OU",
+		tier: "Uber",
 	},
 	kyogre: {
 		tier: "Uber",
