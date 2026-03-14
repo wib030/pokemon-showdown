@@ -6123,7 +6123,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					const oldItem = item;
 					
 					if (this.runEvent('TakeItem', source, target, move, item)) {
-						source.itemState.knockedOff = true;
+						source.takeItem();
 						this.add('-enditem', source, item.name, '[from] ability: Slurp Up', `[of] ${target}`);
 					}
 					
