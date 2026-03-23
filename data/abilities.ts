@@ -5994,54 +5994,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -19,
 	},
 	unownforce: {
-		onSourceModifyDamage(damage, source, target, move) {
-			const noModifyType = [
-				'hiddenpower', 'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball', 'tossandturn',
-			];
-			let moveType = move.type;
-			let item = source.getItem();
-			if (move.id === 'judgment' && source.hasAbility('multitype')) {
-				moveType = source.species.types[0];
-			}
-			if ((move.id === 'fling' || move.id === 'judgment') && item.onPlate) {
-				moveType = item.onPlate;
-			}
-			if (source.hasAbility('normalize') && !noModifyType.includes(move.id)) {
-				moveType = 'Normal';
-			}
-			if (move.id === 'hiddenpower') {
-				moveType = source.hpType || 'Dark';
-			}
-			if (source.hasAbility('rockstar') && move.flags['sound']) {
-				moveType = 'Rock';
-			}
-			if (move.id === 'weatherball') {
-				switch (this.battle.weather) {
-				case 'sunnyday':
-				case 'desolateland':
-					moveType = 'Fire';
-					break;
-				case 'raindance':
-				case 'primordialsea':
-					moveType = 'Water';
-					break;
-				case 'sandstorm':
-					moveType = 'Rock';
-					break;
-				case 'hail':
-				case 'snowscape':
-					moveType = 'Ice';
-					break;
+		onEffectiveness(typeMod, target, type) {
+			if (type !== '???') {
+				if (type === 'Normal') {
+					return 1; // Super-effective
+				} else {
+					return -1; // Resists
 				}
-			}
-			
-			if (moveType === '???') return;
-			if (moveType === 'Normal') {
-				this.hint("Unown Force doubled the damage of the move!");
-				return this.chainModify(2);
-			} else {
-				this.hint("Unown Force halved the damage of the move!");
-				return this.chainModify(0.5);
 			}
 		},
 		flags: { rollable: 1 },
