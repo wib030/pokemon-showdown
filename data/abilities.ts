@@ -5994,9 +5994,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -19,
 	},
 	unownforce: {
-		onEffectiveness(typeMod, target, type) {
-			if (type !== '???') {
-				if (type === 'Normal') {
+		onEffectiveness(typeMod, target, type, move) {
+			if (!target || move.category === 'Status') return;
+			if (move.type !== '???') {
+				if (move.type === 'Normal') {
 					return 1; // Super-effective
 				} else {
 					return -1; // Resists

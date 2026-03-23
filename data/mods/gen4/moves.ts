@@ -2271,8 +2271,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		onModifyType(move, pokemon) {
 			move.type = pokemon.hpType || 'Dark';
 		},
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2289,8 +2291,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2307,8 +2311,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2325,8 +2331,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2343,8 +2351,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2361,8 +2371,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2379,8 +2391,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2397,8 +2411,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2415,8 +2431,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2433,8 +2451,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2451,8 +2471,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2469,8 +2491,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2487,8 +2511,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2505,8 +2531,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2523,8 +2551,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2541,8 +2571,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -2559,8 +2591,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onStart(pokemon) {
-			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		condition: {
+			onStart(pokemon) {
+				this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			},
 		},
 		secondary: null,
 		target: "normal",
