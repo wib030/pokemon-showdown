@@ -905,6 +905,14 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		noCopy: true,
 		duration: 2,
 	},
+	hpannounce: {
+		name: 'hpannounce',
+		noCopy: true,
+		duration: 1,
+		onSwitchIn(pokemon) {
+			this.add('-activate', pokemon, 'move: Hidden Power');
+		},
+	},
 	deepsnow: {
 		name: 'deepsnow',
 		onModifySpe(spe, pokemon) {

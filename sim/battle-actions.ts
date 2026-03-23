@@ -144,8 +144,9 @@ export class BattleActions {
 		pokemon.itemState.effectOrder = this.battle.effectOrder++;
 		this.battle.runEvent('BeforeSwitchIn', pokemon);
 		for (const move of pokemon.moves) {
-			if (move.startsWith('hiddenpower') || move === 'hiddenpower') {
-				this.battle.hint(`${pokemon.name} is emitting a Hidden Power!`);
+			if (move.startsWith('hiddenpower')) {
+				pokemon.addVolatile('hpannounce');
+				break;
 			}
 		}
 		if (sourceEffect) {
