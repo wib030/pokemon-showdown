@@ -2401,7 +2401,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	unownforce: {
 		name: "Unown Force",
-		shortDesc: "Receives 2x damage from Normal-type moves; and half from other types, excluding ???.",
+		shortDesc: "Weak to Normal-type moves, and resists other types, excluding ???.",
 	},
 	rocksolid: {
 		name: "Rock Solid",
