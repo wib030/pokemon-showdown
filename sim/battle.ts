@@ -2782,11 +2782,6 @@ export class Battle {
 					break;
 				}
 			}
-			for (const move of action.pokemon.moves) {
-				if (move.startsWith('hiddenpower')) {
-					this.hint(`${action.pokemon.name} is emitting a Hidden Power!`);
-				}
-			}
 			break;
 		case 'revivalblessing':
 			action.pokemon.side.pokemonLeft++;
