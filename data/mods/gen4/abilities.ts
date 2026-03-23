@@ -964,8 +964,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		},
 		onTryBoost(boost, target, source, effect) {
 			if (effect.name === 'Intimidate' && boost.atk) {
-				delete boost.atk;
-				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Rattled', `[of] ${target}`);
+				// delete boost.atk;
+				// this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Rattled', `[of] ${target}`);
 				this.boost({ spe: 1 });
 			}
 		},
