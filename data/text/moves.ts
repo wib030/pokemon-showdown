@@ -3057,7 +3057,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Hidden Power",
 		desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
 		shortDesc: "Type changes based on IVs. Announces on switch-in.",
-		activate: "  [POKEMON] emits a Hidden Power!",
 	},
 	hiddenpowerbug: {
 		name: "Hidden Power Bug",

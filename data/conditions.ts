@@ -910,7 +910,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		noCopy: true,
 		duration: 1,
 		onSwitchIn(pokemon) {
-			this.add('-activate', pokemon, 'move: Hidden Power');
+			this.add('-message', `${pokemon.name} emits a Hidden Power!`);
 		},
 	},
 	deepsnow: {
