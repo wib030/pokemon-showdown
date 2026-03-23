@@ -2271,6 +2271,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		onModifyType(move, pokemon) {
 			move.type = pokemon.hpType || 'Dark';
 		},
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -2286,6 +2289,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Bug",
@@ -2301,6 +2307,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Dark",
@@ -2316,6 +2325,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Dragon",
@@ -2331,6 +2343,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Electric",
@@ -2346,6 +2361,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Fighting",
@@ -2361,6 +2379,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Fire",
@@ -2376,6 +2397,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Flying",
@@ -2391,6 +2415,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Ghost",
@@ -2406,6 +2433,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Grass",
@@ -2421,6 +2451,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Ground",
@@ -2436,6 +2469,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Ice",
@@ -2451,6 +2487,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Poison",
@@ -2466,6 +2505,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
@@ -2481,6 +2523,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Rock",
@@ -2496,6 +2541,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Steel",
@@ -2511,6 +2559,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		onSwitchIn(pokemon) {
+			this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Water",
