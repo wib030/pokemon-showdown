@@ -2702,6 +2702,12 @@ export class Battle {
 			}
 			for (const pokemon of this.getAllPokemon()) {
 				this.singleEvent('Start', this.dex.conditions.getByID(pokemon.species.id), pokemon.speciesState, pokemon);
+				
+				for (const move of pokemon.moves) {
+					if (move.startsWith('hiddenpower')) {
+						this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+					}
+				}
 			}
 			this.midTurn = true;
 			break;

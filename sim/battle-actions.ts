@@ -143,11 +143,6 @@ export class BattleActions {
 		pokemon.abilityState.effectOrder = this.battle.effectOrder++;
 		pokemon.itemState.effectOrder = this.battle.effectOrder++;
 		this.battle.runEvent('BeforeSwitchIn', pokemon);
-		for (const move of pokemon.moves) {
-			if (move.startsWith('hiddenpower') || move === 'hiddenpower') {
-				this.battle.hint(`${pokemon.name} is emitting a Hidden Power!`);
-			}
-		}
 		if (sourceEffect) {
 			this.battle.add(isDrag ? 'drag' : 'switch', pokemon, pokemon.getFullDetails, `[from] ${sourceEffect}`);
 		} else {
