@@ -2784,7 +2784,7 @@ export class Battle {
 			}
 			for (const move of action.pokemon.moves) {
 				if (move.startsWith('hiddenpower')) {
-					this.hint(`${pokemon.name} is emitting a Hidden Power!`);
+					this.hint(`${action.pokemon.name} is emitting a Hidden Power!`);
 				}
 			}
 			break;
