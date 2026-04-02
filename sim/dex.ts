@@ -87,14 +87,12 @@ const IMMUNITY_ABILITIES: { [k: string]: string[] } = {
 
 // Resistance abilities
 const RESISTANCE_ABILITIES: { [k: string]: string[] } = {
-	unownenergy: ["Flying", "Poison", "Ground", "Rock", "Steel", "Fire", "Water", "Grass", "Electric", "Ice", "Dragon", "Fighting", "Psychic", "Bug", "Ghost", "Dark"],
 	thickfat: ["Fire", "Ice"],
 	heatproof: ["Fire"],
 };
 
 // Weakness abilities
 const WEAKNESS_ABILITIES: { [k: string]: string[] } = {
-	unownenergy: ["Normal"],
 	colorchange: ["Dragon", "Ghost"],
 	ghostly: ["Ghost", "Dark"],
 };
@@ -352,6 +350,13 @@ export class ModdedDex {
 		let totalTypeMod = 0;
 		if (sourceType === 'Fairy') return 0;
 		if (abilityState.id === 'imposter') return 0;
+		if (abilityState.id === 'unownforce') {
+			if (sourceType === 'Normal') {
+				return 1;
+			} else {
+				return -1;
+			}
+		}
 		if (!this.precheckImmunity(source, target, targetAbility)) return -3;
 		if (TYPE_ALTERING_ABILITIES.includes(abilityState.id))
 		{
