@@ -601,6 +601,10 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: {hp: 73, atk: 76, def: 75, spa: 91, spd: 100, spe: 111},
 		abilities: {0: "Drought"},
 	},
+	hoothoot: {
+		inherit: true,
+		abilities: {0: "Keen Eye", 1: "Insomnia"},
+	},
 	noctowl: {
 		inherit: true,
 		baseStats: {hp: 130, atk: 50, def: 50, spa: 86, spd: 126, spe: 70},
