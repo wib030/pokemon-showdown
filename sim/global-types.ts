@@ -572,7 +572,7 @@ declare namespace RandomTeamsTypes {
 		'Fast Pivot' | 'Bulky Pivot' | 'Defog' | 'TR Lead' | 'Sun Setup' | 'Anti-Lead' | 'Switch Trapper' | 
 		'Sand Lead' | 'Sun Lead' | 'Hail Lead' | 'Rain Lead' | 'Hail Support' | 'Sun Support' | 'Offensive Tank' |
 		'Status Tank' | 'AV Tank' | 'Hazards Tank' | 'Baton Pass Lead' | 'Hazards Support' | 'Priority Attacker' |
-		'Secondary Defog';
+		'Secondary Defog' | 'Hazards Attacker';
 		
 	export type Inclination = 'Mixed' | 'Physical' | 'Special' | 'Support' | 'Unset';
 }

@@ -17330,12 +17330,276 @@
         ]
     },
     "roserade": {
-        "level": 99,
+        "level": 100,
         "sets": [
             {
-                "role": "Fast Support",
-                "movepool": ["energyball", "hiddenpowerground", "leafstorm", "sleeppowder", "sludgebomb", "spikes", "synthesis", "toxicspikes"],
+                "role": "Hazards Attacker",
+                "movepool": ["leafstorm", "sludgebomb", "hiddenpowerground", "spikes"],
                 "abilities": ["Technician"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Black Sludge",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Hazards Attacker",
+                "movepool": ["leafstorm", "sludgebomb", "hiddenpowerfire", "spikes"],
+                "abilities": ["Technician"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Black Sludge",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["gigadrain", "sludgebomb", "synthesis", "spikes"],
+                "abilities": ["Natural Cure"],
+				"evs": [248, 0, 24, 24, 156, 56],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Calm",
+				"inclination": "Special"
+            },
+			{
+                "role": "Hazards Tank",
+                "movepool": ["gigadrain", "sludgebomb", "synthesis", "toxicspikes"],
+                "abilities": ["Natural Cure"],
+				"evs": [248, 0, 24, 24, 156, 56],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Calm",
+				"inclination": "Special"
+            },
+			{
+                "role": "AV Tank",
+                "movepool": ["megadrain", "sludgebomb", "hiddenpowerground", "weatherball"],
+                "abilities": ["Technician"],
+				"evs": [248, 0, 24, 68, 4, 164],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Assault Vest",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "AV Tank",
+                "movepool": ["megadrain", "sludgebomb", "hiddenpowerground", "weatherball"],
+                "abilities": ["Technician"],
+				"evs": [248, 0, 24, 176, 4, 56],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Assault Vest",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Hazards Attacker",
+                "movepool": ["megadrain", "sludgebomb", "hiddenpowerground", "spikes"],
+                "abilities": ["Technician"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [29, 3, 31, 30, 30, 31],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Hazards Attacker",
+                "movepool": ["megadrain", "sludgebomb", "hiddenpowerfire", "spikes"],
+                "abilities": ["Technician"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [29, 2, 31, 30, 31, 30],
+				"item": "Life Orb",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Support",
+                "movepool": ["megadrain", "leechseed", "toxic", "substitute"],
+                "abilities": ["Technician"],
+				"evs": [248, 0, 4, 4, 0, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Timid",
+				"inclination": "Support"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["leafstorm", "sludgebomb", "hiddenpowerground", "weatherball"],
+                "abilities": ["Technician"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["leafstorm", "sludgebomb", "hiddenpowerfire", "weatherball"],
+                "abilities": ["Technician"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 31, 30, 31, 30],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["megadrain", "sludgebomb", "hiddenpowerground", "weatherball"],
+                "abilities": ["Technician"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["megadrain", "sludgebomb", "hiddenpowerfire", "weatherball"],
+                "abilities": ["Technician"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 31, 30, 31, 30],
+				"item": "Choice Specs",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["leafstorm", "sludgebomb", "hiddenpowerground", "weatherball"],
+                "abilities": ["Technician"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["leafstorm", "sludgebomb", "hiddenpowerfire", "weatherball"],
+                "abilities": ["Technician"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Attacker",
+                "movepool": ["leafstorm", "sludgebomb", "hiddenpowerfire", "extrasensory"],
+                "abilities": ["Technician"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Choice Scarf",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Sun Setup",
+                "movepool": ["megadrain", "sludgebomb", "weatherball", "growth"],
+                "abilities": ["Technician"],
+				"evs": [248, 0, 4, 0, 4, 252],
+				"ivs": [31, 0, 31, 31, 31, 31],
+				"item": "Black Sludge",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["megadrain", "sludgebomb", "hiddenpowerground", "growth"],
+                "abilities": ["Technician"],
+				"evs": [248, 0, 4, 0, 4, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Black Sludge",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["megadrain", "sludgebomb", "hiddenpowerfire", "growth"],
+                "abilities": ["Technician"],
+				"evs": [248, 0, 4, 0, 4, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Black Sludge",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Setup",
+                "movepool": ["megadrain", "bulletseed", "sludgebomb", "growth"],
+                "abilities": ["Technician"],
+				"evs": [184, 28, 4, 40, 0, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Miracle Seed",
+				"nature": "Timid",
+				"inclination": "Mixed"
+            },
+			{
+                "role": "Hazards Attacker",
+                "movepool": ["megadrain", "sludgebomb", "hiddenpowerfire", "toxicspikes"],
+                "abilities": ["Technician"],
+				"evs": [248, 0, 24, 172, 4, 60],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Black Sludge",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Hazards Attacker",
+                "movepool": ["megadrain", "sludgebomb", "hiddenpowerground", "toxicspikes"],
+                "abilities": ["Technician"],
+				"evs": [248, 0, 24, 172, 4, 60],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Black Sludge",
+				"nature": "Modest",
+				"inclination": "Special"
+            },
+			{
+                "role": "Bulky Attacker",
+                "movepool": ["grassknot", "sludgebomb", "hiddenpowerground", "synthesis"],
+                "abilities": ["Technician"],
+				"evs": [248, 0, 4, 88, 0, 168],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Black Sludge",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["megadrain", "sludgebomb", "hiddenpowerfire", "spikes"],
+                "abilities": ["Technician"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Focus Sash",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["megadrain", "sludgebomb", "hiddenpowerground", "spikes"],
+                "abilities": ["Technician"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Focus Sash",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["leafstorm", "sludgebomb", "hiddenpowerfire", "spikes"],
+                "abilities": ["Technician"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 2, 31, 30, 31, 30],
+				"item": "Focus Sash",
+				"nature": "Timid",
+				"inclination": "Special"
+            },
+			{
+                "role": "Fast Lead",
+                "movepool": ["leafstorm", "sludgebomb", "hiddenpowerground", "spikes"],
+                "abilities": ["Technician"],
+				"evs": [0, 0, 4, 252, 0, 252],
+				"ivs": [31, 3, 31, 30, 30, 31],
+				"item": "Focus Sash",
+				"nature": "Timid",
 				"inclination": "Special"
             }
         ]

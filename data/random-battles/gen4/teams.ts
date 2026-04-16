@@ -54,7 +54,7 @@ const REMOVAL_ROLES = [
 
 // Non-Lead Hazard Roles
 const NON_LEAD_HAZARD_ROLES = [
-	'Hazards Tank', 'Hazards Support',
+	'Hazards Tank', 'Hazards Support', 'Hazards Attacker',
 ];
 
 // Attacking Roles
