@@ -113,6 +113,7 @@ export class Pokemon {
 	 */
 	storedStats: StatsExceptHPTable;
 	boosts: BoostsTable;
+	storedBoosts: BoostsTable;
 
 	baseAbility: ID;
 	ability: ID;

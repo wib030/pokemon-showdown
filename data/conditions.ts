@@ -417,7 +417,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 				this.singleEvent('AfterMoveSecondarySelf', data.source.getItem(), data.source.itemState, data.source, target, data.source.getItem());
 			}
 			this.activeMove = null;
-
+			
+			data.source.storedBoosts = { atk: 0, def: 0, spa: 0, spd: 0, spe: 0, accuracy: 0, evasion: 0 };
+			
 			this.checkWin();
 		},
 	},

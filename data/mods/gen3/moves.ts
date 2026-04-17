@@ -302,6 +302,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 					type: '???',
 				},
 			});
+			source.storedBoosts = source.boosts;
 			this.add('-start', source, 'Doom Desire');
 			return null;
 		},

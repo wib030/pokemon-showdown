@@ -1814,6 +1814,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 					type: 'Psychic',
 				},
 			});
+			source.storedBoosts = source.boosts;
 			this.add('-start', source, 'move: Future Sight');
 			return this.NOT_FAIL;
 		},
@@ -2062,6 +2063,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 					type: 'Steel',
 				},
 			});
+			source.storedBoosts = source.boosts;
 			this.add('-start', source, 'Doom Desire');
 			return this.NOT_FAIL;
 		},

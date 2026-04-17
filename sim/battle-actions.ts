@@ -1699,9 +1699,13 @@ export class BattleActions {
 		const defenseStat: StatIDExceptHP = move.overrideDefensiveStat || (isPhysical ? 'def' : 'spd');
 
 		const statTable = { atk: 'Atk', def: 'Def', spa: 'SpA', spd: 'SpD', spe: 'Spe' };
-
+		
 		let atkBoosts = attacker.boosts[attackStat];
 		let defBoosts = defender.boosts[defenseStat];
+		
+		if (move.flags['futuremove']) {
+			atkBoosts = attacker.storedBoosts[attackStat];
+		}
 
 		let ignoreNegativeOffensive = !!move.ignoreNegativeOffensive;
 		let ignorePositiveDefensive = !!move.ignorePositiveDefensive;

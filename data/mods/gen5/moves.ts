@@ -294,6 +294,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 					type: 'Psychic',
 				},
 			});
+			source.storedBoosts = source.boosts;
 			this.add('-start', source, 'move: Future Sight');
 			return null;
 		},
