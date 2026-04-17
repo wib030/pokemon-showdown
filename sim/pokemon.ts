@@ -412,6 +412,7 @@ export class Pokemon {
 		this.baseStoredStats = null!;
 		this.storedStats = { atk: 0, def: 0, spa: 0, spd: 0, spe: 0 };
 		this.boosts = { atk: 0, def: 0, spa: 0, spd: 0, spe: 0, accuracy: 0, evasion: 0 };
+		this.storedBoosts = this.boosts;
 
 		this.baseAbility = toID(set.ability);
 		this.ability = this.baseAbility;
