@@ -30244,6 +30244,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			covet: ["4L34"],
 			peekaboo: ["4L36"],
 			healbell: ["4L37"],
+			willowisp: ["4M"],
 		},
 		eventData: [
 			{generation: 3, level: 18, abilities: ["cutecharm"], moves: ["sweetkiss", "secretpower", "attract", "shockwave"]},

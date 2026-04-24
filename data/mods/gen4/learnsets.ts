@@ -23212,6 +23212,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			covet: ["4L34"],
 			peekaboo: ["4L36"],
 			healbell: ["4L37"],
+			willowisp: ["4M"],
 		},
 	},
 	sableye: {
