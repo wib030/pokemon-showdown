@@ -22136,7 +22136,7 @@
             },
 			{
                 "role": "Staller",
-                "movepool": ["drainpunch", "shadowpunch", "bind", "spite"],
+                "movepool": ["drainpunch", "shadowpunch", "wrap", "spite"],
                 "abilities": ["Iron Fist"],
 				"evs": [252, 72, 120, 0, 64, 0],
 				"ivs": [31, 31, 31, 31, 31, 31],
