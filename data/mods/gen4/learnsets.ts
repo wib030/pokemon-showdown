@@ -27374,6 +27374,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			chillingspell: ["4L28"],
 			psychicscream: ["4L44"],
 			gravity: ["4L1"],
+			wrap: ["4L1"],
 		},
 	},
 	dusclops: {
@@ -27465,6 +27466,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			chillingspell: ["4L28"],
 			psychicscream: ["4L47"],
 			painsplit: ["4L32"],
+			wrap: ["4L1"],
 		},
 	},
 	dusknoir: {
@@ -27550,6 +27552,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			chillingspell: ["4L28"],
 			painsplit: ["4L32"],
 			psychicscream: ["4L53"],
+			wrap: ["4L1"],
 		},
 	},
 	tropius: {
