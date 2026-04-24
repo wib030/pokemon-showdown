@@ -6188,6 +6188,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			teleport: ["4L25"],
 			gravity: ["4L21"],
 			magiccoat: ["4L42"],
+			stealthrock: ["4M"],
 		},
 	},
 	magneton: {
@@ -6250,6 +6251,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			teleport: ["4L25"],
 			gravity: ["4L21"],
 			magiccoat: ["4L45"],
+			stealthrock: ["4M"],
 		},
 	},
 	magnezone: {
@@ -6312,6 +6314,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			teleport: ["4L25"],
 			gravity: ["4L21"],
 			magiccoat: ["4L47"],
+			stealthrock: ["4M"],
 		},
 	},
 	farfetchd: {
@@ -7713,6 +7716,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			surf: ["4M"],
 			magiccoat: ["4L43"],
 			rapidspin: ["4L28"],
+			stealthrock: ["4M"],
 		},
 	},
 	electrode: {
@@ -7770,6 +7774,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			surf: ["4M"],
 			magiccoat: ["4L43"],
 			rapidspin: ["4L28"],
+			stealthrock: ["4M"],
 		},
 	},
 	exeggcute: {
@@ -15031,6 +15036,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			dracometeor: ["4L52"],
 			dragontail: ["4M"],
 			healbell: ["4L40"],
+			stealthrock: ["4M"],
 		},
 	},
 	azurill: {

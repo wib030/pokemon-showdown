@@ -9690,6 +9690,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			teleport: ["4L25"],
 			gravity: ["4L21"],
 			magiccoat: ["4L42"],
+			stealthrock: ["4M"],
 		},
 		encounters: [
 			{generation: 1, level: 16},
@@ -9754,6 +9755,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			teleport: ["4L25"],
 			gravity: ["4L21"],
 			magiccoat: ["4L45"],
+			stealthrock: ["4M"],
 		},
 		eventData: [
 			{generation: 3, level: 30, moves: ["refresh", "doubleedge", "raindance", "thunder"]},
@@ -9823,6 +9825,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			teleport: ["4L25"],
 			gravity: ["4L21"],
 			magiccoat: ["4L47"],
+			stealthrock: ["4M"],
 		},
 	},
 	farfetchd: {
@@ -11623,6 +11626,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			surf: ["4M"],
 			magiccoat: ["4L43"],
 			rapidspin: ["4L28"],
+			stealthrock: ["4M"],
 		},
 		eventData: [
 			{generation: 3, level: 19, moves: ["refresh", "mirrorcoat", "spark", "swift"]},
@@ -11737,6 +11741,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			surf: ["4M"],
 			magiccoat: ["4L43"],
 			rapidspin: ["4L28"],
+			stealthrock: ["4M"],
 		},
 		encounters: [
 			{generation: 1, level: 3},
@@ -20652,6 +20657,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dracometeor: ["4L52"],
 			dragontail: ["4M"],
 			healbell: ["4L40"],
+			stealthrock: ["4M"],
 		},
 	},
 	azurill: {
