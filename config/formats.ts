@@ -74,7 +74,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 4] Draft",
 		mod: 'gen4',
 		searchShow: false,
-		ruleset: ['Standard Draft', 'DryPass Clause', 'Sleep Clause Mod'],
+		ruleset: ['Standard Draft', 'DryPass Clause'],
 	},
 	
 	// FPT Doubles
