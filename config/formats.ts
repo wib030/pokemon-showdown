@@ -97,7 +97,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		gameType: 'doubles',
 		searchShow: false,
 		teraPreviewDefault: true,
-		ruleset: ['Standard Draft', '!Sleep Clause Mod', '!Evasion Clause'],
+		ruleset: ['Standard Draft', '!Evasion Clause'],
 	},
 	{
 		name: "[Gen 4] 4v4 Doubles Draft",
@@ -106,6 +106,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		searchShow: false,
 		bestOfDefault: true,
 		teraPreviewDefault: true,
-		ruleset: ['Standard Draft', 'Item Clause = 1', 'VGC Timer', '!Sleep Clause Mod', '!OHKO Clause', '!Evasion Clause', 'Adjust Level = 50', 'Picked Team Size = 4'],
+		ruleset: ['Standard Draft', 'Item Clause = 1', 'VGC Timer', '!OHKO Clause', '!Evasion Clause', 'Adjust Level = 50', 'Picked Team Size = 4'],
 	},
 ];
