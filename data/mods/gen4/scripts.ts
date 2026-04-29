@@ -220,16 +220,16 @@ export const Scripts: ModdedBattleScriptsData = {
 							if (boost > 0) {
 								accuracy *= boostTable[boost];
 							} else {
-								accuracy *= decrementTable[boost];
+								accuracy /= decrementTable[-boost];
 							}
 						}
 						if (!move.ignoreEvasion) {
 							boosts = this.battle.runEvent('ModifyBoost', target, null, null, { ...target.boosts });
 							boost = this.battle.clampIntRange(boosts['evasion'], -6, 6);
 							if (boost > 0) {
-								accuracy *= decrementTable[boost];
+								accuracy /= decrementTable[boost];
 							} else if (boost < 0) {
-								accuracy *= boostTable[boost];
+								accuracy *= boostTable[-boost];
 							}
 						}
 					}
