@@ -32,6 +32,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				ally.clearStatus();
 			}
 		},
+		sleepUsable: true,
 	},
 	aquaring: {
 		inherit: true,
@@ -492,6 +493,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				ally.cureStatus(true);
 			}
 		},
+		sleepUsable: true,
 	},
 	healblock: {
 		inherit: true,
