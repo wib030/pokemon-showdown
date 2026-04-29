@@ -68,13 +68,13 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 4] Anything Goes",
 		mod: 'gen4',
-		ruleset: ['Obtainable', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview'],
+		ruleset: ['Obtainable', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Sleep Clause Mod'],
 	},
 	{
 		name: "[Gen 4] Draft",
 		mod: 'gen4',
 		searchShow: false,
-		ruleset: ['Standard Draft', 'DryPass Clause'],
+		ruleset: ['Standard Draft', 'DryPass Clause', 'Sleep Clause Mod'],
 	},
 	
 	// FPT Doubles
