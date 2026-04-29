@@ -18373,6 +18373,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			pluck: ["4L22"],
 			tailwind: ["4L33"],
 			whirlpool: ["4L15"],
+			stringshot: ["4L17"],
 		},
 	},
 	mantine: {
