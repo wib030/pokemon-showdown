@@ -33,6 +33,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			}
 		},
 		sleepUsable: true,
+		pp: 10,
 	},
 	aquaring: {
 		inherit: true,
@@ -479,6 +480,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				pokemon.removeVolatile('focusenergy');
 			}
 		},
+		pp: 35,
 	},
 	healbell: {
 		inherit: true,
@@ -494,6 +496,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			}
 		},
 		sleepUsable: true,
+		pp: 10,
 	},
 	healblock: {
 		inherit: true,
@@ -760,6 +763,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				return null;
 			},
 		},
+		pp: 20,
 	},
 	mefirst: {
 		inherit: true,
@@ -878,6 +882,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.add('-sideend', side, 'Mist');
 			},
 		},
+		pp: 35,
 	},
 	moonlight: {
 		inherit: true,
@@ -1046,6 +1051,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				},
 			},
 		},
+		pp: 35,
 	},
 	recycle: {
 		inherit: true,
@@ -1157,6 +1163,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.add('-sideend', side, 'Safeguard');
 			},
 		},
+		pp: 30,
 	},
 	secretpower: {
 		inherit: true,
@@ -1212,6 +1219,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		onTryHit(pokemon) {
 			return !pokemon.volatiles['choicelock'] && !pokemon.volatiles['encore'];
 		},
+		pp: 15,
 	},
 	snatch: {
 		inherit: true,
@@ -1257,6 +1265,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 24);
 			},
 		},
+		pp: 30,
 	},
 	stealthrock: {
 		inherit: true,
@@ -1275,6 +1284,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.damage(rockDamage);
 			},
 		},
+		pp: 15,
 	},
 	struggle: {
 		inherit: true,
@@ -1399,6 +1409,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				}
 			},
 		},
+		pp: 25,
 	},
 	transform: {
 		inherit: true,
@@ -1824,7 +1835,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	beatup: {
 		inherit: true,
 		basePower: 15,
-		pp: 5,
+		pp: 10,
 		flags: { protect: 1, mirror: 1, allyanim: 1, metronome: 1, punch: 1 },
 		basePowerCallback(pokemon, target, move) {
 			if (!move.allies?.length) return null;
@@ -1953,6 +1964,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	willowisp: {
 		inherit: true,
 		accuracy: 85,
+		pp: 10,
 	},
 	whirlpool: {
 		inherit: true,
@@ -2262,6 +2274,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	spore: {
 		inherit: true,
 		accuracy: 90,
+		pp: 10,
 	},
 	hiddenpower: {
 		num: 237,
@@ -2606,6 +2619,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				return critRatio + 1;
 			},
 		},
+		pp: 35,
 	},
 	crosspoison: {
 		inherit: true,
@@ -2617,7 +2631,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	spikecannon: {
 		inherit: true,
 		basePower: 15,
-		pp: 10,
+		pp: 15,
 		onAfterMove(pokemon, target, move) {
 			if (pokemon.hp && target.runImmunity(move) && move.totalDamage) {
 				for (const side of pokemon.side.foeSidesWithConditions()) {
@@ -2645,6 +2659,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			atk: 1,
 		},
 		target: "allies",
+		pp: 30,
 	},
 	solarbeam: {
 		inherit: true,
@@ -2678,6 +2693,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.boost({ spe: -1 }, pokemon, pokemon.side.foe.active[0], this.dex.getActiveMove('stickyweb'));
 			},
 		},
+		pp: 15,
 	},
 	tailwind: {
 		inherit: true,
@@ -2848,6 +2864,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				}
 			},
 		},
+		pp: 15,
 	},
 	crushgrip: {
 		inherit: true,
@@ -2920,6 +2937,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				},
 			},
 		},
+		pp: 15,
 	},
 	spitup: {
 		inherit: true,
@@ -3117,5 +3135,30 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	bugbuzz: {
 		inherit: true,
 		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
+	},
+	memento: {
+		inherit: true,
+		pp: 5,
+	},
+	helpinghand: {
+		inherit: true,
+		condition: {
+			duration: 1,
+			onStart(target, source) {
+				this.effectState.multiplier = 1.5;
+				this.add('-singleturn', target, 'Helping Hand', `[of] ${source}`);
+			},
+			onRestart(target, source) {
+				this.effectState.multiplier *= 1.5;
+				this.add('-singleturn', target, 'Helping Hand', `[of] ${source}`);
+			},
+			onBasePowerPriority: 10,
+			onBasePower(basePower, attacker, defender, move) {
+				if (attacker !== defender) {
+					this.debug('Boosting from Helping Hand: ' + this.effectState.multiplier);
+					return this.chainModify(this.effectState.multiplier);
+				}
+			},
+		},
 	},
 };

@@ -22334,7 +22334,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 40,
 		category: "Special",
 		name: "Golden Binding",
-		pp: 10,
+		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		volatileStatus: 'disable',
