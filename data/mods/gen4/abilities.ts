@@ -27,7 +27,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	baddreams: {
 		inherit: true,
 		onResidualOrder: 10,
-		onResidualSubOrder: 10,
+		onResidualSubOrder: 8,
 	},
 	blaze: {
 		onBasePowerPriority: 2,

@@ -2,6 +2,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 	brn: {
 		inherit: true,
 		onResidualOrder: 10,
+		onResidualSubOrder: 3,
 		onResidual(pokemon) {
 			this.damage(pokemon.baseMaxhp / 16);
 		},
@@ -91,6 +92,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			return false;
 		},
 		onResidualOrder: 10,
+		onResidualSubOrder: 9,
 		onResidual(pokemon) {
 			if (pokemon.sleepHealFlag === true) {
 				let badDreamsActive = false;
@@ -111,12 +113,12 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 	psn: {
 		inherit: true,
 		onResidualOrder: 10,
-		onResidualSubOrder: 6,
+		onResidualSubOrder: 1,
 	},
 	tox: {
 		inherit: true,
 		onResidualOrder: 10,
-		onResidualSubOrder: 6,
+		onResidualSubOrder: 2,
 	},
 	confusion: {
 		inherit: true,
@@ -170,7 +172,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			return this.random(3, 7);
 		},
 		onResidualOrder: 10,
-		onResidualSubOrder: 9,
+		onResidualSubOrder: 7,
 	},
 	lockedmove: {
 		inherit: true,

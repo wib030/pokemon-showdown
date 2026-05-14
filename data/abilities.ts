@@ -6152,7 +6152,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -27,
 	},
 	tossandturn: {
-		onResidualOrder: 11,
+		onResidualOrder: 10,
+		onResidualSubOrder: 10,
 		onResidual(pokemon) {
 			if (pokemon.status === 'slp') {
 				this.actions.useMove('tossandturn', pokemon);

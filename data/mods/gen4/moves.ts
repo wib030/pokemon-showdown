@@ -47,7 +47,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.add('-start', pokemon, 'Aqua Ring');
 			},
 			onResidualOrder: 10,
-			onResidualSubOrder: 2,
+			onResidualSubOrder: 14,
 			onResidual(pokemon) {
 				this.heal(pokemon.baseMaxhp / 16);
 			},
@@ -221,7 +221,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.add('-start', pokemon, 'Curse', `[of] ${source}`);
 			},
 			onResidualOrder: 10,
-			onResidualSubOrder: 8,
+			onResidualSubOrder: 5,
 			onResidual(pokemon) {
 				this.damage(pokemon.baseMaxhp / 3);
 			},
@@ -599,7 +599,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.add('-start', pokemon, 'move: Ingrain');
 			},
 			onResidualOrder: 10,
-			onResidualSubOrder: 1,
+			onResidualSubOrder: 13,
 			onResidual(pokemon) {
 				this.heal(pokemon.baseMaxhp / 16);
 			},
@@ -634,7 +634,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.add('-start', target, 'move: Leech Seed');
 			},
 			onResidualOrder: 10,
-			onResidualSubOrder: 5,
+			onResidualSubOrder: 12,
 			onResidual(pokemon) {
 				const target = this.getAtSlot(pokemon.volatiles['leechseed'].sourceSlot);
 				if (!target || target.fainted || target.hp <= 0) {
@@ -936,7 +936,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.add('-start', pokemon, 'Nightmare');
 			},
 			onResidualOrder: 10,
-			onResidualSubOrder: 7,
+			onResidualSubOrder: 4,
 			onResidual(pokemon) {
 				this.damage(pokemon.baseMaxhp / 3);
 			},
@@ -1929,7 +1929,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.add('-start', target, 'Uproar', '[upkeep]');
 			},
 			onResidualOrder: 10,
-			onResidualSubOrder: 11,
+			onResidualSubOrder: 14,
 			onEnd(target) {
 				this.add('-end', target, 'Uproar');
 			},

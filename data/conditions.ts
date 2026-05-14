@@ -897,7 +897,8 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		onStart(target, source, sourceEffect) {
 			this.add('-start', target, 'Sticky Barb');
 		},
-		onResidualOrder: 9,
+		onResidualOrder: 10,
+		onResidualSubOrder: 6,
 		onResidual(pokemon) {
 			this.damage(pokemon.baseMaxhp / 8);
 		},

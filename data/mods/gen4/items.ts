@@ -252,7 +252,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	leftovers: {
 		inherit: true,
 		onResidualOrder: 10,
-		onResidualSubOrder: 4,
+		onResidualSubOrder: 11,
 	},
 	levelball: {
 		inherit: true,

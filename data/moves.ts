@@ -22380,7 +22380,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onStart(pokemon, source) {
 				this.add('-start', pokemon, 'move: Mind Virus');
 			},
-			onResidualOrder: 20,
+			onResidualOrder: 10,
+			onResidualSubOrder: 15,
 			onEnd(pokemon) {
 				this.add('-end', pokemon, 'move: Mind Virus');
 			},
