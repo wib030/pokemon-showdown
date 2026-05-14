@@ -24355,7 +24355,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			petaldance: ["4L40", "3L49"],
 			pinmissile: ["4E", "3E"],
 			poisonjab: ["4M"],
-			poisonsting: ["4L7", "3L9", "3S0"],
+			poisonsting: ["4L1", "3L9", "3S0"],
 			protect: ["4M", "3M"],
 			psychup: ["4M", "3T"],
 			raindance: ["4M"],
@@ -24389,6 +24389,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	roserade: {
 		inherit: true,
 		learnset: {
+			absorb: ["4L1"],
 			attract: ["4M"],
 			bulletseed: ["4M"],
 			captivate: ["4M"],
