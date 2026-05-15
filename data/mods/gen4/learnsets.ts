@@ -19601,6 +19601,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			psyshock: ["4L49"],
 			psychicscream: ["4L55"],
 			tailwind: ["4L1"],
+			flareblitz: ["4L43"],
 		},
 	},
 	celebi: {
