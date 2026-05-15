@@ -42304,6 +42304,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zenheadbutt: ["4T"],
 			gravity: ["4L1"],
 			magiccoat: ["4L1"],
+			mindvirus: ["4L50"],
 		},
 		eventData: [
 			{generation: 4, level: 50, shiny: 1, moves: ["mist", "aurorabeam", "futuresight", "slash"]},
@@ -42537,6 +42538,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			chillingspell: ["4L30"],
 			moonlight: ["4L43"],
 			peekaboo: ["4L53"],
+			mindvirus: ["4L50"],
 		},
 		eventData: [
 			{generation: 4, level: 40, shiny: 1, moves: ["quickattack", "hypnosis", "pursuit", "nightmare"]},

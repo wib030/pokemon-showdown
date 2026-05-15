@@ -34822,6 +34822,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			zenheadbutt: ["4T"],
 			gravity: ["4L1"],
 			magiccoat: ["4L1"],
+			mindvirus: ["4L50"],
 		},
 	},
 	phione: {
@@ -35036,6 +35037,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			chillingspell: ["4L30"],
 			moonlight: ["4L43"],
 			peekaboo: ["4L53"],
+			mindvirus: ["4L50"],
 		},
 	},
 	shaymin: {
