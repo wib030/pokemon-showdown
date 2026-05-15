@@ -26366,7 +26366,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			bubblebeam: ["4L14", "3L19"],
 			captivate: ["4M"],
 			counter: ["3T"],
-			crabhammer: ["4L45", "3L38", "3S0", "3S1"],
+			crabhammer: ["4L38", "3L38", "3S0", "3S1"],
 			crunch: ["4L43", "3L51"],
 			cut: ["4M", "3M"],
 			darkpulse: ["4M"],
