@@ -18553,6 +18553,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			whirlpool: ["4L1"],
 			futuresight: ["4L27"],
 			psyshock: ["4L32"],
+			dragondance: ["4L45"],
+			cosmicpower: ["4L45"],
 		},
 		eventData: [
 			{generation: 3, level: 30, shiny: 1, moves: ["pound", "transform", "megapunch", "metronome"]},

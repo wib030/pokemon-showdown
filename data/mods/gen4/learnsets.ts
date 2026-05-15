@@ -13104,6 +13104,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			whirlpool: ["4L1"],
 			futuresight: ["4L27"],
 			psyshock: ["4L32"],
+			dragondance: ["4L45"],
+			cosmicpower: ["4L45"],
 		},
 	},
 	chikorita: {
