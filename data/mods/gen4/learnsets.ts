@@ -35226,6 +35226,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			whirlpool: ["4L1"],
 			fling: ["4M"],
 			psyshock: ["4L1"],
+			aurasphere: ["4L1"],
 		},
 	},
 	wibblypuff: {

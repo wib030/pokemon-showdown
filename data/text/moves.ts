@@ -7778,7 +7778,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	chumrush: {
 		name: "Chum Rush",
-		desc: "Hits 2 to 10 times. Power for each hit is equal to: 10 multiplied by 2 divided by 3, multiplied by the targets Max HP divided by the targets current HP. (Power increases as targets HP decreases)",
+		desc: "Hits 2 to 10 times. Power for each hit is equal to: 10 multiplied by 2 divided by 3, multiplied by the targets Max HP divided by the targets current HP, rounded down. (Power increases as targets HP decreases)",
 		shortDesc: "Hits: 2-10. Power increases as targets HP decreases.",
 	},
 	chillingspell: {
