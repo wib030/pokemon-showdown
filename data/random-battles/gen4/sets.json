@@ -24138,7 +24138,7 @@
                 "abilities": ["Rock Star"],
 				"evs": [0, 0, 0, 252, 4, 252],
 				"ivs": [31, 0, 31, 31, 31, 31],
-				"item": "Expert Belt",
+				"item": "Focus Sash",
 				"nature": "Timid",
 				"inclination": "Special"
             },

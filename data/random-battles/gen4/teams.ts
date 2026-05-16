@@ -917,7 +917,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			name: species.baseSpecies,
 			species: forme,
 			gender: species.gender,
-			shiny: this.randomChance(1, 1024),
+			shiny: this.randomChance(1, 4096),
 			nature,
 			level,
 			moves: shuffledMoves,
