@@ -23286,7 +23286,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			rocktomb: ["4M", "3M"],
 			scratch: ["4L1", "3L1", "3S0"],
 			secretpower: ["4M", "3M"],
-			seismictoss: ["3T"],
+			seismictoss: ["4L1", "3T"],
 			shadowball: ["4M", "4L39", "3M", "3L41", "3S1"],
 			shadowclaw: ["4M", "4L29"],
 			shadowsneak: ["4L16"],
