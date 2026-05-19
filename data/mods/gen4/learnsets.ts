@@ -27116,7 +27116,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			scratch: ["4L1", "3L1"],
 			screech: ["4L38", "3L24"],
 			secretpower: ["4M", "3M"],
-			seismictoss: ["3T"],
+			seismictoss: ["4L1", "3T"],
 			shadowball: ["4M", "3M"],
 			shadowclaw: ["4M", "4L33"],
 			shadowsneak: ["4L7"],
