@@ -38438,6 +38438,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			psyshieldbash: ["4E"],
 			curse: ["4E"],
 			rockblast: ["4L40"],
+			rockthrow: ["4L1"],
 		},
 		eventData: [
 			{generation: 5, level: 15, gender: "M", moves: ["pursuit", "takedown", "crunch", "headbutt"], pokeball: "cherishball"},
@@ -38534,6 +38535,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			painsplit: ["4L48"],
 			whirlpool: ["4L1"],
 			rockblast: ["4L45"],
+			rockthrow: ["4L1"],
 		},
 	},
 	shieldon: {
