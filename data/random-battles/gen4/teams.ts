@@ -75,7 +75,7 @@ const RARE_POKEMON = [
 	'regirock', 'regice', 'registeel', 'uxie', 'mesprit', 'azelf',
 	'heatran', 'regigigas', 'cresselia', 'mew', 'celebi', 'jirachi',
 	'manaphy', 'shaymin', 'shayminsky', 'darkrai', 'latios', 'latias',
-	'wobbuffet', 'unown',
+	'wobbuffet',
 ];
 
 // List of Very Rare Pokemon (1/8 chance to keep if species is rolled, otherwise it is rerolled)
@@ -88,7 +88,7 @@ const VERY_RARE_POKEMON = [
 	'deoxysspeed', 'giratinaantibug', 'giratinaantidark', 'giratinaantidragon',
 	'giratinaantielectric', 'giratinaantifighting', 'giratinaantifire', 'giratinaantiflying',
 	'giratinaantighost', 'giratinaantigrass', 'giratinaantiground', 'giratinaantiice', 'giratinaantipoison',
-	'giratinaantipsychic', 'giratinaantirock', 'giratinaantisteel', 'giratinaantiwater',
+	'giratinaantipsychic', 'giratinaantirock', 'giratinaantisteel', 'giratinaantiwater', 'unown',
 ];
 
 const ALLOWED_UNUSUAL_SPECIES = [
@@ -721,6 +721,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		ensureHazardTank: boolean,
 		ensurePhysicalAttacker: boolean,
 		ensureSpecialAttacker: boolean,
+		ensureAnyAttacker: boolean,
 	): RandomTeamsTypes.RandomSet {
 		species = this.dex.species.get(species);
 		const forme = this.getForme(species);
@@ -767,10 +768,13 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				if (!onlyLeadSets && !onlyPreventableSets && LEAD_ROLES.includes(set.role)) continue;
 				
 				// Enforce Physical Attacker if the team requires one
-				if (ensurePhysicalAttacker && !ATTACKING_ROLES.includes(set.role) && (set.inclination === 'Special' || set.inclination === 'Support')) continue;
+				if (ensurePhysicalAttacker && !ATTACKING_ROLES.includes(set.role) && (set.inclination === 'Special' || set.inclination === 'Mixed' || set.inclination === 'Support')) continue;
 				
 				// Enforce Special Attacker if the team requires one
-				if (ensureSpecialAttacker && !ATTACKING_ROLES.includes(set.role) && (set.inclination === 'Physical' || set.inclination === 'Support')) continue;
+				if (ensureSpecialAttacker && !ATTACKING_ROLES.includes(set.role) && (set.inclination === 'Physical' || set.inclination === 'Mixed' || set.inclination === 'Support')) continue;
+				
+				// Enforce Any Attacker if the team requires one
+				if (ensureAnyAttacker && !ATTACKING_ROLES.includes(set.role) && (set.inclination === 'Support')) continue;
 			}
 
 			if (ensureRemoval)
@@ -1033,6 +1037,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		let hazardTankSlot = 2;
 		let physicalAttackerSlot = 3;
 		let specialAttackerSlot = 4;
+		let anyAttackerSlot = 5;
 
 		let temp: TypeFrequency = {};
 
@@ -1098,6 +1103,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 			let ensureHazardTank = false;
 			let ensurePhysicalAttacker = false;
 			let ensureSpecialAttacker = false;
+			let ensureAnyAttacker = false;
 			
 			if (pokemon.length === leadSlot) {
 				sets = this.randomSets[checkSpecies.id]["sets"];
@@ -1145,7 +1151,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				// Check if the Pokemon has a Physical Attacking set
 				skip = true;
 				for (let set of sets) {
-					if (ATTACKING_ROLES.includes(set.role) && (set.inclination === 'Physical' || set.inclination === 'Mixed')) {
+					if (ATTACKING_ROLES.includes(set.role) && (set.inclination === 'Physical')) {
 						ensurePhysicalAttacker = true;
 						skip = false;
 						break;
@@ -1156,8 +1162,19 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				// Check if the Pokemon has a Special Attacking set
 				skip = true;
 				for (let set of sets) {
-					if (ATTACKING_ROLES.includes(set.role) && (set.inclination === 'Special' || set.inclination === 'Mixed')) {
+					if (ATTACKING_ROLES.includes(set.role) && (set.inclination === 'Special')) {
 						ensureSpecialAttacker = true;
+						skip = false;
+						break;
+					}
+				}
+			} else if (pokemon.length === anyAttackerSlot) {
+				sets = this.randomSets[checkSpecies.id]["sets"];
+				// Check if the Pokemon has a Special Attacking, Physical Attacking, or Mixed set
+				skip = true;
+				for (let set of sets) {
+					if (ATTACKING_ROLES.includes(set.role) && (set.inclination === 'Special' || set.inclination === 'Physical' || set.inclination === 'Mixed')) {
+						ensureAnyAttacker = true;
 						skip = false;
 						break;
 					}
@@ -1178,7 +1195,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 				}
 			}
 
-			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum, ensureLead, ensureRemoval, ensureHazardTank, ensurePhysicalAttacker, ensureSpecialAttacker);
+			const set = this.randomSet(species, teamDetails, pokemon.length === 0, leadNum, removalNum, ensureLead, ensureRemoval, ensureHazardTank, ensurePhysicalAttacker, ensureSpecialAttacker, ensureAnyAttacker);
 			
 			ensureLead = false;
 			ensureRemoval = false;
