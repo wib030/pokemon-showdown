@@ -34594,6 +34594,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			willowisp: ["4M"],
 			firechase: ["4L35"],
 			bugbite: ["4L13"],
+			ember: ["4L1"],
+			metalclaw: ["4L1"],
 		},
 	},
 	regigigas: {

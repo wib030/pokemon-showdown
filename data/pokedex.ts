@@ -7762,7 +7762,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 43.8,
 		color: "Gray",
 		prevo: "Glameow",
-		evoLevel: 32,
+		evoType: "levelFriendship",
+		evoCondition: "during the day",
 		eggGroups: ["Field"],
 	},
 	chingling: {
@@ -7800,7 +7801,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 38,
 		color: "Purple",
 		prevo: "Stunky",
-		evoLevel: 34,
+		evoType: "levelFriendship",
+		evoCondition: "during the day",
 		eggGroups: ["Field"],
 	},
 	bronzor: {

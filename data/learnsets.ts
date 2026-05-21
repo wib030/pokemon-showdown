@@ -42046,6 +42046,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			willowisp: ["4M"],
 			firechase: ["4L35"],
 			bugbite: ["4L13"],
+			ember: ["4L1"],
+			metalclaw: ["4L1"],
 		},
 		eventData: [
 			{generation: 4, level: 70, shiny: 1, moves: ["scaryface", "lavaplume", "firespin", "ironhead"]},
