@@ -398,6 +398,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			const canOoze = ['drain', 'leechseed', 'strengthsap'];
 			if (canOoze.includes(effect.id) && this.activeMove?.id !== 'dreameater') {
 				this.damage(multDamage);
+				this.addVolatile('healblock');
 				return 0;
 			}
 		},

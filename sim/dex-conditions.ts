@@ -107,6 +107,11 @@ export interface EventMethods {
 		this: Battle, status: Condition, target: Pokemon, source: Pokemon, sourceEffect: Effect
 	) => boolean | null | void;
 	onTryEatItem?: boolean | ((this: Battle, item: Item, pokemon: Pokemon) => boolean | void);
+	/* FIXME: onSourceTryHeal() is run with two different sets of arguments */
+	onSourceTryHeal?: (
+		((this: Battle, relayVar: number, target: Pokemon, source: Pokemon, effect: Effect) => number | boolean | void) |
+		((this: Battle, pokemon: Pokemon) => boolean | void) | boolean
+	);
 	onTryHeal?: (
 		((this: Battle, relayVar: number, target: Pokemon, source: Pokemon, effect: Effect) => number | boolean | null | void)
 	);
@@ -304,11 +309,6 @@ export interface EventMethods {
 		this: Battle, status: Condition, target: Pokemon, source: Pokemon, sourceEffect: Effect
 	) => boolean | null | void;
 	onSourceTryEatItem?: boolean | ((this: Battle, item: Item, pokemon: Pokemon) => boolean | void);
-	/* FIXME: onSourceTryHeal() is run with two different sets of arguments */
-	onSourceTryHeal?: (
-		((this: Battle, relayVar: number, target: Pokemon, source: Pokemon, effect: Effect) => number | boolean | void) |
-		((this: Battle, pokemon: Pokemon) => boolean | void) | boolean
-	);
 	onSourceTryHit?: MoveEventMethods['onTryHit'];
 	onSourceTryHitField?: MoveEventMethods['onTryHitField'];
 	onSourceTryHitSide?: CommonHandlers['ResultMove'];
