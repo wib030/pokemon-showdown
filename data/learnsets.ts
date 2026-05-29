@@ -39014,6 +39014,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			nibble: ["4L1"],
 			stringshot: ["4L1"],
 			tailwind: ["4L40"],
+			poisonfang: ["4L21"],
 		},
 	},
 	pachirisu: {
