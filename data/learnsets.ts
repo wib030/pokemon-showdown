@@ -27465,6 +27465,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			hailcannon: ["4L54"],
 			superfang: ["4L36"],
 			whirlpool: ["4L25"],
+			extremespeed: ["4L45"],
 		},
 		eventData: [
 			{generation: 6, level: 50, moves: ["extremespeed", "helpinghand", "babydolleyes", "protect"], pokeball: "cherishball"},
