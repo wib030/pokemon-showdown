@@ -931,7 +931,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Liquid Ooze",
 		shortDesc: "This Pokemon damages those draining HP from it for as much as they would heal.",
 		gen4: {
-			desc: "This Pokemon damages those draining HP from it for 3 times what they would heal. This effect does not consider Dream Eater.",
+			desc: "This Pokemon damages those draining HP from it for 3 times what they would heal. This effect does not consider Dream Eater. After dealing draining damage to an opponent, it inflicts Heal Block on them for 5 turns.",
 			shortDesc: "Damages those draining HP from it for 3x what they would heal.",
 		},
 
