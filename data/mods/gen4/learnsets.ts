@@ -13808,6 +13808,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			wavecrash: ["4T"],
 			superfang: ["4L33"],
 			whirlpool: ["4L21"],
+			rocksmash: ["4M"],
 		},
 	},
 	furret: {
