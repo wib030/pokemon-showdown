@@ -31710,7 +31710,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			rollout: ["4T", "4E"],
 			secretpower: ["4M"],
 			seedbomb: ["4T"],
-			shockwave: ["4M"],
+			shockwave: ["4L20", "4M"],
 			sleeptalk: ["4M"],
 			snore: ["4T"],
 			spark: ["4L13"],
