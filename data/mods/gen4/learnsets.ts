@@ -8218,6 +8218,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			lowsweep: ["4L1"],
 			lowkick: ["4L1"],
 			roleplay: ["4L33"],
+			rapidspin: ["4L24"],
 		},
 	},
 	hitmonchan: {
@@ -8287,6 +8288,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			lovelypunch: ["4L33"],
 			lowkick: ["4L1"],
 			roleplay: ["4L33"],
+			rapidspin: ["4L24"],
 		},
 	},
 	hitmontop: {

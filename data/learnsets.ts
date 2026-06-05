@@ -12554,6 +12554,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			lowsweep: ["4L1"],
 			lowkick: ["4L1"],
 			roleplay: ["4L33"],
+			rapidspin: ["4L24"],
 		},
 		eventData: [
 			{generation: 3, level: 38, abilities: ["limber"], moves: ["refresh", "highjumpkick", "mindreader", "megakick"]},
@@ -12628,6 +12629,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			lovelypunch: ["4L33"],
 			lowkick: ["4L1"],
 			roleplay: ["4L33"],
+			rapidspin: ["4L24"],
 		},
 		eventData: [
 			{generation: 3, level: 38, abilities: ["keeneye"], moves: ["helpinghand", "skyuppercut", "mindreader", "megapunch"]},
