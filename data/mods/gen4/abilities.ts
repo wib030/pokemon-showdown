@@ -1076,6 +1076,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				this.boost({ spe: 1 });
 			}
 		},
+		onFlinch(pokemon) {},
 	},
 	swiftswim: {
 		inherit: true,

@@ -1846,7 +1846,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Steadfast",
 		shortDesc: "If this Pokemon flinches, its Speed is raised by 1 stage.",
 		gen4: {
-			shortDesc: "If this Pokemon flinches, or hit by Contact move, its Speed is raised by 1 stage.",
+			shortDesc: "If this Pokemon is hit by Contact move, its Speed is raised by 1 stage.",
 		},
 	},
 	steamengine: {
