@@ -31670,6 +31670,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			stringshot: ["4L1"],
 			tailwind: ["4L40"],
 			poisonfang: ["4L21"],
+			toxicspikes: ["4L30"],
 		},
 	},
 	pachirisu: {
@@ -32929,7 +32930,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			trick: ["4T"],
 			uproar: ["4T"],
 			waterpulse: ["4M"],
-			willowisp: ["4M"],
+			willowisp: ["4L30", "4M"],
 			rapidspin: ["4L1"],
 			hex: ["4L23"],
 			chillingspell: ["4L29"],
