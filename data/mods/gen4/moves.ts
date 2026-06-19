@@ -243,7 +243,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				if (!this.queue.willMove(pokemon)) {
 					this.effectState.duration!++;
 				}
-				if (!pokemon.lastMove) {
+				if (!pokemon.lastMove || pokemon.lastMove.id === 'struggle' || pokemon.lastMove.id === 'tossandturn') {
 					return false;
 				}
 				for (const moveSlot of pokemon.moveSlots) {

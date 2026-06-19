@@ -22338,12 +22338,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		volatileStatus: 'disable',
-		onTryHit(target) {
-			if (!target.lastMove || target.lastMove.isZ || target.lastMove.isMax || target.lastMove.id === 'struggle' || target.lastMove.id === 'tossandturn' || target.volatiles['disable']) {
-				return false;
-			}
+		secondary: {
+			chance: 100,
+			volatileStatus: 'disable',
 		},
-		secondary: null,
 		target: "normal",
 		type: "Psychic",
 		contestType: "Clever",
