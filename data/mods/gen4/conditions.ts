@@ -59,7 +59,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 					accuracy = 100;
 				}
 				
-				this.hint(`${move.name}'s accuracy: accuracy. Sleep turns rolled: ${sleepTurns}`);
+				this.hint(`${move.name}'s accuracy: ${accuracy}.`);
 			}
 			
 			for (const mon of this.getAllActive()) {
