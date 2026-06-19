@@ -20339,7 +20339,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			pluck: ["4M"],
 			powerswap: ["4L44"],
 			protect: ["4M", "3M"],
-			psychic: ["4M", "4L40", "3M", "3L50"],
+			psychic: ["4M", "4L31", "3M", "3L50"],
 			psychoshift: ["4L33"],
 			psychup: ["4M", "4E", "3T", "3E"],
 			quickattack: ["4E", "3E"],
@@ -20381,6 +20381,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			painsplit: ["4L42"],
 			magiccoat: ["4L30"],
 			tailwind: ["4L27"],
+			airslash: ["4L29"],
 		},
 		eventData: [
 			{generation: 3, level: 22, moves: ["batonpass", "futuresight", "nightshade", "aerialace"]},
@@ -20425,7 +20426,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			pluck: ["4M"],
 			powerswap: ["4L49"],
 			protect: ["4M", "3M"],
-			psychic: ["4M", "4L44", "3M", "3L65"],
+			psychic: ["4M", "4L31", "3M", "3L65"],
 			psychoshift: ["4L37"],
 			psychup: ["4M", "3T"],
 			raindance: ["4M", "3M"],
@@ -20464,6 +20465,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			psyshock: ["4L51"],
 			painsplit: ["4L45"],
 			magiccoat: ["4L32"],
+			airslash: ["4L29"],
 		},
 		encounters: [
 			{generation: 2, level: 15},
