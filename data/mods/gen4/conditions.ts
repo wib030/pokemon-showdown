@@ -36,7 +36,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 	slp: {
 		name: 'slp',
 		effectType: 'Status',
-		onStart(target, source, sourceEffect) {
+		onStart(target, source, sourceEffect, move) {
 			if (sourceEffect && sourceEffect.effectType === 'Move') {
 				this.add('-status', target, 'slp', `[from] move: ${sourceEffect.name}`);
 			} else {
@@ -46,8 +46,28 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			let badDreamsActive = false;
 			let sleepRoll = this.random(1, 100);
 			let sleepTurns = 3;
-			const oneTurnChance = 25;
+			let moveAccuracy = 100;
+			
+			const oneTurnChance = 15;
 			const twoTurnChance = 75;
+			
+			if (sourceEffect.effectType === 'Move') {
+				accuracy = move.accuracy;
+				
+				if ((move.forceSTAB || source.hasType(moveType)) && accuracy != true) {
+					accuracy = accuracy * 1.1;
+				}
+
+				if (move.ohko) {
+					accuracy = 30 + source.level - target.level;
+				}
+
+				accuracy = this.battle.runEvent('ModifyAccuracy', target, source, move, accuracy);
+				
+				if (accuracy === true) {
+					accuracy = 100;
+				}
+			}
 			
 			for (const mon of this.getAllActive()) {
 				if (mon.isAlly(target)) continue;
@@ -59,13 +79,15 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			
 			if (sleepRoll < twoTurnChance) {
 				if (sleepRoll < oneTurnChance) {
-					if (badDreamsActive === false) {
+					if (badDreamsActive === false && accuracy < 75) {
 						sleepTurns = sleepTurns - 2;
 					}
 				} else {
 					sleepTurns = sleepTurns - 1;
 				}
 			}
+			
+			this.hint(`${move.name}'s accuracy: accuracy. Sleep turns rolled: ${sleepTurns}`);
 			
 			this.effectState.time = sleepTurns;
 			target.sleepHealFlag = true;
