@@ -55,14 +55,6 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 				let move = this.activeMove;
 				accuracy = move.accuracy;
 				
-				if ((move.forceSTAB || source.hasType(moveType)) && accuracy != true) {
-					accuracy = accuracy * 1.1;
-				}
-
-				if (move.ohko) {
-					accuracy = 30 + source.level - target.level;
-				}
-				
 				if (accuracy === true) {
 					accuracy = 100;
 				}
