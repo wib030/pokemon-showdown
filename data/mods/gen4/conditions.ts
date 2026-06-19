@@ -72,7 +72,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			
 			if (sleepRoll < twoTurnChance) {
 				if (sleepRoll < oneTurnChance) {
-					if (badDreamsActive === false && accuracy < 75) {
+					if (badDreamsActive === false && accuracy > 75) {
 						sleepTurns = sleepTurns - 2;
 					}
 				} else {
