@@ -62,8 +62,6 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 				if (move.ohko) {
 					accuracy = 30 + source.level - target.level;
 				}
-
-				accuracy = this.battle.runEvent('ModifyAccuracy', target, source, move, accuracy);
 				
 				if (accuracy === true) {
 					accuracy = 100;
