@@ -48,7 +48,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			let sleepTurns = 3;
 			let accuracy = 100;
 			
-			const oneTurnChance = 15;
+			const oneTurnChance = 25;
 			const twoTurnChance = 75;
 			
 			if (sourceEffect.effectType === 'Move') {
