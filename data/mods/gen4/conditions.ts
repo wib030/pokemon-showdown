@@ -58,8 +58,6 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 				if (accuracy === true) {
 					accuracy = 100;
 				}
-				
-				this.hint(`${move.name}'s accuracy: ${accuracy}.`);
 			}
 			
 			for (const mon of this.getAllActive()) {
@@ -79,8 +77,6 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 					sleepTurns = sleepTurns - 1;
 				}
 			}
-			
-			this.hint(`Sleep turns rolled: ${sleepTurns}`);
 			
 			this.effectState.time = sleepTurns;
 			target.sleepHealFlag = true;
