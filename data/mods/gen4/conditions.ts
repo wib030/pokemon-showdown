@@ -46,7 +46,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			let badDreamsActive = false;
 			let sleepRoll = this.random(1, 100);
 			let sleepTurns = 3;
-			let moveAccuracy = 100;
+			let accuracy = 100;
 			
 			const oneTurnChance = 15;
 			const twoTurnChance = 75;
