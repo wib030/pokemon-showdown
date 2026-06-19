@@ -52,7 +52,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			const twoTurnChance = 75;
 			
 			if (sourceEffect.effectType === 'Move') {
-				let move = this.dex.moves.get(sourceEffect.id);
+				let move = this.activeMove;
 				accuracy = move.accuracy;
 				
 				if ((move.forceSTAB || source.hasType(moveType)) && accuracy != true) {
@@ -62,6 +62,8 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 				if (move.ohko) {
 					accuracy = 30 + source.level - target.level;
 				}
+
+				accuracy = this.battle.runEvent('ModifyAccuracy', target, source, move, accuracy);
 				
 				if (accuracy === true) {
 					accuracy = 100;
