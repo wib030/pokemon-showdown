@@ -36,7 +36,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 	slp: {
 		name: 'slp',
 		effectType: 'Status',
-		onStart(target, source, sourceEffect, move) {
+		onStart(target, source, sourceEffect) {
 			if (sourceEffect && sourceEffect.effectType === 'Move') {
 				this.add('-status', target, 'slp', `[from] move: ${sourceEffect.name}`);
 			} else {
@@ -52,11 +52,24 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			const twoTurnChance = 75;
 			
 			if (sourceEffect.effectType === 'Move') {
+				let move = this.dex.moves.get(sourceEffect.id);
 				accuracy = move.accuracy;
+				
+				if ((move.forceSTAB || source.hasType(moveType)) && accuracy != true) {
+					accuracy = accuracy * 1.1;
+				}
+
+				if (move.ohko) {
+					accuracy = 30 + source.level - target.level;
+				}
+
+				accuracy = this.battle.runEvent('ModifyAccuracy', target, source, move, accuracy);
 				
 				if (accuracy === true) {
 					accuracy = 100;
 				}
+				
+				this.hint(`${move.name}'s accuracy: accuracy. Sleep turns rolled: ${sleepTurns}`);
 			}
 			
 			for (const mon of this.getAllActive()) {
@@ -77,7 +90,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 				}
 			}
 			
-			this.hint(`${move.name}'s accuracy: accuracy. Sleep turns rolled: ${sleepTurns}`);
+			this.hint(`Sleep turns rolled: ${sleepTurns}`);
 			
 			this.effectState.time = sleepTurns;
 			target.sleepHealFlag = true;
