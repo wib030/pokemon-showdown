@@ -550,7 +550,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		duration: 5,
 		durationCallback(source, effect) {
 			if (source?.hasItem('heatrock') || this.activeMove?.id === 'fling') {
-				return 10;
+				return 8;
 			}
 			return 5;
 		},
