@@ -13351,6 +13351,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			toxic: ["4M", "3M"],
 			willowisp: ["4M"],
 			extrasensory: ["4E"],
+			firechase: ["4L25"],
 		},
 	},
 	quilava: {
@@ -13403,7 +13404,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			tackle: ["4L1", "3L1"],
 			toxic: ["4M", "3M"],
 			willowisp: ["4M"],
-			firechase: ["4L34"],
+			firechase: ["4L28"],
 		},
 	},
 	typhlosion: {
@@ -13475,7 +13476,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			thunderpunch: ["4T", "3T"],
 			toxic: ["4M", "3M"],
 			willowisp: ["4M"],
-			firechase: ["4L34"],
+			firechase: ["4L28"],
 			lowkick: ["4L1"],
 		},
 	},

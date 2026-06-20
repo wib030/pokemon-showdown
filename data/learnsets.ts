@@ -18833,6 +18833,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			toxic: ["4M", "3M"],
 			willowisp: ["4M"],
 			extrasensory: ["4E"],
+			firechase: ["4L25"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["tackle", "leer", "smokescreen"], pokeball: "pokeball"},
@@ -18889,7 +18890,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			tackle: ["4L1", "3L1"],
 			toxic: ["4M", "3M"],
 			willowisp: ["4M"],
-			firechase: ["4L34"],
+			firechase: ["4L28"],
 		},
 	},
 	typhlosion: {
@@ -18960,7 +18961,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			thunderpunch: ["4T", "3T"],
 			toxic: ["4M", "3M"],
 			willowisp: ["4M"],
-			firechase: ["4L34"],
+			firechase: ["4L28"],
 			lowkick: ["4L1"],
 		},
 		eventData: [
