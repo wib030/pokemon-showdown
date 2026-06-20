@@ -12797,6 +12797,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dragontail: ["4T"],
 			muddywater: ["4E"],
 			whirlpool: ["4L27"],
+			selfdestruct: ["4L32"],
+			explosion: ["4L43"],
 		},
 		eventData: [
 			{generation: 3, level: 5, shiny: 1, moves: ["healbell", "wish"], pokeball: "pokeball"},
@@ -12821,7 +12823,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dreameater: ["4M"],
 			earthquake: ["4M"],
 			endure: ["4M"],
-			explosion: ["4M"],
+			explosion: ["4L43", "4M"],
 			facade: ["4M"],
 			fireblast: ["4M"],
 			firepunch: ["4T"],
@@ -12885,6 +12887,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			block: ["4L1"],
 			whirlpool: ["4L27"],
 			bodyslam: ["4L29"],
+			selfdestruct: ["4L32"],
 		},
 	},
 	koffing: {

@@ -8449,6 +8449,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			dragontail: ["4T"],
 			muddywater: ["4E"],
 			whirlpool: ["4L27"],
+			selfdestruct: ["4L32"],
+			explosion: ["4L43"],
 		},
 	},
 	lickilicky: {
@@ -8467,7 +8469,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			dreameater: ["4M"],
 			earthquake: ["4M"],
 			endure: ["4M"],
-			explosion: ["4M"],
+			explosion: ["4L43", "4M"],
 			facade: ["4M"],
 			fireblast: ["4M"],
 			firepunch: ["4T"],
@@ -8531,6 +8533,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			block: ["4L1"],
 			whirlpool: ["4L27"],
 			bodyslam: ["4L29"],
+			selfdestruct: ["4L32"],
 		},
 	},
 	koffing: {
