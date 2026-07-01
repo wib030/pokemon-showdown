@@ -31618,7 +31618,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 		learnset: {
 			aerialace: ["4M"],
 			aircutter: ["4T"],
-			attackorder: ["4L45"],
+			attackorder: ["4L38"],
 			attract: ["4M"],
 			captivate: ["4M", "4L35"],
 			confuseray: ["4L1"],

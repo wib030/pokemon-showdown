@@ -3161,4 +3161,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
+	attackorder: {
+		inherit: true,
+		basePower: 100,
+	},
 };
