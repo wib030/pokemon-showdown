@@ -13426,7 +13426,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			earthquake: ["4M", "3M"],
 			ember: ["4L1", "3L1"],
 			endure: ["4M", "3T"],
-			eruption: ["4L57"],
+			eruption: ["4L52"],
 			facade: ["4M", "3M"],
 			fireblast: ["4M", "3M"],
 			firepunch: ["4T", "3T"],
