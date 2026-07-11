@@ -1857,17 +1857,16 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.event.modifier = 1;
 				let attacker = move.allies!.shift()!;
 				let attackStat = attacker.getStat('atk', false, true);
-				/*
+				
 				const boostTable = [1, 1.5, 2, 2.5, 3, 3.5, 4];
 				let boost = pokemon.boosts['atk'];
 				if (boost > 6) boost = 6;
 				if (boost < -6) boost = -6;
-				if (boost >= 0) {
+				if (boost >= 0 && attacker !== pokemon) {
 					attackStat = Math.floor(attackStat * boostTable[boost]);
 				} else {
 					attackStat = Math.floor(attackStat / boostTable[-boost]);
 				}
-				*/
 				
 				if (attacker.hasType(move.type) && attacker.ability === 'adaptability') {
 					attackStat *= 2;
