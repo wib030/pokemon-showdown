@@ -9829,6 +9829,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			gravity: ["4L26"],
 			magiccoat: ["4L35"],
 			whirlpool: ["4L15"],
+			psybeam: ["4L30"],
 		},
 	},
 	starmie: {
@@ -9905,6 +9906,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			gravity: ["4L26"],
 			magiccoat: ["4L35"],
 			whirlpool: ["4L15"],
+			psybeam: ["4L27"],
 		},
 	},
 	mimejr: {

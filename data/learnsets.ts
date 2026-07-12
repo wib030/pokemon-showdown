@@ -14321,6 +14321,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			gravity: ["4L26"],
 			magiccoat: ["4L35"],
 			whirlpool: ["4L15"],
+			psybeam: ["4L30"],
 		},
 		eventData: [
 			{generation: 3, level: 50, moves: ["minimize", "lightscreen", "cosmicpower", "hydropump"], pokeball: "pokeball"},
@@ -14403,6 +14404,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			gravity: ["4L26"],
 			magiccoat: ["4L35"],
 			whirlpool: ["4L15"],
+			psybeam: ["4L27"],
 		},
 		eventData: [
 			{generation: 3, level: 41, moves: ["refresh", "waterfall", "icebeam", "recover"]},
