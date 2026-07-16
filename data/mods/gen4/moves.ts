@@ -586,13 +586,25 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	imprison: {
 		inherit: true,
 		flags: { bypasssub: 1, metronome: 1 },
-		onTryHit(pokemon) {
-			for (const target of pokemon.foes()) {
-				for (const move of pokemon.moves) {
-					if (target.moves.includes(move)) return;
+		condition: {
+			noCopy: true,
+			onStart(target) {
+				this.add('-start', target, 'move: Imprison');
+			},
+			onFoeDisableMove(pokemon) {
+				for (const moveSlot of this.effectState.source.moveSlots) {
+					if (moveSlot.id === 'struggle' || moveSlot.id === 'tossandturn') continue;
+					pokemon.disableMove(moveSlot.id, true);
 				}
-			}
-			return false;
+				pokemon.maybeDisabled = true;
+			},
+			onFoeBeforeMovePriority: 4,
+			onFoeBeforeMove(attacker, defender, move) {
+				if (move.id !== 'struggle' && move.id !== 'tossandturn' && this.effectState.source.hasMove(move.id) && !move.isZ && !move.isMax) {
+					this.add('cant', attacker, 'move: Imprison', move);
+					return false;
+				}
+			},
 		},
 	},
 	ingrain: {
