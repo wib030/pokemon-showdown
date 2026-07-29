@@ -29587,7 +29587,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			mudslap: ["4T", "3T"],
 			naturalgift: ["4M"],
 			outrage: ["4T", "4L60", "3L65", "3S0"],
-			overheat: ["4M", "3M"],
+			overheat: ["4L1", "4M", "3M"],
 			protect: ["4M", "3M"],
 			psychup: ["4M", "3T"],
 			raindance: ["4M", "3M"],
