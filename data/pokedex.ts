@@ -17995,7 +17995,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	screamtail: {
-		num: 985,
+		num: -81,
 		name: "Scream Tail",
 		types: ["Fairy", "Psychic"],
 		baseStats: { hp: 115, atk: 65, def: 99, spa: 65, spd: 115, spe: 111 },
