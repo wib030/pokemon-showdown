@@ -79824,7 +79824,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			grassknot: ["4M"],
 			swagger: ["4M"],
 			substitute: ["4M"],
-			fly: ["4M"],
 			strength: ["4M"],
 			rocksmash: ["4M"],
 			rockclimb: ["4M"],
