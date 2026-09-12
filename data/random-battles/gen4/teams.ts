@@ -71,7 +71,7 @@ const IMMUNE_TYPES = [
 
 // List of Rare Pokemon (1/4 chance to keep if species is rolled, otherwise it is rerolled)
 const RARE_POKEMON = [
-	'articuno', 'zapdos', 'moltres', 'raikou', 'entei', 'suicune',
+	'ryussa', 'articuno', 'zapdos', 'moltres', 'raikou', 'entei', 'suicune',
 	'regirock', 'regice', 'registeel', 'uxie', 'mesprit', 'azelf',
 	'heatran', 'regigigas', 'cresselia', 'mew', 'celebi', 'jirachi',
 	'manaphy', 'shaymin', 'shayminsky', 'darkrai', 'latios', 'latias',
@@ -92,7 +92,7 @@ const VERY_RARE_POKEMON = [
 ];
 
 const ALLOWED_UNUSUAL_SPECIES = [
-	'screamtail', 'wibblypuff', 'megamarill', 'giratinaantibug', 'giratinaantidark', 'giratinaantidragon',
+	'screamtail', 'wibblypuff', 'megamarill', 'ryussa', 'giratinaantibug', 'giratinaantidark', 'giratinaantidragon',
 	'giratinaantielectric', 'giratinaantifighting', 'giratinaantifire', 'giratinaantiflying',
 	'giratinaantighost', 'giratinaantigrass', 'giratinaantiground', 'giratinaantiice', 'giratinaantipoison',
 	'giratinaantipsychic', 'giratinaantirock', 'giratinaantisteel', 'giratinaantiwater',

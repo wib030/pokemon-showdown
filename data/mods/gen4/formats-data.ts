@@ -1564,4 +1564,10 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	megamarill: {
 		tier: "OU",
 	},
+	tamagon: {
+		tier: "NFE",
+	},
+	ryussa: {
+		tier: "OU",
+	},
 };

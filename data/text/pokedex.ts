@@ -3824,4 +3824,10 @@ export const PokedexText: { [id: IDEntry]: PokedexText } = {
 	megamarill: {
 		name: "Megamarill",
 	},
+	tamagon: {
+		name: "Tamagon",
+	},
+	ryussa: {
+		name: "Ryussa",
+	},
 };
