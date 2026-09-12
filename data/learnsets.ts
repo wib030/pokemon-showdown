@@ -88950,6 +88950,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			toxic: ["4L44", "4M"],
 			dragonrush: ["4L47"],
 			dragondance: ["4L50"],
+			invitriolize: ["4L51"],
 			outrage: ["4L55", "4T"],
 			dracometeor: ["4L60", "4T"],
 			hiddenpower: ["4M"],

@@ -7791,4 +7791,9 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "This move summons Light Screen for 5 turns upon use.",
 		shortDesc: "Summons Light Screen.",
 	},
+	invitriolize: {
+		name: "Invitriolize",
+		desc: "Has a 100% chance to poison the target.",
+		shortDesc: "100% chance to poison the target.",
+	},
 };

@@ -22498,4 +22498,21 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Psychic",
 		contestType: "Clever",
 	},
+	invitriolize: {
+		num: 420,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Invitriolize",
+		pp: 5,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		secondary: {
+			chance: 100,
+			status: 'psn',
+		},
+		target: "normal",
+		type: "Bug",
+		contestType: "Smart",
+	},
 };
