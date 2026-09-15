@@ -88915,7 +88915,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	tamagon: {
 		learnset: {
-			tackle: ["4L1"],
+			poisonsting: ["4L1"],
 			stringshot: ["4L1"],
 			nibble: ["4L3"],
 			bugbite: ["4L15"],
