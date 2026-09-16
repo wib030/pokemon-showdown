@@ -22500,7 +22500,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	invitriolize: {
 		num: 420,
-		accuracy: 100,
+		accuracy: 90,
 		basePower: 100,
 		category: "Physical",
 		name: "Invitriolize",
