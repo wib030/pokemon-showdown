@@ -35534,7 +35534,6 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			stringshot: ["4L1"],
 			nibble: ["4L3"],
 			bugbite: ["4L15"],
-			snore: ["4T"],
 		},
 	},
 	ryussa: {
