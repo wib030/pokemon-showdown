@@ -20146,9 +20146,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	tamagon: {
 		num: -81,
 		name: "Tamagon",
-		types: ["Bug"],
-		baseStats: { hp: 45, atk: 30, def: 35, spa: 20, spd: 20, spe: 45 },
-		abilities: { 0: "Swarm" },
+		types: ["Bug", "Poison"],
+		baseStats: { hp: 45, atk: 64, def: 32, spa: 76, spd: 62, spe: 45 },
+		abilities: { 0: "Poison Touch", 1: "Tinted Lens" },
 		heightm: 0.3,
 		weightkg: 2.9,
 		color: "Green",
@@ -20165,7 +20165,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 82,
 		color: "Green",
 		prevo: "Tamagon",
-		evoLevel: 10,
+		evoType: "levelExtra",
+		evoCondition: "with an Egg in party",
 		eggGroups: ["Bug", "Dragon"],
 	},
 };
