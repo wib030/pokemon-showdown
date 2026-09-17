@@ -89,6 +89,7 @@ const IMMUNITY_ABILITIES: { [k: string]: string[] } = {
 const RESISTANCE_ABILITIES: { [k: string]: string[] } = {
 	thickfat: ["Fire", "Ice"],
 	heatproof: ["Fire"],
+	ryunovirus: ["Dragon", "Bug"],
 };
 
 // Weakness abilities

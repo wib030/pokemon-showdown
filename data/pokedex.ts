@@ -20160,7 +20160,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Ryussa",
 		types: ["Dragon", "Bug"],
 		baseStats: { hp: 87, atk: 109, def: 96, spa: 132, spd: 82, spe: 105 },
-		abilities: { 0: "Compound Eyes" },
+		abilities: { 0: "Compound Eyes", 1: "Ryunovirus" },
 		heightm: 2,
 		weightkg: 82,
 		color: "Green",

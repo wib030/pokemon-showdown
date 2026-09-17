@@ -2460,4 +2460,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "This Pokemon is immune to Water-type moves and raises its Defense by 1 stage when hit by a Water-type move.",
 		shortDesc: "Water immunity, +1 Defense when hit by a Water-type move.",
 	},
+	ryunovirus: {
+		name: "Ryunovirus",
+		desc: "The power of Dragon- and Bug-type attacks against this Pokemon is halved.",
+		shortDesc: "The power of Dragon- and Bug-type attacks against this Pokemon is halved.",
+	},
 };

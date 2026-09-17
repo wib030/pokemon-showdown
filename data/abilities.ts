@@ -6275,4 +6275,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -31,
 	}
+	ryunovirus: {
+		onSourceBasePowerPriority: 1,
+		onSourceBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Dragon' || move.type === 'Bug') {
+				return this.chainModify(0.5);
+			}
+		},
+		flags: { breakable: 1, rollable: 1 },
+		name: "Ryunovirus",
+		rating: 3.5,
+		num: -32,
+	},
 };
