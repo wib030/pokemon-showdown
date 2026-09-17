@@ -6274,7 +6274,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Exsolution",
 		rating: 3,
 		num: -31,
-	}
+	},
 	ryunovirus: {
 		onSourceBasePowerPriority: 1,
 		onSourceBasePower(basePower, attacker, defender, move) {
@@ -6286,5 +6286,5 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Ryunovirus",
 		rating: 3.5,
 		num: -32,
-	},
+	}
 };
