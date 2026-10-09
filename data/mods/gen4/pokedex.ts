@@ -1784,7 +1784,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	clamperl: {
 		inherit: true,
-		abilities: { 0: "Slush Rush" },
+		abilities: { 0: "Swift Swim" },
 	},
 	omanyte: {
 		inherit: true,
