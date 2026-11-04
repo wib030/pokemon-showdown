@@ -482,6 +482,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dracometeor: ["4L61"],
 			headbutt: ["4L27"],
 			tailwind: ["4L1"],
+			dragondance: ["4L45"],
 		},
 		eventData: [
 			{generation: 3, level: 70, moves: ["wingattack", "slash", "dragonrage", "firespin"], pokeball: "pokeball"},
@@ -21419,7 +21420,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			cut: ["4M", "3M"],
 			doubleedge: ["3T"],
 			doubleteam: ["4M", "3M"],
-			earthpower: ["4T"],
+			earthpower: ["4T", "4L35"],
 			endeavor: ["4L25", "4T"],
 			endure: ["4M", "3T"],
 			energyball: ["4M"],
